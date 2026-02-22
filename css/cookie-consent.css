@@ -1,0 +1,70 @@
+/* Cookie Consent Banner Styles
+-------------------------------------------------- */
+
+.cookie-consent-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--navy);
+  color: var(--gold);
+  padding: 1rem;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1000;
+}
+
+.cookie-consent-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cookie-consent-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cookie-consent-customize {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--slate);
+  color: var(--gold);
+  padding: 1rem;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1001;
+}
+
+.cookie-consent-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.cookie-consent-label {
+  flex: 1;
+}
+
+.cookie-consent-toggle input {
+  margin-left: 0.5rem;
+}
+
+.cookie-consent-footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cookie-consent-footer a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.cookie-consent-footer a:hover {
+  text-decoration: underline;
+}
