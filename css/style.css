@@ -318,6 +318,13 @@ a:hover { color: var(--orange-light); }
     margin-bottom: var(--spacing-md);
 }
 
+.hero-logo {
+    max-width: 280px;
+    height: auto;
+    margin-bottom: var(--spacing-md);
+    filter: brightness(0) invert(1);
+    opacity: 0.15;
+}
 .hero-title { color: #fff; margin-bottom: var(--spacing-sm); }
 
 .hero-tagline {
