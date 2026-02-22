@@ -842,9 +842,12 @@ a:hover { color: var(--orange-light); }
     .nav-menu.open { display: flex; }
     .mobile-toggle { display: flex; }
 
-    .hero { min-height: auto; padding: calc(70px + var(--spacing-lg)) 0 calc(var(--spacing-lg) + 60px) 0; }
+    .hero { min-height: auto; padding: calc(70px + var(--spacing-lg)) 0 calc(var(--spacing-lg) + 60px) 0; overflow: hidden; }
     .hero-ctas { flex-direction: column; }
     .hero-ctas .btn-primary, .hero-ctas .btn-ghost { text-align: center; }
+    
+    /* Prevent any content from peeking above the navbar */
+    body { overflow-x: hidden; position: relative; }
 
     .prototype-grid { grid-template-columns: 1fr; gap: var(--spacing-lg); }
     .services-grid { grid-template-columns: 1fr; }
@@ -855,8 +858,23 @@ a:hover { color: var(--orange-light); }
     .about-header-text .section-title { text-align: center; }
     .headshot { width: 140px; height: 140px; }
 
-    .about-cta-content { flex-direction: column; text-align: center; }
-    .ny-map { max-width: 140px; margin: 0 auto; }
+    .about-cta { padding: var(--spacing-md); }
+    .about-cta-content { flex-direction: column; text-align: center; gap: var(--spacing-md); }
+    .about-cta-text-wrapper { min-width: auto; }
+    .about-cta-text { margin-bottom: var(--spacing-sm); }
+    .ny-map { max-width: 120px; margin: 0 auto; margin-bottom: 0; }
+    
+    /* Switch button to filled orange style for better mobile appearance */
+    .about-cta .btn-secondary {
+        background: var(--orange);
+        color: #fff;
+        border: none;
+        padding: 0.875rem 1.75rem;
+        box-shadow: 0 4px 20px rgba(255, 105, 0, 0.35);
+    }
+    .about-cta .btn-secondary:hover {
+        background: var(--orange-light);
+    }
 
     .footer-content { flex-direction: column; text-align: center; }
     .footer-links { flex-direction: column; gap: var(--spacing-sm); align-items: center; }
