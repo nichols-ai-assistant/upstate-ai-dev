@@ -554,15 +554,17 @@ a:hover { color: var(--orange-light); }
 }
 
 .service-number {
-    font-size: 3.5rem;
-    font-weight: 800;
+    font-size: 7rem;
+    font-weight: 900;
     color: var(--forest-dark);
-    opacity: 0.08;
-    margin-bottom: 0;
+    opacity: 0.06;
+    margin-bottom: -2.5rem;
     line-height: 1;
+    position: relative;
+    z-index: 0;
 }
 
-.service-title { color: var(--forest-dark); margin-bottom: var(--spacing-xs); }
+.service-title { color: var(--forest-dark); margin-bottom: var(--spacing-xs); position: relative; z-index: 1; }
 .service-card.featured .service-title { color: #fff; }
 
 .service-price {
