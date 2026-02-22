@@ -321,11 +321,13 @@ a:hover { color: var(--orange-light); }
 .hero-title { color: #fff; margin-bottom: var(--spacing-sm); }
 
 .hero-tagline {
-    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-size: clamp(1.3rem, 2.8vw, 1.8rem);
     color: var(--orange);
     font-weight: 700;
     margin-bottom: var(--spacing-md);
-    letter-spacing: -0.01em;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    line-height: 1.4;
 }
 
 .hero-subtitle {
