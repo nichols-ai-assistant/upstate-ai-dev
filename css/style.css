@@ -503,6 +503,7 @@ a:hover { color: var(--orange-light); }
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, auto);
     gap: var(--spacing-md);
     margin-top: var(--spacing-md);
     position: relative;
@@ -516,23 +517,20 @@ a:hover { color: var(--orange-light); }
     padding: var(--spacing-lg) var(--spacing-md);
     transition: var(--transition);
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-row: span 7;
+    grid-template-rows: subgrid;
+    row-gap: 0;
 }
 .service-divider {
     border: none;
     border-top: 1px solid rgba(0,0,0,0.06);
-    margin: var(--spacing-md) 0;
-    flex-shrink: 0;
-}
-.service-divider:first-of-type {
-    margin-top: auto;
+    align-self: end;
+    margin: 0;
+    padding: 0;
 }
 .service-card.featured .service-divider {
     border-top-color: rgba(255,255,255,0.1);
-}
-.service-description {
-    flex: 1;
 }
 .service-card:hover {
     transform: translateY(-6px);
