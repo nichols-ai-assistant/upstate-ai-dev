@@ -575,7 +575,9 @@ a:hover { color: var(--orange-light); }
     font-weight: 800;
     color: var(--orange);
     margin-bottom: var(--spacing-sm);
-    white-space: nowrap;
+}
+.service-card {
+    min-width: 0;
 }
 .service-price .price-detail { font-size: 0.85rem; font-weight: 400; color: var(--text-muted); }
 .service-card.featured .service-price .price-detail { color: rgba(255,255,255,0.6); }
