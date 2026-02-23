@@ -422,8 +422,9 @@ a:hover { color: var(--orange-light); }
     box-shadow: var(--shadow-lg);
 }
 .proto-icon { font-size: 1.8rem; flex-shrink: 0; line-height: 1; }
+.proto-text { flex: 1; min-width: 0; }
 .proto-card h3 { font-size: 1.1rem; margin-bottom: 0.3rem; color: var(--orange-light); font-weight: 700; }
-.proto-card p { font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 0; line-height: 1.5; }
+.proto-card p { font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 0; line-height: 1.5; text-align: left; }
 
 /* ==========================================
    Speaking Section (Tier Zero)
