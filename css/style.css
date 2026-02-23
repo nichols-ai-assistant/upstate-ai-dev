@@ -523,10 +523,16 @@ a:hover { color: var(--orange-light); }
     border: none;
     border-top: 1px solid rgba(0,0,0,0.06);
     margin: var(--spacing-md) 0;
+    flex-shrink: 0;
+}
+.service-divider:first-of-type {
     margin-top: auto;
 }
 .service-card.featured .service-divider {
     border-top-color: rgba(255,255,255,0.1);
+}
+.service-description {
+    flex: 1;
 }
 .service-card:hover {
     transform: translateY(-6px);
