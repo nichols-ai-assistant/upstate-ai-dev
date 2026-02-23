@@ -91,7 +91,7 @@ a:hover { color: var(--orange-light); }
     background: rgba(247, 244, 234, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: 0.75rem 0;
+    padding: 0.4rem 0;
     z-index: 1000;
     transition: var(--transition);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -103,7 +103,7 @@ a:hover { color: var(--orange-light); }
 .navbar .container { display: flex; justify-content: space-between; align-items: center; }
 
 .nav-brand .logo {
-    height: 42px;
+    height: 54px;
     width: auto;
     filter: none; /* Full-color logo visible on light background */
     transition: var(--transition);
