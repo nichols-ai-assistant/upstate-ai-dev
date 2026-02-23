@@ -521,12 +521,15 @@ a:hover { color: var(--orange-light); }
 }
 .service-divider {
     border: none;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    margin: var(--spacing-sm) 0;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    margin: var(--spacing-md) 0;
     margin-top: auto;
 }
 .service-card.featured .service-divider {
-    border-top-color: rgba(255,255,255,0.2);
+    border-top-color: rgba(255,255,255,0.1);
+}
+.service-divider-lower {
+    margin-top: 0;
 }
 .service-card:hover {
     transform: translateY(-6px);
