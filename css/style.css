@@ -528,9 +528,6 @@ a:hover { color: var(--orange-light); }
 .service-card.featured .service-divider {
     border-top-color: rgba(255,255,255,0.1);
 }
-.service-divider-lower {
-    margin-top: 0;
-}
 .service-card:hover {
     transform: translateY(-6px);
     box-shadow: var(--shadow-lg);
