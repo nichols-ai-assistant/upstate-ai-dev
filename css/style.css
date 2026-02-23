@@ -557,8 +557,8 @@ a:hover { color: var(--orange-light); }
 .service-number {
     font-size: 9rem;
     font-weight: 900;
-    color: var(--forest-dark);
-    opacity: 0.08;
+    color: var(--forest-medium);
+    opacity: 0.12;
     margin-bottom: -3rem;
     margin-left: -1.5rem;
     line-height: 0.8;
