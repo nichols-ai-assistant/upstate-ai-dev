@@ -503,7 +503,7 @@ a:hover { color: var(--orange-light); }
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(7, auto);
     gap: var(--spacing-md);
     margin-top: var(--spacing-md);
     position: relative;
@@ -518,7 +518,7 @@ a:hover { color: var(--orange-light); }
     transition: var(--transition);
     position: relative;
     display: grid;
-    grid-row: span 8;
+    grid-row: span 7;
     grid-template-rows: subgrid;
     row-gap: 0;
 }
