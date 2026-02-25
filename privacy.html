@@ -94,17 +94,18 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Upstate AI Logo" class="logo">
-                </a>
+                <img src="images/logo.png" alt="Upstate AI Logo" class="logo">
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#speaking">Free Training</a></li>
                 <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#blog">Blog</a></li>
-                <li><a href="index.html#cta">Contact</a></li>
+                <li><a href="index.html#blog">Insights</a></li>
+                <li><a href="https://calendar.app.google/agt6Z3KTJhGXjyNE9" class="btn-nav">Book a Call</a></li>
             </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
@@ -230,19 +231,38 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <img src="images/logo.png" alt="Upstate AI Logo" class="footer-logo">
-                    <p>&copy; 2026 Upstate AI. All rights reserved.</p>
+                    <p>Giving NY Businesses a Head Start</p>
                 </div>
                 <div class="footer-links">
-                    <a href="index.html">Home</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#blog">Insights</a>
+                    <a href="https://calendar.app.google/agt6Z3KTJhGXjyNE9">Contact</a>
                     <a href="privacy.html">Privacy Policy</a>
-                    <a href="mailto:ben@up-state-ai.com">Contact</a>
+                    <a href="#" onclick="window.CookieConsent && window.CookieConsent.show(); return false;">Cookie Settings</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Upstate AI — Professional AI Consulting | New York State</p>
+                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Navbar + Mobile Menu -->
+    <script>
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+                mobileToggle.classList.toggle('active');
+            });
+        }
+    </script>
 
     <!-- Cookie Consent -->
     <link rel="stylesheet" type="text/css" href="js/cookie-consent.css">
