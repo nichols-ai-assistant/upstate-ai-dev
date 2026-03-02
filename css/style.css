@@ -894,6 +894,8 @@ a:hover { color: var(--orange-light); }
         gap: 0.5rem;
     }
     .nav-menu.open { display: flex; }
+    .nav-menu a { color: #f5f0e8; }
+    .nav-menu a:hover { color: var(--orange); background: rgba(255, 105, 0, 0.15); }
     .mobile-toggle { display: flex; }
 
     .hero { min-height: auto; padding: calc(70px + var(--spacing-lg)) 0 calc(var(--spacing-lg) + 60px) 0; overflow: hidden; }
