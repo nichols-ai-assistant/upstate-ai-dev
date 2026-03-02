@@ -338,7 +338,7 @@ a:hover { color: var(--orange-light); }
     font-weight: 500;
     line-height: 1.5;
 }
-.stat-source { font-size: 0.85em; opacity: 0.6; }
+.stat-source { font-size: 0.65em; opacity: 0.6; }
 
 .hero-description {
     font-size: 1.05rem;
