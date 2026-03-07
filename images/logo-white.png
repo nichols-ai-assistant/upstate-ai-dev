@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+"""
+Convert logo PNG dark green to white, keeping orange accent.
+Dark green #1E4908 → White #FFFFFF
+Orange #FF6B00 stays the same
+"""
+
+from PIL import Image
+import numpy as np
+
+# Load the PNG
+img = Image.open('/Users/admin/.openclaw/workspace/upstate-ai-dev/images/logo.png')
+img_rgba = img.convert('RGBA')
+
+# Convert to numpy array for manipulation
+data = np.array(img_rgba, dtype=np.uint8)
+
+# Define color ranges
+dark_green = np.array([30, 73, 8, 255])  # #1E4908
+orange = np.array([255, 107, 0, 255])    # #FF6B00
+white = np.array([255, 255, 255, 255])   # #FFFFFF
+
+# Create mask for dark green (with some tolerance)
+r, g, b, a = data[:,:,0], data[:,:,1], data[:,:,2], data[:,:,3]
+
+# Find pixels that are dark green (tolerance: within ±20 of target)
+green_mask = (
+    (r >= 10) & (r <= 50) &
+    (g >= 53) & (g <= 93) &
+    (b >= 0) & (b <= 28)
+)
+
+# Replace dark green with white
+data[green_mask] = white
+
+# Save the result
+result = Image.fromarray(data, 'RGBA')
+result.save('/Users/admin/.openclaw/workspace/upstate-ai-dev/images/logo-white.png')
+
+print("✓ Created logo-white.png (dark green → white, orange preserved)")
