@@ -318,7 +318,7 @@ a:hover { color: var(--orange-light); }
     margin-bottom: var(--spacing-md);
 }
 
-.hero-title { color: #fff; margin-bottom: var(--spacing-md); }
+.hero-title { color: #fff; margin-bottom: var(--spacing-md); font-size: clamp(5rem, 12vw, 9rem); }
 .hero-region { font-size: calc(1em + 12px); display: block; }
 
 .hero-tagline {
