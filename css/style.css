@@ -717,6 +717,35 @@ a:hover { color: var(--orange-light); }
 .ny-map { max-width: 180px; height: auto; opacity: 0.5; filter: brightness(1.5); flex-shrink: 0; }
 
 /* ==========================================
+   New York Roots Section
+   ========================================== */
+.ny-roots {
+    padding: var(--spacing-xl) 0 var(--spacing-lg);
+    background: var(--cream);
+}
+.ny-roots-content {
+    display: flex;
+    gap: var(--spacing-xl);
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.ny-roots-text {
+    flex: 1;
+}
+.ny-roots-text p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+}
+.ny-roots .ny-map {
+    max-width: 200px;
+    opacity: 0.6;
+    filter: none;
+    flex-shrink: 0;
+}
+
+/* ==========================================
    Industries Section
    ========================================== */
 .industries {
@@ -918,6 +947,8 @@ a:hover { color: var(--orange-light); }
     .about-cta-content { flex-direction: column; text-align: center; gap: var(--spacing-md); }
     .about-cta-text-wrapper { min-width: auto; }
     .about-cta-text { margin-bottom: var(--spacing-sm); }
+    .ny-roots-content { flex-direction: column; text-align: center; }
+    .ny-roots .ny-map { max-width: 150px; margin: 0 auto; }
     .ny-map { max-width: 120px; margin: 0 auto; margin-bottom: 0; }
     
     /* Switch button to filled orange style for better mobile appearance */
