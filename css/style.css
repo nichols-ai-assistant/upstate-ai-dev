@@ -343,7 +343,7 @@ a:hover { color: var(--orange-light); }
 .hero-description {
     font-size: 1.05rem;
     color: rgba(255, 255, 255, 0.85);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
