@@ -886,7 +886,7 @@ a:hover { color: var(--orange-light); }
     height: 112px;
     width: auto;
     margin-bottom: var(--spacing-xs);
-    filter: brightness(1.5) saturate(0.4);
+    /* no filter — using white logo with original orange accent */
 }
 .footer-brand p { color: rgba(255,255,255,0.5); margin: 0; font-size: 0.9rem; }
 .footer-links { display: flex; gap: var(--spacing-md); flex-wrap: wrap; }
