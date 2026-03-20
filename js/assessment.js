@@ -10,7 +10,7 @@
     // Replace this URL after deploying the Google Apps Script web app.
     // See APPS_SCRIPT_DEPLOYMENT.md for deployment instructions.
     // Example: 'https://script.google.com/macros/d/1MHJba5dUWLQhboUI8NYkEELA4VPHK2otxjKD_pDNdIOAUgbKuZv4mjrI/userweb?v=1'
-    var APPS_SCRIPT_URL = '';
+    var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyUOSgJg3Q1bSFYY_mohK7_ENn2DtTBP9jLShoCEJCkK0OJy9O01LqiDRgKZfSbbKYY/exec';
 
     var TOTAL_STEPS = 7; // 6 question sections + 1 lead capture
     var TOTAL_QUESTIONS = 12;
