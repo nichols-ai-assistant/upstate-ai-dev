@@ -8,7 +8,9 @@
 
     // ---- CONFIG ----
     // Replace this URL after deploying the Google Apps Script web app.
-    var APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_WEB_APP_URL';
+    // See APPS_SCRIPT_DEPLOYMENT.md for deployment instructions.
+    // Example: 'https://script.google.com/macros/d/1MHJba5dUWLQhboUI8NYkEELA4VPHK2otxjKD_pDNdIOAUgbKuZv4mjrI/userweb?v=1'
+    var APPS_SCRIPT_URL = '';
 
     var TOTAL_STEPS = 7; // 6 question sections + 1 lead capture
     var TOTAL_QUESTIONS = 12;
@@ -327,7 +329,7 @@
         });
 
         // Send to Google Sheets (fire and forget, but log errors)
-        if (APPS_SCRIPT_URL && APPS_SCRIPT_URL !== 'YOUR_APPS_SCRIPT_WEB_APP_URL') {
+        if (APPS_SCRIPT_URL && APPS_SCRIPT_URL.trim().length > 0) {
             fetch(APPS_SCRIPT_URL, {
                 method: 'POST',
                 mode: 'no-cors',
@@ -337,7 +339,7 @@
                 console.warn('Sheets submission error:', err);
             });
         } else {
-            console.warn('Apps Script URL not configured. Submission data:', payload);
+            console.info('Apps Script URL not configured. Assessment data (for manual entry):', payload);
         }
     }
 
