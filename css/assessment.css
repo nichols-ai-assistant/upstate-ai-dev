@@ -662,3 +662,127 @@
         align-items: flex-start;
     }
 }
+
+/* ============================================
+   ACCORDION UI STYLES
+   ============================================ */
+
+.accordion-panel {
+    margin-bottom: 1.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    background: white;
+    transition: border-color 0.3s ease;
+}
+
+.accordion-panel.active {
+    border-color: #FF6B00;
+}
+
+.accordion-panel.completed {
+    border-color: #4caf50;
+}
+
+.accordion-header {
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+}
+
+.accordion-panel.completed .accordion-header {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+.accordion-panel.active .accordion-header {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+}
+
+.accordion-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #00214E;
+}
+
+.accordion-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #FF6B00;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.accordion-panel.completed .accordion-number {
+    background: #4caf50;
+}
+
+.accordion-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.accordion-panel.completed .accordion-status::before {
+    content: '✓';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #4caf50;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease;
+    padding: 0 2rem;
+}
+
+.accordion-content.expanded {
+    max-height: 10000px;
+    padding: 2rem;
+}
+
+.accordion-panel:not(.active) .accordion-header {
+    opacity: 0.7;
+}
+
+.accordion-panel.locked .accordion-header {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .accordion-header {
+        padding: 1rem 1.5rem;
+    }
+    
+    .accordion-title {
+        font-size: 1.1rem;
+    }
+    
+    .accordion-content.expanded {
+        padding: 1.5rem;
+    }
+}
