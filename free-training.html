@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free 30-minute AI training session for your business. No sales pitch, just practical insights on AI in your industry from a Syracuse University professor.">
+    <meta name="keywords" content="free AI training, AI for business, AI workshop, business AI education, AI consulting">
+    <meta name="author" content="Ben Nichols">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KKZRVLYRV0');
+    </script>
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-ancestors 'none';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://up-state-ai.com/free-training">
+    <meta property="og:title" content="Free Live AI Training | Upstate AI">
+    <meta property="og:description" content="30 minutes on AI in your industry. No sales pitch. Just practical insights your team can use right away.">
+    <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
+
+    <title>Free Live AI Training | Upstate AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Free Training page styles */
+        .ft-hero {
+            position: relative;
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: var(--forest-dark);
+            padding: calc(80px + var(--spacing-xl)) 0 var(--spacing-xl) 0;
+        }
+        .ft-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(26, 58, 46, 0.95) 0%,
+                rgba(26, 58, 46, 0.88) 30%,
+                rgba(45, 87, 69, 0.82) 60%,
+                rgba(63, 112, 84, 0.78) 100%
+            );
+            z-index: 1;
+        }
+        .ft-hero .hero-shapes { z-index: 2; }
+        .ft-hero-content {
+            position: relative;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-lg);
+        }
+        .ft-hero-text {
+            flex: 1;
+        }
+        .ft-hero-text .hero-badge {
+            display: inline-block;
+            background: rgba(255, 105, 0, 0.15);
+            border: 1px solid rgba(255, 105, 0, 0.3);
+            color: var(--orange);
+            padding: 0.4rem 1.2rem;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--spacing-sm);
+        }
+        .ft-hero-text h1 {
+            color: #fff;
+            margin-bottom: var(--spacing-sm);
+        }
+        .ft-hero-text .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.7;
+        }
+        .ft-hero-illustration {
+            flex: 0 1 300px;
+            display: flex;
+            justify-content: center;
+        }
+        .ft-hero-illustration img {
+            max-width: 280px;
+            width: 100%;
+            filter: drop-shadow(0 8px 25px rgba(30, 73, 8, 0.12));
+        }
+
+        /* Content sections */
+        .ft-section {
+            padding: var(--spacing-xl) 0;
+        }
+        .ft-section-cream {
+            background: var(--cream);
+        }
+        .ft-section-white {
+            background: var(--white);
+        }
+
+        .ft-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+        .ft-grid-reverse .ft-grid-illustration {
+            order: -1;
+        }
+
+        .ft-grid-illustration img {
+            max-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            filter: drop-shadow(0 8px 25px rgba(30, 73, 8, 0.1));
+        }
+
+        .ft-section h2 {
+            color: var(--forest-dark);
+            margin-bottom: var(--spacing-md);
+            text-align: left;
+        }
+
+        .ft-bullets {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 var(--spacing-md) 0;
+        }
+        .ft-bullets li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: var(--text-dark);
+            border-bottom: 1px solid rgba(26, 58, 46, 0.08);
+        }
+        .ft-bullets li:last-child {
+            border-bottom: none;
+        }
+        .ft-bullets li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1.05rem;
+            width: 10px;
+            height: 10px;
+            background: var(--orange);
+            border-radius: 50%;
+        }
+
+        .ft-audience-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+        .ft-audience-card {
+            background: var(--white);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            transition: var(--transition);
+        }
+        .ft-audience-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        .ft-audience-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        .ft-audience-card h3 {
+            color: var(--forest-dark);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .ft-audience-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .ft-expect-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .ft-expect-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(26, 58, 46, 0.08);
+        }
+        .ft-expect-list li:last-child {
+            border-bottom: none;
+        }
+        .ft-expect-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            margin-top: 0.1rem;
+        }
+        .ft-expect-text h3 {
+            font-size: 1.1rem;
+            color: var(--forest-dark);
+            margin-bottom: 0.25rem;
+        }
+        .ft-expect-text p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        /* Bottom CTA */
+        .ft-cta {
+            padding: var(--spacing-xl) 0;
+            background: var(--forest-dark);
+            text-align: center;
+            position: relative;
+        }
+        .ft-cta::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(255, 105, 0, 0.05) 0%, transparent 50%, rgba(255, 105, 0, 0.05) 100%);
+            pointer-events: none;
+        }
+        .ft-cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        .ft-cta h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: var(--spacing-sm);
+        }
+        .ft-cta p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.15rem;
+            margin-bottom: var(--spacing-md);
+        }
+        .ft-cta .btn-primary-large {
+            margin-bottom: var(--spacing-sm);
+        }
+        .ft-cta-note {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Hero divider */
+        .ft-hero-divider {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            z-index: 4;
+        }
+        .ft-hero-divider svg {
+            width: 100%;
+            height: 80px;
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .ft-hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .ft-hero-illustration {
+                order: -1;
+            }
+            .ft-hero-illustration img {
+                max-width: 200px;
+            }
+            .ft-grid {
+                grid-template-columns: 1fr;
+            }
+            .ft-grid-reverse .ft-grid-illustration {
+                order: 0;
+            }
+            .ft-grid-illustration img {
+                max-width: 240px;
+            }
+            .ft-section h2 {
+                text-align: center;
+            }
+            .ft-audience-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html"><img src="images/logo.png" alt="Upstate AI Logo" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="ai-readiness-assessment.html">Assessment</a></li>
+                <li><a href="free-training.html">Free Training</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" class="btn-nav">Book a Call</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="ft-hero">
+        <div class="hero-background">
+            <img src="images/syracuse.webp" alt="Syracuse University" class="hero-bg-image">
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="ft-hero-content fade-up">
+                <div class="ft-hero-text">
+                    <div class="hero-badge">No Cost, No Commitment</div>
+                    <h1>Free Live <span class="text-orange">AI</span> Training</h1>
+                    <p class="hero-subtitle">30 minutes on AI in your industry. No sales pitch. Just practical insights your team can use right away.</p>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" class="btn-primary">Book Your Free Session</a>
+                </div>
+                <div class="ft-hero-illustration">
+                    <img src="images/undraw/undraw_presentation_4ik4.svg" alt="AI training presentation">
+                </div>
+            </div>
+        </div>
+        <div class="ft-hero-divider">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,0 L1440,80 L1440,120 L0,120 Z" fill="#f7f4ea"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- What the Session Covers -->
+    <section class="ft-section ft-section-cream">
+        <div class="container">
+            <div class="ft-grid fade-up">
+                <div>
+                    <h2>What We Cover</h2>
+                    <p style="color: var(--text-muted); margin-bottom: var(--spacing-md);">A focused 30-minute session designed to give you a clear picture of what AI means for your specific business.</p>
+                    <ul class="ft-bullets">
+                        <li><strong>AI in your industry.</strong> What's actually happening with AI in your sector, and what's coming next.</li>
+                        <li><strong>Real use cases for your size.</strong> Practical examples from businesses like yours, not Fortune 500 case studies you can't replicate.</li>
+                        <li><strong>What's hype vs. what works.</strong> Honest assessment of which AI tools deliver results today and which ones aren't ready.</li>
+                        <li><strong>Your questions, answered.</strong> Open Q&A so you walk away with clarity on your specific situation.</li>
+                    </ul>
+                </div>
+                <div class="ft-grid-illustration">
+                    <img src="images/undraw/undraw_online-learning_tgmv.svg" alt="Online learning illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For -->
+    <section class="ft-section ft-section-white">
+        <div class="container">
+            <h2 class="section-title fade-up">Who This Is For</h2>
+            <p class="section-subtitle fade-up">Leaders at companies with 10 to 500 employees who want straight answers about AI.</p>
+            <div class="ft-audience-grid fade-up">
+                <div class="ft-audience-card">
+                    <div class="ft-audience-icon">&#128188;</div>
+                    <h3>Business Owners</h3>
+                    <p>You've heard the hype. You want to know what AI actually means for your bottom line and your team.</p>
+                </div>
+                <div class="ft-audience-card">
+                    <div class="ft-audience-icon">&#128202;</div>
+                    <h3>Managers</h3>
+                    <p>You're responsible for efficiency and results. AI could help, but you need to know where to start.</p>
+                </div>
+                <div class="ft-audience-card">
+                    <div class="ft-audience-icon">&#9881;&#65039;</div>
+                    <h3>Operations Leaders</h3>
+                    <p>You run the systems that keep things moving. AI can make them better, if you pick the right spots.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What to Expect -->
+    <section class="ft-section ft-section-cream">
+        <div class="container">
+            <div class="ft-grid ft-grid-reverse fade-up">
+                <div>
+                    <h2>What to Expect</h2>
+                    <ul class="ft-expect-list">
+                        <li>
+                            <span class="ft-expect-icon">&#9200;</span>
+                            <div class="ft-expect-text">
+                                <h3>30 minutes, virtual or in-person</h3>
+                                <p>Your choice. A quick video call works great, or we can meet face to face if you prefer.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="ft-expect-icon">&#10060;</span>
+                            <div class="ft-expect-text">
+                                <h3>No slide deck sales pitch</h3>
+                                <p>This is a conversation, not a presentation. We talk about your business, not ours.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="ft-expect-icon">&#128172;</span>
+                            <div class="ft-expect-text">
+                                <h3>Come with questions</h3>
+                                <p>The more specific your questions, the more useful the session. Bring whatever is on your mind about AI.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="ft-expect-icon">&#127891;</span>
+                            <div class="ft-expect-text">
+                                <h3>Led by a practitioner, not a salesperson</h3>
+                                <p>Ben teaches AI at Syracuse University and runs AI operations daily. You're getting a professor who builds things, not a consultant reading from a script.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ft-grid-illustration">
+                    <img src="images/undraw/undraw_group-video_k4jx.svg" alt="Virtual meeting illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="ft-cta">
+        <div class="container">
+            <div class="ft-cta-content fade-up">
+                <h2>Ready to Learn What AI Can Do for <span class="text-orange">Your Business?</span></h2>
+                <p>Pick a time that works. 30 minutes, zero obligation. Just a straightforward conversation about AI in your industry.</p>
+                <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" class="btn-primary-large">Book Your Free Session</a>
+                <p class="ft-cta-note">30 minutes &middot; No obligation &middot; Virtual or in-person</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
+                    <p>Putting AI to Work</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#about">About</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7">Contact</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="#" onclick="window.CookieConsent && window.CookieConsent.show(); return false;">Cookie Settings</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-consent.js"></script>
+
+    <!-- Smooth Scrolling & Animations -->
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+                mobileToggle.classList.toggle('active');
+            });
+        }
+
+        // Scroll-triggered fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
