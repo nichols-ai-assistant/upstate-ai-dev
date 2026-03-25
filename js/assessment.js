@@ -307,13 +307,18 @@
             margin: 0,
             filename: companyName + '_AI_Readiness_Report.pdf',
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2, useCORS: true, logging: true, allowTaint: true },
+            html2canvas: { scale: 2, useCORS: true, logging: true, allowTaint: true, foreignObjectRendering: false, removeContainer: false },
             jsPDF: { unit: 'mm', format: 'letter', orientation: 'portrait' },
-            pagebreak: { mode: ['css', 'legacy'] }
+            pagebreak: { mode: 'css', before: '.pdf-page' }
         };
 
         // Wait for fonts and images to load before capturing
         setTimeout(function() {
+            // Debug: test html2canvas directly first
+            console.log('PDF container dimensions:', pdfContainer.offsetWidth, 'x', pdfContainer.offsetHeight);
+            console.log('PDF container children:', pdfContainer.children.length);
+            console.log('First child tag:', pdfContainer.children[0] ? pdfContainer.children[0].tagName : 'none');
+            
             html2pdf().set(opt).from(pdfContainer).save().then(function() {
                 // Clean up: remove the hidden container after PDF is generated
                 if (pdfContainer && pdfContainer.parentNode) {
@@ -344,8 +349,9 @@
             * { box-sizing: border-box; }
             .pdf-page {
                 width: 816px;
-                min-height: 1056px;
+                height: 1056px;
                 page-break-after: always;
+                page-break-inside: avoid;
                 position: relative;
                 background: white;
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
