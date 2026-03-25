@@ -638,40 +638,53 @@
             // Auto-expand next section
             const nextSection = sectionNum + 1;
             const nextPanel = document.querySelector('.accordion-panel[data-section="' + nextSection + '"]');
-            if (nextPanel && !nextPanel.classList.contains('expanded')) {
-                expandSection(nextSection);
+            if (nextPanel) {
+                // Unlock the next section
+                nextPanel.classList.remove('locked');
 
-                // Wait for accordion expand animation (400ms CSS transition) to finish,
-                // then scroll to the correct position
-                setTimeout(function() {
+                // Expand the next section and scroll to it after the animation completes
+                expandSection(nextSection, function() {
                     var headerOffset = 100;
                     var elementPosition = nextPanel.getBoundingClientRect().top + window.pageYOffset;
                     window.scrollTo({ top: elementPosition - headerOffset, behavior: 'smooth' });
-                }, 450);
+                });
             }
 
             updateProgressBar();
         }
     }
 
-    function expandSection(sectionNum) {
+    function expandSection(sectionNum, onComplete) {
         const panel = document.querySelector('.accordion-panel[data-section="' + sectionNum + '"]');
         if (!panel) return;
 
-        // Collapse all other sections
-        document.querySelectorAll('.accordion-panel').forEach(function(p) {
-            p.classList.remove('active');
-            const content = p.querySelector('.accordion-content');
-            if (content && p !== panel) {
-                content.classList.remove('expanded');
-            }
-        });
+        let activePanel = document.querySelector('.accordion-panel.active');
+        const transitionDuration = 500; // ms
 
-        // Expand target section
-        panel.classList.add('active');
-        const content = panel.querySelector('.accordion-content');
-        if (content) {
-            content.classList.add('expanded');
+        // First, collapse the currently active panel (if any)
+        if (activePanel) {
+            activePanel.classList.remove('active');
+            activePanel.querySelector('.accordion-content').classList.remove('expanded');
+
+            // Wait for the collapse animation to finish
+            setTimeout(() => {
+                expandNewSection();
+            }, transitionDuration);
+        } else {
+            // If no panel is active, just expand the new one
+            expandNewSection();
+        }
+
+        function expandNewSection() {
+            panel.classList.add('active');
+            const content = panel.querySelector('.accordion-content');
+            if (content) {
+                content.classList.add('expanded');
+            }
+            if (typeof onComplete === 'function') {
+                // Wait for the expand animation to finish before calling the callback (e.g., scrolling)
+                setTimeout(onComplete, transitionDuration);
+            }
         }
     }
 
