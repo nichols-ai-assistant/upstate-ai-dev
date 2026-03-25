@@ -312,8 +312,21 @@
             pagebreak: { mode: ['css', 'legacy'] }
         };
 
-        // Generate and download
-        html2pdf().set(opt).from(pdfContainer).save();
+        // Wait for fonts and images to load before capturing
+        setTimeout(function() {
+            html2pdf().set(opt).from(pdfContainer).save().then(function() {
+                // Clean up: remove the hidden container after PDF is generated
+                if (pdfContainer && pdfContainer.parentNode) {
+                    pdfContainer.parentNode.removeChild(pdfContainer);
+                }
+            }).catch(function(err) {
+                console.error('html2pdf error:', err);
+                alert('PDF generation failed: ' + err.message);
+                if (pdfContainer && pdfContainer.parentNode) {
+                    pdfContainer.parentNode.removeChild(pdfContainer);
+                }
+            });
+        }, 500); // Give browser time to render fonts and images
         return;
     }
 
