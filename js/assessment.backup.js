@@ -34,7 +34,7 @@
             servicePrice: '$2,000',
             serviceSlug: 'index.html#services',
             serviceDesc: 'Cut through the hype. Understand what AI can actually do for your business. An interactive half-day session covering industry-specific use cases, a hands-on AI Opportunity Scorecard exercise, and strategic Q&A with your leadership team.',
-            summary: 'You\'re at the starting line, and that\'s exactly where most CNY businesses are right now. AI isn\'t your next move; your next move is building the foundation that makes AI possible. The good news? Every step you take here pays off whether or not you ever touch AI, because better data and documented processes make everything run smoother.',
+            summary: 'You\'re at the starting line, and that\'s exactly where most businesses are right now. AI isn\'t your next move; your next move is building the foundation that makes AI possible. The good news? Every step you take here pays off whether or not you ever touch AI, because better data and documented processes make everything run smoother.',
             actions: [
                 'Get your critical data out of spreadsheets and into a proper system',
                 'Document your 5 most repetitive workflows',
@@ -50,7 +50,7 @@
             servicePrice: '$5,000',
             serviceSlug: 'index.html#services',
             serviceDesc: 'We look under the hood of your operations and hand you a prioritized roadmap with ROI estimates. A full operational analysis, data maturity evaluation, and a clear, jargon-free executive report with your highest-value AI opportunities ranked.',
-            summary: 'You\'ve got pieces in place. Data exists, some processes are documented, and leadership is paying attention. The gap right now is between interest and action. This is the critical moment for CNY businesses: the ones that move from "we should look into AI" to "here\'s our first project" in the next 12 months will create real separation from competitors.',
+            summary: 'You\'ve got pieces in place. Data exists, some processes are documented, and leadership is paying attention. The gap right now is between interest and action. This is the critical moment: the businesses that ones that move from "we should look into AI" to "here\'s our first project" in the next 12 months will create real separation from competitors.',
             actions: [
                 'Run a data quality audit on one business area (customer records, production logs, or inventory)',
                 'Identify your single highest-ROI AI use case: repetitive process + available data + measurable impact',
@@ -406,7 +406,7 @@
         doc.setTextColor.apply(doc, forestDark);
         doc.setFontSize(11);
         doc.setFont('helvetica', 'normal');
-        doc.text('Practical AI consulting for Central New York businesses.', margin, y);
+        doc.text('Practical AI consulting for small and mid-sized businesses.', margin, y);
         doc.text('Led by a Syracuse University AI Professor.', margin, y + 7);
 
         // Contact info
@@ -644,7 +644,7 @@
         doc.setFont('helvetica', 'normal');
         doc.setTextColor.apply(doc, forestDark);
         var aboutLines = getLines(
-            'Upstate AI is a Central New York AI consulting firm that helps local businesses figure out where AI fits, and where it doesn\'t. We work with manufacturers, logistics companies, and professional services firms across the region.',
+            'Upstate AI is an AI consulting firm that helps businesses figure out where AI fits, and where it doesn\'t. We work with manufacturers, logistics companies, and professional services firms.',
             contentW, 10
         );
         doc.text(aboutLines, margin, y);
