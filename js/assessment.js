@@ -339,37 +339,36 @@
         container.style.cssText = 'position: fixed; left: 0; top: 0; width: 816px; z-index: -1; opacity: 0; overflow: hidden;'; // Hidden but in-viewport for html2canvas
 
         container.innerHTML = `
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
         <style>
             @page { margin: 0; }
             * { box-sizing: border-box; }
             .pdf-page {
                 width: 816px;
-                height: 1056px;
+                min-height: 1056px;
                 page-break-after: always;
                 position: relative;
                 background: white;
-                font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+                overflow: hidden;
             }
             .pdf-footer {
                 position: absolute;
                 bottom: 20px;
                 left: 40px;
                 right: 40px;
-                display: flex;
-                justify-content: space-between;
                 font-size: 11px;
                 color: #556b5e;
                 border-top: 1px solid #e0e0e0;
                 padding-top: 10px;
+                overflow: hidden;
             }
-            .pdf-footer-left { font-weight: 700; }
-            .pdf-footer-right { font-weight: 500; }
+            .pdf-footer-left { font-weight: 700; float: left; }
+            .pdf-footer-right { font-weight: 500; float: right; }
         </style>
 
         <!-- PAGE 1: COVER -->
-        <div class="pdf-page" style="background: #1a3a2e; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-            <div style="max-width: 600px; padding: 60px 40px;">
+        <div class="pdf-page" style="background: #1a3a2e; color: white; text-align: center;">
+            <div style="max-width: 600px; margin: 0 auto; padding: 120px 40px 60px 40px;">
                 <img src="images/logo-white.png" alt="Upstate AI" style="width: 180px; margin-bottom: 60px;">
                 <h1 style="font-size: 42px; font-weight: 800; margin: 0 0 10px 0; color: white; letter-spacing: -0.02em;">AI Readiness Assessment Results</h1>
                 <div style="width: 80px; height: 4px; background: #ff6900; margin: 30px auto;"></div>
@@ -396,9 +395,9 @@
                 <h2 style="color: #1a3a2e; font-size: 32px; font-weight: 800; margin: 0 0 40px 0; letter-spacing: -0.02em;">YOUR ASSESSMENT RESULTS</h2>
 
                 <div style="background: #f7f4ea; padding: 32px; border-radius: 12px; margin-bottom: 36px; border-left: 6px solid #ff6900;">
-                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
-                        <div style="font-size: 72px; font-weight: 900; color: #ff6900; line-height: 1;">${scores.totalScore}</div>
-                        <div>
+                    <div style="margin-bottom: 20px; overflow: hidden;">
+                        <div style="float: left; font-size: 72px; font-weight: 900; color: #ff6900; line-height: 1; margin-right: 20px;">${scores.totalScore}</div>
+                        <div style="float: left; padding-top: 16px;">
                             <div style="font-size: 20px; font-weight: 700; color: #1a3a2e; margin-bottom: 4px;">${escapeHtml(scores.tier.name)}</div>
                             <div style="font-size: 14px; color: #556b5e;">out of 60 points</div>
                         </div>
@@ -410,14 +409,14 @@
                 ${buildDimensionBars(scores)}
 
                 <div style="background: #fff; border: 2px solid #f7f4ea; border-radius: 8px; padding: 20px; margin-top: 28px;">
-                    <div style="display: flex; gap: 30px;">
-                        <div style="flex: 1;">
+                    <div style="overflow: hidden;">
+                        <div style="float: left; width: 48%;">
                             <div style="font-size: 12px; font-weight: 700; color: #ff6900; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">Strongest</div>
                             <div style="font-size: 16px; font-weight: 700; color: #1a3a2e; margin-bottom: 4px;">${escapeHtml(scores.strongest.label)}</div>
                             <div style="font-size: 13px; color: #556b5e; line-height: 1.5;">${escapeHtml(scores.strongest.desc)}</div>
                         </div>
-                        <div style="flex: 1;">
-                            <div style="font-size: 12px; font-weight: 700; color: #ff6900; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">Weakest</div>
+                        <div style="float: right; width: 48%;">
+                            <div style="font-size: 12px; font-weight: 700; color: #ff6900; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">Biggest Opportunity</div>
                             <div style="font-size: 16px; font-weight: 700; color: #1a3a2e; margin-bottom: 4px;">${escapeHtml(scores.weakest.label)}</div>
                             <div style="font-size: 13px; color: #556b5e; line-height: 1.5;">${escapeHtml(scores.weakest.desc)}</div>
                         </div>
@@ -476,13 +475,13 @@
                 <h3 style="color: #1a3a2e; font-size: 20px; font-weight: 700; margin: 0 0 20px 0;">Our Services</h3>
                 ${buildServicesGrid()}
 
-                <div style="margin-top: 36px; padding: 24px; background: #1a3a2e; color: white; border-radius: 8px; display: flex; gap: 24px; align-items: center;">
-                    <div style="flex: 1;">
+                <div style="margin-top: 36px; padding: 24px; background: #1a3a2e; color: white; border-radius: 8px; overflow: hidden;">
+                    <div style="float: left; width: 65%;">
                         <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 12px 0; color: white;">Let's Talk</h3>
                         <p style="font-size: 13px; margin: 0 0 16px 0; color: #f7f4ea; line-height: 1.6;">Book a free 30-minute consultation to discuss your AI readiness and next steps.</p>
                         <p style="font-size: 13px; margin: 0; color: #f7f4ea;"><strong>Email:</strong> ben@up-state-ai.com<br><strong>Phone:</strong> (315) 313-5998<br><strong>Web:</strong> up-state-ai.com</p>
                     </div>
-                    <div style="flex-shrink: 0;">
+                    <div style="float: right; width: 30%; text-align: right;">
                         <img src="images/qr-code-upstate-ai.png" alt="Scan to book" style="width: 120px; height: 120px; border-radius: 8px; background: white; padding: 8px;">
                     </div>
                 </div>
@@ -505,15 +504,15 @@
     }
 
     function buildDimensionBars(scores) {
-        var html = '<div style="display: grid; gap: 16px;">';
+        var html = '<div>';
         DIMENSIONS.forEach(function(dim) {
             var score = scores.dimensionScores[dim.key] || 0;
             var percentage = (score / 10) * 100;
             html += `
                 <div>
-                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
-                        <div style="font-size: 14px; font-weight: 600; color: #1a3a2e;">${escapeHtml(dim.label)}</div>
-                        <div style="font-size: 14px; font-weight: 700; color: #ff6900;">${score}/10</div>
+                    <div style="overflow: hidden; margin-bottom: 8px;">
+                        <div style="float: left; font-size: 14px; font-weight: 600; color: #1a3a2e;">${escapeHtml(dim.label)}</div>
+                        <div style="float: right; font-size: 14px; font-weight: 700; color: #ff6900;">${score}/10</div>
                     </div>
                     <div style="background: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden;">
                         <div style="background: linear-gradient(90deg, #1a3a2e, #ff6900); height: 100%; width: ${percentage}%; border-radius: 5px;"></div>
@@ -527,12 +526,12 @@
 
     function buildActionsList(scores) {
         var actions = scores.tier.actions || [];
-        var html = '<div style="display: grid; gap: 20px;">';
+        var html = '<div>';
         actions.forEach(function(action, idx) {
             html += `
-                <div style="display: flex; gap: 16px; align-items: flex-start;">
-                    <div style="width: 32px; height: 32px; border-radius: 50%; background: #ff6900; color: white; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; flex-shrink: 0;">${idx + 1}</div>
-                    <div style="flex: 1; padding-top: 4px;">
+                <div style="margin-bottom: 20px; overflow: hidden;">
+                    <div style="float: left; width: 32px; height: 32px; border-radius: 50%; background: #ff6900; color: white; text-align: center; line-height: 32px; font-weight: 800; font-size: 16px; margin-right: 16px;">${idx + 1}</div>
+                    <div style="margin-left: 48px; padding-top: 4px;">
                         <p style="font-size: 15px; line-height: 1.6; color: #1a3a2e; margin: 0;">${escapeHtml(action)}</p>
                     </div>
                 </div>
@@ -550,10 +549,11 @@
             { name: 'AI Advisory', desc: 'Monthly strategic check-ins, on-call guidance for AI decisions, and quarterly opportunity reviews.' }
         ];
 
-        var html = '<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">';
-        services.forEach(function(svc) {
+        var html = '<div style="overflow: hidden;">';
+        services.forEach(function(svc, idx) {
+            var floatStyle = (idx % 2 === 0) ? 'float: left;' : 'float: right;';
             html += `
-                <div style="background: #f7f4ea; padding: 18px; border-radius: 8px;">
+                <div style="${floatStyle} width: 48%; margin-bottom: 16px; background: #f7f4ea; padding: 18px; border-radius: 8px;">
                     <h4 style="font-size: 15px; font-weight: 700; color: #1a3a2e; margin: 0 0 8px 0;">${escapeHtml(svc.name)}</h4>
                     <p style="font-size: 12px; line-height: 1.6; color: #556b5e; margin: 0;">${escapeHtml(svc.desc)}</p>
                 </div>
