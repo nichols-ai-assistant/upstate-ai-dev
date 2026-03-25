@@ -295,13 +295,20 @@ a:hover { color: var(--orange-light); }
 .hero-content { 
     position: relative; 
     z-index: 3; 
-    max-width: 750px; 
+    max-width: 800px; 
     text-align: center; 
     margin: 0 auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.hero-logo {
+    max-width: 90%;
+    width: 600px;
+    height: auto;
+    margin-bottom: var(--spacing-sm);
 }
 
 .hero-badge {
