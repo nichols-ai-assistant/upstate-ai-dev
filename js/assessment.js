@@ -300,80 +300,54 @@
     function generatePdf(scores, lead) {
         // Build HTML template with all 4 pages
         var pdfContainer = buildPDFHTML(scores, lead);
-
-        // html2pdf.js options
         var companyName = (lead.company || lead.name || 'Assessment').replace(/[^a-zA-Z0-9]+/g, '_');
-        var opt = {
-            margin: 0,
-            filename: companyName + '_AI_Readiness_Report.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2, useCORS: true, logging: true, allowTaint: true, foreignObjectRendering: false, removeContainer: false },
-            jsPDF: { unit: 'mm', format: 'letter', orientation: 'portrait' },
-            pagebreak: { mode: 'css', before: '.pdf-page' }
-        };
 
-        // Wait for fonts and images to load before capturing
+        // Create processing overlay
+        var overlay = document.createElement('div');
+        overlay.id = 'pdf-overlay';
+        overlay.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 0, 24, 0.85); z-index: 10000; display: flex; align-items: center; justify-content: center; flex-direction: column;';
+        overlay.innerHTML = '<div style="text-align: center; color: white; font-family: -apple-system, sans-serif;">' +
+            '<div style="width: 48px; height: 48px; border: 3px solid rgba(255,105,0,0.3); border-top-color: #ff6900; border-radius: 50%; animation: pdfspin 0.8s linear infinite; margin: 0 auto 24px;"></div>' +
+            '<div style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">Generating Your Report</div>' +
+            '<div style="font-size: 14px; color: rgba(255,255,255,0.6);">Rendering 4-page PDF...</div>' +
+            '</div>' +
+            '<style>@keyframes pdfspin { to { transform: rotate(360deg); } }</style>';
+        document.body.appendChild(overlay);
+
+        // Give browser time to render the container and overlay
         setTimeout(function() {
-            // Debug: test html2canvas directly first
-            console.log('PDF container dimensions:', pdfContainer.offsetWidth, 'x', pdfContainer.offsetHeight);
-            console.log('PDF container children:', pdfContainer.children.length);
-            console.log('First child tag:', pdfContainer.children[0] ? pdfContainer.children[0].tagName : 'none');
-            
-            // Try html2canvas directly to debug
-            if (typeof html2canvas !== 'undefined') {
-                console.log('html2canvas is available, trying direct capture...');
-                html2canvas(pdfContainer, { scale: 2, useCORS: true, allowTaint: true, logging: true }).then(function(canvas) {
-                    console.log('Canvas created:', canvas.width, 'x', canvas.height);
-                    console.log('Canvas data length:', canvas.toDataURL().length);
-                    // Now use jsPDF to create PDF from canvas
-                    var jsPDFLib = (window.jspdf && window.jspdf.jsPDF) || window.jsPDF;
-                    if (jsPDFLib) {
-                        var pdf = new jsPDFLib({ unit: 'px', format: [816, 1056], orientation: 'portrait' });
-                        var pageHeight = 1056;
-                        var imgData = canvas.toDataURL('image/jpeg', 0.98);
-                        var imgHeight = (canvas.height * 816) / canvas.width;
-                        var heightLeft = imgHeight;
-                        var position = 0;
-                        
+            html2canvas(pdfContainer, { scale: 2, useCORS: true, allowTaint: true }).then(function(canvas) {
+                var jsPDFLib = (window.jspdf && window.jspdf.jsPDF) || window.jsPDF;
+                if (jsPDFLib) {
+                    var pdf = new jsPDFLib({ unit: 'px', format: [816, 1056], orientation: 'portrait' });
+                    var pageHeight = 1056;
+                    var imgData = canvas.toDataURL('image/jpeg', 0.98);
+                    var imgHeight = (canvas.height * 816) / canvas.width;
+                    var heightLeft = imgHeight;
+                    var position = 0;
+
+                    pdf.addImage(imgData, 'JPEG', 0, position, 816, imgHeight);
+                    heightLeft -= pageHeight;
+
+                    while (heightLeft > 0) {
+                        position -= pageHeight;
+                        pdf.addPage([816, 1056]);
                         pdf.addImage(imgData, 'JPEG', 0, position, 816, imgHeight);
                         heightLeft -= pageHeight;
-                        
-                        while (heightLeft > 0) {
-                            position -= pageHeight;
-                            pdf.addPage([816, 1056]);
-                            pdf.addImage(imgData, 'JPEG', 0, position, 816, imgHeight);
-                            heightLeft -= pageHeight;
-                        }
-                        
-                        pdf.save(opt.filename);
-                        console.log('PDF saved via direct canvas approach');
                     }
-                    if (pdfContainer && pdfContainer.parentNode) {
-                        pdfContainer.parentNode.removeChild(pdfContainer);
-                    }
-                }).catch(function(err) {
-                    console.error('html2canvas direct error:', err);
-                    alert('PDF generation failed: ' + err.message);
-                    if (pdfContainer && pdfContainer.parentNode) {
-                        pdfContainer.parentNode.removeChild(pdfContainer);
-                    }
-                });
-            } else {
-                console.error('html2canvas not available');
-                // Fallback to html2pdf
-                html2pdf().set(opt).from(pdfContainer).save().then(function() {
-                    if (pdfContainer && pdfContainer.parentNode) {
-                        pdfContainer.parentNode.removeChild(pdfContainer);
-                    }
-                }).catch(function(err) {
-                    console.error('html2pdf error:', err);
-                    alert('PDF generation failed: ' + err.message);
-                    if (pdfContainer && pdfContainer.parentNode) {
-                        pdfContainer.parentNode.removeChild(pdfContainer);
-                    }
-                });
-            }
-        }, 1000); // Give browser time to render fonts and images
+
+                    pdf.save(companyName + '_AI_Readiness_Report.pdf');
+                }
+                // Clean up
+                if (pdfContainer && pdfContainer.parentNode) pdfContainer.parentNode.removeChild(pdfContainer);
+                if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay);
+            }).catch(function(err) {
+                console.error('PDF generation error:', err);
+                alert('PDF generation failed: ' + err.message);
+                if (pdfContainer && pdfContainer.parentNode) pdfContainer.parentNode.removeChild(pdfContainer);
+                if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay);
+            });
+        }, 1500);
         return;
     }
 
