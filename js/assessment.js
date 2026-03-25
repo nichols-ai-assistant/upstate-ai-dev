@@ -347,7 +347,7 @@
                 if (pdfContainer && pdfContainer.parentNode) pdfContainer.parentNode.removeChild(pdfContainer);
                 if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay);
             });
-        }, 3500);
+        }, 1500);
         return;
     }
 
