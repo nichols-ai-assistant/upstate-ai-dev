@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Upstate AI</title>
+    <link rel="icon" type="image/png" href="/upstate-ai-dev/images/favicon.png">
+    <link rel="stylesheet" href="/upstate-ai-dev/css/style.css">
+    <style>
+        .error-page {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-content {
+            max-width: 520px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: var(--forest-medium);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .error-title {
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+        .error-message {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .error-actions a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .btn-primary-404 {
+            background: var(--orange);
+            color: var(--white);
+        }
+        .btn-primary-404:hover {
+            background: var(--orange-light);
+        }
+        .btn-secondary-404 {
+            background: var(--forest-medium);
+            color: var(--white);
+        }
+        .btn-secondary-404:hover {
+            background: var(--forest-light);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="/upstate-ai-dev/images/logo.png" alt="Upstate AI Logo" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/upstate-ai-dev/ai-readiness-assessment.html">Assessment</a></li>
+                <li><a href="/upstate-ai-dev/#speaking">Free Training</a></li>
+                <li><a href="/upstate-ai-dev/#services">Services</a></li>
+                <li><a href="/upstate-ai-dev/#about">About</a></li>
+                <li><a href="/upstate-ai-dev/blog.html">Blog</a></li>
+                <li><a href="https://calendar.app.google/agt6Z3KTJhGXjyNE9" class="btn-nav">Book a Call</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="error-page">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">This page wandered off.</h1>
+            <p class="error-message">The page you're looking for doesn't exist, or it moved somewhere else. No worries; let's get you back on track.</p>
+            <div class="error-actions">
+                <a href="/upstate-ai-dev/" class="btn-primary-404">Back to Home</a>
+                <a href="/upstate-ai-dev/blog.html" class="btn-secondary-404">Read the Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="/upstate-ai-dev/js/main.js"></script>
+</body>
+</html>
