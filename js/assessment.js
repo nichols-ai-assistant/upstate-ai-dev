@@ -307,7 +307,7 @@
             margin: 0,
             filename: companyName + '_AI_Readiness_Report.pdf',
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2, useCORS: true },
+            html2canvas: { scale: 2, useCORS: true, logging: true, allowTaint: true },
             jsPDF: { unit: 'mm', format: 'letter', orientation: 'portrait' },
             pagebreak: { mode: ['css', 'legacy'] }
         };
@@ -326,7 +326,7 @@
                     pdfContainer.parentNode.removeChild(pdfContainer);
                 }
             });
-        }, 500); // Give browser time to render fonts and images
+        }, 1000); // Give browser time to render fonts and images
         return;
     }
 
@@ -336,7 +336,7 @@
         // Create a temporary container in the DOM (hidden)
         var container = document.createElement('div');
         container.id = 'pdf-report';
-        container.style.cssText = 'position: fixed; left: 0; top: 0; width: 816px; z-index: -1; opacity: 0; overflow: hidden;'; // Hidden but in-viewport for html2canvas
+        container.style.cssText = 'position: absolute; left: 0; top: 0; width: 816px; z-index: 9999;'; // Visible temporarily for html2canvas capture
 
         container.innerHTML = `
         <style>
