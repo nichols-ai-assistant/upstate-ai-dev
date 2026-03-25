@@ -336,7 +336,7 @@
         // Create a temporary container in the DOM (hidden)
         var container = document.createElement('div');
         container.id = 'pdf-report';
-        container.style.cssText = 'position: absolute; left: -9999px; top: 0; width: 816px;'; // 8.5in at 96dpi
+        container.style.cssText = 'position: fixed; left: 0; top: 0; width: 816px; z-index: -1; opacity: 0; overflow: hidden;'; // Hidden but in-viewport for html2canvas
 
         container.innerHTML = `
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
