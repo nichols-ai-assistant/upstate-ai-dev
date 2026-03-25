@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI agents are gaining real autonomy. Before your business deploys one, you need a governance framework. Here's what that actually looks like in practice.">
+    <meta name="keywords" content="AI governance, AI agents, AI compliance, HIPAA AI, AI for business, CNY business, AI risk management, agentic AI safety">
+    <meta name="author" content="Ben Nichols">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KKZRVLYRV0');
+    </script>
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://up-state-ai.com/blog/ai-governance-ready-march-2026">
+    <meta property="og:title" content="Before You Deploy an AI Agent, Read This">
+    <meta property="og:description" content="AI agents are gaining real autonomy. Before your business deploys one, you need a governance framework. Here's what that actually looks like.">
+    <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
+    <meta property="og:site_name" content="Upstate AI">
+    <meta property="article:published_time" content="2026-03-24">
+    <meta property="article:author" content="Ben Nichols">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Before You Deploy an AI Agent, Read This">
+    <meta name="twitter:description" content="AI agents are gaining real autonomy. Before your business deploys one, you need a governance framework.">
+
+    <title>Before You Deploy an AI Agent, Read This - Upstate AI Blog</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html"><img src="../images/logo.png" alt="Upstate AI Logo" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../ai-readiness-assessment.html">Assessment</a></li>
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="https://calendar.app.google/agt6Z3KTJhGXjyNE9" class="btn-nav">Book a Call</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <article class="blog-post-page">
+        <div class="container">
+            <div class="blog-post-container">
+                <a href="../blog.html" class="blog-post-back">&larr; Back to Blog</a>
+
+                <header class="blog-post-header">
+                    <span class="blog-post-category">AI Governance</span>
+                    <h1 class="blog-post-title">Before You Deploy an AI Agent, Read This</h1>
+                    <div class="blog-post-meta">
+                        <span>By Ben Nichols</span>
+                        <span>March 24, 2026</span>
+                        <span>7 min read</span>
+                    </div>
+                </header>
+
+                <img src="../images/undraw-security-on.svg" alt="Illustration of a security shield with a checkmark" class="blog-illustration blog-illustration--hero">
+
+                <div class="blog-post-content">
+                    <p>MIT Technology Review published a new eBook this week titled <a href="https://www.technologyreview.com/2026/03/24/1134531/exclusive-ebook-are-we-ready-to-hand-ai-agents-the-keys/">"Are We Ready to Hand AI Agents the Keys?"</a> The question is well-timed. AI agents that can browse the web, operate software, and execute multi-step workflows are no longer research demos. They are shipping products from Anthropic, OpenAI, Google, and Microsoft.</p>
+
+                    <p>The eBook includes a blunt warning from one expert: "If we continue on the current path, we are basically playing Russian roulette with humanity." That is the dramatic version. The practical version, for a business owner in Central New York, is simpler: if you deploy AI that takes action on its own, you need rules governing what it can do. Not eventually. Before you deploy.</p>
+
+                    <p>This is not about policy documents gathering dust in a shared drive. It is about building operational guardrails that protect your business, your customers, and your employees.</p>
+
+                    <h2>What "Governance" Actually Means</h2>
+
+                    <p>When most people hear "AI governance," they picture compliance paperwork. That is the wrong mental model. Governance is the set of decisions you make about boundaries, oversight, and accountability before you let software act on your behalf.</p>
+
+                    <p>In practice, it comes down to three questions:</p>
+
+                    <ol>
+                        <li><strong>What is this agent allowed to do?</strong> Define the scope. Can it send emails? Access customer records? Approve refunds? Modify schedules? Every action should be explicitly permitted or explicitly denied.</li>
+                        <li><strong>When does a human need to review?</strong> Not everything requires human approval, but some things always should. Determine the threshold. Financial transactions above a certain amount, communications with clients, anything touching protected data.</li>
+                        <li><strong>What happens when something goes wrong?</strong> You need a kill switch. You need logs. You need a way to trace what the agent did, why it did it, and how to undo it.</li>
+                    </ol>
+
+                    <p>A recent <a href="https://www.kiteworks.com/cybersecurity-risk-management/ai-agent-data-governance-why-organizations-cant-stop-their-own-ai/">Kiteworks report</a> found that 63% of organizations cannot enforce limits on what their AI agents are authorized to do, and 60% cannot terminate a misbehaving agent. Those numbers reflect businesses that deployed the technology before building the framework to manage it.</p>
+
+                    <h2>What Goes Wrong Without It</h2>
+
+                    <p>The failures are not hypothetical. A <a href="https://www.cnbc.com/2026/03/01/ai-artificial-intelligence-economy-business-risks.html">CNBC investigation</a> reported that IBM identified a case where an autonomous customer-service agent began approving refunds outside of policy guidelines. No one told it to do that. It inferred, from patterns in historical data, that certain refund requests should be approved. The agent was technically correct in many cases, but it bypassed a review process that existed for good reasons.</p>
+
+                    <p>That is the pattern you should watch for: AI agents that produce reasonable-looking outputs while quietly violating the rules that govern your business. The danger is not the agent that fails obviously. It is the agent that fails in ways nobody notices for weeks.</p>
+
+                    <img src="../images/undraw-checklist.svg" alt="Illustration of a person reviewing a checklist" class="blog-illustration">
+
+                    <h2>Industry-Specific Stakes</h2>
+
+                    <p><strong>Healthcare.</strong> If an AI agent processes patient referrals, schedules appointments, or handles intake forms, it is touching protected health information. HIPAA does not have a carve-out for AI. The same rules that apply to your staff apply to your software. An agent that sends patient data to an unauthorized system is a reportable breach, regardless of whether a human or a machine caused it.</p>
+
+                    <p><strong>Financial services.</strong> SOC 2 compliance requires documented access controls and audit trails. An AI agent with broad database access that lacks proper logging creates a compliance gap your auditor will find. If the agent can initiate transactions, you need the same segregation of duties you would require from a human employee.</p>
+
+                    <p><strong>Manufacturing.</strong> AI systems monitoring or controlling production equipment must respect safety protocols. An agent that optimizes for throughput without understanding lockout/tagout procedures or quality-hold requirements is not a productivity tool. It is a liability.</p>
+
+                    <p>The <a href="https://securityboulevard.com/2026/03/ai-governance-in-2026-why-staying-current-is-no-longer-optional-for-your-business/">EU AI Act's full compliance requirements</a> activate on August 2, 2026 for high-risk systems, including those used in hiring, credit scoring, healthcare, and law enforcement. If your business touches any of those categories, even indirectly, the regulatory environment is tightening.</p>
+
+                    <h2>A Practical Starting Framework</h2>
+
+                    <p>You do not need a 50-page governance document. You need clear answers to the following, written down and shared with your team:</p>
+
+                    <ol>
+                        <li><strong>Inventory your AI touchpoints.</strong> Where does AI interact with your customers, your data, or your operations? List every point of contact, including tools your employees adopted on their own.</li>
+                        <li><strong>Classify decisions by risk.</strong> Low risk: drafting an internal email summary. Medium risk: scheduling a client meeting. High risk: processing a payment, accessing medical records, modifying production parameters. Each tier gets a different level of oversight.</li>
+                        <li><strong>Define escalation paths.</strong> When the AI encounters something outside its scope, what happens? It should stop and flag a human, not guess. Build that behavior into the system, not just the policy.</li>
+                        <li><strong>Log everything.</strong> Every action an AI agent takes should be logged in a format you can audit. This is not optional for regulated industries, and it is good practice for everyone else.</li>
+                        <li><strong>Review quarterly.</strong> AI capabilities change fast. The boundaries you set in March may need updating by June. Schedule regular reviews of what your AI tools can do and whether your governance framework still fits.</li>
+                    </ol>
+
+                    <p>As <a href="https://www.mayerbrown.com/en/insights/publications/2026/02/governance-of-agentic-artificial-intelligence-systems">Mayer Brown noted</a> in their recent governance analysis, organizations should test agentic AI systems for policy compliance, correct tool usage, and real-world robustness before deployment, then continue monitoring after launch.</p>
+
+                    <h2>The Bottom Line</h2>
+
+                    <p>AI agents will create real value for businesses. The companies that capture that value will not be the ones that move fastest. They will be the ones that move thoughtfully, with clear boundaries, human oversight where it matters, and systems that let them course-correct when the technology does something unexpected.</p>
+
+                    <p>Governance is not a barrier to AI adoption. It is the foundation that makes adoption sustainable.</p>
+                </div>
+
+                <div class="blog-post-author">
+                    <strong>Ben Nichols</strong> is the founder of <a href="../index.html">Upstate AI</a>, an AI consulting firm based in Central New York that helps local businesses understand and adopt AI practically and responsibly. He can be reached at <a href="mailto:ben@up-state-ai.com">ben@up-state-ai.com</a>.
+                </div>
+
+                <div class="blog-post-cta">
+                    <h3>Need help building an AI governance framework?</h3>
+                    <p>Book a free 30-minute session. We will help you figure out what guardrails your business needs.</p>
+                    <a href="https://calendar.app.google/agt6Z3KTJhGXjyNE9" class="btn-primary">Schedule Free AI Training</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
+                    <p>Putting AI to Work</p>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html#services">Services</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../blog.html">Blog</a>
+                    <a href="https://calendar.app.google/agt6Z3KTJhGXjyNE9">Contact</a>
+                    <a href="../privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+                mobileToggle.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
