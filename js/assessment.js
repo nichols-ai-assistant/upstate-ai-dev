@@ -335,10 +335,12 @@
         var textMuted = [85, 107, 94];
 
         function addFooter(pageNum) {
+            doc.setFont('helvetica', 'bold');
             doc.setFontSize(8);
             doc.setTextColor.apply(doc, textMuted);
-            doc.text('Upstate AI  |  up-state-ai.com  |  ben@up-state-ai.com', margin, pageH - 10);
+            doc.text('Upstate AI  |  ben@up-state-ai.com  |  (315) 313-5998  |  up-state-ai.com', margin, pageH - 10);
             doc.text('Page ' + pageNum + ' of 4', pageW - margin, pageH - 10, { align: 'right' });
+            doc.setFont('helvetica', 'normal'); // Reset font style
         }
 
         function getLines(text, maxWidth, fontSize) {
