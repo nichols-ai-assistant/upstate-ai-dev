@@ -693,6 +693,9 @@
         doc.setFont('helvetica', 'normal');
         doc.text('ben@up-state-ai.com  |  up-state-ai.com', margin + 8, y + 22);
 
+        const qrBase64 = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAABjAQMAAAC19SzWAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlP//8i138cAAAAJcEhZcwAACxIAAAsSAdLdfvwAAADtSURBVDiNzdSxrcMgEAbgsyhSsgASa9B5JVggFgs8r0THGpa8AHQUyH/OylP8Gr9zkUi5iq8A/QcnCH+LvliF6D4anWiQVNFDs3PmhaRkPJkpU7igO/WLCuj6itC9W4Yj2am4v5BNOLo9FVfhmzhu8FTFcZCVE2lJ22hrQv3N8p9q6nQDso2SNmeBZYCFpDL2AQppjZKQVEx2oyVIqlhCVmhGFPc3Z9Kws6RCXaf9NSZJXPy8HLxK4h1+XGNWURJv4hkMeE3WufZpJU+qXpB3dm7P1IKmpn6cCaJ4rvfjV0ja57oZcoiSPv/3vEMPrTO48Li5pwoAAAAASUVORK5CYII=';
+        doc.addImage(qrBase64, 'PNG', pageW - margin - 30, y - 5, 30, 30, 'qr', 'NONE', 0);
+
         addFooter(4);
 
         // Save
