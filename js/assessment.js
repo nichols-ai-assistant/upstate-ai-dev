@@ -273,7 +273,12 @@
 
         // Wire up PDF button
         document.getElementById('btnDownloadPdf').addEventListener('click', function () {
-            generatePdf(scores, lead);
+            try {
+                generatePdf(scores, lead);
+            } catch (err) {
+                console.error('PDF generation error:', err);
+                alert('Failed to generate PDF: ' + err.message + '. Please try refreshing the page.');
+            }
         });
 
         // Send to Google Sheets (fire and forget, but log errors)
@@ -293,7 +298,22 @@
 
     // ---- PDF GENERATION (4 pages exactly) ----
     function generatePdf(scores, lead) {
-        var jsPDF = window.jspdf.jsPDF;
+        // Check if jsPDF is loaded
+        if (typeof window.jspdf === 'undefined' && typeof window.jsPDF === 'undefined') {
+            alert('PDF generation failed: jsPDF library not loaded. Please refresh the page and try again.');
+            console.error('jsPDF library not found');
+            return;
+        }
+
+        // jsPDF UMD exposes as window.jspdf.jsPDF or global jsPDF
+        var jsPDF = (window.jspdf && window.jspdf.jsPDF) || window.jsPDF;
+        
+        if (!jsPDF) {
+            alert('PDF generation failed: jsPDF constructor not available. Please refresh the page and try again.');
+            console.error('jsPDF constructor not found');
+            return;
+        }
+
         var doc = new jsPDF({ unit: 'mm', format: 'letter' });
         var tier = scores.tier;
         var pageW = doc.internal.pageSize.getWidth();
@@ -672,7 +692,14 @@
 
         // Save
         var filename = (lead.company || 'Company').replace(/[^a-zA-Z0-9]/g, '_') + '_AI_Readiness_Report.pdf';
-        doc.save(filename);
+        
+        try {
+            doc.save(filename);
+        } catch (err) {
+            console.error('PDF save error:', err);
+            alert('PDF was generated but failed to download: ' + err.message);
+            throw err; // Re-throw to be caught by outer try-catch
+        }
     }
 
 })();
