@@ -424,7 +424,7 @@
         doc.setFontSize(20);
         doc.setTextColor.apply(doc, forestDark);
         doc.setFont('helvetica', 'bold');
-        doc.text(tier.icon + '  ' + tier.name + ' Tier', margin + scoreW + 30, y - 5);
+        doc.text(tier.name + ' Tier', margin + scoreW + 30, y - 5, { charSpace: 0 });
 
         // Tier description (condensed)
         y += 14;
