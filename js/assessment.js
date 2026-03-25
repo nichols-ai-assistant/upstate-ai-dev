@@ -305,11 +305,11 @@
         // Create processing overlay
         var overlay = document.createElement('div');
         overlay.id = 'pdf-overlay';
-        overlay.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 0, 24, 0.85); z-index: 10000; display: flex; align-items: center; justify-content: center; flex-direction: column;';
-        overlay.innerHTML = '<div style="text-align: center; color: white; font-family: -apple-system, sans-serif;">' +
-            '<div style="width: 48px; height: 48px; border: 3px solid rgba(255,105,0,0.3); border-top-color: #ff6900; border-radius: 50%; animation: pdfspin 0.8s linear infinite; margin: 0 auto 24px;"></div>' +
-            '<div style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">Generating Your Report</div>' +
-            '<div style="font-size: 14px; color: rgba(255,255,255,0.6);">Rendering 4-page PDF...</div>' +
+        overlay.style.cssText = 'position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #1a3a2e; z-index: 10000;';
+        overlay.innerHTML = '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; font-family: -apple-system, sans-serif;">' +
+            '<div style="width: 56px; height: 56px; border: 4px solid rgba(255,105,0,0.25); border-top-color: #ff6900; border-radius: 50%; animation: pdfspin 0.8s linear infinite; margin: 0 auto 28px;"></div>' +
+            '<div style="font-size: 22px; font-weight: 700; margin-bottom: 10px; letter-spacing: -0.02em;">Generating Your Report</div>' +
+            '<div style="font-size: 14px; color: rgba(247,244,234,0.6);">Preparing your 4-page AI Readiness Report...</div>' +
             '</div>' +
             '<style>@keyframes pdfspin { to { transform: rotate(360deg); } }</style>';
         document.body.appendChild(overlay);
