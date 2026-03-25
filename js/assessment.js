@@ -91,92 +91,40 @@
         }
     };
 
-    // ---- STATE ----
-    var currentStep = 1;
-
     // ---- DOM ----
-    var progressFill = document.getElementById('progressFill');
-    var progressLabel = document.getElementById('progressLabel');
-    var btnBack = document.getElementById('btnBack');
     var btnNext = document.getElementById('btnNext');
     var validationMsg = document.getElementById('validationMsg');
     var assessmentApp = document.getElementById('assessmentApp');
     var resultsSection = document.getElementById('resultsSection');
 
     // ---- NAVIGATION ----
-    function showStep(step) {
-        document.querySelectorAll('.assess-step').forEach(function (el) {
-            el.style.display = 'none';
-        });
-        var target = document.querySelector('.assess-step[data-step="' + step + '"]');
-        if (target) target.style.display = 'block';
-
-        // Progress
-        var pct = Math.round((step / TOTAL_STEPS) * 100);
-        progressFill.style.width = pct + '%';
-
-        if (step <= 6) {
-            progressLabel.textContent = 'Section ' + step + ' of ' + TOTAL_STEPS;
-        } else {
-            progressLabel.textContent = 'Final step';
-        }
-
-        // Back button
-        btnBack.style.visibility = step === 1 ? 'hidden' : 'visible';
-
-        // Next button label
-        if (step === 7) {
-            btnNext.textContent = 'See My Results';
-        } else {
-            btnNext.textContent = 'Next';
-        }
-
-        validationMsg.style.display = 'none';
-        window.scrollTo({ top: document.getElementById('assessment').offsetTop - 80, behavior: 'smooth' });
-    }
-
-    function validateStep(step) {
-        if (step <= 6) {
-            var stepEl = document.querySelector('.assess-step[data-step="' + step + '"]');
-            var questions = stepEl.querySelectorAll('.question-block');
-            for (var i = 0; i < questions.length; i++) {
-                var qNum = questions[i].getAttribute('data-question');
-                var checked = document.querySelector('input[name="q' + qNum + '"]:checked');
-                if (!checked) return false;
+    btnNext.addEventListener('click', function () {
+        // Validate all 12 questions are answered
+        for (var i = 1; i <= TOTAL_QUESTIONS; i++) {
+            if (!document.querySelector('input[name="q' + i + '"]:checked')) {
+                validationMsg.style.display = 'block';
+                validationMsg.querySelector('p').textContent = 'Please answer all 12 questions before submitting.';
+                return;
             }
-            return true;
         }
-        // Step 7: lead capture
+        // Validate lead capture fields
         var name = document.getElementById('leadName').value.trim();
         var email = document.getElementById('leadEmail').value.trim();
         var company = document.getElementById('leadCompany').value.trim();
         var industry = document.getElementById('leadIndustry').value;
         var size = document.getElementById('leadSize').value;
-        if (!name || !email || !company || !industry || !size) return false;
-        // Basic email validation
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return false;
-        return true;
-    }
-
-    btnNext.addEventListener('click', function () {
-        if (!validateStep(currentStep)) {
+        if (!name || !email || !company || !industry || !size) {
             validationMsg.style.display = 'block';
+            validationMsg.querySelector('p').textContent = 'Please fill in all required fields.';
             return;
         }
-        if (currentStep < TOTAL_STEPS) {
-            currentStep++;
-            showStep(currentStep);
-        } else {
-            // Submit
-            submitAssessment();
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            validationMsg.style.display = 'block';
+            validationMsg.querySelector('p').textContent = 'Please enter a valid email address.';
+            return;
         }
-    });
-
-    btnBack.addEventListener('click', function () {
-        if (currentStep > 1) {
-            currentStep--;
-            showStep(currentStep);
-        }
+        validationMsg.style.display = 'none';
+        submitAssessment();
     });
 
     // ---- SCORING ----
@@ -727,9 +675,6 @@
         doc.save(filename);
     }
 
-    // ---- INIT ----
-    showStep(1);
-
 })();
 
     // ============================================
@@ -785,10 +730,13 @@
             if (nextPanel && !nextPanel.classList.contains('expanded')) {
                 expandSection(nextSection);
                 
-                // Smooth scroll to next section
+                // Wait for accordion expand animation (400ms CSS transition) to finish,
+                // then scroll to the correct position
                 setTimeout(function() {
-                    nextPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 100);
+                    var headerOffset = 100;
+                    var elementPosition = nextPanel.getBoundingClientRect().top + window.pageYOffset;
+                    window.scrollTo({ top: elementPosition - headerOffset, behavior: 'smooth' });
+                }, 450);
             }
             
             updateProgressBar();

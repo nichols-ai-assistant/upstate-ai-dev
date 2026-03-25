@@ -284,12 +284,15 @@
     max-width: 700px;
     margin: var(--spacing-md) auto 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-.assess-btn-back,
+.assess-btn-back {
+    display: none;
+}
 .assess-btn-next {
-    min-width: 140px;
+    min-width: 280px;
+    text-align: center;
 }
 
 /* Validation */
@@ -318,15 +321,12 @@
 .lead-fields {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-sm);
+    gap: 0.6rem 0.75rem;
 }
 .field-group {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
-}
-.field-group:first-child {
-    grid-column: 1 / -1;
+    gap: 0.15rem;
 }
 .field-group label {
     font-size: 0.9rem;
