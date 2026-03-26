@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-ancestors 'none';">
+    <meta name="description" content="The paradigm is shifting. Large language models are becoming self-hostable as quantization improves and hardware becomes accessible. Here's what that means for your business.">
+    <meta name="keywords" content="AI hosting, self-hosted AI, LLM quantization, AI infrastructure, AI deployment, business AI strategy">
+    <meta name="author" content="Blaze Johnson">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KKZRVLYRV0');
+    </script>
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://up-state-ai.com/blog/future-of-ai-is-hosted">
+    <meta property="og:title" content="The Future of AI is Hosted (By You)">
+    <meta property="og:description" content="The paradigm is shifting. Here's what self-hosted LLMs mean for your business.">
+    <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
+    <meta property="og:site_name" content="Upstate AI">
+    <meta property="article:published_time" content="2026-03-25">
+    <meta property="article:author" content="Blaze Johnson">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Future of AI is Hosted (By You)">
+    <meta name="twitter:description" content="The paradigm is shifting. Here's what self-hosted LLMs mean for your business.">
+
+    <title>The Future of AI is Hosted (By You) - Upstate AI Blog</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html"><img src="../images/logo.png" alt="Upstate AI Logo" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../ai-readiness-assessment.html">Assessment</a></li>
+                <li><a href="../free-training.html">Complimentary Training</a></li>
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-nav">Book a Call</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <article class="blog-post-page">
+        <div class="container">
+            <div class="blog-post-container">
+                <a href="../blog.html" class="blog-post-back">&larr; Back to Blog</a>
+
+                <header class="blog-post-header">
+                    <span class="blog-post-category">AI Infrastructure</span>
+                    <h1 class="blog-post-title">The Future of AI is Hosted (By You)</h1>
+                    <div class="blog-post-meta">
+                        <span>By Blaze Johnson</span>
+                        <span>March 25, 2026</span>
+                        <span>7 min read</span>
+                    </div>
+                </header>
+
+                <img src="../images/undraw/undraw_server-cluster_jwwq.svg" alt="Illustration of server infrastructure" class="blog-illustration blog-illustration--hero">
+
+                <div class="blog-post-content">
+                    <p>For the last two years, if you wanted to use a large language model in your business, you had one practical option: pay OpenAI, Anthropic, or Google to access their cloud-hosted APIs. You sent your data to their servers, they processed it, and you got a response back.</p>
+
+                    <p>That model worked because the alternatives didn't. Running a capable LLM yourself required enterprise-grade GPUs, deep ML expertise, and a tolerance for unpredictable costs. For most businesses, cloud APIs were the only realistic path.</p>
+
+                    <p><strong>That's changing fast.</strong></p>
+
+                    <h2>What's Happening: Quantization + Accessible Hardware</h2>
+
+                    <img src="../images/undraw/undraw_progress-data_4b3r.svg" alt="Data processing illustration" class="blog-illustration">
+
+                    <p>Two trends are converging:</p>
+
+                    <h3>1. Models are getting smaller without getting dumber.</h3>
+
+                    <p>Quantization is the process of compressing a model's weights (the parameters that make it work) from high-precision numbers down to lower-precision representations. Think of it like converting a 4K video to 1080p—you lose some fidelity, but for most use cases, you don't notice.</p>
+
+                    <p>A few years ago, quantizing a model meant sacrificing significant capability. Today, techniques like 4-bit and 8-bit quantization can shrink a model by 75% or more with minimal performance loss. A model that used to require 80GB of VRAM now runs comfortably in 20GB.</p>
+
+                    <h3>2. Consumer hardware is catching up.</h3>
+
+                    <p>Apple Silicon Macs with unified memory can run 7B-13B parameter models locally at usable speeds. NVIDIA's consumer GPUs (4090, upcoming 5000 series) handle quantized 70B models. AMD is closing the gap. Specialized inference chips like Groq and Cerebras are entering the market at price points that make sense for mid-sized businesses.</p>
+
+                    <p><strong>You don't need a datacenter anymore. You need a decent workstation or a small cluster.</strong></p>
+
+                    <h2>What This Means for Businesses</h2>
+
+                    <img src="../images/undraw/undraw_business-decisions_hse9.svg" alt="Business decisions illustration" class="blog-illustration">
+
+                    <h3>More control.</h3>
+                    <p>Your data never leaves your infrastructure. No third-party terms of service. No rate limits. No surprise pricing changes.</p>
+
+                    <h3>Lower long-term costs.</h3>
+                    <p>Cloud APIs charge per token. Self-hosted models have upfront hardware costs but near-zero marginal cost per inference. If you're running high-volume workloads (customer service, document processing, data analysis), the math flips in your favor fast.</p>
+
+                    <h3>Customization.</h3>
+                    <p>You can fine-tune a self-hosted model on your proprietary data without sending that data to OpenAI. You control the guardrails, the tone, the domain-specific knowledge.</p>
+
+                    <h3>Speed.</h3>
+                    <p>No network latency. No queuing behind other customers' requests. Inference happens on your hardware, on your schedule.</p>
+
+                    <h2>When Should You Care About This?</h2>
+
+                    <img src="../images/undraw/undraw_savings_9tpn.svg" alt="Cost savings illustration" class="blog-illustration">
+
+                    <h3>Not yet, if:</h3>
+                    <ul>
+                        <li>You're still figuring out where AI fits in your operations</li>
+                        <li>Your AI use cases are low-volume or experimental</li>
+                        <li>You don't have anyone on staff comfortable managing infrastructure</li>
+                    </ul>
+                    <p>Cloud APIs are still the right choice for most businesses today. They're reliable, predictable, and you pay for what you use.</p>
+
+                    <h3>Start paying attention, if:</h3>
+                    <ul>
+                        <li>You're running AI workloads that cost $500+/month on cloud APIs</li>
+                        <li>You handle sensitive data that can't leave your network (HIPAA, ITAR, trade secrets)</li>
+                        <li>You need sub-100ms response times or real-time inference</li>
+                        <li>You want to fine-tune models on proprietary data without sharing it</li>
+                    </ul>
+
+                    <h3>Seriously consider it, if:</h3>
+                    <ul>
+                        <li>Your AI costs are trending toward $2K+/month and growing</li>
+                        <li>You have in-house technical talent or a trusted MSP</li>
+                        <li>Data sovereignty is a regulatory or competitive requirement</li>
+                        <li>You're building AI into a product and need to control your cost structure</li>
+                    </ul>
+
+                    <h2>The Next 12-24 Months</h2>
+
+                    <img src="../images/undraw/undraw_time-management_30iu.svg" alt="Future timeline illustration" class="blog-illustration">
+
+                    <p><strong>Expect:</strong></p>
+                    <ul>
+                        <li>More quantized model releases optimized for consumer/prosumer hardware</li>
+                        <li>Easier deployment tools (think Docker for LLMs)</li>
+                        <li>Hybrid architectures: small models on-prem for fast/private tasks, cloud APIs for complex reasoning</li>
+                        <li>Regional hosting options (your data stays in the US, or your state, or your building)</li>
+                    </ul>
+
+                    <p>The businesses that win won't be the ones with the biggest AI budgets. They'll be the ones who know when to rent, when to own, and how to deploy the right model in the right place.</p>
+                </div>
+
+                <div class="blog-post-author">
+                    <strong>Blaze Johnson</strong> is a strategist at <a href="../index.html">Upstate AI</a>, where he helps businesses evaluate and deploy AI infrastructure. He can be reached at <a href="mailto:ben@up-state-ai.com">ben@up-state-ai.com</a>.
+                </div>
+
+                <div class="blog-post-cta">
+                    <h3>Need help figuring out which path makes sense for your business?</h3>
+                    <p>We evaluate your use cases, data sensitivity, technical capacity, and cost structure, then recommend the deployment model that actually fits.</p>
+                    <a href="https://calendar.app.google/agt6Z3KTJhGXjyNE9" target="_blank" rel="noopener" class="btn-primary">Schedule a Complimentary AI Strategy Call</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
+                    <p>Put AI to Work</p>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html#services">Services</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../blog.html">Blog</a>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
+                    <a href="../privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+                mobileToggle.classList.toggle('active');
+            });
+        }
+    </script>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="../css/cookie-consent.css">
+    <script src="../js/cookie-consent.js"></script>
+</body>
+</html>
