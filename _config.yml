@@ -1,0 +1,19 @@
+# Jekyll configuration for GitHub Pages
+# Minimal config for includes support
+
+# Site settings
+title: Upstate AI
+description: AI Strategy Consulting for Your Business
+url: https://nichols-ai-assistant.github.io/upstate-ai-dev
+baseurl: /upstate-ai-dev
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - README.md
+  - .git
+  - .gitignore
