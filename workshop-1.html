@@ -1,0 +1,409 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive AI workshop for local businesses. Full-day, $2,000 hands-on session tailored to your team's needs.">
+    <meta name="keywords" content="AI workshop, local AI training, hands-on AI session, Upstate AI workshop">
+    <meta name="author" content="Upstate AI">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date());
+      gtag('config', 'G-KKZRVLYRV0');
+    </script>
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-ancestors 'none';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://up-state-ai.com/workshop">
+    <meta property="og:title" content="Interactive AI Workshop - Upstate AI">
+    <meta property="og:description" content="Full-day AI workshop for local businesses. Hands-on, practical, tailored to your team.">
+    <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
+
+    <title>Interactive AI Workshop - Upstate AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .concept-hero {
+            position: relative;
+            overflow: hidden;
+            padding: 5rem 0 4rem;
+            color: #f5f8f7;
+        }
+        .concept-hero .hero-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            align-items: center;
+        }
+        .concept-hero .hero-panel {
+            position: relative;
+            z-index: 2;
+        }
+        .concept-hero h1 {
+            font-size: clamp(2.75rem, 4.5vw, 4.5rem);
+            line-height: 1.05;
+            margin-bottom: 1rem;
+        }
+        .concept-hero h1 span.accent {
+            color: #FF8C00;
+        }
+        .concept-hero p {
+            color: rgba(255,255,255,0.9);
+        }
+        .concept-hero .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+        .concept-hero .hero-tag {
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 999px;
+            padding: 0.4rem 1.25rem;
+            font-size: 0.95rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.85);
+        }
+        .concept-hero .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .concept-hero .price-chip {
+            background: rgba(255,140,0,0.12);
+            border: 1px solid rgba(255,140,0,0.6);
+            border-radius: 16px;
+            padding: 1.25rem 1.75rem;
+            text-align: center;
+            color: #FF8C00;
+            font-weight: 700;
+            min-width: 160px;
+        }
+        .concept-hero .hero-illustration {
+            position: relative;
+            z-index: 2;
+            padding: 1.5rem;
+            border-radius: 24px;
+            background: rgba(5,38,38,0.55);
+            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+        }
+        .concept-hero .hero-illustration img {
+            width: 100%;
+            height: auto;
+            filter: saturate(0.5) brightness(1.2);
+        }
+        .concept-abstract {
+            background: radial-gradient(circle at top right, rgba(39,110,105,0.45), transparent 55%),
+                        linear-gradient(135deg, #0F4D4A 0%, #041F1C 100%);
+        }
+        .concept-abstract::before,
+        .concept-abstract::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 30%, rgba(0,255,255,0.18), transparent 45%),
+                        linear-gradient(120deg, rgba(0,210,255,0.15) 0%, transparent 45%);
+            opacity: 0.8;
+            pointer-events: none;
+        }
+        .concept-abstract::after {
+            background: repeating-linear-gradient(120deg, rgba(255,255,255,0.08) 0 2px, transparent 2px 8px);
+            mix-blend-mode: screen;
+            opacity: 0.18;
+        }
+        .concept-hero .node-cluster {
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 1px solid rgba(0,255,255,0.25);
+            top: -60px;
+            right: -40px;
+            filter: blur(0.5px);
+        }
+        .concept-hero .node-cluster::after {
+            content: "";
+            position: absolute;
+            inset: 25%;
+            border-radius: inherit;
+            border: 1px solid rgba(0,255,255,0.25);
+        }
+        @media (max-width: 768px) {
+            .concept-hero .hero-cta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .concept-hero .hero-illustration {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><a href="index">
+                <img src="images/logo.png" alt="Upstate AI Logo" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="ai-readiness-assessment">Assessment</a></li>
+                <li><a href="free-training">Complimentary Training</a></li>
+                <li><a href="index#services">Services</a></li>
+                <li><a href="index#about">About</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-nav">Book a Call</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero concept-hero concept-abstract">
+        <div class="node-cluster"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-panel">
+                    <div class="hero-badge">Interactive AI Workshop</div>
+                    <h1>
+                        Command the<br>
+                        <span class="accent">Flow of Strategy</span>
+                    </h1>
+                    <p>Translate abstract AI talk into a structured data flow your operators can understand. We decode the signals, map the routes, and give your team a confident playbook.</p>
+                    <div class="hero-tags">
+                        <span class="hero-tag">Signals</span>
+                        <span class="hero-tag">Workflows</span>
+                        <span class="hero-tag">Decision Labs</span>
+                    </div>
+                    <div class="hero-cta">
+                        <div class="price-chip">
+                            $2,000<br>
+                            <small style="display:block;font-size:0.85rem;font-weight:400;color:rgba(255,255,255,0.8);">Full-day intensive</small>
+                        </div>
+                        <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary">Book Session</a>
+                    </div>
+                </div>
+                <div class="hero-panel hero-illustration">
+                    <img src="images/undraw_data-trends_kv5v.svg" alt="Abstract data flow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Experience -->
+    <section class="services" style="padding: 4.5rem 0;">
+        <div class="container">
+            <h2 class="section-title fade-up">What You'll Experience</h2>
+            <p class="section-subtitle fade-up" style="max-width: 760px;">A customized, practical deep dive into AI, designed to transform your business's approach to technology.</p>
+            <div class="industries-grid fade-up" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                <div class="industry-card" style="background: #fff; color: var(--text-dark); border: 1px solid rgba(0,0,0,0.08);">
+                    <div class="industry-icon" style="color: var(--orange);">🧪</div>
+                    <h3 style="color: var(--forest-dark);">Hands-On AI Exploration</h3>
+                    <p style="color: #555;">Directly interact with essential AI tools. Learn their capabilities, limitations, and how they apply to your specific business needs.</p>
+                </div>
+                <div class="industry-card" style="background: #fff; color: var(--text-dark); border: 1px solid rgba(0,0,0,0.08);">
+                    <div class="industry-icon" style="color: var(--orange);">🎯</div>
+                    <h3 style="color: var(--forest-dark);">Tailored Use Cases</h3>
+                    <p style="color: #555;">Explore AI applications directly relevant to your industry and operations, moving beyond generic examples to practical strategies.</p>
+                </div>
+                <div class="industry-card" style="background: #fff; color: var(--text-dark); border: 1px solid rgba(0,0,0,0.08);">
+                    <div class="industry-icon" style="color: var(--orange);">👩‍🏫</div>
+                    <h3 style="color: var(--forest-dark);">Expert-Led Guidance</h3>
+                    <p style="color: #555;">Benefit from direct instruction and Q&amp;A with our AI specialists, ensuring clarity and actionable insights throughout the session.</p>
+                </div>
+                <div class="industry-card" style="background: #fff; color: var(--text-dark); border: 1px solid rgba(0,0,0,0.08);">
+                    <div class="industry-icon" style="color: var(--orange);">🗺️</div>
+                    <h3 style="color: var(--forest-dark);">Customized Action Plan</h3>
+                    <p style="color: #555;">Conclude the workshop with a personalized roadmap outlining immediate next steps to implement AI within your organization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop Journey -->
+    <section class="prototype" style="background: #f7f4ea; padding: 4.5rem 0;">
+        <div class="container">
+            <h2 class="section-title fade-up">Your Workshop Journey</h2>
+            <p class="section-subtitle fade-up">We've designed a focused, engaging full-day session to maximize your learning and provide immediate value.</p>
+            <div class="prototype-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div class="proto-card fade-up" style="background: #fff; color: var(--text-dark); border-left-color: var(--orange);">
+                    <div class="proto-icon">🛫</div>
+                    <div class="proto-text">
+                        <h3 style="color: var(--forest-dark);">Pre-Workshop Prep</h3>
+                        <p>Before our session, we'll connect to understand your business, challenges, and goals. This ensures the workshop is highly relevant and customized to your needs.</p>
+                        <p style="font-size: 0.85rem; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;">Your AI Pre-Flight Checklist</p>
+                    </div>
+                </div>
+                <div class="proto-card fade-up" style="background: #fff; color: var(--text-dark); border-left-color: var(--orange);">
+                    <div class="proto-icon">🤝</div>
+                    <div class="proto-text">
+                        <h3 style="color: var(--forest-dark);">Interactive Session</h3>
+                        <p>Introduction to AI concepts, tool demonstrations, hands-on exercises, group discussions, and live Q&amp;A. Four hours of focused, practical learning.</p>
+                        <p style="font-size: 0.85rem; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;">Engage • Learn • Apply</p>
+                    </div>
+                </div>
+                <div class="proto-card fade-up" style="background: #fff; color: var(--text-dark); border-left-color: var(--orange);">
+                    <div class="proto-icon">📄</div>
+                    <div class="proto-text">
+                        <h3 style="color: var(--forest-dark);">Post-Workshop Plan</h3>
+                        <p>Receive a clear, executable plan outlining specific AI opportunities for your business, recommended tools, and practical steps for implementation.</p>
+                        <p style="font-size: 0.85rem; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;">Your Tailored AI Action Plan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For -->
+    <section class="industries" style="padding: 4.5rem 0; background: var(--forest-dark);">
+        <div class="container">
+            <h2 class="section-title fade-up" style="color: #fff;">Built for Operators Ready to Move</h2>
+            <p class="section-subtitle fade-up" style="color: rgba(255,255,255,0.8); max-width: 760px;">This workshop is ideal for local businesses eager to explore AI's practical advantages for their market and vertical.</p>
+            <div class="industries-grid fade-up" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                <div class="industry-card" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);">
+                    <div class="industry-icon">👨‍💼</div>
+                    <h3>Business Owners &amp; Leaders</h3>
+                    <p>Understand AI's strategic value and identify opportunities for growth and efficiency within your company.</p>
+                </div>
+                <div class="industry-card" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);">
+                    <div class="industry-icon">💡</div>
+                    <h3>Teams Exploring New Tech</h3>
+                    <p>Give your team a practical introduction to AI tools and structured brainstorming to discover immediate applications.</p>
+                </div>
+                <div class="industry-card" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);">
+                    <div class="industry-icon">🛠️</div>
+                    <h3>Operations &amp; Marketing Managers</h3>
+                    <p>Learn hands-on ways to leverage AI to optimize processes, enhance customer engagement, and boost productivity.</p>
+                </div>
+                <div class="industry-card" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);">
+                    <div class="industry-icon">📈</div>
+                    <h3>Companies Seeking an Edge</h3>
+                    <p>Gain a clear, actionable path to integrate AI and maintain competitive advantage in your market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Upstate AI -->
+    <section class="about" style="padding: 4.5rem 0; background: #fff;">
+        <div class="container">
+            <h2 class="section-title fade-up">Your Local AI Education Partner</h2>
+            <p class="section-subtitle fade-up" style="max-width: 760px;">We bring real-world AI expertise and a commitment to empowering businesses where they operate.</p>
+            <div class="credentials" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+                <div class="credential-item fade-up" style="background: var(--cream);">
+                    <div class="credential-icon">🎓</div>
+                    <div>
+                        <h3>Academic &amp; Practical Expertise</h3>
+                        <p>Led by an AI professor who also builds and delivers AI solutions in the real world.</p>
+                    </div>
+                </div>
+                <div class="credential-item fade-up" style="background: var(--cream);">
+                    <div class="credential-icon">📍</div>
+                    <div>
+                        <h3>Embedded in Your Community</h3>
+                        <p>Workshops designed for the unique needs and opportunities of the communities you serve.</p>
+                    </div>
+                </div>
+                <div class="credential-item fade-up" style="background: var(--cream);">
+                    <div class="credential-icon">🤝</div>
+                    <div>
+                        <h3>Actionable, Not Theoretical</h3>
+                        <p>Leave with clear steps and confidence to start implementing AI immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" style="padding: 4.5rem 0;">
+        <div class="container">
+            <div class="cta-content fade-up" style="max-width: 720px;">
+                <h2 class="cta-title">Ready to Discover AI's Potential for Your Business?</h2>
+                <p class="cta-description">Invest in a full-day session that provides clarity, hands-on experience, and a custom action plan for your team. Virtual or in-person sessions customizable to your team.</p>
+                <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary-large">Schedule a Workshop</a>
+                <p class="cta-note">We'll follow up within one business day to confirm details.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
+                    <p>Put AI to Work</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index#services">Services</a>
+                    <a href="index#about">About</a>
+                    <a href="blog">Blog</a>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
+                    <a href="privacy">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+                mobileToggle.classList.toggle('active');
+            });
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
