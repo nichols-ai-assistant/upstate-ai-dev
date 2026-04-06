@@ -35,113 +35,6 @@ layout: none
     <title>Interactive AI Workshop - Upstate AI</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .workshop-hero {
-            background: linear-gradient(145deg, #0A1F1A 0%, #1A453A 100%);
-            color: #f0f8f5;
-            padding: 5rem 0 4rem;
-            position: relative;
-            overflow: hidden;
-        }
-        .workshop-hero::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background-image: radial-gradient(circle at 20% 20%, rgba(0,255,191,0.18), transparent 45%),
-                              radial-gradient(circle at 80% 30%, rgba(0,191,255,0.22), transparent 35%),
-                              repeating-linear-gradient(130deg, rgba(255,255,255,0.05) 0 2px, transparent 2px 12px);
-            opacity: 0.6;
-        }
-        .workshop-hero .hero-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.75rem;
-            position: relative;
-            z-index: 2;
-            align-items: center;
-        }
-        .workshop-hero .hero-panel {
-            position: relative;
-            background: rgba(8,33,28,0.6);
-            border-radius: 24px;
-            padding: 2.25rem;
-            border: 1px solid rgba(255,255,255,0.08);
-            box-shadow: 0 25px 45px rgba(0,0,0,0.35);
-        }
-        .workshop-hero .hero-panel.text-only {
-            background: transparent;
-            border: none;
-            box-shadow: none;
-            padding: 0;
-        }
-        .workshop-hero .hero-badge {
-            text-transform: uppercase;
-            letter-spacing: 0.25em;
-            font-size: 0.9rem;
-            color: rgba(255,255,255,0.75);
-            margin-bottom: 1.25rem;
-        }
-        .workshop-hero h1 {
-            font-size: clamp(2.75rem, 4.8vw, 4.75rem);
-            letter-spacing: 0.02em;
-            margin-bottom: 1rem;
-            line-height: 1.05;
-        }
-        .workshop-hero h1 span.accent {
-            color: #FF8C00;
-        }
-        .workshop-hero .hero-subtitle {
-            font-size: 1.3rem;
-            color: rgba(255,255,255,0.85);
-            margin-bottom: 1rem;
-        }
-        .workshop-hero .hero-description {
-            font-size: 1.1rem;
-            color: rgba(255,255,255,0.9);
-        }
-        .workshop-hero .hero-cta {
-            margin-top: 1.75rem;
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .workshop-hero .price-chip {
-            background: rgba(0,0,0,0.35);
-            border-radius: 16px;
-            padding: 1.25rem 1.75rem;
-            color: #7FFF00;
-            font-size: 2rem;
-            font-weight: 700;
-            text-align: center;
-            min-width: 180px;
-        }
-        .workshop-hero .price-chip small {
-            display: block;
-            font-size: 0.85rem;
-            color: rgba(255,255,255,0.75);
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin-top: 0.25rem;
-        }
-        .workshop-hero .hero-illustration img {
-            width: 100%;
-            height: auto;
-            filter: saturate(0.65) brightness(1.1);
-        }
-        @media (max-width: 768px) {
-            .workshop-hero .hero-panel {
-                padding: 1.75rem;
-            }
-            .workshop-hero .hero-cta {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .workshop-hero .price-chip {
-                width: 100%;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -165,27 +58,22 @@ layout: none
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero workshop-hero">
+    <section class="hero" style="padding: 6rem 0 4rem; background: #0e1d16; min-height: auto;">
         <div class="container">
-            <div class="hero-grid">
-                <div class="hero-panel text-only">
-                    <div class="hero-badge">Interactive AI Workshop</div>
-                    <h1>
-                        Hands-On <span class="accent">AI Workshop</span>
-                    </h1>
-                    <p class="hero-subtitle">Unlock the potential of AI for your business.</p>
-                    <p class="hero-description">Invest a day with our team to demystify artificial intelligence, pressure-test practical use cases, and walk away with a plan tuned to your market and vertical. Keep the intimacy and pragmatism of a local partner without geographic limits.</p>
-                    <div class="hero-cta">
-                        <div class="price-chip">
-                            $2,000
-                            <small>Full-day interactive session</small>
-                        </div>
-                        <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary">Schedule a Workshop</a>
-                    </div>
+            <div class="hero-content fade-up" style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <div class="hero-badge">Interactive AI Workshop</div>
+                <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 4.75rem); margin-bottom: 0.75rem; line-height: 1.1;">
+                    <span style="display: block;">Hands-On</span>
+                    <span style="display: block;">AI Workshop</span>
+                </h1>
+                <p class="hero-subtitle" style="font-size: 1.5rem; color: rgba(255,255,255,0.85); margin-bottom: 1.25rem;">Unlock the potential of AI for your business.</p>
+                <p class="hero-description" style="font-size: 1.125rem; color: rgba(255,255,255,0.9);">Invest a day with our team to demystify artificial intelligence, pressure-test practical use cases, and walk away with a plan tuned to your market and vertical. Keep the intimacy and pragmatism of a local partner without geographic limits.</p>
+                <div style="margin-bottom: 2rem; display: inline-flex; flex-direction: column; gap: 0.5rem; background: rgba(255, 105, 0, 0.1); border: 1px solid var(--orange); border-radius: 12px; padding: 1.5rem 2rem;">
+                    <span style="font-size: 2.5rem; font-weight: 800; color: var(--orange);">$2,000</span>
+                    <span style="font-size: 0.95rem; letter-spacing: 0.08em; color: var(--orange); text-transform: uppercase;">One-time investment</span>
+                    <span style="font-size: 1rem; color: rgba(255,255,255,0.9);">Full-day interactive session</span>
                 </div>
-                <div class="hero-panel hero-illustration">
-                    <img src="images/undraw_data-trends_kv5v.svg" alt="Abstract data flow illustration">
-                </div>
+                <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary">Schedule a Workshop</a>
             </div>
         </div>
     </section>
