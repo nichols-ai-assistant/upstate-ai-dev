@@ -44,9 +44,12 @@ layout: none
         .workshop-hero {
             background: linear-gradient(145deg, #0A1F1A 0%, #1A453A 100%);
             color: #f0f8f5;
-            padding: 5rem 0 4rem;
+            padding: 6.5rem 0 6rem;
             position: relative;
             overflow: hidden;
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
         }
         .workshop-hero::before {
             content: "";
@@ -170,9 +173,9 @@ layout: none
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero workshop-hero workshop-page">
+    <section class="hero workshop-hero workshop-page" style="margin-bottom: -3rem;">
         <div class="container">
-            <div class="hero-grid">
+            <div class="hero-grid" style="grid-template-columns: minmax(280px, 640px) minmax(220px, 420px);">
                 <div class="hero-panel text-only">
                     <div class="hero-badge">Interactive AI Training</div>
                     <h1 style="max-width: 9ch;">Hands-On <span class="accent">Workshop</span></h1>
@@ -183,8 +186,8 @@ layout: none
                         <a href="#workshop-journey" class="btn-ghost">See What's Included &#8594;</a>
                     </div>
                 </div>
-                <div class="hero-panel hero-illustration">
-                    <img src="images/undraw/undraw_teaching_58yg.svg" alt="Workshop illustration">
+                <div class="hero-panel hero-illustration" style="padding: 1.5rem;">
+                    <img src="images/undraw/undraw_teaching_58yg.svg" alt="Workshop illustration" style="max-width: 100%; width: 90%; margin-left: auto;">
                 </div>
             </div>
         </div>
