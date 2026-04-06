@@ -68,6 +68,11 @@ layout: none
             z-index: 2;
             align-items: center;
         }
+        @media (min-width: 992px) {
+            .workshop-hero .hero-grid {
+                grid-template-columns: minmax(280px, 640px) minmax(220px, 420px);
+            }
+        }
         .workshop-hero .hero-panel {
             position: relative;
             background: rgba(8,33,28,0.6);
@@ -188,7 +193,7 @@ layout: none
                     </div>
                 </div>
                 <div class="hero-panel hero-illustration" style="padding: 1.5rem;">
-                    <img src="images/undraw/undraw_teaching_58yg.svg" alt="Workshop illustration" style="max-width: 100%; width: 90%; margin-left: auto;">
+                    <img src="images/undraw/undraw_teaching_58yg.svg" alt="Workshop illustration" style="max-width: 100%; width: 90%; margin-left: auto; min-height: 280px; object-fit: contain;">
                 </div>
             </div>
         </div>

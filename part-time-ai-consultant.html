@@ -62,6 +62,11 @@ layout: none
             position: relative;
             z-index: 2;
         }
+        @media (min-width: 992px) {
+            .retainer-hero .hero-grid {
+                grid-template-columns: minmax(280px, 640px) minmax(220px, 420px);
+            }
+        }
         .retainer-hero .hero-panel {
             background: rgba(4,15,24,0.65);
             border: 1px solid rgba(255,255,255,0.08);
@@ -229,7 +234,7 @@ layout: none
                     </div>
                 </div>
                 <div class="hero-panel hero-illustration" style="padding: 1.5rem;">
-                    <img src="images/undraw/undraw_teaching_58yg.svg" alt="Workshop illustration" style="max-width: 100%; width: 90%; margin-left: auto;">
+                    <img src="images/undraw/undraw_teaching_58yg.svg" alt="Workshop illustration" style="max-width: 100%; width: 90%; margin-left: auto; min-height: 280px; object-fit: contain;">
                 </div>
             </div>
         </div>
