@@ -90,7 +90,7 @@ layout: none
         .workshop-hero .hero-badge {
             text-transform: uppercase;
             letter-spacing: 0.3em;
-            font-size: 1.4rem;
+            font-size: 0.85rem;
             color: rgba(255,255,255,0.85);
             margin-bottom: 1rem;
         }
@@ -99,7 +99,12 @@ layout: none
             letter-spacing: 0.015em;
             margin-bottom: 0.75rem;
             line-height: 1.1;
-            white-space: nowrap;
+        }
+        @media (max-width: 768px) {
+            .workshop-hero h1 {
+                white-space: normal;
+                font-size: clamp(2rem, 8vw, 2.4rem);
+            }
         }
         .workshop-hero h1 span.accent {
             color: #FF8C00;
@@ -204,7 +209,6 @@ layout: none
         <div class="container">
             <div class="industries-grid fade-up" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
                 <div class="industry-card" style="background: #fff; color: var(--text-dark); border: 1px solid rgba(0,0,0,0.08);">
-                    <div class="industry-icon" style="color: var(--orange); font-size: 1.2rem;">Fractional Operator</div>
                     <h3 style="color: var(--forest-dark); font-size: 1.4rem;">Full-Day Intensive</h3>
                     <p style="color: #FF8C00; font-weight: 800; font-size: 2.4rem;">$2,000 flat fee.</p>
                     <p style="color: #555; font-size: 1.1rem;">Eight hours with a tailored agenda, recordings, and a post-workshop action plan.</p>
