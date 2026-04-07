@@ -252,6 +252,11 @@ a:hover { color: var(--orange-light); }
     pointer-events: none;
     overflow: hidden;
 }
+/* Defensive: any hero variant must clip decorative shapes and anchor absolute children */
+.hero, .assess-hero, .ft-hero, [class*="-hero"] {
+    position: relative;
+    overflow: hidden;
+}
 .shape {
     position: absolute;
     border-radius: 50%;
