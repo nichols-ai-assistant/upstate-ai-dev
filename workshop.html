@@ -78,6 +78,23 @@ layout: none
                 grid-template-columns: minmax(280px, 640px) minmax(220px, 420px);
             }
         }
+        @media (max-width: 767px) {
+            .workshop-hero .hero-grid {
+                text-align: center;
+            }
+            .workshop-hero .hero-illustration {
+                order: -1;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+            .workshop-hero .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            .workshop-hero h1 {
+                max-width: 100%;
+            }
+        }
         .workshop-hero .hero-panel {
             position: relative;
             background: rgba(8,33,28,0.6);
@@ -209,7 +226,7 @@ layout: none
             <div class="hero-grid">
                 <div class="hero-panel text-only">
                     <div class="hero-badge">Interactive AI Training</div>
-                    <h1 style="max-width: 16ch; white-space: nowrap;">Hands-On <span class="accent">Workshop</span></h1>
+                    <h1>Hands-On <span class="accent">Workshop</span></h1>
                     <p class="hero-subtitle" style="font-size: 1.56rem; line-height: 1.2; margin-bottom: 1.25rem;">Unlock the potential of AI<br>for your business.</p>
                     <p class="hero-description" style="max-width: 560px;">Invest a day to demystify AI, pressure-test practical use cases, and walk away with an action plan tuned to your industry, market, staff, and customers.</p>
                     <div class="hero-cta">
