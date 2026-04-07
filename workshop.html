@@ -62,11 +62,16 @@ layout: none
         }
         .workshop-hero .hero-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: 1fr;
             gap: 2.75rem;
             position: relative;
             z-index: 2;
             align-items: center;
+        }
+        @media (min-width: 768px) {
+            .workshop-hero .hero-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
         @media (min-width: 992px) {
             .workshop-hero .hero-grid {
@@ -148,16 +153,31 @@ layout: none
             height: auto;
             filter: saturate(0.65) brightness(1.1);
         }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
+            .workshop-hero .hero-grid {
+                grid-template-columns: 1fr !important;
+                text-align: center;
+            }
             .workshop-hero .hero-panel {
                 padding: 1.75rem;
             }
+            .workshop-hero .hero-illustration {
+                order: -1;
+                max-width: 280px;
+                margin: 0 auto;
+            }
             .workshop-hero .hero-cta {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
             }
             .workshop-hero .price-chip {
                 width: 100%;
+            }
+            .workshop-hero .hero-description {
+                max-width: 100% !important;
+            }
+            .workshop-hero h1 {
+                white-space: normal !important;
             }
         }
     </style>
@@ -186,7 +206,7 @@ layout: none
     <!-- Hero Section -->
     <section class="hero workshop-hero workshop-page" style="margin-bottom: -3rem;">
         <div class="container">
-            <div class="hero-grid" style="grid-template-columns: minmax(280px, 640px) minmax(220px, 420px);">
+            <div class="hero-grid">
                 <div class="hero-panel text-only">
                     <div class="hero-badge">Interactive AI Training</div>
                     <h1 style="max-width: 16ch; white-space: nowrap;">Hands-On <span class="accent">Workshop</span></h1>
