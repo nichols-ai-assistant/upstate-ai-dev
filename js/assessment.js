@@ -47,7 +47,7 @@
             icon: '\uD83D\uDD27', // wrench
             cssClass: 'tier-builder',
             service: 'AI Audit',
-            servicePrice: '$5,000',
+            servicePrice: '$10,000',
             serviceSlug: 'index.html#services',
             serviceDesc: 'We look under the hood of your operations and hand you a prioritized roadmap with ROI estimates. A full operational analysis, data maturity evaluation, and a clear, jargon-free executive report with your highest-value AI opportunities ranked.',
             summary: 'You\'ve got pieces in place. Data exists, some processes are documented, and leadership is paying attention. The gap right now is between interest and action. This is the critical moment: the businesses that ones that move from "we should look into AI" to "here\'s our first project" in the next 12 months will create real separation from competitors.',
@@ -63,7 +63,7 @@
             icon: '\uD83D\uDE80', // rocket
             cssClass: 'tier-accelerator',
             service: 'AI Execution',
-            servicePrice: '$10,000',
+            servicePrice: 'Custom Pricing',
             serviceSlug: 'index.html#services',
             serviceDesc: 'We manage your AI build from spec to launch. Clear technical plan, honest vendor evaluation, project management through delivery. You get a project manager who actually understands the technology, so nothing gets lost in translation.',
             summary: 'Your organization is in strong shape. The data, processes, infrastructure, and leadership alignment are there. Now it\'s about execution: picking the right first project, managing change, and measuring results. You\'re ahead of most businesses in the region, and moving quickly here locks in that advantage.',
@@ -78,10 +78,10 @@
             min: 49, max: 60,
             icon: '\u2B50', // star
             cssClass: 'tier-leader',
-            service: 'AI Advisory',
-            servicePrice: '$1,000/mo',
-            serviceSlug: 'index.html#services',
-            serviceDesc: 'Monthly strategic check-ins, on-call guidance for AI decisions, and quarterly reviews to identify your next opportunity. A dedicated AI advisor who knows your business, your stack, and your goals.',
+            service: 'Part-Time AI Consultant',
+            servicePrice: '$2,000/mo',
+            serviceSlug: 'part-time-ai-consultant',
+            serviceDesc: 'Get 10 hours per month of dedicated AI consulting: strategic guidance, vendor evaluation, implementation support, and on-demand answers. A fractional AI expert on your team, no full-time hire required.',
             summary: 'You\'re in the top tier of SMB AI readiness nationally, not just regionally. You have the data infrastructure, documented processes, technology stack, leadership commitment, and governance awareness that most businesses are still working toward. Your play now is strategic: building an AI roadmap that turns this foundation into measurable competitive advantage.',
             actions: [
                 'Build a 12-18 month AI roadmap mapping 3-5 initiatives to specific business outcomes',
@@ -223,7 +223,7 @@
         cta.innerHTML =
             '<span class="service-rec-badge">Recommended for You</span>' +
             '<h3 class="service-rec-title">' + tier.service + '</h3>' +
-            '<p class="service-rec-price">Starting at ' + tier.servicePrice + '</p>' +
+            '<p class="service-rec-price">' + (tier.servicePrice.charAt(0) === '$' && tier.servicePrice.indexOf('/') === -1 ? 'Starting at ' : '') + tier.servicePrice + '</p>' +
             '<p class="service-rec-desc">' + tier.serviceDesc + '</p>' +
             '<a href="' + tier.serviceSlug + '" class="service-rec-link">Learn More About ' + tier.service + ' &rarr;</a>';
 
@@ -463,7 +463,7 @@
                 <div style="background: #ff6900; color: white; padding: 28px; border-radius: 12px; margin-top: 40px;">
                     <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; opacity: 0.9;">Recommended Service</div>
                     <h3 style="font-size: 26px; font-weight: 800; margin: 0 0 8px 0; color: white;">${escapeHtml(scores.tier.service)}</h3>
-                    <p style="font-size: 18px; font-weight: 700; margin: 0 0 16px 0; color: #f7f4ea;">Starting at ${escapeHtml(scores.tier.servicePrice)}</p>
+                    <p style="font-size: 18px; font-weight: 700; margin: 0 0 16px 0; color: #f7f4ea;">${scores.tier.servicePrice.charAt(0) === '$' && scores.tier.servicePrice.indexOf('/') === -1 ? 'Starting at ' : ''}${escapeHtml(scores.tier.servicePrice)}</p>
                     <p style="font-size: 14px; line-height: 1.6; margin: 0; color: rgba(255,255,255,0.95);">${escapeHtml(scores.tier.serviceDesc)}</p>
                 </div>
 
