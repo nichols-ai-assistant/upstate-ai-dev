@@ -88,9 +88,21 @@
 .stat-item {
     background: var(--cream);
     border-radius: var(--radius-md);
-    padding: 1.5rem;
+    padding: 2rem 1.5rem 1.5rem;
     text-align: center;
-    border-left: 4px solid var(--orange);
+    position: relative;
+    overflow: hidden;
+}
+.stat-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--orange);
+    border-radius: 0 0 3px 3px;
 }
 .stat-number {
     display: block;
@@ -517,7 +529,19 @@
     border-radius: var(--radius-sm);
     font-size: 0.9rem;
     color: var(--forest-dark);
-    border-left: 4px solid var(--orange);
+    position: relative;
+    overflow: hidden;
+}
+.context-note::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--orange);
+    border-radius: 0 0 3px 3px;
 }
 
 /* Action Items */

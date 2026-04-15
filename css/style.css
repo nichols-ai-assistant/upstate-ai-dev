@@ -466,7 +466,7 @@ a:hover { color: var(--orange-light); }
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 40px;
+    width: 60px;
     height: 3px;
     background: var(--orange);
     border-radius: 0 0 3px 3px;
@@ -742,7 +742,7 @@ a:hover { color: var(--orange-light); }
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 40px;
+    width: 60px;
     height: 3px;
     background: var(--orange);
     border-radius: 0 0 3px 3px;
