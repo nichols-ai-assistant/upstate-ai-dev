@@ -175,9 +175,21 @@ layout: none
         .highlight-card {
             background: #fff;
             border-radius: 16px;
-            padding: 1.75rem;
+            padding: 2rem 1.75rem 1.75rem;
             box-shadow: 0 18px 45px rgba(0,0,0,0.08);
-            border-left: 4px solid var(--orange);
+            position: relative;
+            overflow: hidden;
+        }
+        .highlight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 3px;
+            background: var(--orange);
+            border-radius: 0 0 3px 3px;
         }
         .retainer-journey {
             background: #0f1f2a;
@@ -288,19 +300,19 @@ layout: none
             <h2 class="section-title fade-up" style="text-align: center;">Retainer Snapshot</h2>
             <p class="section-subtitle fade-up" style="text-align: center; margin-bottom: 2.5rem;">Built for operators who need clarity fast. Meet monthly, respond within a day, and bring pragmatic AI judgment to every decision.</p>
             <div class="highlight-grid">
-                <div class="highlight-card fade-up" style="border-left-color: var(--orange);">
+                <div class="highlight-card fade-up">
                     <h3 style="color: var(--forest-dark);">Monthly Strategy</h3>
                     <p>Standing check-in to recalibrate priorities, review wins, and set the next AI experiment.</p>
                 </div>
-                <div class="highlight-card fade-up" style="border-left-color: var(--orange);">
+                <div class="highlight-card fade-up">
                     <h3 style="color: var(--forest-dark);">Rapid Response</h3>
                     <p>Urgent vendor decision or "can this be automated" question? You get a same-business-day answer.</p>
                 </div>
-                <div class="highlight-card fade-up" style="border-left-color: var(--orange);">
+                <div class="highlight-card fade-up">
                     <h3 style="color: var(--forest-dark);">Quarterly Signals</h3>
                     <p>Custom brief on AI moves that actually matter to your industry so you stay ahead of the curve.</p>
                 </div>
-                <div class="highlight-card fade-up" style="border-left-color: var(--orange);">
+                <div class="highlight-card fade-up">
                     <h3 style="color: var(--forest-dark);">Priority Queue</h3>
                     <p>When you greenlight a build, we scope it first. No waiting in line behind new inquiries.</p>
                 </div>

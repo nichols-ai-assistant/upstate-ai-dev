@@ -457,10 +457,22 @@ a:hover { color: var(--orange-light); }
     align-items: flex-start;
     gap: var(--spacing-sm);
     transition: var(--transition);
-    border-left: 4px solid var(--orange);
+    position: relative;
+    overflow: hidden;
+}
+.proto-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: var(--orange);
+    border-radius: 0 0 3px 3px;
 }
 .proto-card:hover {
-    transform: translateX(6px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
 }
 .proto-icon { font-size: 1.8rem; flex-shrink: 0; line-height: 1; }
@@ -720,11 +732,23 @@ a:hover { color: var(--orange-light); }
     padding: 1.5rem;
     background: var(--white);
     border-radius: var(--radius-md);
-    border-left: 4px solid var(--orange);
     transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+.credential-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: var(--orange);
+    border-radius: 0 0 3px 3px;
 }
 .credential-item:hover {
-    transform: translateX(6px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-md);
 }
 .credential-icon { font-size: 2.25rem; flex-shrink: 0; }
@@ -732,7 +756,9 @@ a:hover { color: var(--orange-light); }
 .credential-item p { color: var(--text-muted); margin: 0; font-size: 0.95rem; }
 .credential-cta {
     background: rgba(45, 87, 69, 0.1);
-    border-left-color: var(--forest-accent);
+}
+.credential-cta::before {
+    background: var(--forest-accent);
 }
 .credential-cta h3 { color: var(--forest-dark); }
 .credential-cta p { color: var(--text-muted); }
