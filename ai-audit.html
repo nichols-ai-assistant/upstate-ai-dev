@@ -1,9 +1,12 @@
+---
+layout: none
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI Audit for your business. We analyze your operations, identify where AI saves you time and money, and deliver a prioritized roadmap with ROI estimates. Starting at $10,000.">
+    <meta name="description" content="AI Audit for your business. We analyze your operations, identify where AI saves you time and money, and deliver a prioritized roadmap with ROI estimates.">
     <meta name="keywords" content="AI audit, AI consulting, AI for business, AI readiness, AI roadmap, AI strategy, AI operations audit, AI ROI, Syracuse AI consulting, CNY AI">
     <meta name="author" content="Ben Nichols">
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -17,6 +20,7 @@
       gtag('config', 'G-KKZRVLYRV0');
     </script>
 
+    <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -32,325 +36,164 @@
 
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* AI Audit page styles */
         .audit-hero {
+            background: linear-gradient(145deg, #0A1F1A 0%, #1A453A 100%);
+            color: #f6fbff;
+            padding: 7rem 0 6rem;
             position: relative;
-            min-height: 50vh;
+            overflow: hidden;
+            min-height: 100dvh;
             display: flex;
             align-items: center;
-            overflow: hidden;
-            background: var(--forest-dark);
-            padding: calc(80px + var(--spacing-xl)) 0 var(--spacing-xl) 0;
         }
         .audit-hero::before {
-            content: '';
+            content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(
-                135deg,
-                rgba(26, 58, 46, 0.95) 0%,
-                rgba(26, 58, 46, 0.88) 30%,
-                rgba(45, 87, 69, 0.82) 60%,
-                rgba(63, 112, 84, 0.78) 100%
-            );
-            z-index: 1;
+            background-image: radial-gradient(circle at 20% 20%, rgba(0,255,191,0.18), transparent 45%),
+                              radial-gradient(circle at 80% 30%, rgba(0,191,255,0.15), transparent 35%),
+                              repeating-linear-gradient(130deg, rgba(255,255,255,0.04) 0 2px, transparent 2px 12px);
         }
-        .audit-hero .hero-shapes { z-index: 2; }
-        .audit-hero-content {
-            position: relative;
-            z-index: 3;
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-lg);
-        }
-        .audit-hero-text {
-            flex: 1;
-        }
-        .audit-hero-text .hero-badge {
-            display: inline-block;
-            background: rgba(255, 105, 0, 0.15);
-            border: 1px solid rgba(255, 105, 0, 0.3);
-            color: var(--orange);
-            padding: 0.4rem 1.2rem;
-            border-radius: 100px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: var(--spacing-sm);
-        }
-        .audit-hero-text h1 {
-            color: #fff;
-            margin-bottom: var(--spacing-sm);
-        }
-        .audit-hero-text .hero-subtitle {
-            font-size: 1.25rem;
-            color: rgba(255, 255, 255, 0.85);
-            margin-bottom: var(--spacing-md);
-            line-height: 1.7;
-        }
-        .audit-hero-illustration {
-            flex: 0 1 300px;
-            display: flex;
-            justify-content: center;
-        }
-        .audit-hero-illustration img {
-            max-width: 280px;
-            width: 100%;
-            filter: drop-shadow(0 8px 25px rgba(30, 73, 8, 0.12));
-        }
-
-        /* Content sections */
-        .audit-section {
-            padding: var(--spacing-xl) 0;
-        }
-        .audit-section-cream {
-            background: var(--cream);
-        }
-        .audit-section-white {
-            background: var(--white);
-        }
-
-        .audit-grid {
+        .audit-hero .hero-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-lg);
+            grid-template-columns: 1fr;
+            gap: 2.75rem;
             align-items: center;
-        }
-        .audit-grid-reverse .audit-grid-illustration {
-            order: -1;
-        }
-
-        .audit-grid-illustration img {
-            max-width: 320px;
-            width: 100%;
-            margin: 0 auto;
-            display: block;
-            filter: drop-shadow(0 8px 25px rgba(30, 73, 8, 0.1));
-        }
-
-        .audit-section h2 {
-            color: var(--forest-dark);
-            margin-bottom: var(--spacing-md);
-            text-align: center;
-        }
-
-        .audit-bullets {
-            list-style: none;
-            padding: 0;
-            margin: 0 0 var(--spacing-md) 0;
-        }
-        .audit-bullets li {
-            padding: 0.75rem 0;
-            padding-left: 2rem;
             position: relative;
-            font-size: 1.05rem;
-            line-height: 1.6;
-            color: var(--text-dark);
-            border-bottom: 1px solid rgba(26, 58, 46, 0.08);
+            z-index: 2;
         }
-        .audit-bullets li:last-child {
-            border-bottom: none;
-        }
-        .audit-bullets li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 1.05rem;
-            width: 10px;
-            height: 10px;
-            background: var(--orange);
-            border-radius: 50%;
-        }
-
-        /* Process steps */
-        .audit-process-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: var(--spacing-md);
-            margin-top: var(--spacing-md);
-        }
-        .audit-process-card {
-            background: var(--white);
-            padding: var(--spacing-md);
-            border-radius: var(--radius-md);
-            box-shadow: var(--shadow-sm);
-            text-align: center;
-            transition: var(--transition);
-            position: relative;
-        }
-        .audit-process-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-md);
-        }
-        .audit-process-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: var(--orange);
-            color: #fff;
-            border-radius: 50%;
-            font-weight: 700;
-            font-size: 1.1rem;
-            margin-bottom: var(--spacing-sm);
-        }
-        .audit-process-card h3 {
-            color: var(--forest-dark);
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-        .audit-process-card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 0;
-        }
-
-        /* Deliverables */
-        .audit-deliverables {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .audit-deliverables li {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            padding: 1rem 0;
-            border-bottom: 1px solid rgba(26, 58, 46, 0.08);
-        }
-        .audit-deliverables li:last-child {
-            border-bottom: none;
-        }
-        .audit-deliverable-icon {
-            font-size: 1.5rem;
-            flex-shrink: 0;
-            margin-top: 0.1rem;
-        }
-        .audit-deliverable-text h3 {
-            font-size: 1.1rem;
-            color: var(--forest-dark);
-            margin-bottom: 0.25rem;
-        }
-        .audit-deliverable-text p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 0;
-        }
-
-        /* Pricing callout */
-        .audit-pricing {
-            text-align: center;
-            padding: var(--spacing-lg) var(--spacing-md);
-            background: var(--white);
-            border-radius: var(--radius-md);
-            box-shadow: var(--shadow-md);
-            max-width: 600px;
-            margin: var(--spacing-lg) auto 0;
-        }
-        .audit-pricing .price {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--forest-dark);
-            margin-bottom: 0.25rem;
-        }
-        .audit-pricing .price-detail {
-            color: var(--text-muted);
-            font-size: 1rem;
-            display: block;
-            margin-bottom: var(--spacing-sm);
-        }
-        .audit-pricing .price-note {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-top: var(--spacing-sm);
-        }
-
-        /* Bottom CTA */
-        .audit-cta {
-            padding: var(--spacing-xl) 0;
-            background: var(--forest-dark);
-            text-align: center;
-            position: relative;
-        }
-        .audit-cta::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(90deg, rgba(255, 105, 0, 0.05) 0%, transparent 50%, rgba(255, 105, 0, 0.05) 100%);
-            pointer-events: none;
-        }
-        .audit-cta-content {
-            position: relative;
-            z-index: 1;
-            max-width: 650px;
-            margin: 0 auto;
-        }
-        .audit-cta h2 {
-            color: #fff;
-            text-align: center;
-            margin-bottom: var(--spacing-sm);
-        }
-        .audit-cta p {
-            color: rgba(255, 255, 255, 0.85);
-            font-size: 1.15rem;
-            margin-bottom: var(--spacing-md);
-        }
-        .audit-cta .btn-primary-large {
-            margin-bottom: var(--spacing-sm);
-        }
-        .audit-cta-note {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-        }
-
-        /* Hero divider */
-        .audit-hero-divider {
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            right: 0;
-            z-index: 4;
-        }
-        .audit-hero-divider svg {
-            width: 100%;
-            height: 80px;
-            display: block;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .audit-hero-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            .audit-hero-illustration {
-                order: -1;
-            }
-            .audit-hero-illustration img {
-                max-width: 200px;
-            }
-            .audit-grid {
-                grid-template-columns: 1fr;
-            }
-            .audit-grid-reverse .audit-grid-illustration {
-                order: 0;
-            }
-            .audit-grid-illustration img {
-                max-width: 240px;
-            }
-            .audit-section h2 {
-                text-align: center;
-            }
-            .audit-process-grid {
+        @media (min-width: 768px) {
+            .audit-hero .hero-grid {
                 grid-template-columns: 1fr 1fr;
             }
         }
-        @media (max-width: 480px) {
-            .audit-process-grid {
-                grid-template-columns: 1fr;
+        @media (min-width: 992px) {
+            .audit-hero .hero-grid {
+                grid-template-columns: minmax(280px, 640px) minmax(220px, 420px);
             }
+        }
+        .audit-hero .hero-panel {
+            background: rgba(4,15,24,0.65);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 24px 55px rgba(3,11,18,0.45);
+        }
+        .audit-hero .hero-panel.text-only {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            padding: 0;
+        }
+        .audit-hero .hero-badge {
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.3em;
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 1.5rem;
+        }
+        .audit-hero h1 {
+            font-size: clamp(2.5rem, 4vw, 3.75rem);
+            margin-bottom: 0.75rem;
+            line-height: 1.1;
+        }
+        .audit-hero h1 .accent {
+            color: #FF8C00;
+        }
+        .audit-hero .hero-subtitle {
+            font-size: 1.56rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 1.5rem;
+            max-width: 560px;
+        }
+        .audit-hero .hero-cta {
+            margin-top: 1.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .audit-hero .hero-illustration img {
+            width: 100%;
+            height: auto;
+            filter: saturate(0.9) drop-shadow(0 25px 35px rgba(0,0,0,0.45));
+        }
+        @media (max-width: 767px) {
+            .audit-hero .hero-grid {
+                grid-template-columns: 1fr !important;
+                text-align: center;
+            }
+            .audit-hero .hero-panel {
+                padding: 1.8rem;
+            }
+            .audit-hero .hero-illustration {
+                order: -1;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+            .audit-hero .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            .audit-hero .hero-subtitle {
+                max-width: 100%;
+            }
+            .audit-hero h1 {
+                white-space: normal !important;
+                font-size: clamp(2rem, 8vw, 2.5rem);
+            }
+        }
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+        .highlight-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 1.75rem;
+            box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--orange);
+        }
+        .journey-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+            gap: 1.5rem;
+        }
+        .journey-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 18px;
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .journey-card h3 {
+            color: #7FE3FF;
+            margin-bottom: 0;
+        }
+        .usage-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+        }
+        .usage-item {
+            display: flex;
+            gap: 1rem;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 16px;
+            padding: 1.25rem;
+            background: #fff;
+        }
+        .usage-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: var(--cream);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
         }
     </style>
 </head>
@@ -375,179 +218,280 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="audit-hero">
-        <div class="hero-background">
-            <img src="images/syracuse.webp" alt="Syracuse skyline" class="hero-bg-image">
-        </div>
-        <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
+    <!-- Hero -->
+    <section class="audit-hero" style="position: relative; z-index: 1;">
         <div class="container">
-            <div class="audit-hero-content fade-up">
-                <div class="audit-hero-text">
+            <div class="hero-grid">
+                <div class="hero-panel text-only">
                     <div class="hero-badge">1-2 Week Engagement</div>
-                    <h1><span class="text-orange">AI</span> Audit</h1>
-                    <p class="hero-subtitle">We look under the hood of your operations and hand you a prioritized roadmap. Where AI saves you money, time, or both — with ROI estimates for each opportunity.</p>
-                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary">Book a Discovery Call</a>
+                    <h1><span class="accent">AI</span> Audit</h1>
+                    <p class="hero-subtitle">Find out exactly where AI fits in your business, with ROI estimates you can act on.</p>
+                    <p style="font-size: 1.05rem; color: rgba(255,255,255,0.9); max-width: 540px; margin-bottom: 2rem;">We analyze your operations, interview your team, and deliver a prioritized roadmap showing where AI saves you money, time, or both. No jargon, no generic playbooks. Just a clear plan built for your business.</p>
+                    <div class="hero-cta">
+                        <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary">Book a Call</a>
+                        <a href="#audit-process" class="btn-ghost">See What's Included &#8594;</a>
+                    </div>
                 </div>
-                <div class="audit-hero-illustration">
-                    <img src="images/undraw/undraw_all-the-data_ijgn.svg" alt="Data analysis illustration">
+                <div class="hero-panel hero-illustration" style="padding: 1.5rem;">
+                    <img src="images/undraw/undraw_all-the-data_ijgn.svg" alt="AI Audit illustration" style="max-width: 100%; width: 90%; margin-left: auto; min-height: 280px; object-fit: contain;">
                 </div>
             </div>
         </div>
-        <div class="audit-hero-divider">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,0 L1440,80 L1440,120 L0,120 Z" fill="#f7f4ea"/>
-            </svg>
+    </section>
+
+    <!-- Pricing Highlight -->
+    <section class="services" style="padding: 3rem 0 0;">
+        <div class="container">
+            <div class="industries-grid fade-up" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                <div class="industry-card" style="background: #fff; color: var(--text-dark); border: 1px solid rgba(0,0,0,0.08);">
+                    <h3 style="color: var(--forest-dark); font-size: 1.4rem;">Full Operational Analysis</h3>
+                    <p style="color: #FF8C00; font-weight: 800; font-size: 2.4rem;">Starting at $10,000.</p>
+                    <p style="color: #555; font-size: 1.1rem;">One to two weeks. Interviews, workflow analysis, data evaluation, and a prioritized roadmap with ROI estimates.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- The Problem -->
-    <section class="audit-section audit-section-cream">
+    <section class="prototype" style="padding: 3.5rem 0; background: #f7f4ea;">
         <div class="container">
-            <div class="audit-grid fade-up">
-                <div>
-                    <h2>The Problem</h2>
-                    <p style="color: var(--text-muted); margin-bottom: var(--spacing-md);">Most businesses know AI matters but don't know where to start. The result? Expensive pilots that go nowhere, tools that nobody uses, or paralysis from too many options.</p>
-                    <ul class="audit-bullets">
-                        <li><strong>95% of AI pilots fail</strong> because they target the wrong workflows. You don't have a technology problem — you have a targeting problem.</li>
-                        <li><strong>Vendors sell solutions, not fit.</strong> Every AI vendor says their tool is perfect for you. An independent audit tells you which ones actually are.</li>
-                        <li><strong>Your team knows the bottlenecks.</strong> They just don't know which ones AI can fix. We bridge that gap.</li>
-                    </ul>
+            <h2 class="section-title fade-up" style="text-align: center;">Why Most AI Projects Fail</h2>
+            <p class="section-subtitle fade-up" style="text-align: center; margin-bottom: 2.5rem;">95% of AI pilots never make it past the pilot stage. The problem is not the technology. It is the targeting.</p>
+            <div class="highlight-grid">
+                <div class="highlight-card fade-up" style="border-left-color: var(--orange);">
+                    <h3 style="color: var(--forest-dark);">Wrong Workflow</h3>
+                    <p>Most companies pick their first AI project based on what sounds exciting, not what delivers ROI. An audit fixes that.</p>
                 </div>
-                <div class="audit-grid-illustration">
-                    <img src="images/undraw/undraw_business-decisions_7vkl.svg" alt="Business decisions illustration">
+                <div class="highlight-card fade-up" style="border-left-color: var(--orange);">
+                    <h3 style="color: var(--forest-dark);">Vendor Bias</h3>
+                    <p>Every AI vendor says their tool is perfect for you. An independent audit tells you which ones actually are.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="audit-section audit-section-white">
-        <div class="container">
-            <h2 class="section-title fade-up">How It Works</h2>
-            <p class="section-subtitle fade-up">A structured 1-2 week process that gives you clarity without disrupting your operations.</p>
-            <div class="audit-process-grid fade-up">
-                <div class="audit-process-card">
-                    <div class="audit-process-number">1</div>
-                    <h3>Discovery Call</h3>
-                    <p>We learn your business, your goals, and your pain points. 30 minutes, no charge, no commitment.</p>
+                <div class="highlight-card fade-up" style="border-left-color: var(--orange);">
+                    <h3 style="color: var(--forest-dark);">Data Gaps</h3>
+                    <p>AI is only as good as the data it connects to. We evaluate your data maturity before you spend a dollar on tools.</p>
                 </div>
-                <div class="audit-process-card">
-                    <div class="audit-process-number">2</div>
-                    <h3>Operational Deep Dive</h3>
-                    <p>We interview key team members, review workflows, and assess your data and systems. We go where the work actually happens.</p>
-                </div>
-                <div class="audit-process-card">
-                    <div class="audit-process-number">3</div>
-                    <h3>Analysis &amp; Modeling</h3>
-                    <p>We map every workflow against AI capabilities, estimate ROI for each opportunity, and rank them by impact and feasibility.</p>
-                </div>
-                <div class="audit-process-card">
-                    <div class="audit-process-number">4</div>
-                    <h3>Roadmap Delivery</h3>
-                    <p>You get a clear, jargon-free executive report with a prioritized action plan. We walk through it together so nothing gets lost.</p>
+                <div class="highlight-card fade-up" style="border-left-color: var(--orange);">
+                    <h3 style="color: var(--forest-dark);">Team Knowledge</h3>
+                    <p>Your people know the bottlenecks. They just do not know which ones AI can fix. We bridge that gap.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- What You Get -->
-    <section class="audit-section audit-section-cream">
+    <section id="audit-process" class="services" style="background: #fff; padding: 4.5rem 0;">
         <div class="container">
-            <div class="audit-grid audit-grid-reverse fade-up">
-                <div>
-                    <h2>What You Get</h2>
-                    <ul class="audit-deliverables">
-                        <li>
-                            <span class="audit-deliverable-icon">&#128203;</span>
-                            <div class="audit-deliverable-text">
-                                <h3>Prioritized AI Roadmap</h3>
-                                <p>A ranked list of AI opportunities specific to your business, organized by impact, cost, and implementation timeline.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="audit-deliverable-icon">&#128200;</span>
-                            <div class="audit-deliverable-text">
-                                <h3>ROI Estimates for Each Opportunity</h3>
-                                <p>Not guesses. Conservative projections based on your actual numbers — hours saved, costs reduced, revenue enabled.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="audit-deliverable-icon">&#128202;</span>
-                            <div class="audit-deliverable-text">
-                                <h3>Data Maturity Evaluation</h3>
-                                <p>An honest assessment of whether your data is ready for AI, and what to fix first if it isn't.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="audit-deliverable-icon">&#128209;</span>
-                            <div class="audit-deliverable-text">
-                                <h3>Executive Report</h3>
-                                <p>Clear, jargon-free documentation your leadership team can actually use to make decisions. No 80-page consultant decks.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="audit-deliverable-icon">&#128101;</span>
-                            <div class="audit-deliverable-text">
-                                <h3>Walkthrough Session</h3>
-                                <p>A live session where we present findings, answer questions, and help you decide what to do first.</p>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="prototype-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
+                <div class="prototype-text fade-up">
+                    <img src="images/undraw/undraw_cohort-analysis_nqxy.svg" alt="Analysis illustration" style="max-width: 420px; width: 100%;">
                 </div>
-                <div class="audit-grid-illustration">
-                    <img src="images/undraw/undraw_cohort-analysis_nqxy.svg" alt="Analysis illustration">
+                <div class="prototype-text fade-up">
+                    <h2 class="section-title" style="margin-bottom: 1rem;">What You Get</h2>
+                    <p class="section-subtitle" style="margin-bottom: 2rem;">A complete picture of where AI fits in your business, delivered in plain language your leadership team can act on.</p>
+                    <div class="usage-list">
+                        <div class="usage-item">
+                            <div class="usage-icon">1</div>
+                            <div>
+                                <h3 style="margin: 0;">Prioritized AI Roadmap</h3>
+                                <p style="margin: 0; color: #555;">Ranked opportunities specific to your business, organized by impact, cost, and timeline.</p>
+                            </div>
+                        </div>
+                        <div class="usage-item">
+                            <div class="usage-icon">2</div>
+                            <div>
+                                <h3 style="margin: 0;">ROI Estimates</h3>
+                                <p style="margin: 0; color: #555;">Conservative projections based on your actual numbers. Hours saved, costs reduced, revenue enabled.</p>
+                            </div>
+                        </div>
+                        <div class="usage-item">
+                            <div class="usage-icon">3</div>
+                            <div>
+                                <h3 style="margin: 0;">Data Maturity Evaluation</h3>
+                                <p style="margin: 0; color: #555;">An honest assessment of whether your data is ready for AI, and what to fix first if it is not.</p>
+                            </div>
+                        </div>
+                        <div class="usage-item">
+                            <div class="usage-icon">4</div>
+                            <div>
+                                <h3 style="margin: 0;">Executive Report</h3>
+                                <p style="margin: 0; color: #555;">Clear, jargon-free documentation. No 80-page consultant decks. Just what you need to decide.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section style="background: var(--forest-dark); padding: 4.5rem 0;">
+        <div class="container">
+            <h2 class="section-title fade-up" style="color: #fff;">How the Audit Works</h2>
+            <p class="section-subtitle fade-up" style="color: rgba(255,255,255,0.8); max-width: 720px;">A structured process that gives you clarity without disrupting your operations.</p>
+            <div class="journey-grid">
+                <div class="journey-card fade-up">
+                    <div style="font-size: 1.8rem; color: #FF8C00; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Step 1</div>
+                    <h3 style="color: #fff; font-size: 1.4rem;">Kickoff Call</h3>
+                    <p>We learn your business, your goals, and your pain points. 30 minutes, no charge, no commitment.</p>
+                    <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Deliverables: Scope agreement, team interview schedule.</p>
+                </div>
+                <div class="journey-card fade-up">
+                    <div style="font-size: 1.8rem; color: #FF8C00; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Step 2</div>
+                    <h3 style="color: #fff; font-size: 1.4rem;">Operational Deep Dive</h3>
+                    <p>We interview key team members, review workflows, and assess your data and systems. We go where the work actually happens.</p>
+                    <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Deliverables: Workflow maps, data inventory, opportunity shortlist.</p>
+                </div>
+                <div class="journey-card fade-up">
+                    <div style="font-size: 1.8rem; color: #FF8C00; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Step 3</div>
+                    <h3 style="color: #fff; font-size: 1.4rem;">Analysis and Roadmap</h3>
+                    <p>We map every workflow against AI capabilities, estimate ROI for each opportunity, and rank them by impact and feasibility.</p>
+                    <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Deliverables: Prioritized roadmap, ROI models, executive report.</p>
+                </div>
+                <div class="journey-card fade-up">
+                    <div style="font-size: 1.8rem; color: #FF8C00; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Step 4</div>
+                    <h3 style="color: #fff; font-size: 1.4rem;">Walkthrough Session</h3>
+                    <p>We present findings, answer questions, and help you decide what to do first. Your team walks away with a clear next step.</p>
+                    <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Deliverables: Live Q&A, implementation recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where the Hours Go -->
+    <section class="services" style="padding: 4rem 0;">
+        <div class="container">
+            <h2 class="section-title fade-up">What We Analyze</h2>
+            <p class="section-subtitle fade-up" style="max-width: 760px;">We look at every layer of your operations to find the highest-leverage AI opportunities.</p>
+            <div class="prototype-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; align-items: stretch;">
+                <div class="proto-card fade-up" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 18px; padding: 1.75rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <span style="font-size: 2rem;">&#128269;</span>
+                        <h3 style="margin: 0; color: var(--forest-dark);">Workflow Analysis</h3>
+                    </div>
+                    <p style="margin: 0; color: #555;">Map every repetitive, rule-based process and score it for AI automation potential.</p>
+                </div>
+                <div class="proto-card fade-up" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 18px; padding: 1.75rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <span style="font-size: 2rem;">&#128202;</span>
+                        <h3 style="margin: 0; color: var(--forest-dark);">Data Readiness</h3>
+                    </div>
+                    <p style="margin: 0; color: #555;">Evaluate your data quality, accessibility, and structure. AI needs clean inputs to deliver clean outputs.</p>
+                </div>
+                <div class="proto-card fade-up" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 18px; padding: 1.75rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <span style="font-size: 2rem;">&#128176;</span>
+                        <h3 style="margin: 0; color: var(--forest-dark);">ROI Modeling</h3>
+                    </div>
+                    <p style="margin: 0; color: #555;">Build conservative financial projections for each opportunity based on your actual costs and volumes.</p>
+                </div>
+                <div class="proto-card fade-up" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 18px; padding: 1.75rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <span style="font-size: 2rem;">&#128736;</span>
+                        <h3 style="margin: 0; color: var(--forest-dark);">Tool Landscape</h3>
+                    </div>
+                    <p style="margin: 0; color: #555;">Evaluate which AI tools and vendors are the right fit, so you do not waste money on the wrong stack.</p>
+                </div>
+                <div class="proto-card fade-up" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 18px; padding: 1.75rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <span style="font-size: 2rem;">&#128101;</span>
+                        <h3 style="margin: 0; color: var(--forest-dark);">Team Interviews</h3>
+                    </div>
+                    <p style="margin: 0; color: #555;">Talk to the people doing the work. They know where time gets wasted. We connect that to what AI can solve.</p>
+                </div>
+                <div class="proto-card fade-up" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 18px; padding: 1.75rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <span style="font-size: 2rem;">&#128200;</span>
+                        <h3 style="margin: 0; color: var(--forest-dark);">Priority Ranking</h3>
+                    </div>
+                    <p style="margin: 0; color: #555;">Score every opportunity by impact, feasibility, and cost so you know exactly where to start.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Who It's For -->
-    <section class="audit-section audit-section-white">
-        <div class="container fade-up">
-            <h2 class="section-title">Who This Is For</h2>
-            <p class="section-subtitle">Leaders who want a clear answer to "where should we use AI?" before spending a dollar on tools.</p>
-            <ul class="audit-bullets" style="max-width: 700px; margin: var(--spacing-md) auto 0;">
-                <li><strong>Companies with 10-500 employees</strong> that have real operations but not a dedicated data science team.</li>
-                <li><strong>Leadership teams evaluating AI</strong> who want independent guidance, not a vendor pitch.</li>
-                <li><strong>Businesses that tried AI and it didn't stick</strong> — the problem was probably targeting, not technology.</li>
-                <li><strong>Manufacturers, healthcare, and professional services firms</strong> in Central New York and beyond.</li>
-            </ul>
+    <section class="industries" style="padding: 4.5rem 0; background: var(--forest-dark);">
+        <div class="container">
+            <h2 class="section-title fade-up" style="color: #fff;">Who This Is For</h2>
+            <p class="section-subtitle fade-up" style="color: rgba(255,255,255,0.8); max-width: 740px;">Leaders who want a clear answer to "where should we use AI?" before spending a dollar on tools.</p>
+            <div class="industries-grid fade-up" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                <div class="industry-card" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+                    <div style="height: 140px; display: flex; align-items: flex-end; justify-content: center; margin-bottom: 1rem;">
+                        <img src="images/undraw/undraw_factory_4d61.svg" alt="Manufacturing" style="max-width:120px;">
+                    </div>
+                    <h3>Manufacturers</h3>
+                    <p>Quality control, predictive maintenance, production scheduling, supply chain optimization.</p>
+                </div>
+                <div class="industry-card" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+                    <div style="height: 140px; display: flex; align-items: flex-end; justify-content: center; margin-bottom: 1rem;">
+                        <img src="images/undraw/undraw_business-plan_wv9q.svg" alt="Professional services" style="max-width:120px;">
+                    </div>
+                    <h3>Professional Services</h3>
+                    <p>Document processing, client communications, proposal generation, data extraction.</p>
+                </div>
+                <div class="industry-card" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+                    <div style="height: 140px; display: flex; align-items: flex-end; justify-content: center; margin-bottom: 1rem;">
+                        <img src="images/undraw/undraw_business-shop_b4su.svg" alt="Growing business" style="max-width:120px;">
+                    </div>
+                    <h3>Growing Businesses</h3>
+                    <p>10 to 500 employees, ready to invest, but need a clear plan before committing to AI tools.</p>
+                </div>
+                <div class="industry-card" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+                    <div style="height: 140px; display: flex; align-items: flex-end; justify-content: center; margin-bottom: 1rem;">
+                        <img src="images/undraw/team.svg" alt="Leadership teams" style="max-width:110px;">
+                    </div>
+                    <h3>Leadership Teams</h3>
+                    <p>Execs who need independent guidance, not a vendor pitch. An honest assessment of what AI can do for you.</p>
+                </div>
+            </div>
 
             <div style="text-align: center; margin-top: var(--spacing-lg);">
-                <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: var(--spacing-sm);">Not sure if you're ready for a full audit?</p>
+                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.8); margin-bottom: var(--spacing-sm);">Not sure if you are ready for a full audit?</p>
                 <a href="ai-readiness-assessment" class="btn-primary">Take the Free AI Readiness Assessment</a>
-                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.75rem;">12 questions. 2 minutes. See where you stand.</p>
+                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-top: 0.75rem;">12 questions. 2 minutes. See where you stand.</p>
             </div>
         </div>
     </section>
 
-    <!-- Pricing -->
-    <section class="audit-section audit-section-cream">
-        <div class="container fade-up">
-            <div class="audit-pricing">
-                <div class="price-detail">Starting at</div>
-                <div class="price">$10,000</div>
-                <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: var(--spacing-md);">Full operational analysis, data evaluation, prioritized roadmap, and executive report. 1-2 weeks, minimal disruption to your team.</p>
-                <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary">Book a Discovery Call</a>
-                <p class="price-note">The discovery call is free. We'll scope the engagement together and make sure it's the right fit before you commit.</p>
-            </div>
-            <p style="text-align: center; margin-top: var(--spacing-md); color: var(--text-muted); font-size: 0.95rem;">Companies that adopt AI early see 20-30% cost reductions in operations. <em>— McKinsey</em></p>
-        </div>
-    </section>
-
-    <!-- Bottom CTA -->
-    <section class="audit-cta">
+    <!-- Why Upstate AI -->
+    <section class="about" style="padding: 4.5rem 0; background: #fff;">
         <div class="container">
-            <div class="audit-cta-content fade-up">
-                <h2>Ready to Find Out Where AI Fits in <span class="text-orange">Your Business?</span></h2>
-                <p>Book a free discovery call. We'll talk through your operations and tell you honestly whether an audit makes sense for you.</p>
-                <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary-large">Book a Discovery Call</a>
-                <p class="audit-cta-note">Free &middot; 30 minutes &middot; No obligation</p>
+            <h2 class="section-title fade-up">Your AI Partner</h2>
+            <p class="section-subtitle fade-up" style="max-width: 760px;">Bringing real-world AI expertise and a commitment to empowering businesses on their terms.</p>
+            <div class="credentials" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+                <div class="credential-item fade-up" style="background: var(--cream);">
+                    <div class="credential-icon">&#127891;</div>
+                    <div>
+                        <h3>Academic &amp; Practical Expertise</h3>
+                        <p>Led by an AI professor who also builds and delivers AI solutions in the real world.</p>
+                    </div>
+                </div>
+                <div class="credential-item fade-up" style="background: var(--cream);">
+                    <div class="credential-icon">&#128205;</div>
+                    <div>
+                        <h3>Embedded in Your Community</h3>
+                        <p>Audits designed for the unique needs and opportunities of the communities you serve.</p>
+                    </div>
+                </div>
+                <div class="credential-item fade-up" style="background: var(--cream);">
+                    <div class="credential-icon">&#129309;</div>
+                    <div>
+                        <h3>Actionable, Not Purely Theoretical</h3>
+                        <p>Leave with clear steps and confidence to start implementing AI immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" style="padding: 4.5rem 0;">
+        <div class="container">
+            <div class="cta-content fade-up" style="max-width: 740px;">
+                <h2 class="cta-title">Ready to Find Out Where AI Fits in Your Business?</h2>
+                <p class="cta-description">Book a call. We will talk through your operations and tell you honestly whether an audit makes sense for you. 30 minutes, no obligation.</p>
+                <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary-large">Book a Call</a>
+                <p class="cta-note">We'll follow up within one business day to confirm details.</p>
             </div>
         </div>
     </section>
@@ -566,7 +510,6 @@
                     <a href="blog">Blog</a>
                     <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
                     <a href="privacy">Privacy Policy</a>
-                    <a href="#" onclick="window.CookieConsent && window.CookieConsent.show(); return false;">Cookie Settings</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -575,11 +518,7 @@
         </div>
     </footer>
 
-    <!-- Cookie Consent -->
-    <link rel="stylesheet" href="css/cookie-consent.css">
-    <script src="js/cookie-consent.js"></script>
-
-    <!-- Smooth Scrolling & Animations -->
+    <!-- Scripts -->
     <script>
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -592,13 +531,11 @@
             });
         });
 
-        // Navbar scroll effect
         const navbar = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('scrolled', window.scrollY > 50);
         });
 
-        // Mobile menu toggle
         const mobileToggle = document.querySelector('.mobile-toggle');
         const navMenu = document.querySelector('.nav-menu');
         if (mobileToggle) {
@@ -608,7 +545,6 @@
             });
         }
 
-        // Scroll-triggered fade-in animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -616,7 +552,7 @@
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        }, { threshold: 0.15 });
 
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
     </script>
