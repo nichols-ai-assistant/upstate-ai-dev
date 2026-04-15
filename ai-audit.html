@@ -150,9 +150,21 @@ layout: none
         .highlight-card {
             background: #fff;
             border-radius: 16px;
-            padding: 1.75rem;
+            padding: 2rem 1.75rem 1.75rem;
             box-shadow: 0 18px 45px rgba(0,0,0,0.08);
-            border-left: 4px solid var(--orange);
+            position: relative;
+            overflow: hidden;
+        }
+        .highlight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 3px;
+            background: var(--orange);
+            border-radius: 0 0 3px 3px;
         }
         .journey-grid {
             display: grid;
@@ -258,19 +270,19 @@ layout: none
             <h2 class="section-title fade-up" style="text-align: center;">Why Most AI Projects Fail</h2>
             <p class="section-subtitle fade-up" style="text-align: center; margin-bottom: 2.5rem;">95% of AI pilots never make it past the pilot stage. The problem is not the technology. It is the targeting.</p>
             <div class="highlight-grid">
-                <div class="highlight-card fade-up" style="border-left-color: var(--orange);">
+                <div class="highlight-card fade-up">
                     <h3 style="color: var(--forest-dark);">Wrong Workflow</h3>
                     <p>Most companies pick their first AI project based on what sounds exciting, not what delivers ROI. An audit fixes that.</p>
                 </div>
-                <div class="highlight-card fade-up" style="border-left-color: var(--orange);">
+                <div class="highlight-card fade-up">
                     <h3 style="color: var(--forest-dark);">Vendor Bias</h3>
                     <p>Every AI vendor says their tool is perfect for you. An independent audit tells you which ones actually are.</p>
                 </div>
-                <div class="highlight-card fade-up" style="border-left-color: var(--orange);">
+                <div class="highlight-card fade-up">
                     <h3 style="color: var(--forest-dark);">Data Gaps</h3>
                     <p>AI is only as good as the data it connects to. We evaluate your data maturity before you spend a dollar on tools.</p>
                 </div>
-                <div class="highlight-card fade-up" style="border-left-color: var(--orange);">
+                <div class="highlight-card fade-up">
                     <h3 style="color: var(--forest-dark);">Team Knowledge</h3>
                     <p>Your people know the bottlenecks. They just do not know which ones AI can fix. We bridge that gap.</p>
                 </div>
