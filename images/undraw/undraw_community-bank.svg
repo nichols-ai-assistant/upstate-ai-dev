@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="360" viewBox="0 0 400 360" role="img">
+  <!-- Base/Ground -->
+  <rect x="40" y="310" width="320" height="12" rx="4" fill="#e6e6e6"/>
+  <rect x="60" y="298" width="280" height="16" rx="3" fill="#3f3d56"/>
+
+  <!-- Building body -->
+  <rect x="80" y="140" width="240" height="158" rx="2" fill="#f2f2f2"/>
+
+  <!-- Door -->
+  <rect x="170" y="220" width="60" height="78" rx="4" fill="#3f3d56"/>
+  <rect x="175" y="225" width="50" height="73" rx="3" fill="#FF6B07"/>
+  <circle cx="215" cy="262" r="3" fill="#3f3d56"/>
+
+  <!-- Windows row 1 -->
+  <rect x="100" y="170" width="40" height="50" rx="3" fill="#3f3d56"/>
+  <rect x="104" y="174" width="32" height="42" rx="2" fill="#d6dce6"/>
+  <line x1="120" y1="174" x2="120" y2="216" stroke="#3f3d56" stroke-width="1.5"/>
+  <line x1="104" y1="195" x2="136" y2="195" stroke="#3f3d56" stroke-width="1.5"/>
+
+  <rect x="260" y="170" width="40" height="50" rx="3" fill="#3f3d56"/>
+  <rect x="264" y="174" width="32" height="42" rx="2" fill="#d6dce6"/>
+  <line x1="280" y1="174" x2="280" y2="216" stroke="#3f3d56" stroke-width="1.5"/>
+  <line x1="264" y1="195" x2="296" y2="195" stroke="#3f3d56" stroke-width="1.5"/>
+
+  <!-- Windows row 2 -->
+  <rect x="100" y="240" width="40" height="40" rx="3" fill="#3f3d56"/>
+  <rect x="104" y="244" width="32" height="32" rx="2" fill="#d6dce6"/>
+  <line x1="120" y1="244" x2="120" y2="276" stroke="#3f3d56" stroke-width="1.5"/>
+  <line x1="104" y1="260" x2="136" y2="260" stroke="#3f3d56" stroke-width="1.5"/>
+
+  <rect x="260" y="240" width="40" height="40" rx="3" fill="#3f3d56"/>
+  <rect x="264" y="244" width="32" height="32" rx="2" fill="#d6dce6"/>
+  <line x1="280" y1="244" x2="280" y2="276" stroke="#3f3d56" stroke-width="1.5"/>
+  <line x1="264" y1="260" x2="296" y2="260" stroke="#3f3d56" stroke-width="1.5"/>
+
+  <!-- Columns -->
+  <rect x="92" y="140" width="14" height="158" rx="3" fill="#e6e6e6" stroke="#3f3d56" stroke-width="1"/>
+  <rect x="148" y="140" width="14" height="158" rx="3" fill="#e6e6e6" stroke="#3f3d56" stroke-width="1"/>
+  <rect x="238" y="140" width="14" height="158" rx="3" fill="#e6e6e6" stroke="#3f3d56" stroke-width="1"/>
+  <rect x="294" y="140" width="14" height="158" rx="3" fill="#e6e6e6" stroke="#3f3d56" stroke-width="1"/>
+
+  <!-- Column capitals -->
+  <rect x="88" y="136" width="22" height="8" rx="2" fill="#3f3d56"/>
+  <rect x="144" y="136" width="22" height="8" rx="2" fill="#3f3d56"/>
+  <rect x="234" y="136" width="22" height="8" rx="2" fill="#3f3d56"/>
+  <rect x="290" y="136" width="22" height="8" rx="2" fill="#3f3d56"/>
+
+  <!-- Column bases -->
+  <rect x="88" y="294" width="22" height="6" rx="2" fill="#3f3d56"/>
+  <rect x="144" y="294" width="22" height="6" rx="2" fill="#3f3d56"/>
+  <rect x="234" y="294" width="22" height="6" rx="2" fill="#3f3d56"/>
+  <rect x="290" y="294" width="22" height="6" rx="2" fill="#3f3d56"/>
+
+  <!-- Entablature -->
+  <rect x="70" y="126" width="260" height="14" rx="2" fill="#3f3d56"/>
+
+  <!-- Pediment (triangle) -->
+  <polygon points="200,50 70,126 330,126" fill="#FF6B07"/>
+  <polygon points="200,62 85,122 315,122" fill="#f2f2f2"/>
+
+  <!-- Bank text -->
+  <text x="200" y="108" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#3f3d56">BANK</text>
+
+  <!-- Pediment accent circle -->
+  <circle cx="200" cy="82" r="8" fill="none" stroke="#FF6B07" stroke-width="2.5"/>
+  <circle cx="200" cy="82" r="3" fill="#FF6B07"/>
+
+  <!-- Steps -->
+  <rect x="150" y="298" width="100" height="5" rx="1" fill="#e6e6e6"/>
+  <rect x="145" y="303" width="110" height="5" rx="1" fill="#d6dce6"/>
+  <rect x="140" y="308" width="120" height="5" rx="1" fill="#ccc"/>
+
+  <!-- Flag on top -->
+  <line x1="200" y1="30" x2="200" y2="50" stroke="#3f3d56" stroke-width="2"/>
+  <rect x="200" y="30" width="22" height="14" rx="2" fill="#FF6B07"/>
+</svg>
