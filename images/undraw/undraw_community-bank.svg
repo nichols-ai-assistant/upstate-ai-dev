@@ -58,9 +58,6 @@
   <polygon points="200,30 70,106 330,106" fill="#FF6B07"/>
   <polygon points="200,42 85,102 315,102" fill="#f2f2f2"/>
 
-  <!-- Bank text -->
-  <text x="200" y="88" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#3f3d56">BANK</text>
-
   <!-- Steps -->
   <rect x="150" y="278" width="100" height="5" rx="1" fill="#e6e6e6"/>
   <rect x="145" y="283" width="110" height="5" rx="1" fill="#d6dce6"/>
