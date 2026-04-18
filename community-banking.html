@@ -80,10 +80,26 @@
             z-index: 1;
         }
         .cb-hero .hero-shapes { z-index: 2; }
+        .cb-hero .container {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-lg);
+        }
         .cb-hero-content {
             position: relative;
             z-index: 3;
-            max-width: 800px;
+            flex: 1;
+            max-width: 640px;
+        }
+        .cb-hero-illustration {
+            position: relative;
+            z-index: 3;
+            flex-shrink: 0;
+        }
+        .cb-hero-illustration img {
+            width: 280px;
+            height: auto;
+            filter: drop-shadow(0 12px 40px rgba(0, 0, 0, 0.3));
         }
         .cb-hero-content h1 {
             color: #fff;
@@ -551,11 +567,17 @@
                 min-height: auto;
                 padding: calc(70px + var(--spacing-lg)) 0 calc(var(--spacing-lg) + 60px) 0;
             }
+            .cb-hero .container {
+                flex-direction: column;
+            }
             .cb-hero-content {
                 text-align: center;
             }
             .cb-hero .hero-ctas {
                 justify-content: center;
+            }
+            .cb-hero-illustration img {
+                width: 180px;
             }
             .cb-challenge-grid {
                 grid-template-columns: 1fr;
@@ -628,6 +650,9 @@
                     <a href="#contact" class="btn-primary">Schedule a Community Banking AI Assessment</a>
                     <a href="#impact" class="btn-ghost">See AI Impact Areas</a>
                 </div>
+            </div>
+            <div class="cb-hero-illustration fade-up">
+                <img src="images/undraw/undraw_community-bank.svg" alt="Community Bank">
             </div>
         </div>
         <div class="cb-hero-divider">
