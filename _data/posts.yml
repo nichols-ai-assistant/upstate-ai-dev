@@ -1,0 +1,98 @@
+# Blog post registry — sorted by date descending.
+# Add new posts to the top. Homepage auto-displays the first 3.
+
+- title: "AI Agents Can Now Swipe Your Card. Community Banks Need to Pay Attention."
+  url: "blog/agentic-payments-community-banks-april-2026"
+  category: "Industry Analysis"
+  date: "April 18, 2026"
+  sort_date: 2026-04-18
+  excerpt: "Mastercard just gave AI agents the ability to use your credit card. Here's what that means for community banks, and why sitting this out isn't an option."
+  read_time: "7 min read"
+
+- title: "The Immune System Internet: A Thought Experiment on Living Cybersecurity"
+  url: "blog/immune-system-internet-april-2026"
+  category: "AI Security"
+  date: "April 15, 2026"
+  sort_date: 2026-04-15
+  excerpt: "What happens when digital defense stops looking like a firewall and starts looking like biology? A thought experiment prompted by Anthropic's Claude Mythos and OpenAI's GPT-5.4-Cyber."
+  read_time: "12 min read"
+
+- title: "AI Just Got Cheaper, Smarter, and Closer to Your Business"
+  url: "blog/ai-weekly-april-13-2026"
+  category: "Weekly Roundup"
+  date: "April 13, 2026"
+  sort_date: 2026-04-13
+  excerpt: "Claude Mythos 5, Gemma 4, Gemini Flash-Lite, GPT-5.4 at 83% on GDPVal, MCP at 97M installs, and NVIDIA robotics breakthroughs. Here's what actually matters for your business."
+  read_time: "8 min read"
+
+- title: "Anthropic's Project Glasswing: AI's New Role in Cybersecurity"
+  url: "blog/anthropic-glasswing-april-2026"
+  category: "AI Security"
+  date: "April 8, 2026"
+  sort_date: 2026-04-08
+  excerpt: "A major AI safety initiative just launched, uniting tech giants to use AI for defensive cybersecurity. What this means for your business as AI makes hacking easier—and defense smarter."
+  read_time: "8 min read"
+
+- title: "The AI Inflection Point: What TD Bank's 2026 Report Means for Your Business"
+  url: "blog/ai-inflection-point-td-bank-2026"
+  category: "Strategy"
+  date: "April 3, 2026"
+  sort_date: 2026-04-03
+  excerpt: "TD Bank's 2026 AI Insights report shows a 15-point gap between ambition and adoption. Here's how Central NY companies can close it."
+  read_time: "6 min read"
+
+- title: "St. Bonaventure Just Made the Smartest Move in Higher Ed"
+  url: "blog/ai-literacy-st-bonaventure-april-2026"
+  category: "Education"
+  date: "April 1, 2026"
+  sort_date: 2026-04-01
+  excerpt: "St. Bonaventure University made AI literacy mandatory for every incoming freshman. Here's why this is a blueprint for higher education, and what CNY businesses need to learn from it."
+  read_time: "7 min read"
+
+- title: "AI Weekly Roundup: The Mystery Model, The Leaked Titan, and What Businesses Need to Know"
+  url: "blog/ai-weekly-march-31-2026"
+  category: "AI News"
+  date: "March 31, 2026"
+  sort_date: 2026-03-31
+  excerpt: "This week in AI: Hunter Alpha's mysterious debut, Anthropic's Mythos leak, the March model release wave, and what agentic AI means for CNY businesses."
+  read_time: "8 min read"
+
+- title: "Why 95% of AI Pilots Fail (And How to Unlock Real ROI in Weeks)"
+  url: "blog/ai-pilots-fail-march-2026"
+  category: "AI Strategy"
+  date: "March 30, 2026"
+  sort_date: 2026-03-30
+  excerpt: "MIT found 95% of AI pilots fail. McKinsey found two-thirds stuck in pilot mode. The problem isn't the tools, it's the task-level mismatch. Here's the 4-step framework the successful 5% use."
+  read_time: "8 min read"
+
+- title: "Google Researchers Explain Why Your AI Pilot Failed"
+  url: "blog/google-ai-pilot-research-march-2026"
+  category: "AI Strategy"
+  date: "March 30, 2026"
+  sort_date: 2026-03-30
+  excerpt: "Google Research just published academic validation for workflow redesign. Learn why 'human-AI centaurs' and institutional alignment explain the 95% failure rate."
+  read_time: "7 min read"
+
+- title: "The Future of AI is Hosted (By You)"
+  url: "blog/future-of-ai-is-hosted"
+  category: "Technology"
+  date: "March 25, 2026"
+  sort_date: 2026-03-25
+  excerpt: "The paradigm is shifting. As LLMs get smaller and hardware gets cheaper, the real question isn't whether to use AI, but where to run it. Here's what that means for your business."
+  read_time: "7 min read"
+
+- title: "The AI Week: March 17-24, 2026"
+  url: "blog/agentic-ai-march-2026"
+  category: "Weekly Roundup"
+  date: "March 24, 2026"
+  sort_date: 2026-03-24
+  excerpt: "NVIDIA bets $1 trillion on AI factories, Claude takes the wheel on macOS, GPT-5.4 ships with a million-token context window, and the agent infrastructure stack gets real. Six stories that matter for your business."
+  read_time: "8 min read"
+
+- title: "Before You Deploy an AI Agent, Read This"
+  url: "blog/ai-governance-ready-march-2026"
+  category: "AI Governance"
+  date: "March 24, 2026"
+  sort_date: 2026-03-24
+  excerpt: "AI agents are gaining real autonomy. Before your business deploys one, you need a governance framework. Here's what that actually looks like in practice, from HIPAA to manufacturing safety."
+  read_time: "7 min read"
