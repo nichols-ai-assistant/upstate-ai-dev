@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upstate AI helps community banks implement artificial intelligence that fits their systems, their staff, and their regulators. Core modernization, compliance automation, lending AI, and digital transformation without the disruption.">
+    <meta name="keywords" content="community banking AI, AI for community banks, community bank digital transformation, core banking modernization AI, community bank compliance automation, AI lending community banks">
+    <meta name="author" content="Ben Nichols">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KKZRVLYRV0');
+    </script>
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://script.google.com https://script.googleusercontent.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://script.google.com https://script.googleusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://up-state-ai.com/community-banking">
+    <meta property="og:title" content="AI for Community Banking | Upstate AI">
+    <meta property="og:description" content="Practical AI implementation for community banks. Modernize operations, enhance customer experience, and compete with large banks while keeping your community advantage.">
+    <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI Implementation for Community Banking",
+        "provider": {
+            "@type": "Organization",
+            "name": "Upstate AI",
+            "url": "https://up-state-ai.com"
+        },
+        "description": "Practical AI implementation for community banks. Core modernization, compliance automation, lending AI, and digital transformation.",
+        "areaServed": "US",
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "Community Bank Executives"
+        }
+    }
+    </script>
+
+    <title>AI for Community Banking | Upstate AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ==========================================
+           Community Banking Landing Page Styles
+           ========================================== */
+
+        /* Hero */
+        .cb-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: var(--forest-dark);
+            padding: calc(80px + var(--spacing-xl)) 0 calc(var(--spacing-xl) + 60px) 0;
+        }
+        .cb-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(26, 58, 46, 0.95) 0%,
+                rgba(26, 58, 46, 0.88) 30%,
+                rgba(45, 87, 69, 0.82) 60%,
+                rgba(63, 112, 84, 0.78) 100%
+            );
+            z-index: 1;
+        }
+        .cb-hero .hero-shapes { z-index: 2; }
+        .cb-hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 800px;
+        }
+        .cb-hero-content h1 {
+            color: #fff;
+            margin-bottom: var(--spacing-md);
+            font-size: clamp(2.4rem, 5vw, 3.8rem);
+            line-height: 1.15;
+        }
+        .cb-hero-content .hero-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.88);
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.7;
+            max-width: 680px;
+        }
+        .cb-hero-content .hero-description {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.72);
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.7;
+            max-width: 640px;
+        }
+        .cb-hero-divider {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            z-index: 4;
+            line-height: 0;
+        }
+        .cb-hero-divider svg {
+            width: 100%;
+            height: 100px;
+            display: block;
+        }
+
+        /* Sections */
+        .cb-section {
+            padding: var(--spacing-xl) 0;
+        }
+        .cb-section-cream {
+            background: var(--cream);
+        }
+        .cb-section-white {
+            background: var(--warm-white);
+        }
+        .cb-section-dark {
+            background: var(--forest-dark);
+            color: #fff;
+        }
+        .cb-section-dark .section-title {
+            color: #fff;
+        }
+        .cb-section-dark .section-subtitle {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        /* Challenge cards */
+        .cb-challenge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+        .cb-challenge-card {
+            padding: var(--spacing-md) var(--spacing-md) var(--spacing-sm);
+            border-radius: var(--radius-md);
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border-left: 4px solid var(--orange);
+        }
+        .cb-challenge-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        .cb-challenge-card h3 {
+            color: var(--forest-dark);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .cb-challenge-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* AI Impact grid */
+        .cb-impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+        .cb-impact-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-md);
+            transition: var(--transition);
+        }
+        .cb-impact-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--orange);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+        .cb-impact-icon {
+            font-size: 2.25rem;
+            margin-bottom: var(--spacing-sm);
+            display: block;
+        }
+        .cb-impact-card h3 {
+            color: var(--orange-light);
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+        .cb-impact-card .cb-impact-tagline {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+            font-style: italic;
+            margin-bottom: var(--spacing-sm);
+        }
+        .cb-impact-card > p {
+            color: rgba(255, 255, 255, 0.78);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: var(--spacing-sm);
+        }
+        .cb-impact-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .cb-impact-features li {
+            padding: 0.35rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.5;
+        }
+        .cb-impact-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--orange);
+            font-weight: 800;
+            font-size: 0.85rem;
+        }
+
+        /* Why community banks section */
+        .cb-advantage-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            align-items: start;
+        }
+        .cb-advantage-text h2 {
+            color: var(--forest-dark);
+            margin-bottom: var(--spacing-md);
+            text-align: left;
+        }
+        .cb-advantage-text > p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: var(--spacing-md);
+        }
+        .cb-advantage-items {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+        .cb-advantage-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+        }
+        .cb-advantage-icon {
+            font-size: 1.75rem;
+            flex-shrink: 0;
+            margin-top: 0.15rem;
+        }
+        .cb-advantage-item h3 {
+            color: var(--forest-dark);
+            font-size: 1.05rem;
+            margin-bottom: 0.25rem;
+        }
+        .cb-advantage-item p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+        .cb-advantage-illustration {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cb-advantage-illustration img {
+            max-width: 360px;
+            width: 100%;
+            filter: drop-shadow(0 8px 25px rgba(30, 73, 8, 0.1));
+        }
+
+        /* Competitive edge */
+        .cb-edge-intro {
+            max-width: 720px;
+            margin: 0 auto var(--spacing-lg);
+            text-align: center;
+        }
+        .cb-edge-intro p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        .cb-edge-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-md);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .cb-edge-col {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            box-shadow: var(--shadow-sm);
+        }
+        .cb-edge-col h3 {
+            color: var(--forest-dark);
+            font-size: 1.1rem;
+            margin-bottom: var(--spacing-sm);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .cb-edge-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .cb-edge-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            border-bottom: 1px solid rgba(26, 58, 46, 0.06);
+        }
+        .cb-edge-list li:last-child {
+            border-bottom: none;
+        }
+        .cb-edge-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--orange);
+            font-weight: 800;
+            font-size: 0.85rem;
+        }
+        .cb-edge-result {
+            max-width: 720px;
+            margin: var(--spacing-md) auto 0;
+            text-align: center;
+            padding: var(--spacing-md);
+            background: var(--forest-dark);
+            border-radius: var(--radius-md);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        /* Contact / CTA section */
+        .cb-cta-section {
+            padding: var(--spacing-xl) 0;
+            background: var(--forest-dark);
+            position: relative;
+        }
+        .cb-cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(255, 105, 0, 0.05) 0%, transparent 50%, rgba(255, 105, 0, 0.05) 100%);
+            pointer-events: none;
+        }
+        .cb-cta-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            align-items: start;
+            position: relative;
+            z-index: 1;
+        }
+        .cb-cta-text h2 {
+            color: #fff;
+            text-align: left;
+            margin-bottom: var(--spacing-sm);
+        }
+        .cb-cta-text > p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: var(--spacing-md);
+        }
+        .cb-cta-bullets {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .cb-cta-bullets li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.95rem;
+        }
+        .cb-cta-bullets li::before {
+            content: '✓';
+            color: var(--orange);
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+        .cb-cta-supporting {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-top: var(--spacing-md);
+        }
+
+        /* Form */
+        .cb-form {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-md);
+        }
+        .cb-form .field-group {
+            margin-bottom: var(--spacing-sm);
+        }
+        .cb-form label {
+            display: block;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+        .cb-form .required {
+            color: var(--orange);
+        }
+        .cb-form input,
+        .cb-form textarea {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-sm);
+            color: #fff;
+            font-size: 0.95rem;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+        .cb-form input::placeholder,
+        .cb-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.35);
+        }
+        .cb-form input:focus,
+        .cb-form textarea:focus {
+            outline: none;
+            border-color: var(--orange);
+            box-shadow: 0 0 0 3px rgba(255, 105, 0, 0.15);
+        }
+        .cb-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .cb-form .btn-primary {
+            width: 100%;
+            margin-top: var(--spacing-xs);
+        }
+        .cb-form-note {
+            color: rgba(255, 255, 255, 0.45);
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: var(--spacing-sm);
+            margin-bottom: 0;
+        }
+        .cb-form-error {
+            color: #ff6b6b;
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+        .cb-form-success {
+            text-align: center;
+            padding: var(--spacing-lg) var(--spacing-md);
+        }
+        .cb-form-success h3 {
+            color: #fff;
+            margin-bottom: var(--spacing-sm);
+        }
+        .cb-form-success p {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 1rem;
+        }
+
+        /* Section accent bar (visual separator) */
+        .cb-accent-bar {
+            height: 4px;
+            background: linear-gradient(90deg, var(--orange), var(--forest-light), var(--orange));
+            opacity: 0.3;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cb-hero {
+                min-height: auto;
+                padding: calc(70px + var(--spacing-lg)) 0 calc(var(--spacing-lg) + 60px) 0;
+            }
+            .cb-hero-content {
+                text-align: center;
+            }
+            .cb-hero .hero-ctas {
+                justify-content: center;
+            }
+            .cb-challenge-grid {
+                grid-template-columns: 1fr;
+            }
+            .cb-impact-grid {
+                grid-template-columns: 1fr;
+            }
+            .cb-advantage-grid {
+                grid-template-columns: 1fr;
+            }
+            .cb-advantage-illustration {
+                order: -1;
+            }
+            .cb-advantage-illustration img {
+                max-width: 240px;
+            }
+            .cb-advantage-text h2 {
+                text-align: center;
+            }
+            .cb-edge-columns {
+                grid-template-columns: 1fr;
+            }
+            .cb-cta-grid {
+                grid-template-columns: 1fr;
+            }
+            .cb-cta-text h2 {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><a href="index">
+                <img src="images/logo.png" alt="Upstate AI Logo" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="ai-readiness-assessment">Assessment</a></li>
+                <li><a href="free-training">Complimentary Training</a></li>
+                <li><a href="index#services">Services</a></li>
+                <li><a href="index#about">About</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-nav">Book a Call</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="cb-hero">
+        <div class="hero-background">
+            <img src="images/syracuse.webp" alt="Upstate New York" class="hero-bg-image">
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="container">
+            <div class="cb-hero-content fade-up">
+                <div class="hero-badge">Community Banking + AI</div>
+                <h1>Your Community Bank Already Has What Big Banks Spend Billions Trying to Build. <span class="text-orange">AI Helps You Use It.</span></h1>
+                <p class="hero-subtitle">Community banks sit on decades of local knowledge, deep customer relationships, and trust that no algorithm can manufacture. AI doesn't replace any of that. It makes all of it faster, sharper, and harder to compete against.</p>
+                <p class="hero-description">Upstate AI helps community banks implement artificial intelligence that fits their operations, their regulators, and their people. No rip-and-replace. No hype. Just practical technology that works inside the bank you've already built.</p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn-primary">Schedule a Community Banking AI Assessment</a>
+                    <a href="#impact" class="btn-ghost">See AI Impact Areas</a>
+                </div>
+            </div>
+        </div>
+        <div class="cb-hero-divider">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,0 L1440,80 L1440,120 L0,120 Z" fill="var(--cream)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ==================== THE CHALLENGE ==================== -->
+    <section class="cb-section cb-section-cream" id="challenge">
+        <div class="container">
+            <h2 class="section-title fade-up">The Pressure Is Real. The Path Forward Doesn't Have to Be Painful.</h2>
+            <p class="section-subtitle fade-up">Community banks are caught between forces pulling in every direction.</p>
+
+            <div class="cb-challenge-grid">
+                <div class="cb-challenge-card fade-up">
+                    <h3>Legacy Systems That Resist Change</h3>
+                    <p>Your core banking platform may be 15 or 20 years old. Three providers control over 70% of the market, and their AI roadmaps don't always match your timeline. Modernization feels like it requires a full rebuild, so nothing moves.</p>
+                </div>
+                <div class="cb-challenge-card fade-up">
+                    <h3>Big Bank Digital Experiences Setting the Bar</h3>
+                    <p>Your customers use Chase's app on Monday and walk into your branch on Tuesday. They expect both experiences to feel modern. The gap between what large banks offer digitally and what community banks can deliver is widening.</p>
+                </div>
+                <div class="cb-challenge-card fade-up">
+                    <h3>Staffing Pressure That Won't Let Up</h3>
+                    <p>Experienced staff are retiring. Younger hires expect modern tools. Manual processes that worked when you had a full back office now create bottlenecks with a lean team.</p>
+                </div>
+                <div class="cb-challenge-card fade-up">
+                    <h3>Regulatory Complexity That Keeps Growing</h3>
+                    <p>BSA/AML, fair lending, model risk management. Compliance obligations multiply while your compliance team stays the same size. Regulators are watching how you use AI and how you don't.</p>
+                </div>
+                <div class="cb-challenge-card fade-up">
+                    <h3>Customers Who Want It All</h3>
+                    <p>Fast approvals. Personalized advice. 24/7 access. Digital convenience with a human available when it matters. They chose your bank for the relationship. They'll leave if the technology falls too far behind.</p>
+                </div>
+            </div>
+
+            <p class="fade-up" style="text-align: center; color: var(--text-muted); margin-top: var(--spacing-lg); font-size: 1.05rem; max-width: 680px; margin-left: auto; margin-right: auto;">None of these problems are going away. But every one of them is a problem AI can help solve, without turning your bank into something it isn't.</p>
+        </div>
+    </section>
+
+    <div class="cb-accent-bar"></div>
+
+    <!-- ==================== AI IMPACT AREAS ==================== -->
+    <section class="cb-section cb-section-dark" id="impact">
+        <div class="container">
+            <h2 class="section-title fade-up">Where AI Actually Makes a Difference in Community Banking</h2>
+            <p class="section-subtitle fade-up">These are the areas where community banks are implementing AI right now, seeing measurable results, and doing it without blowing up their operations.</p>
+
+            <div class="cb-impact-grid">
+
+                <!-- 1. Employee Roles -->
+                <div class="cb-impact-card fade-up">
+                    <span class="cb-impact-icon">&#129309;</span>
+                    <h3>Employee Roles & Responsibilities</h3>
+                    <p class="cb-impact-tagline">AI changes the job. It doesn't eliminate the person.</p>
+                    <p>The fear that AI replaces bank employees misses the point. AI removes the tedious parts of the job so your people can focus on judgment, relationships, and local knowledge.</p>
+                    <ul class="cb-impact-features">
+                        <li><strong>Augmented decision-making:</strong> Loan officers get AI-generated risk summaries and portfolio context before customer meetings, not instead of them.</li>
+                        <li><strong>Upskilling, not downsizing:</strong> Staff learn to work alongside AI tools, becoming more valuable. A teller who can interpret AI-flagged patterns is a compliance asset.</li>
+                        <li><strong>Manual process elimination:</strong> Document sorting, data re-keying, routine report compilation. AI handles the repetitive work so your team handles the exceptions.</li>
+                        <li><strong>Capacity recovery:</strong> Banks running lean get the equivalent of additional headcount without additional payroll.</li>
+                    </ul>
+                </div>
+
+                <!-- 2. Customer Experience -->
+                <div class="cb-impact-card fade-up">
+                    <span class="cb-impact-icon">&#128578;</span>
+                    <h3>Customer Experience</h3>
+                    <p class="cb-impact-tagline">The relationship stays human. The speed becomes instant.</p>
+                    <p>Community banks win on relationships. AI makes those relationships easier to maintain at scale and harder for big banks to replicate.</p>
+                    <ul class="cb-impact-features">
+                        <li><strong>Personalized financial guidance:</strong> AI surfaces relevant product recommendations and savings opportunities. Your banker delivers them personally.</li>
+                        <li><strong>24/7 availability without a call center:</strong> AI-powered assistants handle routine inquiries around the clock. Complex questions still go to your people.</li>
+                        <li><strong>Faster loan processing:</strong> AI pre-screens applications and flags issues before a loan officer touches the file. Days become hours.</li>
+                        <li><strong>Proactive outreach:</strong> AI identifies life events and financial patterns so your team reaches out before the customer starts shopping competitors.</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Digital Ecosystem -->
+                <div class="cb-impact-card fade-up">
+                    <span class="cb-impact-icon">&#128279;</span>
+                    <h3>Digital Ecosystem</h3>
+                    <p class="cb-impact-tagline">A cohesive digital experience, built on top of what you already have.</p>
+                    <p>Most community banks don't need a new digital platform. They need the platforms they already have to talk to each other and work smarter.</p>
+                    <ul class="cb-impact-features">
+                        <li><strong>Connected channels:</strong> AI bridges mobile, online, in-branch, and CRM so customer context travels with them across every touchpoint.</li>
+                        <li><strong>Intelligent CRM:</strong> AI enriches customer profiles with behavioral data, interaction history, and predictive signals.</li>
+                        <li><strong>Marketing automation that doesn't feel automated:</strong> AI segments by actual behavior and financial needs, not just demographics.</li>
+                        <li><strong>Data unification:</strong> AI pulls structured insights from unstructured data scattered across your systems.</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Core Banking -->
+                <div class="cb-impact-card fade-up">
+                    <span class="cb-impact-icon">&#127975;</span>
+                    <h3>Core Banking Modernization</h3>
+                    <p class="cb-impact-tagline">You don't need to replace your core. You need to extend it.</p>
+                    <p>Ripping out your core banking system is expensive, risky, and usually unnecessary. AI layers on top, extracting more value from the platform you've already invested in.</p>
+                    <ul class="cb-impact-features">
+                        <li><strong>Data extraction and normalization:</strong> AI reads and structures data from legacy systems that were never designed to share information.</li>
+                        <li><strong>Process automation:</strong> Account opening, maintenance, exception processing, all automated with human oversight where it matters.</li>
+                        <li><strong>Wrapper modernization:</strong> Modern AI-powered interfaces sit on top of your existing core, giving staff and customers a contemporary experience.</li>
+                        <li><strong>Risk management integration:</strong> AI continuously monitors transaction patterns, surfacing issues that batch reporting would miss.</li>
+                    </ul>
+                </div>
+
+                <!-- 5. Compliance & Risk -->
+                <div class="cb-impact-card fade-up">
+                    <span class="cb-impact-icon">&#128737;&#65039;</span>
+                    <h3>Compliance & Risk</h3>
+                    <p class="cb-impact-tagline">Stay ahead of regulators instead of scrambling to keep up.</p>
+                    <p>Compliance is where community banks feel the resource squeeze most acutely. AI makes meeting regulatory requirements less manual and more consistent.</p>
+                    <ul class="cb-impact-features">
+                        <li><strong>BSA/AML monitoring:</strong> AI reduces false positives (the industry average is above 95%) while catching genuinely suspicious activity faster.</li>
+                        <li><strong>Fraud detection:</strong> Real-time pattern recognition identifies anomalous transactions. AI learns your customers' normal behavior and flags what doesn't fit.</li>
+                        <li><strong>Regulatory reporting:</strong> Automated data gathering, validation, and report generation for call reports, HMDA, CRA, and more.</li>
+                        <li><strong>Audit readiness:</strong> Continuous monitoring creates a documented trail. When examiners arrive, the evidence is already organized.</li>
+                    </ul>
+                </div>
+
+                <!-- 6. Lending & Credit -->
+                <div class="cb-impact-card fade-up">
+                    <span class="cb-impact-icon">&#128176;</span>
+                    <h3>Lending & Credit</h3>
+                    <p class="cb-impact-tagline">Faster decisions. Better decisions. The relationship still matters.</p>
+                    <p>AI gives your loan officers better data, faster, so the relationship-based approach gets stronger, not weaker.</p>
+                    <ul class="cb-impact-features">
+                        <li><strong>AI-assisted underwriting:</strong> Automated financial spreading, credit analysis, and risk scoring. The AI prepares the analysis; the lender makes the call.</li>
+                        <li><strong>Portfolio monitoring:</strong> Continuous surveillance of borrower financial health, covenant compliance, and early warning indicators.</li>
+                        <li><strong>Faster decisioning:</strong> Consumer loan approvals that took days move to hours. Small business applications get initial assessments immediately.</li>
+                        <li><strong>Fair lending compliance:</strong> AI applies consistent criteria while flagging potential disparate impact issues before they become regulatory findings.</li>
+                    </ul>
+                </div>
+
+                <!-- 7. Operations -->
+                <div class="cb-impact-card fade-up">
+                    <span class="cb-impact-icon">&#9881;&#65039;</span>
+                    <h3>Operations & Back Office</h3>
+                    <p class="cb-impact-tagline">The work that nobody sees, done in a fraction of the time.</p>
+                    <p>Back office operations are where AI delivers the most immediate, measurable ROI. These efficiency gains show up directly on your income statement.</p>
+                    <ul class="cb-impact-features">
+                        <li><strong>Document processing:</strong> AI reads, classifies, and extracts data from loan documents, applications, correspondence, and regulatory filings.</li>
+                        <li><strong>Reconciliation:</strong> Daily reconciliation of accounts, GL entries, and interbank transactions. AI matches, flags exceptions, and resolves routine discrepancies.</li>
+                        <li><strong>Exception handling:</strong> AI triages by severity and type, routing only genuine issues to human review.</li>
+                        <li><strong>Workflow automation:</strong> Multi-step processes move from manual checklists to automated workflows with human checkpoints where they matter.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="cb-accent-bar"></div>
+
+    <!-- ==================== WHY COMMUNITY BANKS ==================== -->
+    <section class="cb-section cb-section-cream" id="advantage">
+        <div class="container">
+            <div class="cb-advantage-grid fade-up">
+                <div class="cb-advantage-text">
+                    <h2>Community Banks Don't Need AI to Compete. They Need AI to Amplify What Already Makes Them <span class="text-orange">Win.</span></h2>
+                    <p>Large banks adopted AI to simulate something they don't have: personal relationships. They spend billions building recommendation engines and chatbots to fake the kind of customer knowledge that your branch manager carries in their head.</p>
+                    <p>You have the real thing. AI just makes it operational at scale.</p>
+
+                    <div class="cb-advantage-items">
+                        <div class="cb-advantage-item">
+                            <span class="cb-advantage-icon">&#127793;</span>
+                            <div>
+                                <h3>Local Knowledge Becomes Predictive Intelligence</h3>
+                                <p>Your bankers know the local economy, the seasonal patterns, the employers that drive your market. AI turns that institutional knowledge into data models that inform lending, risk management, and outreach.</p>
+                            </div>
+                        </div>
+                        <div class="cb-advantage-item">
+                            <span class="cb-advantage-icon">&#128272;</span>
+                            <div>
+                                <h3>Trust Becomes a Technology Advantage</h3>
+                                <p>Customers trust community banks with their data in ways they don't trust big tech or megabanks. That trust is the foundation for AI-powered personalization customers actually welcome.</p>
+                            </div>
+                        </div>
+                        <div class="cb-advantage-item">
+                            <span class="cb-advantage-icon">&#128200;</span>
+                            <div>
+                                <h3>Relationships Become Scalable</h3>
+                                <p>A community bank with 200 commercial relationships can use AI to give each one the attention of a dedicated advisor. The relationship doesn't get replaced; it gets reinforced with better data.</p>
+                            </div>
+                        </div>
+                        <div class="cb-advantage-item">
+                            <span class="cb-advantage-icon">&#9889;</span>
+                            <div>
+                                <h3>Agility Becomes a Differentiator</h3>
+                                <p>You don't have 18 months of committee approvals before deploying a new tool. Community banks that move on AI now will establish advantages that are difficult for slower institutions to close.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cb-advantage-illustration">
+                    <img src="images/undraw/undraw_visionary-technology_f6b3.svg" alt="AI technology vision">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== COMPETITIVE EDGE ==================== -->
+    <section class="cb-section cb-section-white" id="edge">
+        <div class="container">
+            <h2 class="section-title fade-up">Same Digital Experience. Better Relationship. <span class="text-orange">That's the Play.</span></h2>
+            <div class="cb-edge-intro fade-up">
+                <p>The narrative that community banks can't compete with large banks on technology is outdated. AI is the equalizer.</p>
+                <p><strong>What large banks have:</strong> Scale, data volume, dedicated AI teams, massive R&D budgets.<br>
+                <strong>What they can't replicate:</strong> Your board member who coaches Little League with half your commercial borrowers. Your loan officer who understands the factory on Route 5 is the economic engine for 40% of your deposit base. Your branch manager who knows which small businesses are growing before the financials show it.</p>
+            </div>
+
+            <div class="cb-edge-columns fade-up">
+                <div class="cb-edge-col">
+                    <h3>&#9889; AI Lets You Match Big Banks On</h3>
+                    <ul class="cb-edge-list">
+                        <li>Digital account opening and onboarding speed</li>
+                        <li>Personalized product recommendations</li>
+                        <li>24/7 customer service availability</li>
+                        <li>Real-time fraud detection and prevention</li>
+                        <li>Automated compliance monitoring</li>
+                        <li>Fast, data-driven lending decisions</li>
+                    </ul>
+                </div>
+                <div class="cb-edge-col">
+                    <h3>&#127919; While Keeping Your Advantage On</h3>
+                    <ul class="cb-edge-list">
+                        <li>Relationship depth and continuity</li>
+                        <li>Local market expertise and responsiveness</li>
+                        <li>Flexible, human-centered decision-making</li>
+                        <li>Community investment and accountability</li>
+                        <li>Speed of organizational decision-making</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cb-edge-result fade-up">
+                <p style="margin-bottom: 0;">The result: your customers get a digital experience that rivals anything from a national bank, delivered by people who actually know their name, their business, and their community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA / CONTACT FORM ==================== -->
+    <section class="cb-cta-section" id="contact">
+        <div class="container">
+            <div class="cb-cta-grid">
+                <div class="cb-cta-text fade-up">
+                    <h2>Let's Figure Out Where AI Fits in <span class="text-orange">Your Bank</span></h2>
+                    <p>We don't pitch solutions before understanding your operations. Every community bank is different: different core systems, different staffing situations, different markets, different priorities.</p>
+                    <p>Start with a conversation. We'll assess where AI can deliver measurable value for your specific bank and build a practical roadmap that accounts for your technology, your budget, and your regulators.</p>
+
+                    <ul class="cb-cta-bullets">
+                        <li>60-minute assessment with our banking AI specialists</li>
+                        <li>Custom AI opportunity report for your institution</li>
+                        <li>ROI projections based on your specific operational data</li>
+                        <li>No commitment, no pitch deck, no vendor lock-in</li>
+                    </ul>
+
+                    <p class="cb-cta-supporting">No commitment. No pitch deck. Just an honest conversation about what's realistic for your bank. We'll tell you where AI makes sense, where it doesn't, and what a responsible implementation timeline looks like.</p>
+                </div>
+
+                <div class="fade-up">
+                    <form class="cb-form" id="cbForm">
+                        <div class="field-group">
+                            <label for="cbName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="cbName" name="cbName" required placeholder="John Richardson">
+                        </div>
+                        <div class="field-group">
+                            <label for="cbEmail">Email Address <span class="required">*</span></label>
+                            <input type="email" id="cbEmail" name="cbEmail" required placeholder="jrichardson@firstcommunity.bank">
+                        </div>
+                        <div class="field-group">
+                            <label for="cbInstitution">Bank / Institution Name <span class="required">*</span></label>
+                            <input type="text" id="cbInstitution" name="cbInstitution" required placeholder="First Community Bank">
+                        </div>
+                        <div class="field-group">
+                            <label for="cbRole">Title / Role</label>
+                            <input type="text" id="cbRole" name="cbRole" placeholder="CEO, CTO, VP Operations, etc.">
+                        </div>
+                        <div class="field-group">
+                            <label for="cbMessage">What are you most interested in?</label>
+                            <textarea id="cbMessage" name="cbMessage" rows="4" placeholder="Tell us about your current challenges, technology stack, or specific areas where you're exploring AI..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" id="cbSubmitBtn">Schedule Assessment</button>
+                        <p class="cb-form-error" id="cbFormError">Please fill in all required fields.</p>
+                        <p class="cb-form-note">We respond within one business day. Your information is never shared.</p>
+                    </form>
+                    <!-- Success state (hidden by default) -->
+                    <div class="cb-form cb-form-success" id="cbFormSuccess" style="display: none;">
+                        <h3>Thank you. We'll be in touch.</h3>
+                        <p>We've received your information and will reach out within one business day to schedule your community banking AI assessment.</p>
+                        <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary" style="margin-top: var(--spacing-sm);">Or Book a Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
+                    <p>Put AI to Work</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index#services">Services</a>
+                    <a href="index#about">About</a>
+                    <a href="blog">Blog</a>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
+                    <a href="privacy">Privacy Policy</a>
+                    <a href="#" onclick="window.CookieConsent && window.CookieConsent.show(); return false;">Cookie Settings</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-consent.js"></script>
+
+    <!-- Community Banking Form & Page Scripts -->
+    <script>
+        // ---- Google Sheets Integration ----
+        // Create a new Google Apps Script deployment for this form.
+        // See APPS_SCRIPT_DEPLOYMENT.md for instructions.
+        // Replace with the deployed web app URL:
+        var COMMUNITY_BANKING_SCRIPT_URL = '';
+
+        (function() {
+            var form = document.getElementById('cbForm');
+            var successEl = document.getElementById('cbFormSuccess');
+            var errorEl = document.getElementById('cbFormError');
+            var submitBtn = document.getElementById('cbSubmitBtn');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                errorEl.style.display = 'none';
+
+                var name = document.getElementById('cbName').value.trim();
+                var email = document.getElementById('cbEmail').value.trim();
+                var institution = document.getElementById('cbInstitution').value.trim();
+                var role = document.getElementById('cbRole').value.trim();
+                var message = document.getElementById('cbMessage').value.trim();
+
+                // Validate required fields
+                if (!name || !email || !institution) {
+                    errorEl.style.display = 'block';
+                    return;
+                }
+
+                // Basic email check
+                if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+                    errorEl.textContent = 'Please enter a valid email address.';
+                    errorEl.style.display = 'block';
+                    return;
+                }
+
+                // Disable button while submitting
+                submitBtn.textContent = 'Submitting...';
+                submitBtn.disabled = true;
+
+                var payload = {
+                    name: name,
+                    email: email,
+                    institution: institution,
+                    role: role,
+                    message: message,
+                    source: 'community-banking-landing-page',
+                    timestamp: new Date().toISOString()
+                };
+
+                // Fire-and-forget to Google Sheets
+                if (COMMUNITY_BANKING_SCRIPT_URL && COMMUNITY_BANKING_SCRIPT_URL.trim().length > 0) {
+                    fetch(COMMUNITY_BANKING_SCRIPT_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    }).catch(function(err) {
+                        console.warn('Sheets submission error:', err);
+                    });
+                } else {
+                    console.info('Community banking form submitted (no Sheets URL configured yet):', payload);
+                }
+
+                // GA4 event
+                if (typeof gtag === 'function') {
+                    gtag('event', 'form_submit', {
+                        event_category: 'community_banking',
+                        event_label: 'assessment_request',
+                        institution: institution
+                    });
+                }
+
+                // Show success state
+                form.style.display = 'none';
+                successEl.style.display = 'block';
+            });
+        })();
+
+        // ---- Shared page scripts ----
+        // Navbar scroll effect
+        var navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function() {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Mobile menu toggle
+        var mobileToggle = document.querySelector('.mobile-toggle');
+        var navMenu = document.querySelector('.nav-menu');
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('open');
+                mobileToggle.classList.toggle('active');
+            });
+            // Close menu on link click
+            navMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('open');
+                    mobileToggle.classList.remove('active');
+                });
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    var offset = 80;
+                    var top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top: top, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Scroll-triggered fade-in animations
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-up').forEach(function(el) {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
