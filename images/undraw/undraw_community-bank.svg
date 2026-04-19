@@ -1,66 +1,227 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300" role="img">
-  <!-- Steps (full width, prominent) -->
-  <rect x="50" y="262" width="380" height="8" rx="2" fill="#d6dce6"/>
-  <rect x="40" y="270" width="400" height="8" rx="2" fill="#ccc"/>
-  <rect x="30" y="278" width="420" height="10" rx="3" fill="#e6e6e6"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="550" viewBox="0 0 800 550" role="img">
+  <defs>
+    <!-- Facade gradient for depth -->
+    <linearGradient id="facadeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f0e8"/>
+      <stop offset="100%" stop-color="#e8e0d4"/>
+    </linearGradient>
+    <!-- Column gradient for roundness -->
+    <linearGradient id="colGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d9d0c2"/>
+      <stop offset="20%" stop-color="#f0ebe3"/>
+      <stop offset="50%" stop-color="#f7f3ed"/>
+      <stop offset="80%" stop-color="#f0ebe3"/>
+      <stop offset="100%" stop-color="#d9d0c2"/>
+    </linearGradient>
+    <!-- Pediment interior shade -->
+    <linearGradient id="tympGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7f3ed"/>
+      <stop offset="100%" stop-color="#e8e0d4"/>
+    </linearGradient>
+    <!-- Step gradient -->
+    <linearGradient id="stepGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0d8cc"/>
+      <stop offset="100%" stop-color="#ccc3b5"/>
+    </linearGradient>
+    <!-- Subtle shadow filter -->
+    <filter id="shadow1" x="-2%" y="-2%" width="104%" height="110%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
 
-  <!-- Base platform -->
-  <rect x="60" y="250" width="360" height="16" rx="2" fill="#3f3d56"/>
+  <!-- ====== STEPS (5 levels, full width, imposing) ====== -->
+  <rect x="120" y="470" width="560" height="10" rx="1" fill="#d5cec3"/>
+  <rect x="105" y="480" width="590" height="10" rx="1" fill="#ccc3b5"/>
+  <rect x="90" y="490" width="620" height="10" rx="1" fill="#c4b9a8"/>
+  <rect x="75" y="500" width="650" height="12" rx="2" fill="#b8ae9f"/>
+  <rect x="60" y="512" width="680" height="14" rx="2" fill="#a89b88"/>
 
-  <!-- Building body -->
-  <rect x="70" y="130" width="340" height="120" rx="0" fill="#f2f2f2"/>
+  <!-- ====== BASE PLATFORM (stylobate) ====== -->
+  <rect x="130" y="455" width="540" height="18" rx="2" fill="#3f3d56"/>
 
-  <!-- Tall narrow openings (between columns — institutional style) -->
-  <rect x="110" y="150" width="20" height="70" rx="2" fill="#3f3d56"/>
-  <rect x="113" y="153" width="14" height="64" rx="1.5" fill="#d6dce6"/>
+  <!-- ====== BUILDING BODY ====== -->
+  <rect x="140" y="185" width="520" height="270" rx="0" fill="url(#facadeGrad)"/>
+  <!-- Ambient occlusion overlay on lower half -->
+  <rect x="140" y="320" width="520" height="135" rx="0" fill="#000" opacity="0.03"/>
 
-  <rect x="160" y="150" width="20" height="70" rx="2" fill="#3f3d56"/>
-  <rect x="163" y="153" width="14" height="64" rx="1.5" fill="#d6dce6"/>
+  <!-- ====== TALL ARCHED WINDOWS (between columns) ====== -->
+  <!-- Window 1 -->
+  <rect x="196" y="230" width="28" height="80" rx="2" fill="#3f3d56"/>
+  <rect x="199" y="233" width="22" height="74" rx="1.5" fill="#8ba4c4" opacity="0.5"/>
+  <path d="M199,233 Q210,220 221,233" fill="#3f3d56"/>
+  <rect x="199" y="260" width="22" height="1" fill="#3f3d56" opacity="0.3"/>
 
-  <rect x="300" y="150" width="20" height="70" rx="2" fill="#3f3d56"/>
-  <rect x="303" y="153" width="14" height="64" rx="1.5" fill="#d6dce6"/>
+  <!-- Window 2 -->
+  <rect x="288" y="230" width="28" height="80" rx="2" fill="#3f3d56"/>
+  <rect x="291" y="233" width="22" height="74" rx="1.5" fill="#8ba4c4" opacity="0.5"/>
+  <path d="M291,233 Q302,220 313,233" fill="#3f3d56"/>
+  <rect x="291" y="260" width="22" height="1" fill="#3f3d56" opacity="0.3"/>
 
-  <rect x="350" y="150" width="20" height="70" rx="2" fill="#3f3d56"/>
-  <rect x="353" y="153" width="14" height="64" rx="1.5" fill="#d6dce6"/>
+  <!-- Window 3 -->
+  <rect x="484" y="230" width="28" height="80" rx="2" fill="#3f3d56"/>
+  <rect x="487" y="233" width="22" height="74" rx="1.5" fill="#8ba4c4" opacity="0.5"/>
+  <path d="M487,233 Q498,220 509,233" fill="#3f3d56"/>
+  <rect x="487" y="260" width="22" height="1" fill="#3f3d56" opacity="0.3"/>
 
-  <!-- Center door (wider, arched top feel) -->
-  <rect x="218" y="170" width="44" height="80" rx="4" fill="#3f3d56"/>
-  <rect x="222" y="174" width="36" height="76" rx="3" fill="#FF6B07"/>
-  <line x1="240" y1="174" x2="240" y2="250" stroke="#3f3d56" stroke-width="1.5" opacity="0.3"/>
-  <circle cx="250" cy="215" r="2.5" fill="#3f3d56"/>
+  <!-- Window 4 -->
+  <rect x="576" y="230" width="28" height="80" rx="2" fill="#3f3d56"/>
+  <rect x="579" y="233" width="22" height="74" rx="1.5" fill="#8ba4c4" opacity="0.5"/>
+  <path d="M579,233 Q590,220 601,233" fill="#3f3d56"/>
+  <rect x="579" y="260" width="22" height="1" fill="#3f3d56" opacity="0.3"/>
 
-  <!-- 6 Columns -->
-  <rect x="82" y="130" width="12" height="120" rx="2" fill="#e6e6e6" stroke="#3f3d56" stroke-width="1"/>
-  <rect x="140" y="130" width="12" height="120" rx="2" fill="#e6e6e6" stroke="#3f3d56" stroke-width="1"/>
-  <rect x="198" y="130" width="12" height="120" rx="2" fill="#e6e6e6" stroke="#3f3d56" stroke-width="1"/>
-  <rect x="270" y="130" width="12" height="120" rx="2" fill="#e6e6e6" stroke="#3f3d56" stroke-width="1"/>
-  <rect x="328" y="130" width="12" height="120" rx="2" fill="#e6e6e6" stroke="#3f3d56" stroke-width="1"/>
-  <rect x="386" y="130" width="12" height="120" rx="2" fill="#e6e6e6" stroke="#3f3d56" stroke-width="1"/>
+  <!-- ====== CENTRAL DOUBLE DOORS with FANLIGHT ====== -->
+  <!-- Door frame -->
+  <rect x="365" y="290" width="70" height="165" rx="3" fill="#3f3d56"/>
+  <!-- Door panels -->
+  <rect x="370" y="295" width="28" height="157" rx="2" fill="#FF6B07"/>
+  <rect x="402" y="295" width="28" height="157" rx="2" fill="#FF6B07"/>
+  <!-- Door handles -->
+  <circle cx="395" cy="380" r="3" fill="#3f3d56"/>
+  <circle cx="405" cy="380" r="3" fill="#3f3d56"/>
+  <!-- Fanlight (semi-circle above door) -->
+  <path d="M365,290 Q400,255 435,290" fill="#3f3d56"/>
+  <path d="M370,290 Q400,260 430,290" fill="#8ba4c4" opacity="0.4"/>
+  <!-- Fanlight spokes -->
+  <line x1="400" y1="265" x2="400" y2="290" stroke="#3f3d56" stroke-width="1.5" opacity="0.5"/>
+  <line x1="385" y1="272" x2="390" y2="290" stroke="#3f3d56" stroke-width="1" opacity="0.4"/>
+  <line x1="415" y1="272" x2="410" y2="290" stroke="#3f3d56" stroke-width="1" opacity="0.4"/>
 
-  <!-- Column capitals -->
-  <rect x="78" y="125" width="20" height="8" rx="2" fill="#3f3d56"/>
-  <rect x="136" y="125" width="20" height="8" rx="2" fill="#3f3d56"/>
-  <rect x="194" y="125" width="20" height="8" rx="2" fill="#3f3d56"/>
-  <rect x="266" y="125" width="20" height="8" rx="2" fill="#3f3d56"/>
-  <rect x="324" y="125" width="20" height="8" rx="2" fill="#3f3d56"/>
-  <rect x="382" y="125" width="20" height="8" rx="2" fill="#3f3d56"/>
+  <!-- ====== 6 COLUMNS (fluted, with proper capitals) ====== -->
+  <!-- Column 1 -->
+  <rect x="155" y="185" width="42" height="270" rx="3" fill="url(#colGrad)"/>
+  <line x1="163" y1="195" x2="163" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.5"/>
+  <line x1="171" y1="195" x2="171" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.4"/>
+  <line x1="179" y1="195" x2="179" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.5"/>
+  <line x1="187" y1="195" x2="187" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.4"/>
 
-  <!-- Column bases -->
-  <rect x="78" y="247" width="20" height="5" rx="1.5" fill="#3f3d56"/>
-  <rect x="136" y="247" width="20" height="5" rx="1.5" fill="#3f3d56"/>
-  <rect x="194" y="247" width="20" height="5" rx="1.5" fill="#3f3d56"/>
-  <rect x="266" y="247" width="20" height="5" rx="1.5" fill="#3f3d56"/>
-  <rect x="324" y="247" width="20" height="5" rx="1.5" fill="#3f3d56"/>
-  <rect x="382" y="247" width="20" height="5" rx="1.5" fill="#3f3d56"/>
+  <!-- Column 2 -->
+  <rect x="247" y="185" width="42" height="270" rx="3" fill="url(#colGrad)"/>
+  <line x1="255" y1="195" x2="255" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.5"/>
+  <line x1="263" y1="195" x2="263" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.4"/>
+  <line x1="271" y1="195" x2="271" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.5"/>
+  <line x1="279" y1="195" x2="279" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.4"/>
 
-  <!-- Entablature (wide horizontal band) -->
-  <rect x="60" y="112" width="360" height="16" rx="2" fill="#3f3d56"/>
-  <rect x="65" y="108" width="350" height="6" rx="1" fill="#3f3d56" opacity="0.6"/>
+  <!-- Column 3 -->
+  <rect x="339" y="185" width="42" height="270" rx="3" fill="url(#colGrad)"/>
+  <line x1="347" y1="195" x2="347" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.5"/>
+  <line x1="355" y1="195" x2="355" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.4"/>
+  <line x1="363" y1="195" x2="363" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.5"/>
+  <line x1="371" y1="195" x2="371" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.4"/>
 
-  <!-- Pediment (shallow triangle — institutional) -->
-  <polygon points="240,55 55,108 425,108" fill="#FF6B07"/>
-  <polygon points="240,68 72,105 408,105" fill="#f2f2f2"/>
+  <!-- Column 4 -->
+  <rect x="419" y="185" width="42" height="270" rx="3" fill="url(#colGrad)"/>
+  <line x1="427" y1="195" x2="427" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.5"/>
+  <line x1="435" y1="195" x2="435" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.4"/>
+  <line x1="443" y1="195" x2="443" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.5"/>
+  <line x1="451" y1="195" x2="451" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.4"/>
 
-  <!-- Decorative frieze line -->
-  <line x1="100" y1="88" x2="380" y2="88" stroke="#3f3d56" stroke-width="1" opacity="0.2"/>
+  <!-- Column 5 -->
+  <rect x="511" y="185" width="42" height="270" rx="3" fill="url(#colGrad)"/>
+  <line x1="519" y1="195" x2="519" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.5"/>
+  <line x1="527" y1="195" x2="527" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.4"/>
+  <line x1="535" y1="195" x2="535" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.5"/>
+  <line x1="543" y1="195" x2="543" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.4"/>
+
+  <!-- Column 6 -->
+  <rect x="603" y="185" width="42" height="270" rx="3" fill="url(#colGrad)"/>
+  <line x1="611" y1="195" x2="611" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.5"/>
+  <line x1="619" y1="195" x2="619" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.4"/>
+  <line x1="627" y1="195" x2="627" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.5"/>
+  <line x1="635" y1="195" x2="635" y2="450" stroke="#c4b9a8" stroke-width="1" opacity="0.4"/>
+
+  <!-- ====== COLUMN CAPITALS (wide flared caps) ====== -->
+  <rect x="149" y="179" width="54" height="10" rx="2" fill="#3f3d56"/>
+  <rect x="241" y="179" width="54" height="10" rx="2" fill="#3f3d56"/>
+  <rect x="333" y="179" width="54" height="10" rx="2" fill="#3f3d56"/>
+  <rect x="413" y="179" width="54" height="10" rx="2" fill="#3f3d56"/>
+  <rect x="505" y="179" width="54" height="10" rx="2" fill="#3f3d56"/>
+  <rect x="597" y="179" width="54" height="10" rx="2" fill="#3f3d56"/>
+
+  <!-- ====== COLUMN BASES ====== -->
+  <rect x="149" y="452" width="54" height="6" rx="2" fill="#3f3d56"/>
+  <rect x="241" y="452" width="54" height="6" rx="2" fill="#3f3d56"/>
+  <rect x="333" y="452" width="54" height="6" rx="2" fill="#3f3d56"/>
+  <rect x="413" y="452" width="54" height="6" rx="2" fill="#3f3d56"/>
+  <rect x="505" y="452" width="54" height="6" rx="2" fill="#3f3d56"/>
+  <rect x="597" y="452" width="54" height="6" rx="2" fill="#3f3d56"/>
+
+  <!-- ====== ENTABLATURE (3-part: architrave, frieze with dentils, cornice) ====== -->
+  <!-- Architrave -->
+  <rect x="130" y="164" width="540" height="18" rx="0" fill="#3f3d56"/>
+  <!-- Frieze -->
+  <rect x="128" y="147" width="544" height="20" rx="0" fill="#e8e0d4" stroke="#3f3d56" stroke-width="1"/>
+  <!-- Dentil molding -->
+  <g fill="#3f3d56">
+    <rect x="145" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="158" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="171" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="184" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="197" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="210" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="223" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="236" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="249" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="262" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="275" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="288" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="301" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="314" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="327" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="340" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="353" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="366" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="379" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="392" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="405" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="418" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="431" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="444" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="457" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="470" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="483" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="496" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="509" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="522" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="535" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="548" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="561" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="574" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="587" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="600" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="613" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="626" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="639" y="150" width="5" height="8" rx="0.5"/>
+    <rect x="652" y="150" width="5" height="8" rx="0.5"/>
+  </g>
+  <!-- Cornice (projecting) -->
+  <rect x="122" y="140" width="556" height="10" rx="2" fill="#3f3d56" filter="url(#shadow1)"/>
+
+  <!-- ====== PEDIMENT (shallow classical triangle) ====== -->
+  <!-- Outer pediment (raking cornice) -->
+  <polygon points="400,38 118,140 682,140" fill="#FF6B07"/>
+  <!-- Inner tympanum -->
+  <polygon points="400,55 135,136 665,136" fill="url(#tympGrad)"/>
+
+  <!-- ====== CLOCK in tympanum ====== -->
+  <circle cx="400" cy="100" r="26" fill="#f7f3ed" stroke="#3f3d56" stroke-width="2.5"/>
+  <circle cx="400" cy="100" r="22" fill="#fff"/>
+  <!-- Hour markers -->
+  <line x1="400" y1="80" x2="400" y2="84" stroke="#3f3d56" stroke-width="2"/>
+  <line x1="400" y1="116" x2="400" y2="120" stroke="#3f3d56" stroke-width="2"/>
+  <line x1="380" y1="100" x2="384" y2="100" stroke="#3f3d56" stroke-width="2"/>
+  <line x1="416" y1="100" x2="420" y2="100" stroke="#3f3d56" stroke-width="2"/>
+  <!-- Small hour dots -->
+  <circle cx="410" cy="82" r="1.2" fill="#3f3d56"/>
+  <circle cx="418" cy="90" r="1.2" fill="#3f3d56"/>
+  <circle cx="418" cy="110" r="1.2" fill="#3f3d56"/>
+  <circle cx="410" cy="118" r="1.2" fill="#3f3d56"/>
+  <circle cx="390" cy="118" r="1.2" fill="#3f3d56"/>
+  <circle cx="382" cy="110" r="1.2" fill="#3f3d56"/>
+  <circle cx="382" cy="90" r="1.2" fill="#3f3d56"/>
+  <circle cx="390" cy="82" r="1.2" fill="#3f3d56"/>
+  <!-- Clock hands -->
+  <line x1="400" y1="100" x2="400" y2="85" stroke="#3f3d56" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="400" y1="100" x2="412" y2="96" stroke="#FF6B07" stroke-width="2" stroke-linecap="round"/>
+  <!-- Center dot -->
+  <circle cx="400" cy="100" r="2.5" fill="#3f3d56"/>
 </svg>
