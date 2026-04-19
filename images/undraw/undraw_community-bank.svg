@@ -1,59 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="550" viewBox="0 0 800 550" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480" role="img">
+  <defs>
+    <linearGradient id="stoneWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0ece5"/>
+      <stop offset="100%" stop-color="#e4ded5"/>
+    </linearGradient>
+    <linearGradient id="col" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ddd7cc"/>
+      <stop offset="30%" stop-color="#ece8e0"/>
+      <stop offset="70%" stop-color="#ece8e0"/>
+      <stop offset="100%" stop-color="#ddd7cc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground shadow -->
+  <ellipse cx="300" cy="440" rx="250" ry="12" fill="#3f3d56" opacity="0.08"/>
+
   <!-- Steps -->
-  <rect x="110" y="472" width="580" height="10" rx="3" fill="#e6e6e6"/>
-  <rect x="90" y="484" width="620" height="10" rx="3" fill="#ddd"/>
-  <rect x="70" y="496" width="660" height="12" rx="3" fill="#d4d4d4"/>
+  <rect x="105" y="408" width="390" height="9" rx="2" fill="#e4ded5"/>
+  <rect x="90" y="418" width="420" height="9" rx="2" fill="#ddd7cc"/>
+  <rect x="75" y="428" width="450" height="10" rx="2" fill="#d5cec3"/>
 
-  <!-- Base platform -->
-  <rect x="130" y="458" width="540" height="18" rx="3" fill="#3f3d56"/>
+  <!-- Base -->
+  <rect x="115" y="394" width="370" height="16" rx="2" fill="#3f3d56"/>
 
-  <!-- Building body (transparent — columns stand on their own) -->
+  <!-- Back wall -->
+  <rect x="128" y="155" width="344" height="240" rx="3" fill="url(#stoneWall)"/>
 
-  <!-- Central door -->
-  <rect x="370" y="330" width="60" height="128" rx="4" fill="#3f3d56"/>
-  <rect x="374" y="334" width="24" height="120" rx="2" fill="#FF6B07"/>
-  <rect x="402" y="334" width="24" height="120" rx="2" fill="#FF6B07"/>
-  <circle cx="396" cy="400" r="2.5" fill="#3f3d56"/>
-  <circle cx="404" cy="400" r="2.5" fill="#3f3d56"/>
+  <!-- Door surround -->
+  <rect x="262" y="268" width="76" height="126" rx="4" fill="#3f3d56"/>
+  <!-- Door panels -->
+  <rect x="267" y="273" width="30" height="118" rx="3" fill="#FF6B07"/>
+  <rect x="303" y="273" width="30" height="118" rx="3" fill="#e85d00"/>
+  <!-- Transom bar -->
+  <rect x="262" y="304" width="76" height="2" fill="#3f3d56" opacity="0.2"/>
+  <!-- Handles -->
+  <circle cx="294" cy="340" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="306" cy="340" r="2" fill="#fff" opacity="0.6"/>
 
-  <!-- 6 Columns -->
-  <rect x="162" y="190" width="30" height="268" rx="4" fill="#e6e6e6"/>
-  <rect x="252" y="190" width="30" height="268" rx="4" fill="#e6e6e6"/>
-  <rect x="342" y="190" width="30" height="268" rx="4" fill="#e6e6e6"/>
-  <rect x="428" y="190" width="30" height="268" rx="4" fill="#e6e6e6"/>
-  <rect x="518" y="190" width="30" height="268" rx="4" fill="#e6e6e6"/>
-  <rect x="608" y="190" width="30" height="268" rx="4" fill="#e6e6e6"/>
+  <!-- Columns -->
+  <rect x="140" y="155" width="28" height="240" rx="5" fill="url(#col)"/>
+  <rect x="218" y="155" width="28" height="240" rx="5" fill="url(#col)"/>
+  <rect x="354" y="155" width="28" height="240" rx="5" fill="url(#col)"/>
+  <rect x="432" y="155" width="28" height="240" rx="5" fill="url(#col)"/>
+
+  <!-- Column shadow lines (subtle depth) -->
+  <rect x="142" y="160" width="3" height="230" rx="1" fill="#000" opacity="0.04"/>
+  <rect x="220" y="160" width="3" height="230" rx="1" fill="#000" opacity="0.04"/>
+  <rect x="356" y="160" width="3" height="230" rx="1" fill="#000" opacity="0.04"/>
+  <rect x="434" y="160" width="3" height="230" rx="1" fill="#000" opacity="0.04"/>
 
   <!-- Column capitals -->
-  <rect x="155" y="183" width="44" height="10" rx="3" fill="#3f3d56"/>
-  <rect x="245" y="183" width="44" height="10" rx="3" fill="#3f3d56"/>
-  <rect x="335" y="183" width="44" height="10" rx="3" fill="#3f3d56"/>
-  <rect x="421" y="183" width="44" height="10" rx="3" fill="#3f3d56"/>
-  <rect x="511" y="183" width="44" height="10" rx="3" fill="#3f3d56"/>
-  <rect x="601" y="183" width="44" height="10" rx="3" fill="#3f3d56"/>
+  <rect x="133" y="149" width="42" height="10" rx="3" fill="#3f3d56"/>
+  <rect x="211" y="149" width="42" height="10" rx="3" fill="#3f3d56"/>
+  <rect x="347" y="149" width="42" height="10" rx="3" fill="#3f3d56"/>
+  <rect x="425" y="149" width="42" height="10" rx="3" fill="#3f3d56"/>
 
   <!-- Column bases -->
-  <rect x="155" y="455" width="44" height="6" rx="2" fill="#3f3d56"/>
-  <rect x="245" y="455" width="44" height="6" rx="2" fill="#3f3d56"/>
-  <rect x="335" y="455" width="44" height="6" rx="2" fill="#3f3d56"/>
-  <rect x="421" y="455" width="44" height="6" rx="2" fill="#3f3d56"/>
-  <rect x="511" y="455" width="44" height="6" rx="2" fill="#3f3d56"/>
-  <rect x="601" y="455" width="44" height="6" rx="2" fill="#3f3d56"/>
+  <rect x="133" y="392" width="42" height="5" rx="2" fill="#3f3d56"/>
+  <rect x="211" y="392" width="42" height="5" rx="2" fill="#3f3d56"/>
+  <rect x="347" y="392" width="42" height="5" rx="2" fill="#3f3d56"/>
+  <rect x="425" y="392" width="42" height="5" rx="2" fill="#3f3d56"/>
 
   <!-- Entablature -->
-  <rect x="130" y="168" width="540" height="18" rx="2" fill="#3f3d56"/>
+  <rect x="115" y="136" width="370" height="16" rx="2" fill="#3f3d56"/>
 
   <!-- Pediment -->
-  <polygon points="400,65 125,168 675,168" fill="#FF6B07"/>
-  <polygon points="400,82 145,164 655,164" fill="#f2f2f2"/>
+  <polygon points="300,52 110,136 490,136" fill="#FF6B07"/>
+  <polygon points="300,68 127,132 473,132" fill="#f0ece5"/>
 
   <!-- Clock -->
-  <circle cx="400" cy="125" r="24" fill="#fff" stroke="#3f3d56" stroke-width="2.5"/>
-  <line x1="400" y1="105" x2="400" y2="109" stroke="#3f3d56" stroke-width="2" stroke-linecap="round"/>
-  <line x1="400" y1="141" x2="400" y2="145" stroke="#3f3d56" stroke-width="2" stroke-linecap="round"/>
-  <line x1="380" y1="125" x2="384" y2="125" stroke="#3f3d56" stroke-width="2" stroke-linecap="round"/>
-  <line x1="416" y1="125" x2="420" y2="125" stroke="#3f3d56" stroke-width="2" stroke-linecap="round"/>
-  <line x1="400" y1="125" x2="400" y2="110" stroke="#3f3d56" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="400" y1="125" x2="411" y2="120" stroke="#FF6B07" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="400" cy="125" r="2.5" fill="#3f3d56"/>
+  <circle cx="300" cy="102" r="20" fill="#fff"/>
+  <circle cx="300" cy="102" r="18" fill="#fff" stroke="#3f3d56" stroke-width="2"/>
+  <line x1="300" y1="87" x2="300" y2="90" stroke="#3f3d56" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="300" y1="114" x2="300" y2="117" stroke="#3f3d56" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="285" y1="102" x2="288" y2="102" stroke="#3f3d56" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="312" y1="102" x2="315" y2="102" stroke="#3f3d56" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="300" y1="102" x2="300" y2="91" stroke="#3f3d56" stroke-width="2" stroke-linecap="round"/>
+  <line x1="300" y1="102" x2="309" y2="98" stroke="#3f3d56" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="300" cy="102" r="2" fill="#3f3d56"/>
 </svg>
