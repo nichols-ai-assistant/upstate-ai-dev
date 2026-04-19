@@ -43,6 +43,23 @@
   <rect x="354" y="155" width="28" height="240" rx="5" fill="url(#col)"/>
   <rect x="432" y="155" width="28" height="240" rx="5" fill="url(#col)"/>
 
+  <!-- Column fluting (subtle vertical grooves) -->
+  <line x1="148" y1="162" x2="148" y2="388" stroke="#c4bba8" stroke-width="1" opacity="0.5"/>
+  <line x1="154" y1="162" x2="154" y2="388" stroke="#c4bba8" stroke-width="1" opacity="0.6"/>
+  <line x1="160" y1="162" x2="160" y2="388" stroke="#c4bba8" stroke-width="1" opacity="0.5"/>
+
+  <line x1="226" y1="162" x2="226" y2="388" stroke="#c4bba8" stroke-width="1" opacity="0.5"/>
+  <line x1="232" y1="162" x2="232" y2="388" stroke="#c4bba8" stroke-width="1" opacity="0.6"/>
+  <line x1="238" y1="162" x2="238" y2="388" stroke="#c4bba8" stroke-width="1" opacity="0.5"/>
+
+  <line x1="362" y1="162" x2="362" y2="388" stroke="#c4bba8" stroke-width="1" opacity="0.5"/>
+  <line x1="368" y1="162" x2="368" y2="388" stroke="#c4bba8" stroke-width="1" opacity="0.6"/>
+  <line x1="374" y1="162" x2="374" y2="388" stroke="#c4bba8" stroke-width="1" opacity="0.5"/>
+
+  <line x1="440" y1="162" x2="440" y2="388" stroke="#c4bba8" stroke-width="1" opacity="0.5"/>
+  <line x1="446" y1="162" x2="446" y2="388" stroke="#c4bba8" stroke-width="1" opacity="0.6"/>
+  <line x1="452" y1="162" x2="452" y2="388" stroke="#c4bba8" stroke-width="1" opacity="0.5"/>
+
   <!-- Column shadow lines (subtle depth) -->
   <rect x="142" y="160" width="3" height="230" rx="1" fill="#000" opacity="0.04"/>
   <rect x="220" y="160" width="3" height="230" rx="1" fill="#000" opacity="0.04"/>
