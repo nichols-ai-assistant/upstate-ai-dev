@@ -1,6 +1,14 @@
 # Blog post registry — sorted by date descending.
 # Add new posts to the top. Homepage auto-displays the first 3.
 
+- title: "90% of CEOs Say AI Had No Impact. Here's Why They're Right."
+  url: "blog/90-percent-ceos-ai-no-impact-april-2026"
+  category: "AI Strategy"
+  date: "April 19, 2026"
+  sort_date: 2026-04-19
+  excerpt: "A new NBER study found 90% of firms saw zero productivity impact from AI. The problem isn't AI — it's how companies are adopting it. Here's what the data actually says."
+  read_time: "7 min read"
+
 - title: "AI Agents Can Now Swipe Your Card. Community Banks Need to Pay Attention."
   url: "blog/agentic-payments-community-banks-april-2026"
   category: "Industry Analysis"
