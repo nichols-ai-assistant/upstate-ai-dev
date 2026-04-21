@@ -91,7 +91,7 @@ a:hover { color: var(--orange-light); }
     background: rgba(247, 244, 234, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: 0.4rem 0;
+    padding: 0.85rem 0;
     z-index: 1000;
     transition: var(--transition);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
