@@ -329,7 +329,7 @@ a:hover { color: var(--orange-light); }
 }
 .service-card.featured {
     grid-column: 1 / -1;
-    background: var(--forest-dark); color: var(--text-light);
+    background: var(--forest-medium); color: var(--text-light);
     display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); align-items: center;
 }
 .service-card.featured h3 { color: var(--white); }
