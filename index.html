@@ -6,11 +6,11 @@ layout: none
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI strategy consulting for small to mid-sized businesses. Syracuse University professor with 15 years experience. AI workshops, readiness assessments, and proof of concept implementations.">
-    <meta name="keywords" content="AI consulting, AI strategy, AI for small business, business AI consulting, AI implementation, AI strategy consultant, AI advisor">
+    <meta name="description" content="Reformed AI vendor turned advisor. We help small to mid-sized businesses cut through the hype, evaluate what's real, and implement what actually works.">
+    <meta name="keywords" content="AI consulting, AI strategy, AI for small business, business AI consulting, AI implementation, AI strategy consultant, AI advisor, reformed vendor">
     <meta name="author" content="Ben Nichols">
     <link rel="icon" type="image/png" href="images/favicon.png">
-    
+
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
     <script>
@@ -20,50 +20,51 @@ layout: none
       gtag('config', 'G-KKZRVLYRV0');
     </script>
 
-    <!-- Security Headers (meta equivalent for GitHub Pages) -->
+    <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    
-    <!-- Open Graph / Social Media -->
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://up-state-ai.com/">
-    <meta property="og:title" content="Upstate AI - Put AI to Work for Your Business">
-    <meta property="og:description" content="Only 1 in 20 AI projects succeed (per MIT). We're here to make you the #1. Expert AI consulting for businesses nationwide.">
+    <meta property="og:title" content="Upstate AI — Put AI to Work">
+    <meta property="og:description" content="Reformed AI vendor turned advisor. Cut through the hype. Implement what actually works.">
     <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
-    
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Upstate AI - Put AI to Work for Your Business">
-    <meta name="twitter:description" content="Only 1 in 20 AI projects succeed (per MIT). We're here to make you the #1.">
-    
-    <title>Upstate AI - AI Strategy Consulting for Your Business</title>
-    
-    <!-- Structured Data for SEO -->
+    <meta name="twitter:title" content="Upstate AI — Put AI to Work">
+    <meta name="twitter:description" content="Reformed AI vendor turned advisor. Cut through the hype. Implement what actually works.">
+
+    <title>Upstate AI — AI Strategy Consulting for Your Business</title>
+
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "Upstate AI",
-      "description": "AI strategy consulting for small to mid-sized businesses",
+      "description": "AI strategy consulting for small to mid-sized businesses. Reformed vendor turned advisor.",
       "url": "https://up-state-ai.com",
-      "areaServed": {
-        "@type": "Country",
-        "name": "United States"
-      },
-      "serviceType": ["AI Consulting", "AI Strategy", "Business Consulting"],
+      "founder": { "@type": "Person", "name": "Ben Nichols", "jobTitle": "Founder & AI Strategist" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "serviceType": ["AI Consulting", "AI Strategy", "AI Workshops", "AI Audits"],
       "priceRange": "$$"
     }
     </script>
-    
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand"><a href="index">
-                <img src="images/logo.png" alt="Upstate AI Logo" class="logo"></a>
+            <div class="nav-brand">
+                <a href="index"><img src="images/logo.png" alt="Upstate AI Logo" class="logo"></a>
             </div>
             <ul class="nav-menu">
                 <li><a href="ai-readiness-assessment">Assessment</a></li>
@@ -79,235 +80,210 @@ layout: none
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ============ HERO ============ -->
     <section class="hero">
-        <div class="hero-background">
-            <img src="images/syracuse.webp" alt="Syracuse University" class="hero-bg-image">
-        </div>
-        <!-- Geometric shapes -->
-        <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-        </div>
         <div class="container">
-            <div class="hero-content fade-up">
-                <div class="hero-text-block">
-                    <div class="hero-badge">AI Strategy Consulting · Corporate Training</div>
-                    <h1 class="hero-title">Put <span class="text-orange">AI</span><br>to Work</h1>
-                    <p class="hero-subtitle">Only 1 in 20 AI projects succeed <span class="stat-source">(per MIT)</span>.<br>We're here to make you the <span class="text-orange">#1</span>.</p>
-                    <p class="hero-description">Expert AI strategy consulting for small to mid-sized businesses. From readiness assessments to full implementations, we help you cut through the hype and put AI where it actually moves the needle.</p>
+            <div class="hero-grid">
+                <div class="hero-content fade-up">
+                    <span class="hero-badge">AI Strategy Consulting</span>
+                    <h1>Put <span class="accent">AI</span><br>to Work</h1>
+                    <p class="hero-lead">Only 1 in 20 AI projects succeed. Usually because someone sold a solution before anyone understood the problem.</p>
+                    <p class="hero-body">We're a reformed AI vendor turned advisor. We help small and mid-sized businesses cut through the noise, evaluate what's real, and implement what actually works.</p>
                     <div class="hero-ctas">
                         <a href="https://calendar.app.google/TFDaMrzJHQ3catdo8" target="_blank" rel="noopener" class="btn-primary">Schedule a Consult</a>
-                        <a href="#services" class="btn-ghost">See How We Work &#8594;</a>
+                        <a href="#how" class="btn-ghost">See How We Work &rarr;</a>
                     </div>
                 </div>
-                <!-- hero illustration removed -->
-            </div>
-        </div>
-        <div class="hero-divider">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,0 L1440,80 L1440,120 L0,120 Z" fill="#ffffff"/>
-            </svg>
-        </div>
-    </section>
-
-    <!-- How We Work Section -->
-    <section id="prototype" class="prototype">
-        <div class="container">
-            <div class="prototype-grid">
-                <div class="prototype-text fade-up">
-                    <h2 class="prototype-label">How We Work</h2>
-                    <p class="prototype-headline">Start with a conversation.<br><span class="text-orange">Finish with a transformation.</span></p>
-                    <p class="prototype-desc">Each step builds on the last, from a complimentary intro to a full implementation. You decide when to go deeper.</p>
-                </div>
-                <div class="prototype-cards fade-up">
-                    <div class="proto-card">
-                        <div class="proto-icon">&#128218;</div>
-                        <div class="proto-text"><h3>Learn</h3>
-                        <p>A complimentary 30-minute session on AI in your industry. No commitment, just practical knowledge you can use right away.</p></div>
-                    </div>
-                    <div class="proto-card">
-                        <div class="proto-icon">&#128269;</div>
-                        <div class="proto-text"><h3>Discover</h3>
-                        <p>Hands-on workshops and audits that map AI opportunities specific to your operations, with clear ROI estimates.</p></div>
-                    </div>
-                    <div class="proto-card">
-                        <div class="proto-icon">&#128640;</div>
-                        <div class="proto-text"><h3>Build</h3>
-                        <p>We architect and oversee your AI implementation, from vendor selection to launch, keeping you on track and on budget.</p></div>
-                    </div>
+                <div class="hero-visual fade-up">
+                    <img src="images/undraw/undraw_business-decisions_7vkl.svg" alt="Evaluating AI decisions with clarity" width="480" height="317">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Speaking Section (Tier Zero) -->
-    <section id="speaking" class="speaking">
+    <!-- ============ THE PROBLEM ============ -->
+    <section class="problem">
         <div class="container">
-            <div class="speaking-content speaking-with-illustration fade-up">
-                <div class="speaking-text-block">
-                    <h2 class="speaking-title">Complimentary AI Training</h2>
-                    <p class="speaking-subtitle">30 minutes on AI in your industry. No sales pitch. Just practical insights your team can use right away.</p>
-                    <div style="display: flex; gap: 1rem; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <h2 class="fade-up">You don't need<br>another AI vendor</h2>
+            <div class="problem-grid fade-up">
+                <div class="problem-card problem-them">
+                    <h3>The pitch</h3>
+                    <p>Every platform promises transformation. Every demo looks magical. Every sales deck shows hockey-stick ROI. And you're expected to evaluate technology you've never worked with, sold by people whose job is to close you.</p>
+                </div>
+                <div class="problem-card problem-us">
+                    <h3>The reality</h3>
+                    <p>We've been on the other side of that table. We've written the pitch decks, built the demos, and watched what happens after the signature. Now we help businesses see what's real before they commit.</p>
+                </div>
+            </div>
+            <div class="problem-stat fade-up">
+                <span class="stat-number">95%</span>
+                <span class="stat-label">of AI pilots never reach production<br><span class="stat-source">— MIT Sloan</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ HOW WE WORK ============ -->
+    <section id="how" class="process">
+        <div class="container">
+            <div class="process-header fade-up">
+                <h2>Start with a conversation.<br><span class="accent">Go as deep as you want.</span></h2>
+                <p>Each step delivers complete value. No hooks, no manufactured dependencies. You decide when to go deeper.</p>
+            </div>
+            <div class="process-steps fade-up">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Learn</h3>
+                    <p>A complimentary 30-minute session on AI in your industry. No commitment, just knowledge you can use immediately.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>Discover</h3>
+                    <p>Hands-on workshops and audits that map AI opportunities specific to your operations, with clear ROI estimates.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Build</h3>
+                    <p>We architect and oversee your AI implementation — from vendor selection to launch — on scope and on budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ COMPLIMENTARY TRAINING ============ -->
+    <section class="training">
+        <div class="container">
+            <div class="training-grid">
+                <div class="training-content fade-up">
+                    <h2>Complimentary<br>AI Training</h2>
+                    <p>30 minutes on AI in your industry. No sales pitch. Just practical insights your team can use right away.</p>
+                    <div class="training-ctas">
                         <a href="https://calendar.app.google/TFDaMrzJHQ3catdo8" target="_blank" rel="noopener" class="btn-primary">Schedule Your Training</a>
-                        <a href="free-training" class="btn-ghost">Learn More</a>
+                        <a href="free-training" class="btn-outline">Learn More</a>
                     </div>
                 </div>
-                <div class="speaking-illustration">
-                    <img src="images/undraw-presenting.svg" alt="AI training presentation" class="section-illustration">
+                <div class="training-visual fade-up">
+                    <img src="images/undraw/undraw_teaching_58yg.svg" alt="AI training session" width="400" height="300">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- ============ SERVICES ============ -->
     <section id="services" class="services">
         <div class="container">
-            <div class="services-header fade-up">
-                <div>
-                    <h2 class="section-title">How We Help</h2>
-                    <p class="section-subtitle">Your path from curious to confident, at whatever pace fits your business.</p>
+            <h2 class="fade-up">How We Help</h2>
+            <p class="section-sub fade-up">Your path from curious to confident, at whatever pace fits your business.</p>
+
+            <div class="services-bento">
+                <!-- Featured: Workshop -->
+                <div class="service-card featured fade-up">
+                    <div>
+                        <div class="service-number">01</div>
+                        <h3>AI Workshop</h3>
+                        <p class="service-desc">Interactive full-day session for executives and leadership teams. Cut through the hype. Understand what AI can actually do for your business and where the real opportunities are.</p>
+                        <ul class="service-features">
+                            <li>Full-day session (in-person or virtual)</li>
+                            <li>Industry-specific use cases and real examples</li>
+                            <li>Executive Q&A and strategic discussion</li>
+                            <li>Take home your personalized AI Opportunity Scorecard</li>
+                        </ul>
+                        <p class="service-roi">Our clients typically identify $50K+ in annual savings opportunities in a single session.</p>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:center;">
+                        <img src="images/undraw/undraw_business-plan_wv9q.svg" alt="AI workshop planning" style="width:100%;max-width:360px;height:auto;">
+                    </div>
                 </div>
-                <img src="images/undraw-analytics.svg" alt="Business analytics and AI insights" class="section-illustration services-illustration">
-            </div>
-            
-            <div class="services-grid">
+
+                <!-- Part-Time Consultant -->
                 <div class="service-card fade-up">
-                    <div class="service-number">1</div>
-                    <h3 class="service-title">AI Workshop</h3>
-                    <p class="service-description">Interactive seminars for executives and leadership teams. Cut through the hype. Understand what AI can actually do for your business and where the real opportunities are. Includes a hands-on AI Opportunity Scorecard exercise.</p>
+                    <div class="service-number">02</div>
+                    <h3>Part-Time AI Consultant</h3>
+                    <p class="service-desc">10 hours per month of dedicated AI consulting: strategic guidance, vendor evaluation, implementation support, and on-demand answers.</p>
                     <ul class="service-features">
-                        <li>Full-day interactive session (in-person or virtual)</li>
-                        <li>Industry-specific use cases and real examples</li>
-                        <li>Executive Q&A and strategic discussion</li>
-                        <li>Take home your personalized AI Opportunity Scorecard</li>
-                    </ul>
-                    <p class="service-roi">Our clients typically identify $50K+ in annual savings opportunities in a single session.</p>
-                    <a href="workshop" class="btn-ghost" style="margin-top: 1rem; color: var(--orange); border-color: var(--orange);">Learn More &#8594;</a>
-                </div>
-                
-                <!-- ⚠️ SYNCED WITH part-time-ai-consultant.html - Pricing box. Update both files when changing! -->
-                <div class="service-card fade-up">
-                    <div class="service-number">2</div>
-                    <h3 class="service-title">Part-Time AI Consultant</h3>
-                    <p class="service-description">Don't let AI pass you by. Get 10 hours per month of dedicated AI consulting: strategic guidance, vendor evaluation, implementation support, and on-demand answers. A fractional AI expert on your team, no full-time hire required.</p>
-                    <ul class="service-features">
-                        <li>Monthly strategic check-in to align on priorities</li>
+                        <li>Monthly strategic check-in</li>
                         <li>On-demand support for AI decisions</li>
                         <li>Quarterly industry landscape report</li>
-                        <li>Priority access for new project scoping and implementation</li>
+                        <li>Priority access for project scoping</li>
                     </ul>
-                    <p class="service-roi">Clients on retainer typically engage 2-3 additional projects per year because they see the ROI and trust the relationship.</p>
-                    <a href="part-time-ai-consultant" class="btn-ghost" style="margin-top: 1rem; color: var(--orange); border-color: var(--orange);">Learn More &#8594;</a>
-                </div>
-                
-                <div class="service-card fade-up">
-                    <div class="service-number">3</div>
-                    <h3 class="service-title">AI Audit</h3>
-                    <p class="service-description">We look under the hood of your operations and hand you a prioritized roadmap personalized to your business. We identify where AI saves you money, time, or both, with ROI estimates for each opportunity.</p>
-                    <ul class="service-features">
-                        <li>Full operational analysis (1-2 weeks)</li>
-                        <li>Data maturity evaluation</li>
-                        <li>Prioritized AI roadmap with ROI estimates</li>
-                        <li>Clear, jargon-free executive report</li>
-                    </ul>
-                    <p class="service-roi">Companies that adopt AI early see 20-30% cost reductions in operations. <span class="roi-source">- McKinsey</span></p>
-                    <a href="ai-audit" class="btn-ghost" style="margin-top: 1rem; color: var(--orange); border-color: var(--orange);">Learn More &#8594;</a>
+                    <p class="service-roi">Clients on retainer typically engage 2-3 additional projects per year.</p>
+                    <a href="part-time-ai-consultant" class="service-link">Learn More &rarr;</a>
                 </div>
 
+                <!-- AI Audit -->
                 <div class="service-card fade-up">
-                    <div class="service-number">4</div>
-                    <h3 class="service-title">AI Execution</h3>
-                    <p class="service-description">We manage your AI build from spec to launch. You get a clear technical plan, honest vendor evaluation, and a project manager who actually understands the technology. We stay involved through delivery so nothing gets lost in translation between your team and the builders.</p>
+                    <div class="service-number">03</div>
+                    <h3>AI Audit</h3>
+                    <p class="service-desc">Full operational analysis with a prioritized roadmap. We identify where AI saves you money, time, or both — with ROI estimates for each opportunity.</p>
                     <ul class="service-features">
-                        <li>Technical spec & requirements</li>
-                        <li>Vendor selection & evaluation</li>
-                        <li>Project plan & milestone tracking</li>
-                        <li>Regular oversight check-ins</li>
+                        <li>1-2 week operational analysis</li>
+                        <li>Data maturity evaluation</li>
+                        <li>Prioritized AI roadmap with ROI</li>
+                        <li>Jargon-free executive report</li>
                     </ul>
-                    <p class="service-roi">Expert oversight keeps your build on scope and delivering real value.</p>
+                    <p class="service-roi">Companies adopting AI early see 20-30% cost reductions in operations. — McKinsey</p>
+                    <a href="ai-audit" class="service-link">Learn More &rarr;</a>
+                </div>
+
+                <!-- AI Execution (spans full width) -->
+                <div class="service-card featured fade-up" style="background:var(--forest-medium);">
+                    <div>
+                        <div class="service-number">04</div>
+                        <h3>AI Execution</h3>
+                        <p class="service-desc">We manage your AI build from spec to launch. Clear technical plan, honest vendor evaluation, and a project manager who actually understands the technology.</p>
+                        <ul class="service-features">
+                            <li>Technical spec & requirements</li>
+                            <li>Vendor selection & evaluation</li>
+                            <li>Project plan & milestone tracking</li>
+                            <li>Ongoing oversight check-ins</li>
+                        </ul>
+                        <p class="service-roi">Expert oversight keeps your build on scope and delivering real value.</p>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:center;">
+                        <img src="images/undraw/undraw_completed-steps_ngu7.svg" alt="AI project execution" style="width:100%;max-width:320px;height:auto;">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ============ ABOUT ============ -->
     <section id="about" class="about">
-        <div class="about-divider-top">
-            <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
-                <path d="M0,80 L1440,0 L1440,80 Z" fill="#f7f4ea"/>
-            </svg>
-        </div>
         <div class="container">
-            <div class="about-content">
-                <div class="about-header fade-up">
-                    <img src="images/headshot.jpeg" alt="Ben Nichols" class="headshot">
-                    <div class="about-header-text">
-                        <h2 class="section-title">Why Upstate AI?</h2>
-                        <p class="about-intro">An AI operator, entrepreneur, educator, and executive. Not a consultant who read a whitepaper. And yes, Upstate AI runs on AI.</p>
-                    </div>
-                    <img src="images/undraw-collaboration.svg" alt="Team collaboration" class="section-illustration about-illustration">
+            <div class="about-grid fade-up">
+                <div class="about-photo">
+                    <img src="images/headshot.jpeg" alt="Ben Nichols — Founder, Upstate AI" width="300" height="400">
                 </div>
-                <div class="about-text">
-                    
-                    <div class="credentials">
-                        <div class="credential-item fade-up">
-                            <div class="credential-icon">&#9881;&#65039;</div>
+                <div class="about-content">
+                    <h2>Not a consultant who<br>read a whitepaper</h2>
+                    <p class="about-lead">An AI operator, entrepreneur, and educator who's been on both sides of the vendor table. When I tell you what works, it's because I've already built it, shipped it, and watched what happens after the sale.</p>
+
+                    <div class="credentials-list">
+                        <div class="credential">
+                            <div class="credential-icon">⚙️</div>
                             <div>
                                 <h3>AI Operator</h3>
-                                <p>COO at an AI company, running day-to-day operations. Not theorizing about AI from the sidelines. Building, shipping, and managing AI products in production every day.</p>
+                                <p>COO at an AI company. Building, shipping, and managing AI products in production every day — not theorizing from the sidelines.</p>
                             </div>
                         </div>
-                        
-                        <div class="credential-item fade-up">
-                            <div class="credential-icon">&#128640;</div>
+                        <div class="credential">
+                            <div class="credential-icon">🚀</div>
                             <div>
                                 <h3>AI Entrepreneur</h3>
-                                <p>Founded Upstate AI to bring real AI capability to businesses of all sizes. Brought an AI-powered product to market from concept to paying customers. Knows what it takes to bet on this technology and deliver.</p>
+                                <p>Brought an AI-powered product to market from concept to paying customers. Knows what it takes to bet on this technology and deliver.</p>
                             </div>
                         </div>
-                        
-                        <div class="credential-item fade-up">
-                            <div class="credential-icon">&#127891;</div>
+                        <div class="credential">
+                            <div class="credential-icon">🎓</div>
                             <div>
                                 <h3>AI Educator</h3>
-                                <p>Adjunct Professor of AI and Data Science at Syracuse University. Teaches executives, graduate students, and working professionals how to think about and apply AI. If he can explain it to a classroom, he can explain it to your team.</p>
+                                <p>Adjunct Professor at Syracuse University teaching AI and Data Science. If he can explain it to a classroom, he can explain it to your team.</p>
                             </div>
                         </div>
-                        
-                        <div class="credential-item fade-up">
-                            <div class="credential-icon">&#128188;</div>
+                        <div class="credential">
+                            <div class="credential-icon">💼</div>
                             <div>
                                 <h3>Executive Leader</h3>
-                                <p>15 years leading teams across Fortune 100 enterprises, startups, and family businesses. Analytics, product, and technology leadership. Understands how organizations actually adopt change.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="credential-item fade-up">
-                            <div class="credential-icon">&#129302;</div>
-                            <div>
-                                <h3>Powered by AI</h3>
-                                <p>Upstate AI practices what it preaches. Our own operations run on AI tools we built and use every day. When we tell you what works, it's because we've already tested it on ourselves.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="credential-item credential-cta fade-up">
-                            <div class="credential-icon">&#129691;&#65039;</div>
-                            <div>
-                                <h3>Picture Your Business</h3>
-                                <p>Your team spending less time on repetitive work. Faster decisions backed by real data. New revenue from capabilities you didn't know you had. That's what our clients look like six months in.</p>
-                                <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="credential-cta-link">Start here &#8594;</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="about-cta fade-up">
-                        <div class="about-cta-content">
-                            <div class="about-cta-text-wrapper">
-                                <p class="about-cta-text">Available everywhere. In-person or virtual, we meet you where you are.</p>
-                                <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-secondary">Let's Talk About Your AI Strategy</a>
+                                <p>15 years leading teams across Fortune 100 enterprises, startups, and family businesses. Understands how organizations actually adopt change.</p>
                             </div>
                         </div>
                     </div>
@@ -316,81 +292,63 @@ layout: none
         </div>
     </section>
 
-    <!-- New York Roots Section -->
-    <section class="ny-roots">
-        <div class="container">
-            <div class="ny-roots-content fade-up">
-                <div class="ny-roots-text">
-                    <h2 class="section-title">Proudly Rooted in<br><span class="text-orange">New York</span></h2>
-                    <p></p>
-                    <p></p>
-                </div>
-                <img src="images/ny-map.png" alt="New York State Service Area" class="ny-map">
-            </div>
-        </div>
-    </section>
-
-    <!-- Industries Section -->
+    <!-- ============ INDUSTRIES ============ -->
     <section class="industries">
         <div class="container">
-            <h2 class="section-title fade-up">Industries We Serve</h2>
-            <p class="section-subtitle fade-up">AI solutions tailored to your sector.</p>
+            <h2 class="fade-up">Industries We Serve</h2>
+            <p class="section-sub fade-up">AI solutions tailored to your sector.</p>
             <div class="industries-grid fade-up">
                 <div class="industry-card">
-                    <div class="industry-icon">&#127974;</div>
+                    <div class="industry-icon">🏦</div>
                     <h3>Community Banking</h3>
-                    <p>AI implementation for community banks. Core modernization, compliance automation, and digital transformation without the disruption.</p>
-                    <a href="banking" style="color: var(--orange-light); font-size: 0.9rem; font-weight: 600; margin-top: 0.5rem; display: inline-block;">Learn More &rarr;</a>
+                    <p>Core modernization, compliance automation, and digital transformation without the disruption.</p>
+                    <a href="banking" class="industry-link">Learn More &rarr;</a>
                 </div>
                 <div class="industry-card">
-                    <div class="industry-icon">&#127981;</div>
+                    <div class="industry-icon">🏭</div>
                     <h3>Manufacturing</h3>
-                    <p>AI-powered quality control, predictive maintenance, and process optimization. Built for the shop floor, not the boardroom.</p>
+                    <p>Quality control, predictive maintenance, and process optimization built for the shop floor.</p>
                 </div>
                 <div class="industry-card">
-                    <div class="industry-icon">&#128188;</div>
+                    <div class="industry-icon">💼</div>
                     <h3>Professional Services</h3>
-                    <p>Automate document processing, streamline client communications, and unlock insights buried in your data.</p>
+                    <p>Document processing, client communications, and insights buried in your data.</p>
                 </div>
                 <div class="industry-card">
-                    <div class="industry-icon">&#128200;</div>
+                    <div class="industry-icon">📈</div>
                     <h3>Growing Businesses</h3>
-                    <p>Whether you're 10 employees or 500, we right-size AI solutions to your budget and ambitions.</p>
+                    <p>Right-sized AI solutions for 10 to 500+ employees — matched to your budget and ambitions.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
+    <!-- ============ BLOG ============ -->
     <section id="blog" class="blog">
-        <!-- clean edge, no divider -->
         <div class="container">
-            <h2 class="section-title fade-up">Insights & Resources</h2>
-            <p class="section-subtitle fade-up">Practical guidance on AI strategy for business leaders.</p>
-            
-            <!-- Homepage shows the 3 most recent posts from _data/posts.yml -->
+            <h2 class="fade-up">Insights &amp; Resources</h2>
+            <p class="section-sub fade-up">Practical guidance on AI strategy for business leaders.</p>
+
             <div class="blog-grid">
                 {% assign sorted_posts = site.data.posts | sort: "sort_date" | reverse %}
                 {% for post in sorted_posts limit:3 %}
                 {% include blog-card.html post=post %}
                 {% endfor %}
             </div>
-            
+
             <div style="text-align: center; margin-top: 3rem;">
-                <a href="blog" class="btn-secondary">View All Posts</a>
+                <a href="blog" class="btn-outline">View All Posts</a>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section id="booking" class="cta">
+    <!-- ============ FINAL CTA ============ -->
+    <section id="booking" class="final-cta">
         <div class="container">
-            <div class="cta-content fade-up">
-                <h2 class="cta-title">Ready to Give Your Business a <span class="text-orange" style="white-space:nowrap">Head Start?</span></h2>
-                <p class="cta-description">Let's discuss how AI can actually work for your business. No sales pitch. Just an honest conversation about where you are and where you want to go.</p>
-                <a href="https://calendar.app.google/TFDaMrzJHQ3catdo8" target="_blank" rel="noopener" class="btn-primary-large">Schedule a Consult</a>
-                <p class="cta-note">30-minute call &middot; No obligation &middot; Virtual</p>
-            </div>
+            <h2 class="fade-up">Ready for an honest<br>conversation about <span class="accent">AI</span>?</h2>
+            <p class="fade-up">No sales pitch. Just clarity on where you are, where AI can help, and what it would take.</p>
+            <a href="https://calendar.app.google/TFDaMrzJHQ3catdo8" target="_blank" rel="noopener" class="btn-primary-large fade-up">Schedule a Consult</a>
+            <p class="cta-note fade-up">30-minute call &middot; No obligation &middot; Virtual</p>
         </div>
     </section>
 
@@ -421,26 +379,24 @@ layout: none
     <link rel="stylesheet" href="css/cookie-consent.css">
     <script src="js/cookie-consent.js"></script>
 
-    <!-- Smooth Scrolling & Animations -->
+    <!-- Interactions -->
     <script>
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
 
-        // Navbar scroll effect
+        // Navbar scroll
         const navbar = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('scrolled', window.scrollY > 50);
         });
 
-        // Mobile menu toggle
+        // Mobile menu
         const mobileToggle = document.querySelector('.mobile-toggle');
         const navMenu = document.querySelector('.nav-menu');
         if (mobileToggle) {
@@ -450,7 +406,7 @@ layout: none
             });
         }
 
-        // Scroll-triggered fade-in animations
+        // Scroll-triggered fade-in
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -459,7 +415,6 @@ layout: none
                 }
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
     </script>
 </body>
