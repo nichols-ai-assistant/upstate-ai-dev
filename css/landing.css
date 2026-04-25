@@ -264,7 +264,7 @@ a:hover { color: var(--orange-light); }
     padding: var(--space-md);
     border-radius: var(--radius-lg);
     background: var(--white);
-    border: 1px solid rgba(26, 58, 46, 0.08);
+    border: 1px solid rgba(26, 58, 46, 0.18);
     transition: var(--transition);
 }
 .step:hover {
@@ -319,7 +319,7 @@ a:hover { color: var(--orange-light); }
     padding: var(--space-md) calc(var(--space-md) + 0.5rem);
     border-radius: var(--radius-lg);
     background: var(--white);
-    border: 1px solid rgba(26, 58, 46, 0.08);
+    border: 1px solid rgba(26, 58, 46, 0.18);
     transition: var(--transition);
     display: flex; flex-direction: column;
 }
@@ -424,7 +424,7 @@ a:hover { color: var(--orange-light); }
     padding: var(--space-md);
     border-radius: var(--radius-lg);
     background: var(--white);
-    border: 1px solid rgba(26, 58, 46, 0.08);
+    border: 1px solid rgba(26, 58, 46, 0.18);
     text-align: center;
     transition: var(--transition);
 }
@@ -454,7 +454,7 @@ a:hover { color: var(--orange-light); }
 .blog-card {
     background: var(--white);
     border-radius: var(--radius-lg);
-    border: 1px solid rgba(26, 58, 46, 0.08);
+    border: 1px solid rgba(26, 58, 46, 0.18);
     padding: var(--space-md);
     transition: var(--transition);
     display: flex; flex-direction: column;
