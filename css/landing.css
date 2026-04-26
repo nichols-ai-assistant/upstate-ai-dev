@@ -536,7 +536,7 @@ a:hover { color: var(--orange-light); }
     .mobile-toggle { display: flex; }
 
     .hero { padding-top: calc(5rem + 40px); }
-    .hero-visual img { max-width: 280px; }
+    .hero-visual { display: none; }
     .problem-grid { grid-template-columns: 1fr; }
     .problem-stat { flex-direction: column; gap: var(--space-sm); }
     .process-steps { grid-template-columns: 1fr; }
