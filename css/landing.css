@@ -372,14 +372,14 @@ a:hover { color: var(--orange-light); }
    Mission Strip
    ========================================== */
 .mission-strip {
-    background: var(--forest-dark);
+    background: linear-gradient(135deg, var(--forest-dark) 0%, var(--forest-medium) 50%, var(--forest-dark) 100%);
     padding: var(--space-lg) 0;
     text-align: center;
 }
 .mission-strip p {
     color: var(--white);
     font-family: var(--font-serif);
-    font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+    font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem);
     margin: 0;
     letter-spacing: 0.01em;
 }
