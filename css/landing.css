@@ -176,6 +176,8 @@ a:hover { color: var(--orange-light); }
     color: var(--forest-medium);
     margin-bottom: var(--space-md);
 }
+.badge-line { display: inline; }
+.badge-sep { display: inline; }
 .hero h1 { margin-bottom: var(--space-md); }
 .hero-lead {
     font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
@@ -537,6 +539,8 @@ a:hover { color: var(--orange-light); }
 
     .hero { padding-top: calc(5rem + 40px); }
     .hero-visual { display: none; }
+    .badge-line { display: block; }
+    .badge-sep { display: none; }
     .problem-grid { grid-template-columns: 1fr; }
     .problem-stat { flex-direction: column; gap: var(--space-sm); }
     .process-steps { grid-template-columns: 1fr; }
