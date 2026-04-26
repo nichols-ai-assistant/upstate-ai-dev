@@ -50,92 +50,28 @@
 
     <title>AI for Community Banking | Upstate AI</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/landing.css">
     <style>
         /* ==========================================
-           Community Banking Landing Page Styles
+           Community Banking Landing Page Overrides
            ========================================== */
 
-        /* Hero */
-        .cb-hero {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            overflow: hidden;
+        /* Hero override for banking */
+        .hero {
             background: var(--forest-dark);
-            padding: calc(80px + var(--spacing-xl)) 0 calc(var(--spacing-xl) + 60px) 0;
+            min-height: auto;
+            padding: 8rem 0 6rem;
         }
-        .cb-hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                135deg,
-                rgba(26, 58, 46, 0.95) 0%,
-                rgba(26, 58, 46, 0.88) 30%,
-                rgba(45, 87, 69, 0.82) 60%,
-                rgba(63, 112, 84, 0.78) 100%
-            );
-            z-index: 1;
-        }
-        .cb-hero .hero-shapes { z-index: 2; }
-        .cb-hero .container {
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-lg);
-            position: relative;
-            z-index: 3;
-        }
-        .cb-hero-content {
-            flex: 1;
-            max-width: 640px;
-        }
-        .cb-hero-illustration {
-            flex-shrink: 0;
-        }
-        .cb-hero-illustration img {
-            width: 354px;
-            height: auto;
-            filter: drop-shadow(0 12px 40px rgba(0, 0, 0, 0.3));
-        }
-        .cb-hero-content h1 {
-            color: #fff;
-            margin-bottom: var(--spacing-md);
-            font-size: clamp(2.4rem, 5vw, 3.8rem);
-            line-height: 1.15;
-        }
-        .cb-hero-content .hero-subtitle {
-            font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.88);
-            margin-bottom: var(--spacing-sm);
-            line-height: 1.7;
-            max-width: 680px;
-        }
-        .cb-hero-content .hero-description {
-            font-size: 1.05rem;
-            color: rgba(255, 255, 255, 0.72);
-            margin-bottom: var(--spacing-lg);
-            line-height: 1.7;
-            max-width: 640px;
-        }
-        .cb-hero-divider {
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            right: 0;
-            z-index: 4;
-            line-height: 0;
-        }
-        .cb-hero-divider svg {
-            width: 100%;
-            height: 100px;
-            display: block;
-        }
+        .hero::before { display: none; }
+        .hero h1 { color: var(--white); }
+        .hero .hero-lead { color: rgba(255,255,255,0.9); }
+        .hero .hero-body { color: rgba(255,255,255,0.75); }
+        .hero .hero-badge { color: rgba(255,255,255,0.75); }
+        .hero .hero-badge .accent { color: var(--orange); }
 
         /* Sections */
         .cb-section {
-            padding: var(--spacing-xl) 0;
+            padding: var(--space-xl) 0;
         }
         .cb-section-cream {
             background: var(--cream);
@@ -158,11 +94,11 @@
         .cb-challenge-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--spacing-md);
-            margin-top: var(--spacing-md);
+            gap: var(--space-md);
+            margin-top: var(--space-md);
         }
         .cb-challenge-card {
-            padding: var(--spacing-md) var(--spacing-md) var(--spacing-sm);
+            padding: var(--space-md) var(--space-md) var(--space-sm);
             border-radius: var(--radius-md);
             background: var(--white);
             box-shadow: var(--shadow-sm);
@@ -201,14 +137,14 @@
         .cb-impact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: var(--spacing-md);
-            margin-top: var(--spacing-md);
+            gap: var(--space-md);
+            margin-top: var(--space-md);
         }
         .cb-impact-card {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: var(--radius-lg);
-            padding: var(--spacing-md);
+            padding: var(--space-md);
             transition: var(--transition);
             position: relative;
             overflow: hidden;
@@ -234,12 +170,12 @@
             width: 80px;
             height: 80px;
             object-fit: contain;
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: var(--space-sm);
             filter: brightness(1.1);
         }
         .cb-impact-icon {
             font-size: 2.25rem;
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: var(--space-sm);
             display: block;
         }
         .cb-impact-card h3 {
@@ -251,13 +187,13 @@
             color: rgba(255, 255, 255, 0.6);
             font-size: 0.85rem;
             font-style: italic;
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: var(--space-sm);
         }
         .cb-impact-card > p {
             color: rgba(255, 255, 255, 0.78);
             font-size: 0.95rem;
             line-height: 1.6;
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: var(--space-sm);
         }
         .cb-impact-features {
             list-style: none;
@@ -285,29 +221,29 @@
         .cb-advantage-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-lg);
+            gap: var(--space-lg);
             align-items: start;
         }
         .cb-advantage-text h2 {
             color: var(--forest-dark);
-            margin-bottom: var(--spacing-md);
+            margin-bottom: var(--space-md);
             text-align: left;
         }
         .cb-advantage-text > p {
             color: var(--text-muted);
             font-size: 1.05rem;
             line-height: 1.7;
-            margin-bottom: var(--spacing-md);
+            margin-bottom: var(--space-md);
         }
         .cb-advantage-items {
             display: flex;
             flex-direction: column;
-            gap: var(--spacing-md);
+            gap: var(--space-md);
         }
         .cb-advantage-item {
             display: flex;
             align-items: flex-start;
-            gap: var(--spacing-sm);
+            gap: var(--space-sm);
         }
         .cb-advantage-icon {
             font-size: 1.75rem;
@@ -339,7 +275,7 @@
         /* Competitive edge */
         .cb-edge-intro {
             max-width: 720px;
-            margin: 0 auto var(--spacing-lg);
+            margin: 0 auto var(--space-lg);
             text-align: center;
         }
         .cb-edge-intro p {
@@ -350,14 +286,14 @@
         .cb-edge-columns {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-md);
+            gap: var(--space-md);
             max-width: 900px;
             margin: 0 auto;
         }
         .cb-edge-col {
             background: var(--white);
             border-radius: var(--radius-md);
-            padding: var(--spacing-md);
+            padding: var(--space-md);
             box-shadow: var(--shadow-sm);
             position: relative;
             overflow: hidden;
@@ -376,7 +312,7 @@
         .cb-edge-col h3 {
             color: var(--forest-dark);
             font-size: 1.1rem;
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: var(--space-sm);
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -408,9 +344,9 @@
         }
         .cb-edge-result {
             max-width: 720px;
-            margin: var(--spacing-md) auto 0;
+            margin: var(--space-md) auto 0;
             text-align: center;
-            padding: var(--spacing-md);
+            padding: var(--space-md);
             background: var(--forest-dark);
             border-radius: var(--radius-md);
             color: rgba(255, 255, 255, 0.9);
@@ -420,7 +356,7 @@
 
         /* Contact / CTA section */
         .cb-cta-section {
-            padding: var(--spacing-xl) 0;
+            padding: var(--space-xl) 0;
             background: var(--forest-dark);
             position: relative;
         }
@@ -434,7 +370,7 @@
         .cb-cta-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-lg);
+            gap: var(--space-lg);
             align-items: start;
             position: relative;
             z-index: 1;
@@ -442,13 +378,13 @@
         .cb-cta-text h2 {
             color: #fff;
             text-align: left;
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: var(--space-sm);
         }
         .cb-cta-text > p {
             color: rgba(255, 255, 255, 0.8);
             font-size: 1.05rem;
             line-height: 1.7;
-            margin-bottom: var(--spacing-md);
+            margin-bottom: var(--space-md);
         }
         .cb-cta-bullets {
             list-style: none;
@@ -473,7 +409,7 @@
             color: rgba(255, 255, 255, 0.6);
             font-size: 0.9rem;
             line-height: 1.6;
-            margin-top: var(--spacing-md);
+            margin-top: var(--space-md);
         }
 
         /* Form */
@@ -481,10 +417,10 @@
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: var(--radius-lg);
-            padding: var(--spacing-md);
+            padding: var(--space-md);
         }
         .cb-form .field-group {
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: var(--space-sm);
         }
         .cb-form label {
             display: block;
@@ -524,13 +460,13 @@
         }
         .cb-form .btn-primary {
             width: 100%;
-            margin-top: var(--spacing-xs);
+            margin-top: var(--space-xs);
         }
         .cb-form-note {
             color: rgba(255, 255, 255, 0.45);
             font-size: 0.8rem;
             text-align: center;
-            margin-top: var(--spacing-sm);
+            margin-top: var(--space-sm);
             margin-bottom: 0;
         }
         .cb-form-error {
@@ -541,11 +477,11 @@
         }
         .cb-form-success {
             text-align: center;
-            padding: var(--spacing-lg) var(--spacing-md);
+            padding: var(--space-lg) var(--space-md);
         }
         .cb-form-success h3 {
             color: #fff;
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: var(--space-sm);
         }
         .cb-form-success p {
             color: rgba(255, 255, 255, 0.75);
@@ -563,7 +499,7 @@
         @media (max-width: 768px) {
             .cb-hero {
                 min-height: auto;
-                padding: calc(70px + var(--spacing-lg)) 0 calc(var(--spacing-lg) + 60px) 0;
+                padding: calc(70px + var(--space-lg)) 0 calc(var(--space-lg) + 60px) 0;
             }
             .cb-hero .container {
                 flex-direction: column;
@@ -629,34 +565,23 @@
     </nav>
 
     <!-- ==================== HERO ==================== -->
-    <section class="cb-hero">
-        <div class="hero-background">
-            <img src="images/syracuse.webp" alt="Upstate New York" class="hero-bg-image">
-        </div>
-        <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-        </div>
+    <section class="hero">
         <div class="container">
-            <div class="cb-hero-content fade-up">
-                <div class="hero-badge">Community Banking</div>
-                <h1>You Have What Big Banks Can't Buy. <span class="text-orange">AI Makes It&nbsp;Unstoppable.</span></h1>
-                <p class="hero-subtitle">Practical AI implementation for community banks. No rip-and-replace. No hype. Technology that works inside the bank you've already built.</p>
-                <div class="hero-ctas">
-                    <a href="#contact" class="btn-primary">Schedule a Community Banking AI Assessment</a>
-                    <a href="#impact" class="btn-ghost">See AI Impact Areas</a>
+            <div class="hero-grid">
+                <div class="hero-content fade-up">
+                    <span class="hero-badge"><span class="accent">&#x2B25;</span>&nbsp;&nbsp; Community Banking &nbsp;&nbsp;<span class="accent">&#x2B25;</span></span>
+                    <h1>You Have What Big Banks Can't Buy.<br><span class="accent">AI Makes It Count.</span></h1>
+                    <p class="hero-lead">Practical AI for community banks. No rip-and-replace. No hype. Technology that works inside the bank you've already built.</p>
+                    <p class="hero-body">Led by a reformed AI vendor who's worked both sides of the banking technology table. We know what vendors promise and what actually ships.</p>
+                    <div class="hero-ctas">
+                        <a href="#contact" class="btn-primary">Schedule a Banking AI Assessment</a>
+                        <a href="#impact" class="btn-ghost">See AI Impact Areas &rarr;</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-up">
+                    <img src="images/undraw/undraw_community-bank.svg?v=11" alt="Community Bank" width="480" height="317">
                 </div>
             </div>
-            <div class="cb-hero-illustration fade-up">
-                <img src="images/undraw/undraw_community-bank.svg?v=11" alt="Community Bank">
-            </div>
-        </div>
-        <div class="cb-hero-divider">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,0 L1440,80 L1440,120 L0,120 Z" fill="var(--cream)"/>
-            </svg>
         </div>
     </section>
 
@@ -693,7 +618,7 @@
                 </div>
             </div>
 
-            <p class="fade-up" style="text-align: center; color: var(--text-muted); margin-top: var(--spacing-lg); font-size: 1.05rem; max-width: 680px; margin-left: auto; margin-right: auto;">None of these problems are going away. But every one of them is a problem AI can help solve, without turning your bank into something it isn't.</p>
+            <p class="fade-up" style="text-align: center; color: var(--text-muted); margin-top: var(--space-lg); font-size: 1.05rem; max-width: 680px; margin-left: auto; margin-right: auto;">None of these problems are going away. But every one of them is a problem AI can help solve, without turning your bank into something it isn't.</p>
         </div>
     </section>
 
@@ -927,7 +852,7 @@
                     <div class="cb-form cb-form-success" id="cbFormSuccess" style="display: none;">
                         <h3>Thank you. We'll be in touch.</h3>
                         <p>We've received your information and will reach out within one business day to schedule your community banking AI assessment.</p>
-                        <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary" style="margin-top: var(--spacing-sm);">Or Book a Call Now</a>
+                        <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary" style="margin-top: var(--space-sm);">Or Book a Call Now</a>
                     </div>
                 </div>
             </div>
