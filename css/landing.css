@@ -177,7 +177,7 @@ a:hover { color: var(--orange-light); }
     margin-bottom: var(--space-md);
 }
 .badge-line { display: inline; }
-.badge-sep { display: inline; }
+.badge-sep { display: inline; padding: 0 1.5em; }
 .hero h1 { margin-bottom: var(--space-md); }
 .hero-lead {
     font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
