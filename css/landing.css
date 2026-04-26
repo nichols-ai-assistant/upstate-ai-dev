@@ -369,6 +369,22 @@ a:hover { color: var(--orange-light); }
 .service-link:hover { color: var(--orange-light); }
 
 /* ==========================================
+   Mission Strip
+   ========================================== */
+.mission-strip {
+    background: var(--forest-dark);
+    padding: var(--space-lg) 0;
+    text-align: center;
+}
+.mission-strip p {
+    color: var(--white);
+    font-family: var(--font-serif);
+    font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+    margin: 0;
+    letter-spacing: 0.01em;
+}
+
+/* ==========================================
    About
    ========================================== */
 .about {
