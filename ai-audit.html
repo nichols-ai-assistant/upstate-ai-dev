@@ -168,21 +168,34 @@ layout: none
         }
         .journey-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
         }
+        @media (max-width: 767px) {
+            .journey-grid { grid-template-columns: 1fr; }
+        }
         .journey-card {
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
             border-radius: 18px;
-            padding: 1.75rem;
+            padding: 2rem;
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
+            gap: 0.5rem;
         }
+        .journey-card p { margin: 0; }
         .journey-card h3 {
-            color: #7FE3FF;
-            margin-bottom: 0;
+            color: #fff;
+            margin-bottom: 0.25rem;
+            font-size: 1.25rem;
+        }
+        .journey-deliverables {
+            margin-top: auto;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.5;
         }
         .usage-list {
             display: grid;
@@ -342,28 +355,28 @@ layout: none
             <p class="section-subtitle fade-up" style="color: rgba(255,255,255,0.8); max-width: 720px;">A structured process that gives you clarity without disrupting your operations.</p>
             <div class="journey-grid">
                 <div class="journey-card fade-up">
-                    <div style="font-size: 1.8rem; color: #FF8C00; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Step 1</div>
-                    <h3 style="color: #fff; font-size: 1.4rem;">Kickoff Call</h3>
+                    <div style="font-size: 0.85rem; color: #FF8C00; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;">Step 1</div>
+                    <h3>Kickoff Call</h3>
                     <p>We learn your business, your goals, and your pain points. 30 minutes, no charge, no commitment.</p>
-                    <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Deliverables: Scope agreement, team interview schedule.</p>
+                    <p class="journey-deliverables">Scope agreement, team interview schedule.</p>
                 </div>
                 <div class="journey-card fade-up">
-                    <div style="font-size: 1.8rem; color: #FF8C00; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Step 2</div>
-                    <h3 style="color: #fff; font-size: 1.4rem;">Operational Deep Dive</h3>
+                    <div style="font-size: 0.85rem; color: #FF8C00; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;">Step 2</div>
+                    <h3>Operational Deep Dive</h3>
                     <p>We interview key team members, review workflows, and assess your data and systems. We go where the work actually happens.</p>
-                    <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Deliverables: Workflow maps, data inventory, opportunity shortlist.</p>
+                    <p class="journey-deliverables">Workflow maps, data inventory, opportunity shortlist.</p>
                 </div>
                 <div class="journey-card fade-up">
-                    <div style="font-size: 1.8rem; color: #FF8C00; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Step 3</div>
-                    <h3 style="color: #fff; font-size: 1.4rem;">Analysis and Roadmap</h3>
+                    <div style="font-size: 0.85rem; color: #FF8C00; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;">Step 3</div>
+                    <h3>Analysis and Roadmap</h3>
                     <p>We map every workflow against AI capabilities, estimate ROI for each opportunity, and rank them by impact and feasibility.</p>
-                    <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Deliverables: Prioritized roadmap, ROI models, executive report.</p>
+                    <p class="journey-deliverables">Prioritized roadmap, ROI models, executive report.</p>
                 </div>
                 <div class="journey-card fade-up">
-                    <div style="font-size: 1.8rem; color: #FF8C00; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Step 4</div>
-                    <h3 style="color: #fff; font-size: 1.4rem;">Walkthrough Session</h3>
+                    <div style="font-size: 0.85rem; color: #FF8C00; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;">Step 4</div>
+                    <h3>Walkthrough Session</h3>
                     <p>We present findings, answer questions, and help you decide what to do first. Your team walks away with a clear next step.</p>
-                    <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85);">Deliverables: Live Q&A, implementation recommendations.</p>
+                    <p class="journey-deliverables">Live Q&A, implementation recommendations.</p>
                 </div>
             </div>
         </div>
