@@ -31,9 +31,9 @@
             icon: '\uD83E\uDDED', // compass
             cssClass: 'tier-explorer',
             service: 'AI Workshop',
-            servicePrice: '$2,000',
+            servicePrice: '$5,000',
             serviceSlug: 'index.html#services',
-            serviceDesc: 'Cut through the hype. Understand what AI can actually do for your business. An interactive half-day session covering industry-specific use cases, a hands-on AI Opportunity Scorecard exercise, and strategic Q&A with your leadership team.',
+            serviceDesc: 'Cut through vendor hype. Pressure-test real use cases against your operations and walk away with an AI Opportunity Scorecard you can act on without us in the room.',
             summary: 'You\'re at the starting line, and that\'s exactly where most businesses are right now. AI isn\'t your next move; your next move is building the foundation that makes AI possible. The good news? Every step you take here pays off whether or not you ever touch AI, because better data and documented processes make everything run smoother.',
             actions: [
                 'Get your critical data out of spreadsheets and into a proper system',
@@ -47,9 +47,9 @@
             icon: '\uD83D\uDD27', // wrench
             cssClass: 'tier-builder',
             service: 'AI Audit',
-            servicePrice: '$10,000',
+            servicePrice: '$15,000',
             serviceSlug: 'index.html#services',
-            serviceDesc: 'We look under the hood of your operations and hand you a prioritized roadmap with ROI estimates. A full operational analysis, data maturity evaluation, and a clear, jargon-free executive report with your highest-value AI opportunities ranked.',
+            serviceDesc: 'We analyze your operations, interview your team, and deliver a prioritized roadmap with ROI estimates. Honest answers in a jargon-free executive report you can act on without us.',
             summary: 'You\'ve got pieces in place. Data exists, some processes are documented, and leadership is paying attention. The gap right now is between interest and action. This is the critical moment: the businesses that ones that move from "we should look into AI" to "here\'s our first project" in the next 12 months will create real separation from competitors.',
             actions: [
                 'Run a data quality audit on one business area (customer records, production logs, or inventory)',
@@ -79,9 +79,9 @@
             icon: '\u2B50', // star
             cssClass: 'tier-leader',
             service: 'Part-Time AI Consultant',
-            servicePrice: '$2,000/mo',
+            servicePrice: '$5,000/mo',
             serviceSlug: 'part-time-ai-consultant',
-            serviceDesc: 'Get 10 hours per month of dedicated AI consulting: strategic guidance, vendor evaluation, implementation support, and on-demand answers. A fractional AI expert on your team, no full-time hire required.',
+            serviceDesc: '10 hours per month of fractional AI leadership from someone who\'s been behind the vendor curtain. Strategic guidance, vendor evaluation, and on-demand answers. Building your judgment, not your dependency.',
             summary: 'You\'re in the top tier of SMB AI readiness nationally, not just regionally. You have the data infrastructure, documented processes, technology stack, leadership commitment, and governance awareness that most businesses are still working toward. Your play now is strategic: building an AI roadmap that turns this foundation into measurable competitive advantage.',
             actions: [
                 'Build a 12-18 month AI roadmap mapping 3-5 initiatives to specific business outcomes',
