@@ -527,7 +527,7 @@ a:hover { color: var(--orange-light); }
     .hero-grid { grid-template-columns: 1fr; gap: var(--space-md); }
     .hero-visual { order: -1; }
     .hero-visual img { max-width: 360px; }
-    .hero-badge { text-align: left; }
+    .hero-badge { display: block; text-align: left; }
     .badge-line { display: block; }
     .badge-sep { display: none; }
     .about-grid { grid-template-columns: 1fr; }
