@@ -23,6 +23,12 @@ if (mobileToggle) {
         navMenu.classList.toggle('open');
         mobileToggle.classList.toggle('active');
     });
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('open');
+            mobileToggle.classList.remove('active');
+        });
+    });
 }
 
 // Scroll-triggered fade-in animations
