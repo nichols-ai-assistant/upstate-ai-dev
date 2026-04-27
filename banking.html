@@ -69,6 +69,15 @@
         .hero .hero-badge { color: rgba(255,255,255,0.75); }
         .hero .hero-badge .accent { color: var(--orange); }
 
+        /* Desktop text sizing — tame the base landing.css scales */
+        @media (min-width: 769px) {
+            .hero h1 { font-size: clamp(2.5rem, 1.5rem + 3.5vw, 3.75rem); }
+            .section-title { font-size: clamp(1.75rem, 1rem + 2.5vw, 2.75rem); }
+            .section-subtitle { font-size: 1.05rem; }
+            .hero-lead { font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem); }
+            .hero-body { font-size: 1rem; }
+        }
+
         @media (max-width: 768px) {
             .hero h1 { font-size: clamp(2rem, 1.5rem + 3vw, 2.8rem); }
             .hero { padding: 6rem 0 4rem; }
