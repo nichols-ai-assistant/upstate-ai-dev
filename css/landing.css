@@ -451,6 +451,24 @@ a:hover { color: var(--orange-light); }
 .industry-card h3 { font-family: var(--font-sans); font-weight: 700; font-size: 1rem; margin-bottom: var(--space-xs); }
 .industry-card p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0; }
 .industry-link { display: inline-block; margin-top: var(--space-sm); font-size: 0.85rem; font-weight: 600; }
+.btn-industry {
+    display: inline-block;
+    margin-top: var(--space-sm);
+    padding: 0.65rem 1.5rem;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+.btn-industry:hover {
+    background: #e05a00;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(255, 105, 0, 0.35);
+}
 
 /* ==========================================
    Blog
