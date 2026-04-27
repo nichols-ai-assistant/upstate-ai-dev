@@ -551,9 +551,8 @@ a:hover { color: var(--orange-light); }
     .about-grid { grid-template-columns: 1fr; }
     .about-photo { position: static; max-width: 280px; }
     .industries-grid { grid-template-columns: repeat(2, 1fr); }
-}
 
-@media (max-width: 768px) {
+    /* Nav → hamburger at tablet widths */
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -603,7 +602,9 @@ a:hover { color: var(--orange-light); }
     .nav-menu.open { display: flex; }
     .mobile-toggle { display: flex; z-index: 1000; position: relative; }
     .mobile-toggle.active span { background: var(--warm-white); }
+}
 
+@media (max-width: 768px) {
     .hero { padding-top: calc(5rem + 40px); }
     .hero-visual { display: none; }
     .badge-line { display: block; }

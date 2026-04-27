@@ -999,9 +999,8 @@ a:hover { color: var(--orange-light); }
     .service-card.featured:hover { transform: translateY(-6px); }
     .industries-grid { grid-template-columns: repeat(2, 1fr); }
     .blog-grid { grid-template-columns: 1fr; max-width: 500px; margin-left: auto; margin-right: auto; }
-}
 
-@media (max-width: 768px) {
+    /* Nav → hamburger at tablet widths */
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -1048,7 +1047,9 @@ a:hover { color: var(--orange-light); }
     .nav-menu.open { display: flex; }
     .mobile-toggle { display: flex; z-index: 1000; position: relative; }
     .mobile-toggle.active span { background: #f5f0e8; }
+}
 
+@media (max-width: 768px) {
     .hero { min-height: auto; padding: calc(70px + var(--spacing-lg)) 0 calc(var(--spacing-lg) + 60px) 0; overflow: hidden; }
     .hero-ctas { flex-direction: column; }
     .hero-ctas .btn-primary, .hero-ctas .btn-ghost { text-align: center; }
