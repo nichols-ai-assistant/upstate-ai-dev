@@ -851,6 +851,24 @@ a:hover { color: var(--orange-light); }
 .industry-icon { font-size: 2.5rem; margin-bottom: var(--spacing-sm); }
 .industry-card h3 { color: var(--orange-light); font-size: 1.15rem; margin-bottom: 0.5rem; }
 .industry-card p { color: rgba(255,255,255,0.78); font-size: 0.9rem; margin: 0; line-height: 1.6; }
+.btn-industry {
+    display: inline-block;
+    margin-top: 1.25rem;
+    padding: 0.65rem 1.5rem;
+    background: var(--orange);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: var(--transition);
+    letter-spacing: 0.01em;
+}
+.btn-industry:hover {
+    background: var(--orange-dark, #e05a00);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(255, 105, 0, 0.35);
+}
 .industry-pill {
     display: inline-block;
     background: rgba(255, 105, 0, 0.15);
