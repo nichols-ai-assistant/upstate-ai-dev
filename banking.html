@@ -56,17 +56,16 @@
            Community Banking Landing Page Overrides
            ========================================== */
 
-        /* Hero override for banking */
+        /* Hero override for banking — light bg, green text */
         .hero {
-            background: var(--forest-dark);
+            background: linear-gradient(170deg, var(--cream) 0%, var(--warm-white) 60%);
             min-height: auto;
             padding: 8rem 0 6rem;
         }
-        .hero::before { display: none; }
-        .hero h1 { color: var(--white); }
-        .hero .hero-lead { color: rgba(255,255,255,0.9); }
-        .hero .hero-body { color: rgba(255,255,255,0.75); }
-        .hero .hero-badge { color: rgba(255,255,255,0.75); }
+        .hero h1 { color: var(--forest-dark); }
+        .hero .hero-lead { color: var(--text-dark); }
+        .hero .hero-body { color: var(--text-muted); }
+        .hero .hero-badge { color: var(--forest-medium); }
         .hero .hero-badge .accent { color: var(--orange); }
 
         /* Desktop text sizing — tame the base landing.css scales */
