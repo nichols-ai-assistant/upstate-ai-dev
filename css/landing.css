@@ -455,7 +455,7 @@ a:hover { color: var(--orange-light); }
     display: inline-block;
     margin-top: var(--space-sm);
     padding: 0.65rem 1.5rem;
-    background: var(--accent);
+    background: var(--orange);
     color: #fff;
     font-size: 0.9rem;
     font-weight: 600;
