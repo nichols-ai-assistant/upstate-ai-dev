@@ -1007,11 +1007,11 @@ a:hover { color: var(--orange-light); }
         align-items: center;
         justify-content: center;
         gap: 0;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
+        width: 100vw;
+        height: 100vh;
         background: rgba(10, 28, 22, 0.98);
         padding: 2rem;
         z-index: 999;
