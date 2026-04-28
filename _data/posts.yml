@@ -1,6 +1,14 @@
 # Blog post registry — sorted by date descending.
 # Add new posts to the top. Homepage auto-displays the first 3.
 
+- title: "Stop Prompting. Start Governing."
+  url: "blog/principled-prompting-april-2026"
+  category: "AI Strategy"
+  date: "April 27, 2026"
+  sort_date: 2026-04-27
+  excerpt: "Most AI output is generic because most AI has no standards. Principled prompting is the practice of codifying your brand, ethics, and aesthetics so every AI interaction reflects who you are."
+  read_time: "7 min read"
+
 - title: "90% of CEOs Say AI Had No Impact. Here's Why They're Right."
   url: "blog/90-percent-ceos-ai-no-impact-april-2026"
   category: "AI Strategy"
