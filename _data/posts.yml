@@ -1,6 +1,14 @@
 # Blog post registry — sorted by date descending.
 # Add new posts to the top. Homepage auto-displays the first 3.
 
+- title: "Build vs. Buy in the Age of AI"
+  url: "blog/build-vs-buy-ai-april-2026"
+  category: "AI Strategy"
+  date: "April 30, 2026"
+  sort_date: 2026-04-30
+  excerpt: "Build vs. buy was always a spectrum. AI has made it a moving spectrum. The real question in 2026 isn't what to build — it's who you trust to maintain it."
+  read_time: "8 min read"
+
 - title: "Stop Prompting. Start Governing."
   url: "blog/principled-prompting-april-2026"
   category: "AI Strategy"
