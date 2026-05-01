@@ -398,7 +398,15 @@
             filter: drop-shadow(0 8px 25px rgba(30, 73, 8, 0.1));
         }
 
-        /* ---- Member outcomes: icon grid ---- */
+        /* ---- Member outcomes: lighter section override ---- */
+        #outcomes {
+            background: #e8f0eb;
+            color: var(--forest-dark);
+        }
+        #outcomes .section-title { color: var(--forest-dark); }
+        #outcomes .section-subtitle { color: var(--text-muted); }
+
+        /* ---- Member outcomes: card grid ---- */
         .cu-outcomes-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -407,7 +415,16 @@
         }
         .cu-outcome-card {
             text-align: center;
-            padding: var(--space-md) var(--space-sm);
+            padding: var(--space-md);
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(26, 58, 46, 0.12);
+            box-shadow: 0 2px 8px rgba(26, 58, 46, 0.06);
+            transition: var(--transition);
+        }
+        .cu-outcome-card:hover {
+            box-shadow: 0 6px 20px rgba(26, 58, 46, 0.1);
+            transform: translateY(-2px);
         }
         .cu-outcome-icon {
             font-size: 2rem;
@@ -415,12 +432,13 @@
             display: block;
         }
         .cu-outcome-card h3 {
-            color: var(--orange-light);
+            color: var(--forest-dark);
             font-size: 1.05rem;
             margin-bottom: 0.35rem;
+            font-weight: 700;
         }
         .cu-outcome-card p {
-            color: rgba(255, 255, 255, 0.75);
+            color: var(--text-muted);
             font-size: 0.9rem;
             line-height: 1.6;
             margin-bottom: 0;
@@ -548,6 +566,7 @@
         @media (max-width: 1024px) {
             .cu-services-grid { grid-template-columns: 1fr; }
             .cu-challenge-grid { grid-template-columns: repeat(2, 1fr); }
+            .cu-outcomes-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 768px) {
             .cu-challenge-grid { grid-template-columns: 1fr; }
