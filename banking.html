@@ -510,6 +510,70 @@
             opacity: 0.3;
         }
 
+        /* Trust badges (below hero CTAs) */
+        .cb-trust-row {
+            display: flex;
+            justify-content: flex-start;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+            margin-top: var(--space-md);
+        }
+        .cb-trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        .cb-trust-badge .check {
+            color: var(--orange);
+            font-weight: 800;
+            font-size: 0.85rem;
+        }
+
+        /* Insider perspective section cards */
+        .cb-insider-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-sm);
+            margin-top: var(--space-md);
+        }
+        .cb-insider-card {
+            padding: var(--space-sm);
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+        }
+        .cb-insider-card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        .cb-insider-icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .cb-insider-card h3 {
+            color: var(--orange-light);
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+        }
+        .cb-insider-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .cb-insider-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .cb-hero {
@@ -528,6 +592,7 @@
             .cb-hero-illustration img {
                 width: 180px;
             }
+            .cb-insider-grid { grid-template-columns: 1fr; }
             .cb-challenge-grid {
                 grid-template-columns: 1fr;
             }
@@ -585,15 +650,51 @@
             <div class="hero-grid">
                 <div class="hero-content fade-up">
                     <span class="hero-badge"><span class="accent">&#x2B25;</span>&nbsp;&nbsp; Community Banking &nbsp;&nbsp;<span class="accent">&#x2B25;</span></span>
-                    <h1>You Have What Big Banks Can't Buy.<br><span class="accent">AI Makes It Count.</span></h1>
-                    <p class="hero-lead" style="margin-bottom: var(--space-lg);">Practical AI for community banks. No rip-and-replace. Technology that works inside the bank you've already built.</p>
-                    <div class="hero-ctas">
+                    <h1>Straight Talk on AI for <span class="accent">Community Banks</span></h1>
+                    <p class="hero-lead">We spent years on the vendor side, building conversational AI for community banks. We know what the pitch deck says, what the demo skips, and what actually holds up when you're back at your institution with real systems and real regulators. That's the conversation you get on day one.</p>
+                    <div class="hero-ctas" style="margin-top: var(--space-md);">
                         <a href="#contact" class="btn-primary">Schedule a Banking AI Assessment</a>
-                        <a href="#impact" class="btn-ghost">See AI Impact Areas &rarr;</a>
+                        <a href="#impact" class="btn-ghost">See Where AI Helps &rarr;</a>
+                    </div>
+                    <div class="cb-trust-row">
+                        <span class="cb-trust-badge"><span class="check">&#x2713;</span> Co-founder and COO, Directlink AI</span>
+                        <span class="cb-trust-badge"><span class="check">&#x2713;</span> AI Professor, Syracuse University</span>
+                        <span class="cb-trust-badge"><span class="check">&#x2713;</span> Advisory work at active community banks</span>
                     </div>
                 </div>
                 <div class="hero-visual fade-up">
                     <img src="images/undraw/undraw_credit-card-payment_3zqz.svg" alt="Community Bank" width="480" height="317">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== INSIDER PERSPECTIVE ==================== -->
+    <section class="cb-section cb-section-dark" id="insider">
+        <div class="container">
+            <h2 class="section-title fade-up">What We've Seen <span class="text-orange">From the Inside</span></h2>
+            <p class="section-subtitle fade-up">Before starting Upstate AI, our founder was COO at Directlink, a company that built conversational AI for community banks and credit unions. We know what the pitch deck says. We know what actually ships.</p>
+
+            <div class="cb-insider-grid fade-up">
+                <div class="cb-insider-card">
+                    <span class="cb-insider-icon">&#x23F3;</span>
+                    <h3>"AI Roadmap Coming Soon"</h3>
+                    <p>FIS, Jack Henry, and Fiserv control 70%+ of the core banking market. When any of them says AI features are "on the roadmap," that typically means 18 to 36 months, and you will have signed a contract before you find that out. We will help you ask the right questions before you sign.</p>
+                </div>
+                <div class="cb-insider-card">
+                    <span class="cb-insider-icon">&#x1F4CB;</span>
+                    <h3>The Demo Isn't the Product</h3>
+                    <p>Vendor demos show AI working on clean, structured data. Most community banks don't have that. A demo that works in a controlled environment will behave very differently on your actual customer data and your actual core system.</p>
+                </div>
+                <div class="cb-insider-card">
+                    <span class="cb-insider-icon">&#x1F517;</span>
+                    <h3>Integration Is Where Projects Die</h3>
+                    <p>The AI model is rarely the hard part. Connecting it to your core, your loan origination system, and your compliance workflows is where most implementations stall. Vendors underscope this every time. We build that into the roadmap from day one.</p>
+                </div>
+                <div class="cb-insider-card">
+                    <span class="cb-insider-icon">&#x1F6AB;</span>
+                    <h3>Where AI Doesn't Make Sense Yet</h3>
+                    <p>If your data is fragmented across systems that don't talk to each other, AI will amplify that problem, not fix it. If you haven't solved your data quality issue, an AI layer on top makes it worse and more expensive. We will tell you this in the first conversation if it applies to you.</p>
                 </div>
             </div>
         </div>
@@ -641,8 +742,8 @@
     <!-- ==================== AI IMPACT AREAS ==================== -->
     <section class="cb-section cb-section-dark" id="impact">
         <div class="container">
-            <h2 class="section-title fade-up">Where <span class="text-orange">AI</span> Meets Community Banking</h2>
-            <p class="section-subtitle fade-up">Here is where community banks are currently implementing AI, seeing measurable results, while being mindful of their operations.</p>
+            <h2 class="section-title fade-up">Where AI Actually <span class="text-orange">Works for Community Banks</span></h2>
+            <p class="section-subtitle fade-up">We start with one problem, not all six. The areas below represent the full scope of where AI creates value for community banks. In your first engagement, we identify which applies to your institution, in what order, and at what cost.</p>
 
             <div class="cb-impact-grid">
 
@@ -794,18 +895,19 @@
         <div class="container">
             <div class="cb-cta-grid">
                 <div class="cb-cta-text fade-up">
-                    <h2>Let's Figure Out Where AI Fits in <span class="text-orange">Your Bank</span></h2>
-                    <p>We don't pitch solutions before understanding your operations. Every community bank is different: different core systems, different staffing situations, different markets, different priorities.</p>
-                    <p>Start with a conversation. We'll assess where AI can deliver measurable value for your specific bank and build a practical roadmap that accounts for your technology, your budget, and your regulators.</p>
+                    <h2>No Demo. No Deck. <span class="text-orange">Just an Honest Conversation.</span></h2>
+                    <p>The assessment is not a sales call. It is a working session. We will look at your current systems, your customer data, your staffing model, and your compliance situation and tell you honestly what AI can and cannot do for your bank right now. If the answer is "not yet," we will tell you that too.</p>
 
                     <ul class="cb-cta-bullets">
-                        <li>60-minute assessment with our banking AI specialists</li>
-                        <li>Custom AI opportunity report for your institution</li>
-                        <li>ROI projections based on your specific operational data</li>
-                        <li>No commitment, no pitch deck, no vendor lock-in</li>
+                        <li>60-minute assessment focused on your specific operations, systems, and customer base</li>
+                        <li>Honest evaluation of where AI makes sense and where it does not, in your situation</li>
+                        <li>Practical roadmap with budget ranges, core system requirements, and regulatory considerations</li>
+                        <li><strong style="color: #fff;">Workshop: $5,000 flat.</strong> Full-day on-site intensive with AI Opportunity Scorecard and prioritized roadmap.</li>
+                        <li><strong style="color: #fff;">Fractional AI Advisor: $5,000/month.</strong> 10 hours per month, ongoing. Vendor evaluation, board questions, implementation support.</li>
+                        <li>No obligation. No pitch deck. No vendor commissions.</li>
                     </ul>
 
-                    <p class="cb-cta-supporting">No commitment. Just an honest conversation about what's realistic for your bank. We'll tell you where AI makes sense, where it doesn't, and what a responsible implementation looks like.</p>
+                    <p class="cb-cta-supporting">Clients typically identify $50,000 or more in annual operational savings opportunities in a single workshop session. We'll tell you where yours are, or tell you if we can't find them.</p>
                 </div>
 
                 <div class="fade-up">
