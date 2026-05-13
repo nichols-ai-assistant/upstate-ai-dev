@@ -161,6 +161,65 @@
             flex-shrink: 0;
         }
 
+        /* Reset button in the toggle bar */
+        .filter-reset-btn {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.45);
+            color: rgba(253,252,248,0.85);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.6rem;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s, border-color 0.15s;
+            white-space: nowrap;
+        }
+        .filter-reset-btn:hover {
+            background: rgba(255,255,255,0.12);
+            border-color: rgba(255,255,255,0.7);
+            color: #fff;
+        }
+
+        /* Global empty state */
+        .landscape-empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5rem 1rem;
+            text-align: center;
+        }
+        .landscape-empty-state svg {
+            color: var(--forest-dark);
+            margin-bottom: 1.25rem;
+            opacity: 0.55;
+        }
+        .landscape-empty-state h3 {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 1.5rem;
+            color: var(--forest-dark);
+            margin: 0 0 0.5rem;
+        }
+        .landscape-empty-state p {
+            font-size: 0.95rem;
+            color: rgba(45,87,69,0.55);
+            margin: 0 0 1.5rem;
+        }
+        .landscape-empty-reset-btn {
+            background: var(--orange);
+            border: none;
+            color: #fff;
+            font-size: 0.875rem;
+            font-weight: 700;
+            padding: 0.6rem 1.4rem;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .landscape-empty-reset-btn:hover { background: #e06000; }
+
         /* Collapsible panel */
         .filter-panel {
             overflow: hidden;
@@ -849,7 +908,7 @@
             </div>
             <div id="filter-active-summary" class="filter-active-summary"></div>
             <div class="filter-toggle-right">
-                <!-- intentionally empty; arrow in left group serves as affordance -->
+                <button class="filter-reset-btn" id="filter-reset-btn" style="display:none" aria-label="Reset all filters">Reset</button>
             </div>
         </div>
         <!-- Collapsible panel -->
@@ -1171,6 +1230,7 @@
 
             var html = '';
             var cats = state.data.categories;
+            var totalVisible = 0;
 
             for (var i = 0; i < cats.length; i++) {
                 var cat = cats[i];
@@ -1186,6 +1246,11 @@
                     }
                 }
 
+                // Hide T1 section entirely if no visible vendors
+                if (t1VendorCount === 0) continue;
+
+                totalVisible += t1VendorCount;
+
                 var t1Active = (state.activeT1 === cat.code) ? ' active' : '';
                 html += '<section class="t1-section" data-t1="' + cat.code + '">';
                 html += '<div class="t1-header' + t1Active + '" data-t1-toggle="' + cat.code + '" tabindex="0" role="button" aria-label="Toggle ' + escHtml(cat.name) + ' category">';
@@ -1196,6 +1261,10 @@
                 for (var j2 = 0; j2 < cat.subcategories.length; j2++) {
                     var sub2 = cat.subcategories[j2];
                     var visibleVendors = sub2.vendors.filter(vendorVisible);
+
+                    // Hide T2 block entirely if no visible vendors
+                    if (visibleVendors.length === 0) continue;
+
                     visibleVendors.sort(function(a, b) {
                         var ta = getPrimaryTier(a), tb = getPrimaryTier(b);
                         if (tb !== ta) return tb - ta;
@@ -1216,26 +1285,37 @@
                     html += '<span class="t2-count">' + visibleVendors.length + '</span>';
                     html += '</div>';
 
-                    if (visibleVendors.length === 0) {
-                        html += '<p class="t2-empty">No vendors match current filters.</p>';
-                    } else {
-                        html += '<div class="vendor-grid">';
-                        for (var k2 = 0; k2 < visibleVendors.length; k2++) {
-                            html += buildCard(visibleVendors[k2], sub2.code);
-                        }
-                        html += '</div>';
+                    html += '<div class="vendor-grid">';
+                    for (var k2 = 0; k2 < visibleVendors.length; k2++) {
+                        html += buildCard(visibleVendors[k2], sub2.code);
                     }
+                    html += '</div>';
                     html += '</div>';
                 }
                 html += '</section>';
             }
 
-            if (!html) {
-                html = '<p style="color:var(--text-muted);font-style:italic;padding:2rem 0">No results match your current filters.</p>';
+            // Global empty state when zero results
+            if (totalVisible === 0) {
+                html = '<div class="landscape-empty-state">' +
+                    '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+                    '<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>' +
+                    '<line x1="8" y1="11" x2="14" y2="11"/>' +
+                    '</svg>' +
+                    '<h3>No products found</h3>' +
+                    '<p>Try adjusting your search or filters.</p>' +
+                    '<button class="landscape-empty-reset-btn" id="landscape-empty-reset-btn">Reset Filters</button>' +
+                    '</div>';
             }
 
             root.innerHTML = html;
             attachCardEvents();
+
+            // Wire empty-state reset button if present
+            var emptyResetBtn = document.getElementById('landscape-empty-reset-btn');
+            if (emptyResetBtn) {
+                emptyResetBtn.addEventListener('click', resetAllFilters);
+            }
         }
 
         // ---- Attach events after render ----
@@ -1464,6 +1544,23 @@
             renderFilterBar();
         }
 
+        // ---- Reset all filters to defaults ----
+        function resetAllFilters() {
+            state.search = '';
+            state.segment = 'all';
+            state.activeTier = null;
+            state.activeT1 = null;
+            state.activeT2 = null;
+            state.competitorFilter = null;
+            state.ecosystemFilter = null;
+            var searchInput = document.getElementById('vendor-search');
+            if (searchInput) searchInput.value = '';
+            syncT1Buttons();
+            syncTierButtons();
+            syncSegmentButtons();
+            update();
+        }
+
         // ---- Populate T1 filter buttons ----
         function buildT1Buttons() {
             var row = document.getElementById('t1-filter-row');
@@ -1609,9 +1706,16 @@
             localStorage.setItem(LS_KEY, String(expanded));
         }
 
-        filterToggleBar.addEventListener('click', function() {
+        filterToggleBar.addEventListener('click', function(e) {
+            // Don't toggle if the reset button was clicked
+            if (e.target.closest('#filter-reset-btn')) return;
             var nowExpanded = filterPanel.classList.contains('expanded');
             setFilterExpanded(!nowExpanded);
+        });
+
+        document.getElementById('filter-reset-btn').addEventListener('click', function(e) {
+            e.stopPropagation();
+            resetAllFilters();
         });
 
         filterToggleBar.addEventListener('keydown', function(e) {
@@ -1675,6 +1779,12 @@
                 summaryEl.innerHTML = dot + 'Subcategory active';
             } else {
                 summaryEl.innerHTML = 'All Categories';
+            }
+
+            // Show/hide the Reset button
+            var resetBtn = document.getElementById('filter-reset-btn');
+            if (resetBtn) {
+                resetBtn.style.display = hasNonDefault ? '' : 'none';
             }
         }
 
