@@ -1488,7 +1488,9 @@
                 '</div>' +
                 homepageHtml;
 
-            document.getElementById('modal-content').innerHTML = html;
+            var modalContent = document.getElementById('modal-content');
+            modalContent.innerHTML = html;
+            modalContent.scrollTop = 0;
             document.getElementById('modal-backdrop').classList.add('open');
             document.getElementById('product-modal').classList.add('open');
             document.getElementById('modal-backdrop').removeAttribute('aria-hidden');
