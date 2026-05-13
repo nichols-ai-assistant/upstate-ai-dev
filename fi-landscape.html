@@ -1180,6 +1180,7 @@
         }
 
         function openModal(vendorId) {
+            document.getElementById('vendor-tooltip').style.display = 'none';
             var found = findVendorById(vendorId);
             if (!found) return;
             var vendor = found.vendor;
