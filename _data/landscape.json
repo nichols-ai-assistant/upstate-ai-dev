@@ -6029,7 +6029,7 @@
               "name": "Hometrack",
               "homepage_url": "https://www.hometrack.com",
               "logo_url": "/fi-landscape-logos/387.png",
-              "status": "active",
+              "status": "deprecated",
               "hq_city": "London",
               "hq_state": "UK",
               "founded_year": 1999,
@@ -6040,7 +6040,7 @@
                   "description": "Automated valuation models (AVM) and digital mortgage decisioning tools integrated with nCino Mortgage Solution for faster, data-driven property risk decisions for lenders.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "banks",
-                  "status": "active",
+                  "status": "deprecated",
                   "is_primary": true,
                   "competitor_ids": [
                     4,
@@ -9512,9 +9512,9 @@
             {
               "vendor_id": 261,
               "name": "Acuant",
-              "homepage_url": "https://www.acuantcorp.com",
+              "homepage_url": "https://www.gbgplc.com/en/solutions/identity-verification/",
               "logo_url": "/fi-landscape-logos/261.png",
-              "status": "active",
+              "status": "legacy",
               "hq_city": "Los Angeles",
               "hq_state": "CA",
               "founded_year": 1999,
@@ -9525,7 +9525,7 @@
                   "description": "KYC and ID verification solution with automated capture of driver licenses, passports, and government IDs for FI onboarding compliance.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "credit_unions",
-                  "status": "active",
+                  "status": "legacy",
                   "is_primary": false,
                   "competitor_ids": [
                     26,
@@ -17643,9 +17643,9 @@
             {
               "vendor_id": 378,
               "name": "IDology",
-              "homepage_url": "https://www.idology.com",
+              "homepage_url": "https://www.gbgplc.com/en/solutions/identity-verification/",
               "logo_url": "/fi-landscape-logos/378.png",
-              "status": "active",
+              "status": "legacy",
               "hq_city": "Atlanta",
               "hq_state": "GA",
               "founded_year": 2003,
@@ -17656,7 +17656,7 @@
                   "description": "Identity verification and fraud prevention platform integrated with nCino for real-time identity confirmation during online account opening and loan applications.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
-                  "status": "active",
+                  "status": "legacy",
                   "is_primary": true,
                   "competitor_ids": [
                     26,
@@ -17735,7 +17735,7 @@
               "name": "Onfido",
               "homepage_url": "https://onfido.com",
               "logo_url": "/fi-landscape-logos/29.png",
-              "status": "active",
+              "status": "legacy",
               "hq_city": "London",
               "hq_state": "UK",
               "founded_year": 2012,
@@ -17746,7 +17746,7 @@
                   "description": "AI-powered document and biometric verification for identity proofing; liveness detection and NFC chip authentication at onboarding",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
-                  "status": "active",
+                  "status": "legacy",
                   "is_primary": true,
                   "competitor_ids": [
                     26,
@@ -17779,9 +17779,9 @@
             {
               "vendor_id": 261,
               "name": "Acuant",
-              "homepage_url": "https://www.acuantcorp.com",
+              "homepage_url": "https://www.gbgplc.com/en/solutions/identity-verification/",
               "logo_url": "/fi-landscape-logos/261.png",
-              "status": "active",
+              "status": "legacy",
               "hq_city": "Los Angeles",
               "hq_state": "CA",
               "founded_year": 1999,
@@ -17792,7 +17792,7 @@
                   "description": "KYC and ID verification solution with automated capture of driver licenses, passports, and government IDs for FI onboarding compliance.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "credit_unions",
-                  "status": "active",
+                  "status": "legacy",
                   "is_primary": true,
                   "competitor_ids": [
                     26,
@@ -18091,7 +18091,7 @@
               "name": "Glide",
               "homepage_url": "https://www.glide.com",
               "logo_url": "/fi-landscape-logos/363.png",
-              "status": "active",
+              "status": "deprecated",
               "hq_city": "New York",
               "hq_state": "NY",
               "founded_year": 2021,
@@ -18102,7 +18102,7 @@
                   "description": "Digital account opening platform enabling community FIs to onboard new customers with streamlined KYC, ID verification, and funding flows.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "both",
-                  "status": "active",
+                  "status": "deprecated",
                   "is_primary": true,
                   "competitor_ids": [
                     26,
@@ -46122,6 +46122,6 @@
   "meta": {
     "vendor_count": 393,
     "product_count": 459,
-    "generated_at": "2026-05-13T20:46:59.071Z"
+    "generated_at": "2026-05-13T21:14:59.265Z"
   }
 }
