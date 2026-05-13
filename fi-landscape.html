@@ -88,10 +88,14 @@
             gap: 1rem;
             margin-bottom: 1.75rem;
         }
-        .landscape-meta {
+        .landscape-update-line {
             font-size: 0.78rem;
-            color: rgba(253,252,248,0.4);
-            letter-spacing: 0.02em;
+            font-style: italic;
+            color: var(--forest);
+            opacity: 0.6;
+            text-align: right;
+            padding: 0.4rem 1.5rem 0;
+            margin: 0;
         }
 
         .landscape-cta-row {
@@ -972,7 +976,6 @@
             <span class="landscape-eyebrow">&#x2B25;&nbsp;&nbsp;Analyst Intelligence&nbsp;&nbsp;&#x2B25;</span>
             <h1>The <span class="accent">FI AI</span> Landscape</h1>
             <p class="landscape-subhead" id="hero-subhead">Loading&hellip;</p>
-            <p class="landscape-meta" id="meta-line">Loading data&hellip;</p>
             <div class="landscape-cta-row">
                 <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="landscape-cta-primary">Get an Objective Vendor Evaluation</a>
                 <a href="mailto:ben@up-state-ai.com?subject=FI%20AI%20Landscape%20Correction" class="landscape-cta-secondary">Submit a Correction &rsaquo;</a>
@@ -1042,6 +1045,7 @@
 
     <!-- ==================== LANDSCAPE GRID ==================== -->
     <section class="landscape-body">
+        <p class="landscape-update-line" id="meta-line"></p>
         <div class="container" id="landscape-root">
             <p style="color: var(--text-muted); font-style:italic;">Loading landscape data&hellip;</p>
         </div>
