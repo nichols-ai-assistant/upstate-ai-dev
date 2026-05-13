@@ -174,15 +174,94 @@
             border-bottom: 1px solid rgba(255,255,255,0.1);
             padding: 0;
         }
+
+        /* Toggle bar — always visible */
+        .filter-toggle-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 44px;
+            padding: 0 var(--space-md);
+            max-width: 1200px;
+            margin: 0 auto;
+            cursor: pointer;
+            user-select: none;
+        }
+        .filter-toggle-left {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .filter-toggle-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: rgba(253,252,248,0.75);
+        }
+        .filter-toggle-arrow {
+            font-size: 0.65rem;
+            color: rgba(253,252,248,0.5);
+            transition: transform 0.2s ease;
+        }
+        .filter-toggle-bar[aria-expanded="true"] .filter-toggle-arrow {
+            transform: rotate(180deg);
+        }
+        .filter-active-summary {
+            font-size: 0.72rem;
+            color: rgba(253,252,248,0.5);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 55vw;
+        }
+        .filter-active-dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--orange);
+            margin-right: 0.35rem;
+            vertical-align: middle;
+            flex-shrink: 0;
+        }
+        .filter-toggle-right {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        /* Collapsible panel */
+        .filter-panel {
+            overflow: hidden;
+            transition: max-height 0.25s ease, opacity 0.2s ease;
+            max-height: 0;
+            opacity: 0;
+        }
+        .filter-panel.expanded {
+            max-height: 200px; /* tall enough for two rows */
+            opacity: 1;
+        }
+        /* Desktop: show divider between toggle bar and panel only when expanded */
+        .filter-toggle-bar + .filter-panel.expanded {
+            border-top: 1px solid rgba(255,255,255,0.07);
+        }
+
         .category-filter-row {
             display: flex;
             align-items: center;
             gap: 0.35rem;
             padding: 0.6rem var(--space-md);
-            flex-wrap: wrap;
+            /* horizontal scroll fallback — no wrapping */
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Firefox */
             max-width: 1200px;
             margin: 0 auto;
         }
+        .category-filter-row::-webkit-scrollbar { display: none; }
         .category-filter-row + .category-filter-row {
             padding-top: 0;
             border-top: 1px solid rgba(255,255,255,0.07);
@@ -662,6 +741,13 @@
         @media (max-width: 480px) {
             .vendor-grid { grid-template-columns: repeat(auto-fill, minmax(95px, 1fr)); }
         }
+
+        /* On desktop, make the toggle bar a bit more subtle — it's primarily a mobile aid */
+        @media (min-width: 1024px) {
+            .filter-toggle-bar {
+                height: 36px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -718,19 +804,34 @@
 
     <!-- ==================== CATEGORY FILTER BAR ==================== -->
     <div class="category-filter-bar" id="category-filter-bar">
-        <div class="category-filter-row" id="t1-filter-row">
-            <span class="cat-filter-label">Category</span>
-            <!-- Populated by JS -->
+        <!-- Toggle bar — always visible -->
+        <div class="filter-toggle-bar" id="filter-toggle-bar" role="button" tabindex="0"
+             aria-expanded="false" aria-controls="filter-panel" aria-label="Toggle filters">
+            <div class="filter-toggle-left">
+                <span class="filter-toggle-label">Filters</span>
+                <span class="filter-toggle-arrow" aria-hidden="true">&#x25BC;</span>
+            </div>
+            <div id="filter-active-summary" class="filter-active-summary"></div>
+            <div class="filter-toggle-right">
+                <!-- intentionally empty; arrow in left group serves as affordance -->
+            </div>
         </div>
-        <div class="category-filter-row" id="tier-filter-row">
-            <span class="cat-filter-label">Tier</span>
-            <button class="cat-filter-btn tier-filter-btn active" data-tier="all">All</button>
-            <button class="cat-filter-btn tier-filter-btn" data-tier="1" title="Tier 1 — Emerging">T1 Emerging</button>
-            <button class="cat-filter-btn tier-filter-btn" data-tier="2" title="Tier 2 — Growing">T2 Growing</button>
-            <button class="cat-filter-btn tier-filter-btn" data-tier="3" title="Tier 3 — Moderate">T3 Moderate</button>
-            <button class="cat-filter-btn tier-filter-btn" data-tier="4" title="Tier 4 — Established">T4 Established</button>
-            <button class="cat-filter-btn tier-filter-btn" data-tier="5" title="Tier 5 — Dominant">T5 Dominant</button>
-            <button class="cat-filter-btn tier-filter-btn" data-tier="6" title="Tier 6 — Ubiquitous">T6 Ubiquitous</button>
+        <!-- Collapsible panel -->
+        <div class="filter-panel" id="filter-panel">
+            <div class="category-filter-row" id="t1-filter-row">
+                <span class="cat-filter-label">Category</span>
+                <!-- Populated by JS -->
+            </div>
+            <div class="category-filter-row" id="tier-filter-row">
+                <span class="cat-filter-label">Tier</span>
+                <button class="cat-filter-btn tier-filter-btn active" data-tier="all">All</button>
+                <button class="cat-filter-btn tier-filter-btn" data-tier="1" title="Tier 1 — Emerging">T1 Emerging</button>
+                <button class="cat-filter-btn tier-filter-btn" data-tier="2" title="Tier 2 — Growing">T2 Growing</button>
+                <button class="cat-filter-btn tier-filter-btn" data-tier="3" title="Tier 3 — Moderate">T3 Moderate</button>
+                <button class="cat-filter-btn tier-filter-btn" data-tier="4" title="Tier 4 — Established">T4 Established</button>
+                <button class="cat-filter-btn tier-filter-btn" data-tier="5" title="Tier 5 — Dominant">T5 Dominant</button>
+                <button class="cat-filter-btn tier-filter-btn" data-tier="6" title="Tier 6 — Ubiquitous">T6 Ubiquitous</button>
+            </div>
         </div>
     </div>
 
@@ -1323,6 +1424,91 @@
                 update();
             }, 180);
         });
+
+        // ---- Collapsible filter bar ----
+        var filterToggleBar = document.getElementById('filter-toggle-bar');
+        var filterPanel = document.getElementById('filter-panel');
+        var LS_KEY = 'fi-filters-expanded';
+
+        function isDesktop() { return window.innerWidth >= 1024; }
+
+        function getStoredExpanded() {
+            var stored = localStorage.getItem(LS_KEY);
+            if (stored === null) return isDesktop(); // default: expanded on desktop, collapsed on mobile
+            return stored === 'true';
+        }
+
+        function setFilterExpanded(expanded) {
+            filterPanel.classList.toggle('expanded', expanded);
+            filterToggleBar.setAttribute('aria-expanded', String(expanded));
+            localStorage.setItem(LS_KEY, String(expanded));
+        }
+
+        filterToggleBar.addEventListener('click', function() {
+            var nowExpanded = filterPanel.classList.contains('expanded');
+            setFilterExpanded(!nowExpanded);
+        });
+
+        filterToggleBar.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                filterToggleBar.click();
+            }
+        });
+
+        // Initialize from localStorage / viewport default
+        setFilterExpanded(getStoredExpanded());
+
+        // Update active filter summary text in the toggle bar
+        function updateFilterSummary() {
+            var summaryEl = document.getElementById('filter-active-summary');
+            var parts = [];
+            var hasNonDefault = false;
+
+            if (state.activeTier !== null) {
+                parts.push('T' + state.activeTier + ' ' + TIER_SHORT[state.activeTier]);
+                hasNonDefault = true;
+            }
+            if (state.activeT1 !== null) {
+                var t1Name = state.activeT1;
+                if (state.data) {
+                    for (var i = 0; i < state.data.categories.length; i++) {
+                        if (state.data.categories[i].code === state.activeT1) {
+                            t1Name = state.data.categories[i].name;
+                            break;
+                        }
+                    }
+                }
+                parts.push(t1Name);
+                hasNonDefault = true;
+            }
+            if (state.activeT2 !== null) {
+                hasNonDefault = true;
+            }
+            if (state.search) {
+                parts.push('\u201C' + state.search + '\u201D');
+                hasNonDefault = true;
+            }
+
+            var dot = hasNonDefault ? '<span class="filter-active-dot" aria-hidden="true"></span>' : '';
+            if (parts.length > 0) {
+                summaryEl.innerHTML = dot + escHtml(parts.join(' \u00B7 '));
+            } else if (state.activeT2 !== null) {
+                summaryEl.innerHTML = dot + 'Subcategory active';
+            } else {
+                summaryEl.innerHTML = 'All Categories';
+            }
+        }
+
+        // Patch update() to also refresh the summary
+        var _origUpdate = update;
+        update = function() {
+            _origUpdate();
+            updateFilterSummary();
+        };
+
+        // Initialize summary immediately so toggle bar isn't blank on load
+        updateFilterSummary();
 
         // ---- Navbar scroll ----
         var navbar = document.querySelector('.navbar');
