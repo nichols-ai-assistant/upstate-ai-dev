@@ -160,50 +160,34 @@
         .filter-toggle-bar[aria-expanded="true"] .filter-toggle-arrow {
             transform: rotate(180deg);
         }
-        .filter-active-summary {
-            font-size: 0.72rem;
-            color: rgba(253,252,248,0.5);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 55vw;
-        }
-        .filter-active-dot {
-            display: inline-block;
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: var(--orange);
-            margin-right: 0.35rem;
-            vertical-align: middle;
-            flex-shrink: 0;
-        }
-        .filter-toggle-right {
+
+
+        /* Reset button in the toggle bar */
+        .filter-chips-row {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            flex-shrink: 0;
         }
-
-        /* Reset button in the toggle bar */
         .filter-reset-btn {
             background: transparent;
-            border: 1px solid rgba(255,255,255,0.45);
-            color: rgba(253,252,248,0.85);
+            border: 1px solid rgba(45,87,69,0.3);
+            color: rgba(45,87,69,0.65);
             font-size: 0.7rem;
             font-weight: 700;
             letter-spacing: 0.06em;
             text-transform: uppercase;
-            padding: 0.2rem 0.6rem;
+            padding: 0.2rem 0.7rem;
             border-radius: 999px;
             cursor: pointer;
             transition: background 0.15s, color 0.15s, border-color 0.15s;
             white-space: nowrap;
+            margin-left: auto;
+            flex-shrink: 0;
         }
         .filter-reset-btn:hover {
-            background: rgba(255,255,255,0.12);
-            border-color: rgba(255,255,255,0.7);
-            color: #fff;
+            background: rgba(45,87,69,0.07);
+            border-color: rgba(45,87,69,0.6);
+            color: rgba(45,87,69,1);
         }
 
         /* Global empty state */
@@ -968,10 +952,6 @@
                 <span class="filter-toggle-label">Filters</span>
                 <span class="filter-toggle-arrow" aria-hidden="true">&#x25BC;</span>
             </div>
-            <div id="filter-active-summary" class="filter-active-summary"></div>
-            <div class="filter-toggle-right">
-                <button class="filter-reset-btn" id="filter-reset-btn" style="display:none" aria-label="Reset all filters">Reset</button>
-            </div>
         </div>
         <!-- Collapsible panel -->
         <div class="filter-panel" id="filter-panel">
@@ -1021,7 +1001,10 @@
     <!-- ==================== ACTIVE FILTER CHIPS ==================== -->
     <div style="background: var(--cream); border-bottom: 1px solid rgba(45,87,69,0.15);">
         <div class="container">
-            <div class="filter-chips-bar" id="filter-bar" aria-live="polite"></div>
+            <div class="filter-chips-row">
+                <div class="filter-chips-bar" id="filter-bar" aria-live="polite"></div>
+                <button class="filter-reset-btn" id="filter-reset-btn" style="display:none" aria-label="Reset all filters">Reset</button>
+            </div>
             <p class="landscape-update-line" id="meta-line"></p>
         </div>
     </div>
@@ -1872,14 +1855,11 @@
         }
 
         filterToggleBar.addEventListener('click', function(e) {
-            // Don't toggle if the reset button was clicked
-            if (e.target.closest('#filter-reset-btn')) return;
             var nowExpanded = filterPanel.classList.contains('expanded');
             setFilterExpanded(!nowExpanded);
         });
 
-        document.getElementById('filter-reset-btn').addEventListener('click', function(e) {
-            e.stopPropagation();
+        document.getElementById('filter-reset-btn').addEventListener('click', function() {
             resetAllFilters();
         });
 
@@ -1893,60 +1873,17 @@
         // Initialize from localStorage / viewport default
         setFilterExpanded(getStoredExpanded());
 
-        // Update active filter summary text in the toggle bar
+        // Show/hide the Reset button based on active filters
         function updateFilterSummary() {
-            var summaryEl = document.getElementById('filter-active-summary');
-            var parts = [];
-            var hasNonDefault = false;
-
-            if (state.competitorFilter !== null) {
-                parts.push('Competitors: ' + state.competitorFilter.productName);
-                hasNonDefault = true;
-            }
-            if (state.ecosystemFilter !== null) {
-                parts.push('Ecosystem: ' + state.ecosystemFilter.productName);
-                hasNonDefault = true;
-            }
-            if (state.activeTier !== null) {
-                parts.push('T' + state.activeTier + ' ' + TIER_SHORT[state.activeTier]);
-                hasNonDefault = true;
-            }
-            if (state.activeT1 !== null) {
-                var t1Name = state.activeT1;
-                if (state.data) {
-                    for (var i = 0; i < state.data.categories.length; i++) {
-                        if (state.data.categories[i].code === state.activeT1) {
-                            t1Name = state.data.categories[i].name;
-                            break;
-                        }
-                    }
-                }
-                parts.push(t1Name);
-                hasNonDefault = true;
-            }
-            if (state.activeT2 !== null) {
-                hasNonDefault = true;
-            }
-            if (state.segment !== 'all') {
-                var segNames = { banks: 'Banks Only', credit_unions: 'CUs Only', both: 'Both' };
-                parts.push(segNames[state.segment] || state.segment);
-                hasNonDefault = true;
-            }
-            if (state.search) {
-                parts.push('\u201C' + state.search + '\u201D');
-                hasNonDefault = true;
-            }
-
-            var dot = hasNonDefault ? '<span class="filter-active-dot" aria-hidden="true"></span>' : '';
-            if (parts.length > 0) {
-                summaryEl.innerHTML = dot + escHtml(parts.join(' \u00B7 '));
-            } else if (state.activeT2 !== null) {
-                summaryEl.innerHTML = dot + 'Subcategory active';
-            } else {
-                summaryEl.innerHTML = 'All Categories';
-            }
-
-            // Show/hide the Reset button
+            var hasNonDefault = (
+                state.competitorFilter !== null ||
+                state.ecosystemFilter !== null ||
+                state.activeTier !== null ||
+                state.activeT1 !== null ||
+                state.activeT2 !== null ||
+                state.segment !== 'all' ||
+                !!state.search
+            );
             var resetBtn = document.getElementById('filter-reset-btn');
             if (resetBtn) {
                 resetBtn.style.display = hasNonDefault ? '' : 'none';
