@@ -121,8 +121,11 @@
             box-shadow: 0 4px 20px rgba(255, 105, 0, 0.5);
         }
         @media (max-width: 640px) {
-            .fi-promo-banner .container { flex-direction: column; gap: 0.5rem; text-align: center; }
-            .fi-promo-text { white-space: normal; overflow: visible; }
+            .fi-promo-banner { border-top-width: 3px; padding: 1.1rem 0; }
+            .fi-promo-banner .container { flex-direction: column; gap: 0.75rem; text-align: center; }
+            .fi-promo-text { white-space: normal; overflow: visible; font-size: 1rem; }
+            .fi-promo-text strong { font-size: 1.05rem; }
+            .fi-promo-cta { width: 100%; text-align: center; padding: 0.75rem 1.25rem; font-size: 0.95rem; }
         }
 
         /* Hero override for banking — light bg, green text */
