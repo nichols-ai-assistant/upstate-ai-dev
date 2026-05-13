@@ -33929,7 +33929,7 @@
             {
               "vendor_id": 120,
               "name": "SAVVI AI",
-              "homepage_url": "https://savvi.ai",
+              "homepage_url": "https://www.savviai.com",
               "logo_url": "/fi-landscape-logos/120.png",
               "status": "active",
               "hq_city": null,
@@ -34511,31 +34511,9 @@
               ]
             },
             {
-              "vendor_id": 422,
-              "name": "Savvi AI",
-              "homepage_url": "https://www.savviai.com",
-              "logo_url": null,
-              "status": "active",
-              "hq_city": null,
-              "hq_state": null,
-              "products": [
-                {
-                  "product_id": 498,
-                  "product_name": "Savvi AI Platform",
-                  "description": "Managed enterprise AI platform for banks and credit unions. Build and deploy AI agents and applications trained on proprietary FI data. Includes AIOps, integrations with Snowflake/Power BI/Excel/APIs, AI Center of Excellence support, and SOC 2 Type II compliance. No heavy infrastructure investment required.",
-                  "pervasiveness_tier": 2,
-                  "fi_segment": "both",
-                  "status": "active",
-                  "is_primary": true,
-                  "competitor_ids": [],
-                  "integration_ids": []
-                }
-              ]
-            },
-            {
               "vendor_id": 120,
               "name": "SAVVI AI",
-              "homepage_url": "https://savvi.ai",
+              "homepage_url": "https://www.savviai.com",
               "logo_url": "/fi-landscape-logos/120.png",
               "status": "active",
               "hq_city": null,
@@ -42919,28 +42897,6 @@
                   "integration_ids": []
                 }
               ]
-            },
-            {
-              "vendor_id": 422,
-              "name": "Savvi AI",
-              "homepage_url": "https://www.savviai.com",
-              "logo_url": null,
-              "status": "active",
-              "hq_city": null,
-              "hq_state": null,
-              "products": [
-                {
-                  "product_id": 498,
-                  "product_name": "Savvi AI Platform",
-                  "description": "Managed enterprise AI platform for banks and credit unions. Build and deploy AI agents and applications trained on proprietary FI data. Includes AIOps, integrations with Snowflake/Power BI/Excel/APIs, AI Center of Excellence support, and SOC 2 Type II compliance. No heavy infrastructure investment required.",
-                  "pervasiveness_tier": 2,
-                  "fi_segment": "both",
-                  "status": "active",
-                  "is_primary": false,
-                  "competitor_ids": [],
-                  "integration_ids": []
-                }
-              ]
             }
           ]
         }
@@ -45430,8 +45386,8 @@
     }
   ],
   "meta": {
-    "vendor_count": 393,
-    "product_count": 461,
-    "generated_at": "2026-05-13T16:25:30.038Z"
+    "vendor_count": 392,
+    "product_count": 460,
+    "generated_at": "2026-05-13T16:30:00.579Z"
   }
 }
