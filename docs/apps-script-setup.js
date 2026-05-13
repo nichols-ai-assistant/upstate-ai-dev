@@ -10,7 +10,7 @@
  * 3. Paste this entire file into Code.gs (replace default content)
  * 4. Click Deploy > New deployment
  * 5. Select type: "Web app"
- * 6. Execute as: "Me" (nichols.ai.assistant@gmail.com)
+ * 6. Execute as: "Me" (nick@up-state-ai.com)
  * 7. Who has access: "Anyone"
  * 8. Click Deploy, authorize when prompted
  * 9. Copy the Web app URL and update js/assessment.js

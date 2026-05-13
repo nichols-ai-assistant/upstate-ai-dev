@@ -57,10 +57,10 @@ This requires signing into the Google account with a password (not available via
 **Steps**:
 
 1. Open: https://script.google.com/d/1MHJba5dUWLQhboUI8NYkEELA4VPHK2otxjKD_pDNdIOAUgbKuZv4mjrI/edit
-2. Sign in as: `nichols.ai.assistant@gmail.com`
+2. Sign in as: `nick@up-state-ai.com`
 3. Click **Deploy** > **New deployment**
 4. Type: Web app
-5. Execute as: Me (nichols.ai.assistant@gmail.com)
+5. Execute as: Me (nick@up-state-ai.com)
 6. Access: Anyone
 7. Click **Deploy** and authorize
 8. Copy the Web app URL
@@ -161,7 +161,7 @@ git push origin main
 
 ## Contact & Next Steps
 
-- **Script Owner**: nichols.ai.assistant@gmail.com
+- **Script Owner**: nick@up-state-ai.com
 - **Notification Email**: ben@up-state-ai.com
 - **Staging Site Owner**: nichols-ai-assistant (GitHub user)
 

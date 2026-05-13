@@ -50,7 +50,7 @@ The Google Apps Script project has been created and is ready to deploy. The scri
 
 Visit: https://script.google.com/d/1MHJba5dUWLQhboUI8NYkEELA4VPHK2otxjKD_pDNdIOAUgbKuZv4mjrI/edit
 
-Sign in with: **nichols.ai.assistant@gmail.com**
+Sign in with: **nick@up-state-ai.com**
 
 ### 2. Verify the Code
 
@@ -77,7 +77,7 @@ If they're not there, copy the code from `docs/apps-script-setup.js` into Code.j
 
 1. Click **Deploy** > **New deployment**
 2. Select type: **Web app**
-3. Set "Execute as": **Me** (nichols.ai.assistant@gmail.com)
+3. Set "Execute as": **Me** (nick@up-state-ai.com)
 4. Set "Who has access": **Anyone**
 5. Click **Deploy**
 6. Authorize the script when prompted (grant permissions for Sheets and Gmail)
