@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The FI AI Landscape: 392 vendors, 458 products. Every AI solution in the community banking and credit union ecosystem, mapped and rated.">
+    <meta name="description" content="The FI AI Landscape: 400+ vendors, 500+ products. Every AI solution in the community banking and credit union ecosystem, mapped and rated.">
     <meta name="keywords" content="fintech AI vendors, community bank AI, credit union AI, banking AI landscape, FI AI map, banking technology vendors">
     <meta name="author" content="Ben Nichols">
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -25,7 +25,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://up-state-ai.com/fi-landscape">
     <meta property="og:title" content="The FI AI Landscape | Upstate AI">
-    <meta property="og:description" content="392 vendors. 458 products. Every AI solution in the community banking ecosystem.">
+    <meta property="og:description" content="400+ vendors. 500+ products. Every AI solution in the community banking and credit union ecosystem.">
     <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
 
     <title>The FI AI Landscape | Upstate AI</title>
@@ -93,6 +93,38 @@
             color: rgba(253,252,248,0.4);
             letter-spacing: 0.02em;
         }
+
+        .landscape-cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            justify-content: center;
+        }
+        .landscape-cta-primary {
+            display: inline-block;
+            background: var(--orange);
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.65rem 1.4rem;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: opacity 0.15s;
+        }
+        .landscape-cta-primary:hover { opacity: 0.88; }
+        .landscape-cta-secondary {
+            display: inline-block;
+            background: transparent;
+            color: rgba(253,252,248,0.75);
+            font-size: 0.88rem;
+            padding: 0.65rem 1rem;
+            border: 1px solid rgba(253,252,248,0.25);
+            border-radius: 6px;
+            text-decoration: none;
+            transition: border-color 0.15s, color 0.15s;
+        }
+        .landscape-cta-secondary:hover { border-color: rgba(253,252,248,0.55); color: rgba(253,252,248,0.95); }
 
         /* ---- Category filter bar (sticky, below hero) ---- */
         .category-filter-bar {
@@ -894,6 +926,10 @@
             <h1>The <span class="accent">FI AI</span> Landscape</h1>
             <p class="landscape-subhead" id="hero-subhead">Loading&hellip;</p>
             <p class="landscape-meta" id="meta-line">Loading data&hellip;</p>
+            <div class="landscape-cta-row">
+                <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="landscape-cta-primary">Get an Objective Vendor Evaluation</a>
+                <a href="mailto:ben@up-state-ai.com?subject=FI%20AI%20Landscape%20Correction" class="landscape-cta-secondary">Submit a Correction &rsaquo;</a>
+            </div>
         </div>
     </section>
 
@@ -993,6 +1029,10 @@
                     <a href="privacy">Privacy Policy</a>
                     <a href="#" onclick="window.CookieConsent && window.CookieConsent.show(); return false;">Cookie Settings</a>
                 </div>
+            </div>
+            <div class="footer-disclaimer">
+                <p>Upstate AI does not endorse any of the companies listed and maintains no commercial relationships with vendors in this index. All information is gathered from publicly available sources including vendor websites, partner forums, tradeshow events, press releases, and social media. This map is provided for informational purposes only.</p>
+                <p>Are you a vendor? Send corrections to <a href="mailto:ben@up-state-ai.com?subject=FI%20AI%20Landscape%20Correction">ben@up-state-ai.com</a>.</p>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Upstate AI. All rights reserved.</p>
@@ -1877,7 +1917,7 @@
                 buildProductMaps();
 
                 var subhead = document.getElementById('hero-subhead');
-                subhead.textContent = data.meta.vendor_count + ' vendors. ' + data.meta.product_count + ' products. Every AI solution in the community banking ecosystem.';
+                subhead.textContent = '400+ vendors. 500+ products. Every AI solution in the community banking and credit union ecosystem.';
 
                 var metaEl = document.getElementById('meta-line');
                 var d = new Date(data.meta.generated_at);
@@ -1889,7 +1929,7 @@
             })
             .catch(function(err) {
                 console.error('Failed to load landscape data:', err);
-                document.getElementById('hero-subhead').textContent = '392 vendors. 458 products. Every AI solution in the community banking ecosystem.';
+                document.getElementById('hero-subhead').textContent = '400+ vendors. 500+ products. Every AI solution in the community banking and credit union ecosystem.';
                 document.getElementById('meta-line').textContent = '';
                 document.getElementById('landscape-root').innerHTML =
                     '<p style="color:var(--text-muted);font-style:italic;">Could not load landscape data. Please refresh the page.</p>';

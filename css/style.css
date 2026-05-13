@@ -983,6 +983,19 @@ a:hover { color: var(--orange-light); }
 .footer-links { display: flex; gap: var(--spacing-md); flex-wrap: wrap; }
 .footer-links a { color: rgba(255,255,255,0.6); font-size: 0.9rem; transition: var(--transition); }
 .footer-links a:hover { color: var(--orange); }
+.footer-disclaimer {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+.footer-disclaimer p {
+    color: rgba(255,255,255,0.35);
+    font-size: 0.78rem;
+    line-height: 1.6;
+    margin: 0 0 0.4rem;
+}
+.footer-disclaimer a { color: rgba(255,255,255,0.5); text-decoration: underline; }
+.footer-disclaimer a:hover { color: rgba(255,255,255,0.8); }
 .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.08);
     padding-top: var(--spacing-md);
