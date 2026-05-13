@@ -133,7 +133,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 44px;
+            height: 56px;
             padding: 0 var(--space-md);
             max-width: 1200px;
             margin: 0 auto;
@@ -146,11 +146,11 @@
             gap: 0.5rem;
         }
         .filter-toggle-label {
-            font-size: 0.75rem;
+            font-size: 0.9rem;
             font-weight: 700;
             letter-spacing: 0.07em;
             text-transform: uppercase;
-            color: rgba(253,252,248,0.75);
+            color: #fff;
         }
         .filter-toggle-arrow {
             font-size: 0.65rem;
@@ -252,7 +252,7 @@
             opacity: 0;
         }
         .filter-panel.expanded {
-            max-height: 380px; /* tall enough for four rows: search, category, tier, segment */
+            max-height: 700px; /* tall enough for wrapping category row */
             opacity: 1;
         }
 
@@ -260,7 +260,7 @@
         .filter-search-row {
             display: flex;
             align-items: center;
-            padding: 0.6rem var(--space-md);
+            padding: 0.9rem var(--space-md);
             max-width: 1200px;
             margin: 0 auto;
             border-bottom: 1px solid rgba(255,255,255,0.07);
@@ -328,19 +328,14 @@
         .category-filter-row {
             display: flex;
             align-items: center;
-            gap: 0.35rem;
-            padding: 0.6rem var(--space-md);
-            /* horizontal scroll fallback — no wrapping */
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none; /* Firefox */
+            gap: 0.4rem;
+            padding: 0.75rem var(--space-md);
+            flex-wrap: wrap;
             max-width: 1200px;
             margin: 0 auto;
         }
-        .category-filter-row::-webkit-scrollbar { display: none; }
         .category-filter-row + .category-filter-row {
-            padding-top: 0;
+            padding-top: 0.4rem;
             border-top: 1px solid rgba(255,255,255,0.07);
         }
         .cat-filter-label {
@@ -647,31 +642,6 @@
         }
 
         /* Tooltip */
-        .vendor-tooltip {
-            display: none;
-            position: fixed;
-            z-index: 9999;
-            background: var(--forest-dark);
-            color: rgba(253,252,248,0.9);
-            border-radius: var(--radius-sm);
-            padding: 0.65rem 0.85rem;
-            font-size: 0.78rem;
-            line-height: 1.5;
-            max-width: 240px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-            pointer-events: none;
-        }
-        .tooltip-vendor-name {
-            font-weight: 700;
-            font-size: 0.82rem;
-            color: var(--warm-white);
-            margin-bottom: 0.25rem;
-        }
-        .tooltip-products {
-            color: rgba(253,252,248,0.65);
-            font-size: 0.74rem;
-        }
-
         /* Empty state */
         .t2-empty {
             font-size: 0.82rem;
@@ -1046,12 +1016,6 @@
             <p style="color: var(--text-muted); font-style:italic;">Loading landscape data&hellip;</p>
         </div>
     </section>
-
-    <!-- Tooltip element (shared, repositioned by JS) -->
-    <div class="vendor-tooltip" id="vendor-tooltip" aria-hidden="true">
-        <div class="tooltip-vendor-name" id="tooltip-name"></div>
-        <div class="tooltip-products" id="tooltip-products"></div>
-    </div>
 
     <!-- ==================== PRODUCT DETAIL MODAL ==================== -->
     <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true"></div>
@@ -1429,41 +1393,15 @@
 
         // ---- Attach events after render ----
         function attachCardEvents() {
-            var tooltip = document.getElementById('vendor-tooltip');
-            var tooltipName = document.getElementById('tooltip-name');
-            var tooltipProducts = document.getElementById('tooltip-products');
-
             var cards = document.querySelectorAll('.vendor-card:not(.deprecated)');
             for (var i = 0; i < cards.length; i++) {
                 (function(card) {
-                    card.addEventListener('mouseenter', function(e) {
-                        tooltipName.textContent = card.dataset.tooltipName;
-                        tooltipProducts.textContent = card.dataset.tooltipProducts;
-                        tooltip.style.display = 'block';
-                        positionTooltip(e);
-                    });
-                    card.addEventListener('mousemove', positionTooltip);
-                    card.addEventListener('mouseleave', function() {
-                        tooltip.style.display = 'none';
-                    });
                     card.addEventListener('click', function() {
                         var vendorId = parseInt(card.dataset.vendorId, 10);
                         openModal(vendorId);
                     });
                 })(cards[i]);
             }
-        }
-
-        function positionTooltip(e) {
-            var tooltip = document.getElementById('vendor-tooltip');
-            var x = e.clientX + 14;
-            var y = e.clientY + 14;
-            var tw = tooltip.offsetWidth;
-            var th = tooltip.offsetHeight;
-            if (x + tw > window.innerWidth - 16) x = e.clientX - tw - 14;
-            if (y + th > window.innerHeight - 16) y = e.clientY - th - 14;
-            tooltip.style.left = x + 'px';
-            tooltip.style.top = y + 'px';
         }
 
         // ---- Modal ----
@@ -1484,7 +1422,6 @@
         }
 
         function openModal(vendorId) {
-            document.getElementById('vendor-tooltip').style.display = 'none';
             var found = findVendorById(vendorId);
             if (!found) return;
             var vendor = found.vendor;
