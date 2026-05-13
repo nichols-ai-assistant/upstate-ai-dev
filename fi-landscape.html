@@ -716,6 +716,53 @@
         }
         .product-modal.open { display: block; }
 
+        /* Category modal variant */
+        .cat-modal { width: min(620px, 92vw); }
+        .cat-modal-eyebrow {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--forest);
+            opacity: 0.5;
+            margin-bottom: 0.4rem;
+        }
+        .cat-modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--forest-dark);
+            margin: 0 0 1rem;
+        }
+        .cat-modal-section { margin-bottom: 1.1rem; }
+        .cat-modal-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: var(--forest);
+            opacity: 0.55;
+            margin-bottom: 0.3rem;
+        }
+        .cat-modal-text {
+            font-size: 0.92rem;
+            line-height: 1.65;
+            color: var(--text);
+        }
+        .cat-modal-show-btn {
+            display: inline-block;
+            margin-top: 1.2rem;
+            background: var(--forest);
+            color: var(--warm-white);
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.65rem 1.4rem;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+        .cat-modal-show-btn:hover { opacity: 0.85; }
+
         .modal-close-btn {
             position: absolute;
             top: 1rem;
@@ -1013,6 +1060,13 @@
         <div id="modal-content"><!-- populated by JS --></div>
     </div>
 
+    <!-- ==================== CATEGORY INFO MODAL ==================== -->
+    <div class="modal-backdrop" id="cat-modal-backdrop" aria-hidden="true"></div>
+    <div class="product-modal cat-modal" id="cat-modal" role="dialog" aria-modal="true" aria-labelledby="cat-modal-title">
+        <button class="modal-close-btn" id="cat-modal-close" aria-label="Close">&#x2715;</button>
+        <div id="cat-modal-content"><!-- populated by JS --></div>
+    </div>
+
     <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
         <div class="container">
@@ -1303,7 +1357,7 @@
 
                 var t1Active = (state.activeT1 === cat.code) ? ' active' : '';
                 html += '<section class="t1-section" data-t1="' + cat.code + '">';
-                html += '<div class="t1-header' + t1Active + '" data-t1-toggle="' + cat.code + '" tabindex="0" role="button" aria-label="Toggle ' + escHtml(cat.name) + ' category">';
+                html += '<div class="t1-header' + t1Active + '" data-t1-toggle="' + cat.code + '" tabindex="0" role="button" aria-label="About ' + escHtml(cat.name) + '">';
                 html += '<h2 class="t1-title">' + escHtml(cat.name) + '</h2>';
                 html += '<span class="t1-count">' + t1VendorCount + '</span>';
                 html += '</div>';
@@ -1334,7 +1388,7 @@
                     var blockDimmed = (state.activeT2 !== null && state.activeT2 !== sub2.code);
 
                     html += '<div class="t2-block" data-t2-block="' + sub2.code + '"' + (blockDimmed ? ' style="opacity:0.25;pointer-events:none"' : '') + '>';
-                    html += '<div class="t2-header' + t2Active + '" data-t2-toggle="' + sub2.code + '" tabindex="0" role="button" aria-label="Filter by ' + escHtml(sub2.name) + '">';
+                    html += '<div class="t2-header' + t2Active + '" data-t2-toggle="' + sub2.code + '" tabindex="0" role="button" aria-label="About ' + escHtml(sub2.name) + '">';
                     html += '<span class="t2-title">' + escHtml(sub2.name) + '</span>';
                     html += '<span class="t2-line" aria-hidden="true"></span>';
                     html += '<span class="t2-count">' + visibleVendors.length + '</span>';
@@ -1457,6 +1511,11 @@
 
             var mcpHtml = hasMcp ? '<div class="modal-meta-item"><div class="modal-meta-label">Integration</div><div class="modal-meta-value"><span class="mcp-badge">MCP Enabled</span></div></div>' : '';
 
+            var hqParts = [vendor.hq_city, vendor.hq_state].filter(Boolean);
+            var hqHtml = hqParts.length
+                ? '<div class="modal-meta-item"><div class="modal-meta-label">HQ</div><div class="modal-meta-value">' + escHtml(hqParts.join(', ')) + '</div></div>'
+                : '';
+
             var homepageHtml = vendor.homepage_url
                 ? '<a class="modal-link" href="' + escHtml(vendor.homepage_url) + '" target="_blank" rel="noopener">Visit Website &#x2197;</a>'
                 : '';
@@ -1483,6 +1542,7 @@
                     '<div class="modal-meta-item"><div class="modal-meta-label">Subcategory</div><div class="modal-meta-value">' + escHtml(t2.name) + '</div></div>' +
                     (tier ? '<div class="modal-meta-item"><div class="modal-meta-label">Adoption Tier</div><div class="modal-meta-value"><span class="modal-tier-badge modal-tier-badge-' + tier + '" style="background:' + TIER_COLORS[tier] + '">' + escHtml(TIER_LABELS[tier]) + '</span></div></div>' : '') +
                     '<div class="modal-meta-item"><div class="modal-meta-label">Segment</div><div class="modal-meta-value">' + escHtml(MODAL_SEG_LABELS[seg] || seg) + '</div></div>' +
+                    hqHtml +
                     mcpHtml +
                 '</div>' +
                 homepageHtml;
@@ -1554,7 +1614,7 @@
         document.getElementById('modal-close').addEventListener('click', closeModal);
         document.getElementById('modal-backdrop').addEventListener('click', closeModal);
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeModal();
+            if (e.key === 'Escape') { closeModal(); closeCategoryModal(); }
         });
 
         // ---- Update active filter chips ----
@@ -1716,29 +1776,81 @@
             update();
         });
 
-        // ---- Event delegation for T1 and T2 toggles in grid ----
+        // ---- Category modal ----
+        function findCategoryByCode(code) {
+            if (!state.data) return null;
+            for (var i = 0; i < state.data.categories.length; i++) {
+                var cat = state.data.categories[i];
+                if (cat.code === code) return { cat: cat, tier: 1 };
+                for (var j = 0; j < cat.subcategories.length; j++) {
+                    if (cat.subcategories[j].code === code) return { cat: cat.subcategories[j], tier: 2, t1: cat };
+                }
+            }
+            return null;
+        }
+
+        function openCategoryModal(code) {
+            var found = findCategoryByCode(code);
+            if (!found) return;
+            var c = found.cat;
+            var eyebrow = found.tier === 2 && found.t1 ? escHtml(found.t1.name) : 'Category';
+            var desc = c.description || c.scope || '';
+            var aiOpps = c.ai_opportunities || '';
+
+            var descSection = desc
+                ? '<div class="cat-modal-section"><div class="cat-modal-label">Overview</div><p class="cat-modal-text">' + escHtml(desc) + '</p></div>'
+                : '';
+            var aiSection = aiOpps
+                ? '<div class="cat-modal-section"><div class="cat-modal-label">AI Opportunities</div><p class="cat-modal-text">' + escHtml(aiOpps) + '</p></div>'
+                : '';
+
+            var html =
+                '<div class="cat-modal-eyebrow">' + eyebrow + '</div>' +
+                '<h2 class="cat-modal-title" id="cat-modal-title">' + escHtml(c.name) + '</h2>' +
+                descSection +
+                aiSection +
+                '<button class="cat-modal-show-btn" id="cat-modal-show-btn" data-code="' + escHtml(code) + '" data-tier="' + found.tier + '">Show Vendors &#x2192;</button>';
+
+            document.getElementById('cat-modal-content').innerHTML = html;
+            document.getElementById('cat-modal-backdrop').classList.add('open');
+            document.getElementById('cat-modal').classList.add('open');
+            document.getElementById('cat-modal-backdrop').removeAttribute('aria-hidden');
+            document.body.style.overflow = 'hidden';
+
+            document.getElementById('cat-modal-show-btn').addEventListener('click', function() {
+                var tier = parseInt(this.dataset.tier, 10);
+                closeCategoryModal();
+                if (tier === 2) {
+                    state.activeT2 = code;
+                    state.activeT1 = null;
+                } else {
+                    state.activeT1 = code;
+                    state.activeT2 = null;
+                }
+                syncT1Buttons();
+                update();
+            });
+        }
+
+        function closeCategoryModal() {
+            document.getElementById('cat-modal-backdrop').classList.remove('open');
+            document.getElementById('cat-modal').classList.remove('open');
+            document.getElementById('cat-modal-backdrop').setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('cat-modal-close').addEventListener('click', closeCategoryModal);
+        document.getElementById('cat-modal-backdrop').addEventListener('click', closeCategoryModal);
+
+        // ---- Event delegation for T1 and T2 headers in grid → open category modal ----
         document.getElementById('landscape-root').addEventListener('click', function(e) {
             var t2btn = e.target.closest('[data-t2-toggle]');
-            if (t2btn) {
-                var code = t2btn.dataset.t2Toggle;
-                state.activeT2 = (state.activeT2 === code) ? null : code;
-                if (state.activeT2) state.activeT1 = null;
-                syncT1Buttons();
-                update();
-                return;
-            }
+            if (t2btn) { openCategoryModal(t2btn.dataset.t2Toggle); return; }
             var t1btn = e.target.closest('[data-t1-toggle]');
-            if (t1btn) {
-                var code2 = t1btn.dataset.t1Toggle;
-                state.activeT1 = (state.activeT1 === code2) ? null : code2;
-                if (state.activeT1) state.activeT2 = null;
-                syncT1Buttons();
-                update();
-                return;
-            }
+            if (t1btn) { openCategoryModal(t1btn.dataset.t1Toggle); return; }
         });
 
-        // Keyboard accessibility for grid toggles
+        // Keyboard accessibility for grid headers
         document.getElementById('landscape-root').addEventListener('keydown', function(e) {
             if (e.key === 'Enter' || e.key === ' ') {
                 var t2btn = e.target.closest('[data-t2-toggle]');
