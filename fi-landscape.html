@@ -1265,7 +1265,7 @@
                 html += '<section class="t1-section" data-t1="' + cat.code + '">';
                 html += '<div class="t1-header' + t1Active + '" data-t1-toggle="' + cat.code + '" tabindex="0" role="button" aria-label="Toggle ' + escHtml(cat.name) + ' category">';
                 html += '<h2 class="t1-title">' + escHtml(cat.name) + '</h2>';
-                html += '<span class="t1-count">' + t1VendorCount + ' vendor' + (t1VendorCount !== 1 ? 's' : '') + '</span>';
+                html += '<span class="t1-count">' + t1VendorCount + '</span>';
                 html += '</div>';
 
                 for (var j2 = 0; j2 < cat.subcategories.length; j2++) {
