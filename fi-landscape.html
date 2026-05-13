@@ -1110,9 +1110,10 @@
         // ---- Get primary tier ----
         function getPrimaryTier(vendor) {
             var p = getPrimaryProduct(vendor);
-            if (p && p.pervasiveness_tier) return p.pervasiveness_tier;
+            if (p && p.pervasiveness_tier) return Number(p.pervasiveness_tier);
             return vendor.products.reduce(function(max, pr) {
-                return (pr.pervasiveness_tier && pr.pervasiveness_tier > max) ? pr.pervasiveness_tier : max;
+                var t = Number(pr.pervasiveness_tier);
+                return (t && t > max) ? t : max;
             }, 0);
         }
 
@@ -1169,7 +1170,7 @@
             // Tier filter
             if (state.activeTier !== null) {
                 var tier = getPrimaryTier(vendor);
-                if (tier !== state.activeTier) return false;
+                if (Number(tier) !== Number(state.activeTier)) return false;
             }
             return true;
         }
