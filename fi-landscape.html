@@ -550,6 +550,9 @@
     (function () {
         'use strict';
 
+        // ---- Base URL (for GitHub Pages sub-path support) ----
+        var BASE_URL = (document.head.querySelector('meta[name="baseurl"]') || {}).content || '';
+
         // ---- State ----
         var state = {
             data: null,
@@ -620,7 +623,8 @@
 
             var logoHtml;
             if (vendor.logo_url) {
-                logoHtml = '<img src="' + vendor.logo_url + '" alt="' + escHtml(vendor.name) + '" loading="lazy" width="56" height="40">';
+                var logoSrc = vendor.logo_url.charAt(0) === '/' ? BASE_URL + vendor.logo_url : vendor.logo_url;
+                logoHtml = '<img src="' + logoSrc + '" alt="' + escHtml(vendor.name) + '" loading="lazy" width="56" height="40">';
             } else {
                 logoHtml = '<div class="vendor-initials">' + escHtml(initials(vendor.name)) + '</div>';
             }
@@ -896,8 +900,7 @@
 
         // ---- Load data from Jekyll-generated JSON ----
         // baseurl-aware: works on GitHub Pages (/upstate-ai-dev/) and local dev (/)
-        var dataUrl = (document.head.querySelector('meta[name="baseurl"]') || {}).content || '';
-        dataUrl = (dataUrl + '/fi-landscape-data.json').replace(/\/\//g, '/');
+        var dataUrl = (BASE_URL + '/fi-landscape-data.json').replace(/\/\//g, '/');
         fetch(dataUrl)
             .then(function(r) {
                 if (!r.ok) throw new Error('HTTP ' + r.status);
