@@ -1697,7 +1697,7 @@
                 controls.appendChild(btn);
             });
 
-            row.addEventListener('click', function(e) {
+            document.getElementById('t1-filter-row').addEventListener('click', function(e) {
                 var btn = e.target.closest('[data-t1]');
                 if (!btn) return;
                 var code = btn.dataset.t1;
