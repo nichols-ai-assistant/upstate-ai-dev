@@ -66,7 +66,7 @@
             background: linear-gradient(100deg, #0f1f0f 0%, #1c321c 60%, #0f1f0f 100%);
             border-top: 2px solid var(--orange);
             border-bottom: 1px solid rgba(255, 105, 0, 0.2);
-            padding: 0.7rem 0;
+            padding: 1rem 0;
             position: relative;
             overflow: hidden;
         }
@@ -92,21 +92,37 @@
             flex: 1;
             min-width: 0;
         }
+        .fi-promo-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 105, 0, 0.18);
+            color: var(--orange);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            border: 1px solid rgba(255, 105, 0, 0.35);
+            margin-right: 0.85rem;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
         .fi-promo-text {
-            color: rgba(255, 255, 255, 0.82);
-            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.95rem;
             line-height: 1.4;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        .fi-promo-text strong { color: #fff; font-weight: 600; }
+        .fi-promo-text strong { color: #fff; font-weight: 700; }
         .fi-promo-cta {
             background: var(--orange);
             color: #fff;
             font-weight: 600;
-            font-size: 0.85rem;
-            padding: 0.45rem 1.1rem;
+            font-size: 0.9rem;
+            padding: 0.55rem 1.35rem;
             border-radius: var(--radius-sm);
             white-space: nowrap;
             flex-shrink: 0;
@@ -123,6 +139,8 @@
         @media (max-width: 640px) {
             .fi-promo-banner { border-top-width: 3px; padding: 1.1rem 0; }
             .fi-promo-banner .container { flex-direction: column; gap: 0.75rem; text-align: center; }
+            .fi-promo-banner-body { flex-direction: column; gap: 0.4rem; }
+            .fi-promo-badge { margin-right: 0; }
             .fi-promo-text { white-space: normal; overflow: visible; font-size: 1rem; }
             .fi-promo-text strong { font-size: 1.05rem; }
             .fi-promo-cta { width: 100%; text-align: center; padding: 0.75rem 1.25rem; font-size: 0.95rem; }
@@ -720,6 +738,7 @@
     <div class="fi-promo-banner" role="complementary" aria-label="Featured resource">
         <div class="container">
             <div class="fi-promo-banner-body">
+                <span class="fi-promo-badge">✦ New</span>
                 <span class="fi-promo-text"><strong>The FI AI Landscape.</strong> 400+ vendors. Every AI tool in community banking, mapped.</span>
             </div>
             <a href="fi-landscape" class="fi-promo-cta">Explore the Map &rarr;</a>
