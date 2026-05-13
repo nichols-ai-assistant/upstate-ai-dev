@@ -980,6 +980,14 @@
                 for (var j2 = 0; j2 < cat.subcategories.length; j2++) {
                     var sub2 = cat.subcategories[j2];
                     var visibleVendors = sub2.vendors.filter(vendorVisible);
+                    visibleVendors.sort(function(a, b) {
+                        var ta = getPrimaryTier(a), tb = getPrimaryTier(b);
+                        if (tb !== ta) return tb - ta;
+                        var pa = getPrimaryProduct(a), pb = getPrimaryProduct(b);
+                        var na = pa ? (pa.product_name || a.name) : a.name;
+                        var nb = pb ? (pb.product_name || b.name) : b.name;
+                        return na.localeCompare(nb);
+                    });
                     var t2Active = (state.activeT2 === sub2.code) ? ' active' : '';
 
                     // Dim T2 blocks not matching activeT2 (only when activeT2 is set)
