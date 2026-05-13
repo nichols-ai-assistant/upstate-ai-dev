@@ -57,41 +57,44 @@
            ========================================== */
 
         /* FI Landscape promo banner */
+        @keyframes fi-banner-sheen {
+            0%   { transform: translateX(-100%) skewX(-15deg); }
+            100% { transform: translateX(400%) skewX(-15deg); }
+        }
         .fi-promo-banner {
             margin-top: 64px;
-            background: var(--forest-dark);
+            background: linear-gradient(100deg, #0f1f0f 0%, #1c321c 60%, #0f1f0f 100%);
             border-top: 2px solid var(--orange);
-            border-bottom: 1px solid rgba(255, 105, 0, 0.25);
-            padding: 0.85rem 0;
+            border-bottom: 1px solid rgba(255, 105, 0, 0.2);
+            padding: 0.7rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .fi-promo-banner::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; bottom: 0;
+            width: 30%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.055), transparent);
+            animation: fi-banner-sheen 4s ease-in-out infinite;
+            pointer-events: none;
         }
         .fi-promo-banner .container {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 1.25rem;
+            position: relative;
         }
         .fi-promo-banner-body {
             display: flex;
             align-items: center;
-            gap: 0.85rem;
             flex: 1;
             min-width: 0;
         }
-        .fi-promo-badge {
-            background: var(--orange);
-            color: #fff;
-            font-size: 0.65rem;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            padding: 0.2rem 0.6rem;
-            border-radius: 3px;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
         .fi-promo-text {
-            color: rgba(255, 255, 255, 0.85);
-            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 0.88rem;
             line-height: 1.4;
             white-space: nowrap;
             overflow: hidden;
@@ -103,7 +106,7 @@
             color: #fff;
             font-weight: 600;
             font-size: 0.85rem;
-            padding: 0.5rem 1.2rem;
+            padding: 0.45rem 1.1rem;
             border-radius: var(--radius-sm);
             white-space: nowrap;
             flex-shrink: 0;
@@ -118,8 +121,7 @@
             box-shadow: 0 4px 20px rgba(255, 105, 0, 0.5);
         }
         @media (max-width: 640px) {
-            .fi-promo-banner .container { flex-direction: column; gap: 0.6rem; text-align: center; }
-            .fi-promo-banner-body { flex-direction: column; gap: 0.35rem; }
+            .fi-promo-banner .container { flex-direction: column; gap: 0.5rem; text-align: center; }
             .fi-promo-text { white-space: normal; overflow: visible; }
         }
 
@@ -715,10 +717,9 @@
     <div class="fi-promo-banner" role="complementary" aria-label="Featured resource">
         <div class="container">
             <div class="fi-promo-banner-body">
-                <span class="fi-promo-badge">New</span>
-                <span class="fi-promo-text"><strong>The FI AI Landscape is live.</strong> 400+ vendors mapped across 50+ categories, built for community banks and credit unions.</span>
+                <span class="fi-promo-text"><strong>The FI AI Landscape.</strong> 400+ vendors. Every AI tool in community banking, mapped.</span>
             </div>
-            <a href="fi-landscape" class="fi-promo-cta">Explore the Map &nbsp;&rarr;</a>
+            <a href="fi-landscape" class="fi-promo-cta">Explore the Map &rarr;</a>
         </div>
     </div>
 
