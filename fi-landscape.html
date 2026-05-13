@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The FI AI Landscape: 392 vendors, 458 products. Every AI solution in the community banking and credit union ecosystem, mapped and rated.">
+    <meta name="keywords" content="fintech AI vendors, community bank AI, credit union AI, banking AI landscape, FI AI map, banking technology vendors">
+    <meta name="author" content="Ben Nichols">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KKZRVLYRV0');
+    </script>
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="baseurl" content="/upstate-ai-dev">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://up-state-ai.com/fi-landscape">
+    <meta property="og:title" content="The FI AI Landscape | Upstate AI">
+    <meta property="og:description" content="392 vendors. 458 products. Every AI solution in the community banking ecosystem.">
+    <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
+
+    <title>The FI AI Landscape | Upstate AI</title>
+
+    <link rel="stylesheet" href="css/landing.css">
+    <style>
+        /* ==========================================
+           FI AI Landscape — Page Styles
+           ========================================== */
+
+        /* ---- Hero ---- */
+        .landscape-hero {
+            background: linear-gradient(160deg, var(--forest-dark) 0%, #0e2219 100%);
+            padding: calc(6rem + 60px) 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .landscape-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 80% 60% at 70% 50%, rgba(255,105,0,0.07) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .landscape-hero-inner {
+            position: relative;
+            z-index: 1;
+        }
+        .landscape-eyebrow {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--orange);
+            margin-bottom: 1.25rem;
+        }
+        .landscape-hero h1 {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: clamp(3rem, 2rem + 4vw, 5rem);
+            color: var(--warm-white);
+            line-height: 1.05;
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.02em;
+        }
+        .landscape-hero h1 .accent { color: var(--orange); }
+        .landscape-subhead {
+            font-size: clamp(1rem, 0.9rem + 0.5vw, 1.2rem);
+            color: rgba(253,252,248,0.7);
+            max-width: 640px;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Controls row */
+        .landscape-controls {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.75rem;
+        }
+        .segment-toggle {
+            display: flex;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius-md);
+            padding: 3px;
+            gap: 2px;
+        }
+        .segment-btn {
+            background: none;
+            border: none;
+            color: rgba(253,252,248,0.65);
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.45rem 1.1rem;
+            border-radius: calc(var(--radius-md) - 3px);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        .segment-btn.active {
+            background: var(--orange);
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(255,105,0,0.35);
+        }
+        .segment-btn:not(.active):hover {
+            background: rgba(255,255,255,0.1);
+            color: var(--warm-white);
+        }
+        .search-wrap {
+            position: relative;
+            flex: 1;
+            max-width: 340px;
+            min-width: 200px;
+        }
+        .search-wrap svg {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(253,252,248,0.4);
+            pointer-events: none;
+            flex-shrink: 0;
+        }
+        #vendor-search {
+            width: 100%;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius-md);
+            color: var(--warm-white);
+            font-size: 0.9rem;
+            padding: 0.55rem 1rem 0.55rem 2.5rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        #vendor-search::placeholder { color: rgba(253,252,248,0.4); }
+        #vendor-search:focus { border-color: rgba(255,105,0,0.5); }
+        .btn-pdf {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: rgba(253,252,248,0.6);
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.55rem 1.25rem;
+            border-radius: var(--radius-md);
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        .landscape-meta {
+            font-size: 0.78rem;
+            color: rgba(253,252,248,0.4);
+            letter-spacing: 0.02em;
+        }
+
+        /* ---- Active filter chips ---- */
+        .filter-bar {
+            padding: 0.75rem 0;
+            min-height: 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .filter-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: var(--orange-glow);
+            border: 1px solid rgba(255,105,0,0.3);
+            color: var(--orange);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+        }
+        .filter-chip-dismiss {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--orange);
+            font-size: 1rem;
+            line-height: 1;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            opacity: 0.7;
+            transition: opacity 0.15s;
+        }
+        .filter-chip-dismiss:hover { opacity: 1; }
+
+        /* ---- Main grid area ---- */
+        .landscape-body {
+            background: var(--warm-white);
+            padding: 3rem 0 6rem;
+        }
+
+        /* ---- T1 category section ---- */
+        .t1-section {
+            margin-bottom: 4rem;
+        }
+        .t1-header {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--forest-dark);
+            margin-bottom: 2rem;
+            cursor: pointer;
+            user-select: none;
+        }
+        .t1-header:hover .t1-title { color: var(--orange); }
+        .t1-title {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: clamp(1.5rem, 1.1rem + 1.5vw, 2.1rem);
+            color: var(--forest-dark);
+            margin: 0;
+            transition: color 0.2s;
+        }
+        .t1-header.active .t1-title { color: var(--orange); }
+        .t1-count {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--forest-medium);
+            background: rgba(45,87,69,0.1);
+            padding: 0.2rem 0.65rem;
+            border-radius: 999px;
+        }
+
+        /* ---- T2 subcategory block ---- */
+        .t2-block {
+            margin-bottom: 2rem;
+        }
+        .t2-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            user-select: none;
+        }
+        .t2-title {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: var(--forest-medium);
+            transition: color 0.2s;
+        }
+        .t2-header:hover .t2-title { color: var(--orange); }
+        .t2-header.active .t2-title { color: var(--orange); }
+        .t2-header.active .t2-line { background: var(--orange); }
+        .t2-line {
+            flex: 1;
+            height: 1px;
+            background: rgba(45,87,69,0.2);
+            transition: background 0.2s;
+        }
+        .t2-count {
+            font-size: 0.73rem;
+            color: rgba(45,87,69,0.5);
+            font-weight: 600;
+        }
+
+        /* ---- Vendor card grid ---- */
+        .vendor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 0.75rem;
+        }
+
+        /* ---- Individual vendor card ---- */
+        .vendor-card {
+            position: relative;
+            background: var(--warm-white);
+            border: 1.5px solid rgba(45,87,69,0.18);
+            border-radius: var(--radius-md);
+            padding: 0.75rem 0.5rem 0.6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: default;
+            transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+            box-shadow: var(--shadow-sm);
+        }
+        .vendor-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(26,58,46,0.13);
+            border-color: rgba(45,87,69,0.35);
+        }
+        .vendor-card.dimmed {
+            opacity: 0.2;
+            filter: grayscale(0.3);
+            pointer-events: none;
+        }
+        .vendor-card.deprecated {
+            opacity: 0.4;
+            filter: grayscale(1);
+        }
+        .vendor-card.deprecated .vendor-name::after {
+            content: 'Sunset';
+            display: block;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #999;
+            margin-top: 2px;
+        }
+
+        /* Logo area */
+        .vendor-logo-wrap {
+            width: 56px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+            flex-shrink: 0;
+        }
+        .vendor-logo-wrap img {
+            max-width: 56px;
+            max-height: 40px;
+            object-fit: contain;
+        }
+        .vendor-initials {
+            width: 56px;
+            height: 40px;
+            background: var(--forest-dark);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: rgba(253,252,248,0.85);
+            letter-spacing: 0.03em;
+        }
+
+        /* Vendor name */
+        .vendor-name {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--forest-dark);
+            text-align: center;
+            line-height: 1.3;
+            width: 100%;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            word-break: break-word;
+        }
+
+        /* Adoption badge (top-right) */
+        .adoption-badge {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 0.55rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 2px 5px;
+            border-radius: 4px;
+            line-height: 1.4;
+        }
+        .badge-6 { background: var(--orange); color: #fff; }
+        .badge-5 { background: var(--forest-dark); color: rgba(253,252,248,0.9); }
+        .badge-4 { background: var(--forest-medium); color: rgba(253,252,248,0.9); }
+        .badge-3 { background: var(--forest-accent); color: #fff; }
+        .badge-2 { background: #b0b8b4; color: #fff; }
+        .badge-1 { background: #d8ddd9; color: #666; }
+
+        /* Segment dot (bottom-left) */
+        .segment-dot {
+            position: absolute;
+            bottom: 6px;
+            left: 7px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+        .segment-banks { background: #3b82f6; }
+        .segment-credit_unions { background: #f59e0b; }
+        .segment-both {
+            background: linear-gradient(135deg, #3b82f6 50%, #f59e0b 50%);
+        }
+
+        /* Tooltip */
+        .vendor-tooltip {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            background: var(--forest-dark);
+            color: rgba(253,252,248,0.9);
+            border-radius: var(--radius-sm);
+            padding: 0.65rem 0.85rem;
+            font-size: 0.78rem;
+            line-height: 1.5;
+            max-width: 240px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+            pointer-events: none;
+        }
+        .tooltip-vendor-name {
+            font-weight: 700;
+            font-size: 0.82rem;
+            color: var(--warm-white);
+            margin-bottom: 0.25rem;
+        }
+        .tooltip-products {
+            color: rgba(253,252,248,0.65);
+            font-size: 0.74rem;
+        }
+
+        /* Empty state */
+        .t2-empty {
+            font-size: 0.82rem;
+            color: rgba(45,87,69,0.4);
+            font-style: italic;
+            padding: 0.5rem 0;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 768px) {
+            .landscape-controls { flex-direction: column; align-items: stretch; }
+            .search-wrap { max-width: 100%; }
+            .vendor-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 0.6rem; }
+        }
+        @media (max-width: 480px) {
+            .vendor-grid { grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><a href="index">
+                <img src="images/logo.png" alt="Upstate AI Logo" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="ai-readiness-assessment">Assessment</a></li>
+                <li><a href="free-training">Complimentary Training</a></li>
+                <li><a href="index#services">Services</a></li>
+                <li><a href="index#about">About</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-nav">Book a Call</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="landscape-hero">
+        <div class="container landscape-hero-inner">
+            <span class="landscape-eyebrow">&#x2B25;&nbsp;&nbsp;Analyst Intelligence&nbsp;&nbsp;&#x2B25;</span>
+            <h1>The <span class="accent">FI AI</span> Landscape</h1>
+            <p class="landscape-subhead" id="hero-subhead">Loading&hellip;</p>
+
+            <div class="landscape-controls">
+                <div class="segment-toggle" role="group" aria-label="Filter by institution segment">
+                    <button class="segment-btn active" data-segment="all">All</button>
+                    <button class="segment-btn" data-segment="banks">Banks</button>
+                    <button class="segment-btn" data-segment="credit_unions">Credit Unions</button>
+                </div>
+                <div class="search-wrap">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                    <input type="search" id="vendor-search" placeholder="Search vendors&hellip;" autocomplete="off" aria-label="Search vendors">
+                </div>
+                <a href="#" class="btn-pdf" aria-disabled="true" tabindex="-1" title="PDF export coming soon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download PDF
+                </a>
+            </div>
+
+            <p class="landscape-meta" id="meta-line">Loading data&hellip;</p>
+        </div>
+    </section>
+
+    <!-- ==================== FILTER BAR ==================== -->
+    <div style="background: var(--cream); border-bottom: 1px solid rgba(45,87,69,0.15);">
+        <div class="container">
+            <div class="filter-bar" id="filter-bar" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <!-- ==================== LANDSCAPE GRID ==================== -->
+    <section class="landscape-body">
+        <div class="container" id="landscape-root">
+            <p style="color: var(--text-muted); font-style:italic;">Loading landscape data&hellip;</p>
+        </div>
+    </section>
+
+    <!-- Tooltip element (shared, repositioned by JS) -->
+    <div class="vendor-tooltip" id="vendor-tooltip" aria-hidden="true">
+        <div class="tooltip-vendor-name" id="tooltip-name"></div>
+        <div class="tooltip-products" id="tooltip-products"></div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
+                    <p>Put AI to Work</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index#services">Services</a>
+                    <a href="index#about">About</a>
+                    <a href="blog">Blog</a>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
+                    <a href="privacy">Privacy Policy</a>
+                    <a href="#" onclick="window.CookieConsent && window.CookieConsent.show(); return false;">Cookie Settings</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-consent.js"></script>
+
+    <!-- ==================== LANDSCAPE SCRIPT ==================== -->
+    <script>
+    (function () {
+        'use strict';
+
+        // ---- State ----
+        var state = {
+            data: null,
+            segment: 'all',     // 'all' | 'banks' | 'credit_unions'
+            search: '',
+            activeT2: null,     // category code string, or null = no filter
+            activeT1: null      // for T1-level selection
+        };
+
+        var TIER_LABELS = {
+            6: 'Dominant',
+            5: 'Major',
+            4: 'Established',
+            3: 'Growing',
+            2: 'Niche',
+            1: 'Emerging'
+        };
+
+        // ---- Initials helper ----
+        function initials(name) {
+            var words = name.replace(/[,&\.]/g, '').split(/\s+/).filter(Boolean);
+            if (words.length === 1) return words[0].substring(0, 3).toUpperCase();
+            if (words.length === 2) return (words[0][0] + words[1][0]).toUpperCase();
+            return (words[0][0] + words[1][0] + words[2][0]).toUpperCase();
+        }
+
+        // ---- Check if a vendor matches current filters ----
+        function vendorVisible(vendor) {
+            // Search filter
+            if (state.search) {
+                if (vendor.name.toLowerCase().indexOf(state.search) === -1) return false;
+            }
+            // Segment filter: vendor is visible if ANY of its products match
+            if (state.segment !== 'all') {
+                var match = vendor.products.some(function(p) {
+                    return p.fi_segment === state.segment || p.fi_segment === 'both';
+                });
+                if (!match) return false;
+            }
+            return true;
+        }
+
+        // ---- Get the primary pervasiveness tier for a vendor in a subcategory ----
+        function getPrimaryTier(vendor) {
+            var primary = vendor.products.find(function(p) { return p.is_primary; });
+            if (primary && primary.pervasiveness_tier) return primary.pervasiveness_tier;
+            // fallback: highest tier among all products
+            return vendor.products.reduce(function(max, p) {
+                return (p.pervasiveness_tier && p.pervasiveness_tier > max) ? p.pervasiveness_tier : max;
+            }, 0);
+        }
+
+        // ---- Get the "primary" fi_segment for segment dot ----
+        function getSegment(vendor) {
+            var segs = vendor.products.map(function(p) { return p.fi_segment; }).filter(Boolean);
+            if (segs.every(function(s) { return s === 'banks'; })) return 'banks';
+            if (segs.every(function(s) { return s === 'credit_unions'; })) return 'credit_unions';
+            return 'both';
+        }
+
+        // ---- Build vendor card HTML ----
+        function buildCard(vendor, t2Code) {
+            var tier = getPrimaryTier(vendor);
+            var seg = getSegment(vendor);
+            var isDeprecated = (vendor.status === 'deprecated' || vendor.status === 'sunset');
+            var classes = 'vendor-card';
+            if (isDeprecated) classes += ' deprecated';
+
+            var logoHtml;
+            if (vendor.logo_url) {
+                logoHtml = '<img src="' + vendor.logo_url + '" alt="' + escHtml(vendor.name) + '" loading="lazy" width="56" height="40">';
+            } else {
+                logoHtml = '<div class="vendor-initials">' + escHtml(initials(vendor.name)) + '</div>';
+            }
+
+            var badgeHtml = '';
+            if (tier && TIER_LABELS[tier]) {
+                badgeHtml = '<span class="adoption-badge badge-' + tier + '" aria-label="' + TIER_LABELS[tier] + '">' + TIER_LABELS[tier] + '</span>';
+            }
+
+            var dotClass = 'segment-dot segment-' + seg;
+
+            var productNames = vendor.products.map(function(p) { return p.product_name; }).join(', ');
+
+            return '<div class="' + classes + '" ' +
+                'data-vendor-id="' + vendor.vendor_id + '" ' +
+                'data-t2="' + escHtml(t2Code) + '" ' +
+                'data-name="' + escHtml(vendor.name.toLowerCase()) + '" ' +
+                'data-segment="' + escHtml(seg) + '" ' +
+                'data-tooltip-name="' + escHtml(vendor.name) + '" ' +
+                'data-tooltip-products="' + escHtml(productNames) + '">' +
+                badgeHtml +
+                '<div class="vendor-logo-wrap">' + logoHtml + '</div>' +
+                '<span class="vendor-name">' + escHtml(vendor.name) + '</span>' +
+                '<span class="' + dotClass + '" aria-hidden="true"></span>' +
+                '</div>';
+        }
+
+        function escHtml(str) {
+            return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+        }
+
+        // ---- Render the entire landscape ----
+        function render() {
+            var root = document.getElementById('landscape-root');
+            if (!state.data) { root.innerHTML = '<p style="color:var(--text-muted);font-style:italic;">Failed to load data.</p>'; return; }
+
+            var html = '';
+            var cats = state.data.categories;
+
+            for (var i = 0; i < cats.length; i++) {
+                var cat = cats[i];
+                // Count visible vendors in this T1
+                var t1VendorCount = 0;
+                for (var j = 0; j < cat.subcategories.length; j++) {
+                    var sub = cat.subcategories[j];
+                    for (var k = 0; k < sub.vendors.length; k++) {
+                        if (vendorVisible(sub.vendors[k])) t1VendorCount++;
+                    }
+                }
+
+                var t1Active = (state.activeT1 === cat.code) ? ' active' : '';
+                html += '<section class="t1-section" data-t1="' + cat.code + '">';
+                html += '<div class="t1-header' + t1Active + '" data-t1-toggle="' + cat.code + '" tabindex="0" role="button" aria-label="Toggle ' + escHtml(cat.name) + ' category">';
+                html += '<h2 class="t1-title">' + escHtml(cat.name) + '</h2>';
+                html += '<span class="t1-count">' + t1VendorCount + ' vendor' + (t1VendorCount !== 1 ? 's' : '') + '</span>';
+                html += '</div>';
+
+                for (var j = 0; j < cat.subcategories.length; j++) {
+                    var sub = cat.subcategories[j];
+                    var visibleVendors = sub.vendors.filter(vendorVisible);
+                    var t2Active = (state.activeT2 === sub.code) ? ' active' : '';
+
+                    html += '<div class="t2-block" data-t2-block="' + sub.code + '">';
+                    html += '<div class="t2-header' + t2Active + '" data-t2-toggle="' + sub.code + '" tabindex="0" role="button" aria-label="Filter by ' + escHtml(sub.name) + '">';
+                    html += '<span class="t2-title">' + escHtml(sub.name) + '</span>';
+                    html += '<span class="t2-line" aria-hidden="true"></span>';
+                    html += '<span class="t2-count">' + visibleVendors.length + '</span>';
+                    html += '</div>';
+
+                    if (visibleVendors.length === 0) {
+                        html += '<p class="t2-empty">No vendors match current filters.</p>';
+                    } else {
+                        html += '<div class="vendor-grid">';
+                        for (var k = 0; k < sub.vendors.length; k++) {
+                            var vendor = sub.vendors[k];
+                            var visible = vendorVisible(vendor);
+                            // Dimming: if a T2 filter is active and this card is not in the active T2
+                            var shouldDim = false;
+                            if (state.activeT2 !== null && state.activeT2 !== sub.code) shouldDim = true;
+                            if (state.activeT1 !== null && state.activeT1 !== cat.code) shouldDim = true;
+
+                            if (!visible) continue; // fully hide if segment/search doesn't match
+                            var cardHtml = buildCard(vendor, sub.code);
+                            // Inject dimmed class if needed
+                            if (shouldDim) {
+                                cardHtml = cardHtml.replace('class="vendor-card', 'class="vendor-card dimmed');
+                            }
+                            html += cardHtml;
+                        }
+                        html += '</div>';
+                    }
+                    html += '</div>'; // t2-block
+                }
+                html += '</section>';
+            }
+
+            root.innerHTML = html;
+            attachCardEvents();
+        }
+
+        // ---- Attach tooltip events after render ----
+        function attachCardEvents() {
+            var tooltip = document.getElementById('vendor-tooltip');
+            var tooltipName = document.getElementById('tooltip-name');
+            var tooltipProducts = document.getElementById('tooltip-products');
+
+            var cards = document.querySelectorAll('.vendor-card:not(.dimmed)');
+            for (var i = 0; i < cards.length; i++) {
+                (function(card) {
+                    card.addEventListener('mouseenter', function(e) {
+                        tooltipName.textContent = card.dataset.tooltipName;
+                        tooltipProducts.textContent = card.dataset.tooltipProducts;
+                        tooltip.style.display = 'block';
+                        positionTooltip(e);
+                    });
+                    card.addEventListener('mousemove', positionTooltip);
+                    card.addEventListener('mouseleave', function() {
+                        tooltip.style.display = 'none';
+                    });
+                })(cards[i]);
+            }
+        }
+
+        function positionTooltip(e) {
+            var tooltip = document.getElementById('vendor-tooltip');
+            var x = e.clientX + 14;
+            var y = e.clientY + 14;
+            var tw = tooltip.offsetWidth;
+            var th = tooltip.offsetHeight;
+            if (x + tw > window.innerWidth - 16) x = e.clientX - tw - 14;
+            if (y + th > window.innerHeight - 16) y = e.clientY - th - 14;
+            tooltip.style.left = x + 'px';
+            tooltip.style.top = y + 'px';
+        }
+
+        // ---- Update filter bar chip ----
+        function renderFilterBar() {
+            var bar = document.getElementById('filter-bar');
+            if (!state.activeT2 && !state.activeT1 && !state.search) {
+                bar.innerHTML = '';
+                return;
+            }
+            var chips = '';
+            if (state.activeT2) {
+                // Find name
+                var label = state.activeT2;
+                if (state.data) {
+                    outer: for (var i = 0; i < state.data.categories.length; i++) {
+                        for (var j = 0; j < state.data.categories[i].subcategories.length; j++) {
+                            if (state.data.categories[i].subcategories[j].code === state.activeT2) {
+                                label = state.data.categories[i].subcategories[j].name;
+                                break outer;
+                            }
+                        }
+                    }
+                }
+                chips += '<span class="filter-chip">' + escHtml(label) + '<button class="filter-chip-dismiss" data-dismiss="t2" aria-label="Clear subcategory filter">&times;</button></span>';
+            }
+            if (state.activeT1) {
+                var t1label = state.activeT1;
+                if (state.data) {
+                    for (var i = 0; i < state.data.categories.length; i++) {
+                        if (state.data.categories[i].code === state.activeT1) {
+                            t1label = state.data.categories[i].name;
+                            break;
+                        }
+                    }
+                }
+                chips += '<span class="filter-chip">' + escHtml(t1label) + '<button class="filter-chip-dismiss" data-dismiss="t1" aria-label="Clear category filter">&times;</button></span>';
+            }
+            if (state.search) {
+                chips += '<span class="filter-chip">Search: ' + escHtml(state.search) + '<button class="filter-chip-dismiss" data-dismiss="search" aria-label="Clear search">&times;</button></span>';
+            }
+            bar.innerHTML = chips;
+
+            bar.querySelectorAll('.filter-chip-dismiss').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    var type = btn.dataset.dismiss;
+                    if (type === 't2') state.activeT2 = null;
+                    if (type === 't1') state.activeT1 = null;
+                    if (type === 'search') {
+                        state.search = '';
+                        document.getElementById('vendor-search').value = '';
+                    }
+                    update();
+                });
+            });
+        }
+
+        function update() {
+            render();
+            renderFilterBar();
+        }
+
+        // ---- Event delegation for T1 and T2 toggles ----
+        document.getElementById('landscape-root').addEventListener('click', function(e) {
+            var t2btn = e.target.closest('[data-t2-toggle]');
+            if (t2btn) {
+                var code = t2btn.dataset.t2Toggle;
+                if (state.activeT2 === code) {
+                    state.activeT2 = null;
+                } else {
+                    state.activeT2 = code;
+                    state.activeT1 = null; // clear T1 if T2 selected
+                }
+                update();
+                return;
+            }
+            var t1btn = e.target.closest('[data-t1-toggle]');
+            if (t1btn) {
+                var code = t1btn.dataset.t1Toggle;
+                if (state.activeT1 === code) {
+                    state.activeT1 = null;
+                } else {
+                    state.activeT1 = code;
+                    state.activeT2 = null; // clear T2 if T1 selected
+                }
+                update();
+                return;
+            }
+        });
+
+        // Keyboard accessibility for toggles
+        document.getElementById('landscape-root').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                var t2btn = e.target.closest('[data-t2-toggle]');
+                if (t2btn) { e.preventDefault(); t2btn.click(); }
+                var t1btn = e.target.closest('[data-t1-toggle]');
+                if (t1btn) { e.preventDefault(); t1btn.click(); }
+            }
+        });
+
+        // ---- Segment toggle ----
+        document.querySelectorAll('.segment-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                state.segment = btn.dataset.segment;
+                document.querySelectorAll('.segment-btn').forEach(function(b) {
+                    b.classList.toggle('active', b === btn);
+                });
+                update();
+            });
+        });
+
+        // ---- Search input ----
+        var searchDebounce;
+        document.getElementById('vendor-search').addEventListener('input', function(e) {
+            clearTimeout(searchDebounce);
+            searchDebounce = setTimeout(function() {
+                state.search = e.target.value.trim().toLowerCase();
+                update();
+            }, 180);
+        });
+
+        // ---- Navbar scroll ----
+        var navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function() {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        }, { passive: true });
+
+        // ---- Mobile menu toggle ----
+        var mobileToggle = document.querySelector('.mobile-toggle');
+        var navMenu = document.querySelector('.nav-menu');
+        mobileToggle.addEventListener('click', function() {
+            mobileToggle.classList.toggle('active');
+            navMenu.classList.toggle('open');
+        });
+        navMenu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('open');
+                mobileToggle.classList.remove('active');
+            });
+        });
+
+        // ---- Load data from Jekyll-generated JSON ----
+        // baseurl-aware: works on GitHub Pages (/upstate-ai-dev/) and local dev (/)
+        var dataUrl = (document.head.querySelector('meta[name="baseurl"]') || {}).content || '';
+        dataUrl = (dataUrl + '/fi-landscape-data.json').replace(/\/\//g, '/');
+        fetch(dataUrl)
+            .then(function(r) {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.json();
+            })
+            .then(function(data) {
+                state.data = data;
+
+                // Update hero text
+                var subhead = document.getElementById('hero-subhead');
+                subhead.textContent = data.meta.vendor_count + ' vendors. ' + data.meta.product_count + ' products. Every AI solution in the community banking ecosystem.';
+
+                // Update meta line
+                var metaEl = document.getElementById('meta-line');
+                var d = new Date(data.meta.generated_at);
+                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+                metaEl.textContent = 'Last updated: ' + months[d.getUTCMonth()] + ' ' + d.getUTCDate() + ', ' + d.getUTCFullYear();
+
+                update();
+            })
+            .catch(function(err) {
+                console.error('Failed to load landscape data:', err);
+                document.getElementById('hero-subhead').textContent = '392 vendors. 458 products. Every AI solution in the community banking ecosystem.';
+                document.getElementById('meta-line').textContent = '';
+                document.getElementById('landscape-root').innerHTML =
+                    '<p style="color:var(--text-muted);font-style:italic;">Could not load landscape data. Please refresh the page.</p>';
+            });
+
+    })();
+    </script>
+</body>
+</html>
