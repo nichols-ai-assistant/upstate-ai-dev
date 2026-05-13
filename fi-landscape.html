@@ -1443,7 +1443,20 @@
             if (compBtn && !compBtn.disabled) {
                 compBtn.addEventListener('click', function() {
                     closeModal();
+                    // Reset all other filters before applying competitor filter
+                    state.search = '';
+                    var searchInput = document.getElementById('vendor-search');
+                    if (searchInput) searchInput.value = '';
+                    state.category = 'all';
+                    state.tier = 'all';
+                    state.segment = 'all';
+                    state.activeTier = null;
+                    state.activeT1 = null;
+                    state.activeT2 = null;
                     state.ecosystemFilter = null;
+                    syncT1Buttons();
+                    syncTierButtons();
+                    syncSegmentButtons();
                     state.competitorFilter = { productName: productName, ids: competitorIds };
                     update();
                 });
@@ -1452,7 +1465,20 @@
             if (ecoBtn && !ecoBtn.disabled) {
                 ecoBtn.addEventListener('click', function() {
                     closeModal();
+                    // Reset all other filters before applying ecosystem filter
+                    state.search = '';
+                    var searchInput = document.getElementById('vendor-search');
+                    if (searchInput) searchInput.value = '';
+                    state.category = 'all';
+                    state.tier = 'all';
+                    state.segment = 'all';
+                    state.activeTier = null;
+                    state.activeT1 = null;
+                    state.activeT2 = null;
                     state.competitorFilter = null;
+                    syncT1Buttons();
+                    syncTierButtons();
+                    syncSegmentButtons();
                     state.ecosystemFilter = { productName: productName, ids: integrationIds };
                     update();
                 });
