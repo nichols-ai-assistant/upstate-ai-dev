@@ -11378,6 +11378,26 @@
               ]
             },
             {
+              "vendor_id": 421,
+              "name": "Directlink",
+              "homepage_url": "https://www.directlink.ai",
+              "logo_url": null,
+              "status": "deprecated",
+              "products": [
+                {
+                  "product_id": 497,
+                  "product_name": "Directlink Conversational Banking",
+                  "description": "Conversational AI platform purpose-built for community banks and credit unions, enabling natural language banking interactions via chat and voice channels.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "deprecated",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 34,
               "name": "Eltropy",
               "homepage_url": "https://eltropy.com",
@@ -43946,8 +43966,8 @@
     }
   ],
   "meta": {
-    "vendor_count": 391,
-    "product_count": 459,
-    "generated_at": "2026-05-13T11:05:41.836Z"
+    "vendor_count": 392,
+    "product_count": 460,
+    "generated_at": "2026-05-13T11:11:45.508Z"
   }
 }
