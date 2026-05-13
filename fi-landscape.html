@@ -265,9 +265,6 @@
             margin: 0 auto;
             border-bottom: 1px solid rgba(255,255,255,0.07);
         }
-        .filter-search-row .cat-filter-label {
-            flex-shrink: 0;
-        }
         .filter-search-wrap {
             position: relative;
             flex: 1;
@@ -327,10 +324,9 @@
 
         .category-filter-row {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 0.4rem;
             padding: 1.1rem var(--space-md);
-            flex-wrap: wrap;
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -344,8 +340,18 @@
             letter-spacing: 0.08em;
             text-transform: uppercase;
             color: rgba(253,252,248,0.35);
-            margin-right: 0.25rem;
+            width: 88px;
+            flex-shrink: 0;
+            padding-top: 0.35rem; /* align with first pill */
             white-space: nowrap;
+        }
+        .filter-row-controls {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            align-items: center;
+            min-width: 0;
         }
         .cat-filter-btn {
             background: rgba(255,255,255,0.07);
@@ -901,8 +907,10 @@
         /* ---- Responsive ---- */
         @media (max-width: 768px) {
             .vendor-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 0.6rem; }
-            .category-filter-row { padding: 0.75rem 1rem; gap: 0.3rem; }
-            .filter-search-row { padding: 0.75rem 1rem; }
+            .category-filter-row { padding: 0.75rem 1rem; gap: 0.3rem; flex-direction: column; align-items: flex-start; }
+            .filter-search-row { padding: 0.75rem 1rem; flex-direction: column; align-items: flex-start; }
+            .cat-filter-label { width: auto; padding-top: 0; margin-bottom: 0.3rem; }
+            .filter-row-controls { width: 100%; }
         }
         @media (max-width: 480px) {
             .vendor-grid { grid-template-columns: repeat(auto-fill, minmax(95px, 1fr)); }
@@ -967,37 +975,43 @@
         <div class="filter-panel" id="filter-panel">
             <!-- Search row -->
             <div class="filter-search-row">
-                <span class="cat-filter-label" style="margin-right:0.5rem;">Search</span>
-                <div class="filter-search-wrap">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                    </svg>
-                    <input type="search" id="vendor-search" placeholder="Search products&hellip;" autocomplete="off" aria-label="Search products and vendors">
+                <span class="cat-filter-label">Search</span>
+                <div class="filter-row-controls">
+                    <div class="filter-search-wrap">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                        <input type="search" id="vendor-search" placeholder="Search products&hellip;" autocomplete="off" aria-label="Search products and vendors">
+                    </div>
                 </div>
             </div>
             <!-- Category row -->
             <div class="category-filter-row" id="t1-filter-row">
                 <span class="cat-filter-label">Category</span>
-                <!-- Populated by JS -->
+                <div class="filter-row-controls" id="t1-filter-controls"><!-- Populated by JS --></div>
             </div>
             <!-- Tier row -->
             <div class="category-filter-row" id="tier-filter-row">
                 <span class="cat-filter-label">Tier</span>
-                <button class="cat-filter-btn tier-filter-btn active" data-tier="all">All</button>
-                <button class="cat-filter-btn tier-filter-btn" data-tier="1" title="Tier 1 — Emerging">T1 Emerging</button>
-                <button class="cat-filter-btn tier-filter-btn" data-tier="2" title="Tier 2 — Growing">T2 Growing</button>
-                <button class="cat-filter-btn tier-filter-btn" data-tier="3" title="Tier 3 — Moderate">T3 Moderate</button>
-                <button class="cat-filter-btn tier-filter-btn" data-tier="4" title="Tier 4 — Established">T4 Established</button>
-                <button class="cat-filter-btn tier-filter-btn" data-tier="5" title="Tier 5 — Dominant">T5 Dominant</button>
-                <button class="cat-filter-btn tier-filter-btn" data-tier="6" title="Tier 6 — Ubiquitous">T6 Ubiquitous</button>
+                <div class="filter-row-controls">
+                    <button class="cat-filter-btn tier-filter-btn active" data-tier="all">All</button>
+                    <button class="cat-filter-btn tier-filter-btn" data-tier="1" title="Tier 1 — Emerging">T1 Emerging</button>
+                    <button class="cat-filter-btn tier-filter-btn" data-tier="2" title="Tier 2 — Growing">T2 Growing</button>
+                    <button class="cat-filter-btn tier-filter-btn" data-tier="3" title="Tier 3 — Moderate">T3 Moderate</button>
+                    <button class="cat-filter-btn tier-filter-btn" data-tier="4" title="Tier 4 — Established">T4 Established</button>
+                    <button class="cat-filter-btn tier-filter-btn" data-tier="5" title="Tier 5 — Dominant">T5 Dominant</button>
+                    <button class="cat-filter-btn tier-filter-btn" data-tier="6" title="Tier 6 — Ubiquitous">T6 Ubiquitous</button>
+                </div>
             </div>
             <!-- Segment row -->
             <div class="category-filter-row" id="segment-filter-row">
                 <span class="cat-filter-label">Segment</span>
-                <button class="seg-filter-btn active" data-segment="all">All</button>
-                <button class="seg-filter-btn" data-segment="banks">Banks Only</button>
-                <button class="seg-filter-btn" data-segment="credit_unions">Credit Unions Only</button>
-                <button class="seg-filter-btn" data-segment="both">Both</button>
+                <div class="filter-row-controls">
+                    <button class="seg-filter-btn active" data-segment="all">All</button>
+                    <button class="seg-filter-btn" data-segment="banks">Banks Only</button>
+                    <button class="seg-filter-btn" data-segment="credit_unions">Credit Unions Only</button>
+                    <button class="seg-filter-btn" data-segment="both">Both</button>
+                </div>
             </div>
         </div>
     </div>
@@ -1663,17 +1677,14 @@
 
         // ---- Populate T1 filter buttons ----
         function buildT1Buttons() {
-            var row = document.getElementById('t1-filter-row');
-            // Keep the label span
-            var label = row.querySelector('.cat-filter-label');
-            row.innerHTML = '';
-            row.appendChild(label);
+            var controls = document.getElementById('t1-filter-controls');
+            controls.innerHTML = '';
 
             var allBtn = document.createElement('button');
             allBtn.className = 'cat-filter-btn active';
             allBtn.dataset.t1 = 'all';
             allBtn.textContent = 'All';
-            row.appendChild(allBtn);
+            controls.appendChild(allBtn);
 
             if (!state.data) return;
             state.data.categories.forEach(function(cat) {
@@ -1681,7 +1692,7 @@
                 btn.className = 'cat-filter-btn';
                 btn.dataset.t1 = cat.code;
                 btn.textContent = cat.name;
-                row.appendChild(btn);
+                controls.appendChild(btn);
             });
 
             row.addEventListener('click', function(e) {
