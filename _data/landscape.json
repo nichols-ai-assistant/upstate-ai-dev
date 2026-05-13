@@ -79,7 +79,7 @@
                 {
                   "product_id": 3,
                   "product_name": "Upstart AI Lending Platform",
-                  "description": "AI-powered personal loan, auto, and HELOC origination platform; FIs fund loans on Upstart marketplace or white-label; Upstart provides AI decisioning and servicing",
+                  "description": "AI-powered personal loan, auto, and HELOC origination platform with AI decisioning and servicing; FIs fund loans on-balance-sheet or via white-label arrangement.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -187,7 +187,7 @@
                 {
                   "product_id": 92,
                   "product_name": "Scienaptic AI Credit Decisioning",
-                  "description": "ML-powered credit decisioning platform for credit unions with embedded fair lending monitoring; disparate impact analysis (DIA) module quantitatively measures adverse treatment of protected classes; automated adverse action explanation; approval rate increases for underserved members; primary purpose is credit underwriting, not standalone fair lending analytics; CRA performance tracking not included",
+                  "description": "ML-powered credit decisioning platform for credit unions with embedded fair lending monitoring; disparate impact analysis (DIA) module quantitatively measures adverse treatment of protected classes; automated adverse action explanation; primary purpose is credit underwriting, not standalone fair lending analytics.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -287,7 +287,7 @@
                 {
                   "product_id": 144,
                   "product_name": "Corridor Platforms Decision Intelligence",
-                  "description": "Decision workflow governance and automation platform for banks and credit unions; enables real-time credit decisioning using ML models, alternative data, and bureau data integrated from core banking, LOS, and third-party sources; full audit trail and governance framework for model risk management compliance; RiskDecisioning.ai hosted offering provides turnkey decision management; Precision CUSO partnership with Teachers FCU expands AI credit decisioning to credit unions nationwide",
+                  "description": "Comprehensive digital banking platform for community banks and credit unions; suite covers mobile banking, online banking, omnichannel loan origination, digital account opening, remote deposit capture, bill pay, SMS banking, biometric authentication, video chat, conversational banking/chatbots, white-label robo-advisor, and commercial banking.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -332,7 +332,7 @@
                 {
                   "product_id": 150,
                   "product_name": "Stratyfy Credit Decision Intelligence",
-                  "description": "Interpretable machine learning platform for credit underwriting, fraud detection, and fair lending compliance at community banks and credit unions; patented inherently interpretable ML models enable regulatory-compliant AI adoption without sacrificing explainability; reduces bias and expands fair lending access; model diagnostic tools validated by FinRegLab explainability and fairness research; Parlay Finance partnership for SMB lending decisioning",
+                  "description": "White-label embedded fintech platform enabling banks and credit unions to offer credit monitoring, identity protection, and financial wellness tools inside digital banking; tri-bureau credit data API for underwriting and personalization; Offers Engine delivers pre-qualified product offers using member credit data; integrates with DCI and Alkami digital banking platforms.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -878,7 +878,7 @@
                 {
                   "product_id": 240,
                   "product_name": "TurnKey Lender LOS",
-                  "description": "End-to-end AI-powered loan origination and management platform for banks and credit unions. Automates 90%+ of credit decisioning, AML/KYC checks, digital onboarding, payments, and collections.",
+                  "description": "End-to-end AI-powered loan origination and management platform for banks and credit unions; automates credit decisioning, AML/KYC checks, digital onboarding, payments, and collections.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -1406,7 +1406,7 @@
                 {
                   "product_id": 142,
                   "product_name": "Baker Hill NextGen",
-                  "description": "Cloud-based loan origination system for community banks and credit unions covering consumer, small business, and commercial lending; includes credit analysis, risk rating, portfolio management, relationship pricing, and analytics; launched UN/FY AI-driven enhancement in November 2025 combining digital SMB lending, AI-driven insights, and deposit account opening; reduces underwriting time from weeks to minutes; reduces origination costs up to 60%; integrates with major community bank cores",
+                  "description": "Home equity loan and HELOC lending automation platform for community banks and credit unions; uses configurable workflows and proprietary Collateral Decisioning Engine to automate appraisal ordering, title, flood, and compliance checks enabling clear-to-close in hours; integrates with ICE Mortgage Technology Encompass.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -1921,7 +1921,7 @@
                 {
                   "product_id": 174,
                   "product_name": "Cotribute Digital Account Opening",
-                  "description": "AI-powered digital account opening and loan origination platform for community banks and credit unions; automates 85% of decisioning including fraud detection, KYC, and core system updates; 5x faster account opening with completion in under 2 minutes; automated cross-selling for deposit and loan growth; integrates global KYC solution; documented deployments at Capitol CU of Texas, Blue Federal Credit Union",
+                  "description": "Developer-first embedded finance platform enabling companies to launch FDIC-insured bank accounts, debit cards, ACH and wire payments, and credit products via APIs; relies on licensed bank sponsor partners for underlying banking services; provides KYC/AML, fraud monitoring, and compliance tooling for fintech program operators.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -1983,7 +1983,7 @@
                 {
                   "product_id": 240,
                   "product_name": "TurnKey Lender LOS",
-                  "description": "End-to-end AI-powered loan origination and management platform for banks and credit unions. Automates 90%+ of credit decisioning, AML/KYC checks, digital onboarding, payments, and collections.",
+                  "description": "End-to-end AI-powered loan origination and management platform for banks and credit unions; automates credit decisioning, AML/KYC checks, digital onboarding, payments, and collections.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -2716,7 +2716,7 @@
                 {
                   "product_id": 152,
                   "product_name": "BeSmartee Bright POS",
-                  "description": "AI-enabled mortgage and commercial lending point-of-sale and origination platform for banks, credit unions, and non-bank lenders; Bright POS handles mortgage application intake with AI-driven document collection and processing; FlashSpread automates commercial tax return analysis and financial spreading; 165+ direct vendor integrations; AI takes borrowers from initial contact to underwriting-ready in 20 minutes; $25B+ in digital mortgages processed monthly; partnership with Hawthorn River for community bank commercial lending",
+                  "description": "Integrated small business invoicing, payment acceptance, and cash flow management platform embedded in community bank and credit union business banking portals; supports credit card, debit card, ACH, and check lockbox payment acceptance.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -2805,7 +2805,7 @@
                 {
                   "product_id": 408,
                   "product_name": "MANTL Account Origination",
-                  "description": "Omnichannel account origination platform for consumer and business deposit and loan accounts, integrating online, in-branch, and call-center channels for community banks and credit unions.",
+                  "description": "Universal API providing real-time connectivity to small business accounting systems (QuickBooks, Xero, and others) for automated financial statement spreading and SME credit underwriting; integrates within nCino.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -2880,7 +2880,7 @@
                 {
                   "product_id": 237,
                   "product_name": "Casca AI Loan Origination",
-                  "description": "AI-native loan origination platform for SBA 7(a) and commercial lending. Automates document collection, financial analysis, and compliance workflows. Funds loans up to 30x faster than industry average.",
+                  "description": "AI-native loan origination platform for SBA 7(a) and commercial lending; automates document collection, financial analysis, and compliance workflows.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "banks",
                   "status": "active",
@@ -3225,7 +3225,7 @@
                 {
                   "product_id": 337,
                   "product_name": "QCash Small-Dollar Lending",
-                  "description": "Patented Relational Underwriting small-dollar lending platform enabling CUs to make instant loans without credit checks, promoting financial inclusion.",
+                  "description": "Insurance, fintech, investment, data/analytics, and lending solutions for credit unions rooted in the CU movement.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -3700,7 +3700,7 @@
                 {
                   "product_id": 3,
                   "product_name": "Upstart AI Lending Platform",
-                  "description": "AI-powered personal loan, auto, and HELOC origination platform; FIs fund loans on Upstart marketplace or white-label; Upstart provides AI decisioning and servicing",
+                  "description": "AI-powered personal loan, auto, and HELOC origination platform with AI decisioning and servicing; FIs fund loans on-balance-sheet or via white-label arrangement.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -3804,7 +3804,7 @@
                 {
                   "product_id": 92,
                   "product_name": "Scienaptic AI Credit Decisioning",
-                  "description": "ML-powered credit decisioning platform for credit unions with embedded fair lending monitoring; disparate impact analysis (DIA) module quantitatively measures adverse treatment of protected classes; automated adverse action explanation; approval rate increases for underserved members; primary purpose is credit underwriting, not standalone fair lending analytics; CRA performance tracking not included",
+                  "description": "ML-powered credit decisioning platform for credit unions with embedded fair lending monitoring; disparate impact analysis (DIA) module quantitatively measures adverse treatment of protected classes; automated adverse action explanation; primary purpose is credit underwriting, not standalone fair lending analytics.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -3924,7 +3924,7 @@
                 {
                   "product_id": 435,
                   "product_name": "Truv Direct Deposit Switch",
-                  "description": "Payroll data connectivity platform enabling FIs to automate direct deposit switching, income and employment verification, and payroll data access for lending decisions.",
+                  "description": "Mainframe-based core banking platform used by large US banks; Hogan X is the next-gen hybrid cloud version.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -4114,7 +4114,7 @@
                 {
                   "product_id": 128,
                   "product_name": "Lendio Intelligent Lending Platform",
-                  "description": "AI-powered SMB loan origination platform for banks, credit unions, and CDFIs; proprietary transaction analytics engine analyzes business deposit and transaction data to auto-generate credit decisions and risk assessments without manual spreading; SBA instant-offer capability (launched August 2025) enables real-time pre-approvals on SBA 7(a) applications; covers the full SMB LOS workflow from application intake through decisioning and closing; supports community banks and CDFIs seeking to compete with fintech lenders on speed without sacrificing credit discipline",
+                  "description": "White-label SMB and SBA lending platform for financial institutions; provides AI-powered credit risk analytics, automated financial statement spreading, cash flow analysis, and configurable decisioning workflows for small business and SBA loan origination; risk models combine traditional credit bureau data with ML-derived business financial signals; handles SBA 7(a) conventional origination.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -4262,7 +4262,7 @@
                 {
                   "product_id": 129,
                   "product_name": "Biz2X SMB Lending Platform",
-                  "description": "White-label SMB and SBA lending platform for financial institutions; provides AI-powered credit risk analytics, automated financial statement spreading, cash flow analysis, and configurable decisioning workflows for small business and SBA loan origination; FI-branded front-end enables community banks and credit unions to launch or modernize digital SMB lending without building in-house technology; risk models combine traditional credit bureau data with ML-derived business financial signals; documented deployment at Central Pacific Bank; handles SBA 7(a) conventional and PPP-era origination volume",
+                  "description": "LLM-powered commercial and SMB loan origination assistant for community bank lending teams; automates document collection and classification, financial statement spreading, credit memo drafting, and covenant monitoring using large language models fine-tuned on commercial lending documents; integrates with existing LOS systems as an AI overlay.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -4310,7 +4310,7 @@
                 {
                   "product_id": 236,
                   "product_name": "JUDI.AI Small Business Lending Platform",
-                  "description": "Cash flow-based AI underwriting platform for small business and commercial loans at credit unions and community banks. Reduces loan processing time from days to hours. 83%+ of loans at Unitus CU supported minority/women/veteran-owned businesses.",
+                  "description": "Cash flow-based AI underwriting platform for small business and commercial loans at credit unions and community banks; reduces loan processing time from days to hours.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -4358,7 +4358,7 @@
                 {
                   "product_id": 237,
                   "product_name": "Casca AI Loan Origination",
-                  "description": "AI-native loan origination platform for SBA 7(a) and commercial lending. Automates document collection, financial analysis, and compliance workflows. Funds loans up to 30x faster than industry average.",
+                  "description": "AI-native loan origination platform for SBA 7(a) and commercial lending; automates document collection, financial analysis, and compliance workflows.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "banks",
                   "status": "active",
@@ -4675,7 +4675,7 @@
                 {
                   "product_id": 130,
                   "product_name": "Cascading AI Loan Assistant",
-                  "description": "LLM-powered commercial and SMB loan origination assistant for community bank lending teams; automates document collection and classification, financial statement spreading, credit memo drafting, and covenant monitoring using large language models fine-tuned on commercial lending documents; integrates with existing LOS systems as an AI overlay rather than a full platform replacement; reduces manual processing time in commercial lending workflows; Finovate Best of Show Spring 2024 presenter with demonstrated live product",
+                  "description": "AI-powered portfolio intelligence layer for community bank commercial and SMB lending; surfaces real-time risk signals, covenant breach indicators, opportunity alerts, and portfolio health indicators; analytics overlay that integrates with existing LOS and core banking data without requiring a platform replacement.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "banks",
                   "status": "deprecated",
@@ -4749,7 +4749,7 @@
                 {
                   "product_id": 131,
                   "product_name": "Krida Business Lending Intelligence",
-                  "description": "AI-powered portfolio intelligence layer for community bank commercial and SMB lending; surfaces real-time risk signals, covenant breach indicators, opportunity alerts, and portfolio health indicators across the institution's existing business loan book; designed as an analytics overlay that integrates with existing LOS and core banking data without requiring a platform replacement; enables proactive relationship management by alerting bankers to deteriorating credits and cross-sell opportunities before they become problems; Finovate Best of Show Fall 2025 presenter",
+                  "description": "ML-powered synthetic identity fraud detection module within the Socure ID+ platform; uses graph neural networks trained on Socure's identity consortium to detect fabricated identity combinations at account opening; identifies synthetic identities constructed from real and fictitious Social Security numbers, address combinations, and credit file manipulations; operates as a real-time API call during account opening, loan application, and credit card origination workflows.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "banks",
                   "status": "active",
@@ -4978,7 +4978,7 @@
                 {
                   "product_id": 142,
                   "product_name": "Baker Hill NextGen",
-                  "description": "Cloud-based loan origination system for community banks and credit unions covering consumer, small business, and commercial lending; includes credit analysis, risk rating, portfolio management, relationship pricing, and analytics; launched UN/FY AI-driven enhancement in November 2025 combining digital SMB lending, AI-driven insights, and deposit account opening; reduces underwriting time from weeks to minutes; reduces origination costs up to 60%; integrates with major community bank cores",
+                  "description": "Home equity loan and HELOC lending automation platform for community banks and credit unions; uses configurable workflows and proprietary Collateral Decisioning Engine to automate appraisal ordering, title, flood, and compliance checks enabling clear-to-close in hours; integrates with ICE Mortgage Technology Encompass.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -5246,7 +5246,7 @@
                 {
                   "product_id": 177,
                   "product_name": "Autobooks Small Business Banking",
-                  "description": "Integrated small business invoicing, payment acceptance, and cash flow management platform embedded in community bank and credit union business banking portals; supports credit card, debit card, ACH, and check lockbox payment acceptance; Allied Payment Network acquired and integrated May 2025; 100+ FI clients",
+                  "description": "Technology-forward bank providing BaaS infrastructure, loan origination, and embedded payments to fintech and enterprise partners; BaaS services span card issuing, ACH, wire, real-time payments, consumer lending origination, and BNPL infrastructure; API-driven partner onboarding with compliance oversight framework.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -5649,7 +5649,7 @@
                 {
                   "product_id": 19,
                   "product_name": "Finicity Verification of Assets",
-                  "description": "Open banking-based asset verification for mortgage; pulls live bank account data to replace VOD process; Fannie Mae Day 1 Certainty certified",
+                  "description": "Open banking-based asset verification for mortgage; pulls live bank account data to replace the VOD process.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "legacy",
@@ -5706,7 +5706,7 @@
                 {
                   "product_id": 145,
                   "product_name": "Coviance Home Equity Express (HEx)",
-                  "description": "Home equity loan and HELOC lending automation platform for community banks and credit unions; uses configurable workflows and proprietary Collateral Decisioning Engine to automate appraisal ordering, title, flood, and compliance checks enabling clear-to-close in hours rather than weeks; integrates with ICE Mortgage Technology Encompass; 425+ community bank and credit union clients; processed $8B+ in home equity volume annually",
+                  "description": "AI-enabled mortgage and commercial lending point-of-sale and origination platform for banks, credit unions, and non-bank lenders; Bright POS handles mortgage application intake with AI-driven document collection and processing; FlashSpread automates commercial tax return analysis and financial spreading; 165+ direct vendor integrations.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -5911,7 +5911,7 @@
                 {
                   "product_id": 152,
                   "product_name": "BeSmartee Bright POS",
-                  "description": "AI-enabled mortgage and commercial lending point-of-sale and origination platform for banks, credit unions, and non-bank lenders; Bright POS handles mortgage application intake with AI-driven document collection and processing; FlashSpread automates commercial tax return analysis and financial spreading; 165+ direct vendor integrations; AI takes borrowers from initial contact to underwriting-ready in 20 minutes; $25B+ in digital mortgages processed monthly; partnership with Hawthorn River for community bank commercial lending",
+                  "description": "Integrated small business invoicing, payment acceptance, and cash flow management platform embedded in community bank and credit union business banking portals; supports credit card, debit card, ACH, and check lockbox payment acceptance.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -6265,7 +6265,7 @@
                 {
                   "product_id": 185,
                   "product_name": "AKUVO Collections Platform",
-                  "description": "Cloud-native delinquency management platform with ML-driven prioritization, behavioral segmentation, and portfolio risk analytics. Includes Virtual Collector self-service portal with NLP chatbot for payment capture and promise-to-pay.",
+                  "description": "Real-time payments network enabling 24/7/365 instant credit transfers up to $10M; community banks access RTP directly or through a correspondent bank or technology intermediary; competing network to FedNow.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -7193,7 +7193,7 @@
                 {
                   "product_id": 270,
                   "product_name": "Fiserv CardValet",
-                  "description": "Consumer-facing debit and credit card control application allowing cardholders to set spending limits, geographic restrictions, and merchant controls. Integrated with Fiserv Accel debit network.",
+                  "description": "Cloud-based CRM platform tracking leads, contacts, and deals through a unified pipeline; deployed by community banks and credit unions for business development activities, marketing automation, and prospect outreach.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -7223,7 +7223,7 @@
                 {
                   "product_id": 271,
                   "product_name": "Fiserv Fraud Risk Manager",
-                  "description": "Real-time transaction fraud detection and case management for community FIs. Covers debit, ACH, check, and account takeover scenarios. Integrates with Fiserv core and payment network.",
+                  "description": "Cloud-based unified communications platform consolidating business messaging, video conferencing, and phone systems; deployed by financial institutions to enable secure staff communication across desktop and mobile devices.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -7592,7 +7592,7 @@
                 {
                   "product_id": 135,
                   "product_name": "Casap AI Disputes Automation",
-                  "description": "AI-native dispute resolution automation platform for banks and credit unions; automates the complete dispute lifecycle from member/customer intake through evidence collection, regulatory compliance review (Reg E for debit/ACH, Reg Z for credit cards), and chargeback response filing; LLMs process dispute evidence documents, transaction records, and merchant responses to generate compliant dispute decisions and response letters; reduces average dispute resolution time from 5-10 days to minutes; integrates with core banking and card processing systems for automated transaction retrieval; compliance automation ensures CFPB-required timelines and disclosure requirements are met without manual intervention; Finovate Best of Show Fall 2025",
+                  "description": "Core API connectivity platform for banks and credit unions; integrates 80+ fintech applications to 40+ core banking systems through a single secure integration layer; provides standardized, pre-certified connectors covering Jack Henry, Fiserv, FIS, and other US banking cores; also offers document automation, teller workflow optimization, and data analytics as companion modules.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "both",
                   "status": "active",
@@ -7662,7 +7662,7 @@
                 {
                   "product_id": 23,
                   "product_name": "Verafin Financial Crime Management",
-                  "description": "Cloud-based AML, fraud, and financial crime management suite; consortium-based AI using shared typology signals across 2,400+ FIs in the network",
+                  "description": "Cloud-based AML, fraud, and financial crime management suite using consortium-based AI with shared typology signals.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "legacy",
@@ -7854,7 +7854,7 @@
                 {
                   "product_id": 278,
                   "product_name": "FIS AML Fraud Manager",
-                  "description": "Transaction monitoring, AML/BSA case management, and fraud detection for community FIs. Covers SAR filing, watchlist screening, and behavioral analytics.",
+                  "description": "Open API cloud platform for FI digital money movement across any application or device.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "active",
@@ -7969,7 +7969,7 @@
                 {
                   "product_id": 244,
                   "product_name": "Pindrop Voice Fraud & Authentication",
-                  "description": "Voice authentication and deepfake/voice-clone fraud detection for bank and credit union contact centers. Analyzes call metadata, audio signals, and behavioral patterns. Reduced authentication time 50% at MSUFCU. PSCU partnership covers 1,500 credit unions.",
+                  "description": "Voice authentication and deepfake/voice-clone fraud detection for bank and credit union contact centers; analyzes call metadata, audio signals, and behavioral patterns.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -8147,7 +8147,7 @@
                 {
                   "product_id": 38,
                   "product_name": "Mitek Mobile Deposit",
-                  "description": "AI-powered mobile check capture and remote deposit capture processing; dominant in community bank and credit union mobile apps",
+                  "description": "AI-powered mobile check capture and remote deposit capture processing.",
                   "pervasiveness_tier": 6,
                   "fi_segment": "both",
                   "status": "active",
@@ -8202,7 +8202,7 @@
                 {
                   "product_id": 140,
                   "product_name": "Alogent Unify",
-                  "description": "Enterprise deposit automation and branch transformation platform for banks and credit unions; end-to-end check capture and item processing across branch, teller, remote, and self-service channels; Alogent Shield/Shield+ integrate AI/ML for fraud detection and risk mitigation across all deposit channels; supports Check 21 compliance; designed for institutions from community banks through large regional and international FIs",
+                  "description": "Cloud-based loan origination system for community banks and credit unions covering consumer, small business, and commercial lending; includes credit analysis, risk rating, portfolio management, relationship pricing, and analytics; UN/FY AI-driven enhancement launched November 2025 adding digital SMB lending and deposit account opening; integrates with major community bank cores.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -8290,7 +8290,7 @@
                 {
                   "product_id": 23,
                   "product_name": "Verafin Financial Crime Management",
-                  "description": "Cloud-based AML, fraud, and financial crime management suite; consortium-based AI using shared typology signals across 2,400+ FIs in the network",
+                  "description": "Cloud-based AML, fraud, and financial crime management suite using consortium-based AI with shared typology signals.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "legacy",
@@ -8413,7 +8413,7 @@
                 {
                   "product_id": 271,
                   "product_name": "Fiserv Fraud Risk Manager",
-                  "description": "Real-time transaction fraud detection and case management for community FIs. Covers debit, ACH, check, and account takeover scenarios. Integrates with Fiserv core and payment network.",
+                  "description": "Cloud-based unified communications platform consolidating business messaging, video conferencing, and phone systems; deployed by financial institutions to enable secure staff communication across desktop and mobile devices.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -8466,7 +8466,7 @@
                 {
                   "product_id": 345,
                   "product_name": "VYFI Security Assessment",
-                  "description": "Penetration testing, vulnerability assessment, cybersecurity auditing, and BCP/BCM services for credit unions via CUSO model.",
+                  "description": "Instant card issuance solution with integrated hardware, software, hosting, and services.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -8552,7 +8552,7 @@
                 {
                   "product_id": 343,
                   "product_name": "SoS Advisor",
-                  "description": "Member-facing security education and awareness solution that proactively educates members about cybersecurity threats and data breaches.",
+                  "description": "Credit union branch cash automation solutions reducing branch footprints and operational costs while freeing staff for member service.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -8714,7 +8714,7 @@
                 {
                   "product_id": 244,
                   "product_name": "Pindrop Voice Fraud & Authentication",
-                  "description": "Voice authentication and deepfake/voice-clone fraud detection for bank and credit union contact centers. Analyzes call metadata, audio signals, and behavioral patterns. Reduced authentication time 50% at MSUFCU. PSCU partnership covers 1,500 credit unions.",
+                  "description": "Voice authentication and deepfake/voice-clone fraud detection for bank and credit union contact centers; analyzes call metadata, audio signals, and behavioral patterns.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -9037,7 +9037,7 @@
                 {
                   "product_id": 406,
                   "product_name": "Carefull Senior & Family Protections",
-                  "description": "Embedded elder financial protection service that monitors accounts for fraud, scams, and cognitive decline indicators, enabling family oversight of senior finances.",
+                  "description": "E-signature and Intelligent Agreement Management platform for paperless loan document workflows, digital closing, and contract lifecycle management; integrates with nCino and Salesforce.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -9082,7 +9082,7 @@
                 {
                   "product_id": 26,
                   "product_name": "Socure ID+ Platform",
-                  "description": "Predictive identity verification and fraud prevention; graph-based AI with consortium signals from 2,000+ clients; covers KYC, synthetic ID, and ATO",
+                  "description": "Predictive identity verification and fraud prevention; graph-based AI covering KYC, synthetic ID, and ATO.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -9392,7 +9392,7 @@
                 {
                   "product_id": 190,
                   "product_name": "Mahalo Digital Banking Platform",
-                  "description": "Online and mobile banking platform for credit unions with deep core integrations. Includes Thoughtful Banking® (neurodiversity-inclusive UX), business banking, and Credential Assurance Technology (CAT) — a real-time AI-resistant fraud prevention system that blocks credential stuffing, AI-driven bot attacks, and session hijacking.",
+                  "description": "Federally chartered digital asset bank offering institutional custody, staking, financing, and on-chain governance participation for regulated financial institutions.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -9522,7 +9522,7 @@
                 {
                   "product_id": 340,
                   "product_name": "Acuant Identity Verification",
-                  "description": "KYC and ID verification solution with automated capture of driver licenses, passports, and government IDs for FI onboarding compliance.",
+                  "description": "Multi-line insurance agency/brokerage providing insurance products to credit unions across the country.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "credit_unions",
                   "status": "legacy",
@@ -9635,7 +9635,7 @@
                 {
                   "product_id": 23,
                   "product_name": "Verafin Financial Crime Management",
-                  "description": "Cloud-based AML, fraud, and financial crime management suite; consortium-based AI using shared typology signals across 2,400+ FIs in the network",
+                  "description": "Cloud-based AML, fraud, and financial crime management suite using consortium-based AI with shared typology signals.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "legacy",
@@ -9764,7 +9764,7 @@
                 {
                   "product_id": 278,
                   "product_name": "FIS AML Fraud Manager",
-                  "description": "Transaction monitoring, AML/BSA case management, and fraud detection for community FIs. Covers SAR filing, watchlist screening, and behavioral analytics.",
+                  "description": "Open API cloud platform for FI digital money movement across any application or device.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "active",
@@ -9941,7 +9941,7 @@
                 {
                   "product_id": 188,
                   "product_name": "CaseHUB",
-                  "description": "Unified case management platform connecting cases, data, and decisioning for fraud management, BSA/AML, and operational risk. Structured workflows with governance, link analysis, and advanced reporting.",
+                  "description": "Institutional stablecoin issuance and settlement infrastructure; FIs use Paxos to issue white-label stablecoins, settle securities transactions on blockchain (Paxos Settlement Service), and access regulated custody; relevant for community banks exploring tokenized deposits under GENIUS Act.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -10737,7 +10737,7 @@
                 {
                   "product_id": 102,
                   "product_name": "FinScan Compliance Platform",
-                  "description": "OFAC and global sanctions screening platform purpose-built for community banks and credit unions; Intelligent Name Matching technology (patented) uses advanced phonetic, fuzzy, and transliteration algorithms for high-accuracy screening with low false positive rates; screens customers, wires, ACH, checks, and new accounts against OFAC SDN, FinCEN, OFAC non-SDN, and global watchlists; batch and real-time modes; regulatory examination-ready audit trails; data quality and deduplication tools bundled; used by 1,000+ FIs",
+                  "description": "OFAC and global sanctions screening platform for community banks and credit unions; Intelligent Name Matching technology uses advanced phonetic, fuzzy, and transliteration algorithms for high-accuracy screening; screens customers, wires, ACH, checks, and new accounts against OFAC SDN, FinCEN, and global watchlists; batch and real-time modes; regulatory examination-ready audit trails; data quality and deduplication tools bundled.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -11032,7 +11032,7 @@
                 {
                   "product_id": 23,
                   "product_name": "Verafin Financial Crime Management",
-                  "description": "Cloud-based AML, fraud, and financial crime management suite; consortium-based AI using shared typology signals across 2,400+ FIs in the network",
+                  "description": "Cloud-based AML, fraud, and financial crime management suite using consortium-based AI with shared typology signals.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "legacy",
@@ -11185,7 +11185,7 @@
                 {
                   "product_id": 26,
                   "product_name": "Socure ID+ Platform",
-                  "description": "Predictive identity verification and fraud prevention; graph-based AI with consortium signals from 2,000+ clients; covers KYC, synthetic ID, and ATO",
+                  "description": "Predictive identity verification and fraud prevention; graph-based AI covering KYC, synthetic ID, and ATO.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -11630,7 +11630,7 @@
                 {
                   "product_id": 120,
                   "product_name": "BankGPT",
-                  "description": "Agentic AI platform for community banks and credit unions delivering Voice AI (phone-based intelligent virtual agent replacing IVR), Chat AI (digital banking conversational assistant), and Employee AI (internal banking copilot for staff); built on Mixture-of-Experts architecture with decade of banking-specific training data; handles account inquiries, transaction disputes, loan inquiries, card management, and complex multi-turn member service interactions; integrates with 25+ core banking systems including Jack Henry, Fiserv, and FIS; performance-based pricing aligns vendor and FI incentives; Nexus agentic CCaaS platform (April 2026) adds orchestration layer for multi-channel agentic workflows",
+                  "description": "Agentic AI platform for community banks and credit unions delivering Voice AI (phone-based intelligent virtual agent), Chat AI (digital banking conversational assistant), and Employee AI (internal banking copilot); built on Mixture-of-Experts architecture; handles account inquiries, transaction disputes, loan inquiries, card management, and complex multi-turn member service interactions; integrates with Jack Henry, Fiserv, and FIS core banking systems.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -11769,7 +11769,7 @@
                 {
                   "product_id": 173,
                   "product_name": "Lynq by Agent IQ",
-                  "description": "AI-powered relationship banking platform enabling community banks and credit unions to maintain persistent, personalized digital engagement with customers and members; Lynq AI automates routine service tasks, surfaces proactive alerts and recommendations for bankers, and enables intelligent omnichannel messaging across web, mobile, and SMS; Q2 Strategic Alliance partner enabling distribution to Q2 bank and CU customers; Narmi integration expands digital banking reach",
+                  "description": "Banking-as-a-Service platform enabling community banks to run compliant fintech sponsor bank programs; provides ledger, KYC/AML, card issuance, money movement, compliance monitoring, fraud controls, and dispute management via API; centralizes risk management for sponsor banks through Synctera Console.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -11947,7 +11947,7 @@
                 {
                   "product_id": 47,
                   "product_name": "Clinc Conversational AI",
-                  "description": "Advanced NLP-based conversational AI for complex financial service queries; handles multi-turn conversation and intent resolution for FI digital and IVR channels",
+                  "description": "Advanced NLP-based conversational AI for complex financial service queries; handles multi-turn conversation and intent resolution for FI digital and IVR channels.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "banks",
                   "status": "active",
@@ -11984,7 +11984,7 @@
                 {
                   "product_id": 247,
                   "product_name": "boost.ai Virtual Agent Platform",
-                  "description": "Enterprise AI virtual agents for banking contact centers and digital channels. Automates customer service interactions across chat and voice. Handles thousands of topics. Deployed by major banks and credit unions globally.",
+                  "description": "Enterprise AI virtual agents for banking contact centers and digital channels; automates customer service interactions across chat and voice; handles thousands of topics.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -14835,7 +14835,7 @@
                 {
                   "product_id": 269,
                   "product_name": "Fiserv Architect",
-                  "description": "Fiserv digital banking platform serving community banks and credit unions. Covers online banking, mobile banking, and banker-facing portals. Integrated with Premier, Signature, and other Fiserv cores.",
+                  "description": "Microsoft Copilot for Microsoft 365 embeds AI assistance into Word, Excel, Teams, Outlook, and other M365 apps for drafting content, summarizing meetings, analyzing data, and automating routine tasks; deployed by financial institutions to increase knowledge worker productivity across front and back office functions.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -14949,7 +14949,7 @@
                 {
                   "product_id": 289,
                   "product_name": "Q2 Digital Banking Platform",
-                  "description": "Q2 flagship digital banking platform for community banks and credit unions. Covers online banking, mobile, cash management, and business banking portals. The primary Q2 product serving 450+ community FIs.",
+                  "description": "Cloud-native core banking, digital banking, and payments platform built for credit unions.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -15122,7 +15122,7 @@
                 {
                   "product_id": 151,
                   "product_name": "Access Softek Digital Banking Platform",
-                  "description": "Comprehensive digital banking platform for community banks and credit unions; suite covers mobile banking, online banking, omnichannel loan origination, digital account opening, remote deposit capture, bill pay, SMS banking, biometric authentication, video chat, conversational banking/chatbots, white-label robo-advisor, and commercial banking; serves 400+ community bank and credit union clients; pioneered downloadable mobile banking apps",
+                  "description": "Automated savings and deposit growth platform for banks and credit unions; white-label mobile-first app integrates into FI digital banking; gamified goal-based savings, financial wellness content, and data-driven engagement analytics; High Yield Savings product enables FIs to launch digital-only savings brands.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -15249,7 +15249,7 @@
                 {
                   "product_id": 277,
                   "product_name": "FIS Digital One",
-                  "description": "FIS digital banking platform covering online, mobile, and banker-facing portals for community banks. Integrates with FIS core banking systems.",
+                  "description": "Real-time money movement service providing instant payment access for community FIs, with RTP and FedNow connectivity.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "active",
@@ -15367,7 +15367,7 @@
                 {
                   "product_id": 287,
                   "product_name": "NCR Voyix Digital Banking Platform",
-                  "description": "Digital banking platform for community banks and credit unions, built on the D3 Banking technology acquired by NCR. Covers online banking, mobile, and business banking portals with a modern API layer.",
+                  "description": "International FX and domestic wire platform providing foreign currency exchange, international wires, and foreign check clearing for financial institutions.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -15574,7 +15574,7 @@
                 {
                   "product_id": 190,
                   "product_name": "Mahalo Digital Banking Platform",
-                  "description": "Online and mobile banking platform for credit unions with deep core integrations. Includes Thoughtful Banking® (neurodiversity-inclusive UX), business banking, and Credential Assurance Technology (CAT) — a real-time AI-resistant fraud prevention system that blocks credential stuffing, AI-driven bot attacks, and session hijacking.",
+                  "description": "Federally chartered digital asset bank offering institutional custody, staking, financing, and on-chain governance participation for regulated financial institutions.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -15774,7 +15774,7 @@
                 {
                   "product_id": 173,
                   "product_name": "Lynq by Agent IQ",
-                  "description": "AI-powered relationship banking platform enabling community banks and credit unions to maintain persistent, personalized digital engagement with customers and members; Lynq AI automates routine service tasks, surfaces proactive alerts and recommendations for bankers, and enables intelligent omnichannel messaging across web, mobile, and SMS; Q2 Strategic Alliance partner enabling distribution to Q2 bank and CU customers; Narmi integration expands digital banking reach",
+                  "description": "Banking-as-a-Service platform enabling community banks to run compliant fintech sponsor bank programs; provides ledger, KYC/AML, card issuance, money movement, compliance monitoring, fraud controls, and dispute management via API; centralizes risk management for sponsor banks through Synctera Console.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -16025,7 +16025,7 @@
                 {
                   "product_id": 247,
                   "product_name": "boost.ai Virtual Agent Platform",
-                  "description": "Enterprise AI virtual agents for banking contact centers and digital channels. Automates customer service interactions across chat and voice. Handles thousands of topics. Deployed by major banks and credit unions globally.",
+                  "description": "Enterprise AI virtual agents for banking contact centers and digital channels; automates customer service interactions across chat and voice; handles thousands of topics.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -16203,7 +16203,7 @@
                 {
                   "product_id": 82,
                   "product_name": "EVERFI Achieve",
-                  "description": "Mobile-first financial education platform deployed by thousands of financial institutions to serve adult customers and members; 100+ bite-sized modules on budgeting, credit, emergency savings, debt payoff, and investing; adaptive personalization based on learner profile; FI co-branding and community reinvestment documentation",
+                  "description": "Mobile-first financial education platform for adult bank and credit union customers and members; 100+ bite-sized modules on budgeting, credit, emergency savings, debt payoff, and investing; adaptive personalization based on learner profile; FI co-branding and community reinvestment documentation.",
                   "pervasiveness_tier": 6,
                   "fi_segment": "both",
                   "status": "active",
@@ -16347,7 +16347,7 @@
                 {
                   "product_id": 81,
                   "product_name": "Enrich Financial Wellness Platform",
-                  "description": "AI-personalized financial wellness platform deployed by 300+ financial institutions; delivers budgeting tools, financial literacy content, debt management coaching, and financial health assessments to FI members; AI adapts content to member financial situation and life stage; covers mortgages, credit, savings, student loans, healthcare costs, and retirement planning",
+                  "description": "AI-personalized financial wellness platform for financial institutions; delivers budgeting tools, financial literacy content, debt management coaching, and financial health assessments; AI adapts content to member financial situation and life stage.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -16448,7 +16448,7 @@
                 {
                   "product_id": 175,
                   "product_name": "Array Embedded Financial Wellness Platform",
-                  "description": "White-label embedded fintech platform enabling banks and credit unions to offer credit monitoring, identity protection, and financial wellness tools inside digital banking; tri-bureau credit data API for underwriting and personalization; Offers Engine delivers pre-qualified product offers using member credit data; integrations with DCI (community bank channel), Alkami/Banno (800+ banks/CUs)",
+                  "description": "Bank-direct embedded banking platform enabling community banks and credit unions to offer branded fintech partnerships at scale; BankOS console gives bank compliance teams a unified interface to manage embedded programs, third-party fintech relationships, transaction monitoring, and regulatory reporting; multi-bank network allows fintechs to gain access to multiple bank sponsor options; AI Marketplace curates fintech partners for bank program development.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -16710,7 +16710,7 @@
                 {
                   "product_id": 443,
                   "product_name": "Greenlight for Banks",
-                  "description": "White-label family banking product enabling FIs to offer kids and teen debit cards, chores/allowance tools, investing, and family safety features within their digital banking experience.",
+                  "description": "Private cloud hosting of Symitar core (Jack Henry) for credit unions; includes digital banking, payments, lending, cybersecurity, disaster recovery, and consulting.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -16896,7 +16896,7 @@
                 {
                   "product_id": 176,
                   "product_name": "Plinqit Savings Platform",
-                  "description": "Automated savings and deposit growth platform for banks and credit unions; white-label mobile-first app integrates into FI digital banking; gamified goal-based savings, financial wellness content, and data-driven engagement analytics; High Yield Savings product enables FIs to launch digital-only savings brands; Co-op Solutions Strategic Provider for credit union channel",
+                  "description": "Nationally chartered bank (Column N.A.) offering direct API-based banking infrastructure without middleware; combines an OCC-issued national bank charter with a modern API-first technology stack; enables fintechs and non-bank enterprises to issue accounts, process payments (ACH, wire, FedNow, RTP), and originate loans through direct bank APIs rather than through a middleware BaaS layer.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -16940,7 +16940,7 @@
                 {
                   "product_id": 178,
                   "product_name": "Bloom Credit API Platform",
-                  "description": "Credit data infrastructure and alternative bureau reporting platform for banks, credit unions, and fintechs; single API provides real-time tri-bureau credit data access for underwriting, personalization, and app integration; Bloom+ consumer-permissioned alternative data service enables FIs to offer members ability to report recurring bill payments to credit bureaus to build credit profiles; first deployed with Inspire Federal Credit Union; Navy Federal, Suncoast CU also partners",
+                  "description": "Comprehensive BaaS and program sponsorship platform from a publicly traded sponsor bank; services include BIN sponsorship, card issuing (prepaid, debit, virtual), ACH settlement, compliance oversight, and SBA lending; supports consumer prepaid, business prepaid, HSA, earned wage access, and HELOC programs; fintech partners span neobanks, payroll processors, benefits platforms, and gig economy companies.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -17087,7 +17087,7 @@
                 {
                   "product_id": 86,
                   "product_name": "Ncontracts Fair Lending & HMDA Suite",
-                  "description": "Integrated fair lending, HMDA, and CRA compliance platform for banks and credit unions; includes Nlending (HMDA data collection and submission), Regression Ntelligence (statistical regression analysis for disparate impact detection), CRA Compliance Software, and nTRUPOINT (fair lending analytics module from TRUPOINT Partners acquisition, March 2025); endorsed by America's Credit Unions",
+                  "description": "Integrated fair lending, HMDA, and CRA compliance platform for banks and credit unions; includes Nlending (HMDA data collection and submission), Regression Ntelligence (statistical regression analysis for disparate impact detection), CRA Compliance Software, and nTRUPOINT (fair lending analytics).",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -17125,7 +17125,7 @@
                 {
                   "product_id": 90,
                   "product_name": "CenTrax NEXT",
-                  "description": "Browser-based, cloud-hosted HMDA, CRA, fair lending, and Section 1071 compliance platform for financial institutions; covers data assembly, geocoding, disparate analysis, interactive mapping, customizable dashboards, and examination-ready reporting; 34+ year market track record",
+                  "description": "Browser-based, cloud-hosted HMDA, CRA, fair lending, and Section 1071 compliance platform; covers data assembly, geocoding, disparate analysis, interactive mapping, customizable dashboards, and examination-ready reporting.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -17163,7 +17163,7 @@
                 {
                   "product_id": 85,
                   "product_name": "Wolters Kluwer Wiz Fair Lending Suite",
-                  "description": "Comprehensive HMDA, CRA, and fair lending compliance platform; includes CRA Wiz (CRA assessment and reporting), HMDA Wiz (data collection, edit checks, submission), Fair Lending Wiz (disparate impact analysis, peer benchmarking, redlining risk, geocoding), and Community Development Wiz (launched Sept 2025); March 2026 partnership with FairPlay AI adds genuine ML-driven de-biasing to Fair Lending Wiz",
+                  "description": "Comprehensive HMDA, CRA, and fair lending compliance platform; includes CRA Wiz, HMDA Wiz, Fair Lending Wiz (disparate impact analysis, peer benchmarking, redlining risk, geocoding), and Community Development Wiz.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -17360,7 +17360,7 @@
                 {
                   "product_id": 26,
                   "product_name": "Socure ID+ Platform",
-                  "description": "Predictive identity verification and fraud prevention; graph-based AI with consortium signals from 2,000+ clients; covers KYC, synthetic ID, and ATO",
+                  "description": "Predictive identity verification and fraud prevention; graph-based AI covering KYC, synthetic ID, and ATO.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -17653,7 +17653,7 @@
                 {
                   "product_id": 451,
                   "product_name": "IDology ExpectID",
-                  "description": "Identity verification and fraud prevention platform integrated with nCino for real-time identity confirmation during online account opening and loan applications.",
+                  "description": "Core banking suite for retail, universal, and Islamic banks; API-first, cloud-first; supports banking-as-a-service and embedded finance.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "legacy",
@@ -17789,7 +17789,7 @@
                 {
                   "product_id": 340,
                   "product_name": "Acuant Identity Verification",
-                  "description": "KYC and ID verification solution with automated capture of driver licenses, passports, and government IDs for FI onboarding compliance.",
+                  "description": "Multi-line insurance agency/brokerage providing insurance products to credit unions across the country.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "credit_unions",
                   "status": "legacy",
@@ -17893,7 +17893,7 @@
                 {
                   "product_id": 408,
                   "product_name": "MANTL Account Origination",
-                  "description": "Omnichannel account origination platform for consumer and business deposit and loan accounts, integrating online, in-branch, and call-center channels for community banks and credit unions.",
+                  "description": "Universal API providing real-time connectivity to small business accounting systems (QuickBooks, Xero, and others) for automated financial statement spreading and SME credit underwriting; integrates within nCino.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -18544,7 +18544,7 @@
                 {
                   "product_id": 86,
                   "product_name": "Ncontracts Fair Lending & HMDA Suite",
-                  "description": "Integrated fair lending, HMDA, and CRA compliance platform for banks and credit unions; includes Nlending (HMDA data collection and submission), Regression Ntelligence (statistical regression analysis for disparate impact detection), CRA Compliance Software, and nTRUPOINT (fair lending analytics module from TRUPOINT Partners acquisition, March 2025); endorsed by America's Credit Unions",
+                  "description": "Integrated fair lending, HMDA, and CRA compliance platform for banks and credit unions; includes Nlending (HMDA data collection and submission), Regression Ntelligence (statistical regression analysis for disparate impact detection), CRA Compliance Software, and nTRUPOINT (fair lending analytics).",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -18582,7 +18582,7 @@
                 {
                   "product_id": 89,
                   "product_name": "LendingPatterns",
-                  "description": "Web-based HMDA data-mining and fair lending analytics platform; enables FIs to analyze HMDA data against peer groups, identify underwriting, pricing, and redlining disparities, and generate examination-ready reports; suite also includes CRA Check and Fair Lending Magic; the NCUA uses ComplianceTech software to conduct fair lending examinations of credit unions",
+                  "description": "Web-based HMDA data-mining and fair lending analytics platform; enables FIs to analyze HMDA data against peer groups, identify underwriting, pricing, and redlining disparities, and generate examination-ready reports; suite also includes CRA Check and Fair Lending Magic.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -18615,7 +18615,7 @@
                 {
                   "product_id": 90,
                   "product_name": "CenTrax NEXT",
-                  "description": "Browser-based, cloud-hosted HMDA, CRA, fair lending, and Section 1071 compliance platform for financial institutions; covers data assembly, geocoding, disparate analysis, interactive mapping, customizable dashboards, and examination-ready reporting; 34+ year market track record",
+                  "description": "Browser-based, cloud-hosted HMDA, CRA, fair lending, and Section 1071 compliance platform; covers data assembly, geocoding, disparate analysis, interactive mapping, customizable dashboards, and examination-ready reporting.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -18653,7 +18653,7 @@
                 {
                   "product_id": 85,
                   "product_name": "Wolters Kluwer Wiz Fair Lending Suite",
-                  "description": "Comprehensive HMDA, CRA, and fair lending compliance platform; includes CRA Wiz (CRA assessment and reporting), HMDA Wiz (data collection, edit checks, submission), Fair Lending Wiz (disparate impact analysis, peer benchmarking, redlining risk, geocoding), and Community Development Wiz (launched Sept 2025); March 2026 partnership with FairPlay AI adds genuine ML-driven de-biasing to Fair Lending Wiz",
+                  "description": "Comprehensive HMDA, CRA, and fair lending compliance platform; includes CRA Wiz, HMDA Wiz, Fair Lending Wiz (disparate impact analysis, peer benchmarking, redlining risk, geocoding), and Community Development Wiz.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -18760,7 +18760,7 @@
                 {
                   "product_id": 88,
                   "product_name": "FairPlay Fairness Analysis",
-                  "description": "AI-native fair lending platform using genuine ML to detect and remediate bias in credit models; evaluates thousands of equally predictive but less discriminatory model alternatives (LDAs) to reduce disparate impact; identifies variables driving protected class disparities; integrated into Wolters Kluwer Fair Lending Wiz (2026 partnership); covers adverse action explanation, geographic fairness mapping, and model de-biasing",
+                  "description": "AI-native fair lending platform using ML to detect and remediate bias in credit models; evaluates equally predictive but less discriminatory model alternatives (LDAs) to reduce disparate impact; identifies variables driving protected class disparities; covers adverse action explanation, geographic fairness mapping, and model de-biasing.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "banks",
                   "status": "active",
@@ -18797,7 +18797,7 @@
                 {
                   "product_id": 92,
                   "product_name": "Scienaptic AI Credit Decisioning",
-                  "description": "ML-powered credit decisioning platform for credit unions with embedded fair lending monitoring; disparate impact analysis (DIA) module quantitatively measures adverse treatment of protected classes; automated adverse action explanation; approval rate increases for underserved members; primary purpose is credit underwriting, not standalone fair lending analytics; CRA performance tracking not included",
+                  "description": "ML-powered credit decisioning platform for credit unions with embedded fair lending monitoring; disparate impact analysis (DIA) module quantitatively measures adverse treatment of protected classes; automated adverse action explanation; primary purpose is credit underwriting, not standalone fair lending analytics.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -18892,7 +18892,7 @@
                 {
                   "product_id": 150,
                   "product_name": "Stratyfy Credit Decision Intelligence",
-                  "description": "Interpretable machine learning platform for credit underwriting, fraud detection, and fair lending compliance at community banks and credit unions; patented inherently interpretable ML models enable regulatory-compliant AI adoption without sacrificing explainability; reduces bias and expands fair lending access; model diagnostic tools validated by FinRegLab explainability and fairness research; Parlay Finance partnership for SMB lending decisioning",
+                  "description": "White-label embedded fintech platform enabling banks and credit unions to offer credit monitoring, identity protection, and financial wellness tools inside digital banking; tri-bureau credit data API for underwriting and personalization; Offers Engine delivers pre-qualified product offers using member credit data; integrates with DCI and Alkami digital banking platforms.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -19061,7 +19061,7 @@
                 {
                   "product_id": 78,
                   "product_name": "Fiddler AI Observability Platform",
-                  "description": "AI model observability and risk management platform for financial services; monitors ML model performance, drift, and fairness; generates explainability outputs for regulatory review; streamlines MRM and GRC workflows; $2B+ consumer lending platform documented case study with 2,000 hours/year saved in ML monitoring overhead",
+                  "description": "AI model observability and risk management platform for financial services; monitors ML model performance, drift, and fairness; generates explainability outputs for regulatory review; streamlines MRM and GRC workflows.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "banks",
                   "status": "active",
@@ -19092,7 +19092,7 @@
                 {
                   "product_id": 76,
                   "product_name": "ValidMind AI Governance Platform",
-                  "description": "Agentic AI governance platform purpose-built for regulated industries; automates model documentation, validation testing, and compliance workflow for SR 11-7, SS1/23, E-23, and EU AI Act; Experian partnership (2025) validates enterprise credibility; covers credit risk, fraud, and AML model governance",
+                  "description": "Agentic AI governance platform for regulated industries; automates model documentation, validation testing, and compliance workflow for SR 11-7, SS1/23, E-23, and EU AI Act; covers credit risk, fraud, and AML model governance.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -19123,7 +19123,7 @@
                 {
                   "product_id": 144,
                   "product_name": "Corridor Platforms Decision Intelligence",
-                  "description": "Decision workflow governance and automation platform for banks and credit unions; enables real-time credit decisioning using ML models, alternative data, and bureau data integrated from core banking, LOS, and third-party sources; full audit trail and governance framework for model risk management compliance; RiskDecisioning.ai hosted offering provides turnkey decision management; Precision CUSO partnership with Teachers FCU expands AI credit decisioning to credit unions nationwide",
+                  "description": "Comprehensive digital banking platform for community banks and credit unions; suite covers mobile banking, online banking, omnichannel loan origination, digital account opening, remote deposit capture, bill pay, SMS banking, biometric authentication, video chat, conversational banking/chatbots, white-label robo-advisor, and commercial banking.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -19271,7 +19271,7 @@
                 {
                   "product_id": 110,
                   "product_name": "Ncontracts Nvendor",
-                  "description": "Vendor management and third-party risk module within the Ncontracts GRC platform for community banks and credit unions; provides vendor inventory, inherent risk tiering, due diligence questionnaire workflows, vendor approval tracking, ongoing monitoring alerts, and regulatory reporting for OCC, FDIC, and NCUA vendor management guidance; seamlessly integrated with other Ncontracts modules (Nrisk, Ncompliance) for unified GRC workflows; 1,250+ FI client base across Ncontracts suite provides broad deployment reach for the Nvendor module",
+                  "description": "Vendor management and third-party risk module within the Ncontracts GRC platform for community banks and credit unions; provides vendor inventory, inherent risk tiering, due diligence questionnaire workflows, vendor approval tracking, ongoing monitoring alerts, and regulatory reporting for OCC, FDIC, and NCUA vendor management guidance; integrated with other Ncontracts modules (Nrisk, Ncompliance) for unified GRC workflows.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -19538,7 +19538,7 @@
                 {
                   "product_id": 141,
                   "product_name": "Alogent AccuAccount",
-                  "description": "Document imaging and content management system for banks and credit unions; manages customer, member, loan, deposit, trust, and back-office documents; AI-powered document classification, exception tracking, workflow automation, and document lifecycle management; integrates with loan origination, core banking, and teller systems; reduces paper-based workflows and improves compliance audit readiness",
+                  "description": "Decision workflow governance and automation platform for banks and credit unions; enables real-time credit decisioning using ML models, alternative data, and bureau data integrated from core banking, LOS, and third-party sources; full audit trail and governance framework for model risk management compliance; RiskDecisioning.ai hosted offering provides turnkey decision management.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -19576,7 +19576,7 @@
                 {
                   "product_id": 140,
                   "product_name": "Alogent Unify",
-                  "description": "Enterprise deposit automation and branch transformation platform for banks and credit unions; end-to-end check capture and item processing across branch, teller, remote, and self-service channels; Alogent Shield/Shield+ integrate AI/ML for fraud detection and risk mitigation across all deposit channels; supports Check 21 compliance; designed for institutions from community banks through large regional and international FIs",
+                  "description": "Cloud-based loan origination system for community banks and credit unions covering consumer, small business, and commercial lending; includes credit analysis, risk rating, portfolio management, relationship pricing, and analytics; UN/FY AI-driven enhancement launched November 2025 adding digital SMB lending and deposit account opening; integrates with major community bank cores.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -20531,7 +20531,7 @@
                 {
                   "product_id": 38,
                   "product_name": "Mitek Mobile Deposit",
-                  "description": "AI-powered mobile check capture and remote deposit capture processing; dominant in community bank and credit union mobile apps",
+                  "description": "AI-powered mobile check capture and remote deposit capture processing.",
                   "pervasiveness_tier": 6,
                   "fi_segment": "both",
                   "status": "active",
@@ -20586,7 +20586,7 @@
                 {
                   "product_id": 61,
                   "product_name": "OnBase for Financial Services",
-                  "description": "Enterprise content management, intelligent document processing, and process automation platform; deployed at 125+ credit unions and community banks for loan document management, compliance workflows, and back-office automation; integrates natively with Jack Henry Episys",
+                  "description": "Enterprise content management, intelligent document processing, and process automation platform; covers loan document management, compliance workflows, and back-office automation; integrates natively with Jack Henry Episys.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -20656,7 +20656,7 @@
                 {
                   "product_id": 152,
                   "product_name": "BeSmartee Bright POS",
-                  "description": "AI-enabled mortgage and commercial lending point-of-sale and origination platform for banks, credit unions, and non-bank lenders; Bright POS handles mortgage application intake with AI-driven document collection and processing; FlashSpread automates commercial tax return analysis and financial spreading; 165+ direct vendor integrations; AI takes borrowers from initial contact to underwriting-ready in 20 minutes; $25B+ in digital mortgages processed monthly; partnership with Hawthorn River for community bank commercial lending",
+                  "description": "Integrated small business invoicing, payment acceptance, and cash flow management platform embedded in community bank and credit union business banking portals; supports credit card, debit card, ACH, and check lockbox payment acceptance.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -20871,7 +20871,7 @@
                 {
                   "product_id": 130,
                   "product_name": "Cascading AI Loan Assistant",
-                  "description": "LLM-powered commercial and SMB loan origination assistant for community bank lending teams; automates document collection and classification, financial statement spreading, credit memo drafting, and covenant monitoring using large language models fine-tuned on commercial lending documents; integrates with existing LOS systems as an AI overlay rather than a full platform replacement; reduces manual processing time in commercial lending workflows; Finovate Best of Show Spring 2024 presenter with demonstrated live product",
+                  "description": "AI-powered portfolio intelligence layer for community bank commercial and SMB lending; surfaces real-time risk signals, covenant breach indicators, opportunity alerts, and portfolio health indicators; analytics overlay that integrates with existing LOS and core banking data without requiring a platform replacement.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "banks",
                   "status": "deprecated",
@@ -20945,7 +20945,7 @@
                 {
                   "product_id": 135,
                   "product_name": "Casap AI Disputes Automation",
-                  "description": "AI-native dispute resolution automation platform for banks and credit unions; automates the complete dispute lifecycle from member/customer intake through evidence collection, regulatory compliance review (Reg E for debit/ACH, Reg Z for credit cards), and chargeback response filing; LLMs process dispute evidence documents, transaction records, and merchant responses to generate compliant dispute decisions and response letters; reduces average dispute resolution time from 5-10 days to minutes; integrates with core banking and card processing systems for automated transaction retrieval; compliance automation ensures CFPB-required timelines and disclosure requirements are met without manual intervention; Finovate Best of Show Fall 2025",
+                  "description": "Core API connectivity platform for banks and credit unions; integrates 80+ fintech applications to 40+ core banking systems through a single secure integration layer; provides standardized, pre-certified connectors covering Jack Henry, Fiserv, FIS, and other US banking cores; also offers document automation, teller workflow optimization, and data analytics as companion modules.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "both",
                   "status": "active",
@@ -21023,7 +21023,7 @@
                 {
                   "product_id": 61,
                   "product_name": "OnBase for Financial Services",
-                  "description": "Enterprise content management, intelligent document processing, and process automation platform; deployed at 125+ credit unions and community banks for loan document management, compliance workflows, and back-office automation; integrates natively with Jack Henry Episys",
+                  "description": "Enterprise content management, intelligent document processing, and process automation platform; covers loan document management, compliance workflows, and back-office automation; integrates natively with Jack Henry Episys.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -21299,7 +21299,7 @@
                 {
                   "product_id": 63,
                   "product_name": "SS&C Blue Prism Intelligent Automation",
-                  "description": "Intelligent automation platform combining RPA, AI, and process orchestration; FI deployments cover account reconciliation, regulatory reporting, loan processing, and exception handling; Teachers Federal Credit Union ($9.7B) is documented CU client with 16 automated business functions",
+                  "description": "Intelligent automation platform combining RPA, AI, and process orchestration; FI deployments cover account reconciliation, regulatory reporting, loan processing, and exception handling.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -21342,7 +21342,7 @@
                 {
                   "product_id": 177,
                   "product_name": "Autobooks Small Business Banking",
-                  "description": "Integrated small business invoicing, payment acceptance, and cash flow management platform embedded in community bank and credit union business banking portals; supports credit card, debit card, ACH, and check lockbox payment acceptance; Allied Payment Network acquired and integrated May 2025; 100+ FI clients",
+                  "description": "Technology-forward bank providing BaaS infrastructure, loan origination, and embedded payments to fintech and enterprise partners; BaaS services span card issuing, ACH, wire, real-time payments, consumer lending origination, and BNPL infrastructure; API-driven partner onboarding with compliance oversight framework.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -21660,7 +21660,7 @@
                 {
                   "product_id": 188,
                   "product_name": "CaseHUB",
-                  "description": "Unified case management platform connecting cases, data, and decisioning for fraud management, BSA/AML, and operational risk. Structured workflows with governance, link analysis, and advanced reporting.",
+                  "description": "Institutional stablecoin issuance and settlement infrastructure; FIs use Paxos to issue white-label stablecoins, settle securities transactions on blockchain (Paxos Settlement Service), and access regulated custody; relevant for community banks exploring tokenized deposits under GENIUS Act.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -22229,7 +22229,7 @@
                 {
                   "product_id": 110,
                   "product_name": "Ncontracts Nvendor",
-                  "description": "Vendor management and third-party risk module within the Ncontracts GRC platform for community banks and credit unions; provides vendor inventory, inherent risk tiering, due diligence questionnaire workflows, vendor approval tracking, ongoing monitoring alerts, and regulatory reporting for OCC, FDIC, and NCUA vendor management guidance; seamlessly integrated with other Ncontracts modules (Nrisk, Ncompliance) for unified GRC workflows; 1,250+ FI client base across Ncontracts suite provides broad deployment reach for the Nvendor module",
+                  "description": "Vendor management and third-party risk module within the Ncontracts GRC platform for community banks and credit unions; provides vendor inventory, inherent risk tiering, due diligence questionnaire workflows, vendor approval tracking, ongoing monitoring alerts, and regulatory reporting for OCC, FDIC, and NCUA vendor management guidance; integrated with other Ncontracts modules (Nrisk, Ncompliance) for unified GRC workflows.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -22452,7 +22452,7 @@
                 {
                   "product_id": 137,
                   "product_name": "Kinective API Connectivity",
-                  "description": "Core API connectivity platform for banks and credit unions that enables financial institutions to integrate 80+ fintech applications to 40+ core banking systems through a single secure integration layer; eliminates the need for each fintech to build custom core integrations by providing standardized, pre-certified connectors covering all major US banking cores (Jack Henry, Fiserv, FIS, and others); also offers document automation (e-signature via IMM), teller workflow optimization (via CFM), and data analytics (via NXTsoft) as companion modules; Janusea's modern API platform (acquired July 2025) extends capabilities to credit union-specific core integrations",
+                  "description": "Enterprise open finance connectivity platform; replaces screen scraping and credential sharing with FDX-standard API-based data sharing; provides FDX-compliant open banking APIs and direct integrations into business applications; Section 1033 compliance infrastructure for community banks and credit unions facing CFPB open banking mandates; integrated with Narmi and Candescent digital banking platforms.",
                   "pervasiveness_tier": 6,
                   "fi_segment": "both",
                   "status": "active",
@@ -24182,7 +24182,7 @@
                 {
                   "product_id": 136,
                   "product_name": "PortX Banking iPaaS",
-                  "description": "Integration-Platform-as-a-Service (iPaaS) for community banks and credit unions that converges core connectivity, fintech integration, and data management in a single platform; provides prebuilt connectors to 35+ core banking platforms, a no-code configuration interface, a fintech hub marketplace, a data lakehouse, and business intelligence tools; enables FIs to onboard new fintech vendors without custom engineering, swap service providers without core re-integration, and maintain centralized API governance; also provides managed hosting and integration consulting; positioned as the primary alternative to brittle point-to-point integrations for community FIs pursuing digital transformation without core replacement",
+                  "description": "Integration-Platform-as-a-Service (iPaaS) for financial institutions, launched following nCino's acquisition of Sandbox Banking; provides prebuilt connectors for core banking platforms and 50+ industry solutions spanning lending, deposits, KYC/AML, underwriting, mobile banking, and analytics; supports 14+ core banking systems; low-code configuration for banks and credit unions.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -25209,7 +25209,7 @@
                 {
                   "product_id": 334,
                   "product_name": "UniFI Digital Banking Suite",
-                  "description": "Multi-channel digital banking including online, mobile, voice, and text access with deep KeyBridge/KeyInsight integration for credit unions.",
+                  "description": "Real-time NSF notification service giving credit union members the ability to manage which transactions are paid and avoid overdraft consequences.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -25514,7 +25514,7 @@
                 {
                   "product_id": 456,
                   "product_name": "Mambu Core Banking Engine",
-                  "description": "Cloud-native, API-first, composable core banking engine serving digital banks, neobanks, mid-tier banks, and fintechs globally. Modular architecture allows incremental adoption of Deposits, Lending, and Payments components. Processes 500M+ API calls/day across 230M+ end users in 65+ countries.",
+                  "description": "Integrated contact center platform offering omni-channel communication (voice, digital), IVR, AI-powered automation, agent and supervisor management tools, and cloud hosting; pre-built integrations with banking core systems.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "active",
@@ -29170,7 +29170,7 @@
                 {
                   "product_id": 269,
                   "product_name": "Fiserv Architect",
-                  "description": "Fiserv digital banking platform serving community banks and credit unions. Covers online banking, mobile banking, and banker-facing portals. Integrated with Premier, Signature, and other Fiserv cores.",
+                  "description": "Microsoft Copilot for Microsoft 365 embeds AI assistance into Word, Excel, Teams, Outlook, and other M365 apps for drafting content, summarizing meetings, analyzing data, and automating routine tasks; deployed by financial institutions to increase knowledge worker productivity across front and back office functions.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -29450,7 +29450,7 @@
                 {
                   "product_id": 266,
                   "product_name": "Fiserv Portico",
-                  "description": "Fiserv core banking platform purpose-built for credit unions. Primarily serves smaller to mid-size credit unions.",
+                  "description": "Loan origination, collections & recovery, and account origination platform for credit unions and community banks; formerly Akcelerant (acquired by Temenos Feb 2014); cloud-native SaaS delivery.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -29538,7 +29538,7 @@
                 {
                   "product_id": 267,
                   "product_name": "Fiserv DNA",
-                  "description": "Modern, open-architecture credit union core acquired via Open Solutions (2007). Serves mid-to-large credit unions with a highly configurable data model. Often cited as a more flexible alternative to Symitar.",
+                  "description": "Core banking platform (formerly T24); real-time, cloud-native, API-first core banking system; delivered via Temenos Banking Cloud (SaaS) or on-premise; deployed at community banks and regional banks in the US and internationally.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -29736,7 +29736,7 @@
                 {
                   "product_id": 329,
                   "product_name": "Candescent Digital Banking",
-                  "description": "Cloud-native Intelligent Banking Platform (formerly NCR Voyix Digital Banking) serving 1,300+ banks and credit unions with 30M+ registered users. Omnichannel online and mobile banking with 60+ marketplace partner integrations (1,500+ total). Forge developer experience at developer.candescent.com.",
+                  "description": "KeyStone service bureau combining core hosting with digital banking, disaster recovery, and custom KeyStone programming.",
                   "pervasiveness_tier": 6,
                   "fi_segment": "both",
                   "status": "active",
@@ -29934,7 +29934,7 @@
                 {
                   "product_id": 275,
                   "product_name": "FIS HORIZON",
-                  "description": "FIS core banking platform for smaller community banks, typically under $500M in assets. Long-tenured platform with strong rural and community bank presence.",
+                  "description": "Cloud-based unified payments platform supporting FedNow, ACH, and wire transfers for financial institutions.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "active",
@@ -30025,7 +30025,7 @@
                 {
                   "product_id": 277,
                   "product_name": "FIS Digital One",
-                  "description": "FIS digital banking platform covering online, mobile, and banker-facing portals for community banks. Integrates with FIS core banking systems.",
+                  "description": "Real-time money movement service providing instant payment access for community FIs, with RTP and FedNow connectivity.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "active",
@@ -30371,7 +30371,7 @@
                 {
                   "product_id": 289,
                   "product_name": "Q2 Digital Banking Platform",
-                  "description": "Q2 flagship digital banking platform for community banks and credit unions. Covers online banking, mobile, cash management, and business banking portals. The primary Q2 product serving 450+ community FIs.",
+                  "description": "Cloud-native core banking, digital banking, and payments platform built for credit unions.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -30477,7 +30477,7 @@
                 {
                   "product_id": 290,
                   "product_name": "Q2 Helix",
-                  "description": "Banking as a Service platform enabling community FIs and fintechs to embed banking products (checking, savings, card) into non-bank apps and fintech experiences. Acquired via Cloud Lending (rebranded).",
+                  "description": "Cloud-native Intelligent Banking Platform (formerly NCR Voyix Digital Banking) for banks and credit unions; omnichannel online and mobile banking with 60+ marketplace partner integrations; Forge developer experience at developer.candescent.com.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -30995,7 +30995,7 @@
                 {
                   "product_id": 287,
                   "product_name": "NCR Voyix Digital Banking Platform",
-                  "description": "Digital banking platform for community banks and credit unions, built on the D3 Banking technology acquired by NCR. Covers online banking, mobile, and business banking portals with a modern API layer.",
+                  "description": "International FX and domestic wire platform providing foreign currency exchange, international wires, and foreign check clearing for financial institutions.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -32300,7 +32300,7 @@
                 {
                   "product_id": 444,
                   "product_name": "Infillion Ad Intelligence Platform",
-                  "description": "Premium advertising technology combining omnichannel media, location intelligence, and engagement analytics to help FIs run targeted, measurable digital marketing campaigns.",
+                  "description": "Real-time core banking software for community banks; available as service bureau, hosted, or in-house; includes open-banking APIs and data analytics.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -33166,7 +33166,7 @@
                 {
                   "product_id": 68,
                   "product_name": "Curinos Deposit Optimizer",
-                  "description": "AI-driven deposit pricing optimization platform using ML price elasticity modeling and behavioral analytics; Deposit Optimizer Essentials is the community bank and credit union tier; clients outperform non-users by 15 basis points on cost of deposits on average; tracks competitive rate data across 1,300+ US institutions",
+                  "description": "AI-driven deposit pricing optimization platform using ML price elasticity modeling and behavioral analytics; Deposit Optimizer Essentials is the community bank and credit union tier.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -33665,7 +33665,7 @@
                 {
                   "product_id": 186,
                   "product_name": "Arkalytics + ArkaIQ",
-                  "description": "End-to-end data lakehouse and BI platform for credit unions with automated data warehouse, executive dashboards, and predictive analytics. ArkaIQ adds LLM-powered natural language querying (\"your private AI data analyst\") with multi-agent SQL orchestration over the credit union's own data.",
+                  "description": "Real-time P2P and small business payment network embedded in FI mobile banking apps; community banks and credit unions integrate Zelle through white-label digital banking providers (Q2, Alkami) or directly via API.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -33788,7 +33788,7 @@
                 {
                   "product_id": 68,
                   "product_name": "Curinos Deposit Optimizer",
-                  "description": "AI-driven deposit pricing optimization platform using ML price elasticity modeling and behavioral analytics; Deposit Optimizer Essentials is the community bank and credit union tier; clients outperform non-users by 15 basis points on cost of deposits on average; tracks competitive rate data across 1,300+ US institutions",
+                  "description": "AI-driven deposit pricing optimization platform using ML price elasticity modeling and behavioral analytics; Deposit Optimizer Essentials is the community bank and credit union tier.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -33940,7 +33940,7 @@
                 {
                   "product_id": 176,
                   "product_name": "Plinqit Savings Platform",
-                  "description": "Automated savings and deposit growth platform for banks and credit unions; white-label mobile-first app integrates into FI digital banking; gamified goal-based savings, financial wellness content, and data-driven engagement analytics; High Yield Savings product enables FIs to launch digital-only savings brands; Co-op Solutions Strategic Provider for credit union channel",
+                  "description": "Nationally chartered bank (Column N.A.) offering direct API-based banking infrastructure without middleware; combines an OCC-issued national bank charter with a modern API-first technology stack; enables fintechs and non-bank enterprises to issue accounts, process payments (ACH, wire, FedNow, RTP), and originate loans through direct bank APIs rather than through a middleware BaaS layer.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -33984,7 +33984,7 @@
                 {
                   "product_id": 174,
                   "product_name": "Cotribute Digital Account Opening",
-                  "description": "AI-powered digital account opening and loan origination platform for community banks and credit unions; automates 85% of decisioning including fraud detection, KYC, and core system updates; 5x faster account opening with completion in under 2 minutes; automated cross-selling for deposit and loan growth; integrates global KYC solution; documented deployments at Capitol CU of Texas, Blue Federal Credit Union",
+                  "description": "Developer-first embedded finance platform enabling companies to launch FDIC-insured bank accounts, debit cards, ACH and wire payments, and credit products via APIs; relies on licensed bank sponsor partners for underlying banking services; provides KYC/AML, fraud monitoring, and compliance tooling for fintech program operators.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -34046,7 +34046,7 @@
                 {
                   "product_id": 410,
                   "product_name": "ModernFi Deposit Network",
-                  "description": "Reciprocal deposit network enabling community banks and credit unions to offer expanded FDIC/NCUA deposit insurance coverage, source overnight funding, and sweep excess liquidity.",
+                  "description": "Tri-merge and other credit report services for lending support; integrates with nCino for application data and credit decisioning.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -34102,7 +34102,7 @@
                 {
                   "product_id": 72,
                   "product_name": "ZMdesk ALM",
-                  "description": "ALM and liquidity modeling platform with sophisticated cash-flow modeling, behavioral assumptions, and scenario analysis; 2,000+ FI clients globally; acquired by Moody's Analytics 2020 and integrated into Moody's risk suite; traditional ALM modeling engine with behavioral analytics and regulatory reporting capabilities",
+                  "description": "ALM and liquidity modeling platform with sophisticated cash-flow modeling, behavioral assumptions, and scenario analysis; acquired by Moody's Analytics 2020 and integrated into Moody's risk suite.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -34252,7 +34252,7 @@
                 {
                   "product_id": 279,
                   "product_name": "FIS Balance Sheet Manager (Bancware)",
-                  "description": "ALM, interest rate risk, liquidity, and CECL analytics for community banks. Originally the Bancware product, now integrated into FIS risk and compliance suite.",
+                  "description": "Secure faster payments ecosystem for financial institutions enabling near-instant payment send and receive while keeping funds within the FI.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "active",
@@ -34286,7 +34286,7 @@
                 {
                   "product_id": 70,
                   "product_name": "Empyrean Integrated ALM",
-                  "description": "Integrated ALM, budgeting, profitability analysis, CECL, and funds transfer pricing platform for community banks and credit unions; unified data model enables AI-assisted scenario analysis and CECL automation; Chartis 2025 Category Leader in all six ALM report dimensions; AI features expanding with April 2026 CECL automation launch",
+                  "description": "Integrated ALM, budgeting, profitability analysis, CECL, and funds transfer pricing platform for community banks and credit unions; unified data model enables AI-assisted scenario analysis and CECL automation.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -34395,7 +34395,7 @@
                 {
                   "product_id": 410,
                   "product_name": "ModernFi Deposit Network",
-                  "description": "Reciprocal deposit network enabling community banks and credit unions to offer expanded FDIC/NCUA deposit insurance coverage, source overnight funding, and sweep excess liquidity.",
+                  "description": "Tri-merge and other credit report services for lending support; integrates with nCino for application data and credit decisioning.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -34436,7 +34436,7 @@
                 {
                   "product_id": 98,
                   "product_name": "Aladdin Provider",
-                  "description": "Institutional investment risk and portfolio analytics platform from BlackRock, offered to financial institutions seeking enterprise-grade risk analytics for bond and investment portfolios; provides risk factor decomposition, stress testing, liquidity analysis, and portfolio optimization; Aladdin Provider is the accessible tier for mid-market institutions and is beginning to see pilot interest from larger community banks seeking sophisticated investment portfolio risk management beyond their ALM vendor capabilities",
+                  "description": "Institutional investment risk and portfolio analytics platform from BlackRock; provides risk factor decomposition, stress testing, liquidity analysis, and portfolio optimization; Aladdin Provider is the accessible tier for mid-market institutions.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "banks",
                   "status": "active",
@@ -34522,7 +34522,7 @@
                 {
                   "product_id": 73,
                   "product_name": "Clearwater Investment Accounting",
-                  "description": "Unified investment accounting, reporting, and analytics platform; automates reconciliation, performance attribution, and regulatory reporting for investment portfolios; AI-assisted data quality and reconciliation; community bank segment exists though primary markets are insurance and institutional; $6.4T in assets on platform",
+                  "description": "Unified investment accounting, reporting, and analytics platform; automates reconciliation, performance attribution, and regulatory reporting for investment portfolios; AI-assisted data quality and reconciliation.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "banks",
                   "status": "active",
@@ -34795,7 +34795,7 @@
                 {
                   "product_id": 98,
                   "product_name": "Aladdin Provider",
-                  "description": "Institutional investment risk and portfolio analytics platform from BlackRock, offered to financial institutions seeking enterprise-grade risk analytics for bond and investment portfolios; provides risk factor decomposition, stress testing, liquidity analysis, and portfolio optimization; Aladdin Provider is the accessible tier for mid-market institutions and is beginning to see pilot interest from larger community banks seeking sophisticated investment portfolio risk management beyond their ALM vendor capabilities",
+                  "description": "Institutional investment risk and portfolio analytics platform from BlackRock; provides risk factor decomposition, stress testing, liquidity analysis, and portfolio optimization; Aladdin Provider is the accessible tier for mid-market institutions.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "banks",
                   "status": "active",
@@ -34836,7 +34836,7 @@
                 {
                   "product_id": 72,
                   "product_name": "ZMdesk ALM",
-                  "description": "ALM and liquidity modeling platform with sophisticated cash-flow modeling, behavioral assumptions, and scenario analysis; 2,000+ FI clients globally; acquired by Moody's Analytics 2020 and integrated into Moody's risk suite; traditional ALM modeling engine with behavioral analytics and regulatory reporting capabilities",
+                  "description": "ALM and liquidity modeling platform with sophisticated cash-flow modeling, behavioral assumptions, and scenario analysis; acquired by Moody's Analytics 2020 and integrated into Moody's risk suite.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -34918,7 +34918,7 @@
                 {
                   "product_id": 70,
                   "product_name": "Empyrean Integrated ALM",
-                  "description": "Integrated ALM, budgeting, profitability analysis, CECL, and funds transfer pricing platform for community banks and credit unions; unified data model enables AI-assisted scenario analysis and CECL automation; Chartis 2025 Category Leader in all six ALM report dimensions; AI features expanding with April 2026 CECL automation launch",
+                  "description": "Integrated ALM, budgeting, profitability analysis, CECL, and funds transfer pricing platform for community banks and credit unions; unified data model enables AI-assisted scenario analysis and CECL automation.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -35030,7 +35030,7 @@
                 {
                   "product_id": 186,
                   "product_name": "Arkalytics + ArkaIQ",
-                  "description": "End-to-end data lakehouse and BI platform for credit unions with automated data warehouse, executive dashboards, and predictive analytics. ArkaIQ adds LLM-powered natural language querying (\"your private AI data analyst\") with multi-agent SQL orchestration over the credit union's own data.",
+                  "description": "Real-time P2P and small business payment network embedded in FI mobile banking apps; community banks and credit unions integrate Zelle through white-label digital banking providers (Q2, Alkami) or directly via API.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -35112,7 +35112,7 @@
                 {
                   "product_id": 192,
                   "product_name": "CUltivate Foundational AI Platform",
-                  "description": "Purpose-built foundational AI model trained on credit union content and channels. Provides chat interface for direct AI interaction and API/SDK infrastructure for developers to build CU-specific applications. Use cases: regulatory assistance, vendor evaluation, content creation, process optimization, knowledge management, macro trend analysis, community impact ideation.",
+                  "description": "White-label Bitcoin platform embedded in community bank and credit union mobile apps; customers buy, hold, and sell Bitcoin through the FI's existing app; NYDIG handles custody, compliance, and trade execution.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -35535,7 +35535,7 @@
                 {
                   "product_id": 347,
                   "product_name": "Datava Data Activation Platform",
-                  "description": "Complete data platform for credit unions managing data collection through AI-driven insights delivered to staff for member service and growth.",
+                  "description": "Omni-channel conversational IVR and secure authentication cloud solutions for credit union voice, web, chat, and SMS experiences.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -35754,7 +35754,7 @@
                 {
                   "product_id": 178,
                   "product_name": "Bloom Credit API Platform",
-                  "description": "Credit data infrastructure and alternative bureau reporting platform for banks, credit unions, and fintechs; single API provides real-time tri-bureau credit data access for underwriting, personalization, and app integration; Bloom+ consumer-permissioned alternative data service enables FIs to offer members ability to report recurring bill payments to credit bureaus to build credit profiles; first deployed with Inspire Federal Credit Union; Navy Federal, Suncoast CU also partners",
+                  "description": "Comprehensive BaaS and program sponsorship platform from a publicly traded sponsor bank; services include BIN sponsorship, card issuing (prepaid, debit, virtual), ACH settlement, compliance oversight, and SBA lending; supports consumer prepaid, business prepaid, HSA, earned wage access, and HELOC programs; fintech partners span neobanks, payroll processors, benefits platforms, and gig economy companies.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -35848,7 +35848,7 @@
                 {
                   "product_id": 175,
                   "product_name": "Array Embedded Financial Wellness Platform",
-                  "description": "White-label embedded fintech platform enabling banks and credit unions to offer credit monitoring, identity protection, and financial wellness tools inside digital banking; tri-bureau credit data API for underwriting and personalization; Offers Engine delivers pre-qualified product offers using member credit data; integrations with DCI (community bank channel), Alkami/Banno (800+ banks/CUs)",
+                  "description": "Bank-direct embedded banking platform enabling community banks and credit unions to offer branded fintech partnerships at scale; BankOS console gives bank compliance teams a unified interface to manage embedded programs, third-party fintech relationships, transaction monitoring, and regulatory reporting; multi-bank network allows fintechs to gain access to multiple bank sponsor options; AI Marketplace curates fintech partners for bank program development.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -36195,7 +36195,7 @@
                 {
                   "product_id": 78,
                   "product_name": "Fiddler AI Observability Platform",
-                  "description": "AI model observability and risk management platform for financial services; monitors ML model performance, drift, and fairness; generates explainability outputs for regulatory review; streamlines MRM and GRC workflows; $2B+ consumer lending platform documented case study with 2,000 hours/year saved in ML monitoring overhead",
+                  "description": "AI model observability and risk management platform for financial services; monitors ML model performance, drift, and fairness; generates explainability outputs for regulatory review; streamlines MRM and GRC workflows.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "banks",
                   "status": "active",
@@ -36226,7 +36226,7 @@
                 {
                   "product_id": 76,
                   "product_name": "ValidMind AI Governance Platform",
-                  "description": "Agentic AI governance platform purpose-built for regulated industries; automates model documentation, validation testing, and compliance workflow for SR 11-7, SS1/23, E-23, and EU AI Act; Experian partnership (2025) validates enterprise credibility; covers credit risk, fraud, and AML model governance",
+                  "description": "Agentic AI governance platform for regulated industries; automates model documentation, validation testing, and compliance workflow for SR 11-7, SS1/23, E-23, and EU AI Act; covers credit risk, fraud, and AML model governance.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -36257,7 +36257,7 @@
                 {
                   "product_id": 77,
                   "product_name": "Monitaur AI Governance",
-                  "description": "AI governance platform covering model validation, bias detection, drift monitoring, and audit trails for regulated industries; covers both classical ML and generative AI models; Forrester Strong Performer and Customer Favorite Q3 2025; banking, insurance, and healthcare vertical focus",
+                  "description": "AI governance platform covering model validation, bias detection, drift monitoring, and audit trails for regulated industries; covers both classical ML and generative AI models; banking, insurance, and healthcare vertical focus.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -36324,7 +36324,7 @@
                 {
                   "product_id": 88,
                   "product_name": "FairPlay Fairness Analysis",
-                  "description": "AI-native fair lending platform using genuine ML to detect and remediate bias in credit models; evaluates thousands of equally predictive but less discriminatory model alternatives (LDAs) to reduce disparate impact; identifies variables driving protected class disparities; integrated into Wolters Kluwer Fair Lending Wiz (2026 partnership); covers adverse action explanation, geographic fairness mapping, and model de-biasing",
+                  "description": "AI-native fair lending platform using ML to detect and remediate bias in credit models; evaluates equally predictive but less discriminatory model alternatives (LDAs) to reduce disparate impact; identifies variables driving protected class disparities; covers adverse action explanation, geographic fairness mapping, and model de-biasing.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "banks",
                   "status": "active",
@@ -36486,7 +36486,7 @@
                 {
                   "product_id": 273,
                   "product_name": "Fiserv AllData",
-                  "description": "Financial data aggregation and open banking connectivity platform. Enables account aggregation, PFM data flows, and third-party fintech connectivity for community FIs.",
+                  "description": "AI platform purpose-built for financial institutions offering document processing, policy Q&A, and workflow automation trained on banking-specific content; enables deployment of AI assistants for staff and members without exposing sensitive data to public models.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -36896,7 +36896,7 @@
                 {
                   "product_id": 441,
                   "product_name": "Atomic Payroll Connectivity",
-                  "description": "Framework for connected banking enabling direct deposit switching, income and employment verification, subscription management, and payroll-linked financial tools embedded in digital banking.",
+                  "description": "Cloud-based, open API core banking suite for community banks; includes core processing, digital banking, teller capture, deposit/loan origination, and payment solutions.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -36942,7 +36942,7 @@
                 {
                   "product_id": 435,
                   "product_name": "Truv Direct Deposit Switch",
-                  "description": "Payroll data connectivity platform enabling FIs to automate direct deposit switching, income and employment verification, and payroll data access for lending decisions.",
+                  "description": "Mainframe-based core banking platform used by large US banks; Hogan X is the next-gen hybrid cloud version.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -37086,7 +37086,7 @@
                 {
                   "product_id": 19,
                   "product_name": "Finicity Verification of Assets",
-                  "description": "Open banking-based asset verification for mortgage; pulls live bank account data to replace VOD process; Fannie Mae Day 1 Certainty certified",
+                  "description": "Open banking-based asset verification for mortgage; pulls live bank account data to replace the VOD process.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "legacy",
@@ -37439,7 +37439,7 @@
                 {
                   "product_id": 136,
                   "product_name": "PortX Banking iPaaS",
-                  "description": "Integration-Platform-as-a-Service (iPaaS) for community banks and credit unions that converges core connectivity, fintech integration, and data management in a single platform; provides prebuilt connectors to 35+ core banking platforms, a no-code configuration interface, a fintech hub marketplace, a data lakehouse, and business intelligence tools; enables FIs to onboard new fintech vendors without custom engineering, swap service providers without core re-integration, and maintain centralized API governance; also provides managed hosting and integration consulting; positioned as the primary alternative to brittle point-to-point integrations for community FIs pursuing digital transformation without core replacement",
+                  "description": "Integration-Platform-as-a-Service (iPaaS) for financial institutions, launched following nCino's acquisition of Sandbox Banking; provides prebuilt connectors for core banking platforms and 50+ industry solutions spanning lending, deposits, KYC/AML, underwriting, mobile banking, and analytics; supports 14+ core banking systems; low-code configuration for banks and credit unions.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -38275,7 +38275,7 @@
                 {
                   "product_id": 290,
                   "product_name": "Q2 Helix",
-                  "description": "Banking as a Service platform enabling community FIs and fintechs to embed banking products (checking, savings, card) into non-bank apps and fintech experiences. Acquired via Cloud Lending (rebranded).",
+                  "description": "Cloud-native Intelligent Banking Platform (formerly NCR Voyix Digital Banking) for banks and credit unions; omnichannel online and mobile banking with 60+ marketplace partner integrations; Forge developer experience at developer.candescent.com.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -38626,7 +38626,7 @@
                 {
                   "product_id": 456,
                   "product_name": "Mambu Core Banking Engine",
-                  "description": "Cloud-native, API-first, composable core banking engine serving digital banks, neobanks, mid-tier banks, and fintechs globally. Modular architecture allows incremental adoption of Deposits, Lending, and Payments components. Processes 500M+ API calls/day across 230M+ end users in 65+ countries.",
+                  "description": "Integrated contact center platform offering omni-channel communication (voice, digital), IVR, AI-powered automation, agent and supervisor management tools, and cloud hosting; pre-built integrations with banking core systems.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "active",
@@ -39417,7 +39417,7 @@
                 {
                   "product_id": 318,
                   "product_name": "Pidgin Faster Payments",
-                  "description": "Secure faster payments ecosystem enabling financial institutions to send and receive near-instant payments while keeping funds within the FI.",
+                  "description": "Print and digital member communications for credit unions delivering customized statements and engagement solutions.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -39887,7 +39887,7 @@
                 {
                   "product_id": 419,
                   "product_name": "Paymentus Bill Payment",
-                  "description": "Integrated bill payment and presentment platform enabling FI customers to pay billers, receive e-bills, and manage recurring payments within digital banking.",
+                  "description": "SaaS data protection platform for Salesforce providing backup, recovery, archiving, and sandbox seeding; protects nCino and Salesforce banking data for financial institutions.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "both",
                   "status": "active",
@@ -40435,7 +40435,7 @@
                 {
                   "product_id": 315,
                   "product_name": "Elan EFT Processing",
-                  "description": "ATM and debit card processing, POS gateway, ATM managed services, and MoneyPass ATM network for financial institutions.",
+                  "description": "Mobile enterprise digital transaction management platform for credit unions including e-signing, forms automation, check imaging, and RDC.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -40633,7 +40633,7 @@
                 {
                   "product_id": 320,
                   "product_name": "SHAZAM EFT Network",
-                  "description": "Independent debit network providing EFT processing, Privileged Status ATM network, debit card management, and fraud mitigation for credit unions.",
+                  "description": "Financial document design, mobile-compatible e-delivery, and marketing for credit unions; covers member correspondence, statements, notices, and letters.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -41607,7 +41607,7 @@
                 {
                   "product_id": 420,
                   "product_name": "Veem B2B Payments",
-                  "description": "Global AP/AR payment platform embedded in digital banking enabling small businesses to send and receive domestic and international payments via bank transfer, card, and multiple rails.",
+                  "description": "Patented platform automating loan participations and syndications; reduces concentration risk, boosts liquidity; integrates directly with nCino.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -43086,7 +43086,7 @@
                 {
                   "product_id": 309,
                   "product_name": "HubSpot CRM",
-                  "description": "HubSpot CRM is a cloud-based customer relationship management platform that tracks leads, contacts, and deals through a unified pipeline. Community banks and credit unions use it to manage business development activities, marketing automation, and member or prospect outreach.",
+                  "description": "Multi-channel LLM-based agentic AI system for credit unions providing intelligent self-service and internal automation.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -43536,7 +43536,7 @@
                 {
                   "product_id": 307,
                   "product_name": "Microsoft Copilot for M365",
-                  "description": "Microsoft Copilot for Microsoft 365 embeds AI assistance into Word, Excel, Teams, Outlook, and other M365 apps to help employees draft content, summarize meetings, analyze data, and automate routine tasks. Financial institutions use it to increase knowledge worker productivity across front and back office functions.",
+                  "description": "AI-powered conversational banking using NLP over messaging and voice channels for natural customer dialogue with financial institutions.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -44002,7 +44002,7 @@
                 {
                   "product_id": 275,
                   "product_name": "FIS HORIZON",
-                  "description": "FIS core banking platform for smaller community banks, typically under $500M in assets. Long-tenured platform with strong rural and community bank presence.",
+                  "description": "Cloud-based unified payments platform supporting FedNow, ACH, and wire transfers for financial institutions.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "active",
@@ -44564,7 +44564,7 @@
                 {
                   "product_id": 456,
                   "product_name": "Mambu Core Banking Engine",
-                  "description": "Cloud-native, API-first, composable core banking engine serving digital banks, neobanks, mid-tier banks, and fintechs globally. Modular architecture allows incremental adoption of Deposits, Lending, and Payments components. Processes 500M+ API calls/day across 230M+ end users in 65+ countries.",
+                  "description": "Integrated contact center platform offering omni-channel communication (voice, digital), IVR, AI-powered automation, agent and supervisor management tools, and cloud hosting; pre-built integrations with banking core systems.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "active",
@@ -45269,7 +45269,7 @@
                 {
                   "product_id": 267,
                   "product_name": "Fiserv DNA",
-                  "description": "Modern, open-architecture credit union core acquired via Open Solutions (2007). Serves mid-to-large credit unions with a highly configurable data model. Often cited as a more flexible alternative to Symitar.",
+                  "description": "Core banking platform (formerly T24); real-time, cloud-native, API-first core banking system; delivered via Temenos Banking Cloud (SaaS) or on-premise; deployed at community banks and regional banks in the US and internationally.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -45357,7 +45357,7 @@
                 {
                   "product_id": 266,
                   "product_name": "Fiserv Portico",
-                  "description": "Fiserv core banking platform purpose-built for credit unions. Primarily serves smaller to mid-size credit unions.",
+                  "description": "Loan origination, collections & recovery, and account origination platform for credit unions and community banks; formerly Akcelerant (acquired by Temenos Feb 2014); cloud-native SaaS delivery.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -45472,7 +45472,7 @@
                 {
                   "product_id": 329,
                   "product_name": "Candescent Digital Banking",
-                  "description": "Cloud-native Intelligent Banking Platform (formerly NCR Voyix Digital Banking) serving 1,300+ banks and credit unions with 30M+ registered users. Omnichannel online and mobile banking with 60+ marketplace partner integrations (1,500+ total). Forge developer experience at developer.candescent.com.",
+                  "description": "KeyStone service bureau combining core hosting with digital banking, disaster recovery, and custom KeyStone programming.",
                   "pervasiveness_tier": 6,
                   "fi_segment": "both",
                   "status": "active",
@@ -45692,7 +45692,7 @@
                 {
                   "product_id": 269,
                   "product_name": "Fiserv Architect",
-                  "description": "Fiserv digital banking platform serving community banks and credit unions. Covers online banking, mobile banking, and banker-facing portals. Integrated with Premier, Signature, and other Fiserv cores.",
+                  "description": "Microsoft Copilot for Microsoft 365 embeds AI assistance into Word, Excel, Teams, Outlook, and other M365 apps for drafting content, summarizing meetings, analyzing data, and automating routine tasks; deployed by financial institutions to increase knowledge worker productivity across front and back office functions.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
                   "status": "active",
@@ -45888,7 +45888,7 @@
                 {
                   "product_id": 277,
                   "product_name": "FIS Digital One",
-                  "description": "FIS digital banking platform covering online, mobile, and banker-facing portals for community banks. Integrates with FIS core banking systems.",
+                  "description": "Real-time money movement service providing instant payment access for community FIs, with RTP and FedNow connectivity.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "banks",
                   "status": "active",
@@ -46122,6 +46122,6 @@
   "meta": {
     "vendor_count": 393,
     "product_count": 459,
-    "generated_at": "2026-05-13T21:14:59.265Z"
+    "generated_at": "2026-05-13T23:45:59.259Z"
   }
 }
