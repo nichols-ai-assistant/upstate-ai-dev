@@ -1020,21 +1020,26 @@
             activeT2: null,         // category code string, or null
             activeT1: null,         // T1 code or null
             activeTier: null,       // 1-6 or null
-            competitorFilter: null, // { productId, productName } or null
-            ecosystemFilter: null   // { productId, productName } or null
+            competitorFilter: null,    // { productId, productName } or null
+            ecosystemFilter: null,     // { productId, productName } or null
+            competitorSourceT2s: null, // Set of T2 codes the source product belongs to
+            ecosystemSourceT2s: null   // Set of T2 codes the source product belongs to
         };
 
         // ---- Product lookup map (product_id -> product, populated after data load) ----
         var productById = {};        // product_id -> product obj
         var vendorByProductId = {};  // product_id -> vendor_id
+        var t2sByProductId = {};     // product_id -> Array of T2 codes the product appears in
 
         function buildProductMaps() {
             productById = {};
             vendorByProductId = {};
+            t2sByProductId = {};
             if (!state.data) return;
             for (var i = 0; i < state.data.categories.length; i++) {
                 var subs = state.data.categories[i].subcategories;
                 for (var j = 0; j < subs.length; j++) {
+                    var t2Code = subs[j].code;
                     var vendors = subs[j].vendors;
                     for (var k = 0; k < vendors.length; k++) {
                         var v = vendors[k];
@@ -1042,6 +1047,8 @@
                             var p = v.products[m];
                             productById[p.product_id] = p;
                             vendorByProductId[p.product_id] = v.vendor_id;
+                            if (!t2sByProductId[p.product_id]) t2sByProductId[p.product_id] = [];
+                            t2sByProductId[p.product_id].push(t2Code);
                         }
                     }
                 }
@@ -1242,6 +1249,8 @@
                 var t1VendorCount = 0;
                 for (var j = 0; j < cat.subcategories.length; j++) {
                     var sub = cat.subcategories[j];
+                    if (state.competitorSourceT2s && !state.competitorSourceT2s.has(sub.code)) continue;
+                    if (state.ecosystemSourceT2s && !state.ecosystemSourceT2s.has(sub.code)) continue;
                     for (var k = 0; k < sub.vendors.length; k++) {
                         if (vendorVisible(sub.vendors[k])) t1VendorCount++;
                     }
@@ -1261,6 +1270,11 @@
 
                 for (var j2 = 0; j2 < cat.subcategories.length; j2++) {
                     var sub2 = cat.subcategories[j2];
+
+                    // Scope competitor/ecosystem filters to the source product's T2 categories
+                    if (state.competitorSourceT2s && !state.competitorSourceT2s.has(sub2.code)) continue;
+                    if (state.ecosystemSourceT2s && !state.ecosystemSourceT2s.has(sub2.code)) continue;
+
                     var visibleVendors = sub2.vendors.filter(vendorVisible);
 
                     // Hide T2 block entirely if no visible vendors
@@ -1455,10 +1469,12 @@
                     state.activeT1 = null;
                     state.activeT2 = null;
                     state.ecosystemFilter = null;
+                    state.ecosystemSourceT2s = null;
                     syncT1Buttons();
                     syncTierButtons();
                     syncSegmentButtons();
                     state.competitorFilter = { productName: productName, ids: competitorIds };
+                    state.competitorSourceT2s = new Set(t2sByProductId[primary.product_id] || []);
                     update();
                 });
             }
@@ -1477,10 +1493,12 @@
                     state.activeT1 = null;
                     state.activeT2 = null;
                     state.competitorFilter = null;
+                    state.competitorSourceT2s = null;
                     syncT1Buttons();
                     syncTierButtons();
                     syncSegmentButtons();
                     state.ecosystemFilter = { productName: productName, ids: integrationIds };
+                    state.ecosystemSourceT2s = new Set(t2sByProductId[primary.product_id] || []);
                     update();
                 });
             }
@@ -1551,8 +1569,8 @@
             bar.querySelectorAll('.filter-chip-dismiss').forEach(function(btn) {
                 btn.addEventListener('click', function() {
                     var type = btn.dataset.dismiss;
-                    if (type === 'competitors') state.competitorFilter = null;
-                    if (type === 'ecosystem') state.ecosystemFilter = null;
+                    if (type === 'competitors') { state.competitorFilter = null; state.competitorSourceT2s = null; }
+                    if (type === 'ecosystem') { state.ecosystemFilter = null; state.ecosystemSourceT2s = null; }
                     if (type === 't2') state.activeT2 = null;
                     if (type === 't1') { state.activeT1 = null; syncT1Buttons(); }
                     if (type === 'tier') { state.activeTier = null; syncTierButtons(); }
@@ -1580,6 +1598,8 @@
             state.activeT2 = null;
             state.competitorFilter = null;
             state.ecosystemFilter = null;
+            state.competitorSourceT2s = null;
+            state.ecosystemSourceT2s = null;
             var searchInput = document.getElementById('vendor-search');
             if (searchInput) searchInput.value = '';
             syncT1Buttons();
