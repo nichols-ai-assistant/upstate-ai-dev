@@ -1490,11 +1490,12 @@
 
             var modalContent = document.getElementById('modal-content');
             modalContent.innerHTML = html;
-            modalContent.scrollTop = 0;
             document.getElementById('modal-backdrop').classList.add('open');
             document.getElementById('product-modal').classList.add('open');
             document.getElementById('modal-backdrop').removeAttribute('aria-hidden');
             document.body.style.overflow = 'hidden';
+            // Reset scroll after modal is visible (deferred so display:none→flex transition completes)
+            requestAnimationFrame(function() { modalContent.scrollTop = 0; });
 
             // Wire action buttons
             var compBtn = document.getElementById('modal-btn-competitors');
