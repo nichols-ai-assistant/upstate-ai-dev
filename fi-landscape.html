@@ -717,6 +717,60 @@
         }
         .modal-link:hover { background: var(--forest-medium); color: var(--warm-white); }
 
+        /* Competitor / Ecosystem action buttons */
+        .modal-action-row {
+            display: flex;
+            gap: 0.65rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.25rem;
+        }
+        .modal-action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.55rem 1.1rem;
+            border-radius: var(--radius-md);
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s, opacity 0.2s;
+        }
+        .modal-action-btn:disabled {
+            opacity: 0.38;
+            cursor: not-allowed;
+        }
+        .modal-btn-competitors {
+            background: rgba(255,105,0,0.12);
+            color: #c2410c;
+            border: 1.5px solid rgba(255,105,0,0.35);
+        }
+        .modal-btn-competitors:not(:disabled):hover {
+            background: rgba(255,105,0,0.22);
+        }
+        .modal-btn-ecosystem {
+            background: rgba(45,87,69,0.1);
+            color: var(--forest-dark);
+            border: 1.5px solid rgba(45,87,69,0.3);
+        }
+        .modal-btn-ecosystem:not(:disabled):hover {
+            background: rgba(45,87,69,0.18);
+        }
+
+        /* Competitor / Ecosystem filter chips */
+        .filter-chip-competitors {
+            background: rgba(255,105,0,0.12);
+            border: 1px solid rgba(255,105,0,0.3);
+            color: #c2410c;
+        }
+        .filter-chip-competitors .filter-chip-dismiss { color: #c2410c; }
+        .filter-chip-ecosystem {
+            background: rgba(45,87,69,0.1);
+            border: 1px solid rgba(45,87,69,0.25);
+            color: var(--forest-dark);
+        }
+        .filter-chip-ecosystem .filter-chip-dismiss { color: var(--forest-dark); }
+
         @media (max-width: 768px) {
             .product-modal {
                 top: auto;
@@ -900,12 +954,38 @@
         // ---- State ----
         var state = {
             data: null,
-            segment: 'all',     // 'all' | 'banks' | 'credit_unions'
+            segment: 'all',         // 'all' | 'banks' | 'credit_unions'
             search: '',
-            activeT2: null,     // category code string, or null
-            activeT1: null,     // T1 code or null
-            activeTier: null    // 1-6 or null
+            activeT2: null,         // category code string, or null
+            activeT1: null,         // T1 code or null
+            activeTier: null,       // 1-6 or null
+            competitorFilter: null, // { productId, productName } or null
+            ecosystemFilter: null   // { productId, productName } or null
         };
+
+        // ---- Product lookup map (product_id -> product, populated after data load) ----
+        var productById = {};        // product_id -> product obj
+        var vendorByProductId = {};  // product_id -> vendor_id
+
+        function buildProductMaps() {
+            productById = {};
+            vendorByProductId = {};
+            if (!state.data) return;
+            for (var i = 0; i < state.data.categories.length; i++) {
+                var subs = state.data.categories[i].subcategories;
+                for (var j = 0; j < subs.length; j++) {
+                    var vendors = subs[j].vendors;
+                    for (var k = 0; k < vendors.length; k++) {
+                        var v = vendors[k];
+                        for (var m = 0; m < v.products.length; m++) {
+                            var p = v.products[m];
+                            productById[p.product_id] = p;
+                            vendorByProductId[p.product_id] = v.vendor_id;
+                        }
+                    }
+                }
+            }
+        }
 
         var TIER_LABELS = {
             1: 'Tier 1 \u2014 Emerging',
@@ -975,6 +1055,22 @@
 
         // ---- Check if vendor matches current filters ----
         function vendorVisible(vendor) {
+            // Competitor filter: vendor must contain at least one product in the competitor_ids list
+            if (state.competitorFilter !== null) {
+                var ids = state.competitorFilter.ids;
+                var hasMatch = vendor.products.some(function(p) {
+                    return ids.indexOf(p.product_id) !== -1;
+                });
+                if (!hasMatch) return false;
+            }
+            // Ecosystem filter: vendor must contain at least one product in the integration_ids list
+            if (state.ecosystemFilter !== null) {
+                var eids = state.ecosystemFilter.ids;
+                var ehasMatch = vendor.products.some(function(p) {
+                    return eids.indexOf(p.product_id) !== -1;
+                });
+                if (!ehasMatch) return false;
+            }
             // Search: match against product name, vendor name, description
             if (state.search) {
                 var q = state.search;
@@ -1211,11 +1307,23 @@
                 ? '<a class="modal-link" href="' + escHtml(vendor.homepage_url) + '" target="_blank" rel="noopener">Visit Website &#x2197;</a>'
                 : '';
 
+            var competitorIds = (primary && primary.competitor_ids && primary.competitor_ids.length) ? primary.competitor_ids : [];
+            var integrationIds = (primary && primary.integration_ids && primary.integration_ids.length) ? primary.integration_ids : [];
+
+            var compDisabled = competitorIds.length === 0 ? ' disabled title="No competitors tracked"' : '';
+            var ecoDisabled = integrationIds.length === 0 ? ' disabled title="No integrations tracked"' : '';
+
+            var actionRow = '<div class="modal-action-row">' +
+                '<button class="modal-action-btn modal-btn-competitors" id="modal-btn-competitors"' + compDisabled + '>&#x2694; Show Competitors</button>' +
+                '<button class="modal-action-btn modal-btn-ecosystem" id="modal-btn-ecosystem"' + ecoDisabled + '>&#x1F517; Show Ecosystem</button>' +
+                '</div>';
+
             var html =
                 logoHtml +
                 '<h2 class="modal-product-name" id="modal-product-name">' + escHtml(productName) + '</h2>' +
                 '<p class="modal-vendor-name">by ' + escHtml(vendor.name) + '</p>' +
                 descHtml +
+                actionRow +
                 '<div class="modal-meta-grid">' +
                     '<div class="modal-meta-item"><div class="modal-meta-label">Category</div><div class="modal-meta-value">' + escHtml(t1.name) + '</div></div>' +
                     '<div class="modal-meta-item"><div class="modal-meta-label">Subcategory</div><div class="modal-meta-value">' + escHtml(t2.name) + '</div></div>' +
@@ -1230,6 +1338,26 @@
             document.getElementById('product-modal').classList.add('open');
             document.getElementById('modal-backdrop').removeAttribute('aria-hidden');
             document.body.style.overflow = 'hidden';
+
+            // Wire action buttons
+            var compBtn = document.getElementById('modal-btn-competitors');
+            if (compBtn && !compBtn.disabled) {
+                compBtn.addEventListener('click', function() {
+                    closeModal();
+                    state.ecosystemFilter = null;
+                    state.competitorFilter = { productName: productName, ids: competitorIds };
+                    update();
+                });
+            }
+            var ecoBtn = document.getElementById('modal-btn-ecosystem');
+            if (ecoBtn && !ecoBtn.disabled) {
+                ecoBtn.addEventListener('click', function() {
+                    closeModal();
+                    state.competitorFilter = null;
+                    state.ecosystemFilter = { productName: productName, ids: integrationIds };
+                    update();
+                });
+            }
         }
 
         function closeModal() {
@@ -1250,6 +1378,12 @@
             var bar = document.getElementById('filter-bar');
             var chips = '';
 
+            if (state.competitorFilter !== null) {
+                chips += '<span class="filter-chip filter-chip-competitors">Competitors of ' + escHtml(state.competitorFilter.productName) + '<button class="filter-chip-dismiss" data-dismiss="competitors" aria-label="Clear competitors filter">&times;</button></span>';
+            }
+            if (state.ecosystemFilter !== null) {
+                chips += '<span class="filter-chip filter-chip-ecosystem">Ecosystem: ' + escHtml(state.ecosystemFilter.productName) + '<button class="filter-chip-dismiss" data-dismiss="ecosystem" aria-label="Clear ecosystem filter">&times;</button></span>';
+            }
             if (state.activeT2) {
                 var label = state.activeT2;
                 if (state.data) {
@@ -1287,6 +1421,8 @@
             bar.querySelectorAll('.filter-chip-dismiss').forEach(function(btn) {
                 btn.addEventListener('click', function() {
                     var type = btn.dataset.dismiss;
+                    if (type === 'competitors') state.competitorFilter = null;
+                    if (type === 'ecosystem') state.ecosystemFilter = null;
                     if (type === 't2') state.activeT2 = null;
                     if (type === 't1') { state.activeT1 = null; syncT1Buttons(); }
                     if (type === 'tier') { state.activeTier = null; syncTierButtons(); }
@@ -1466,6 +1602,14 @@
             var parts = [];
             var hasNonDefault = false;
 
+            if (state.competitorFilter !== null) {
+                parts.push('Competitors: ' + state.competitorFilter.productName);
+                hasNonDefault = true;
+            }
+            if (state.ecosystemFilter !== null) {
+                parts.push('Ecosystem: ' + state.ecosystemFilter.productName);
+                hasNonDefault = true;
+            }
             if (state.activeTier !== null) {
                 parts.push('T' + state.activeTier + ' ' + TIER_SHORT[state.activeTier]);
                 hasNonDefault = true;
@@ -1540,6 +1684,7 @@
             })
             .then(function(data) {
                 state.data = data;
+                buildProductMaps();
 
                 var subhead = document.getElementById('hero-subhead');
                 subhead.textContent = data.meta.vendor_count + ' vendors. ' + data.meta.product_count + ' products. Every AI solution in the community banking ecosystem.';
