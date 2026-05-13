@@ -990,7 +990,7 @@
         },
         {
           "code": "T2-01b",
-          "name": "Loan Origination Systems (AI-Enhanced)",
+          "name": "Loan Origination Systems",
           "description": "Loan origination systems are end-to-end platforms that manage the full loan lifecycle from application through approval, closing, and booking. AI-enhanced LOS vendors embed automated underwriting, document extraction, e-signature, and workflow orchestration directly into the platform. Primary buyers are heads of lending, COOs, and digital transformation leaders at community banks and credit unions.",
           "ai_opportunities": "AI is dramatically compressing loan cycle times — from days to minutes for consumer loans — by automating income verification, document classification, fraud checks, and compliance review within the origination workflow, directly improving both member experience and loan officer productivity.",
           "vendors": [
@@ -3012,7 +3012,7 @@
         },
         {
           "code": "T2-01c",
-          "name": "Consumer Lending AI",
+          "name": "Consumer Lending",
           "description": "Consumer lending AI covers purpose-built tools for personal loans, auto lending, HELOCs, credit cards, and buy-now-pay-later products targeted at retail banking customers. These solutions address specific challenges in consumer credit including thin-file scoring, real-time decisioning, and compliance with consumer protection regulations. Buyers include consumer lending directors, product managers, and digital channel leaders.",
           "ai_opportunities": "AI-powered instant decisioning and personalized rate offers are allowing community institutions to compete directly with fintech lenders on speed and experience, particularly for personal loans and HELOCs where member expectations have shifted sharply toward same-day funding.",
           "vendors": [
@@ -3977,7 +3977,7 @@
         },
         {
           "code": "T2-01d",
-          "name": "Small Business & Commercial Lending AI",
+          "name": "Small Business & Commercial Lending",
           "description": "Small business and commercial lending AI encompasses tools for SBA loan origination, C&I underwriting, CRE analysis, cash flow spreading, and business creditworthiness assessment for loans typically ranging from $50K to $25M+. Products in this category analyze business bank statements, tax returns, and financial projections to automate credit memos and underwriting decisions. Chief Credit Officers, commercial lending managers, and SBA department heads are the primary buyers.",
           "ai_opportunities": "AI-driven cash flow analysis and automated financial spreading are reducing commercial credit memo preparation from hours to minutes, allowing community banks to compete with larger institutions on turnaround time while also opening the door to serving underbanked small businesses that lack traditional credit documentation.",
           "vendors": [
@@ -5504,7 +5504,7 @@
         },
         {
           "code": "T2-01e",
-          "name": "Mortgage AI",
+          "name": "Mortgage",
           "description": "Mortgage AI includes specialized tools for residential mortgage origination, pre-approval, document extraction, condition clearing, pricing optimization, and regulatory compliance across conforming, FHA, VA, and portfolio loan programs. These platforms address the high document volume and compliance complexity unique to residential mortgage. Buyers include mortgage operations managers, compliance officers, and heads of retail mortgage.",
           "ai_opportunities": "AI-powered document extraction and automated condition clearing are the highest-impact opportunities for community lenders, with the potential to reduce processor time-per-loan by 40–60% and cut days-to-close significantly — a competitive differentiator as mortgage volumes fluctuate with rate cycles.",
           "vendors": [
@@ -6215,7 +6215,7 @@
         },
         {
           "code": "T2-01f",
-          "name": "Collections & Recovery AI",
+          "name": "Collections & Recovery",
           "description": "Collections and recovery AI provides propensity-to-pay models, delinquency early-warning systems, intelligent outreach sequencing, and loss mitigation workflow tools for consumer and commercial loan portfolios. These products help financial institutions reach the right borrowers at the right time with the most effective channel and offer. Buyers are collections department managers, special assets teams, and retail banking operations leaders.",
           "ai_opportunities": "AI-driven early-warning models that identify delinquency risk 30–90 days before a payment is missed are giving community institutions the ability to proactively intervene with targeted hardship programs, substantially reducing charge-offs and preserving member relationships that would otherwise be lost.",
           "vendors": [
@@ -6485,7 +6485,7 @@
         },
         {
           "code": "T2-01g",
-          "name": "Financial Statement Spreading AI",
+          "name": "Financial Statement Spreading",
           "description": "Financial statement spreading AI automates the extraction, normalization, and analysis of business tax returns, CPA-prepared financial statements, rent rolls, and personal financial statements required for commercial credit underwriting. These tools eliminate manual data entry and produce structured financial spreads that feed directly into credit analysis workflows. Commercial credit analysts, underwriters, and loan operations staff are the primary users.",
           "ai_opportunities": "Automated spreading using AI OCR and large language models is reducing spreading time from 2–4 hours per deal to under 15 minutes, enabling community banks to process significantly more commercial loan applications without adding credit staff — a critical capacity advantage in competitive commercial markets.",
           "vendors": [
@@ -10652,7 +10652,7 @@
         },
         {
           "code": "T2-02e",
-          "name": "Sanctions Screening AI",
+          "name": "Sanctions Screening",
           "description": "Sanctions screening AI enhances OFAC and global watchlist screening with machine learning to reduce false positive rates while maintaining zero-miss compliance on true matches. Products address the core challenge of fuzzy name matching across transliterated names, aliases, and partial matches against hundreds of watchlists. Compliance officers, BSA managers, and operations teams responsible for wire and ACH processing are the buyers.",
           "ai_opportunities": "AI-based fuzzy matching and entity resolution are reducing sanctions screening false positive rates dramatically, enabling community financial institutions to process international wires and serve immigrant communities more efficiently without increasing compliance risk or manual review workload.",
           "vendors": [
@@ -11613,7 +11613,7 @@
       "subcategories": [
         {
           "code": "T2-03a",
-          "name": "Conversational AI & Virtual Assistants",
+          "name": "Conversational & Virtual Assistants",
           "description": "Conversational AI and virtual assistant platforms provide AI-powered chatbots and voice assistants deployed on FI websites, mobile apps, IVR systems, and digital banking interfaces to handle routine member and customer inquiries such as balance checks, transaction history, loan status, and branch information. Products range from rule-based chatbots to large language model-powered assistants with deep core integration. Digital banking product managers and COOs are the primary buyers.",
           "ai_opportunities": "Large language model-powered banking assistants are now capable of handling complex, multi-turn conversations about loans, disputes, and financial products with accuracy levels that rival human agents, giving community institutions the ability to extend service hours and deflect contact center volume without sacrificing member experience quality.",
           "vendors": [
@@ -14652,7 +14652,7 @@
         },
         {
           "code": "T2-03d",
-          "name": "Digital Customer Service AI",
+          "name": "Digital Customer Service",
           "description": "Digital customer service AI encompasses AI-assisted contact center tools, live chat AI, co-browsing platforms, intelligent IVR, and agent-assist solutions that augment human service representatives with real-time guidance, automated transcription, and knowledge base surfacing. Products in this category improve both the customer experience and agent efficiency across voice and digital service channels. Contact center managers, retail banking operations, and COOs are the buyers.",
           "ai_opportunities": "Real-time agent-assist AI that surfaces relevant account information, suggests responses, and prompts compliance disclosures during live customer calls is enabling community banks and credit unions to improve first-call resolution rates while reducing agent training time and handling average call duration.",
           "vendors": [
@@ -16186,7 +16186,7 @@
         },
         {
           "code": "T2-03e",
-          "name": "Member/Customer Financial Wellness AI",
+          "name": "Member/Customer Financial Wellness",
           "description": "Financial wellness AI delivers budgeting insights, savings coaching, cash flow alerts, spending categorization, and financial health scoring directly to retail customers and members through digital banking interfaces, often as a value-added service differentiator. Products range from embedded PFM tools within digital banking platforms to standalone financial wellness applications with white-label FI branding. Digital banking teams, retail banking heads, and member engagement leaders are the buyers.",
           "ai_opportunities": "AI-powered cash flow analysis and proactive savings prompts are helping community credit unions especially differentiate on their cooperative mission — demonstrating genuine financial benefit to members — while also deepening engagement and reducing vulnerability to predatory payday lenders and fintechs targeting financially stressed consumers.",
           "vendors": [
@@ -16991,7 +16991,7 @@
       "subcategories": [
         {
           "code": "T2-04a",
-          "name": "Regulatory Change Management AI",
+          "name": "Regulatory Change Management",
           "description": "Regulatory change management AI platforms track, classify, and map regulatory and supervisory guidance from federal and state agencies — CFPB, OCC, FDIC, NCUA, Federal Reserve, and state regulators — to specific FI policies, procedures, and controls, alerting compliance teams to required updates. Products help institutions stay ahead of regulatory change without maintaining large dedicated monitoring teams. Chief Compliance Officers and regulatory affairs managers are the primary buyers.",
           "ai_opportunities": "AI that can automatically map new regulatory guidance to affected internal policies and controls — and generate draft policy update language — is a transformative opportunity for community institutions that typically rely on one or two compliance staff to monitor a vast and accelerating regulatory change landscape.",
           "vendors": [
@@ -17343,7 +17343,7 @@
         },
         {
           "code": "T2-04b",
-          "name": "KYC & Identity Verification AI",
+          "name": "KYC & Identity Verification",
           "description": "KYC and identity verification AI platforms automate document authentication, biometric liveness detection, government ID proofing, and watchlist screening at customer onboarding — covering both consumer and business account opening scenarios. These tools are increasingly required to meet CIP (Customer Identification Program) requirements while enabling fully digital account opening experiences. Compliance officers, BSA managers, and digital banking teams are the buyers.",
           "ai_opportunities": "AI-powered document verification that can authenticate a government ID and match it to a live selfie in under 30 seconds is enabling community financial institutions to offer fully digital account opening without sacrificing CIP compliance, directly competing with fintech neobanks on onboarding experience.",
           "vendors": [
@@ -18527,7 +18527,7 @@
         },
         {
           "code": "T2-04c",
-          "name": "Fair Lending & CRA Analytics AI",
+          "name": "Fair Lending & CRA Analytics",
           "description": "Fair lending and CRA analytics AI platforms analyze HMDA data, loan application patterns, and geographic lending distributions to identify potential disparate impact, redlining risk, and CRA assessment area gaps before they become examination findings. Products generate automated fair lending monitoring reports, peer comparisons, and CRA performance projections. Compliance officers, Chief Risk Officers, and CRA officers are the primary buyers.",
           "ai_opportunities": "AI-powered continuous fair lending monitoring — analyzing every loan decision in real time against peer benchmarks and protected class patterns — is shifting community bank compliance from annual exam preparation to ongoing risk management, dramatically reducing the risk of enforcement actions and consent orders.",
           "vendors": [
@@ -18932,7 +18932,7 @@
         },
         {
           "code": "T2-04d",
-          "name": "Model Risk Management AI",
+          "name": "Model Risk Management",
           "description": "Model risk management AI provides tooling for model validation, documentation, performance monitoring, explainability reporting, and SR 11-7 compliance for financial institutions that use statistical or machine learning models in credit, fraud, AML, or other risk decisions. As AI adoption accelerates, these platforms help ensure that model inventories are governed and that regulators can audit model behavior. Chief Risk Officers, model risk managers, and compliance leaders are the buyers.",
           "ai_opportunities": "As community banks and credit unions adopt AI credit and fraud models from third-party vendors, model risk management platforms that automate ongoing performance monitoring, drift detection, and explainability documentation are becoming critical for demonstrating regulatory compliance without building expensive internal model risk management teams.",
           "vendors": [
@@ -19159,7 +19159,7 @@
         },
         {
           "code": "T2-04e",
-          "name": "Exam & Audit Preparation AI",
+          "name": "Exam & Audit Preparation",
           "description": "Exam and audit preparation AI assists financial institutions in preparing for regulatory examinations by analyzing internal policies, procedures, and documentation for gaps relative to current regulatory expectations, generating evidence packages, and providing AI-assisted policy drafting. These tools are used by compliance teams in the weeks and months leading up to FDIC, OCC, NCUA, and state exams. Chief Compliance Officers, internal auditors, and CEOs at community institutions are the buyers.",
           "ai_opportunities": "AI that can systematically review thousands of pages of internal policies against current examination procedures and generate specific gap remediation recommendations is enabling community banks and credit unions to arrive at regulatory exams dramatically better prepared than was previously possible with limited compliance staff.",
           "vendors": [
@@ -21006,7 +21006,7 @@
         },
         {
           "code": "T2-05b",
-          "name": "Back-Office Process Automation (AI-Enhanced)",
+          "name": "Back-Office Process Automation",
           "description": "AI-enhanced back-office automation platforms combine robotic process automation (RPA), intelligent workflow orchestration, and exception-handling AI to automate repetitive, rules-driven back-office processes across account servicing, payment operations, compliance reporting, and loan administration. Products in this category address the operational complexity of community banks and credit unions that run multiple legacy systems. COOs, operations managers, and IT leaders are the buyers.",
           "ai_opportunities": "AI-enhanced process automation that can handle exception cases and unstructured inputs — not just rigid RPA scripts — is enabling community financial institutions to automate far more of their back-office work than traditional RPA allowed, reducing operational cost without requiring core system replacement.",
           "vendors": [
@@ -22182,7 +22182,7 @@
         },
         {
           "code": "T2-05c",
-          "name": "Vendor & Third-Party Risk AI",
+          "name": "Vendor & Third-Party Risk",
           "description": "Vendor and third-party risk AI platforms automate due diligence questionnaire management, continuous vendor monitoring, cyber risk scoring, and contract risk analysis across the vendor ecosystem that community financial institutions manage — often 100–300 vendors. These tools help institutions meet regulatory expectations for third-party risk management (TPRM) without large dedicated risk teams. Chief Risk Officers, vendor management officers, and IT security leaders are the buyers.",
           "ai_opportunities": "AI-powered continuous vendor monitoring that flags cybersecurity incidents, financial distress signals, and regulatory actions at FI vendors in near real-time is transforming third-party risk from an annual questionnaire exercise into a live risk management function, as regulators increasingly expect proactive rather than reactive TPRM.",
           "vendors": [
@@ -31480,7 +31480,7 @@
       "subcategories": [
         {
           "code": "T2-06a",
-          "name": "AI-Driven Marketing Automation",
+          "name": "Marketing Automation",
           "description": "AI-driven marketing automation platforms enable financial institutions to execute personalized, trigger-based marketing campaigns across email, push notifications, SMS, and digital channels using behavioral data and machine learning to determine timing, message, and offer. Products range from FI-specific marketing automation tools to adapted general-purpose platforms. Marketing directors, digital marketing managers, and retail banking heads are the buyers.",
           "ai_opportunities": "AI that can dynamically select the optimal channel, message, and timing for each individual member or customer — based on their recent transaction behavior and engagement history — is enabling community banks and credit unions to achieve campaign conversion rates previously possible only for large banks with sophisticated marketing operations.",
           "vendors": [
@@ -33771,7 +33771,7 @@
         },
         {
           "code": "T2-06c",
-          "name": "Deposit Growth & Pricing AI",
+          "name": "Deposit Growth & Pricing",
           "description": "Deposit growth and pricing AI platforms provide competitive rate intelligence, pricing elasticity modeling, CD special optimization, and balance migration analytics to help community banks and credit unions optimize their deposit pricing strategy in real time. Products address the critical challenge of balancing deposit retention with margin management as rate environments shift. CFOs, Treasury teams, and retail banking leaders are the primary buyers.",
           "ai_opportunities": "AI-driven deposit pricing optimization that models member price sensitivity at the segment level — rather than applying institution-wide rate changes — is enabling community institutions to retain rate-sensitive deposits with targeted promotions while avoiding unnecessary margin give-up on the majority of the book that would stay regardless.",
           "vendors": [
@@ -34085,7 +34085,7 @@
       "subcategories": [
         {
           "code": "T2-07a",
-          "name": "Liquidity & ALM Forecasting AI",
+          "name": "Liquidity & ALM Forecasting",
           "description": "Liquidity and ALM forecasting AI platforms provide interest rate risk modeling, liquidity stress testing, net interest income simulation, and balance sheet scenario analysis for community banks and credit unions managing the asset-liability function. Products help CFOs and Treasury teams understand and manage the impact of rate changes, deposit repricing, and loan mix shifts on earnings and capital. CFOs, ALM committee members, and Treasury managers are the buyers.",
           "ai_opportunities": "AI-enhanced ALM forecasting that incorporates behavioral deposit modeling — using actual customer data rather than industry averages for non-maturity deposit assumptions — is enabling community institutions to produce more accurate NII projections and make better-informed pricing and portfolio decisions as rate volatility persists.",
           "vendors": [
@@ -34505,7 +34505,7 @@
         },
         {
           "code": "T2-07b",
-          "name": "Investment Portfolio AI",
+          "name": "Investment Portfolio",
           "description": "Investment portfolio AI provides community financial institutions with AI-assisted bond portfolio analysis, duration and convexity management tools, tax-loss harvesting recommendations, and bond laddering optimization within the constraints of community bank investment policy and FDIC/NCUA regulatory requirements. Products help investment officers manage the securities portfolio without large internal fixed income teams. CFOs, investment officers, and ALM committees are the buyers.",
           "ai_opportunities": "AI portfolio analytics that continuously monitors mark-to-market exposure, duration risk, and reinvestment opportunities — and proactively flags portfolio adjustments aligned with the institution's ALM targets — are enabling smaller investment teams at community institutions to manage portfolios with the analytical rigor of much larger banks.",
           "vendors": [
@@ -34957,7 +34957,7 @@
       "subcategories": [
         {
           "code": "T2-08a",
-          "name": "AI/ML Platform & Model Development",
+          "name": "ML Platform & Model Development",
           "description": "AI/ML platforms and model development environments provide the infrastructure for financial institutions to build, train, validate, deploy, and monitor machine learning models — including feature stores, MLOps tooling, AutoML capabilities, and model registries. Products in this category are used by internal data science teams or by vendors deploying models within the FI environment. Chief Data Officers, data science leads, and technology leaders at larger community institutions are the buyers.",
           "ai_opportunities": "Low-code and AutoML platforms are democratizing model development for community financial institutions that lack large data science teams, enabling bank analysts with domain expertise to build, validate, and deploy credit, fraud, and marketing models without deep programming backgrounds.",
           "vendors": [
@@ -36147,7 +36147,7 @@
         },
         {
           "code": "T2-08c",
-          "name": "AI Governance & Explainability",
+          "name": "Model Governance & Explainability",
           "description": "AI governance and explainability platforms provide model documentation frameworks, bias detection tooling, audit trail generation, explainability reporting (including FCRA adverse action notice support), and AI policy management for regulated financial institutions deploying AI in credit, fraud, and other decision-making contexts. Products help FIs demonstrate responsible AI use to regulators and examiners. Chief Risk Officers, compliance leaders, and Chief Data Officers are the buyers.",
           "ai_opportunities": "As banking regulators increase scrutiny of AI in credit decisions, governance platforms that automatically generate examiner-ready explainability reports and monitor deployed models for bias drift are becoming essential infrastructure for community banks and credit unions that rely on third-party AI vendors and must demonstrate oversight to their regulators.",
           "vendors": [
@@ -43479,7 +43479,7 @@
         },
         {
           "code": "T2-10c",
-          "name": "AI Productivity Tools",
+          "name": "Productivity Tools",
           "description": "AI productivity tools for financial institutions include enterprise AI assistants, banking-specific copilot applications, and generative AI platforms deployed across FI staff for tasks such as drafting communications, summarizing documents, generating compliance reports, analyzing contracts, and supporting internal knowledge management. Products range from general-purpose LLM deployments to purpose-built banking AI assistants. CEOs, CTOs, and department heads across the institution are buyers.",
           "ai_opportunities": "Purpose-built banking AI assistants that are pre-trained on regulatory guidance, core system documentation, and banking workflows are delivering measurable productivity gains for community bank staff — particularly in compliance, credit analysis, and customer-facing roles — while maintaining the data security posture required in a regulated environment.",
           "vendors": [
@@ -46122,6 +46122,6 @@
   "meta": {
     "vendor_count": 393,
     "product_count": 459,
-    "generated_at": "2026-05-13T17:14:58.786Z"
+    "generated_at": "2026-05-13T20:26:48.510Z"
   }
 }
