@@ -56,11 +56,78 @@
            Community Banking Landing Page Overrides
            ========================================== */
 
+        /* FI Landscape promo banner */
+        .fi-promo-banner {
+            margin-top: 64px;
+            background: var(--forest-dark);
+            border-top: 2px solid var(--orange);
+            border-bottom: 1px solid rgba(255, 105, 0, 0.25);
+            padding: 0.85rem 0;
+        }
+        .fi-promo-banner .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.25rem;
+        }
+        .fi-promo-banner-body {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            flex: 1;
+            min-width: 0;
+        }
+        .fi-promo-badge {
+            background: var(--orange);
+            color: #fff;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.6rem;
+            border-radius: 3px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .fi-promo-text {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.9rem;
+            line-height: 1.4;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .fi-promo-text strong { color: #fff; font-weight: 600; }
+        .fi-promo-cta {
+            background: var(--orange);
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 0.5rem 1.2rem;
+            border-radius: var(--radius-sm);
+            white-space: nowrap;
+            flex-shrink: 0;
+            transition: var(--transition);
+            text-decoration: none;
+            box-shadow: 0 2px 12px rgba(255, 105, 0, 0.3);
+        }
+        .fi-promo-cta:hover {
+            background: var(--orange-light);
+            color: #fff;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px rgba(255, 105, 0, 0.5);
+        }
+        @media (max-width: 640px) {
+            .fi-promo-banner .container { flex-direction: column; gap: 0.6rem; text-align: center; }
+            .fi-promo-banner-body { flex-direction: column; gap: 0.35rem; }
+            .fi-promo-text { white-space: normal; overflow: visible; }
+        }
+
         /* Hero override for banking — light bg, green text */
         .hero {
             background: linear-gradient(170deg, var(--cream) 0%, var(--warm-white) 60%);
             min-height: auto;
-            padding: 8rem 0 6rem;
+            padding: 3.5rem 0 6rem;
         }
         .hero h1 { color: var(--forest-dark); }
         .hero .hero-lead { color: var(--text-dark); }
@@ -643,6 +710,17 @@
             </button>
         </div>
     </nav>
+
+    <!-- FI Landscape Promo Banner -->
+    <div class="fi-promo-banner" role="complementary" aria-label="Featured resource">
+        <div class="container">
+            <div class="fi-promo-banner-body">
+                <span class="fi-promo-badge">New</span>
+                <span class="fi-promo-text"><strong>The FI AI Landscape is live.</strong> 400+ vendors mapped across 50+ categories, built for community banks and credit unions.</span>
+            </div>
+            <a href="fi-landscape" class="fi-promo-cta">Explore the Map &nbsp;&rarr;</a>
+        </div>
+    </div>
 
     <!-- ==================== HERO ==================== -->
     <section class="hero">
