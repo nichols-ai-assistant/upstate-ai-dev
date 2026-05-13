@@ -19,6 +19,7 @@
               "status": "active",
               "hq_city": "Wilmington",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 1,
@@ -73,6 +74,7 @@
               "status": "active",
               "hq_city": "San Carlos",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 3,
@@ -121,6 +123,7 @@
               "status": "active",
               "hq_city": "Lehi",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 20,
@@ -179,6 +182,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 92,
@@ -235,6 +239,7 @@
               "status": "active",
               "hq_city": "Lehi",
               "hq_state": "CO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 449,
@@ -277,6 +282,7 @@
               "status": "active",
               "hq_city": "Parsippany",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 144,
@@ -321,6 +327,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 150,
@@ -369,6 +376,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 195,
@@ -423,6 +431,7 @@
               "status": "active",
               "hq_city": "Phoenix",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 453,
@@ -465,6 +474,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 392,
@@ -507,6 +517,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 114,
@@ -583,6 +594,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 115,
@@ -633,6 +645,7 @@
               "status": "active",
               "hq_city": "San Diego",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 194,
@@ -681,6 +694,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 95,
@@ -743,6 +757,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 117,
@@ -791,6 +806,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 238,
@@ -857,6 +873,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 240,
@@ -926,6 +943,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 119,
@@ -984,6 +1002,7 @@
               "status": "active",
               "hq_city": "Costa Mesa",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 6,
@@ -1140,6 +1159,7 @@
               "status": "active",
               "hq_city": "Raleigh",
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 9,
@@ -1256,6 +1276,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 332,
@@ -1309,6 +1330,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 14,
@@ -1379,6 +1401,7 @@
               "status": "active",
               "hq_city": "Indianapolis",
               "hq_state": "IN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 142,
@@ -1450,6 +1473,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 261,
@@ -1521,6 +1545,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 372,
@@ -1574,6 +1599,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 463,
@@ -1629,6 +1655,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 469,
@@ -1682,6 +1709,7 @@
               "status": "active",
               "hq_city": "Nashville",
               "hq_state": "TN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 15,
@@ -1755,6 +1783,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 288,
@@ -1827,6 +1856,7 @@
               "status": "active",
               "hq_city": "Geneva",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 303,
@@ -1886,6 +1916,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 174,
@@ -1947,6 +1978,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 240,
@@ -2016,6 +2048,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 388,
@@ -2071,6 +2104,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 241,
@@ -2145,6 +2179,7 @@
               "status": "active",
               "hq_city": "Birmingham",
               "hq_state": "AL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 242,
@@ -2198,6 +2233,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 114,
@@ -2274,6 +2310,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": "UK",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 294,
@@ -2405,6 +2442,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 4,
@@ -2526,6 +2564,7 @@
               "status": "active",
               "hq_city": "Northampton",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 11,
@@ -2597,6 +2636,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 62,
@@ -2671,6 +2711,7 @@
               "status": "active",
               "hq_city": "Foothill Ranch",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 152,
@@ -2759,6 +2800,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 408,
@@ -2833,6 +2875,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 237,
@@ -2904,6 +2947,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 430,
@@ -2980,6 +3024,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 114,
@@ -3056,6 +3101,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 5,
@@ -3123,6 +3169,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 115,
@@ -3173,6 +3220,7 @@
               "status": "active",
               "hq_city": "Olympia",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 337,
@@ -3212,6 +3260,7 @@
               "status": "active",
               "hq_city": "San Diego",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 194,
@@ -3260,6 +3309,7 @@
               "status": "active",
               "hq_city": "Wilmington",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 393,
@@ -3302,6 +3352,7 @@
               "status": "active",
               "hq_city": "Irvine",
               "hq_state": "IL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 116,
@@ -3341,6 +3392,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 117,
@@ -3389,6 +3441,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 118,
@@ -3455,6 +3508,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 430,
@@ -3523,6 +3577,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 119,
@@ -3573,6 +3628,7 @@
               "status": "active",
               "hq_city": "Costa Mesa",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 6,
@@ -3639,6 +3695,7 @@
               "status": "active",
               "hq_city": "San Carlos",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 3,
@@ -3687,6 +3744,7 @@
               "status": "active",
               "hq_city": "Wilmington",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 1,
@@ -3741,6 +3799,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 92,
@@ -3797,6 +3856,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 95,
@@ -3859,6 +3919,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 435,
@@ -3928,6 +3989,7 @@
               "status": "active",
               "hq_city": "Northampton",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 11,
@@ -3999,6 +4061,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 333,
@@ -4046,6 +4109,7 @@
               "status": "active",
               "hq_city": "Salt Lake City",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 128,
@@ -4093,6 +4157,7 @@
               "status": "active",
               "hq_city": "Nashville",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 432,
@@ -4142,6 +4207,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 447,
@@ -4191,6 +4257,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 129,
@@ -4238,6 +4305,7 @@
               "status": "active",
               "hq_city": "Monrovia",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 236,
@@ -4285,6 +4353,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 237,
@@ -4356,6 +4425,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 238,
@@ -4422,6 +4492,7 @@
               "status": "active",
               "hq_city": "Louisville",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 426,
@@ -4485,6 +4556,7 @@
               "status": "active",
               "hq_city": "Charlotte",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 433,
@@ -4548,6 +4620,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 459,
@@ -4597,6 +4670,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 130,
@@ -4670,6 +4744,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 131,
@@ -4717,6 +4792,7 @@
               "status": "active",
               "hq_city": "Raleigh",
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 9,
@@ -4789,6 +4865,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 12,
@@ -4896,6 +4973,7 @@
               "status": "active",
               "hq_city": "Indianapolis",
               "hq_state": "IN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 142,
@@ -4967,6 +5045,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 261,
@@ -5038,6 +5117,7 @@
               "status": "active",
               "hq_city": "Nashville",
               "hq_state": "TN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 15,
@@ -5111,6 +5191,7 @@
               "status": "active",
               "hq_city": "Charlotte",
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 22,
@@ -5160,6 +5241,7 @@
               "status": "active",
               "hq_city": "Detroit",
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 177,
@@ -5232,6 +5314,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 197,
@@ -5305,6 +5388,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 235,
@@ -5354,6 +5438,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 427,
@@ -5431,6 +5516,7 @@
               "status": "active",
               "hq_city": "Costa Mesa",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 7,
@@ -5492,6 +5578,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 4,
@@ -5557,6 +5644,7 @@
               "status": "active",
               "hq_city": "Lehi",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 19,
@@ -5613,6 +5701,7 @@
               "status": "active",
               "hq_city": "West Des Moines",
               "hq_state": "IA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 145,
@@ -5672,6 +5761,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": "UK",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 295,
@@ -5734,6 +5824,7 @@
               "status": "active",
               "hq_city": "San Diego",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 462,
@@ -5772,6 +5863,7 @@
               "status": "active",
               "hq_city": "Berwyn",
               "hq_state": "PA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 17,
@@ -5814,6 +5906,7 @@
               "status": "active",
               "hq_city": "Foothill Ranch",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 152,
@@ -5902,6 +5995,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 371,
@@ -5938,6 +6032,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 460,
@@ -5976,6 +6071,7 @@
               "status": "active",
               "hq_city": "Dallas",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 16,
@@ -6014,6 +6110,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 55,
@@ -6076,6 +6173,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 222,
@@ -6129,6 +6227,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 373,
@@ -6161,6 +6260,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "PA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 185,
@@ -6192,6 +6292,7 @@
               "status": "active",
               "hq_city": "Logan",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 18,
@@ -6221,6 +6322,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 246,
@@ -6250,6 +6352,7 @@
               "status": "active",
               "hq_city": "Berwyn",
               "hq_state": "PA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 17,
@@ -6292,6 +6395,7 @@
               "status": "active",
               "hq_city": "Geneva",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 303,
@@ -6351,6 +6455,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 239,
@@ -6392,6 +6497,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 12,
@@ -6440,6 +6546,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 235,
@@ -6489,6 +6596,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 239,
@@ -6522,6 +6630,7 @@
               "status": "active",
               "hq_city": "Raleigh",
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 9,
@@ -6594,6 +6703,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 54,
@@ -6659,6 +6769,7 @@
               "status": "active",
               "hq_city": "Dallas",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 16,
@@ -6697,6 +6808,7 @@
               "status": "active",
               "hq_city": "Charlotte",
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 22,
@@ -6746,6 +6858,7 @@
               "status": "active",
               "hq_city": "Sunnyvale",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 397,
@@ -6789,6 +6902,7 @@
               "status": "active",
               "hq_city": "Tampa",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 196,
@@ -6914,6 +7028,7 @@
               "status": "active",
               "hq_city": "Hoboken",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 32,
@@ -6972,6 +7087,7 @@
               "status": "active",
               "hq_city": "Portsmouth",
               "hq_state": "NH",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 33,
@@ -7029,6 +7145,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 259,
@@ -7071,6 +7188,7 @@
               "status": "active",
               "hq_city": "Brookfield",
               "hq_state": "WI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 270,
@@ -7145,6 +7263,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 344,
@@ -7200,6 +7319,7 @@
               "status": "active",
               "hq_city": "Cambridge",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 28,
@@ -7255,6 +7375,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 245,
@@ -7322,6 +7443,7 @@
               "status": "active",
               "hq_city": "Des Moines",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 321,
@@ -7377,6 +7499,7 @@
               "status": "active",
               "hq_city": "Boca Raton",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 440,
@@ -7421,6 +7544,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 25,
@@ -7463,6 +7587,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 135,
@@ -7532,6 +7657,7 @@
               "status": "active",
               "hq_city": "St. Johns",
               "hq_state": "NL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 23,
@@ -7595,6 +7721,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 191,
@@ -7722,6 +7849,7 @@
               "status": "active",
               "hq_city": "Jacksonville",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 278,
@@ -7777,6 +7905,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 403,
@@ -7835,6 +7964,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 244,
@@ -7890,6 +8020,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 29,
@@ -7945,6 +8076,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 405,
@@ -8010,6 +8142,7 @@
               "status": "active",
               "hq_city": "San Diego",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 38,
@@ -8064,6 +8197,7 @@
               "status": "active",
               "hq_city": "Lumberton",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 140,
@@ -8119,6 +8253,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 339,
@@ -8150,6 +8285,7 @@
               "status": "active",
               "hq_city": "St. Johns",
               "hq_state": "NL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 23,
@@ -8213,6 +8349,7 @@
               "status": "active",
               "hq_city": "Hoboken",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 32,
@@ -8271,6 +8408,7 @@
               "status": "active",
               "hq_city": "Brookfield",
               "hq_state": "WI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 271,
@@ -8323,6 +8461,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 345,
@@ -8365,6 +8504,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 341,
@@ -8407,6 +8547,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 343,
@@ -8449,6 +8590,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 403,
@@ -8507,6 +8649,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 407,
@@ -8566,6 +8709,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 244,
@@ -8621,6 +8765,7 @@
               "status": "active",
               "hq_city": "Johannesburg",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 404,
@@ -8680,6 +8825,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 466,
@@ -8724,6 +8870,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 29,
@@ -8779,6 +8926,7 @@
               "status": "active",
               "hq_city": "Coeur d'Alene",
               "hq_state": "ID",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 30,
@@ -8826,6 +8974,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 405,
@@ -8883,6 +9032,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 406,
@@ -8927,6 +9077,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 26,
@@ -8985,6 +9136,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 27,
@@ -9046,6 +9198,7 @@
               "status": "active",
               "hq_city": "Hoboken",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 32,
@@ -9104,6 +9257,7 @@
               "status": "active",
               "hq_city": "Cambridge",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 28,
@@ -9159,6 +9313,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 35,
@@ -9232,6 +9387,7 @@
               "status": "active",
               "hq_city": "Kalamazoo",
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 190,
@@ -9293,6 +9449,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 245,
@@ -9360,6 +9517,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 340,
@@ -9425,6 +9583,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 13,
@@ -9471,6 +9630,7 @@
               "status": "active",
               "hq_city": "St. Johns",
               "hq_state": "NL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 23,
@@ -9534,6 +9694,7 @@
               "status": "active",
               "hq_city": "Hoboken",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 31,
@@ -9598,6 +9759,7 @@
               "status": "active",
               "hq_city": "Jacksonville",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 278,
@@ -9653,6 +9815,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 24,
@@ -9699,6 +9862,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 35,
@@ -9772,6 +9936,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 188,
@@ -9831,6 +9996,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 34,
@@ -9872,6 +10038,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 243,
@@ -9930,6 +10097,7 @@
               "status": "active",
               "hq_city": "Geneva",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 305,
@@ -9971,6 +10139,7 @@
               "status": "active",
               "hq_city": "Portsmouth",
               "hq_state": "NH",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 33,
@@ -10028,6 +10197,7 @@
               "status": "active",
               "hq_city": "Elizabethtown",
               "hq_state": "KY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 155,
@@ -10103,6 +10273,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 262,
@@ -10150,6 +10321,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 344,
@@ -10205,6 +10377,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 103,
@@ -10251,6 +10424,7 @@
               "status": "active",
               "hq_city": "Waterbury",
               "hq_state": "VT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 104,
@@ -10297,6 +10471,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 245,
@@ -10364,6 +10539,7 @@
               "status": "active",
               "hq_city": "Des Moines",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 321,
@@ -10419,6 +10595,7 @@
               "status": "active",
               "hq_city": "Miami",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 429,
@@ -10487,6 +10664,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 99,
@@ -10520,6 +10698,7 @@
               "status": "active",
               "hq_city": "Alpharetta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 100,
@@ -10553,6 +10732,7 @@
               "status": "active",
               "hq_city": "Bismarck",
               "hq_state": "PA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 102,
@@ -10586,6 +10766,7 @@
               "status": "active",
               "hq_city": "Reston",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 101,
@@ -10619,6 +10800,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 103,
@@ -10665,6 +10847,7 @@
               "status": "active",
               "hq_city": "Waterbury",
               "hq_state": "VT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 104,
@@ -10711,6 +10894,7 @@
               "status": "active",
               "hq_city": "Hoboken",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 105,
@@ -10796,6 +10980,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 13,
@@ -10842,6 +11027,7 @@
               "status": "active",
               "hq_city": "St. Johns",
               "hq_state": "NL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 23,
@@ -10905,6 +11091,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 24,
@@ -10959,6 +11146,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 132,
@@ -11051,6 +11239,7 @@
               "status": "active",
               "hq_city": "Westerville",
               "hq_state": "OH",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 461,
@@ -11084,6 +11273,7 @@
               "status": "active",
               "hq_city": "Dublin",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 21,
@@ -11142,6 +11332,7 @@
               "status": "active",
               "hq_city": "San Diego",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 37,
@@ -11188,6 +11379,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 27,
@@ -11249,6 +11441,7 @@
               "status": "active",
               "hq_city": "Palo Alto",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 36,
@@ -11295,6 +11488,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 35,
@@ -11368,6 +11562,7 @@
               "status": "active",
               "hq_city": "Coeur d'Alene",
               "hq_state": "ID",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 30,
@@ -11430,6 +11625,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 120,
@@ -11466,6 +11662,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 41,
@@ -11502,6 +11699,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 42,
@@ -11566,6 +11764,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 173,
@@ -11616,6 +11815,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 346,
@@ -11652,6 +11852,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 386,
@@ -11688,6 +11889,7 @@
               "status": "active",
               "hq_city": "Orlando",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 416,
@@ -11740,6 +11942,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 47,
@@ -11776,6 +11979,7 @@
               "status": "active",
               "hq_city": "Stavanger",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 247,
@@ -11826,6 +12030,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 497,
@@ -11848,6 +12053,7 @@
               "status": "active",
               "hq_city": "Sunnyvale",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 46,
@@ -11900,6 +12106,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 45,
@@ -11954,6 +12161,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 348,
@@ -12001,6 +12209,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 43,
@@ -12108,6 +12317,7 @@
               "status": "active",
               "hq_city": "Allen",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 60,
@@ -12237,6 +12447,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 291,
@@ -12296,6 +12507,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 330,
@@ -12346,6 +12558,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 336,
@@ -12398,6 +12611,7 @@
               "status": "active",
               "hq_city": "Toronto",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 353,
@@ -12490,6 +12704,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 422,
@@ -12556,6 +12771,7 @@
               "status": "active",
               "hq_city": "Portland",
               "hq_state": "OR",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 438,
@@ -12608,6 +12824,7 @@
               "status": "active",
               "hq_city": "Nashville",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 464,
@@ -12660,6 +12877,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 399,
@@ -12714,6 +12932,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 83,
@@ -12779,6 +12998,7 @@
               "status": "active",
               "hq_city": "Lehi",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 49,
@@ -12984,6 +13204,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 424,
@@ -13041,6 +13262,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 42,
@@ -13105,6 +13327,7 @@
               "status": "active",
               "hq_city": "Ann Arbor",
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 79,
@@ -13167,6 +13390,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 107,
@@ -13228,6 +13452,7 @@
               "status": "active",
               "hq_city": "Minneapolis",
               "hq_state": "MN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 122,
@@ -13292,6 +13517,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 126,
@@ -13356,6 +13582,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 248,
@@ -13425,6 +13652,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 252,
@@ -13571,6 +13799,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 409,
@@ -13637,6 +13866,7 @@
               "status": "active",
               "hq_city": "Dublin",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 412,
@@ -13704,6 +13934,7 @@
               "status": "active",
               "hq_city": "Nashville",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 414,
@@ -13767,6 +13998,7 @@
               "status": "active",
               "hq_city": "Pasadena",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 193,
@@ -13831,6 +14063,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 249,
@@ -13908,6 +14141,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 108,
@@ -13949,6 +14183,7 @@
               "status": "active",
               "hq_city": "Indianapolis",
               "hq_state": "IN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 106,
@@ -13991,6 +14226,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 107,
@@ -14052,6 +14288,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 43,
@@ -14109,6 +14346,7 @@
               "status": "active",
               "hq_city": "Allen",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 60,
@@ -14190,6 +14428,7 @@
               "status": "active",
               "hq_city": "Denver",
               "hq_state": "CO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 124,
@@ -14239,6 +14478,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": "OH",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 57,
@@ -14308,6 +14548,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 121,
@@ -14365,6 +14606,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 50,
@@ -14422,6 +14664,7 @@
               "status": "active",
               "hq_city": "Sunnyvale",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 46,
@@ -14474,6 +14717,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 257,
@@ -14586,6 +14830,7 @@
               "status": "active",
               "hq_city": "Brookfield",
               "hq_state": "WI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 269,
@@ -14699,6 +14944,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 289,
@@ -14816,6 +15062,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 45,
@@ -14870,6 +15117,7 @@
               "status": "active",
               "hq_city": "Berkeley",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 151,
@@ -14920,6 +15168,7 @@
               "status": "active",
               "hq_city": "Elizabethtown",
               "hq_state": "KY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 155,
@@ -14995,6 +15244,7 @@
               "status": "active",
               "hq_city": "Jacksonville",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 277,
@@ -15112,6 +15362,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 287,
@@ -15230,6 +15481,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 465,
@@ -15274,6 +15526,7 @@
               "status": "active",
               "hq_city": "Framingham",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 48,
@@ -15316,6 +15569,7 @@
               "status": "active",
               "hq_city": "Kalamazoo",
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 190,
@@ -15377,6 +15631,7 @@
               "status": "active",
               "hq_city": "Scottsdale",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 401,
@@ -15421,6 +15676,7 @@
               "status": "active",
               "hq_city": "Ottawa",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 415,
@@ -15468,6 +15724,7 @@
               "status": "active",
               "hq_city": "Greeley",
               "hq_state": "CO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 439,
@@ -15512,6 +15769,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 173,
@@ -15562,6 +15820,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 252,
@@ -15708,6 +15967,7 @@
               "status": "active",
               "hq_city": "Orlando",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 416,
@@ -15760,6 +16020,7 @@
               "status": "active",
               "hq_city": "Stavanger",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 247,
@@ -15810,6 +16071,7 @@
               "status": "active",
               "hq_city": "Detroit",
               "hq_state": "OR",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 251,
@@ -15936,6 +16198,7 @@
               "status": "active",
               "hq_city": "Washington",
               "hq_state": "DC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 82,
@@ -15974,6 +16237,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 83,
@@ -16039,6 +16303,7 @@
               "status": "active",
               "hq_city": "Durham",
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 80,
@@ -16077,6 +16342,7 @@
               "status": "active",
               "hq_city": "San Diego",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 81,
@@ -16115,6 +16381,7 @@
               "status": "active",
               "hq_city": "Lehi",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 84,
@@ -16176,6 +16443,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 175,
@@ -16230,6 +16498,7 @@
               "status": "active",
               "hq_city": "Mountain View",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 446,
@@ -16270,6 +16539,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 44,
@@ -16331,6 +16601,7 @@
               "status": "active",
               "hq_city": "Ann Arbor",
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 79,
@@ -16393,6 +16664,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 442,
@@ -16433,6 +16705,7 @@
               "status": "active",
               "hq_city": "Alpharetta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 443,
@@ -16474,6 +16747,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 425,
@@ -16514,6 +16788,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 434,
@@ -16575,6 +16850,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 455,
@@ -16615,6 +16891,7 @@
               "status": "active",
               "hq_city": "Ann Arbor",
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 176,
@@ -16658,6 +16935,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 178,
@@ -16725,6 +17003,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 262,
@@ -16772,6 +17051,7 @@
               "status": "active",
               "hq_city": "Los Angeles",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 51,
@@ -16802,6 +17082,7 @@
               "status": "active",
               "hq_city": "Brentwood",
               "hq_state": "TN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 86,
@@ -16839,6 +17120,7 @@
               "status": "active",
               "hq_city": "Dallas",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 90,
@@ -16876,6 +17158,7 @@
               "status": "active",
               "hq_city": "Dallas",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 85,
@@ -16916,6 +17199,7 @@
               "status": "active",
               "hq_city": "Elizabethtown",
               "hq_state": "KY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 155,
@@ -16991,6 +17275,7 @@
               "status": "active",
               "hq_city": "Spokane",
               "hq_state": "WA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 53,
@@ -17026,6 +17311,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 52,
@@ -17069,6 +17355,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 26,
@@ -17161,6 +17448,7 @@
               "status": "active",
               "hq_city": "San Diego",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 37,
@@ -17207,6 +17495,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 27,
@@ -17268,6 +17557,7 @@
               "status": "active",
               "hq_city": "Palo Alto",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 36,
@@ -17314,6 +17604,7 @@
               "status": "active",
               "hq_city": "Charlotte",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 342,
@@ -17357,6 +17648,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 451,
@@ -17402,6 +17694,7 @@
               "status": "active",
               "hq_city": "Vancouver",
               "hq_state": "BC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 39,
@@ -17445,6 +17738,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 40,
@@ -17490,6 +17784,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 340,
@@ -17547,6 +17842,7 @@
               "status": "active",
               "hq_city": "Providence",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 394,
@@ -17592,6 +17888,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 408,
@@ -17666,6 +17963,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 427,
@@ -17735,6 +18033,7 @@
               "status": "active",
               "hq_city": "Miami",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 429,
@@ -17795,6 +18094,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 436,
@@ -17840,6 +18140,7 @@
               "status": "active",
               "hq_city": "Hoboken",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 31,
@@ -17904,6 +18205,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 407,
@@ -17963,6 +18265,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 35,
@@ -18036,6 +18339,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 288,
@@ -18108,6 +18412,7 @@
               "status": "active",
               "hq_city": "Johannesburg",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 404,
@@ -18167,6 +18472,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 243,
@@ -18233,6 +18539,7 @@
               "status": "active",
               "hq_city": "Brentwood",
               "hq_state": "TN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 86,
@@ -18270,6 +18577,7 @@
               "status": "active",
               "hq_city": "Washington",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 89,
@@ -18302,6 +18610,7 @@
               "status": "active",
               "hq_city": "Dallas",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 90,
@@ -18339,6 +18648,7 @@
               "status": "active",
               "hq_city": "Dallas",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 85,
@@ -18379,6 +18689,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 87,
@@ -18411,6 +18722,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 91,
@@ -18443,6 +18755,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 88,
@@ -18479,6 +18792,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 92,
@@ -18535,6 +18849,7 @@
               "status": "active",
               "hq_city": "Wilmington",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 2,
@@ -18572,6 +18887,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 150,
@@ -18628,6 +18944,7 @@
               "status": "active",
               "hq_city": "Wilmington",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 2,
@@ -18708,6 +19025,7 @@
               "status": "active",
               "hq_city": "Chicago",
               "hq_state": "IL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 75,
@@ -18738,6 +19056,7 @@
               "status": "active",
               "hq_city": "Menlo Park",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 78,
@@ -18768,6 +19087,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 76,
@@ -18798,6 +19118,7 @@
               "status": "active",
               "hq_city": "Parsippany",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 144,
@@ -18850,6 +19171,7 @@
               "status": "active",
               "hq_city": "Spokane",
               "hq_state": "WA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 53,
@@ -18885,6 +19207,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 52,
@@ -18920,6 +19243,7 @@
               "status": "active",
               "hq_city": "Brentwood",
               "hq_state": "TN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 110,
@@ -18949,6 +19273,7 @@
               "status": "active",
               "hq_city": "Dallas",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 113,
@@ -18993,6 +19318,7 @@
               "status": "active",
               "hq_city": "Wilmington",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 445,
@@ -19045,6 +19371,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": "UK",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 294,
@@ -19125,6 +19452,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 54,
@@ -19182,6 +19510,7 @@
               "status": "active",
               "hq_city": "Lumberton",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 141,
@@ -19275,6 +19604,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 351,
@@ -19367,6 +19697,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 352,
@@ -19417,6 +19748,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 358,
@@ -19467,6 +19799,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 359,
@@ -19517,6 +19850,7 @@
               "status": "active",
               "hq_city": "Chicago",
               "hq_state": "IL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 457,
@@ -19569,6 +19903,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 197,
@@ -19642,6 +19977,7 @@
               "status": "active",
               "hq_city": "Beaverton",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 354,
@@ -19692,6 +20028,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 355,
@@ -19744,6 +20081,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 356,
@@ -19794,6 +20132,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 357,
@@ -19844,6 +20183,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 377,
@@ -19894,6 +20234,7 @@
               "status": "active",
               "hq_city": "Melville",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 380,
@@ -19944,6 +20285,7 @@
               "status": "active",
               "hq_city": "San Diego",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 381,
@@ -19994,6 +20336,7 @@
               "status": "active",
               "hq_city": "Raleigh",
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 454,
@@ -20046,6 +20389,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 55,
@@ -20108,6 +20452,7 @@
               "status": "active",
               "hq_city": "Dallas",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 56,
@@ -20158,6 +20503,7 @@
               "status": "active",
               "hq_city": "San Diego",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 38,
@@ -20212,6 +20558,7 @@
               "status": "active",
               "hq_city": "Dayton",
               "hq_state": "OH",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 61,
@@ -20281,6 +20628,7 @@
               "status": "active",
               "hq_city": "Foothill Ranch",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 152,
@@ -20369,6 +20717,7 @@
               "status": "active",
               "hq_city": "Dublin",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 21,
@@ -20427,6 +20776,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 118,
@@ -20493,6 +20843,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 130,
@@ -20566,6 +20917,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 135,
@@ -20643,6 +20995,7 @@
               "status": "active",
               "hq_city": "Dayton",
               "hq_state": "OH",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 61,
@@ -20712,6 +21065,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 62,
@@ -20786,6 +21140,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 364,
@@ -20828,6 +21183,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 378,
@@ -20870,6 +21226,7 @@
               "status": "active",
               "hq_city": "Lombard",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 467,
@@ -20914,6 +21271,7 @@
               "status": "active",
               "hq_city": "Windsor",
               "hq_state": "CT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 63,
@@ -20956,6 +21314,7 @@
               "status": "active",
               "hq_city": "Detroit",
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 177,
@@ -21028,6 +21387,7 @@
               "status": "active",
               "hq_city": "Charlotte",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 360,
@@ -21070,6 +21430,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 362,
@@ -21112,6 +21473,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 382,
@@ -21154,6 +21516,7 @@
               "status": "active",
               "hq_city": "Charlotte",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 383,
@@ -21196,6 +21559,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 64,
@@ -21238,6 +21602,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 189,
@@ -21327,6 +21692,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 390,
@@ -21371,6 +21737,7 @@
               "status": "active",
               "hq_city": "Tel Aviv",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 391,
@@ -21415,6 +21782,7 @@
               "status": "active",
               "hq_city": "Dallas",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 431,
@@ -21501,6 +21869,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 398,
@@ -21546,6 +21915,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 328,
@@ -21669,6 +22039,7 @@
               "status": "active",
               "hq_city": "Philadelphia",
               "hq_state": "PA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 67,
@@ -21800,6 +22171,7 @@
               "status": "active",
               "hq_city": "Lexington",
               "hq_state": "KY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 109,
@@ -21829,6 +22201,7 @@
               "status": "active",
               "hq_city": "Brentwood",
               "hq_state": "TN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 110,
@@ -21858,6 +22231,7 @@
               "status": "active",
               "hq_city": "Dallas",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 113,
@@ -21887,6 +22261,7 @@
               "status": "active",
               "hq_city": "Somerset",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 111,
@@ -21916,6 +22291,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 112,
@@ -21945,6 +22321,7 @@
               "status": "active",
               "hq_city": "Spokane",
               "hq_state": "WA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 53,
@@ -21980,6 +22357,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 52,
@@ -22023,6 +22401,7 @@
               "status": "active",
               "hq_city": "Scottsdale",
               "hq_state": "AZ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 137,
@@ -22128,6 +22507,7 @@
               "status": "active",
               "hq_city": "Fort Worth",
               "hq_state": "CO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 199,
@@ -22233,6 +22613,7 @@
               "status": "active",
               "hq_city": "Falls Church",
               "hq_state": "VA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 474,
@@ -22338,6 +22719,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 302,
@@ -23102,6 +23484,7 @@
               "status": "active",
               "hq_city": "Montreal",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 361,
@@ -23207,6 +23590,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 365,
@@ -23312,6 +23696,7 @@
               "status": "active",
               "hq_city": "San Juan",
               "hq_state": "PR",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 476,
@@ -23417,6 +23802,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 484,
@@ -23522,6 +23908,7 @@
               "status": "active",
               "hq_city": "Mumbai",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 490,
@@ -23627,6 +24014,7 @@
               "status": "active",
               "hq_city": "Wilmington",
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 65,
@@ -23743,6 +24131,7 @@
               "status": "active",
               "hq_city": "Seattle",
               "hq_state": "WA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 136,
@@ -23862,6 +24251,7 @@
               "status": "active",
               "hq_city": "Raleigh",
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 138,
@@ -23978,6 +24368,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 191,
@@ -24105,6 +24496,7 @@
               "status": "active",
               "hq_city": "Avon",
               "hq_state": "CT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 200,
@@ -24210,6 +24602,7 @@
               "status": "active",
               "hq_city": "Hutchinson",
               "hq_state": "KS",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 201,
@@ -24315,6 +24708,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": "UK",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 293,
@@ -24550,6 +24944,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 327,
@@ -24657,6 +25052,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 331,
@@ -24762,6 +25158,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 334,
@@ -24867,6 +25264,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 363,
@@ -24972,6 +25370,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 468,
@@ -25179,6 +25578,7 @@
               "status": "active",
               "hq_city": "Grand Rapids",
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 471,
@@ -25284,6 +25684,7 @@
               "status": "active",
               "hq_city": "Topeka",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 480,
@@ -25389,6 +25790,7 @@
               "status": "active",
               "hq_city": "Kansas City",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 486,
@@ -25494,6 +25896,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 494,
@@ -25599,6 +26002,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 252,
@@ -25745,6 +26149,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 328,
@@ -25868,6 +26273,7 @@
               "status": "active",
               "hq_city": "Minneapolis",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 338,
@@ -25973,6 +26379,7 @@
               "status": "active",
               "hq_city": "Fishers",
               "hq_state": "IN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 437,
@@ -26078,6 +26485,7 @@
               "status": "active",
               "hq_city": "Rochester",
               "hq_state": "VA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 477,
@@ -26183,6 +26591,7 @@
               "status": "active",
               "hq_city": "Murray",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 479,
@@ -26288,6 +26697,7 @@
               "status": "active",
               "hq_city": "Ferndale",
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 482,
@@ -26393,6 +26803,7 @@
               "status": "active",
               "hq_city": "Lincoln",
               "hq_state": "NE",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 483,
@@ -26498,6 +26909,7 @@
               "status": "active",
               "hq_city": "Miami",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 485,
@@ -26695,6 +27107,7 @@
               "status": "active",
               "hq_city": "Auburn",
               "hq_state": "ME",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 488,
@@ -26800,6 +27213,7 @@
               "status": "active",
               "hq_city": "Fort Worth",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 491,
@@ -26905,6 +27319,7 @@
               "status": "active",
               "hq_city": "Tallahassee",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 492,
@@ -27010,6 +27425,7 @@
               "status": "active",
               "hq_city": "Charlotte",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 66,
@@ -27155,6 +27571,7 @@
               "status": "active",
               "hq_city": "Philadelphia",
               "hq_state": "PA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 67,
@@ -27278,6 +27695,7 @@
               "status": "active",
               "hq_city": "Miramar",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 202,
@@ -27383,6 +27801,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 203,
@@ -27516,6 +27935,7 @@
               "status": "active",
               "hq_city": "Detroit",
               "hq_state": "OR",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 251,
@@ -27634,6 +28054,7 @@
               "status": "active",
               "hq_city": "Charlotte",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 396,
@@ -27741,6 +28162,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 472,
@@ -27846,6 +28268,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 473,
@@ -27951,6 +28374,7 @@
               "status": "active",
               "hq_city": "Pensacola",
               "hq_state": "WA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 475,
@@ -28056,6 +28480,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": "LA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 478,
@@ -28161,6 +28586,7 @@
               "status": "active",
               "hq_city": "Kansas City",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 481,
@@ -28266,6 +28692,7 @@
               "status": "active",
               "hq_city": "Fayetteville",
               "hq_state": "AR",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 487,
@@ -28371,6 +28798,7 @@
               "status": "active",
               "hq_city": "Omaha",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 489,
@@ -28476,6 +28904,7 @@
               "status": "active",
               "hq_city": "Tampa",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 196,
@@ -28601,6 +29030,7 @@
               "status": "active",
               "hq_city": "Brookfield",
               "hq_state": "WI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 263,
@@ -29255,6 +29685,7 @@
               "status": "active",
               "hq_city": "Bridgewater",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 329,
@@ -29361,6 +29792,7 @@
               "status": "active",
               "hq_city": "Jacksonville",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 274,
@@ -29888,6 +30320,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 289,
@@ -30106,6 +30539,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 139,
@@ -30222,6 +30656,7 @@
               "status": "active",
               "hq_city": "Lehi",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 49,
@@ -30377,6 +30812,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 93,
@@ -30508,6 +30944,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 287,
@@ -30626,6 +31063,7 @@
               "status": "active",
               "hq_city": "San Diego",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 297,
@@ -30742,6 +31180,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 335,
@@ -30848,6 +31287,7 @@
               "status": "active",
               "hq_city": "Geneva",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 304,
@@ -31006,6 +31446,7 @@
               "status": "active",
               "hq_city": "Tampa",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 125,
@@ -31059,6 +31500,7 @@
               "status": "active",
               "hq_city": "Tacoma",
               "hq_state": "WA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 123,
@@ -31112,6 +31554,7 @@
               "status": "active",
               "hq_city": "Denver",
               "hq_state": "CO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 124,
@@ -31161,6 +31604,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 300,
@@ -31205,6 +31649,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 121,
@@ -31262,6 +31707,7 @@
               "status": "active",
               "hq_city": "Minneapolis",
               "hq_state": "MN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 122,
@@ -31326,6 +31772,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 126,
@@ -31390,6 +31837,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 248,
@@ -31459,6 +31907,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 409,
@@ -31525,6 +31974,7 @@
               "status": "active",
               "hq_city": "Dublin",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 412,
@@ -31592,6 +32042,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 423,
@@ -31638,6 +32089,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 50,
@@ -31687,6 +32139,7 @@
               "status": "active",
               "hq_city": "Ann Arbor",
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 58,
@@ -31731,6 +32184,7 @@
               "status": "active",
               "hq_city": "Pasadena",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 193,
@@ -31795,6 +32249,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 444,
@@ -31841,6 +32296,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": "OH",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 57,
@@ -31910,6 +32366,7 @@
               "status": "active",
               "hq_city": "Clearwater",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 69,
@@ -31959,6 +32416,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 250,
@@ -32012,6 +32470,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 422,
@@ -32078,6 +32537,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 249,
@@ -32147,6 +32607,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 434,
@@ -32208,6 +32669,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 241,
@@ -32290,6 +32752,7 @@
               "status": "active",
               "hq_city": "San Antonio",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 374,
@@ -32328,6 +32791,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": "OH",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 57,
@@ -32397,6 +32861,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 250,
@@ -32450,6 +32915,7 @@
               "status": "active",
               "hq_city": "Allen",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 292,
@@ -32579,6 +33045,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 249,
@@ -32648,6 +33115,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 68,
@@ -32691,6 +33159,7 @@
               "status": "active",
               "hq_city": "Tampa",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 125,
@@ -32744,6 +33213,7 @@
               "status": "active",
               "hq_city": "Lehi",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 49,
@@ -32899,6 +33369,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 108,
@@ -32988,6 +33459,7 @@
               "status": "active",
               "hq_city": "Tacoma",
               "hq_state": "WA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 123,
@@ -33041,6 +33513,7 @@
               "status": "active",
               "hq_city": "Indianapolis",
               "hq_state": "IN",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 106,
@@ -33083,6 +33556,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 121,
@@ -33140,6 +33614,7 @@
               "status": "active",
               "hq_city": "Canton",
               "hq_state": "ME",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 186,
@@ -33184,6 +33659,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 248,
@@ -33261,6 +33737,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 68,
@@ -33304,6 +33781,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 424,
@@ -33361,6 +33839,7 @@
               "status": "active",
               "hq_city": "Clearwater",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 69,
@@ -33410,6 +33889,7 @@
               "status": "active",
               "hq_city": "Ann Arbor",
               "hq_state": "MI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 176,
@@ -33453,6 +33933,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 174,
@@ -33514,6 +33995,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 410,
@@ -33569,6 +34051,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 72,
@@ -33609,6 +34092,7 @@
               "status": "active",
               "hq_city": "Northbrook",
               "hq_state": "IL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 71,
@@ -33649,6 +34133,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 260,
@@ -33682,6 +34167,7 @@
               "status": "active",
               "hq_city": "Brookfield",
               "hq_state": "WI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 272,
@@ -33715,6 +34201,7 @@
               "status": "active",
               "hq_city": "Jacksonville",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 279,
@@ -33748,6 +34235,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 70,
@@ -33788,6 +34276,7 @@
               "status": "active",
               "hq_city": "San Antonio",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 375,
@@ -33821,6 +34310,7 @@
               "status": "active",
               "hq_city": "Minneapolis",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 376,
@@ -33854,6 +34344,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 410,
@@ -33894,6 +34385,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 98,
@@ -33934,6 +34426,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 134,
@@ -33978,6 +34471,7 @@
               "status": "active",
               "hq_city": "Boise",
               "hq_state": "ID",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 73,
@@ -34011,6 +34505,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 74,
@@ -34044,6 +34539,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "GA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 97,
@@ -34077,6 +34573,7 @@
               "status": "active",
               "hq_city": "Nashville",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 414,
@@ -34140,6 +34637,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 198,
@@ -34173,6 +34671,7 @@
               "status": "active",
               "hq_city": "Minneapolis",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 428,
@@ -34209,6 +34708,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 450,
@@ -34244,6 +34744,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 98,
@@ -34284,6 +34785,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 72,
@@ -34324,6 +34826,7 @@
               "status": "active",
               "hq_city": "Northbrook",
               "hq_state": "IL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 71,
@@ -34364,6 +34867,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 70,
@@ -34419,6 +34923,7 @@
               "status": "active",
               "hq_city": "Raleigh",
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 10,
@@ -34474,6 +34979,7 @@
               "status": "active",
               "hq_city": "Canton",
               "hq_state": "ME",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 186,
@@ -34518,6 +35024,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 134,
@@ -34554,6 +35061,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 192,
@@ -34588,6 +35096,7 @@
               "status": "active",
               "hq_city": "Redwood City",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 94,
@@ -34646,6 +35155,7 @@
               "status": "active",
               "hq_city": "Lehi",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 49,
@@ -34801,6 +35311,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 93,
@@ -34932,6 +35443,7 @@
               "status": "active",
               "hq_city": "Costa Mesa",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 96,
@@ -34972,6 +35484,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 347,
@@ -35010,6 +35523,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 349,
@@ -35048,6 +35562,7 @@
               "status": "active",
               "hq_city": "Frisco",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 154,
@@ -35086,6 +35601,7 @@
               "status": "active",
               "hq_city": "Tampa",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 350,
@@ -35124,6 +35640,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 95,
@@ -35186,6 +35703,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 178,
@@ -35238,6 +35756,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 413,
@@ -35278,6 +35797,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 175,
@@ -35332,6 +35852,7 @@
               "status": "deprecated",
               "hq_city": null,
               "hq_state": "OH",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 57,
@@ -35401,6 +35922,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 195,
@@ -35455,6 +35977,7 @@
               "status": "active",
               "hq_city": "Louisville",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 426,
@@ -35518,6 +36041,7 @@
               "status": "active",
               "hq_city": "Charlotte",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 433,
@@ -35589,6 +36113,7 @@
               "status": "active",
               "hq_city": "Chicago",
               "hq_state": "IL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 75,
@@ -35619,6 +36144,7 @@
               "status": "active",
               "hq_city": "Menlo Park",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 78,
@@ -35649,6 +36175,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 76,
@@ -35679,6 +36206,7 @@
               "status": "active",
               "hq_city": "Freemont",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 77,
@@ -35707,6 +36235,7 @@
               "status": "active",
               "hq_city": "Wilmington",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 2,
@@ -35744,6 +36273,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 88,
@@ -35788,6 +36318,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 139,
@@ -35904,6 +36435,7 @@
               "status": "active",
               "hq_city": "Brookfield",
               "hq_state": "WI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 273,
@@ -36043,6 +36575,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 59,
@@ -36085,6 +36618,7 @@
               "status": "active",
               "hq_city": "Jacksonville",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 280,
@@ -36226,6 +36760,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 411,
@@ -36310,6 +36845,7 @@
               "status": "active",
               "hq_city": "Portland",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 441,
@@ -36355,6 +36891,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 435,
@@ -36416,6 +36953,7 @@
               "status": "active",
               "hq_city": "Redwood City",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 94,
@@ -36474,6 +37012,7 @@
               "status": "active",
               "hq_city": "Lehi",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 19,
@@ -36577,6 +37116,7 @@
               "status": "active",
               "hq_city": "Wilmington",
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 65,
@@ -36693,6 +37233,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 93,
@@ -36824,6 +37365,7 @@
               "status": "active",
               "hq_city": "Seattle",
               "hq_state": "WA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 136,
@@ -36943,6 +37485,7 @@
               "status": "active",
               "hq_city": "Raleigh",
               "hq_state": "NC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 138,
@@ -37059,6 +37602,7 @@
               "status": "active",
               "hq_city": "San Diego",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 297,
@@ -37175,6 +37719,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 203,
@@ -37308,6 +37853,7 @@
               "status": "active",
               "hq_city": "Portland",
               "hq_state": "OR",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 253,
@@ -37390,6 +37936,7 @@
               "status": "active",
               "hq_city": "Denver",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 417,
@@ -37482,6 +38029,7 @@
               "status": "active",
               "hq_city": "Wilmington",
               "hq_state": "DE",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 209,
@@ -37515,6 +38063,7 @@
               "status": "active",
               "hq_city": "Pasadena",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 210,
@@ -37548,6 +38097,7 @@
               "status": "active",
               "hq_city": "Fort Lee",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 208,
@@ -37581,6 +38131,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": "UT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 211,
@@ -37614,6 +38165,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 206,
@@ -37649,6 +38201,7 @@
               "status": "active",
               "hq_city": "Austin",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 290,
@@ -37761,6 +38314,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 203,
@@ -37894,6 +38448,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 205,
@@ -37927,6 +38482,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 207,
@@ -37960,6 +38516,7 @@
               "status": "active",
               "hq_city": "Los Angeles",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 395,
@@ -37995,6 +38552,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 456,
@@ -38117,6 +38675,7 @@
               "status": "active",
               "hq_city": "Washington",
               "hq_state": "DC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 229,
@@ -38149,6 +38708,7 @@
               "status": "active",
               "hq_city": "Washington",
               "hq_state": "DC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 230,
@@ -38181,6 +38741,7 @@
               "status": "active",
               "hq_city": "Chicago",
               "hq_state": "IL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 227,
@@ -38213,6 +38774,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 231,
@@ -38245,6 +38807,7 @@
               "status": "active",
               "hq_city": "Washington",
               "hq_state": "DC",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 233,
@@ -38277,6 +38840,7 @@
               "status": "active",
               "hq_city": "Natick",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 224,
@@ -38309,6 +38873,7 @@
               "status": "active",
               "hq_city": "Norwell",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 225,
@@ -38341,6 +38906,7 @@
               "status": "active",
               "hq_city": "Scottsdale",
               "hq_state": "AZ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 226,
@@ -38373,6 +38939,7 @@
               "status": "active",
               "hq_city": "Madison",
               "hq_state": "WI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 228,
@@ -38405,6 +38972,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 232,
@@ -38452,6 +39020,7 @@
               "status": "active",
               "hq_city": "Scottsdale",
               "hq_state": "AZ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 217,
@@ -38517,6 +39086,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 216,
@@ -38582,6 +39152,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 258,
@@ -38772,6 +39343,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 318,
@@ -38837,6 +39409,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 387,
@@ -38902,6 +39475,7 @@
               "status": "active",
               "hq_city": "Jacksonville",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 281,
@@ -39041,6 +39615,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 313,
@@ -39106,6 +39681,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 316,
@@ -39171,6 +39747,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 325,
@@ -39236,6 +39813,7 @@
               "status": "active",
               "hq_city": "Greenwood Village",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 419,
@@ -39305,6 +39883,7 @@
               "status": "active",
               "hq_city": "Portland",
               "hq_state": "ME",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 452,
@@ -39373,6 +39952,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 470,
@@ -39438,6 +40018,7 @@
               "status": "active",
               "hq_city": "Denver",
               "hq_state": "CO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 212,
@@ -39503,6 +40084,7 @@
               "status": "active",
               "hq_city": "Des Moines",
               "hq_state": "IA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 213,
@@ -39568,6 +40150,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": "UK",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 296,
@@ -39710,6 +40293,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 314,
@@ -39777,6 +40361,7 @@
               "status": "active",
               "hq_city": "Houston",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 315,
@@ -39842,6 +40427,7 @@
               "status": "active",
               "hq_city": "Minneapolis",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 317,
@@ -39907,6 +40493,7 @@
               "status": "active",
               "hq_city": "Atlanta",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 319,
@@ -39972,6 +40559,7 @@
               "status": "active",
               "hq_city": "Des Moines",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 320,
@@ -40037,6 +40625,7 @@
               "status": "active",
               "hq_city": "Portland",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 322,
@@ -40102,6 +40691,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 323,
@@ -40167,6 +40757,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 326,
@@ -40232,6 +40823,7 @@
               "status": "active",
               "hq_city": "Bellingham",
               "hq_state": "WA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 448,
@@ -40299,6 +40891,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 214,
@@ -40364,6 +40957,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 215,
@@ -40437,6 +41031,7 @@
               "status": "active",
               "hq_city": "Portland",
               "hq_state": "OR",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 253,
@@ -40519,6 +41114,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 324,
@@ -40584,6 +41180,7 @@
               "status": "active",
               "hq_city": "Rochester",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 384,
@@ -40649,6 +41246,7 @@
               "status": "active",
               "hq_city": "Minneapolis",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 385,
@@ -40714,6 +41312,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 389,
@@ -40781,6 +41380,7 @@
               "status": "active",
               "hq_city": "Denver",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 417,
@@ -40865,6 +41465,7 @@
               "status": "active",
               "hq_city": "Portland",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 418,
@@ -40932,6 +41533,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 420,
@@ -40999,6 +41601,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 421,
@@ -41066,6 +41669,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 351,
@@ -41158,6 +41762,7 @@
               "status": "active",
               "hq_city": "Toronto",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 353,
@@ -41250,6 +41855,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 411,
@@ -41334,6 +41940,7 @@
               "status": "active",
               "hq_city": "Charlotte",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 66,
@@ -41479,6 +42086,7 @@
               "status": "active",
               "hq_city": "Geneva",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 304,
@@ -41622,6 +42230,7 @@
               "status": "active",
               "hq_city": "Dallas",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 431,
@@ -41708,6 +42317,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": "CT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 234,
@@ -41792,6 +42402,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 223,
@@ -41824,6 +42435,7 @@
               "status": "active",
               "hq_city": "Boston",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 218,
@@ -41856,6 +42468,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 220,
@@ -41888,6 +42501,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 219,
@@ -41920,6 +42534,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 222,
@@ -41965,6 +42580,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 203,
@@ -42098,6 +42714,7 @@
               "status": "active",
               "hq_city": "Wilmington",
               "hq_state": "SD",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 221,
@@ -42130,6 +42747,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": "CT",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 234,
@@ -42206,6 +42824,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 400,
@@ -42242,6 +42861,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 215,
@@ -42330,6 +42950,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 107,
@@ -42391,6 +43012,7 @@
               "status": "active",
               "hq_city": "Cambridge",
               "hq_state": "MA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 309,
@@ -42417,6 +43039,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 402,
@@ -42445,6 +43068,7 @@
               "status": "active",
               "hq_city": "Ottawa",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 415,
@@ -42500,6 +43124,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 366,
@@ -42531,6 +43156,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 367,
@@ -42562,6 +43188,7 @@
               "status": "active",
               "hq_city": "Anaheim",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 368,
@@ -42593,6 +43220,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 370,
@@ -42624,6 +43252,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 379,
@@ -42655,6 +43284,7 @@
               "status": "active",
               "hq_city": "San Jose",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 310,
@@ -42686,6 +43316,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 369,
@@ -42717,6 +43348,7 @@
               "status": "active",
               "hq_city": "Hoboken",
               "hq_state": "NJ",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 458,
@@ -42750,6 +43382,7 @@
               "status": "active",
               "hq_city": null,
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 496,
@@ -42789,6 +43422,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 348,
@@ -42828,6 +43462,7 @@
               "status": "active",
               "hq_city": "Armonk",
               "hq_state": "WA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 307,
@@ -42854,6 +43489,7 @@
               "status": "active",
               "hq_city": "San Francisco",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 311,
@@ -42880,6 +43516,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 312,
@@ -42921,6 +43558,7 @@
               "status": "active",
               "hq_city": "Brookfield",
               "hq_state": "WI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 263,
@@ -43199,6 +43837,7 @@
               "status": "active",
               "hq_city": "Jacksonville",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 274,
@@ -43392,6 +44031,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 254,
@@ -43755,6 +44395,7 @@
               "status": "active",
               "hq_city": "Elizabethtown",
               "hq_state": "KY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 155,
@@ -43838,6 +44479,7 @@
               "status": "active",
               "hq_city": "London",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 456,
@@ -43952,6 +44594,7 @@
               "status": "active",
               "hq_city": "Brookfield",
               "hq_state": "WI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 268,
@@ -44061,6 +44704,7 @@
               "status": "active",
               "hq_city": "Jacksonville",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 276,
@@ -44172,6 +44816,7 @@
               "status": "active",
               "hq_city": "Geneva",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 304,
@@ -44323,6 +44968,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 256,
@@ -44421,6 +45067,7 @@
               "status": "active",
               "hq_city": "San Diego",
               "hq_state": "CA",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 297,
@@ -44537,6 +45184,7 @@
               "status": "active",
               "hq_city": "Brookfield",
               "hq_state": "WI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 267,
@@ -44739,6 +45387,7 @@
               "status": "active",
               "hq_city": "Bridgewater",
               "hq_state": null,
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 329,
@@ -44845,6 +45494,7 @@
               "status": "active",
               "hq_city": "Monett",
               "hq_state": "MO",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 257,
@@ -44957,6 +45607,7 @@
               "status": "active",
               "hq_city": "Brookfield",
               "hq_state": "WI",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 269,
@@ -45070,6 +45721,7 @@
               "status": "active",
               "hq_city": "Allen",
               "hq_state": "TX",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 60,
@@ -45151,6 +45803,7 @@
               "status": "active",
               "hq_city": "Jacksonville",
               "hq_state": "FL",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 277,
@@ -45268,6 +45921,7 @@
               "status": "active",
               "hq_city": "New York",
               "hq_state": "NY",
+              "founded_year": null,
               "products": [
                 {
                   "product_id": 335,
@@ -45388,6 +46042,6 @@
   "meta": {
     "vendor_count": 392,
     "product_count": 460,
-    "generated_at": "2026-05-13T16:30:00.579Z"
+    "generated_at": "2026-05-13T16:44:31.927Z"
   }
 }

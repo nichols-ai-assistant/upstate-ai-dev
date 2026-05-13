@@ -1453,6 +1453,10 @@
                 ? '<div class="modal-meta-item"><div class="modal-meta-label">HQ</div><div class="modal-meta-value">' + escHtml(hqParts.join(', ')) + '</div></div>'
                 : '';
 
+            var foundedHtml = vendor.founded_year
+                ? '<div class="modal-meta-item"><div class="modal-meta-label">Founded</div><div class="modal-meta-value">' + escHtml(String(vendor.founded_year)) + '</div></div>'
+                : '';
+
             var homepageHtml = vendor.homepage_url
                 ? '<a class="modal-link" href="' + escHtml(vendor.homepage_url) + '" target="_blank" rel="noopener">Visit Website &#x2197;</a>'
                 : '';
@@ -1480,6 +1484,7 @@
                     (tier ? '<div class="modal-meta-item"><div class="modal-meta-label">Adoption Tier</div><div class="modal-meta-value"><span class="modal-tier-badge modal-tier-badge-' + tier + '" style="background:' + TIER_COLORS[tier] + '">' + escHtml(TIER_LABELS[tier]) + '</span></div></div>' : '') +
                     '<div class="modal-meta-item"><div class="modal-meta-label">Segment</div><div class="modal-meta-value">' + escHtml(MODAL_SEG_LABELS[seg] || seg) + '</div></div>' +
                     hqHtml +
+                    foundedHtml +
                     mcpHtml +
                 '</div>' +
                 homepageHtml;
