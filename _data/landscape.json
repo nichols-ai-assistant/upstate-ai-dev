@@ -19236,6 +19236,29 @@
               ]
             },
             {
+              "vendor_id": 422,
+              "name": "Finosec",
+              "homepage_url": "https://finosec.com",
+              "logo_url": "/fi-landscape-logos/422.png",
+              "status": "active",
+              "hq_city": "Alpharetta",
+              "hq_state": "GA",
+              "founded_year": 2018,
+              "products": [
+                {
+                  "product_id": 498,
+                  "product_name": "Finosec Governance 360",
+                  "description": "Automated cybersecurity governance platform for community FIs; covers InfoSec governance, FFIEC CAT replacement, user access reporting, and vendor risk management.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 76,
               "name": "Ncontracts",
               "homepage_url": "https://www.ncontracts.com",
@@ -22381,6 +22404,29 @@
                     155,
                     262
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 422,
+              "name": "Finosec",
+              "homepage_url": "https://finosec.com",
+              "logo_url": "/fi-landscape-logos/422.png",
+              "status": "active",
+              "hq_city": "Alpharetta",
+              "hq_state": "GA",
+              "founded_year": 2018,
+              "products": [
+                {
+                  "product_id": 498,
+                  "product_name": "Finosec Governance 360",
+                  "description": "Automated cybersecurity governance platform for community FIs; covers InfoSec governance, FFIEC CAT replacement, user access reporting, and vendor risk management.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -36946,6 +36992,29 @@
               ]
             },
             {
+              "vendor_id": 139,
+              "name": "CSI",
+              "homepage_url": "https://www.csiweb.com",
+              "logo_url": "/fi-landscape-logos/139.png",
+              "status": "active",
+              "hq_city": "Paducah",
+              "hq_state": "KY",
+              "founded_year": 1965,
+              "products": [
+                {
+                  "product_id": 499,
+                  "product_name": "CSI Open Banking Marketplace",
+                  "description": "Partner integration marketplace for CSI core banking clients; 67 vetted fintech solutions across lending, payments, digital banking, compliance, and card services.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 84,
               "name": "Envestnet | Yodlee",
               "homepage_url": "https://www.yodlee.com",
@@ -44460,6 +44529,17 @@
                     465
                   ],
                   "integration_ids": []
+                },
+                {
+                  "product_id": 499,
+                  "product_name": "CSI Open Banking Marketplace",
+                  "description": "Partner integration marketplace for CSI core banking clients; 67 vetted fintech solutions across lending, payments, digital banking, compliance, and card services.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             }
@@ -46040,8 +46120,8 @@
     }
   ],
   "meta": {
-    "vendor_count": 392,
-    "product_count": 457,
-    "generated_at": "2026-05-13T17:10:20.620Z"
+    "vendor_count": 393,
+    "product_count": 459,
+    "generated_at": "2026-05-13T17:14:58.786Z"
   }
 }
