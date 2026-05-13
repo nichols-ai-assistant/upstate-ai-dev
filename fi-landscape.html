@@ -94,7 +94,7 @@
             color: var(--forest);
             opacity: 0.6;
             text-align: left;
-            padding: 0.4rem 1.5rem 0;
+            padding: 0.25rem 0 0.5rem;
             margin: 0;
         }
 
@@ -703,10 +703,11 @@
             box-shadow: 0 24px 80px rgba(0,0,0,0.3);
             width: min(560px, 92vw);
             max-height: 85vh;
-            overflow-y: auto;
-            padding: 2rem;
+            overflow: hidden;
+            padding: 0;
+            flex-direction: column;
         }
-        .product-modal.open { display: block; }
+        .product-modal.open { display: flex; }
 
         /* Category modal variant */
         .cat-modal { width: min(620px, 92vw); }
@@ -756,9 +757,9 @@
         .cat-modal-show-btn:hover { opacity: 0.85; }
 
         .modal-close-btn {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
+            position: static;
+            align-self: flex-end;
+            margin: 0.75rem 0.75rem 0 0;
             background: rgba(45,87,69,0.08);
             border: none;
             width: 32px;
@@ -774,6 +775,14 @@
             flex-shrink: 0;
         }
         .modal-close-btn:hover { background: rgba(45,87,69,0.16); }
+
+        /* Scrollable content area inside modal */
+        #modal-content, #cat-modal-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0 2rem 2rem;
+            min-height: 0;
+        }
 
         .modal-vendor-logo {
             width: 64px;
@@ -1027,12 +1036,12 @@
     <div style="background: var(--cream); border-bottom: 1px solid rgba(45,87,69,0.15);">
         <div class="container">
             <div class="filter-chips-bar" id="filter-bar" aria-live="polite"></div>
+            <p class="landscape-update-line" id="meta-line"></p>
         </div>
     </div>
 
     <!-- ==================== LANDSCAPE GRID ==================== -->
     <section class="landscape-body">
-        <p class="landscape-update-line" id="meta-line"></p>
         <div class="container" id="landscape-root">
             <p style="color: var(--text-muted); font-style:italic;">Loading landscape data&hellip;</p>
         </div>
@@ -1567,6 +1576,7 @@
                     state.competitorFilter = { productName: productName, ids: competitorIds };
                     state.competitorSourceT2s = new Set(t2sByProductId[primary.product_id] || []);
                     update();
+                    scrollToGrid();
                 });
             }
             var ecoBtn = document.getElementById('modal-btn-ecosystem');
@@ -1591,6 +1601,7 @@
                     state.ecosystemFilter = { productName: productName, ids: integrationIds };
                     state.ecosystemSourceT2s = new Set(t2sByProductId[primary.product_id] || []);
                     update();
+                    scrollToGrid();
                 });
             }
         }
@@ -1678,6 +1689,15 @@
         function update() {
             render();
             renderFilterBar();
+        }
+
+        // ---- Scroll viewport to top of vendor grid ----
+        function scrollToGrid() {
+            var filterBar = document.getElementById('category-filter-bar');
+            if (filterBar) {
+                var y = filterBar.getBoundingClientRect().top + window.scrollY - 8;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }
         }
 
         // ---- Reset all filters to defaults ----
