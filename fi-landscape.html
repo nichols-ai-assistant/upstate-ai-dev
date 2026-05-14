@@ -142,6 +142,10 @@
         }
 
         /* Toggle bar — always visible */
+        @keyframes fi-pulse {
+            0%, 100% { box-shadow: none; }
+            50%  { box-shadow: 0 0 0 2px rgba(255,105,0,0.55), 0 0 14px rgba(255,105,0,0.18); }
+        }
         .filter-toggle-bar {
             display: flex;
             align-items: center;
@@ -152,6 +156,9 @@
             margin: 0 auto;
             cursor: pointer;
             user-select: none;
+        }
+        .filter-toggle-bar.pulsing {
+            animation: fi-pulse 1.6s ease-in-out infinite;
         }
         .filter-toggle-left {
             display: flex;
@@ -1982,7 +1989,7 @@
 
         function getStoredExpanded() {
             var stored = localStorage.getItem(LS_KEY);
-            if (stored === null) return isDesktop(); // default: expanded on desktop, collapsed on mobile
+            if (stored === null) return false; // default: always collapsed on page load
             return stored === 'true';
         }
 
@@ -1992,7 +1999,15 @@
             localStorage.setItem(LS_KEY, String(expanded));
         }
 
+        // ---- Pulse: stop on timeout, click, or scroll past hero ----
+        var _pulseTimer = null;
+        function stopPulse() {
+            filterToggleBar.classList.remove('pulsing');
+            if (_pulseTimer) { clearTimeout(_pulseTimer); _pulseTimer = null; }
+        }
+
         filterToggleBar.addEventListener('click', function(e) {
+            stopPulse();
             var nowExpanded = filterPanel.classList.contains('expanded');
             setFilterExpanded(!nowExpanded);
         });
@@ -2009,7 +2024,22 @@
         });
 
         // Initialize from localStorage / viewport default
-        setFilterExpanded(getStoredExpanded());
+        var _initExpanded = getStoredExpanded();
+        setFilterExpanded(_initExpanded);
+
+        // Pulse the filter toggle when starting collapsed
+        if (!_initExpanded) {
+            filterToggleBar.classList.add('pulsing');
+            _pulseTimer = setTimeout(stopPulse, 10000);
+            // Stop pulse once user scrolls past the hero
+            var _heroEl = document.querySelector('.landscape-hero');
+            if (_heroEl && window.IntersectionObserver) {
+                var _heroObs = new IntersectionObserver(function(entries) {
+                    if (!entries[0].isIntersecting) { stopPulse(); _heroObs.disconnect(); }
+                }, { threshold: 0 });
+                _heroObs.observe(_heroEl);
+            }
+        }
 
         // Show/hide the Reset button based on active filters
         function updateFilterSummary() {
