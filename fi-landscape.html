@@ -1508,31 +1508,36 @@
                 (function(card) {
                     card.addEventListener('click', function() {
                         var vendorId = parseInt(card.dataset.vendorId, 10);
-                        openModal(vendorId);
+                        var t2Code = card.dataset.t2 || null;
+                        openModal(vendorId, t2Code);
                     });
                 })(cards[i]);
             }
         }
 
         // ---- Modal ----
-        function findVendorById(vendorId) {
+        function findVendorById(vendorId, t2Code) {
             if (!state.data) return null;
+            var fallback = null;
             for (var i = 0; i < state.data.categories.length; i++) {
                 var cat = state.data.categories[i];
                 for (var j = 0; j < cat.subcategories.length; j++) {
                     var sub = cat.subcategories[j];
                     for (var k = 0; k < sub.vendors.length; k++) {
                         if (sub.vendors[k].vendor_id === vendorId) {
-                            return { vendor: sub.vendors[k], t1: cat, t2: sub };
+                            if (t2Code && sub.code === t2Code) {
+                                return { vendor: sub.vendors[k], t1: cat, t2: sub };
+                            }
+                            if (!fallback) fallback = { vendor: sub.vendors[k], t1: cat, t2: sub };
                         }
                     }
                 }
             }
-            return null;
+            return fallback;
         }
 
-        function openModal(vendorId) {
-            var found = findVendorById(vendorId);
+        function openModal(vendorId, t2Code) {
+            var found = findVendorById(vendorId, t2Code);
             if (!found) return;
             var vendor = found.vendor;
             var t1 = found.t1;
