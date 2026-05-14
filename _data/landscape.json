@@ -7725,6 +7725,29 @@
               ]
             },
             {
+              "vendor_id": 451,
+              "name": "True Link Financial",
+              "homepage_url": "https://www.truelinkfinancial.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 569,
+                  "product_name": "True Link Prepaid Card Platform",
+                  "description": "White-label prepaid card and spending management platform for banks serving vulnerable populations; includes real-time transaction controls and scam blocking.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 160,
               "name": "Alacriti",
               "homepage_url": "https://www.alacriti.com",
@@ -8475,6 +8498,29 @@
                     405,
                     440
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 423,
+              "name": "ARGO",
+              "homepage_url": "https://argodata.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 541,
+                  "product_name": "ARGO Branch & Teller Platform",
+                  "description": "Teller transaction processing, branch deposit operations, and omnichannel account opening software for banks and credit unions; covers real-time fraud detection at the teller line and BSA/AML screening.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -12114,6 +12160,29 @@
               ]
             },
             {
+              "vendor_id": 439,
+              "name": "Infobip",
+              "homepage_url": "https://www.infobip.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 557,
+                  "product_name": "Infobip Communications Platform",
+                  "description": "Omnichannel communications platform (SMS, RCS, email, voice, chat) for financial institutions; handles transactional alerts, OTPs, conversational banking, and contact center messaging at enterprise scale.",
+                  "pervasiveness_tier": 6,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 34,
               "name": "Eltropy",
               "homepage_url": "https://eltropy.com",
@@ -12695,6 +12764,29 @@
               ]
             },
             {
+              "vendor_id": 450,
+              "name": "SundaySky",
+              "homepage_url": "https://sundaysky.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 568,
+                  "product_name": "SundaySky Personalized Video",
+                  "description": "Personalized video platform for banks; creates individualized video content for customer onboarding, digital adoption, cross-sell, and loyalty programs.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 275,
               "name": "Doxim",
               "homepage_url": "https://www.doxim.com",
@@ -12957,6 +13049,29 @@
                   "integration_ids": [
                     329
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 426,
+              "name": "ampliFI Loyalty Solutions",
+              "homepage_url": "https://www.amplifiloyalty.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 544,
+                  "product_name": "ampliFI Loyalty & Rewards",
+                  "description": "Cardholder loyalty and rewards platform for banks and credit unions; manages earning, redemption, branded portals, and engagement analytics across debit and credit card programs.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -13342,6 +13457,29 @@
                   "integration_ids": [
                     289
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 447,
+              "name": "Sitecore",
+              "homepage_url": "https://www.sitecore.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 565,
+                  "product_name": "Sitecore Digital Experience Platform",
+                  "description": "Enterprise digital experience and content management platform used by large banks to deliver personalized web and mobile banking portals, content optimization, and omnichannel customer journeys.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -14215,6 +14353,75 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 424,
+              "name": "AiVantage",
+              "homepage_url": "https://aivantage.org",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 542,
+                  "product_name": "AiVantage Marketing Platform",
+                  "description": "Personalized marketing and member engagement platform for community banks and credit unions; delivers email and SMS campaigns and marketing automation at the institution level.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 429,
+              "name": "BlastPoint",
+              "homepage_url": "https://blastpoint.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2016,
+              "products": [
+                {
+                  "product_id": 547,
+                  "product_name": "BlastPoint Customer Intelligence",
+                  "description": "Customer intelligence platform for banks and credit unions delivering predictive segmentation, propensity scoring for deposits and loans, branch optimization, and lifecycle engagement using internal and external data.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 438,
+              "name": "Fibr AI",
+              "homepage_url": "https://fibr.ai",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2023,
+              "products": [
+                {
+                  "product_id": 556,
+                  "product_name": "Fibr AI Website Personalization",
+                  "description": "Website personalization and A/B testing platform that adapts landing pages in real time based on visitor intent for digital acquisition and product conversion optimization.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -14690,6 +14897,29 @@
               ]
             },
             {
+              "vendor_id": 427,
+              "name": "Avannis",
+              "homepage_url": "https://us.avannis.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 545,
+                  "product_name": "Avannis CX Measurement",
+                  "description": "Customer experience measurement and voice-of-customer survey platform for community banks; provides bank-specific touchpoint studies, industry benchmarking, and closed-loop coaching tools.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 38,
               "name": "Digital Onboarding",
               "homepage_url": "https://www.digitalonboarding.com",
@@ -14747,6 +14977,52 @@
           "description": "Digital customer service AI encompasses AI-assisted contact center tools, live chat AI, co-browsing platforms, intelligent IVR, and agent-assist solutions that augment human service representatives with real-time guidance, automated transcription, and knowledge base surfacing. Products in this category improve both the customer experience and agent efficiency across voice and digital service channels. Contact center managers, retail banking operations, and COOs are the buyers.",
           "ai_opportunities": "Real-time agent-assist AI that surfaces relevant account information, suggests responses, and prompts compliance disclosures during live customer calls is enabling community banks and credit unions to improve first-call resolution rates while reducing agent training time and handling average call duration.",
           "vendors": [
+            {
+              "vendor_id": 439,
+              "name": "Infobip",
+              "homepage_url": "https://www.infobip.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 557,
+                  "product_name": "Infobip Communications Platform",
+                  "description": "Omnichannel communications platform (SMS, RCS, email, voice, chat) for financial institutions; handles transactional alerts, OTPs, conversational banking, and contact center messaging at enterprise scale.",
+                  "pervasiveness_tier": 6,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 453,
+              "name": "Verint",
+              "homepage_url": "https://www.verint.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 571,
+                  "product_name": "Verint Customer Engagement Platform",
+                  "description": "Customer engagement and workforce analytics platform for banking contact centers; provides speech analytics, quality management, workforce management, and coaching tools.",
+                  "pervasiveness_tier": 6,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
             {
               "vendor_id": 34,
               "name": "Eltropy",
@@ -15621,6 +15897,29 @@
               ]
             },
             {
+              "vendor_id": 448,
+              "name": "Solutions By Text",
+              "homepage_url": "https://solutionsbytext.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 566,
+                  "product_name": "Solutions By Text FinText",
+                  "description": "Compliance-focused text messaging platform for banks and credit unions; covers two-way account servicing, payment reminders, loan origination notifications, collections, and marketing campaigns.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 36,
               "name": "Engageware",
               "homepage_url": "https://www.engageware.com",
@@ -15860,6 +16159,75 @@
                   "integration_ids": [
                     60
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 427,
+              "name": "Avannis",
+              "homepage_url": "https://us.avannis.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 545,
+                  "product_name": "Avannis CX Measurement",
+                  "description": "Customer experience measurement and voice-of-customer survey platform for community banks; provides bank-specific touchpoint studies, industry benchmarking, and closed-loop coaching tools.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 445,
+              "name": "Ozmo",
+              "homepage_url": "https://ozmo.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 563,
+                  "product_name": "Ozmo Digital Support Platform",
+                  "description": "Digital banking support platform providing virtual app emulators and interactive self-serve tutorials for contact center agents and customers to resolve mobile and online banking issues.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 452,
+              "name": "VeriPark",
+              "homepage_url": "https://www.veripark.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 570,
+                  "product_name": "VeriTouch Banking CRM",
+                  "description": "CRM and customer engagement platform built on Microsoft Dynamics 365 for retail, SME, and corporate banks; covers onboarding, sales, contact center, complaints, and loyalty management.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -16476,6 +16844,52 @@
               ]
             },
             {
+              "vendor_id": 428,
+              "name": "Banzai",
+              "homepage_url": "https://www.banzai.org",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 546,
+                  "product_name": "Banzai Financial Education",
+                  "description": "Financial literacy content platform that banks and credit unions co-brand for account holders, schools, and communities; provides interactive financial education resources with CRA credit documentation.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 451,
+              "name": "True Link Financial",
+              "homepage_url": "https://www.truelinkfinancial.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 569,
+                  "product_name": "True Link Prepaid Card Platform",
+                  "description": "White-label prepaid card and spending management platform for banks serving vulnerable populations; includes real-time transaction controls and scam blocking.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 37,
               "name": "MX Technologies",
               "homepage_url": "https://www.mx.com",
@@ -16982,6 +17396,29 @@
                   "integration_ids": [
                     60
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 442,
+              "name": "LemonadeLXP",
+              "homepage_url": "https://www.lemonadelxp.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 560,
+                  "product_name": "LemonadeLXP Learning Platform",
+                  "description": "Learning experience platform for financial institutions; delivers employee onboarding, compliance training, product knowledge, and customer digital education.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -18873,6 +19310,29 @@
               ]
             },
             {
+              "vendor_id": 440,
+              "name": "Kadince",
+              "homepage_url": "https://www.kadince.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 558,
+                  "product_name": "Kadince CRA Management",
+                  "description": "Compliance and community investment management software for banks and credit unions; centralizes CRA tracking of donations, service hours, loans, and investments with geocoding, exam reporting, and fair lending documentation.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 78,
               "name": "FairPlay AI",
               "homepage_url": "https://fairplay.ai",
@@ -19462,6 +19922,29 @@
                     111,
                     112
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 440,
+              "name": "Kadince",
+              "homepage_url": "https://www.kadince.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 558,
+                  "product_name": "Kadince CRA Management",
+                  "description": "Compliance and community investment management software for banks and credit unions; centralizes CRA tracking of donations, service hours, loans, and investments with geocoding, exam reporting, and fair lending documentation.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -22198,6 +22681,29 @@
                     493,
                     494
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 435,
+              "name": "Creatio",
+              "homepage_url": "https://www.creatio.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 553,
+                  "product_name": "Creatio Banking CRM",
+                  "description": "No-code CRM and workflow automation platform with banking use cases for front and middle office; covers customer onboarding, lending, deposit accounts, contact center, and compliance workflows.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -31655,6 +32161,29 @@
           "ai_opportunities": "AI that can dynamically select the optimal channel, message, and timing for each individual member or customer — based on their recent transaction behavior and engagement history — is enabling community banks and credit unions to achieve campaign conversion rates previously possible only for large banks with sophisticated marketing operations.",
           "vendors": [
             {
+              "vendor_id": 454,
+              "name": "Zeta Global",
+              "homepage_url": "https://zetaglobal.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 572,
+                  "product_name": "Zeta Marketing Platform",
+                  "description": "Marketing data and activation platform for financial services; uses consumer profiles and behavioral intent signals for customer acquisition, credit product campaigns, and omnichannel personalization.",
+                  "pervasiveness_tier": 6,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 113,
               "name": "Rise Analytics",
               "homepage_url": "https://riseanalytics.com",
@@ -31853,6 +32382,52 @@
                     434,
                     444
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 436,
+              "name": "Dianomi",
+              "homepage_url": "https://www.dianomi.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 554,
+                  "product_name": "Dianomi Financial Content Advertising",
+                  "description": "Native advertising and sponsored content platform connecting financial brands to audiences across premium financial and business publisher sites for digital customer acquisition.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 444,
+              "name": "OptimaFI",
+              "homepage_url": "https://optimafi.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2007,
+              "products": [
+                {
+                  "product_id": 562,
+                  "product_name": "OptimaFI Community Bank Platform",
+                  "description": "Integrated platform combining deposit and loan acquisition marketing, credit risk analytics, and balance sheet management for community banks and credit unions; formed 2026 from merger of Infusion, QwickRate, and IntelliCredit.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -32298,6 +32873,29 @@
               ]
             },
             {
+              "vendor_id": 443,
+              "name": "OMNICOMMANDER",
+              "homepage_url": "https://omnicommander.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2017,
+              "products": [
+                {
+                  "product_id": 561,
+                  "product_name": "OMNICOMMANDER Digital Presence",
+                  "description": "All-in-one digital presence platform for community banks and credit unions; provides ADA-compliant branded websites, live chat, digital marketing (SEO/SEM/social), and FFIEC-aligned cybersecurity risk assessments.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 38,
               "name": "Digital Onboarding",
               "homepage_url": "https://www.digitalonboarding.com",
@@ -32501,6 +33099,121 @@
                   "integration_ids": [
                     60
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 424,
+              "name": "AiVantage",
+              "homepage_url": "https://aivantage.org",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 542,
+                  "product_name": "AiVantage Marketing Platform",
+                  "description": "Personalized marketing and member engagement platform for community banks and credit unions; delivers email and SMS campaigns and marketing automation at the institution level.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 438,
+              "name": "Fibr AI",
+              "homepage_url": "https://fibr.ai",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2023,
+              "products": [
+                {
+                  "product_id": 556,
+                  "product_name": "Fibr AI Website Personalization",
+                  "description": "Website personalization and A/B testing platform that adapts landing pages in real time based on visitor intent for digital acquisition and product conversion optimization.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 433,
+              "name": "Claritas",
+              "homepage_url": "https://claritas.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 551,
+                  "product_name": "Claritas Financial Segmentation",
+                  "description": "Consumer segmentation and financial marketing data platform; classifies US households by financial product ownership and behavior for targeted deposit, loan, and card acquisition campaigns.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 448,
+              "name": "Solutions By Text",
+              "homepage_url": "https://solutionsbytext.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 566,
+                  "product_name": "Solutions By Text FinText",
+                  "description": "Compliance-focused text messaging platform for banks and credit unions; covers two-way account servicing, payment reminders, loan origination notifications, collections, and marketing campaigns.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 450,
+              "name": "SundaySky",
+              "homepage_url": "https://sundaysky.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 568,
+                  "product_name": "SundaySky Personalized Video",
+                  "description": "Personalized video platform for banks; creates individualized video content for customer onboarding, digital adoption, cross-sell, and loyalty programs.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -32746,6 +33459,52 @@
               ]
             },
             {
+              "vendor_id": 426,
+              "name": "ampliFI Loyalty Solutions",
+              "homepage_url": "https://www.amplifiloyalty.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 544,
+                  "product_name": "ampliFI Loyalty & Rewards",
+                  "description": "Cardholder loyalty and rewards platform for banks and credit unions; manages earning, redemption, branded portals, and engagement analytics across debit and credit card programs.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 441,
+              "name": "Leadfusion",
+              "homepage_url": "https://leadfusion.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 1995,
+              "products": [
+                {
+                  "product_id": 559,
+                  "product_name": "Leadfusion Digital Engagement",
+                  "description": "Pre-sales digital engagement platform for banks and credit unions; delivers product selection tools, financial calculators, and account opening journeys for website visitors.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 218,
               "name": "FI Works",
               "homepage_url": "https://www.fiworks.com",
@@ -32878,6 +33637,29 @@
               ]
             },
             {
+              "vendor_id": 425,
+              "name": "Alpharank",
+              "homepage_url": "https://alpharank.ai",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2015,
+              "products": [
+                {
+                  "product_id": 543,
+                  "product_name": "Alpharank Digital Branch Intelligence",
+                  "description": "Digital marketing analytics platform that tracks the online funnel from ad clicks through funded accounts; helps banks identify which marketing spend drives loan and deposit growth.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 210,
               "name": "Swaystack",
               "homepage_url": "https://swaystack.com",
@@ -32960,6 +33742,29 @@
           "description": "Customer and member segmentation and analytics platforms provide transaction-level behavioral analytics, wallet share analysis, product penetration reporting, and demographic segmentation to help financial institutions understand their customer base and identify growth opportunities. Products transform core and digital banking transaction data into actionable marketing and product strategy insights. Marketing analytics teams, retail banking heads, and CFOs are the buyers.",
           "ai_opportunities": "AI-powered wallet share intelligence — which identifies when a member is depositing paychecks or making loan payments at a competitor institution based on transaction patterns — is enabling community institutions to target acquisition and deepening campaigns with surgical precision rather than mass-market approaches.",
           "vendors": [
+            {
+              "vendor_id": 433,
+              "name": "Claritas",
+              "homepage_url": "https://claritas.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 551,
+                  "product_name": "Claritas Financial Segmentation",
+                  "description": "Consumer segmentation and financial marketing data platform; classifies US households by financial product ownership and behavior for targeted deposit, loan, and card acquisition campaigns.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
             {
               "vendor_id": 299,
               "name": "Profit Resources",
@@ -33319,6 +34124,98 @@
                     444,
                     464
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 425,
+              "name": "Alpharank",
+              "homepage_url": "https://alpharank.ai",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2015,
+              "products": [
+                {
+                  "product_id": 543,
+                  "product_name": "Alpharank Digital Branch Intelligence",
+                  "description": "Digital marketing analytics platform that tracks the online funnel from ad clicks through funded accounts; helps banks identify which marketing spend drives loan and deposit growth.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 429,
+              "name": "BlastPoint",
+              "homepage_url": "https://blastpoint.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2016,
+              "products": [
+                {
+                  "product_id": 547,
+                  "product_name": "BlastPoint Customer Intelligence",
+                  "description": "Customer intelligence platform for banks and credit unions delivering predictive segmentation, propensity scoring for deposits and loans, branch optimization, and lifecycle engagement using internal and external data.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 453,
+              "name": "Verint",
+              "homepage_url": "https://www.verint.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 571,
+                  "product_name": "Verint Customer Engagement Platform",
+                  "description": "Customer engagement and workforce analytics platform for banking contact centers; provides speech analytics, quality management, workforce management, and coaching tools.",
+                  "pervasiveness_tier": 6,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 454,
+              "name": "Zeta Global",
+              "homepage_url": "https://zetaglobal.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 572,
+                  "product_name": "Zeta Marketing Platform",
+                  "description": "Marketing data and activation platform for financial services; uses consumer profiles and behavioral intent signals for customer acquisition, credit product campaigns, and omnichannel personalization.",
+                  "pervasiveness_tier": 6,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -33722,6 +34619,29 @@
               ]
             },
             {
+              "vendor_id": 437,
+              "name": "FI Navigator",
+              "homepage_url": "https://fi-navigator.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2014,
+              "products": [
+                {
+                  "product_id": 555,
+                  "product_name": "FI Navigator Data Platform",
+                  "description": "Data and analytics platform covering US banks and credit unions; maps deployed technologies, financial performance, and offering benchmarks for vendor prospecting and competitive gap analysis.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 95,
               "name": "Aunalytics",
               "homepage_url": "https://www.aunalytics.com",
@@ -33936,6 +34856,29 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 449,
+              "name": "StrategyCorps",
+              "homepage_url": "https://strategycorps.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 567,
+                  "product_name": "StrategyCorps Checking Analytics",
+                  "description": "Retail checking portfolio analytics and mobile rewards platform; provides household-level profitability scoring, fee income strategies, and value-added rewards programs for checking accounts.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -34098,6 +35041,29 @@
               ]
             },
             {
+              "vendor_id": 449,
+              "name": "StrategyCorps",
+              "homepage_url": "https://strategycorps.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 567,
+                  "product_name": "StrategyCorps Checking Analytics",
+                  "description": "Retail checking portfolio analytics and mobile rewards platform; provides household-level profitability scoring, fee income strategies, and value-added rewards programs for checking accounts.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 132,
               "name": "Plinqit",
               "homepage_url": "https://www.plinqit.com",
@@ -34137,6 +35103,29 @@
                     446,
                     455
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 432,
+              "name": "CD Valet",
+              "homepage_url": "https://www.cdvalet.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 550,
+                  "product_name": "CD Valet Rate Marketplace",
+                  "description": "Online CD rate comparison marketplace connecting consumers to bank and credit union CD products; used by FIs as a deposit acquisition channel to attract rate-sensitive depositors.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -34601,6 +35590,29 @@
                   "integration_ids": [
                     289
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 444,
+              "name": "OptimaFI",
+              "homepage_url": "https://optimafi.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2007,
+              "products": [
+                {
+                  "product_id": 562,
+                  "product_name": "OptimaFI Community Bank Platform",
+                  "description": "Integrated platform combining deposit and loan acquisition marketing, credit risk analytics, and balance sheet management for community banks and credit unions; formed 2026 from merger of Infusion, QwickRate, and IntelliCredit.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -38465,6 +39477,29 @@
               ]
             },
             {
+              "vendor_id": 446,
+              "name": "Pathward",
+              "homepage_url": "https://pathward.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 564,
+                  "product_name": "Pathward BaaS Programs",
+                  "description": "BaaS sponsor bank providing turnkey prepaid card, payments, and specialty lending programs via its regulatory infrastructure; formerly MetaBank, rebranded 2022.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 175,
               "name": "Treasury Prime",
               "homepage_url": "https://www.treasuryprime.com",
@@ -39272,6 +40307,29 @@
               ]
             },
             {
+              "vendor_id": 437,
+              "name": "FI Navigator",
+              "homepage_url": "https://fi-navigator.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2014,
+              "products": [
+                {
+                  "product_id": 555,
+                  "product_name": "FI Navigator Data Platform",
+                  "description": "Data and analytics platform covering US banks and credit unions; maps deployed technologies, financial performance, and offering benchmarks for vendor prospecting and competitive gap analysis.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 201,
               "name": "CB Insights",
               "homepage_url": "https://www.cbinsights.com",
@@ -39300,6 +40358,29 @@
                     231,
                     233
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 434,
+              "name": "Competiscan",
+              "homepage_url": "https://competiscan.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2006,
+              "products": [
+                {
+                  "product_id": 552,
+                  "product_name": "Competiscan Intelligence Service",
+                  "description": "Competitive intelligence service that tracks direct mail and digital marketing campaigns across banking, credit cards, and financial services; provides marketers visibility into competitor offers and messaging.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -41980,6 +43061,29 @@
               ]
             },
             {
+              "vendor_id": 431,
+              "name": "CardTraq",
+              "homepage_url": "https://www.cardtraq.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 549,
+                  "product_name": "CardTraq Network Fee Analytics",
+                  "description": "Analytics platform for card issuers and acquirers to track Visa/Mastercard network fees, interchange qualification, and compliance; identifies potential network fee savings and cost reduction opportunities.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 273,
               "name": "CASO Document Management",
               "homepage_url": "https://caso.com/industries/credit-unions",
@@ -42068,6 +43172,29 @@
                     457,
                     470
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 446,
+              "name": "Pathward",
+              "homepage_url": "https://pathward.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 564,
+                  "product_name": "Pathward BaaS Programs",
+                  "description": "BaaS sponsor bank providing turnkey prepaid card, payments, and specialty lending programs via its regulatory infrastructure; formerly MetaBank, rebranded 2022.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -43261,6 +44388,29 @@
           "ai_opportunities": "AI-powered opportunity scoring within CRM platforms — which surfaces which customers or prospects are most likely to need a specific product based on life event signals and transaction behavior — is significantly improving sales productivity for community institution relationship managers who manage large books without dedicated analyst support.",
           "vendors": [
             {
+              "vendor_id": 452,
+              "name": "VeriPark",
+              "homepage_url": "https://www.veripark.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 570,
+                  "product_name": "VeriTouch Banking CRM",
+                  "description": "CRM and customer engagement platform built on Microsoft Dynamics 365 for retail, SME, and corporate banks; covers onboarding, sales, contact center, complaints, and loyalty management.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 96,
               "name": "Salesforce",
               "homepage_url": "https://www.salesforce.com/financial-services",
@@ -43319,6 +44469,52 @@
                   "integration_ids": [
                     9
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 430,
+              "name": "BusinessNext",
+              "homepage_url": "https://www.businessnext.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 548,
+                  "product_name": "BusinessNext Banking CRM",
+                  "description": "Banking CRM platform covering retail and commercial digital journeys, loan origination, KYC, and next-best-action recommendation.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 435,
+              "name": "Creatio",
+              "homepage_url": "https://www.creatio.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 553,
+                  "product_name": "Creatio Banking CRM",
+                  "description": "No-code CRM and workflow automation platform with banking use cases for front and middle office; covers customer onboarding, lending, deposit accounts, contact center, and compliance workflows.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -43720,6 +44916,29 @@
                     379,
                     458
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 442,
+              "name": "LemonadeLXP",
+              "homepage_url": "https://www.lemonadelxp.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 560,
+                  "product_name": "LemonadeLXP Learning Platform",
+                  "description": "Learning experience platform for financial institutions; delivers employee onboarding, compliance training, product knowledge, and customer digital education.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -46266,6 +47485,29 @@
               ]
             },
             {
+              "vendor_id": 447,
+              "name": "Sitecore",
+              "homepage_url": "https://www.sitecore.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 565,
+                  "product_name": "Sitecore Digital Experience Platform",
+                  "description": "Enterprise digital experience and content management platform used by large banks to deliver personalized web and mobile banking portals, content optimization, and omnichannel customer journeys.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 257,
               "name": "Narmi",
               "homepage_url": "https://www.narmi.com",
@@ -46371,6 +47613,29 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 443,
+              "name": "OMNICOMMANDER",
+              "homepage_url": "https://omnicommander.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2017,
+              "products": [
+                {
+                  "product_id": 561,
+                  "product_name": "OMNICOMMANDER Digital Presence",
+                  "description": "All-in-one digital presence platform for community banks and credit unions; provides ADA-compliant branded websites, live chat, digital marketing (SEO/SEM/social), and FFIEC-aligned cybersecurity risk assessments.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -46433,6 +47698,75 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 423,
+              "name": "ARGO",
+              "homepage_url": "https://argodata.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 541,
+                  "product_name": "ARGO Branch & Teller Platform",
+                  "description": "Teller transaction processing, branch deposit operations, and omnichannel account opening software for banks and credit unions; covers real-time fraud detection at the teller line and BSA/AML screening.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 441,
+              "name": "Leadfusion",
+              "homepage_url": "https://leadfusion.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 1995,
+              "products": [
+                {
+                  "product_id": 559,
+                  "product_name": "Leadfusion Digital Engagement",
+                  "description": "Pre-sales digital engagement platform for banks and credit unions; delivers product selection tools, financial calculators, and account opening journeys for website visitors.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 430,
+              "name": "BusinessNext",
+              "homepage_url": "https://www.businessnext.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 548,
+                  "product_name": "BusinessNext Banking CRM",
+                  "description": "Banking CRM platform covering retail and commercial digital journeys, loan origination, KYC, and next-best-action recommendation.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         }
@@ -46440,8 +47774,8 @@
     }
   ],
   "meta": {
-    "vendor_count": 393,
-    "product_count": 468,
-    "generated_at": "2026-05-14T13:45:36.331Z"
+    "vendor_count": 425,
+    "product_count": 500,
+    "generated_at": "2026-05-14T14:12:12.498Z"
   }
 }
