@@ -516,6 +516,22 @@
             filter: grayscale(1);
             cursor: default;
         }
+        .vendor-card.defunct {
+            opacity: 0.35;
+            filter: grayscale(1) sepia(0.15);
+            cursor: default;
+        }
+        .defunct-badge {
+            display: inline-block;
+            background: rgba(180,0,0,0.25);
+            color: #ff9999;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 3px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
 
         /* Logo area */
         .vendor-logo-wrap {
@@ -1019,6 +1035,13 @@
                     <button class="seg-filter-btn" data-segment="both">Both</button>
                 </div>
             </div>
+            <!-- Status row -->
+            <div class="category-filter-row" id="status-filter-row">
+                <span class="cat-filter-label">Status</span>
+                <div class="filter-row-controls">
+                    <button class="cat-filter-btn" id="defunct-toggle" title="Show vendors that are no longer operating">Show Defunct</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -1108,6 +1131,7 @@
             activeT2: null,         // category code string, or null
             activeT1: null,         // T1 code or null
             activeTier: null,       // 1-6 or null
+            showDefunct: false,     // show defunct (shut down) vendors
             competitorFilter: null,    // { productId, productName } or null
             ecosystemFilter: null,     // { productId, productName } or null
             competitorSourceT2s: null, // Set of T2 codes the source product belongs to
@@ -1227,8 +1251,15 @@
                    (primary && (primary.status === 'deprecated' || primary.status === 'sunset'));
         }
 
+        // ---- Check if a vendor is defunct (no longer operating) ----
+        function isDefunct(vendor) {
+            return vendor.status === 'defunct';
+        }
+
         // ---- Check if vendor matches current filters ----
         function vendorVisible(vendor) {
+            // Hide defunct vendors unless explicitly shown
+            if (isDefunct(vendor) && !state.showDefunct) return false;
             // Competitor filter: vendor must contain at least one product in the competitor_ids list
             if (state.competitorFilter !== null) {
                 var ids = state.competitorFilter.ids;
@@ -1275,12 +1306,14 @@
             var tier = getPrimaryTier(vendor);
             var seg = getSegment(vendor);
             var deprecated = isDeprecated(vendor);
+            var defunct = isDefunct(vendor);
             var primary = getPrimaryProduct(vendor);
             var productName = primary ? primary.product_name : vendor.name;
             var hasMcp = primary && primary.mcp_enabled;
 
             var classes = 'vendor-card';
             if (deprecated) classes += ' deprecated';
+            if (defunct) classes += ' defunct';
 
             var logoHtml;
             if (vendor.logo_url) {
@@ -1290,10 +1323,12 @@
                 logoHtml = '<div class="vendor-initials">' + escHtml(initials(vendor.name)) + '</div>';
             }
 
-            // Tags: suppress all on deprecated
+            // Tags: suppress all on deprecated/defunct; defunct gets a Defunct badge
             var badgeHtml = '';
             var badgeRowHtml = '';
-            if (!deprecated) {
+            if (defunct) {
+                badgeRowHtml = '<div class="card-badge-row"><span class="defunct-badge">Defunct</span></div>';
+            } else if (!deprecated) {
                 if (tier && TIER_LABELS[tier]) {
                     // Colored dot only — no text
                     badgeHtml = '<span class="adoption-badge badge-' + tier + '" title="' + escHtml(TIER_LABELS[tier]) + '" aria-label="' + escHtml(TIER_LABELS[tier]) + '"></span>';
@@ -1423,7 +1458,7 @@
 
         // ---- Attach events after render ----
         function attachCardEvents() {
-            var cards = document.querySelectorAll('.vendor-card:not(.deprecated)');
+            var cards = document.querySelectorAll('.vendor-card:not(.deprecated):not(.defunct)');
             for (var i = 0; i < cards.length; i++) {
                 (function(card) {
                     card.addEventListener('click', function() {
@@ -1707,11 +1742,13 @@
             state.ecosystemFilter = null;
             state.competitorSourceT2s = null;
             state.ecosystemSourceT2s = null;
+            state.showDefunct = false;
             var searchInput = document.getElementById('vendor-search');
             if (searchInput) searchInput.value = '';
             syncT1Buttons();
             syncTierButtons();
             syncSegmentButtons();
+            syncDefunctButton();
             update();
         }
 
@@ -1777,6 +1814,19 @@
             var tierVal = btn.dataset.tier;
             state.activeTier = (tierVal === 'all') ? null : parseInt(tierVal, 10);
             syncTierButtons();
+            update();
+        });
+
+        // ---- Defunct toggle ----
+        function syncDefunctButton() {
+            var btn = document.getElementById('defunct-toggle');
+            if (!btn) return;
+            btn.classList.toggle('active', state.showDefunct);
+        }
+
+        document.getElementById('defunct-toggle').addEventListener('click', function() {
+            state.showDefunct = !state.showDefunct;
+            syncDefunctButton();
             update();
         });
 
@@ -1937,6 +1987,7 @@
                 state.activeT1 !== null ||
                 state.activeT2 !== null ||
                 state.segment !== 'all' ||
+                state.showDefunct ||
                 !!state.search
             );
             var resetBtn = document.getElementById('filter-reset-btn');

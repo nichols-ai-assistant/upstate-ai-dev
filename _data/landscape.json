@@ -12674,7 +12674,7 @@
               "name": "Clinc",
               "homepage_url": "https://clinc.com",
               "logo_url": null,
-              "status": "deprecated",
+              "status": "defunct",
               "hq_city": null,
               "hq_state": "MI",
               "founded_year": null,
@@ -37094,7 +37094,7 @@
               "name": "Unifimoney",
               "homepage_url": "https://www.unifimoney.com",
               "logo_url": "/fi-landscape-logos/377.png",
-              "status": "deprecated",
+              "status": "defunct",
               "hq_city": "Austin",
               "hq_state": "TX",
               "founded_year": 2019,
@@ -49849,6 +49849,6 @@
   "meta": {
     "vendor_count": 464,
     "product_count": 539,
-    "generated_at": "2026-05-14T14:36:24.107Z"
+    "generated_at": "2026-05-14T17:19:49.374Z"
   }
 }
