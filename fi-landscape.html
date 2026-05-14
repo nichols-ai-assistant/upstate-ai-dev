@@ -638,9 +638,9 @@
             border-radius: 3px;
             line-height: 1.4;
             white-space: nowrap;
-            background: rgba(45,87,69,0.22);
-            color: rgba(253,252,248,0.8);
-            border: 1px solid rgba(255,105,0,0.35);
+            background: rgba(35,72,55,0.45);
+            color: rgba(253,252,248,0.95);
+            border: none;
         }
 
         /* Modal tier badge */
@@ -1375,12 +1375,12 @@
                     // Colored dot only — no text
                     badgeHtml = '<span class="adoption-badge badge-' + tier + '" title="' + escHtml(TIER_LABELS[tier]) + '" aria-label="' + escHtml(TIER_LABELS[tier]) + '"></span>';
                 }
-                // Segment badges: Banks / CUs / both shown as two separate badges
+                // Segment badges: BANK / CU / both shown as two separate badges
                 var segBadge = seg === 'banks'
-                    ? '<span class="segment-badge">Banks</span>'
+                    ? '<span class="segment-badge">BANK</span>'
                     : seg === 'credit_unions'
-                    ? '<span class="segment-badge">CUs</span>'
-                    : '<span class="segment-badge">Banks</span><span class="segment-badge">CUs</span>';
+                    ? '<span class="segment-badge">CU</span>'
+                    : '<span class="segment-badge">BANK</span><span class="segment-badge">CU</span>';
                 var mcpBadge = hasMcp ? '<span class="mcp-badge">MCP Enabled</span>' : '';
                 badgeRowHtml = '<div class="card-badge-row">' + segBadge + mcpBadge + '</div>';
             }
