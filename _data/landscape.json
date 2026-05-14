@@ -8201,7 +8201,7 @@
                 {
                   "product_id": 135,
                   "product_name": "Casap AI Disputes Automation",
-                  "description": "Core API connectivity platform for banks and credit unions; integrates 80+ fintech applications to 40+ core banking systems through a single secure integration layer; provides standardized, pre-certified connectors covering Jack Henry, Fiserv, FIS, and other US banking cores; also offers document automation, teller workflow optimization, and data analytics as companion modules.",
+                  "description": "AI-powered dispute automation platform for banks, credit unions, and fintechs that automates up to 30% of dispute cases across all transaction types—Card, ACH, EFT, ATM, Check, and Digital Payment—with built-in Reg-E, Reg-Z, Nacha, and Card Network compliance; delivers AI-driven win-score prediction, first and third-party fraud detection, and agentic AI backed by human expertise; claims 3x faster resolution, 51% fewer fraud losses, and up to 50% cost reduction.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "both",
                   "status": "active",
@@ -22427,7 +22427,7 @@
                 {
                   "product_id": 135,
                   "product_name": "Casap AI Disputes Automation",
-                  "description": "Core API connectivity platform for banks and credit unions; integrates 80+ fintech applications to 40+ core banking systems through a single secure integration layer; provides standardized, pre-certified connectors covering Jack Henry, Fiserv, FIS, and other US banking cores; also offers document automation, teller workflow optimization, and data analytics as companion modules.",
+                  "description": "AI-powered dispute automation platform for banks, credit unions, and fintechs that automates up to 30% of dispute cases across all transaction types—Card, ACH, EFT, ATM, Check, and Digital Payment—with built-in Reg-E, Reg-Z, Nacha, and Card Network compliance; delivers AI-driven win-score prediction, first and third-party fraud detection, and agentic AI backed by human expertise; claims 3x faster resolution, 51% fewer fraud losses, and up to 50% cost reduction.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "both",
                   "status": "active",
@@ -49849,6 +49849,6 @@
   "meta": {
     "vendor_count": 464,
     "product_count": 539,
-    "generated_at": "2026-05-14T23:21:14.788Z"
+    "generated_at": "2026-05-14T23:29:54.951Z"
   }
 }
