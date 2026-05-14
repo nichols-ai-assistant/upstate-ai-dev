@@ -1,6 +1,14 @@
 # Blog post registry — sorted by date descending.
 # Add new posts to the top. Homepage auto-displays the first 3.
 
+- title: "Your Core Processor Is Now an AI Company"
+  url: "blog/fis-fiserv-ai-partnerships-may-2026"
+  category: "Community Banking"
+  date: "May 14, 2026"
+  sort_date: 2026-05-14
+  excerpt: "FIS partnered with Anthropic. Fiserv partnered with OpenAI. Two weeks, two core processors, two frontier AI labs. Here is what it actually means for your bank."
+  read_time: "9 min read"
+
 - title: "Build vs. Buy in the Age of AI"
   url: "blog/build-vs-buy-ai-april-2026"
   category: "AI Strategy"
