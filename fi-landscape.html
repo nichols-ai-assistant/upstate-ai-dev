@@ -908,6 +908,29 @@
                 height: 36px;
             }
         }
+
+        /* Disclaimer button in filter toggle bar */
+        .disclaimer-info-btn {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: rgba(253,252,248,0.45);
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.18rem 0.6rem;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s, border-color 0.15s;
+            white-space: nowrap;
+            flex-shrink: 0;
+            line-height: 1.5;
+        }
+        .disclaimer-info-btn:hover {
+            background: rgba(255,255,255,0.07);
+            border-color: rgba(255,255,255,0.35);
+            color: rgba(253,252,248,0.75);
+        }
     </style>
 </head>
 <body>
@@ -952,6 +975,7 @@
                 <span class="filter-toggle-label">Filters</span>
                 <span class="filter-toggle-arrow" aria-hidden="true">&#x25BC;</span>
             </div>
+            <button class="disclaimer-info-btn" id="disclaimer-btn" aria-label="View disclaimer">Disclaimer</button>
         </div>
         <!-- Collapsible panel -->
         <div class="filter-panel" id="filter-panel">
@@ -1030,6 +1054,17 @@
         <div id="cat-modal-content"><!-- populated by JS --></div>
     </div>
 
+    <!-- ==================== DISCLAIMER MODAL ==================== -->
+    <div class="modal-backdrop" id="disclaimer-backdrop" aria-hidden="true"></div>
+    <div class="product-modal" id="disclaimer-modal" role="dialog" aria-modal="true" aria-labelledby="disclaimer-modal-title">
+        <button class="modal-close-btn" id="disclaimer-close" aria-label="Close">&#x2715;</button>
+        <div style="flex:1;overflow-y:auto;padding:0 2rem 2rem;min-height:0;">
+            <h2 class="modal-product-name" id="disclaimer-modal-title" style="font-size:1.25rem;margin-bottom:1rem;">About This Index</h2>
+            <p class="modal-description">Upstate AI does not endorse any of the companies listed and maintains no commercial relationships with vendors in this index. All information is gathered from publicly available sources including vendor websites, partner forums, tradeshow events, press releases, and social media. This map is provided for informational purposes only.</p>
+            <p class="modal-description" style="margin-bottom:0;">Are you a vendor? Send corrections to <a href="mailto:ben@up-state-ai.com?subject=FI%20AI%20Landscape%20Correction" style="color:var(--orange);">ben@up-state-ai.com</a>.</p>
+        </div>
+    </div>
+
     <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
         <div class="container">
@@ -1046,10 +1081,6 @@
                     <a href="privacy">Privacy Policy</a>
                     <a href="#" onclick="window.CookieConsent && window.CookieConsent.show(); return false;">Cookie Settings</a>
                 </div>
-            </div>
-            <div class="footer-disclaimer">
-                <p>Upstate AI does not endorse any of the companies listed and maintains no commercial relationships with vendors in this index. All information is gathered from publicly available sources including vendor websites, partner forums, tradeshow events, press releases, and social media. This map is provided for informational purposes only.</p>
-                <p>Are you a vendor? Send corrections to <a href="mailto:ben@up-state-ai.com?subject=FI%20AI%20Landscape%20Correction">ben@up-state-ai.com</a>.</p>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Upstate AI. All rights reserved.</p>
@@ -1559,8 +1590,29 @@
 
         document.getElementById('modal-close').addEventListener('click', closeModal);
         document.getElementById('modal-backdrop').addEventListener('click', closeModal);
+
+        // ---- Disclaimer modal ----
+        function openDisclaimerModal() {
+            document.getElementById('disclaimer-backdrop').classList.add('open');
+            document.getElementById('disclaimer-modal').classList.add('open');
+            document.getElementById('disclaimer-backdrop').removeAttribute('aria-hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeDisclaimerModal() {
+            document.getElementById('disclaimer-backdrop').classList.remove('open');
+            document.getElementById('disclaimer-modal').classList.remove('open');
+            document.getElementById('disclaimer-backdrop').setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+        document.getElementById('disclaimer-btn').addEventListener('click', function(e) {
+            e.stopPropagation(); // prevent filter panel toggle
+            openDisclaimerModal();
+        });
+        document.getElementById('disclaimer-close').addEventListener('click', closeDisclaimerModal);
+        document.getElementById('disclaimer-backdrop').addEventListener('click', closeDisclaimerModal);
+
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') { closeModal(); closeCategoryModal(); }
+            if (e.key === 'Escape') { closeModal(); closeCategoryModal(); closeDisclaimerModal(); }
         });
 
         // ---- Update active filter chips ----
