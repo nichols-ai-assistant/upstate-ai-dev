@@ -7177,6 +7177,17 @@
                     440
                   ],
                   "integration_ids": []
+                },
+                {
+                  "product_id": 500,
+                  "product_name": "Jack Henry Financial Crimes Defender",
+                  "description": "Cloud-native platform launched 2023 that unifies fraud detection and BSA/AML compliance; real-time transaction monitoring, automated SAR/CTR filing, OFAC screening, and behavioral analytics across ACH, checks, wires, and instant payments.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -8185,6 +8196,29 @@
                     454,
                     457
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 49,
+              "name": "Jack Henry & Associates",
+              "homepage_url": "https://www.jackhenry.com",
+              "logo_url": "/fi-landscape-logos/49.png",
+              "status": "active",
+              "hq_city": "Monett",
+              "hq_state": "MO",
+              "founded_year": 1976,
+              "products": [
+                {
+                  "product_id": 505,
+                  "product_name": "Jack Henry Remote Deposit Capture",
+                  "description": "Consumer and commercial check deposit via smartphone imaging and desktop scanners; integrates with Jack Henry cores and digital banking platforms. Includes both consumer and business-tier RDC variants.",
+                  "pervasiveness_tier": 6,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -10310,6 +10344,17 @@
                     429
                   ],
                   "integration_ids": []
+                },
+                {
+                  "product_id": 500,
+                  "product_name": "Jack Henry Financial Crimes Defender",
+                  "description": "Cloud-native platform launched 2023 that unifies fraud detection and BSA/AML compliance; real-time transaction monitoring, automated SAR/CTR filing, OFAC screening, and behavioral analytics across ACH, checks, wires, and instant payments.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -11126,6 +11171,29 @@
                     344,
                     429
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 49,
+              "name": "Jack Henry & Associates",
+              "homepage_url": "https://www.jackhenry.com",
+              "logo_url": "/fi-landscape-logos/49.png",
+              "status": "active",
+              "hq_city": "Monett",
+              "hq_state": "MO",
+              "founded_year": 1976,
+              "products": [
+                {
+                  "product_id": 500,
+                  "product_name": "Jack Henry Financial Crimes Defender",
+                  "description": "Cloud-native platform launched 2023 that unifies fraud detection and BSA/AML compliance; real-time transaction monitoring, automated SAR/CTR filing, OFAC screening, and behavioral analytics across ACH, checks, wires, and instant payments.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -12095,6 +12163,29 @@
                   "integration_ids": [
                     60
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 49,
+              "name": "Jack Henry & Associates",
+              "homepage_url": "https://www.jackhenry.com",
+              "logo_url": "/fi-landscape-logos/49.png",
+              "status": "active",
+              "hq_city": "Monett",
+              "hq_state": "MO",
+              "founded_year": 1976,
+              "products": [
+                {
+                  "product_id": 501,
+                  "product_name": "Banno Conversations",
+                  "description": "Authenticated in-app chat, video, and screen-sharing embedded within the Banno platform; FI staff transact on behalf of verified users in real time with AI-assisted reply drafting.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -14818,6 +14909,17 @@
                     493,
                     494
                   ],
+                  "integration_ids": []
+                },
+                {
+                  "product_id": 501,
+                  "product_name": "Banno Conversations",
+                  "description": "Authenticated in-app chat, video, and screen-sharing embedded within the Banno platform; FI staff transact on behalf of verified users in real time with AI-assisted reply drafting.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -18133,6 +18235,29 @@
               ]
             },
             {
+              "vendor_id": 49,
+              "name": "Jack Henry & Associates",
+              "homepage_url": "https://www.jackhenry.com",
+              "logo_url": "/fi-landscape-logos/49.png",
+              "status": "active",
+              "hq_city": "Monett",
+              "hq_state": "MO",
+              "founded_year": 1976,
+              "products": [
+                {
+                  "product_id": 502,
+                  "product_name": "JHA OpenAnywhere",
+                  "description": "Self-service digital account opening for consumer and business deposits; biometric ID verification, document OCR, and under-5-minute application flow. Integrates with all four Jack Henry cores.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 22,
               "name": "NICE Actimize",
               "homepage_url": "https://www.niceactimize.com",
@@ -18936,6 +19061,29 @@
           "description": "Model risk management AI provides tooling for model validation, documentation, performance monitoring, explainability reporting, and SR 11-7 compliance for financial institutions that use statistical or machine learning models in credit, fraud, AML, or other risk decisions. As AI adoption accelerates, these platforms help ensure that model inventories are governed and that regulators can audit model behavior. Chief Risk Officers, model risk managers, and compliance leaders are the buyers.",
           "ai_opportunities": "As community banks and credit unions adopt AI credit and fraud models from third-party vendors, model risk management platforms that automate ongoing performance monitoring, drift detection, and explainability documentation are becoming critical for demonstrating regulatory compliance without building expensive internal model risk management teams.",
           "vendors": [
+            {
+              "vendor_id": 49,
+              "name": "Jack Henry & Associates",
+              "homepage_url": "https://www.jackhenry.com",
+              "logo_url": "/fi-landscape-logos/49.png",
+              "status": "active",
+              "hq_city": "Monett",
+              "hq_state": "MO",
+              "founded_year": 1976,
+              "products": [
+                {
+                  "product_id": 507,
+                  "product_name": "ProfitStars CECL Analysis and Reporting",
+                  "description": "Azure-hosted CECL compliance module using probability-of-default and time-series models to calculate allowance for credit losses per FASB ASC 326; distinct from the broader ProfitStars ALM suite.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
             {
               "vendor_id": 1,
               "name": "Zest AI",
@@ -22855,6 +23003,17 @@
                   "integration_ids": []
                 },
                 {
+                  "product_id": 506,
+                  "product_name": "Jack Henry Xperience",
+                  "description": "Developer API platform enabling fintechs and FIs to customize UI across Jack Henry products; part of the Digital Toolkit alongside the Plugin Framework, Consumer API, and Admin API.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                },
+                {
                   "product_id": 254,
                   "product_name": "SilverLake System",
                   "description": "Jack Henry flagship core banking platform for community banks with assets generally above $500M. SQL-based open architecture. Dominant in the mid-to-larger community bank tier.",
@@ -23518,6 +23677,17 @@
                     493,
                     494
                   ],
+                  "integration_ids": []
+                },
+                {
+                  "product_id": 504,
+                  "product_name": "Jack Henry Platform",
+                  "description": "Cloud-native, API-first core banking platform on Google Cloud; modular architecture covering deposit management, ACH, card, wires, and general ledger. FIs adopt components incrementally alongside existing Jack Henry cores.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -34202,6 +34372,17 @@
                     410
                   ],
                   "integration_ids": []
+                },
+                {
+                  "product_id": 507,
+                  "product_name": "ProfitStars CECL Analysis and Reporting",
+                  "description": "Azure-hosted CECL compliance module using probability-of-default and time-series models to calculate allowance for credit losses per FASB ASC 326; distinct from the broader ProfitStars ALM suite.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -35674,6 +35855,29 @@
                     426,
                     433
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 49,
+              "name": "Jack Henry & Associates",
+              "homepage_url": "https://www.jackhenry.com",
+              "logo_url": "/fi-landscape-logos/49.png",
+              "status": "active",
+              "hq_city": "Monett",
+              "hq_state": "MO",
+              "founded_year": 1976,
+              "products": [
+                {
+                  "product_id": 508,
+                  "product_name": "Jack Henry Data Hub",
+                  "description": "Cloud-based data exchange platform on Google Cloud providing FIs and fintechs bulk access to Jack Henry system data via defined schema subscriptions; complements jXchange transactional APIs with analytical data pipelines.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -37781,6 +37985,40 @@
               ]
             },
             {
+              "vendor_id": 49,
+              "name": "Jack Henry & Associates",
+              "homepage_url": "https://www.jackhenry.com",
+              "logo_url": "/fi-landscape-logos/49.png",
+              "status": "active",
+              "hq_city": "Monett",
+              "hq_state": "MO",
+              "founded_year": 1976,
+              "products": [
+                {
+                  "product_id": 506,
+                  "product_name": "Jack Henry Xperience",
+                  "description": "Developer API platform enabling fintechs and FIs to customize UI across Jack Henry products; part of the Digital Toolkit alongside the Plugin Framework, Consumer API, and Admin API.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                },
+                {
+                  "product_id": 508,
+                  "product_name": "Jack Henry Data Hub",
+                  "description": "Cloud-based data exchange platform on Google Cloud providing FIs and fintechs bulk access to Jack Henry system data via defined schema subscriptions; complements jXchange transactional APIs with analytical data pipelines.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 172,
               "name": "Synctera",
               "homepage_url": "https://www.synctera.com",
@@ -39400,6 +39638,17 @@
                     452,
                     470
                   ],
+                  "integration_ids": []
+                },
+                {
+                  "product_id": 505,
+                  "product_name": "Jack Henry Remote Deposit Capture",
+                  "description": "Consumer and commercial check deposit via smartphone imaging and desktop scanners; integrates with Jack Henry cores and digital banking platforms. Includes both consumer and business-tier RDC variants.",
+                  "pervasiveness_tier": 6,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -45031,6 +45280,29 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 49,
+              "name": "Jack Henry & Associates",
+              "homepage_url": "https://www.jackhenry.com",
+              "logo_url": "/fi-landscape-logos/49.png",
+              "status": "active",
+              "hq_city": "Monett",
+              "hq_state": "MO",
+              "founded_year": 1976,
+              "products": [
+                {
+                  "product_id": 504,
+                  "product_name": "Jack Henry Platform",
+                  "description": "Cloud-native, API-first core banking platform on Google Cloud; modular architecture covering deposit management, ACH, card, wires, and general ledger. FIs adopt components incrementally alongside existing Jack Henry cores.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -46107,21 +46379,69 @@
           "name": "Business & Commercial Digital Banking",
           "description": "Business and commercial digital banking platforms provide small business and commercial banking clients with online and mobile access to treasury services, cash management, ACH origination, wire transfers, business account management, and commercial lending portals. Products range from business modules within retail digital banking platforms to purpose-built commercial banking portals. Commercial banking leaders, Treasury product managers, and COOs are the buyers.",
           "ai_opportunities": "AI-powered cash flow forecasting, anomaly alerts, and intelligent payment recommendations delivered within the business digital banking experience are significant opportunities for community institutions to deepen commercial relationships by providing treasury intelligence capabilities previously available only through expensive treasury management consultants.",
-          "vendors": []
+          "vendors": [
+            {
+              "vendor_id": 49,
+              "name": "Jack Henry & Associates",
+              "homepage_url": "https://www.jackhenry.com",
+              "logo_url": "/fi-landscape-logos/49.png",
+              "status": "active",
+              "hq_city": "Monett",
+              "hq_state": "MO",
+              "founded_year": 1976,
+              "products": [
+                {
+                  "product_id": 503,
+                  "product_name": "JHA Treasury Management",
+                  "description": "Commercial cash management platform for mid-to-large business clients; covers ACH origination, domestic and international wires, bulk payment uploads, multi-user approval controls, and account reporting.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            }
+          ]
         },
         {
           "code": "T2-12c",
           "name": "Digital Account Opening",
           "description": "Digital account opening platforms provide standalone or integrated solutions for opening consumer checking, savings, CD, and money market accounts — and in some cases business accounts — entirely through digital channels, handling identity verification, KYC, document capture, funding, and core system booking. Products address the critical onboarding experience for both new and existing customers. Digital banking leaders, retail banking heads, and COOs are the buyers.",
           "ai_opportunities": "AI-powered identity verification and fraud detection embedded directly in the account opening flow is enabling community financial institutions to approve legitimate applicants in under three minutes while maintaining CIP compliance and fraud loss rates competitive with large bank digital channels.",
-          "vendors": []
+          "vendors": [
+            {
+              "vendor_id": 49,
+              "name": "Jack Henry & Associates",
+              "homepage_url": "https://www.jackhenry.com",
+              "logo_url": "/fi-landscape-logos/49.png",
+              "status": "active",
+              "hq_city": "Monett",
+              "hq_state": "MO",
+              "founded_year": 1976,
+              "products": [
+                {
+                  "product_id": 502,
+                  "product_name": "JHA OpenAnywhere",
+                  "description": "Self-service digital account opening for consumer and business deposits; biometric ID verification, document OCR, and under-5-minute application flow. Integrates with all four Jack Henry cores.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "meta": {
     "vendor_count": 393,
-    "product_count": 459,
-    "generated_at": "2026-05-13T23:45:59.259Z"
+    "product_count": 468,
+    "generated_at": "2026-05-14T13:45:36.331Z"
   }
 }
