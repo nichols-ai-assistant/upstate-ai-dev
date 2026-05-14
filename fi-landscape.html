@@ -143,8 +143,8 @@
 
         /* Toggle bar — always visible */
         @keyframes fi-pulse {
-            0%, 100% { color: #fff; text-shadow: none; }
-            50%  { color: var(--orange); text-shadow: 0 0 10px rgba(255,105,0,0.6); }
+            0%, 100% { color: #fff; text-shadow: none; transform: scale(1); }
+            50%  { color: var(--orange); text-shadow: 0 0 10px rgba(255,105,0,0.6); transform: scale(1.1); }
         }
         .filter-toggle-bar {
             display: flex;
@@ -158,6 +158,7 @@
             user-select: none;
         }
         .filter-toggle-bar.pulsing .filter-toggle-label {
+            display: inline-block;
             animation: fi-pulse 1.6s ease-in-out infinite;
         }
         .filter-toggle-left {
