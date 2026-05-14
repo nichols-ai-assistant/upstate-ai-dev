@@ -41411,8 +41411,8 @@
             },
             {
               "vendor_id": 196,
-              "name": "BAI",
-              "homepage_url": "https://www.bai.org",
+              "name": "ProSight FA",
+              "homepage_url": "https://www.prosightfa.org",
               "logo_url": "/fi-landscape-logos/196.png",
               "status": "active",
               "hq_city": "Chicago",
@@ -41421,8 +41421,8 @@
               "products": [
                 {
                   "product_id": 227,
-                  "product_name": "BAI Research & Banking Outlook",
-                  "description": "Annual Banking Outlook study and ongoing research on technology adoption, customer experience, and strategic priorities at retail and community banks. Free access to most research; premium membership for deeper content. Widely read by community bank executives. NOTE: Research/advisory organization and industry association, not a technology vendor.",
+                  "product_name": "ProSight FA Research & Insights",
+                  "description": "Industry association formed from the 2024 merger of BAI and RMA; provides financial services leaders with benchmarking research, compliance training, enterprise risk and compliance software, and peer community resources; solution areas include Membership, Peer Sharing & Events, Compliance & Training, and Decision Support Solutions (Policy Manager, Enterprise Risk Manager, Board Manager); serves banks and credit unions of all sizes with focus on compliance officers, risk managers, and executives.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "banks",
                   "status": "active",
@@ -49849,6 +49849,6 @@
   "meta": {
     "vendor_count": 464,
     "product_count": 539,
-    "generated_at": "2026-05-14T23:29:54.951Z"
+    "generated_at": "2026-05-14T23:49:58.152Z"
   }
 }
