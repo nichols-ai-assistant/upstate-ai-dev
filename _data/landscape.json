@@ -638,6 +638,29 @@
               ]
             },
             {
+              "vendor_id": 463,
+              "name": "ACTICO",
+              "homepage_url": "https://www.actico.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 1997,
+              "products": [
+                {
+                  "product_id": 581,
+                  "product_name": "ACTICO Spreading Agent",
+                  "description": "Agentic AI spreading platform using IDP, NLP, and LLMs to auto-extract and map financial statements to bank-specific templates. Integrates with the ACTICO Credit Risk Platform for end-to-end commercial credit decisioning from spreading through underwriting.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 163,
               "name": "Happy Money",
               "homepage_url": "https://happymoney.com",
@@ -931,6 +954,29 @@
                     463,
                     469
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 470,
+              "name": "Natum AI",
+              "homepage_url": "https://www.natum.ai",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 588,
+                  "product_name": "Natum AI Credit Analyst",
+                  "description": "AI credit analyst platform for community banks and credit unions with $100M to $10B in assets. Scans the commercial deposit base for lending opportunities, automates credit underwriting package assembly, and provides daily portfolio monitoring with explainable audit trails aligned to examiner expectations.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -2704,6 +2750,98 @@
               ]
             },
             {
+              "vendor_id": 459,
+              "name": "Cync Software",
+              "homepage_url": "https://cyncsoftware.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 577,
+                  "product_name": "Cync Spreading",
+                  "description": "AI-powered financial spreading platform with no-code templates for C&I, CRE, and individual borrowers. Automates extraction from PDFs, CSVs, and images, performs global cash flow analysis, and tracks covenants. Part of a broader commercial lending automation suite covering borrowing base, ABL, and portfolio monitoring.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 481,
+              "name": "Origence",
+              "homepage_url": "https://origence.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2018,
+              "products": [
+                {
+                  "product_id": 599,
+                  "product_name": "Origence Account Opening",
+                  "description": "Credit union-focused digital account opening platform integrated with loan origination via arc OS and arc DX. Streamlines membership account opening in under six minutes with fraud detection, application pre-fill, and a unified origination experience across loans and deposits. Rebranded from CU Direct.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "credit_unions",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 482,
+              "name": "Calyx Technology",
+              "homepage_url": "https://www.calyxsoftware.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 1991,
+              "products": [
+                {
+                  "product_id": 600,
+                  "product_name": "Calyx Path Enterprise",
+                  "description": "Fully configurable mortgage LOS for community banks and credit unions supporting retail, wholesale, and correspondent channels on a single platform. Includes a granular rules engine, multi-location file access, compliance-integrated workflow, and integration connectors for major servicers and investors.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 483,
+              "name": "Mortgage Cadence",
+              "homepage_url": "https://mortgagecadence.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 1999,
+              "products": [
+                {
+                  "product_id": 601,
+                  "product_name": "Mortgage Cadence Platform",
+                  "description": "Flexible cloud-based mortgage LOS with POS, ACE workflow automation, vendor-agnostic APIs, and support for forward and reverse lending. Widely adopted by credit unions. Recently acquired by PartnerOne; continues as a standalone product with existing integrations maintained.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 136,
               "name": "BeSmartee",
               "homepage_url": "https://www.besmartee.com",
@@ -3844,6 +3982,29 @@
                     449,
                     453
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 457,
+              "name": "Earnix",
+              "homepage_url": "https://earnix.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2001,
+              "products": [
+                {
+                  "product_id": 575,
+                  "product_name": "Earnix Rate Engine",
+                  "description": "AI-driven pricing optimization platform for consumer lenders. Includes credit risk simulation, A/B testing of rate strategies, scenario modeling, and governed rate deployment without IT dependency. Used by top-tier retail banks for personalized loan and deposit pricing at scale.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -5381,6 +5542,75 @@
               ]
             },
             {
+              "vendor_id": 456,
+              "name": "Strunk",
+              "homepage_url": "https://strunkaccess.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 574,
+                  "product_name": "Strunk Pricing Manager",
+                  "description": "Hosted web-based loan pricing and profitability tool for community bank lenders. Provides core-integrated data analytics, ROE targets, relationship profitability scoring, and cost-of-funds tracking updated automatically from FHLB data.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 458,
+              "name": "LoanPricingPRO",
+              "homepage_url": "https://www.forvismazars.us/services/products/loanpricingpro",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 576,
+                  "product_name": "LoanPricingPRO",
+                  "description": "Commercial loan pricing SaaS for community banks and credit unions. Calculates real-time ROE per deal, relationship profitability, and portfolio-level reporting tied to lender and product performance. Product of Forvis Mazars, widely adopted among community bank CFOs and lenders for ALCO-driven pricing discipline.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 460,
+              "name": "Global Wave Group",
+              "homepage_url": "https://globalwavegroup.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 578,
+                  "product_name": "Financial Track",
+                  "description": "AI-automated spreading and analytics for community banks and credit unions. Provides configurable financial models, stress-testing, projections, covenant tracking, and global cash flow scenarios. Designed to replace manual spreadsheet spreading workflows at community FIs.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 204,
               "name": "Aloan",
               "homepage_url": "https://aloan.ai",
@@ -5497,6 +5727,29 @@
                   "integration_ids": [
                     289
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 462,
+              "name": "Accend",
+              "homepage_url": "https://www.withaccend.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 580,
+                  "product_name": "Accend Spreading",
+                  "description": "AI plus human review financial spreading service for commercial credit underwriting. Extracts and standardizes tax returns and audited and unaudited financials, delivers same-day spreads via API, Excel, or JSON output. Positions as a hybrid tech-enabled service for banks that want speed without sacrificing accuracy.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             }
@@ -5856,6 +6109,75 @@
               ]
             },
             {
+              "vendor_id": 482,
+              "name": "Calyx Technology",
+              "homepage_url": "https://www.calyxsoftware.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 1991,
+              "products": [
+                {
+                  "product_id": 600,
+                  "product_name": "Calyx Path Enterprise",
+                  "description": "Fully configurable mortgage LOS for community banks and credit unions supporting retail, wholesale, and correspondent channels on a single platform. Includes a granular rules engine, multi-location file access, compliance-integrated workflow, and integration connectors for major servicers and investors.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 483,
+              "name": "Mortgage Cadence",
+              "homepage_url": "https://mortgagecadence.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 1999,
+              "products": [
+                {
+                  "product_id": 601,
+                  "product_name": "Mortgage Cadence Platform",
+                  "description": "Flexible cloud-based mortgage LOS with POS, ACE workflow automation, vendor-agnostic APIs, and support for forward and reverse lending. Widely adopted by credit unions. Recently acquired by PartnerOne; continues as a standalone product with existing integrations maintained.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 484,
+              "name": "MortgageWorkspace",
+              "homepage_url": "https://mortgageworkspace.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 602,
+                  "product_name": "MortgageExchange",
+                  "description": "Cloud-managed mortgage data integration hub for credit unions and community banks. Automates post-close data transfer from LOS to core systems, servicing platforms, and CRM with pre-built connectors. Eliminates on-site servers and manual data re-entry in mortgage operations workflows.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 10,
               "name": "Sagent",
               "homepage_url": "https://sagent.com",
@@ -6210,6 +6532,29 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 475,
+              "name": "Trivulo",
+              "homepage_url": "https://trivulo.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 593,
+                  "product_name": "Trivulo Fairness Auditor",
+                  "description": "AI fairness auditing platform for mortgage lenders. Detects bias across protected classes in automated decisioning models, provides CFPB-aligned explainability reports, and generates audit-ready adverse action documentation for fair lending examinations.",
+                  "pervasiveness_tier": 1,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -6219,6 +6564,29 @@
           "description": "Collections and recovery AI provides propensity-to-pay models, delinquency early-warning systems, intelligent outreach sequencing, and loss mitigation workflow tools for consumer and commercial loan portfolios. These products help financial institutions reach the right borrowers at the right time with the most effective channel and offer. Buyers are collections department managers, special assets teams, and retail banking operations leaders.",
           "ai_opportunities": "AI-driven early-warning models that identify delinquency risk 30–90 days before a payment is missed are giving community institutions the ability to proactively intervene with targeted hardship programs, substantially reducing charge-offs and preserving member relationships that would otherwise be lost.",
           "vendors": [
+            {
+              "vendor_id": 485,
+              "name": "IBS",
+              "homepage_url": "https://www.ibshome.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 603,
+                  "product_name": "SAFIRE-IQ",
+                  "description": "Purpose-built collection and asset recovery software for banks and credit unions. Supports delinquency management, loss mitigation, repossession, and portfolio reporting. In use at over 900 financial institutions with more than 3,000 active users on a modern fourth-generation architecture.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
             {
               "vendor_id": 296,
               "name": "DoubleCheck",
@@ -6539,6 +6907,98 @@
               ]
             },
             {
+              "vendor_id": 459,
+              "name": "Cync Software",
+              "homepage_url": "https://cyncsoftware.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 577,
+                  "product_name": "Cync Spreading",
+                  "description": "AI-powered financial spreading platform with no-code templates for C&I, CRE, and individual borrowers. Automates extraction from PDFs, CSVs, and images, performs global cash flow analysis, and tracks covenants. Part of a broader commercial lending automation suite covering borrowing base, ABL, and portfolio monitoring.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 463,
+              "name": "ACTICO",
+              "homepage_url": "https://www.actico.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 1997,
+              "products": [
+                {
+                  "product_id": 581,
+                  "product_name": "ACTICO Spreading Agent",
+                  "description": "Agentic AI spreading platform using IDP, NLP, and LLMs to auto-extract and map financial statements to bank-specific templates. Integrates with the ACTICO Credit Risk Platform for end-to-end commercial credit decisioning from spreading through underwriting.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 460,
+              "name": "Global Wave Group",
+              "homepage_url": "https://globalwavegroup.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 578,
+                  "product_name": "Financial Track",
+                  "description": "AI-automated spreading and analytics for community banks and credit unions. Provides configurable financial models, stress-testing, projections, covenant tracking, and global cash flow scenarios. Designed to replace manual spreadsheet spreading workflows at community FIs.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 461,
+              "name": "FISCAL Computer Systems",
+              "homepage_url": "https://www.fiscalcs.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 1980,
+              "products": [
+                {
+                  "product_id": 579,
+                  "product_name": "FISCAL Spreading",
+                  "description": "Financial statement spreading software purpose-built for small community banks and credit unions. Handles personal and business tax returns, CRE, global cash flow, and SBA/small business lending with highly flexible configurable templates. Established spreading solution used by hundreds of community FIs.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 204,
               "name": "Aloan",
               "homepage_url": "https://aloan.ai",
@@ -6584,6 +7044,29 @@
                     447,
                     459
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 462,
+              "name": "Accend",
+              "homepage_url": "https://www.withaccend.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 580,
+                  "product_name": "Accend Spreading",
+                  "description": "AI plus human review financial spreading service for commercial credit underwriting. Extracts and standardizes tax returns and audited and unaudited financials, delivers same-day spreads via API, Excel, or JSON output. Positions as a hybrid tech-enabled service for banks that want speed without sacrificing accuracy.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -6801,6 +7284,52 @@
               ]
             },
             {
+              "vendor_id": 455,
+              "name": "Nomis Solutions",
+              "homepage_url": "https://nomissolutions.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2002,
+              "products": [
+                {
+                  "product_id": 573,
+                  "product_name": "Nomis Pricing Suite",
+                  "description": "AI-native pricing and profitability management platform for banks and credit unions. Unifies deposit and loan pricing with customer segmentation, price sensitivity analytics, scenario modeling, and governed rate deployment across origination channels. Used in over $2.3T in annual pricing decisions globally.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 457,
+              "name": "Earnix",
+              "homepage_url": "https://earnix.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2001,
+              "products": [
+                {
+                  "product_id": 575,
+                  "product_name": "Earnix Rate Engine",
+                  "description": "AI-driven pricing optimization platform for consumer lenders. Includes credit risk simulation, A/B testing of rate strategies, scenario modeling, and governed rate deployment without IT dependency. Used by top-tier retail banks for personalized loan and deposit pricing at scale.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 14,
               "name": "PrecisionLender",
               "homepage_url": "https://www.ncino.com/products/relationship-profitability",
@@ -6851,6 +7380,52 @@
               ]
             },
             {
+              "vendor_id": 456,
+              "name": "Strunk",
+              "homepage_url": "https://strunkaccess.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 574,
+                  "product_name": "Strunk Pricing Manager",
+                  "description": "Hosted web-based loan pricing and profitability tool for community bank lenders. Provides core-integrated data analytics, ROE targets, relationship profitability scoring, and cost-of-funds tracking updated automatically from FHLB data.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 458,
+              "name": "LoanPricingPRO",
+              "homepage_url": "https://www.forvismazars.us/services/products/loanpricingpro",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 576,
+                  "product_name": "LoanPricingPRO",
+                  "description": "Commercial loan pricing SaaS for community banks and credit unions. Calculates real-time ROE per deal, relationship profitability, and portfolio-level reporting tied to lender and product performance. Product of Forvis Mazars, widely adopted among community bank CFOs and lenders for ALCO-driven pricing discipline.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 324,
               "name": "Naehas",
               "homepage_url": "https://www.naehas.com",
@@ -6876,6 +7451,29 @@
                     254,
                     256
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 489,
+              "name": "Community Bank Manager",
+              "homepage_url": "https://communitybankmanager.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 607,
+                  "product_name": "Community Bank Manager",
+                  "description": "SaaS platform for community banks combining ALM, budgeting, CECL, profitability analysis, and deposit and loan rate scanning in a single tool. Integrates with any core system and provides ALCO reporting, peer analysis, and scenario modeling for CFOs and management teams at community banks.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             }
@@ -8157,6 +8755,29 @@
                   "integration_ids": [
                     289
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 473,
+              "name": "Processware",
+              "homepage_url": "https://processware.us",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 591,
+                  "product_name": "Processware AI Toolkit",
+                  "description": "AI-first fintech toolkit for community banks and credit unions offering hybrid credit scoring combining rules and ML with SHAP and LIME explainability, fraud monitoring with unsupervised anomaly detection, and real-time compliance dashboards.",
+                  "pervasiveness_tier": 1,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             }
@@ -13484,6 +14105,29 @@
               ]
             },
             {
+              "vendor_id": 487,
+              "name": "Zafin",
+              "homepage_url": "https://zafin.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2002,
+              "products": [
+                {
+                  "product_id": 605,
+                  "product_name": "Zafin Deposit Pricing",
+                  "description": "Intelligent deposit pricing and relationship-based offer platform for regional and community banks. Enables automated rate campaigns, net new money tracking, multi-core product configuration, and targeted deposit growth initiatives with analytics to measure campaign effectiveness.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 31,
               "name": "Kasisto",
               "homepage_url": "https://kasisto.com",
@@ -17877,6 +18521,29 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 468,
+              "name": "Finovifi",
+              "homepage_url": "https://finovifi.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 586,
+                  "product_name": "RiskPilot",
+                  "description": "Audit management and compliance platform for financial institutions with preloaded FFIEC-aligned checklists covering 150+ granular control areas. Includes risk assessment templates for cybersecurity, UDAAP, and OFAC, with exam response tracking and board-ready reporting.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -19545,6 +20212,29 @@
               ]
             },
             {
+              "vendor_id": 465,
+              "name": "360factors",
+              "homepage_url": "https://www.360factors.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2012,
+              "products": [
+                {
+                  "product_id": 583,
+                  "product_name": "Predict360 Essentials",
+                  "description": "Risk and issues management platform preconfigured for community banks and credit unions with pre-loaded examiner-aligned workbooks, risk assessments, real-time issues tracking, and a Crowe Risk Library. Covers model risk, operational risk, audit, compliance, and vendor risk in a single integrated platform.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 1,
               "name": "Zest AI",
               "homepage_url": "https://www.zest.ai",
@@ -19622,6 +20312,52 @@
                     6,
                     9
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 464,
+              "name": "KDODEN",
+              "homepage_url": "https://kdoden.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 582,
+                  "product_name": "Model IQ",
+                  "description": "MRM lifecycle platform built by model risk practitioners for financial institutions. Covers model registration, risk tiering, validation scheduling, findings management, board reporting, and SR 11-7 maturity assessments. Designed for community banks through large institutions seeking structured model governance without heavy IT overhead.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 466,
+              "name": "Ethos AI",
+              "homepage_url": "https://ethosai.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 584,
+                  "product_name": "Ethos Risk Governance",
+                  "description": "Integrated risk governance platform spanning model risk management, operational risk, enterprise risk, and third-party risk on a single adaptive data layer. Configures in days and connects risk functions with full audit trails. Scales from community bank through enterprise.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -19772,6 +20508,52 @@
           "ai_opportunities": "AI that can systematically review thousands of pages of internal policies against current examination procedures and generate specific gap remediation recommendations is enabling community banks and credit unions to arrive at regulatory exams dramatically better prepared than was previously possible with limited compliance staff.",
           "vendors": [
             {
+              "vendor_id": 467,
+              "name": "CoNetrix",
+              "homepage_url": "https://conetrix.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 585,
+                  "product_name": "CoNetrix Tandem",
+                  "description": "Audit and exam management software for banks, credit unions, and savings associations. Tracks findings, work programs, and work papers, generates audit reports with SSO integration and role-based access. Part of a broader Tandem suite covering IT security, BSA, vendor management, and FFIEC cybersecurity assessments.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 469,
+              "name": "Safe Systems",
+              "homepage_url": "https://www.safesystems.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 1989,
+              "products": [
+                {
+                  "product_id": 587,
+                  "product_name": "Safe Systems Audit Trail",
+                  "description": "Cloud-based audit and exam management tool for community banks and credit unions. Tracks all audit and exam activities year-round, centralizes findings and management responses, and automates exam preparation workflows. Part of a broader community bank IT compliance platform.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 41,
               "name": "Quantivate",
               "homepage_url": "https://www.quantivate.com",
@@ -19867,6 +20649,29 @@
               ]
             },
             {
+              "vendor_id": 468,
+              "name": "Finovifi",
+              "homepage_url": "https://finovifi.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 586,
+                  "product_name": "RiskPilot",
+                  "description": "Audit management and compliance platform for financial institutions with preloaded FFIEC-aligned checklists covering 150+ granular control areas. Includes risk assessment templates for cybersecurity, UDAAP, and OFAC, with exam response tracking and board-ready reporting.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 76,
               "name": "Ncontracts",
               "homepage_url": "https://www.ncontracts.com",
@@ -19927,6 +20732,29 @@
               ]
             },
             {
+              "vendor_id": 465,
+              "name": "360factors",
+              "homepage_url": "https://www.360factors.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2012,
+              "products": [
+                {
+                  "product_id": 583,
+                  "product_name": "Predict360 Essentials",
+                  "description": "Risk and issues management platform preconfigured for community banks and credit unions with pre-loaded examiner-aligned workbooks, risk assessments, real-time issues tracking, and a Crowe Risk Library. Covers model risk, operational risk, audit, compliance, and vendor risk in a single integrated platform.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 440,
               "name": "Kadince",
               "homepage_url": "https://www.kadince.com",
@@ -19941,6 +20769,29 @@
                   "product_name": "Kadince CRA Management",
                   "description": "Compliance and community investment management software for banks and credit unions; centralizes CRA tracking of donations, service hours, loans, and investments with geocoding, exam reporting, and fair lending documentation.",
                   "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 493,
+              "name": "Across",
+              "homepage_url": "https://verifyacross.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 611,
+                  "product_name": "Across Fintech Risk Assessment",
+                  "description": "Third-party fintech risk assessment and monitoring platform for community banks and credit unions. Conducts due diligence on fintech partners and generates exam-ready reports that have been reviewed in FDIC and NCUA examinations. Provides continuous transaction monitoring for ongoing partner oversight.",
+                  "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
                   "is_primary": false,
@@ -22831,6 +23682,29 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 476,
+              "name": "Saris AI",
+              "homepage_url": "https://saris-ai.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 594,
+                  "product_name": "Saris AI Workflow Agents",
+                  "description": "AI workflow automation agents for banks and credit unions. Automates lending operations spanning consumer, mortgage, and commercial, quality control, and back-office tasks end-to-end from inbox to core to compliance. Includes human supervision checkpoints and full audit trails for exam readiness.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -22991,6 +23865,52 @@
               ]
             },
             {
+              "vendor_id": 493,
+              "name": "Across",
+              "homepage_url": "https://verifyacross.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 611,
+                  "product_name": "Across Fintech Risk Assessment",
+                  "description": "Third-party fintech risk assessment and monitoring platform for community banks and credit unions. Conducts due diligence on fintech partners and generates exam-ready reports that have been reviewed in FDIC and NCUA examinations. Provides continuous transaction monitoring for ongoing partner oversight.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 467,
+              "name": "CoNetrix",
+              "homepage_url": "https://conetrix.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 585,
+                  "product_name": "CoNetrix Tandem",
+                  "description": "Audit and exam management software for banks, credit unions, and savings associations. Tracks findings, work programs, and work papers, generates audit reports with SSO integration and role-based access. Part of a broader Tandem suite covering IT security, BSA, vendor management, and FFIEC cybersecurity assessments.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 41,
               "name": "Quantivate",
               "homepage_url": "https://www.quantivate.com",
@@ -23076,6 +23996,29 @@
                   "product_id": 498,
                   "product_name": "Finosec Governance 360",
                   "description": "Automated cybersecurity governance platform for community FIs; covers InfoSec governance, FFIEC CAT replacement, user access reporting, and vendor risk management.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 466,
+              "name": "Ethos AI",
+              "homepage_url": "https://ethosai.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 584,
+                  "product_name": "Ethos Risk Governance",
+                  "description": "Integrated risk governance platform spanning model risk management, operational risk, enterprise risk, and third-party risk on a single adaptive data layer. Configures in days and connects risk functions with full audit trails. Scales from community bank through enterprise.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "both",
                   "status": "active",
@@ -31895,6 +32838,29 @@
               ]
             },
             {
+              "vendor_id": 484,
+              "name": "MortgageWorkspace",
+              "homepage_url": "https://mortgageworkspace.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 602,
+                  "product_name": "MortgageExchange",
+                  "description": "Cloud-managed mortgage data integration hub for credit unions and community banks. Automates post-close data transfer from LOS to core systems, servicing platforms, and CRM with pre-built connectors. Eliminates on-site servers and manual data re-entry in mortgage operations workflows.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 257,
               "name": "Narmi",
               "homepage_url": "https://www.narmi.com",
@@ -34991,6 +35957,29 @@
               ]
             },
             {
+              "vendor_id": 487,
+              "name": "Zafin",
+              "homepage_url": "https://zafin.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2002,
+              "products": [
+                {
+                  "product_id": 605,
+                  "product_name": "Zafin Deposit Pricing",
+                  "description": "Intelligent deposit pricing and relationship-based offer platform for regional and community banks. Enables automated rate campaigns, net new money tracking, multi-core product configuration, and targeted deposit growth initiatives with analytics to measure campaign effectiveness.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 60,
               "name": "Velocity Solutions",
               "homepage_url": "https://myvelocity.com",
@@ -35064,6 +36053,29 @@
               ]
             },
             {
+              "vendor_id": 486,
+              "name": "Deposit Monitor",
+              "homepage_url": "https://www.depositmonitor.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 604,
+                  "product_name": "Deposit Monitor",
+                  "description": "Daily competitive deposit rate intelligence for community banks. Tracks 20,000+ CD, MMDA, and savings rates across 1,300+ US institutions with branch-level competitor maps, promotional rate flags, and FDIC peer benchmarking. Purpose-built for community bank deposit officers and CFOs.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 132,
               "name": "Plinqit",
               "homepage_url": "https://www.plinqit.com",
@@ -35125,6 +36137,52 @@
                   "fi_segment": "both",
                   "status": "active",
                   "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 488,
+              "name": "FINTX",
+              "homepage_url": "https://www.fintx.net",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 606,
+                  "product_name": "FINTX Deposit Strategy",
+                  "description": "SaaS deposit strategy automation platform for community banks. Powers new account bonuses, debit card cash back, loyalty bonuses, and promotional programs with fixed monthly pricing and no per-account fees. Designed for community bank marketing teams with minimal IT dependency.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 455,
+              "name": "Nomis Solutions",
+              "homepage_url": "https://nomissolutions.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2002,
+              "products": [
+                {
+                  "product_id": 573,
+                  "product_name": "Nomis Pricing Suite",
+                  "description": "AI-native pricing and profitability management platform for banks and credit unions. Unifies deposit and loan pricing with customer segmentation, price sensitivity analytics, scenario modeling, and governed rate deployment across origination channels. Used in over $2.3T in annual pricing decisions globally.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
                   "competitor_ids": [],
                   "integration_ids": []
                 }
@@ -35519,6 +36577,29 @@
               ]
             },
             {
+              "vendor_id": 489,
+              "name": "Community Bank Manager",
+              "homepage_url": "https://communitybankmanager.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 607,
+                  "product_name": "Community Bank Manager",
+                  "description": "SaaS platform for community banks combining ALM, budgeting, CECL, profitability analysis, and deposit and loan rate scanning in a single tool. Integrates with any core system and provides ALCO reporting, peer analysis, and scenario modeling for CFOs and management teams at community banks.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 301,
               "name": "TruStage",
               "homepage_url": "https://www.trustage.com",
@@ -35590,6 +36671,29 @@
                   "integration_ids": [
                     289
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 485,
+              "name": "IBS",
+              "homepage_url": "https://www.ibshome.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 603,
+                  "product_name": "SAFIRE-IQ",
+                  "description": "Purpose-built collection and asset recovery software for banks and credit unions. Supports delinquency management, loss mitigation, repossession, and portfolio reporting. In use at over 900 financial institutions with more than 3,000 active users on a modern fourth-generation architecture.",
+                  "pervasiveness_tier": 5,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -35702,6 +36806,29 @@
           "description": "Investment portfolio AI provides community financial institutions with AI-assisted bond portfolio analysis, duration and convexity management tools, tax-loss harvesting recommendations, and bond laddering optimization within the constraints of community bank investment policy and FDIC/NCUA regulatory requirements. Products help investment officers manage the securities portfolio without large internal fixed income teams. CFOs, investment officers, and ALM committees are the buyers.",
           "ai_opportunities": "AI portfolio analytics that continuously monitors mark-to-market exposure, duration risk, and reinvestment opportunities — and proactively flags portfolio adjustments aligned with the institution's ALM targets — are enabling smaller investment teams at community institutions to manage portfolios with the analytical rigor of much larger banks.",
           "vendors": [
+            {
+              "vendor_id": 490,
+              "name": "FusionIQ",
+              "homepage_url": "https://fusioniq.io",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 608,
+                  "product_name": "FusionIQ Wealth Platform",
+                  "description": "Modular digital wealth management platform for banks and credit unions. Offers robo-advice, self-directed investing, and hybrid advisor tools natively integrated into existing digital banking environments. Custodian-agnostic architecture allows FIs to embed investing without switching core or digital banking providers.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
             {
               "vendor_id": 64,
               "name": "Clearwater Analytics",
@@ -35869,6 +36996,29 @@
               ]
             },
             {
+              "vendor_id": 491,
+              "name": "Eko Investments",
+              "homepage_url": "https://eko.investments",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 609,
+                  "product_name": "Eko Investments-as-a-Service",
+                  "description": "Investments-as-a-Service platform for banks and credit unions enabling direct-from-checking investment funding without core integration. Supports portfolio transfers and rollovers back to the institution. Won Finovate Best of Show in consecutive years for its frictionless investment onboarding model.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 167,
               "name": "Marstone",
               "homepage_url": "https://www.marstone.com",
@@ -35972,6 +37122,29 @@
                   "integration_ids": [
                     60
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 492,
+              "name": "Polaris Portfolios",
+              "homepage_url": "https://www.polarisportfolios.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 610,
+                  "product_name": "Polaris Digital Wealth",
+                  "description": "Turnkey digital wealth advisor for community banks and credit unions. Provides robo-investing, dynamic financial planning, and access to a human advisor under the FI brand with zero upfront cost and a revenue-sharing model. Positioned for FIs that want to retain deposit relationships that would otherwise move to brokerage accounts.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             },
@@ -36256,6 +37429,52 @@
               ]
             },
             {
+              "vendor_id": 470,
+              "name": "Natum AI",
+              "homepage_url": "https://www.natum.ai",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 588,
+                  "product_name": "Natum AI Credit Analyst",
+                  "description": "AI credit analyst platform for community banks and credit unions with $100M to $10B in assets. Scans the commercial deposit base for lending opportunities, automates credit underwriting package assembly, and provides daily portfolio monitoring with explainable audit trails aligned to examiner expectations.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 472,
+              "name": "iTuring",
+              "homepage_url": "https://www.ituring.ai",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 590,
+                  "product_name": "iTuring AI Platform",
+                  "description": "Integrated AI platform combining predictive, generative, and agentic AI with governance native to every layer. Used by banks and credit unions for credit risk, fraud detection, collections optimization, and retention, with immutable audit trails and model explainability built in.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 120,
               "name": "SAVVI AI",
               "homepage_url": "https://www.savviai.com",
@@ -36315,6 +37534,52 @@
                     134,
                     186
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 471,
+              "name": "adapfin",
+              "homepage_url": "https://adapfin.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 589,
+                  "product_name": "CLARA AI / Nucleus BankOS",
+                  "description": "AI-native banking platform with embedded ML via the CLARA AI engine for credit modeling, personalization, and fraud and AML detection. Includes a no-code policy engine for building and testing credit models without data scientists.",
+                  "pervasiveness_tier": 1,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 473,
+              "name": "Processware",
+              "homepage_url": "https://processware.us",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 591,
+                  "product_name": "Processware AI Toolkit",
+                  "description": "AI-first fintech toolkit for community banks and credit unions offering hybrid credit scoring combining rules and ML with SHAP and LIME explainability, fraud monitoring with unsupervised anomaly detection, and real-time compliance dashboards.",
+                  "pervasiveness_tier": 1,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -37490,6 +38755,52 @@
               ]
             },
             {
+              "vendor_id": 474,
+              "name": "Verapath",
+              "homepage_url": "https://verapath.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 592,
+                  "product_name": "Verapath AI Governance",
+                  "description": "Private AI governance platform for financial institutions providing 100+ pre-built AI agents with built-in GRC and cybersecurity controls, complete audit trails, and full data sovereignty. Positioned for banks, credit unions, and wealth managers seeking to deploy AI without sharing data with third-party model providers.",
+                  "pervasiveness_tier": 1,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 475,
+              "name": "Trivulo",
+              "homepage_url": "https://trivulo.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 593,
+                  "product_name": "Trivulo Fairness Auditor",
+                  "description": "AI fairness auditing platform for mortgage lenders. Detects bias across protected classes in automated decisioning models, provides CFPB-aligned explainability reports, and generates audit-ready adverse action documentation for fair lending examinations.",
+                  "pervasiveness_tier": 1,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 1,
               "name": "Zest AI",
               "homepage_url": "https://www.zest.ai",
@@ -37560,6 +38871,29 @@
                     92,
                     150
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 472,
+              "name": "iTuring",
+              "homepage_url": "https://www.ituring.ai",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 590,
+                  "product_name": "iTuring AI Platform",
+                  "description": "Integrated AI platform combining predictive, generative, and agentic AI with governance native to every layer. Used by banks and credit unions for credit risk, fraud detection, collections optimization, and retention, with immutable audit trails and model explainability built in.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -45046,6 +46380,29 @@
               ]
             },
             {
+              "vendor_id": 476,
+              "name": "Saris AI",
+              "homepage_url": "https://saris-ai.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 594,
+                  "product_name": "Saris AI Workflow Agents",
+                  "description": "AI workflow automation agents for banks and credit unions. Automates lending operations spanning consumer, mortgage, and commercial, quality control, and back-office tasks end-to-end from inbox to core to compliance. Includes human supervision checkpoints and full audit trails for exam readiness.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 233,
               "name": "Hapax",
               "homepage_url": "https://www.askhapax.ai",
@@ -45068,6 +46425,29 @@
                     311,
                     348
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 474,
+              "name": "Verapath",
+              "homepage_url": "https://verapath.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 592,
+                  "product_name": "Verapath AI Governance",
+                  "description": "Private AI governance platform for financial institutions providing 100+ pre-built AI agents with built-in GRC and cybersecurity controls, complete audit trails, and full data sovereignty. Positioned for banks, credit unions, and wealth managers seeking to deploy AI without sharing data with third-party model providers.",
+                  "pervasiveness_tier": 1,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -46522,6 +47902,158 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 477,
+              "name": "Genesis Core Systems",
+              "homepage_url": "https://www.genesiscoresystems.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 595,
+                  "product_name": "Genesis Core",
+                  "description": "Cloud-native core banking system purpose-built for community banks. Consolidates core processing, CRM, compliance, and analytics into one integrated platform positioned as an alternative to multi-vendor stacks from large core providers. API-first architecture built for modern integration patterns.",
+                  "pervasiveness_tier": 1,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 171,
+              "name": "Nymbus",
+              "homepage_url": "https://www.nymbus.com",
+              "logo_url": "/fi-landscape-logos/171.png",
+              "status": "active",
+              "hq_city": "Jacksonville",
+              "hq_state": "FL",
+              "founded_year": 2015,
+              "products": [
+                {
+                  "product_id": 202,
+                  "product_name": "Nymbus SmartCore",
+                  "description": "Cloud-native, API-first alternative core banking platform for community banks and credit unions. Enables full core conversion or co-existence alongside legacy cores. Supports digital brand studio (Nymbus Labs) for launching niche banking brands and BaaS programs via CUSO model. Notable 2025 milestone: PeoplesBank conversion (largest modern core conversion by a US community bank). Also supports MSU FCU, Chrome FCU, Vantage West CU.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [
+                    49,
+                    65,
+                    66,
+                    67,
+                    93,
+                    136,
+                    137,
+                    138,
+                    139,
+                    191,
+                    196,
+                    199,
+                    200,
+                    201,
+                    203,
+                    251,
+                    252,
+                    254,
+                    255,
+                    256,
+                    257,
+                    258,
+                    263,
+                    264,
+                    265,
+                    266,
+                    267,
+                    268,
+                    269,
+                    274,
+                    275,
+                    276,
+                    277,
+                    281,
+                    287,
+                    289,
+                    290,
+                    293,
+                    296,
+                    297,
+                    298,
+                    299,
+                    302,
+                    304,
+                    327,
+                    328,
+                    329,
+                    331,
+                    334,
+                    335,
+                    338,
+                    361,
+                    363,
+                    365,
+                    396,
+                    437,
+                    456,
+                    468,
+                    471,
+                    472,
+                    473,
+                    474,
+                    475,
+                    476,
+                    477,
+                    478,
+                    479,
+                    480,
+                    481,
+                    482,
+                    483,
+                    484,
+                    485,
+                    486,
+                    487,
+                    488,
+                    489,
+                    490,
+                    491,
+                    492,
+                    493,
+                    494
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 471,
+              "name": "adapfin",
+              "homepage_url": "https://adapfin.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 589,
+                  "product_name": "CLARA AI / Nucleus BankOS",
+                  "description": "AI-native banking platform with embedded ML via the CLARA AI engine for credit modeling, personalization, and fraud and AML detection. Includes a no-code policy engine for building and testing credit models without data scientists.",
+                  "pervasiveness_tier": 1,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -47615,6 +49147,114 @@
               ]
             },
             {
+              "vendor_id": 248,
+              "name": "BankJoy",
+              "homepage_url": "https://bankjoy.com",
+              "logo_url": "/fi-landscape-logos/248.png",
+              "status": "active",
+              "hq_city": "Royal Oak",
+              "hq_state": "MI",
+              "founded_year": 2015,
+              "products": [
+                {
+                  "product_id": 327,
+                  "product_name": "BankJoy Digital Banking",
+                  "description": "End-to-end digital banking suite including mobile, online, account opening, loan origination, and AI voice banking integrated with KeyStone.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "credit_unions",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [
+                    49,
+                    65,
+                    66,
+                    67,
+                    93,
+                    136,
+                    137,
+                    138,
+                    139,
+                    191,
+                    196,
+                    199,
+                    200,
+                    201,
+                    202,
+                    203,
+                    251,
+                    252,
+                    254,
+                    255,
+                    256,
+                    257,
+                    258,
+                    263,
+                    264,
+                    265,
+                    266,
+                    267,
+                    268,
+                    269,
+                    274,
+                    275,
+                    276,
+                    277,
+                    281,
+                    287,
+                    289,
+                    290,
+                    293,
+                    296,
+                    297,
+                    298,
+                    299,
+                    302,
+                    304,
+                    328,
+                    329,
+                    331,
+                    334,
+                    335,
+                    338,
+                    361,
+                    363,
+                    365,
+                    396,
+                    437,
+                    456,
+                    468,
+                    471,
+                    472,
+                    473,
+                    474,
+                    475,
+                    476,
+                    477,
+                    478,
+                    479,
+                    480,
+                    481,
+                    482,
+                    483,
+                    484,
+                    485,
+                    486,
+                    487,
+                    488,
+                    489,
+                    490,
+                    491,
+                    492,
+                    493,
+                    494
+                  ],
+                  "integration_ids": [
+                    256
+                  ]
+                }
+              ]
+            },
+            {
               "vendor_id": 443,
               "name": "OMNICOMMANDER",
               "homepage_url": "https://omnicommander.com",
@@ -47630,6 +49270,29 @@
                   "description": "All-in-one digital presence platform for community banks and credit unions; provides ADA-compliant branded websites, live chat, digital marketing (SEO/SEM/social), and FFIEC-aligned cybersecurity risk assessments.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 479,
+              "name": "Prolific Banking",
+              "homepage_url": "https://prolificbanking.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 597,
+                  "product_name": "Prolific POD",
+                  "description": "Cloud-native commercial banking platform for digital transformation of treasury management. Automates account opening, treasury onboarding, data exchange, and compliance with a developer-first API portal for community bank integration teams.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "banks",
                   "status": "active",
                   "is_primary": false,
                   "competitor_ids": [],
@@ -47667,6 +49330,277 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 478,
+              "name": "Tru Treasury",
+              "homepage_url": "https://trutreasury.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 596,
+                  "product_name": "Tru Treasury Platform",
+                  "description": "Fully white-labeled treasury management and business digital banking platform for credit unions and community banks. Includes ACH, wire, payroll, cash management, and role-based entitlements. Pre-integrated with most major core systems and designed for FIs that want to compete with regional bank commercial offerings.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 479,
+              "name": "Prolific Banking",
+              "homepage_url": "https://prolificbanking.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 597,
+                  "product_name": "Prolific POD",
+                  "description": "Cloud-native commercial banking platform for digital transformation of treasury management. Automates account opening, treasury onboarding, data exchange, and compliance with a developer-first API portal for community bank integration teams.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 56,
+              "name": "Apiture",
+              "homepage_url": "https://www.apiture.com",
+              "logo_url": "/fi-landscape-logos/56.png",
+              "status": "active",
+              "hq_city": "Wilmington",
+              "hq_state": "NC",
+              "founded_year": 2017,
+              "products": [
+                {
+                  "product_id": 65,
+                  "product_name": "Apiture Open Platform",
+                  "description": "API-first digital banking and open banking integration platform for community banks and credit unions; enables connectivity between fintech vendors and core banking systems (FIS, Fiserv, Jack Henry, CSI); 40+ core integrations; Fintech Connector module for B2B FI-to-vendor API management",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [
+                    19,
+                    20,
+                    49,
+                    59,
+                    66,
+                    67,
+                    93,
+                    94,
+                    136,
+                    137,
+                    138,
+                    139,
+                    191,
+                    196,
+                    199,
+                    200,
+                    201,
+                    202,
+                    203,
+                    251,
+                    252,
+                    253,
+                    254,
+                    255,
+                    256,
+                    257,
+                    258,
+                    263,
+                    264,
+                    265,
+                    266,
+                    267,
+                    268,
+                    269,
+                    273,
+                    274,
+                    275,
+                    276,
+                    277,
+                    280,
+                    281,
+                    287,
+                    289,
+                    290,
+                    293,
+                    296,
+                    297,
+                    298,
+                    299,
+                    302,
+                    304,
+                    327,
+                    328,
+                    329,
+                    331,
+                    334,
+                    335,
+                    338,
+                    361,
+                    363,
+                    365,
+                    396,
+                    411,
+                    417,
+                    435,
+                    437,
+                    441,
+                    456,
+                    468,
+                    471,
+                    472,
+                    473,
+                    474,
+                    475,
+                    476,
+                    477,
+                    478,
+                    479,
+                    480,
+                    481,
+                    482,
+                    483,
+                    484,
+                    485,
+                    486,
+                    487,
+                    488,
+                    489,
+                    490,
+                    491,
+                    492,
+                    493,
+                    494
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 248,
+              "name": "BankJoy",
+              "homepage_url": "https://bankjoy.com",
+              "logo_url": "/fi-landscape-logos/248.png",
+              "status": "active",
+              "hq_city": "Royal Oak",
+              "hq_state": "MI",
+              "founded_year": 2015,
+              "products": [
+                {
+                  "product_id": 327,
+                  "product_name": "BankJoy Digital Banking",
+                  "description": "End-to-end digital banking suite including mobile, online, account opening, loan origination, and AI voice banking integrated with KeyStone.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "credit_unions",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [
+                    49,
+                    65,
+                    66,
+                    67,
+                    93,
+                    136,
+                    137,
+                    138,
+                    139,
+                    191,
+                    196,
+                    199,
+                    200,
+                    201,
+                    202,
+                    203,
+                    251,
+                    252,
+                    254,
+                    255,
+                    256,
+                    257,
+                    258,
+                    263,
+                    264,
+                    265,
+                    266,
+                    267,
+                    268,
+                    269,
+                    274,
+                    275,
+                    276,
+                    277,
+                    281,
+                    287,
+                    289,
+                    290,
+                    293,
+                    296,
+                    297,
+                    298,
+                    299,
+                    302,
+                    304,
+                    328,
+                    329,
+                    331,
+                    334,
+                    335,
+                    338,
+                    361,
+                    363,
+                    365,
+                    396,
+                    437,
+                    456,
+                    468,
+                    471,
+                    472,
+                    473,
+                    474,
+                    475,
+                    476,
+                    477,
+                    478,
+                    479,
+                    480,
+                    481,
+                    482,
+                    483,
+                    484,
+                    485,
+                    486,
+                    487,
+                    488,
+                    489,
+                    490,
+                    491,
+                    492,
+                    493,
+                    494
+                  ],
+                  "integration_ids": [
+                    256
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -47692,6 +49626,29 @@
                   "description": "Self-service digital account opening for consumer and business deposits; biometric ID verification, document OCR, and under-5-minute application flow. Integrates with all four Jack Henry cores.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 481,
+              "name": "Origence",
+              "homepage_url": "https://origence.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": 2018,
+              "products": [
+                {
+                  "product_id": 599,
+                  "product_name": "Origence Account Opening",
+                  "description": "Credit union-focused digital account opening platform integrated with loan origination via arc OS and arc DX. Streamlines membership account opening in under six minutes with fraud detection, application pre-fill, and a unified origination experience across loans and deposits. Rebranded from CU Direct.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "credit_unions",
                   "status": "active",
                   "is_primary": true,
                   "competitor_ids": [],
@@ -47746,6 +49703,29 @@
               ]
             },
             {
+              "vendor_id": 480,
+              "name": "Aerial",
+              "homepage_url": "https://joinaerial.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": null,
+              "hq_state": null,
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 598,
+                  "product_name": "Aerial Account Opening",
+                  "description": "AI-native digital account opening platform purpose-built for credit unions and community banks. Real-time core integrations with Symitar, Corelation, Fiserv DNA, and Portico. AI-guided conversion flows and live in under four weeks at pricing designed for community FI budgets.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 430,
               "name": "BusinessNext",
               "homepage_url": "https://www.businessnext.com",
@@ -47767,6 +49747,99 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 275,
+              "name": "Doxim",
+              "homepage_url": "https://www.doxim.com",
+              "logo_url": "/fi-landscape-logos/275.png",
+              "status": "active",
+              "hq_city": "Markham",
+              "hq_state": "Canada",
+              "founded_year": 2000,
+              "products": [
+                {
+                  "product_id": 353,
+                  "product_name": "Doxim Customer Engagement Platform",
+                  "description": "Customer communications management and engagement platform for credit unions with personalized statements, cross-sell, and digital delivery.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "credit_unions",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [
+                    42,
+                    43,
+                    44,
+                    49,
+                    60,
+                    66,
+                    79,
+                    83,
+                    84,
+                    107,
+                    122,
+                    126,
+                    193,
+                    212,
+                    213,
+                    214,
+                    215,
+                    216,
+                    217,
+                    234,
+                    248,
+                    249,
+                    252,
+                    253,
+                    258,
+                    281,
+                    291,
+                    292,
+                    296,
+                    301,
+                    304,
+                    313,
+                    314,
+                    315,
+                    316,
+                    317,
+                    318,
+                    319,
+                    320,
+                    322,
+                    323,
+                    324,
+                    325,
+                    326,
+                    330,
+                    336,
+                    351,
+                    384,
+                    385,
+                    387,
+                    389,
+                    399,
+                    409,
+                    411,
+                    412,
+                    414,
+                    417,
+                    418,
+                    419,
+                    420,
+                    421,
+                    422,
+                    424,
+                    431,
+                    438,
+                    448,
+                    452,
+                    464,
+                    470
+                  ],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         }
@@ -47774,8 +49847,8 @@
     }
   ],
   "meta": {
-    "vendor_count": 425,
-    "product_count": 500,
-    "generated_at": "2026-05-14T14:12:12.498Z"
+    "vendor_count": 464,
+    "product_count": 539,
+    "generated_at": "2026-05-14T14:29:46.604Z"
   }
 }
