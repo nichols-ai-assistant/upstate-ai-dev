@@ -1629,7 +1629,7 @@
                     state.competitorFilter = { productName: productName, ids: competitorIds, sourceVendorId: vendor.vendor_id };
                     state.competitorSourceT2s = new Set(t2sByProductId[primary.product_id] || []);
                     update();
-                    window.scrollTo(0, 0);
+                    setTimeout(function() { scrollToGrid(); }, 0);
                 });
             }
             var ecoBtn = document.getElementById('modal-btn-ecosystem');
@@ -1654,7 +1654,7 @@
                     state.ecosystemFilter = { productName: productName, ids: integrationIds, sourceVendorId: vendor.vendor_id };
                     state.ecosystemSourceT2s = new Set(t2sByProductId[primary.product_id] || []);
                     update();
-                    window.scrollTo(0, 0);
+                    setTimeout(function() { scrollToGrid(); }, 0);
                 });
             }
         }
