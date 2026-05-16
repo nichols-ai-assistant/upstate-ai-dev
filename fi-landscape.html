@@ -1064,13 +1064,7 @@
                     <button class="seg-filter-btn" data-segment="banks">Banks Only</button>
                     <button class="seg-filter-btn" data-segment="credit_unions">Credit Unions Only</button>
                     <button class="seg-filter-btn" data-segment="both">Both</button>
-                </div>
-            </div>
-            <!-- Status row -->
-            <div class="category-filter-row" id="status-filter-row">
-                <span class="cat-filter-label">Status</span>
-                <div class="filter-row-controls">
-                    <button class="cat-filter-btn" id="defunct-toggle" title="Show vendors that are no longer operating">Show Defunct</button>
+                    <button class="seg-filter-btn" data-segment="defunct">Defunct</button>
                 </div>
             </div>
         </div>
@@ -1162,7 +1156,6 @@
             activeT2: null,         // category code string, or null
             activeT1: null,         // T1 code or null
             activeTier: null,       // 1-6 or null
-            showDefunct: false,     // show defunct (shut down) vendors
             competitorFilter: null,    // { productId, productName } or null
             ecosystemFilter: null,     // { productId, productName } or null
             competitorSourceT2s: null, // Set of T2 codes the source product belongs to
@@ -1289,8 +1282,11 @@
 
         // ---- Check if vendor matches current filters ----
         function vendorVisible(vendor) {
-            // Hide defunct vendors unless explicitly shown
-            if (isDefunct(vendor) && !state.showDefunct) return false;
+            var defunct = isDefunct(vendor);
+            // Defunct segment: show ONLY defunct vendors, skip all other filters
+            if (state.segment === 'defunct') return defunct;
+            // All other views: always hide defunct vendors
+            if (defunct) return false;
             // Source vendor of an active competitor/ecosystem filter always passes through
             var isSource = (
                 (state.competitorFilter && state.competitorFilter.sourceVendorId === vendor.vendor_id) ||
@@ -1323,7 +1319,7 @@
                 });
                 if (!vendorMatch && !productMatch) return false;
             }
-            // Segment filter
+            // Segment filter (banks / credit_unions / both)
             if (state.segment !== 'all') {
                 var segMatch = vendor.products.some(function(p) {
                     return p.fi_segment === state.segment || p.fi_segment === 'both';
@@ -1741,7 +1737,7 @@
                 chips += '<span class="filter-chip">' + escHtml(TIER_LABELS[state.activeTier]) + '<button class="filter-chip-dismiss" data-dismiss="tier" aria-label="Clear tier filter">&times;</button></span>';
             }
             if (state.segment !== 'all') {
-                var segChipLabel = { banks: 'Banks Only', credit_unions: 'Credit Unions Only', both: 'Both' }[state.segment] || state.segment;
+                var segChipLabel = { banks: 'Banks Only', credit_unions: 'Credit Unions Only', both: 'Both', defunct: 'Defunct' }[state.segment] || state.segment;
                 chips += '<span class="filter-chip">Segment: ' + escHtml(segChipLabel) + '<button class="filter-chip-dismiss" data-dismiss="segment" aria-label="Clear segment filter">&times;</button></span>';
             }
             if (state.search) {
@@ -1792,13 +1788,11 @@
             state.ecosystemFilter = null;
             state.competitorSourceT2s = null;
             state.ecosystemSourceT2s = null;
-            state.showDefunct = false;
             var searchInput = document.getElementById('vendor-search');
             if (searchInput) searchInput.value = '';
             syncT1Buttons();
             syncTierButtons();
             syncSegmentButtons();
-            syncDefunctButton();
             update();
         }
 
@@ -1864,19 +1858,6 @@
             var tierVal = btn.dataset.tier;
             state.activeTier = (tierVal === 'all') ? null : parseInt(tierVal, 10);
             syncTierButtons();
-            update();
-        });
-
-        // ---- Defunct toggle ----
-        function syncDefunctButton() {
-            var btn = document.getElementById('defunct-toggle');
-            if (!btn) return;
-            btn.classList.toggle('active', state.showDefunct);
-        }
-
-        document.getElementById('defunct-toggle').addEventListener('click', function() {
-            state.showDefunct = !state.showDefunct;
-            syncDefunctButton();
             update();
         });
 
@@ -2060,7 +2041,6 @@
                 state.activeT1 !== null ||
                 state.activeT2 !== null ||
                 state.segment !== 'all' ||
-                state.showDefunct ||
                 !!state.search
             );
             var resetBtn = document.getElementById('filter-reset-btn');
