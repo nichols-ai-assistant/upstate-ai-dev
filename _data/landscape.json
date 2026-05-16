@@ -9,7 +9,7 @@
           "code": "T2-01a",
           "name": "Credit Underwriting & Decisioning",
           "description": "Credit underwriting and decisioning platforms provide the scoring models, rules engines, and alternative data signals that drive loan approval, pricing, and risk segmentation. Products in this category range from standalone AI credit model vendors to integrated decisioning APIs that plug into existing LOS workflows. Buyers are typically Chief Credit Officers, Chief Risk Officers, and heads of consumer or commercial lending.",
-          "ai_opportunities": "AI is enabling community banks and credit unions to underwrite thin-file borrowers using alternative data \u2014 cash flow, rent history, and gig income \u2014 dramatically expanding addressable lending markets while maintaining or improving credit performance compared to traditional bureau-only models.",
+          "ai_opportunities": "AI is enabling community banks and credit unions to underwrite thin-file borrowers using alternative data — cash flow, rent history, and gig income — dramatically expanding addressable lending markets while maintaining or improving credit performance compared to traditional bureau-only models.",
           "vendors": [
             {
               "vendor_id": 1,
@@ -834,7 +834,7 @@
                 {
                   "product_id": 238,
                   "product_name": "RDC.AI Credit Decisioning Platform",
-                  "description": "Explainable AI platform for business and commercial credit decisioning. Supports origination through portfolio monitoring. Transparent AI (not a black box) \u2014 shows why loans are approved or denied.",
+                  "description": "Explainable AI platform for business and commercial credit decisioning. Supports origination through portfolio monitoring. Transparent AI (not a black box) — shows why loans are approved or denied.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "banks",
                   "status": "active",
@@ -1038,7 +1038,7 @@
           "code": "T2-01b",
           "name": "Loan Origination Systems",
           "description": "Loan origination systems are end-to-end platforms that manage the full loan lifecycle from application through approval, closing, and booking. AI-enhanced LOS vendors embed automated underwriting, document extraction, e-signature, and workflow orchestration directly into the platform. Primary buyers are heads of lending, COOs, and digital transformation leaders at community banks and credit unions.",
-          "ai_opportunities": "AI is dramatically compressing loan cycle times \u2014 from days to minutes for consumer loans \u2014 by automating income verification, document classification, fraud checks, and compliance review within the origination workflow, directly improving both member experience and loan officer productivity.",
+          "ai_opportunities": "AI is dramatically compressing loan cycle times — from days to minutes for consumer loans — by automating income verification, document classification, fraud checks, and compliance review within the origination workflow, directly improving both member experience and loan officer productivity.",
           "vendors": [
             {
               "vendor_id": 4,
@@ -4591,7 +4591,7 @@
                 {
                   "product_id": 238,
                   "product_name": "RDC.AI Credit Decisioning Platform",
-                  "description": "Explainable AI platform for business and commercial credit decisioning. Supports origination through portfolio monitoring. Transparent AI (not a black box) \u2014 shows why loans are approved or denied.",
+                  "description": "Explainable AI platform for business and commercial credit decisioning. Supports origination through portfolio monitoring. Transparent AI (not a black box) — shows why loans are approved or denied.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "banks",
                   "status": "active",
@@ -5759,7 +5759,7 @@
           "code": "T2-01e",
           "name": "Mortgage",
           "description": "Mortgage AI includes specialized tools for residential mortgage origination, pre-approval, document extraction, condition clearing, pricing optimization, and regulatory compliance across conforming, FHA, VA, and portfolio loan programs. These platforms address the high document volume and compliance complexity unique to residential mortgage. Buyers include mortgage operations managers, compliance officers, and heads of retail mortgage.",
-          "ai_opportunities": "AI-powered document extraction and automated condition clearing are the highest-impact opportunities for community lenders, with the potential to reduce processor time-per-loan by 40\u201360% and cut days-to-close significantly \u2014 a competitive differentiator as mortgage volumes fluctuate with rate cycles.",
+          "ai_opportunities": "AI-powered document extraction and automated condition clearing are the highest-impact opportunities for community lenders, with the potential to reduce processor time-per-loan by 40–60% and cut days-to-close significantly — a competitive differentiator as mortgage volumes fluctuate with rate cycles.",
           "vendors": [
             {
               "vendor_id": 4,
@@ -6562,7 +6562,7 @@
           "code": "T2-01f",
           "name": "Collections & Recovery",
           "description": "Collections and recovery AI provides propensity-to-pay models, delinquency early-warning systems, intelligent outreach sequencing, and loss mitigation workflow tools for consumer and commercial loan portfolios. These products help financial institutions reach the right borrowers at the right time with the most effective channel and offer. Buyers are collections department managers, special assets teams, and retail banking operations leaders.",
-          "ai_opportunities": "AI-driven early-warning models that identify delinquency risk 30\u201390 days before a payment is missed are giving community institutions the ability to proactively intervene with targeted hardship programs, substantially reducing charge-offs and preserving member relationships that would otherwise be lost.",
+          "ai_opportunities": "AI-driven early-warning models that identify delinquency risk 30–90 days before a payment is missed are giving community institutions the ability to proactively intervene with targeted hardship programs, substantially reducing charge-offs and preserving member relationships that would otherwise be lost.",
           "vendors": [
             {
               "vendor_id": 485,
@@ -6855,7 +6855,7 @@
           "code": "T2-01g",
           "name": "Financial Statement Spreading",
           "description": "Financial statement spreading AI automates the extraction, normalization, and analysis of business tax returns, CPA-prepared financial statements, rent rolls, and personal financial statements required for commercial credit underwriting. These tools eliminate manual data entry and produce structured financial spreads that feed directly into credit analysis workflows. Commercial credit analysts, underwriters, and loan operations staff are the primary users.",
-          "ai_opportunities": "Automated spreading using AI OCR and large language models is reducing spreading time from 2\u20134 hours per deal to under 15 minutes, enabling community banks to process significantly more commercial loan applications without adding credit staff \u2014 a critical capacity advantage in competitive commercial markets.",
+          "ai_opportunities": "Automated spreading using AI OCR and large language models is reducing spreading time from 2–4 hours per deal to under 15 minutes, enabling community banks to process significantly more commercial loan applications without adding credit staff — a critical capacity advantage in competitive commercial markets.",
           "vendors": [
             {
               "vendor_id": 7,
@@ -7505,7 +7505,7 @@
                 {
                   "product_id": 196,
                   "product_name": "Velera Payments & Intelligence Platform",
-                  "description": "End-to-end payments CUSO platform: credit/debit card processing, fraud and risk management, ATM/POS networks, shared branching, digital banking, instant payments, collections, and 24/7 contact centers. Atmos is the AI intelligence layer \u2014 a unified neural data network centralizing data across Velera solutions for AI-driven fraud analytics, behavioral monitoring, and personalization. Stellaris is the cloud-native technology stack powering the ecosystem.",
+                  "description": "End-to-end payments CUSO platform: credit/debit card processing, fraud and risk management, ATM/POS networks, shared branching, digital banking, instant payments, collections, and 24/7 contact centers. Atmos is the AI intelligence layer — a unified neural data network centralizing data across Velera solutions for AI-driven fraud analytics, behavioral monitoring, and personalization. Stellaris is the cloud-native technology stack powering the ecosystem.",
                   "pervasiveness_tier": 6,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -8201,7 +8201,7 @@
                 {
                   "product_id": 135,
                   "product_name": "Casap AI Disputes Automation",
-                  "description": "AI-powered dispute automation platform for banks, credit unions, and fintechs that automates up to 30% of dispute cases across all transaction types\u2014Card, ACH, EFT, ATM, Check, and Digital Payment\u2014with built-in Reg-E, Reg-Z, Nacha, and Card Network compliance; delivers AI-driven win-score prediction, first and third-party fraud detection, and agentic AI backed by human expertise; claims 3x faster resolution, 51% fewer fraud losses, and up to 50% cost reduction.",
+                  "description": "AI-powered dispute automation platform for banks, credit unions, and fintechs that automates up to 30% of dispute cases across all transaction types—Card, ACH, EFT, ATM, Check, and Digital Payment—with built-in Reg-E, Reg-Z, Nacha, and Card Network compliance; delivers AI-driven win-score prediction, first and third-party fraud detection, and agentic AI backed by human expertise; claims 3x faster resolution, 51% fewer fraud losses, and up to 50% cost reduction.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "both",
                   "status": "active",
@@ -9152,7 +9152,7 @@
           "code": "T2-02c",
           "name": "Account Takeover & Identity Fraud",
           "description": "Account takeover and identity fraud platforms use behavioral biometrics, device intelligence, session anomaly detection, and risk scoring to prevent unauthorized access to existing accounts and stop fraud at new account opening. Products range from passive behavioral authentication to active step-up challenge orchestration. Digital banking product managers, fraud operations teams, and IT security leaders are the key buyers.",
-          "ai_opportunities": "Continuous behavioral biometrics \u2014 which authenticate users based on how they type, swipe, and navigate rather than what they know \u2014 represent a major opportunity for community institutions to detect account takeover in real time without adding friction to the legitimate customer experience.",
+          "ai_opportunities": "Continuous behavioral biometrics — which authenticate users based on how they type, swipe, and navigate rather than what they know — represent a major opportunity for community institutions to detect account takeover in real time without adding friction to the legitimate customer experience.",
           "vendors": [
             {
               "vendor_id": 266,
@@ -10274,7 +10274,7 @@
           "code": "T2-02d",
           "name": "AML & BSA Transaction Monitoring",
           "description": "AML and BSA transaction monitoring systems use AI and machine learning to analyze transaction patterns, identify suspicious activity, generate SAR filing workflows, and detect emerging money laundering typologies across retail and commercial accounts. These platforms are core compliance infrastructure for all depository institutions. BSA/AML Officers, compliance directors, and Chief Risk Officers are the buyers.",
-          "ai_opportunities": "AI-powered transaction monitoring is reducing false positive alert rates by 50\u201380% compared to rules-based legacy systems, allowing BSA teams at community banks and credit unions to focus investigator time on genuinely suspicious activity rather than clearing benign alerts \u2014 a critical efficiency gain given industry-wide BSA staffing constraints.",
+          "ai_opportunities": "AI-powered transaction monitoring is reducing false positive alert rates by 50–80% compared to rules-based legacy systems, allowing BSA teams at community banks and credit unions to focus investigator time on genuinely suspicious activity rather than clearing benign alerts — a critical efficiency gain given industry-wide BSA staffing constraints.",
           "vendors": [
             {
               "vendor_id": 7,
@@ -11870,7 +11870,7 @@
         {
           "code": "T2-02f",
           "name": "Synthetic Identity & New Account Fraud",
-          "description": "Synthetic identity and new account fraud platforms detect fabricated identities \u2014 typically combining real Social Security Numbers with fictitious names and addresses \u2014 at the account opening stage using consortium-based signals, document verification, and behavioral risk scoring. These solutions are distinct from account takeover tools; they focus specifically on the origination moment. Fraud prevention leaders, retail banking operations, and lending origination teams are the buyers.",
+          "description": "Synthetic identity and new account fraud platforms detect fabricated identities — typically combining real Social Security Numbers with fictitious names and addresses — at the account opening stage using consortium-based signals, document verification, and behavioral risk scoring. These solutions are distinct from account takeover tools; they focus specifically on the origination moment. Fraud prevention leaders, retail banking operations, and lending origination teams are the buyers.",
           "ai_opportunities": "Consortium-based AI models that identify synthetic identities by correlating fragmented identity attributes across millions of accounts at partner institutions are proving highly effective for community banks, which individually lack the data volume to train reliable synthetic ID models on their own.",
           "vendors": [
             {
@@ -12980,7 +12980,7 @@
           "code": "T2-03b",
           "name": "Personalization & Next-Best-Action",
           "description": "Personalization and next-best-action platforms use AI to analyze transaction behavior, life events, and financial patterns to deliver targeted product recommendations, timely financial nudges, and personalized content to individual customers and members across digital and branch channels. These tools help community institutions compete with large banks on hyper-relevant customer engagement. Marketing leaders, digital banking teams, and retail banking heads are the buyers.",
-          "ai_opportunities": "AI-driven life event detection \u2014 identifying signals like a new direct deposit, a large balance transfer, or a new mortgage payment from a competitor \u2014 is enabling community banks and credit unions to make precisely timed product offers that dramatically outperform batch marketing campaigns in conversion rates.",
+          "ai_opportunities": "AI-driven life event detection — identifying signals like a new direct deposit, a large balance transfer, or a new mortgage payment from a competitor — is enabling community banks and credit unions to make precisely timed product offers that dramatically outperform batch marketing campaigns in conversion rates.",
           "vendors": [
             {
               "vendor_id": 32,
@@ -15072,8 +15072,8 @@
         {
           "code": "T2-03c",
           "name": "Customer Retention & Churn Prediction",
-          "description": "Customer and member retention AI identifies attrition risk signals \u2014 declining engagement, reduced deposit balances, loan payoff without renewal, or competitive account openings \u2014 and triggers targeted retention outreach through branch staff, digital channels, or automated programs. These platforms help community financial institutions protect their core deposit and loan relationships. Marketing directors, retail banking leaders, and data analytics teams are the primary buyers.",
-          "ai_opportunities": "AI churn prediction models that flag at-risk members 60\u201390 days before likely departure are enabling community institutions to deploy proactive retention programs at scale \u2014 a capability previously available only to large banks with dedicated analytics teams \u2014 often achieving 20\u201330% reduction in avoidable attrition.",
+          "description": "Customer and member retention AI identifies attrition risk signals — declining engagement, reduced deposit balances, loan payoff without renewal, or competitive account openings — and triggers targeted retention outreach through branch staff, digital channels, or automated programs. These platforms help community financial institutions protect their core deposit and loan relationships. Marketing directors, retail banking leaders, and data analytics teams are the primary buyers.",
+          "ai_opportunities": "AI churn prediction models that flag at-risk members 60–90 days before likely departure are enabling community institutions to deploy proactive retention programs at scale — a capability previously available only to large banks with dedicated analytics teams — often achieving 20–30% reduction in avoidable attrition.",
           "vendors": [
             {
               "vendor_id": 97,
@@ -17302,7 +17302,7 @@
           "code": "T2-03e",
           "name": "Member/Customer Financial Wellness",
           "description": "Financial wellness AI delivers budgeting insights, savings coaching, cash flow alerts, spending categorization, and financial health scoring directly to retail customers and members through digital banking interfaces, often as a value-added service differentiator. Products range from embedded PFM tools within digital banking platforms to standalone financial wellness applications with white-label FI branding. Digital banking teams, retail banking heads, and member engagement leaders are the buyers.",
-          "ai_opportunities": "AI-powered cash flow analysis and proactive savings prompts are helping community credit unions especially differentiate on their cooperative mission \u2014 demonstrating genuine financial benefit to members \u2014 while also deepening engagement and reducing vulnerability to predatory payday lenders and fintechs targeting financially stressed consumers.",
+          "ai_opportunities": "AI-powered cash flow analysis and proactive savings prompts are helping community credit unions especially differentiate on their cooperative mission — demonstrating genuine financial benefit to members — while also deepening engagement and reducing vulnerability to predatory payday lenders and fintechs targeting financially stressed consumers.",
           "vendors": [
             {
               "vendor_id": 73,
@@ -18276,7 +18276,7 @@
                 {
                   "product_id": 614,
                   "product_name": "Lob Direct Mail API",
-                  "description": "Programmatic direct mail automation platform with developer-first API. Enables financial institutions to trigger personalized physical mail at scale \u2014 offers, statements, account notices \u2014 through API-driven workflows. Includes address verification, USPS route optimization, campaign analytics, and print network management.",
+                  "description": "Programmatic direct mail automation platform with developer-first API. Enables financial institutions to trigger personalized physical mail at scale — offers, statements, account notices — through API-driven workflows. Includes address verification, USPS route optimization, campaign analytics, and print network management.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -18488,8 +18488,8 @@
         {
           "code": "T2-04a",
           "name": "Regulatory Change Management",
-          "description": "Regulatory change management AI platforms track, classify, and map regulatory and supervisory guidance from federal and state agencies \u2014 CFPB, OCC, FDIC, NCUA, Federal Reserve, and state regulators \u2014 to specific FI policies, procedures, and controls, alerting compliance teams to required updates. Products help institutions stay ahead of regulatory change without maintaining large dedicated monitoring teams. Chief Compliance Officers and regulatory affairs managers are the primary buyers.",
-          "ai_opportunities": "AI that can automatically map new regulatory guidance to affected internal policies and controls \u2014 and generate draft policy update language \u2014 is a transformative opportunity for community institutions that typically rely on one or two compliance staff to monitor a vast and accelerating regulatory change landscape.",
+          "description": "Regulatory change management AI platforms track, classify, and map regulatory and supervisory guidance from federal and state agencies — CFPB, OCC, FDIC, NCUA, Federal Reserve, and state regulators — to specific FI policies, procedures, and controls, alerting compliance teams to required updates. Products help institutions stay ahead of regulatory change without maintaining large dedicated monitoring teams. Chief Compliance Officers and regulatory affairs managers are the primary buyers.",
+          "ai_opportunities": "AI that can automatically map new regulatory guidance to affected internal policies and controls — and generate draft policy update language — is a transformative opportunity for community institutions that typically rely on one or two compliance staff to monitor a vast and accelerating regulatory change landscape.",
           "vendors": [
             {
               "vendor_id": 49,
@@ -18863,7 +18863,7 @@
         {
           "code": "T2-04b",
           "name": "KYC & Identity Verification",
-          "description": "KYC and identity verification AI platforms automate document authentication, biometric liveness detection, government ID proofing, and watchlist screening at customer onboarding \u2014 covering both consumer and business account opening scenarios. These tools are increasingly required to meet CIP (Customer Identification Program) requirements while enabling fully digital account opening experiences. Compliance officers, BSA managers, and digital banking teams are the buyers.",
+          "description": "KYC and identity verification AI platforms automate document authentication, biometric liveness detection, government ID proofing, and watchlist screening at customer onboarding — covering both consumer and business account opening scenarios. These tools are increasingly required to meet CIP (Customer Identification Program) requirements while enabling fully digital account opening experiences. Compliance officers, BSA managers, and digital banking teams are the buyers.",
           "ai_opportunities": "AI-powered document verification that can authenticate a government ID and match it to a live selfie in under 30 seconds is enabling community financial institutions to offer fully digital account opening without sacrificing CIP compliance, directly competing with fintech neobanks on onboarding experience.",
           "vendors": [
             {
@@ -19800,6 +19800,29 @@
               ]
             },
             {
+              "vendor_id": 250,
+              "name": "Candescent",
+              "homepage_url": "https://www.candescent.com",
+              "logo_url": "/fi-landscape-logos/250.png",
+              "status": "active",
+              "hq_city": "Atlanta",
+              "hq_state": "GA",
+              "founded_year": 2024,
+              "products": [
+                {
+                  "product_id": 619,
+                  "product_name": "Candescent Terafina Account Opening",
+                  "description": "AI-powered digital account opening and onboarding platform for banks and credit unions; supports consumer deposits, business accounts, and loan applications across online, branch, and call center channels via configurable intelligent templates; includes embedded KYC, identity verification, and regulatory disclosures.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 25,
               "name": "Unit21",
               "homepage_url": "https://www.unit21.ai",
@@ -20064,29 +20087,6 @@
                   "integration_ids": []
                 }
               ]
-            },
-            {
-              "vendor_id": 250,
-              "name": "Candescent",
-              "homepage_url": "https://www.candescent.com",
-              "logo_url": "/fi-landscape-logos/250.png",
-              "status": "active",
-              "hq_city": "Atlanta",
-              "hq_state": "GA",
-              "founded_year": 2024,
-              "products": [
-                {
-                  "product_id": 619,
-                  "product_name": "Candescent Terafina Account Opening",
-                  "description": "AI-powered digital account opening and onboarding platform for banks and credit unions; supports consumer deposits, business accounts, and loan applications across online, branch, and call center channels via configurable intelligent templates; includes embedded KYC, identity verification, and regulatory disclosures.",
-                  "pervasiveness_tier": 4,
-                  "fi_segment": "both",
-                  "status": "active",
-                  "is_primary": false,
-                  "competitor_ids": [],
-                  "integration_ids": []
-                }
-              ]
             }
           ]
         },
@@ -20094,7 +20094,7 @@
           "code": "T2-04c",
           "name": "Fair Lending & CRA Analytics",
           "description": "Fair lending and CRA analytics AI platforms analyze HMDA data, loan application patterns, and geographic lending distributions to identify potential disparate impact, redlining risk, and CRA assessment area gaps before they become examination findings. Products generate automated fair lending monitoring reports, peer comparisons, and CRA performance projections. Compliance officers, Chief Risk Officers, and CRA officers are the primary buyers.",
-          "ai_opportunities": "AI-powered continuous fair lending monitoring \u2014 analyzing every loan decision in real time against peer benchmarks and protected class patterns \u2014 is shifting community bank compliance from annual exam preparation to ongoing risk management, dramatically reducing the risk of enforcement actions and consent orders.",
+          "ai_opportunities": "AI-powered continuous fair lending monitoring — analyzing every loan decision in real time against peer benchmarks and protected class patterns — is shifting community bank compliance from annual exam preparation to ongoing risk management, dramatically reducing the risk of enforcement actions and consent orders.",
           "vendors": [
             {
               "vendor_id": 76,
@@ -22763,7 +22763,7 @@
                 {
                   "product_id": 135,
                   "product_name": "Casap AI Disputes Automation",
-                  "description": "AI-powered dispute automation platform for banks, credit unions, and fintechs that automates up to 30% of dispute cases across all transaction types\u2014Card, ACH, EFT, ATM, Check, and Digital Payment\u2014with built-in Reg-E, Reg-Z, Nacha, and Card Network compliance; delivers AI-driven win-score prediction, first and third-party fraud detection, and agentic AI backed by human expertise; claims 3x faster resolution, 51% fewer fraud losses, and up to 50% cost reduction.",
+                  "description": "AI-powered dispute automation platform for banks, credit unions, and fintechs that automates up to 30% of dispute cases across all transaction types—Card, ACH, EFT, ATM, Check, and Digital Payment—with built-in Reg-E, Reg-Z, Nacha, and Card Network compliance; delivers AI-driven win-score prediction, first and third-party fraud detection, and agentic AI backed by human expertise; claims 3x faster resolution, 51% fewer fraud losses, and up to 50% cost reduction.",
                   "pervasiveness_tier": 1,
                   "fi_segment": "both",
                   "status": "active",
@@ -22826,7 +22826,7 @@
           "code": "T2-05b",
           "name": "Back-Office Process Automation",
           "description": "AI-enhanced back-office automation platforms combine robotic process automation (RPA), intelligent workflow orchestration, and exception-handling AI to automate repetitive, rules-driven back-office processes across account servicing, payment operations, compliance reporting, and loan administration. Products in this category address the operational complexity of community banks and credit unions that run multiple legacy systems. COOs, operations managers, and IT leaders are the buyers.",
-          "ai_opportunities": "AI-enhanced process automation that can handle exception cases and unstructured inputs \u2014 not just rigid RPA scripts \u2014 is enabling community financial institutions to automate far more of their back-office work than traditional RPA allowed, reducing operational cost without requiring core system replacement.",
+          "ai_opportunities": "AI-enhanced process automation that can handle exception cases and unstructured inputs — not just rigid RPA scripts — is enabling community financial institutions to automate far more of their back-office work than traditional RPA allowed, reducing operational cost without requiring core system replacement.",
           "vendors": [
             {
               "vendor_id": 52,
@@ -24022,7 +24022,7 @@
             {
               "vendor_id": 476,
               "name": "Saris AI",
-              "homepage_url": "https://saris-ai.com",
+              "homepage_url": "https://saris.ai/",
               "logo_url": "/fi-landscape-logos/476.png",
               "status": "active",
               "hq_city": null,
@@ -24047,7 +24047,7 @@
         {
           "code": "T2-05c",
           "name": "Vendor & Third-Party Risk",
-          "description": "Vendor and third-party risk AI platforms automate due diligence questionnaire management, continuous vendor monitoring, cyber risk scoring, and contract risk analysis across the vendor ecosystem that community financial institutions manage \u2014 often 100\u2013300 vendors. These tools help institutions meet regulatory expectations for third-party risk management (TPRM) without large dedicated risk teams. Chief Risk Officers, vendor management officers, and IT security leaders are the buyers.",
+          "description": "Vendor and third-party risk AI platforms automate due diligence questionnaire management, continuous vendor monitoring, cyber risk scoring, and contract risk analysis across the vendor ecosystem that community financial institutions manage — often 100–300 vendors. These tools help institutions meet regulatory expectations for third-party risk management (TPRM) without large dedicated risk teams. Chief Risk Officers, vendor management officers, and IT security leaders are the buyers.",
           "ai_opportunities": "AI-powered continuous vendor monitoring that flags cybersecurity incidents, financial distress signals, and regulatory actions at FI vendors in near real-time is transforming third-party risk from an annual questionnaire exercise into a live risk management function, as regulators increasingly expect proactive rather than reactive TPRM.",
           "vendors": [
             {
@@ -24143,9 +24143,9 @@
             {
               "vendor_id": 99,
               "name": "Prevalent",
-              "homepage_url": "https://www.prevalent.net",
+              "homepage_url": "https://mitratech.com/products/prevalent/",
               "logo_url": "/fi-landscape-logos/99.png",
-              "status": "active",
+              "status": "legacy",
               "hq_city": "Phoenix",
               "hq_state": "AZ",
               "founded_year": 2004,
@@ -24156,7 +24156,7 @@
                   "description": "Third-party risk management platform for financial institutions with AI-assisted risk intelligence and continuous monitoring; automates vendor due diligence questionnaire distribution, response analysis, and risk scoring; continuously monitors vendor risk from cyber threat intelligence feeds, financial health data, news monitoring, and regulatory action databases; NLP-assisted contract review identifies risk clauses; financial services clients include banks, credit unions, insurers, and asset managers; supports FFIEC, GDPR, and SOC 2 compliance workflows",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
-                  "status": "active",
+                  "status": "legacy",
                   "is_primary": true,
                   "competitor_ids": [
                     52,
@@ -28799,9 +28799,9 @@
             {
               "vendor_id": 407,
               "name": "Modern Banking Systems",
-              "homepage_url": "https://www.modernbankingsystems.com",
+              "homepage_url": "https://finovifi.com/",
               "logo_url": "/fi-landscape-logos/407.png",
-              "status": "active",
+              "status": "legacy",
               "hq_city": "Ralston",
               "hq_state": "NE",
               "founded_year": 1975,
@@ -28812,7 +28812,7 @@
                   "description": "Real-time core banking software for community banks; available as service bureau, hosted, or in-house; includes open-banking APIs and data analytics; now part of Finovifi.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "banks",
-                  "status": "active",
+                  "status": "legacy",
                   "is_primary": true,
                   "competitor_ids": [
                     49,
@@ -30023,8 +30023,8 @@
             },
             {
               "vendor_id": 396,
-              "name": "CU Interface",
-              "homepage_url": "https://cuinterface.com",
+              "name": "Vyrdia",
+              "homepage_url": "https://www.vyrdia.com/",
               "logo_url": "/fi-landscape-logos/396.png",
               "status": "active",
               "hq_city": "Richfield",
@@ -30033,7 +30033,7 @@
               "products": [
                 {
                   "product_id": 472,
-                  "product_name": "mpowered",
+                  "product_name": "Vyrdia Core Banking Platform",
                   "description": "Member-centric (not account-centric) credit union core processing platform; vendor-agnostic integrations; boutique support model.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "credit_unions",
@@ -30776,7 +30776,7 @@
                 {
                   "product_id": 196,
                   "product_name": "Velera Payments & Intelligence Platform",
-                  "description": "End-to-end payments CUSO platform: credit/debit card processing, fraud and risk management, ATM/POS networks, shared branching, digital banking, instant payments, collections, and 24/7 contact centers. Atmos is the AI intelligence layer \u2014 a unified neural data network centralizing data across Velera solutions for AI-driven fraud analytics, behavioral monitoring, and personalization. Stellaris is the cloud-native technology stack powering the ecosystem.",
+                  "description": "End-to-end payments CUSO platform: credit/debit card processing, fraud and risk management, ATM/POS networks, shared branching, digital banking, instant payments, collections, and 24/7 contact centers. Atmos is the AI intelligence layer — a unified neural data network centralizing data across Velera solutions for AI-driven fraud analytics, behavioral monitoring, and personalization. Stellaris is the cloud-native technology stack powering the ecosystem.",
                   "pervasiveness_tier": 6,
                   "fi_segment": "credit_unions",
                   "status": "active",
@@ -33316,7 +33316,7 @@
                 {
                   "product_id": 304,
                   "product_name": "Temenos Transact",
-                  "description": "Core banking platform (formerly T24). Real-time, cloud-native, API-first core banking system. US community bank clients include TS Banking Group ($1.5B, Iowa \u2014 selected 2022), AimBank, Clare Bank, Farmers & Merchants Bank, National Bank of Andrews, State Bank of Spencer. Large US bank clients include Commerce Bank ($36.7B, core + loan origination + FedNow live 2022-2024) and Regions Bank ($155B, selected 2023 for deposit system). Delivered via Temenos Banking Cloud (SaaS) or on-premise.",
+                  "description": "Core banking platform (formerly T24). Real-time, cloud-native, API-first core banking system. US community bank clients include TS Banking Group ($1.5B, Iowa — selected 2022), AimBank, Clare Bank, Farmers & Merchants Bank, National Bank of Andrews, State Bank of Spencer. Large US bank clients include Commerce Bank ($36.7B, core + loan origination + FedNow live 2022-2024) and Regions Bank ($155B, selected 2023 for deposit system). Delivered via Temenos Banking Cloud (SaaS) or on-premise.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "banks",
                   "status": "active",
@@ -33460,7 +33460,7 @@
           "code": "T2-06a",
           "name": "Marketing Automation",
           "description": "AI-driven marketing automation platforms enable financial institutions to execute personalized, trigger-based marketing campaigns across email, push notifications, SMS, and digital channels using behavioral data and machine learning to determine timing, message, and offer. Products range from FI-specific marketing automation tools to adapted general-purpose platforms. Marketing directors, digital marketing managers, and retail banking heads are the buyers.",
-          "ai_opportunities": "AI that can dynamically select the optimal channel, message, and timing for each individual member or customer \u2014 based on their recent transaction behavior and engagement history \u2014 is enabling community banks and credit unions to achieve campaign conversion rates previously possible only for large banks with sophisticated marketing operations.",
+          "ai_opportunities": "AI that can dynamically select the optimal channel, message, and timing for each individual member or customer — based on their recent transaction behavior and engagement history — is enabling community banks and credit unions to achieve campaign conversion rates previously possible only for large banks with sophisticated marketing operations.",
           "vendors": [
             {
               "vendor_id": 454,
@@ -34615,9 +34615,9 @@
             {
               "vendor_id": 60,
               "name": "Velocity Solutions",
-              "homepage_url": "https://myvelocity.com",
+              "homepage_url": "https://www.csiweb.com/",
               "logo_url": "/fi-landscape-logos/60.png",
-              "status": "active",
+              "status": "legacy",
               "hq_city": "Fort Lauderdale",
               "hq_state": "FL",
               "founded_year": 1995,
@@ -34628,7 +34628,7 @@
                   "description": "ML-driven deposit acquisition, engagement, and retention platform for community banks and credit unions; uses Velocity Intelligent Platform behavioral modeling to identify at-risk deposit relationships, optimize incentive offers, and drive product activation across the account lifecycle",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
-                  "status": "active",
+                  "status": "legacy",
                   "is_primary": false,
                   "competitor_ids": [
                     50,
@@ -34842,7 +34842,7 @@
                 {
                   "product_id": 614,
                   "product_name": "Lob Direct Mail API",
-                  "description": "Programmatic direct mail automation platform with developer-first API. Enables financial institutions to trigger personalized physical mail at scale \u2014 offers, statements, account notices \u2014 through API-driven workflows. Includes address verification, USPS route optimization, campaign analytics, and print network management.",
+                  "description": "Programmatic direct mail automation platform with developer-first API. Enables financial institutions to trigger personalized physical mail at scale — offers, statements, account notices — through API-driven workflows. Includes address verification, USPS route optimization, campaign analytics, and print network management.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -35088,7 +35088,7 @@
           "code": "T2-06b",
           "name": "Customer/Member Segmentation & Analytics",
           "description": "Customer and member segmentation and analytics platforms provide transaction-level behavioral analytics, wallet share analysis, product penetration reporting, and demographic segmentation to help financial institutions understand their customer base and identify growth opportunities. Products transform core and digital banking transaction data into actionable marketing and product strategy insights. Marketing analytics teams, retail banking heads, and CFOs are the buyers.",
-          "ai_opportunities": "AI-powered wallet share intelligence \u2014 which identifies when a member is depositing paychecks or making loan payments at a competitor institution based on transaction patterns \u2014 is enabling community institutions to target acquisition and deepening campaigns with surgical precision rather than mass-market approaches.",
+          "ai_opportunities": "AI-powered wallet share intelligence — which identifies when a member is depositing paychecks or making loan payments at a competitor institution based on transaction patterns — is enabling community institutions to target acquisition and deepening campaigns with surgical precision rather than mass-market approaches.",
           "vendors": [
             {
               "vendor_id": 433,
@@ -36234,7 +36234,7 @@
           "code": "T2-06c",
           "name": "Deposit Growth & Pricing",
           "description": "Deposit growth and pricing AI platforms provide competitive rate intelligence, pricing elasticity modeling, CD special optimization, and balance migration analytics to help community banks and credit unions optimize their deposit pricing strategy in real time. Products address the critical challenge of balancing deposit retention with margin management as rate environments shift. CFOs, Treasury teams, and retail banking leaders are the primary buyers.",
-          "ai_opportunities": "AI-driven deposit pricing optimization that models member price sensitivity at the segment level \u2014 rather than applying institution-wide rate changes \u2014 is enabling community institutions to retain rate-sensitive deposits with targeted promotions while avoiding unnecessary margin give-up on the majority of the book that would stay regardless.",
+          "ai_opportunities": "AI-driven deposit pricing optimization that models member price sensitivity at the segment level — rather than applying institution-wide rate changes — is enabling community institutions to retain rate-sensitive deposits with targeted promotions while avoiding unnecessary margin give-up on the majority of the book that would stay regardless.",
           "vendors": [
             {
               "vendor_id": 59,
@@ -36364,9 +36364,9 @@
             {
               "vendor_id": 60,
               "name": "Velocity Solutions",
-              "homepage_url": "https://myvelocity.com",
+              "homepage_url": "https://www.csiweb.com/",
               "logo_url": "/fi-landscape-logos/60.png",
-              "status": "active",
+              "status": "legacy",
               "hq_city": "Fort Lauderdale",
               "hq_state": "FL",
               "founded_year": 1995,
@@ -36377,7 +36377,7 @@
                   "description": "ML-driven deposit acquisition, engagement, and retention platform for community banks and credit unions; uses Velocity Intelligent Platform behavioral modeling to identify at-risk deposit relationships, optimize incentive offers, and drive product activation across the account lifecycle",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
-                  "status": "active",
+                  "status": "legacy",
                   "is_primary": true,
                   "competitor_ids": [
                     50,
@@ -36686,7 +36686,7 @@
           "code": "T2-07a",
           "name": "Liquidity & ALM Forecasting",
           "description": "Liquidity and ALM forecasting AI platforms provide interest rate risk modeling, liquidity stress testing, net interest income simulation, and balance sheet scenario analysis for community banks and credit unions managing the asset-liability function. Products help CFOs and Treasury teams understand and manage the impact of rate changes, deposit repricing, and loan mix shifts on earnings and capital. CFOs, ALM committee members, and Treasury managers are the buyers.",
-          "ai_opportunities": "AI-enhanced ALM forecasting that incorporates behavioral deposit modeling \u2014 using actual customer data rather than industry averages for non-maturity deposit assumptions \u2014 is enabling community institutions to produce more accurate NII projections and make better-informed pricing and portfolio decisions as rate volatility persists.",
+          "ai_opportunities": "AI-enhanced ALM forecasting that incorporates behavioral deposit modeling — using actual customer data rather than industry averages for non-maturity deposit assumptions — is enabling community institutions to produce more accurate NII projections and make better-informed pricing and portfolio decisions as rate volatility persists.",
           "vendors": [
             {
               "vendor_id": 63,
@@ -37186,7 +37186,7 @@
           "code": "T2-07b",
           "name": "Investment Portfolio",
           "description": "Investment portfolio AI provides community financial institutions with AI-assisted bond portfolio analysis, duration and convexity management tools, tax-loss harvesting recommendations, and bond laddering optimization within the constraints of community bank investment policy and FDIC/NCUA regulatory requirements. Products help investment officers manage the securities portfolio without large internal fixed income teams. CFOs, investment officers, and ALM committees are the buyers.",
-          "ai_opportunities": "AI portfolio analytics that continuously monitors mark-to-market exposure, duration risk, and reinvestment opportunities \u2014 and proactively flags portfolio adjustments aligned with the institution's ALM targets \u2014 are enabling smaller investment teams at community institutions to manage portfolios with the analytical rigor of much larger banks.",
+          "ai_opportunities": "AI portfolio analytics that continuously monitors mark-to-market exposure, duration risk, and reinvestment opportunities — and proactively flags portfolio adjustments aligned with the institution's ALM targets — are enabling smaller investment teams at community institutions to manage portfolios with the analytical rigor of much larger banks.",
           "vendors": [
             {
               "vendor_id": 490,
@@ -37214,7 +37214,7 @@
             {
               "vendor_id": 64,
               "name": "Clearwater Analytics",
-              "homepage_url": "https://clearwateranalytics.com",
+              "homepage_url": "https://cwan.com/",
               "logo_url": "/fi-landscape-logos/64.png",
               "status": "active",
               "hq_city": "Boise",
@@ -37706,7 +37706,7 @@
         {
           "code": "T2-08a",
           "name": "ML Platform & Model Development",
-          "description": "AI/ML platforms and model development environments provide the infrastructure for financial institutions to build, train, validate, deploy, and monitor machine learning models \u2014 including feature stores, MLOps tooling, AutoML capabilities, and model registries. Products in this category are used by internal data science teams or by vendors deploying models within the FI environment. Chief Data Officers, data science leads, and technology leaders at larger community institutions are the buyers.",
+          "description": "AI/ML platforms and model development environments provide the infrastructure for financial institutions to build, train, validate, deploy, and monitor machine learning models — including feature stores, MLOps tooling, AutoML capabilities, and model registries. Products in this category are used by internal data science teams or by vendors deploying models within the FI environment. Chief Data Officers, data science leads, and technology leaders at larger community institutions are the buyers.",
           "ai_opportunities": "Low-code and AutoML platforms are democratizing model development for community financial institutions that lack large data science teams, enabling bank analysts with domain expertise to build, validate, and deploy credit, fraud, and marketing models without deep programming backgrounds.",
           "vendors": [
             {
@@ -37972,7 +37972,7 @@
           "code": "T2-08b",
           "name": "Data Quality & Financial Data Enrichment",
           "description": "Data quality and financial data enrichment platforms cleanse, normalize, deduplicate, and enrich raw customer, transaction, and product data to make it suitable for AI, analytics, and reporting use cases. Products address common challenges like inconsistent core system data, missing fields, and unstructured transaction descriptions. Chief Data Officers, data engineering leads, and analytics teams are the buyers.",
-          "ai_opportunities": "AI-powered transaction enrichment that converts raw transaction descriptions into clean merchant names, categories, and financial event signals is a foundational capability that unlocks downstream AI use cases in personalization, financial wellness, fraud detection, and marketing \u2014 making it a high-leverage investment for community institutions building out their data infrastructure.",
+          "ai_opportunities": "AI-powered transaction enrichment that converts raw transaction descriptions into clean merchant names, categories, and financial event signals is a foundational capability that unlocks downstream AI use cases in personalization, financial wellness, fraud detection, and marketing — making it a high-leverage investment for community institutions building out their data infrastructure.",
           "vendors": [
             {
               "vendor_id": 84,
@@ -39286,7 +39286,7 @@
           "code": "T2-08d",
           "name": "Open Banking & Data Access",
           "description": "Open banking and data access platforms enable permissioned sharing of consumer financial data between FIs and third-party applications via APIs, supporting use cases from account aggregation and financial planning to lending underwriting and payment initiation. Products in this category include data aggregators, open banking connectivity platforms, and APIs that enable data portability under evolving regulations including CFPB Rule 1033. IT leaders, digital banking teams, and compliance officers are the buyers.",
-          "ai_opportunities": "Open banking data access is the foundational layer for AI-powered cash flow underwriting, real-time financial wellness tools, and multi-institution financial management \u2014 enabling community financial institutions to participate in a connected financial services ecosystem rather than being bypassed by data aggregators that primarily serve fintech apps.",
+          "ai_opportunities": "Open banking data access is the foundational layer for AI-powered cash flow underwriting, real-time financial wellness tools, and multi-institution financial management — enabling community financial institutions to participate in a connected financial services ecosystem rather than being bypassed by data aggregators that primarily serve fintech apps.",
           "vendors": [
             {
               "vendor_id": 124,
@@ -41053,8 +41053,8 @@
         {
           "code": "T2-08e",
           "name": "Banking as a Service (BaaS)",
-          "description": "Banking as a Service (BaaS) encompasses the platforms and chartered financial institutions that enable fintechs, brands, and non-bank companies to embed financial products \u2014 checking accounts, debit cards, credit products, and payments \u2014 via APIs using a community bank or credit union's banking charter. Products include middleware BaaS platforms that manage the fintech-to-sponsor-bank relationship, API-first chartered banks offering direct rails, and community banks operating structured sponsor banking programs. BaaS strategy decisions typically involve CEOs, boards, and technology leaders at sponsor institutions.",
-          "ai_opportunities": "AI-powered compliance monitoring and transaction surveillance are becoming critical infrastructure for community banks operating BaaS programs, as regulators expect sponsor banks to demonstrate real-time oversight of fintech partner transaction flows \u2014 an area where AI can provide the coverage breadth that manual review cannot at scale.",
+          "description": "Banking as a Service (BaaS) encompasses the platforms and chartered financial institutions that enable fintechs, brands, and non-bank companies to embed financial products — checking accounts, debit cards, credit products, and payments — via APIs using a community bank or credit union's banking charter. Products include middleware BaaS platforms that manage the fintech-to-sponsor-bank relationship, API-first chartered banks offering direct rails, and community banks operating structured sponsor banking programs. BaaS strategy decisions typically involve CEOs, boards, and technology leaders at sponsor institutions.",
+          "ai_opportunities": "AI-powered compliance monitoring and transaction surveillance are becoming critical infrastructure for community banks operating BaaS programs, as regulators expect sponsor banks to demonstrate real-time oversight of fintech partner transaction flows — an area where AI can provide the coverage breadth that manual review cannot at scale.",
           "vendors": [
             {
               "vendor_id": 178,
@@ -41723,7 +41723,7 @@
           "code": "T2-08f",
           "name": "Industry Research & Advisory",
           "description": "Industry research and advisory covers analyst firms, research institutes, and trade associations that produce primary research, surveys, frameworks, and publications specifically shaping AI adoption decisions at community banks and credit unions. Products and services include subscription research, benchmarking studies, conference content, and advisory engagements. CEOs, Chief Strategy Officers, and innovation leaders at community financial institutions are the primary audience.",
-          "ai_opportunities": "Research firms and advisory organizations that can translate complex AI vendor claims into practical community bank use case frameworks \u2014 with benchmarking data from peer institutions \u2014 are providing unique value as community bank executives navigate an overwhelming volume of AI vendor marketing with limited internal technical resources to evaluate it.",
+          "ai_opportunities": "Research firms and advisory organizations that can translate complex AI vendor claims into practical community bank use case frameworks — with benchmarking data from peer institutions — are providing unique value as community bank executives navigate an overwhelming volume of AI vendor marketing with limited internal technical resources to evaluate it.",
           "vendors": [
             {
               "vendor_id": 198,
@@ -42128,7 +42128,7 @@
               "products": [
                 {
                   "product_id": 217,
-                  "product_name": "Zelle\u00ae Network",
+                  "product_name": "Zelle® Network",
                   "description": "Real-time P2P and small business payment network embedded in FI mobile banking apps. Community banks and credit unions integrate Zelle through white-label digital banking providers (Q2, Alkami, etc.) or directly via API. 2,200+ participating FIs.",
                   "pervasiveness_tier": 6,
                   "fi_segment": "both",
@@ -42194,7 +42194,7 @@
               "products": [
                 {
                   "product_id": 216,
-                  "product_name": "RTP\u00ae Network",
+                  "product_name": "RTP® Network",
                   "description": "Real-time payments network enabling 24/7/365 instant credit transfers up to $10M. Community banks access RTP directly or through a correspondent bank or technology intermediary. Competing network to FedNow. Over 400 financial institutions connected as of 2024.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "both",
@@ -42791,9 +42791,9 @@
             {
               "vendor_id": 237,
               "name": "Payfinia",
-              "homepage_url": "https://www.payfinia.com",
+              "homepage_url": "https://tyfone.com/payfinia/",
               "logo_url": "/fi-landscape-logos/237.png",
-              "status": "active",
+              "status": "legacy",
               "hq_city": "Portland",
               "hq_state": "OR",
               "founded_year": 2023,
@@ -42804,7 +42804,7 @@
                   "description": "Real-time money movement service democratizing instant payments for community FIs, with RTP and FedNow connectivity.",
                   "pervasiveness_tier": 4,
                   "fi_segment": "credit_unions",
-                  "status": "active",
+                  "status": "legacy",
                   "is_primary": true,
                   "competitor_ids": [
                     66,
@@ -43138,7 +43138,7 @@
                 {
                   "product_id": 212,
                   "product_name": "Moov Payment APIs",
-                  "description": "Multi-rail payment API platform covering ACH, RTP, FedNow, card issuing, and push-to-debit. Community banks use Moov to offer embedded payment services to business clients or to power fintech programs. No proprietary ML \u2014 infrastructure layer.",
+                  "description": "Multi-rail payment API platform covering ACH, RTP, FedNow, card issuing, and push-to-debit. Community banks use Moov to offer embedded payment services to business clients or to power fintech programs. No proprietary ML — infrastructure layer.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -43537,7 +43537,7 @@
             {
               "vendor_id": 238,
               "name": "Payveris",
-              "homepage_url": "https://www.paymentus.com",
+              "homepage_url": "https://www.paymentus.com/banking-fintech/",
               "logo_url": "/fi-landscape-logos/238.png",
               "status": "legacy",
               "hq_city": "Cromwell",
@@ -43735,7 +43735,7 @@
             {
               "vendor_id": 242,
               "name": "Member Access Processing",
-              "homepage_url": "https://maprocessing.com",
+              "homepage_url": "https://mapcuso.com/",
               "logo_url": "/fi-landscape-logos/242.png",
               "status": "active",
               "hq_city": "Seattle",
@@ -45252,7 +45252,7 @@
                 {
                   "product_id": 304,
                   "product_name": "Temenos Transact",
-                  "description": "Core banking platform (formerly T24). Real-time, cloud-native, API-first core banking system. US community bank clients include TS Banking Group ($1.5B, Iowa \u2014 selected 2022), AimBank, Clare Bank, Farmers & Merchants Bank, National Bank of Andrews, State Bank of Spencer. Large US bank clients include Commerce Bank ($36.7B, core + loan origination + FedNow live 2022-2024) and Regions Bank ($155B, selected 2023 for deposit system). Delivered via Temenos Banking Cloud (SaaS) or on-premise.",
+                  "description": "Core banking platform (formerly T24). Real-time, cloud-native, API-first core banking system. US community bank clients include TS Banking Group ($1.5B, Iowa — selected 2022), AimBank, Clare Bank, Farmers & Merchants Bank, National Bank of Andrews, State Bank of Spencer. Large US bank clients include Commerce Bank ($36.7B, core + loan origination + FedNow live 2022-2024) and Regions Bank ($155B, selected 2023 for deposit system). Delivered via Temenos Banking Cloud (SaaS) or on-premise.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "banks",
                   "status": "active",
@@ -46095,13 +46095,13 @@
     {
       "code": "T1-10",
       "name": "Enterprise & Horizontal Technology",
-      "description": "Horizontal enterprise technology \u2014 CRM, productivity, and AI copilot tools \u2014 that financial institution staff use across departments regardless of banking function.",
+      "description": "Horizontal enterprise technology — CRM, productivity, and AI copilot tools — that financial institution staff use across departments regardless of banking function.",
       "subcategories": [
         {
           "code": "T2-10a",
           "name": "CRM & Sales Enablement",
           "description": "CRM and sales enablement tools provide financial institution relationship managers, branch staff, and business banking teams with pipeline management, contact tracking, opportunity management, and sales activity reporting to grow loans, deposits, and non-interest income. Products range from banking-specific CRM platforms to configured versions of general-purpose CRMs. Retail banking heads, commercial banking leaders, and COOs are the buyers.",
-          "ai_opportunities": "AI-powered opportunity scoring within CRM platforms \u2014 which surfaces which customers or prospects are most likely to need a specific product based on life event signals and transaction behavior \u2014 is significantly improving sales productivity for community institution relationship managers who manage large books without dedicated analyst support.",
+          "ai_opportunities": "AI-powered opportunity scoring within CRM platforms — which surfaces which customers or prospects are most likely to need a specific product based on life event signals and transaction behavior — is significantly improving sales productivity for community institution relationship managers who manage large books without dedicated analyst support.",
           "vendors": [
             {
               "vendor_id": 452,
@@ -46344,7 +46344,7 @@
           "code": "T2-10b",
           "name": "Productivity & Collaboration",
           "description": "Productivity and collaboration platforms provide office productivity suites, unified communications, videoconferencing, document management, and collaboration tools used by financial institution staff across all departments. Products in this category are horizontal technology purchases driven by IT and operations, though increasingly with security and compliance overlays required for banking environments. CTOs, COOs, and IT managers are the buyers.",
-          "ai_opportunities": "Microsoft 365 Copilot and similar AI productivity tools embedded in workplace applications are creating significant efficiency opportunities for community bank and credit union staff across compliance documentation, meeting summarization, and internal reporting workflows \u2014 with governance frameworks now emerging to guide secure FI deployment.",
+          "ai_opportunities": "Microsoft 365 Copilot and similar AI productivity tools embedded in workplace applications are creating significant efficiency opportunities for community bank and credit union staff across compliance documentation, meeting summarization, and internal reporting workflows — with governance frameworks now emerging to guide secure FI deployment.",
           "vendors": [
             {
               "vendor_id": 289,
@@ -46479,7 +46479,7 @@
               "name": "First Line Solutions",
               "homepage_url": "https://www.firstlineins.com",
               "logo_url": "/fi-landscape-logos/312.png",
-              "status": "active",
+              "status": "defunct",
               "hq_city": null,
               "hq_state": null,
               "founded_year": null,
@@ -46490,7 +46490,7 @@
                   "description": "Multi-line insurance agency/brokerage providing insurance products to credit unions across the country for over a decade.",
                   "pervasiveness_tier": 5,
                   "fi_segment": "credit_unions",
-                  "status": "active",
+                  "status": "deprecated",
                   "is_primary": true,
                   "competitor_ids": [
                     310,
@@ -46541,7 +46541,7 @@
             {
               "vendor_id": 292,
               "name": "IMS CU Solutions",
-              "homepage_url": "https://www.cusolution.com",
+              "homepage_url": "https://imscloudservices.com/",
               "logo_url": "/fi-landscape-logos/292.png",
               "status": "active",
               "hq_city": null,
@@ -46665,7 +46665,7 @@
           "code": "T2-10c",
           "name": "Productivity Tools",
           "description": "AI productivity tools for financial institutions include enterprise AI assistants, banking-specific copilot applications, and generative AI platforms deployed across FI staff for tasks such as drafting communications, summarizing documents, generating compliance reports, analyzing contracts, and supporting internal knowledge management. Products range from general-purpose LLM deployments to purpose-built banking AI assistants. CEOs, CTOs, and department heads across the institution are buyers.",
-          "ai_opportunities": "Purpose-built banking AI assistants that are pre-trained on regulatory guidance, core system documentation, and banking workflows are delivering measurable productivity gains for community bank staff \u2014 particularly in compliance, credit analysis, and customer-facing roles \u2014 while maintaining the data security posture required in a regulated environment.",
+          "ai_opportunities": "Purpose-built banking AI assistants that are pre-trained on regulatory guidance, core system documentation, and banking workflows are delivering measurable productivity gains for community bank staff — particularly in compliance, credit analysis, and customer-facing roles — while maintaining the data security posture required in a regulated environment.",
           "vendors": [
             {
               "vendor_id": 269,
@@ -46764,7 +46764,7 @@
             {
               "vendor_id": 476,
               "name": "Saris AI",
-              "homepage_url": "https://saris-ai.com",
+              "homepage_url": "https://saris.ai/",
               "logo_url": "/fi-landscape-logos/476.png",
               "status": "active",
               "hq_city": null,
@@ -46847,7 +46847,7 @@
           "code": "T2-11a",
           "name": "Traditional Core Banking Systems",
           "description": "Traditional core banking systems are the established, proven platforms that serve as the central ledger and system of record for the majority of community and regional banks and credit unions in the United States, including FIS IBS/Horizon, Fiserv DNA/Precision/Premier, Jack Henry SilverLake/Banno, and CSI NuPoint. These systems manage accounts, transactions, general ledger, and regulatory reporting and have decades of accumulated FI-specific functionality. CEOs, COOs, and IT leaders making long-term technology commitments are the primary decision-makers.",
-          "ai_opportunities": "Core banking vendors are increasingly embedding AI capabilities \u2014 AI-powered fraud alerts, intelligent teller workflows, and predictive analytics \u2014 directly into their platforms through native development and fintech partnerships, making the core system itself an AI delivery channel for community institutions that have limited appetite for point solution proliferation.",
+          "ai_opportunities": "Core banking vendors are increasingly embedding AI capabilities — AI-powered fraud alerts, intelligent teller workflows, and predictive analytics — directly into their platforms through native development and fintech partnerships, making the core system itself an AI delivery channel for community institutions that have limited appetite for point solution proliferation.",
           "vendors": [
             {
               "vendor_id": 50,
@@ -47778,7 +47778,7 @@
         {
           "code": "T2-11b",
           "name": "Cloud-Native & Modern Core Banking",
-          "description": "Cloud-native and modern core banking platforms are next-generation systems built on cloud-native architectures with API-first designs, real-time processing, and composable product configurations \u2014 including Mambu, Thought Machine Vault, Temenos Transact, and Finxact. These platforms target financial institutions seeking to modernize away from legacy mainframe-era cores or launch new digital bank entities. CEOs, boards, and technology transformation leaders at institutions willing to undertake significant migration projects are the buyers.",
+          "description": "Cloud-native and modern core banking platforms are next-generation systems built on cloud-native architectures with API-first designs, real-time processing, and composable product configurations — including Mambu, Thought Machine Vault, Temenos Transact, and Finxact. These platforms target financial institutions seeking to modernize away from legacy mainframe-era cores or launch new digital bank entities. CEOs, boards, and technology transformation leaders at institutions willing to undertake significant migration projects are the buyers.",
           "ai_opportunities": "Cloud-native cores with real-time data architectures and open APIs are dramatically more compatible with AI integration than legacy batch-processing cores, enabling institutions that migrate to modern platforms to deploy AI use cases in weeks rather than the months-long integration projects required against traditional core systems.",
           "vendors": [
             {
@@ -48131,7 +48131,7 @@
                 {
                   "product_id": 304,
                   "product_name": "Temenos Transact",
-                  "description": "Core banking platform (formerly T24). Real-time, cloud-native, API-first core banking system. US community bank clients include TS Banking Group ($1.5B, Iowa \u2014 selected 2022), AimBank, Clare Bank, Farmers & Merchants Bank, National Bank of Andrews, State Bank of Spencer. Large US bank clients include Commerce Bank ($36.7B, core + loan origination + FedNow live 2022-2024) and Regions Bank ($155B, selected 2023 for deposit system). Delivered via Temenos Banking Cloud (SaaS) or on-premise.",
+                  "description": "Core banking platform (formerly T24). Real-time, cloud-native, API-first core banking system. US community bank clients include TS Banking Group ($1.5B, Iowa — selected 2022), AimBank, Clare Bank, Farmers & Merchants Bank, National Bank of Andrews, State Bank of Spencer. Large US bank clients include Commerce Bank ($36.7B, core + loan origination + FedNow live 2022-2024) and Regions Bank ($155B, selected 2023 for deposit system). Delivered via Temenos Banking Cloud (SaaS) or on-premise.",
                   "pervasiveness_tier": 2,
                   "fi_segment": "banks",
                   "status": "active",
@@ -48442,8 +48442,8 @@
         {
           "code": "T2-11c",
           "name": "Credit Union Core Systems",
-          "description": "Credit union core systems are purpose-built core banking platforms designed specifically for the cooperative structure, share account model, and member service culture of credit unions \u2014 including Symitar (Jack Henry), Corelation Keystone, CU*Answers CU*BASE, Sharetec, and others. These platforms handle shares, loans, membership, ACH, and regulatory reporting within the NCUA regulatory framework. CEOs, COOs, and technology leadership at credit unions are the decision-makers.",
-          "ai_opportunities": "AI capabilities being built into credit union core platforms \u2014 including member behavior analytics, automated loan decisioning, and conversational AI integration \u2014 are enabling CUs to deliver the personalized, high-touch member experience that defines their competitive differentiation, now at digital scale and without proportional staff increases.",
+          "description": "Credit union core systems are purpose-built core banking platforms designed specifically for the cooperative structure, share account model, and member service culture of credit unions — including Symitar (Jack Henry), Corelation Keystone, CU*Answers CU*BASE, Sharetec, and others. These platforms handle shares, loans, membership, ACH, and regulatory reporting within the NCUA regulatory framework. CEOs, COOs, and technology leadership at credit unions are the decision-makers.",
+          "ai_opportunities": "AI capabilities being built into credit union core platforms — including member behavior analytics, automated loan decisioning, and conversational AI integration — are enabling CUs to deliver the personalized, high-touch member experience that defines their competitive differentiation, now at digital scale and without proportional staff increases.",
           "vendors": [
             {
               "vendor_id": 49,
@@ -48861,8 +48861,8 @@
         {
           "code": "T2-12a",
           "name": "Retail Digital Banking Platforms",
-          "description": "Retail digital banking platforms provide the consumer-facing online and mobile banking experiences through which retail customers and members manage accounts, make payments, apply for products, and interact with their financial institution \u2014 including Q2, Alkami, Narmi, Candescent/NCR, and Apiture. These platforms are the primary digital touchpoint for the institution and integrate with core systems, fintech partners, and payment networks. CEOs, Digital Banking VPs, and COOs are the buyers.",
-          "ai_opportunities": "AI-powered personalization and embedded financial wellness features within retail digital banking platforms \u2014 such as proactive spending insights, savings round-up prompts, and AI chat support \u2014 are becoming key competitive differentiators for community institutions seeking to match the experience quality of neobanks and large bank apps.",
+          "description": "Retail digital banking platforms provide the consumer-facing online and mobile banking experiences through which retail customers and members manage accounts, make payments, apply for products, and interact with their financial institution — including Q2, Alkami, Narmi, Candescent/NCR, and Apiture. These platforms are the primary digital touchpoint for the institution and integrate with core systems, fintech partners, and payment networks. CEOs, Digital Banking VPs, and COOs are the buyers.",
+          "ai_opportunities": "AI-powered personalization and embedded financial wellness features within retail digital banking platforms — such as proactive spending insights, savings round-up prompts, and AI chat support — are becoming key competitive differentiators for community institutions seeking to match the experience quality of neobanks and large bank apps.",
           "vendors": [
             {
               "vendor_id": 250,
@@ -49989,7 +49989,7 @@
         {
           "code": "T2-12c",
           "name": "Digital Account Opening",
-          "description": "Digital account opening platforms provide standalone or integrated solutions for opening consumer checking, savings, CD, and money market accounts \u2014 and in some cases business accounts \u2014 entirely through digital channels, handling identity verification, KYC, document capture, funding, and core system booking. Products address the critical onboarding experience for both new and existing customers. Digital banking leaders, retail banking heads, and COOs are the buyers.",
+          "description": "Digital account opening platforms provide standalone or integrated solutions for opening consumer checking, savings, CD, and money market accounts — and in some cases business accounts — entirely through digital channels, handling identity verification, KYC, document capture, funding, and core system booking. Products address the critical onboarding experience for both new and existing customers. Digital banking leaders, retail banking heads, and COOs are the buyers.",
           "ai_opportunities": "AI-powered identity verification and fraud detection embedded directly in the account opening flow is enabling community financial institutions to approve legitimate applicants in under three minutes while maintaining CIP compliance and fraud loss rates competitive with large bank digital channels.",
           "vendors": [
             {
@@ -50230,7 +50230,7 @@
   ],
   "meta": {
     "vendor_count": 470,
-    "product_count": 546,
-    "generated_at": "2026-05-16T13:45:52.217Z"
+    "product_count": 547,
+    "generated_at": "2026-05-16T15:15:56.749Z"
   }
 }
