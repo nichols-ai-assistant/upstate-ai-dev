@@ -119,7 +119,7 @@
               "vendor_id": 12,
               "name": "Finicity",
               "homepage_url": "https://developer.mastercard.com/open-banking-us/documentation/",
-              "logo_url": "/fi-landscape-logos/12.png",
+              "logo_url": null,
               "status": "legacy",
               "hq_city": "Salt Lake City",
               "hq_state": "UT",
@@ -5893,7 +5893,7 @@
               "vendor_id": 12,
               "name": "Finicity",
               "homepage_url": "https://developer.mastercard.com/open-banking-us/documentation/",
-              "logo_url": "/fi-landscape-logos/12.png",
+              "logo_url": null,
               "status": "legacy",
               "hq_city": "Salt Lake City",
               "hq_state": "UT",
@@ -18158,6 +18158,268 @@
                     443,
                     446,
                     455
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "T2-03f",
+          "name": "Print, Mail & Member Communications",
+          "description": null,
+          "ai_opportunities": null,
+          "vendors": [
+            {
+              "vendor_id": 497,
+              "name": "Vericast",
+              "homepage_url": "https://www.vericast.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": "San Antonio",
+              "hq_state": "TX",
+              "founded_year": 2020,
+              "products": [
+                {
+                  "product_id": 615,
+                  "product_name": "Vericast Financial Marketing & Payments",
+                  "description": "Omnichannel marketing, check printing, and data-driven engagement platform for community banks and credit unions. Delivers personalized direct mail, account holder acquisition campaigns, targeted offers, and check programs. Backed by proprietary consumer spending data for precision targeting.",
+                  "pervasiveness_tier": 6,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 309,
+              "name": "Deluxe",
+              "homepage_url": "https://deluxe.com",
+              "logo_url": "/fi-landscape-logos/309.png",
+              "status": "active",
+              "hq_city": "Minneapolis",
+              "hq_state": null,
+              "founded_year": 1915,
+              "products": [
+                {
+                  "product_id": 618,
+                  "product_name": "Deluxe Print & Marketing Services",
+                  "description": "Check printing, personalized direct mail, and data-driven marketing programs for community financial institutions. Delivers account holder acquisition, onboarding kits, promotional mailings, and branded collateral. One of the largest suppliers of checks and financial print to U.S. community banks and credit unions.",
+                  "pervasiveness_tier": 6,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 498,
+              "name": "Broadridge",
+              "homepage_url": "https://www.broadridge.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": "Lake Success",
+              "hq_state": "NY",
+              "founded_year": 2007,
+              "products": [
+                {
+                  "product_id": 616,
+                  "product_name": "Broadridge Customer Communications",
+                  "description": "Enterprise-grade customer communications management for financial institutions. Handles regulatory statement outsourcing, investor proxy communications, omnichannel document delivery, and digital archiving. Primarily serves larger banks and wealth management firms.",
+                  "pervasiveness_tier": 4,
+                  "fi_segment": "banks",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 495,
+              "name": "PrintMail Solutions",
+              "homepage_url": "https://www.printmailsolutions.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": "Ogden",
+              "hq_state": "UT",
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 613,
+                  "product_name": "PrintMail Solutions Platform",
+                  "description": "Full-service print and digital document delivery for financial institutions. Handles account statements, tax forms, compliance notices, and direct mail campaigns. Integrates with 50+ core banking platforms and processes 9M+ mail pieces monthly. Delivers 99.998% accuracy with USPS compliance documentation.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 496,
+              "name": "Lob",
+              "homepage_url": "https://www.lob.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": "San Francisco",
+              "hq_state": "CA",
+              "founded_year": 2013,
+              "products": [
+                {
+                  "product_id": 614,
+                  "product_name": "Lob Direct Mail API",
+                  "description": "Programmatic direct mail automation platform with developer-first API. Enables financial institutions to trigger personalized physical mail at scale — offers, statements, account notices — through API-driven workflows. Includes address verification, USPS route optimization, campaign analytics, and print network management.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 499,
+              "name": "Nordis Technologies",
+              "homepage_url": "https://www.nordistechnologies.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": "Coral Springs",
+              "hq_state": "FL",
+              "founded_year": 2012,
+              "products": [
+                {
+                  "product_id": 617,
+                  "product_name": "Nordis Expresso",
+                  "description": "Customer communications management (CCM) software and service platform for financial services. Delivers omnichannel account statements, compliance notices, and marketing communications across print, email, and SMS. Designed for community banks and credit unions seeking to consolidate member communications.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 494,
+              "name": "HC3",
+              "homepage_url": "https://hc3.io",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": "Birmingham",
+              "hq_state": "AL",
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 612,
+                  "product_name": "HC3 Statement Solutions",
+                  "description": "Statement processing platform for community banks and credit unions. Combines print and mail delivery, eStatements, and document design services to reduce cost and increase member engagement. Positions statements as strategic relationship-building tools rather than operational overhead.",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 275,
+              "name": "Doxim",
+              "homepage_url": "https://www.doxim.com",
+              "logo_url": "/fi-landscape-logos/275.png",
+              "status": "active",
+              "hq_city": "Markham",
+              "hq_state": "Canada",
+              "founded_year": 2000,
+              "products": [
+                {
+                  "product_id": 353,
+                  "product_name": "Doxim Customer Engagement Platform",
+                  "description": "Customer communications management and engagement platform for credit unions with personalized statements, cross-sell, and digital delivery.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "credit_unions",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [
+                    42,
+                    43,
+                    44,
+                    49,
+                    60,
+                    66,
+                    79,
+                    83,
+                    84,
+                    107,
+                    122,
+                    126,
+                    193,
+                    212,
+                    213,
+                    214,
+                    215,
+                    216,
+                    217,
+                    234,
+                    248,
+                    249,
+                    252,
+                    253,
+                    258,
+                    281,
+                    291,
+                    292,
+                    296,
+                    301,
+                    304,
+                    313,
+                    314,
+                    315,
+                    316,
+                    317,
+                    318,
+                    319,
+                    320,
+                    322,
+                    323,
+                    324,
+                    325,
+                    326,
+                    330,
+                    336,
+                    351,
+                    384,
+                    385,
+                    387,
+                    389,
+                    399,
+                    409,
+                    411,
+                    412,
+                    414,
+                    417,
+                    418,
+                    419,
+                    420,
+                    421,
+                    422,
+                    424,
+                    431,
+                    438,
+                    448,
+                    452,
+                    464,
+                    470
                   ],
                   "integration_ids": []
                 }
@@ -34115,6 +34377,29 @@
               ]
             },
             {
+              "vendor_id": 497,
+              "name": "Vericast",
+              "homepage_url": "https://www.vericast.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": "San Antonio",
+              "hq_state": "TX",
+              "founded_year": 2020,
+              "products": [
+                {
+                  "product_id": 615,
+                  "product_name": "Vericast Financial Marketing & Payments",
+                  "description": "Omnichannel marketing, check printing, and data-driven engagement platform for community banks and credit unions. Delivers personalized direct mail, account holder acquisition campaigns, targeted offers, and check programs. Backed by proprietary consumer spending data for precision targeting.",
+                  "pervasiveness_tier": 6,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 433,
               "name": "Claritas",
               "homepage_url": "https://claritas.com",
@@ -34461,6 +34746,29 @@
                   "product_id": 559,
                   "product_name": "Leadfusion Digital Engagement",
                   "description": "Pre-sales digital engagement platform for banks and credit unions; delivers product selection tools, financial calculators, and account opening journeys for website visitors.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 496,
+              "name": "Lob",
+              "homepage_url": "https://www.lob.com",
+              "logo_url": null,
+              "status": "active",
+              "hq_city": "San Francisco",
+              "hq_state": "CA",
+              "founded_year": 2013,
+              "products": [
+                {
+                  "product_id": 614,
+                  "product_name": "Lob Direct Mail API",
+                  "description": "Programmatic direct mail automation platform with developer-first API. Enables financial institutions to trigger personalized physical mail at scale — offers, statements, account notices — through API-driven workflows. Includes address verification, USPS route optimization, campaign analytics, and print network management.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "both",
                   "status": "active",
@@ -39627,7 +39935,7 @@
               "vendor_id": 12,
               "name": "Finicity",
               "homepage_url": "https://developer.mastercard.com/open-banking-us/documentation/",
-              "logo_url": "/fi-landscape-logos/12.png",
+              "logo_url": null,
               "status": "legacy",
               "hq_city": "Salt Lake City",
               "hq_state": "UT",
@@ -49847,8 +50155,8 @@
     }
   ],
   "meta": {
-    "vendor_count": 464,
-    "product_count": 539,
-    "generated_at": "2026-05-14T23:49:58.152Z"
+    "vendor_count": 470,
+    "product_count": 546,
+    "generated_at": "2026-05-16T13:41:40.982Z"
   }
 }
