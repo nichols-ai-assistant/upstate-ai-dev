@@ -1629,7 +1629,7 @@
                     state.competitorFilter = { productName: productName, ids: competitorIds, sourceVendorId: vendor.vendor_id };
                     state.competitorSourceT2s = new Set(t2sByProductId[primary.product_id] || []);
                     update();
-                    setTimeout(function() { scrollToGrid(); }, 0);
+                    scrollToGrid();
                 });
             }
             var ecoBtn = document.getElementById('modal-btn-ecosystem');
@@ -1654,7 +1654,7 @@
                     state.ecosystemFilter = { productName: productName, ids: integrationIds, sourceVendorId: vendor.vendor_id };
                     state.ecosystemSourceT2s = new Set(t2sByProductId[primary.product_id] || []);
                     update();
-                    setTimeout(function() { scrollToGrid(); }, 0);
+                    scrollToGrid();
                 });
             }
         }
@@ -1769,8 +1769,11 @@
         function scrollToGrid() {
             var filterBar = document.getElementById('category-filter-bar');
             if (filterBar) {
-                var y = filterBar.getBoundingClientRect().top + window.scrollY - 8;
-                window.scrollTo({ top: y, behavior: 'smooth' });
+                // Use offsetTop (natural document position) — getBoundingClientRect().top
+                // returns the sticky-clamped viewport position (always 60px once stuck),
+                // which makes the computed scroll target equal to the current position.
+                var NAVBAR_H = 60;
+                window.scrollTo({ top: Math.max(0, filterBar.offsetTop - NAVBAR_H - 8), behavior: 'smooth' });
             }
         }
 
