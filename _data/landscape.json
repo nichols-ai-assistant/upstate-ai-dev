@@ -1640,7 +1640,7 @@
             {
               "vendor_id": 390,
               "name": "AppOne",
-              "homepage_url": "https://www.appone.net",
+              "homepage_url": "https://home.appone.net/",
               "logo_url": "/fi-landscape-logos/390.png",
               "status": "active",
               "hq_city": "Baton Rouge",
@@ -8261,7 +8261,7 @@
             {
               "vendor_id": 15,
               "name": "Verafin",
-              "homepage_url": "https://www.nasdaq.com/solutions/nasdaq-verafin",
+              "homepage_url": "https://verafin.com/",
               "logo_url": "/fi-landscape-logos/15.png",
               "status": "legacy",
               "hq_city": "St. John's",
@@ -8958,7 +8958,7 @@
             {
               "vendor_id": 15,
               "name": "Verafin",
-              "homepage_url": "https://www.nasdaq.com/solutions/nasdaq-verafin",
+              "homepage_url": "https://verafin.com/",
               "logo_url": "/fi-landscape-logos/15.png",
               "status": "legacy",
               "hq_city": "St. John's",
@@ -10326,7 +10326,7 @@
             {
               "vendor_id": 15,
               "name": "Verafin",
-              "homepage_url": "https://www.nasdaq.com/solutions/nasdaq-verafin",
+              "homepage_url": "https://verafin.com/",
               "logo_url": "/fi-landscape-logos/15.png",
               "status": "legacy",
               "hq_city": "St. John's",
@@ -11734,7 +11734,7 @@
             {
               "vendor_id": 15,
               "name": "Verafin",
-              "homepage_url": "https://www.nasdaq.com/solutions/nasdaq-verafin",
+              "homepage_url": "https://verafin.com/",
               "logo_url": "/fi-landscape-logos/15.png",
               "status": "legacy",
               "hq_city": "St. John's",
@@ -43537,9 +43537,9 @@
             {
               "vendor_id": 238,
               "name": "Payveris",
-              "homepage_url": "https://www.payveris.com",
+              "homepage_url": "https://www.paymentus.com",
               "logo_url": "/fi-landscape-logos/238.png",
-              "status": "active",
+              "status": "legacy",
               "hq_city": "Cromwell",
               "hq_state": "CT",
               "founded_year": 2011,
@@ -43550,7 +43550,7 @@
                   "description": "Open API cloud platform enabling FIs to control and extend digital money movement capabilities across any application or device.",
                   "pervasiveness_tier": 3,
                   "fi_segment": "credit_unions",
-                  "status": "active",
+                  "status": "legacy",
                   "is_primary": true,
                   "competitor_ids": [
                     66,
