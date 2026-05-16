@@ -1166,19 +1166,29 @@
         var productById = {};        // product_id -> product obj
         var vendorByProductId = {};  // product_id -> vendor_id
         var t2sByProductId = {};     // product_id -> Array of T2 codes the product appears in
+        var vendorById = {};         // vendor_id -> { vendor, t1, t2 } (first occurrence)
+        var t2LabelByCode = {};      // T2 code -> display name
 
         function buildProductMaps() {
             productById = {};
             vendorByProductId = {};
             t2sByProductId = {};
+            vendorById = {};
+            t2LabelByCode = {};
             if (!state.data) return;
             for (var i = 0; i < state.data.categories.length; i++) {
-                var subs = state.data.categories[i].subcategories;
+                var cat = state.data.categories[i];
+                var subs = cat.subcategories;
                 for (var j = 0; j < subs.length; j++) {
-                    var t2Code = subs[j].code;
-                    var vendors = subs[j].vendors;
+                    var sub = subs[j];
+                    var t2Code = sub.code;
+                    t2LabelByCode[t2Code] = sub.name;
+                    var vendors = sub.vendors;
                     for (var k = 0; k < vendors.length; k++) {
                         var v = vendors[k];
+                        if (!vendorById[v.vendor_id]) {
+                            vendorById[v.vendor_id] = { vendor: v, t1: cat, t2: sub };
+                        }
                         for (var m = 0; m < v.products.length; m++) {
                             var p = v.products[m];
                             productById[p.product_id] = p;
@@ -1200,22 +1210,7 @@
             6: 'Tier 6 \u2014 Ubiquitous'
         };
 
-        var TIER_SHORT = {
-            1: 'Emerging',
-            2: 'Growing',
-            3: 'Moderate',
-            4: 'Established',
-            5: 'Dominant',
-            6: 'Ubiquitous'
-        };
-
-        var SEG_LABELS = {
-            banks: 'Banks Only',
-            credit_unions: 'Credit Unions Only',
-            both: 'Banks & Credit Unions'
-        };
-
-        // Verbose segment labels for the modal
+        // Segment labels for the modal
         var MODAL_SEG_LABELS = {
             banks: 'Banks Only',
             credit_unions: 'Credit Unions Only',
@@ -1485,7 +1480,6 @@
             }
 
             root.innerHTML = html;
-            attachCardEvents();
 
             // Wire empty-state reset button if present
             var emptyResetBtn = document.getElementById('landscape-empty-reset-btn');
@@ -1494,39 +1488,27 @@
             }
         }
 
-        // ---- Attach events after render ----
-        function attachCardEvents() {
-            var cards = document.querySelectorAll('.vendor-card:not(.deprecated):not(.defunct)');
-            for (var i = 0; i < cards.length; i++) {
-                (function(card) {
-                    card.addEventListener('click', function() {
-                        var vendorId = parseInt(card.dataset.vendorId, 10);
-                        var t2Code = card.dataset.t2 || null;
-                        openModal(vendorId, t2Code);
-                    });
-                })(cards[i]);
-            }
-        }
-
         // ---- Modal ----
         function findVendorById(vendorId, t2Code) {
             if (!state.data) return null;
-            var fallback = null;
-            for (var i = 0; i < state.data.categories.length; i++) {
-                var cat = state.data.categories[i];
-                for (var j = 0; j < cat.subcategories.length; j++) {
-                    var sub = cat.subcategories[j];
-                    for (var k = 0; k < sub.vendors.length; k++) {
-                        if (sub.vendors[k].vendor_id === vendorId) {
-                            if (t2Code && sub.code === t2Code) {
-                                return { vendor: sub.vendors[k], t1: cat, t2: sub };
+            // Fast path: if a specific T2 is requested, scan only that subcategory
+            if (t2Code && state.data) {
+                for (var i = 0; i < state.data.categories.length; i++) {
+                    var cat = state.data.categories[i];
+                    for (var j = 0; j < cat.subcategories.length; j++) {
+                        var sub = cat.subcategories[j];
+                        if (sub.code === t2Code) {
+                            for (var k = 0; k < sub.vendors.length; k++) {
+                                if (sub.vendors[k].vendor_id === vendorId) {
+                                    return { vendor: sub.vendors[k], t1: cat, t2: sub };
+                                }
                             }
-                            if (!fallback) fallback = { vendor: sub.vendors[k], t1: cat, t2: sub };
                         }
                     }
                 }
             }
-            return fallback;
+            // Fallback: use the pre-built map (first occurrence)
+            return vendorById[vendorId] || null;
         }
 
         function openModal(vendorId, t2Code) {
@@ -1615,8 +1597,6 @@
                     state.search = '';
                     var searchInput = document.getElementById('vendor-search');
                     if (searchInput) searchInput.value = '';
-                    state.category = 'all';
-                    state.tier = 'all';
                     state.segment = 'all';
                     state.activeTier = null;
                     state.activeT1 = null;
@@ -1640,8 +1620,6 @@
                     state.search = '';
                     var searchInput = document.getElementById('vendor-search');
                     if (searchInput) searchInput.value = '';
-                    state.category = 'all';
-                    state.tier = 'all';
                     state.segment = 'all';
                     state.activeTier = null;
                     state.activeT1 = null;
@@ -1705,17 +1683,7 @@
                 chips += '<span class="filter-chip filter-chip-ecosystem">Ecosystem: ' + escHtml(state.ecosystemFilter.productName) + '<button class="filter-chip-dismiss" data-dismiss="ecosystem" aria-label="Clear ecosystem filter">&times;</button></span>';
             }
             if (state.activeT2) {
-                var label = state.activeT2;
-                if (state.data) {
-                    outer: for (var i = 0; i < state.data.categories.length; i++) {
-                        for (var j = 0; j < state.data.categories[i].subcategories.length; j++) {
-                            if (state.data.categories[i].subcategories[j].code === state.activeT2) {
-                                label = state.data.categories[i].subcategories[j].name;
-                                break outer;
-                            }
-                        }
-                    }
-                }
+                var label = t2LabelByCode[state.activeT2] || state.activeT2;
                 chips += '<span class="filter-chip">' + escHtml(label) + '<button class="filter-chip-dismiss" data-dismiss="t2" aria-label="Clear subcategory filter">&times;</button></span>';
             }
             if (state.activeT1) {
@@ -1763,6 +1731,7 @@
         function update() {
             render();
             renderFilterBar();
+            updateFilterSummary();
         }
 
         // ---- Scroll viewport to top of vendor grid ----
@@ -1929,8 +1898,13 @@
         document.getElementById('cat-modal-close').addEventListener('click', closeCategoryModal);
         document.getElementById('cat-modal-backdrop').addEventListener('click', closeCategoryModal);
 
-        // ---- Event delegation for T1 and T2 headers in grid → open category modal ----
+        // ---- Event delegation for card clicks and T1/T2 headers in grid ----
         document.getElementById('landscape-root').addEventListener('click', function(e) {
+            var card = e.target.closest('.vendor-card:not(.deprecated):not(.defunct)');
+            if (card) {
+                openModal(parseInt(card.dataset.vendorId, 10), card.dataset.t2 || null);
+                return;
+            }
             var t2btn = e.target.closest('[data-t2-toggle]');
             if (t2btn) { openCategoryModal(t2btn.dataset.t2Toggle); return; }
             var t1btn = e.target.closest('[data-t1-toggle]');
@@ -2056,13 +2030,6 @@
                 resetBtn.style.display = hasNonDefault ? '' : 'none';
             }
         }
-
-        // Patch update() to also refresh the summary
-        var _origUpdate = update;
-        update = function() {
-            _origUpdate();
-            updateFilterSummary();
-        };
 
         // Initialize summary immediately so toggle bar isn't blank on load
         updateFilterSummary();
