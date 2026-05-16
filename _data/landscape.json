@@ -18310,6 +18310,57 @@
               ]
             },
             {
+              "vendor_id": 279,
+              "name": "IMS Inc.",
+              "homepage_url": "https://www.imsdirect.com",
+              "logo_url": "/fi-landscape-logos/279.png",
+              "status": "active",
+              "hq_city": "Liverpool",
+              "hq_state": "NY",
+              "founded_year": 1986,
+              "products": [
+                {
+                  "product_id": 356,
+                  "product_name": "IMS Member Communications",
+                  "description": "Print, mail, and digital communications solutions for credit unions including statements, notices, and multi-channel engagement.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    21,
+                    38,
+                    54,
+                    55,
+                    56,
+                    61,
+                    118,
+                    130,
+                    135,
+                    140,
+                    141,
+                    152,
+                    197,
+                    294,
+                    351,
+                    352,
+                    354,
+                    355,
+                    357,
+                    358,
+                    359,
+                    377,
+                    380,
+                    381,
+                    445,
+                    454,
+                    457
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
               "vendor_id": 494,
               "name": "HC3",
               "homepage_url": "https://hc3.io",
@@ -21841,57 +21892,6 @@
               ]
             },
             {
-              "vendor_id": 279,
-              "name": "IMS Inc.",
-              "homepage_url": "https://www.imsdirect.com",
-              "logo_url": "/fi-landscape-logos/279.png",
-              "status": "active",
-              "hq_city": "Liverpool",
-              "hq_state": "NY",
-              "founded_year": 1986,
-              "products": [
-                {
-                  "product_id": 356,
-                  "product_name": "IMS Member Communications",
-                  "description": "Print, mail, and digital communications solutions for credit unions including statements, notices, and multi-channel engagement.",
-                  "pervasiveness_tier": 3,
-                  "fi_segment": "credit_unions",
-                  "status": "active",
-                  "is_primary": true,
-                  "competitor_ids": [
-                    21,
-                    38,
-                    54,
-                    55,
-                    56,
-                    61,
-                    118,
-                    130,
-                    135,
-                    140,
-                    141,
-                    152,
-                    197,
-                    294,
-                    351,
-                    352,
-                    354,
-                    355,
-                    357,
-                    358,
-                    359,
-                    377,
-                    380,
-                    381,
-                    445,
-                    454,
-                    457
-                  ],
-                  "integration_ids": []
-                }
-              ]
-            },
-            {
               "vendor_id": 280,
               "name": "OSG",
               "homepage_url": "https://www.osgconnect.com",
@@ -22471,6 +22471,57 @@
                     462,
                     463,
                     469
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 279,
+              "name": "IMS Inc.",
+              "homepage_url": "https://www.imsdirect.com",
+              "logo_url": "/fi-landscape-logos/279.png",
+              "status": "active",
+              "hq_city": "Liverpool",
+              "hq_state": "NY",
+              "founded_year": 1986,
+              "products": [
+                {
+                  "product_id": 356,
+                  "product_name": "IMS Member Communications",
+                  "description": "Print, mail, and digital communications solutions for credit unions including statements, notices, and multi-channel engagement.",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": false,
+                  "competitor_ids": [
+                    21,
+                    38,
+                    54,
+                    55,
+                    56,
+                    61,
+                    118,
+                    130,
+                    135,
+                    140,
+                    141,
+                    152,
+                    197,
+                    294,
+                    351,
+                    352,
+                    354,
+                    355,
+                    357,
+                    358,
+                    359,
+                    377,
+                    380,
+                    381,
+                    445,
+                    454,
+                    457
                   ],
                   "integration_ids": []
                 }
@@ -50157,6 +50208,6 @@
   "meta": {
     "vendor_count": 470,
     "product_count": 546,
-    "generated_at": "2026-05-16T13:41:40.982Z"
+    "generated_at": "2026-05-16T13:45:52.217Z"
   }
 }
