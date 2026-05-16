@@ -1036,6 +1036,7 @@
                         </svg>
                         <input type="search" id="vendor-search" placeholder="Search products&hellip;" autocomplete="off" aria-label="Search products and vendors">
                     </div>
+                    <button id="filter-apply-btn" class="seg-filter-btn" style="margin-left:0.5rem;flex-shrink:0;" aria-label="Apply filters and close panel">Apply</button>
                 </div>
             </div>
             <!-- Category row -->
@@ -1820,6 +1821,7 @@
                 state.activeT2 = null; // clear subcategory when T1 changes
                 syncT1Buttons();
                 update();
+                setFilterExpanded(false);
             });
         }
 
@@ -1855,6 +1857,7 @@
             state.activeTier = (tierVal === 'all') ? null : parseInt(tierVal, 10);
             syncTierButtons();
             update();
+            setFilterExpanded(false);
         });
 
         // ---- Category modal ----
@@ -1948,6 +1951,7 @@
             state.segment = btn.dataset.segment;
             syncSegmentButtons();
             update();
+            setFilterExpanded(false);
         });
 
         function syncSegmentButtons() {
@@ -1965,6 +1969,11 @@
                 state.search = val;
                 update();
             }, 180);
+        });
+
+        // ---- Apply button (collapses filter panel) ----
+        document.getElementById('filter-apply-btn').addEventListener('click', function() {
+            setFilterExpanded(false);
         });
 
         // ---- Collapsible filter bar ----
