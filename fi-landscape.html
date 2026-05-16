@@ -1263,11 +1263,13 @@
             return 'both';
         }
 
-        // ---- Check if a vendor/product is deprecated ----
+        // ---- Check if a vendor/product is sunset (visually subordinated) ----
+        // Note: 'deprecated' vendors are shown at full opacity so the acquirer URL is reachable.
+        // Only 'sunset' triggers the grayed treatment; no vendors/products currently carry that status.
         function isDeprecated(vendor) {
             var primary = getPrimaryProduct(vendor);
-            return (vendor.status === 'deprecated' || vendor.status === 'sunset') ||
-                   (primary && (primary.status === 'deprecated' || primary.status === 'sunset'));
+            return (vendor.status === 'sunset') ||
+                   (primary && (primary.status === 'sunset'));
         }
 
         // ---- Check if a vendor is defunct (no longer operating) ----
@@ -1900,7 +1902,7 @@
 
         // ---- Event delegation for card clicks and T1/T2 headers in grid ----
         document.getElementById('landscape-root').addEventListener('click', function(e) {
-            var card = e.target.closest('.vendor-card:not(.deprecated):not(.defunct)');
+            var card = e.target.closest('.vendor-card:not(.defunct)');
             if (card) {
                 openModal(parseInt(card.dataset.vendorId, 10), card.dataset.t2 || null);
                 return;
