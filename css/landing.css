@@ -118,10 +118,25 @@ a:hover { color: var(--orange-light); }
 /* ==========================================
    Path Chooser
    ========================================== */
+@keyframes path-chooser-sheen {
+    0%   { transform: translateX(-100%) skewX(-15deg); }
+    100% { transform: translateX(400%) skewX(-15deg); }
+}
 .path-chooser {
-    background: var(--forest-dark);
+    background: linear-gradient(100deg, #0f1f0f 0%, #1c321c 60%, #0f1f0f 100%);
     padding: calc(64px + 1.25rem) 0 1.25rem;
     border-bottom: 1px solid rgba(255,255,255,0.07);
+    position: relative;
+    overflow: hidden;
+}
+.path-chooser::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 30%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.055), transparent);
+    animation: path-chooser-sheen 4s ease-in-out infinite;
+    pointer-events: none;
 }
 .path-chooser .container {
     display: flex;
