@@ -168,20 +168,6 @@ a:hover { color: var(--orange-light); }
     transform: translateY(-1px);
 }
 .path-arr { color: var(--orange); }
-.path-tile-skip {
-    background: transparent;
-    border-color: rgba(255,255,255,0.14);
-    color: rgba(255,255,255,0.38);
-}
-.path-tile-skip .path-arr { color: rgba(255,255,255,0.25); }
-.path-tile-skip:hover {
-    background: rgba(255,255,255,0.05);
-    border-color: rgba(255,255,255,0.22);
-    color: rgba(255,255,255,0.6);
-    transform: none;
-}
-/* When path chooser is hidden, hero re-adds nav offset */
-body.path-dismissed .hero { padding-top: calc(6rem + 64px); }
 @media (max-width: 640px) {
     .path-chooser .container { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
     .path-tiles { width: 100%; }

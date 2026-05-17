@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upstate AI helps law firms, accounting firms, and professional services companies put AI to work on the document-heavy, knowledge-intensive work that eats your billable hours.">
+    <meta name="keywords" content="AI for professional services, AI for law firms, AI for accounting firms, professional services AI consulting, legal AI, document automation AI, knowledge management AI">
+    <meta name="author" content="Ben Nichols">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KKZRVLYRV0');
+    </script>
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://script.google.com https://script.googleusercontent.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://script.google.com https://script.googleusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://up-state-ai.com/professional-services">
+    <meta property="og:title" content="AI for Professional Services | Upstate AI">
+    <meta property="og:description" content="Practical AI for law firms, accounting firms, and consulting practices. Automate the work that shouldn't require your best people.">
+    <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI Implementation for Professional Services",
+        "provider": {
+            "@type": "Organization",
+            "name": "Upstate AI",
+            "url": "https://up-state-ai.com"
+        },
+        "description": "Practical AI implementation for professional services firms. Document automation, knowledge management, client intelligence, and workflow optimization.",
+        "areaServed": "US",
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "Professional Services Firm Leaders"
+        }
+    }
+    </script>
+
+    <title>AI for Professional Services | Upstate AI</title>
+
+    <link rel="stylesheet" href="css/landing.css">
+    <style>
+        /* ==========================================
+           Professional Services Landing Page Overrides
+           ========================================== */
+
+        /* Hero override — light bg, green text */
+        .hero {
+            background: linear-gradient(170deg, var(--cream) 0%, var(--warm-white) 60%);
+            min-height: auto;
+            padding: 3.5rem 0 6rem;
+        }
+        .hero h1 { color: var(--forest-dark); }
+        .hero .hero-lead { color: var(--text-dark); }
+        .hero .hero-body { color: var(--text-muted); }
+        .hero .hero-badge { color: var(--forest-medium); }
+        .hero .hero-badge .accent { color: var(--orange); }
+
+        /* Desktop text sizing */
+        @media (min-width: 769px) {
+            .hero h1 { font-size: clamp(2.5rem, 1.5rem + 3.5vw, 3.75rem); }
+            .section-title { font-size: clamp(1.75rem, 1rem + 2.5vw, 2.75rem); }
+            .section-subtitle { font-size: 1.05rem; }
+            .hero-lead { font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem); }
+            .hero-body { font-size: 1rem; }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: clamp(2rem, 1.5rem + 3vw, 2.8rem); }
+            .hero { padding: 2rem 0 4rem; }
+        }
+
+        /* Sections */
+        .cb-section { padding: var(--space-xl) 0; }
+        .cb-section-cream { background: var(--cream); }
+        .cb-section-white { background: var(--warm-white); }
+        .cb-section-dark { background: var(--forest-dark); color: #fff; }
+        .cb-section-dark .section-title { color: #fff; }
+        .cb-section-dark .section-subtitle { color: rgba(255, 255, 255, 0.75); }
+
+        /* Challenge cards */
+        .cb-challenge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-md);
+        }
+        .cb-challenge-card {
+            padding: var(--space-md) var(--space-md) var(--space-sm);
+            border-radius: var(--radius-md);
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .cb-challenge-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 60px; height: 3px;
+            background: var(--orange);
+            border-radius: 0 0 3px 3px;
+        }
+        .cb-challenge-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .cb-challenge-card h3 { color: var(--orange); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .cb-challenge-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 0; }
+
+        /* AI Impact grid */
+        .cb-impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-md);
+        }
+        .cb-impact-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-lg);
+            padding: var(--space-md);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .cb-impact-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 60px; height: 3px;
+            background: var(--orange);
+            border-radius: 0 0 3px 3px;
+        }
+        .cb-impact-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--orange);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+        .cb-impact-illustration {
+            width: 80px; height: 80px;
+            object-fit: contain;
+            margin-bottom: var(--space-sm);
+            filter: brightness(1.1);
+        }
+        .cb-impact-card h3 { color: var(--orange-light); font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .cb-impact-card .cb-impact-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; font-style: italic; margin-bottom: var(--space-sm); }
+        .cb-impact-card > p { color: rgba(255,255,255,0.78); font-size: 0.95rem; line-height: 1.6; margin-bottom: var(--space-sm); }
+        .cb-impact-features { list-style: none; padding: 0; margin: 0; }
+        .cb-impact-features li {
+            padding: 0.35rem 0 0.35rem 1.5rem;
+            position: relative;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.5;
+        }
+        .cb-impact-features li::before { content: '✓'; position: absolute; left: 0; color: var(--orange); font-weight: 800; font-size: 0.85rem; }
+
+        /* Edge columns */
+        .cb-edge-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-md);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .cb-edge-col {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
+        }
+        .cb-edge-col::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 60px; height: 3px;
+            background: var(--orange);
+            border-radius: 0 0 3px 3px;
+        }
+        .cb-edge-col h3 { color: var(--forest-dark); font-size: 1.1rem; margin-bottom: var(--space-sm); }
+        .cb-edge-list { list-style: none; padding: 0; margin: 0; }
+        .cb-edge-list li {
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            border-bottom: 1px solid rgba(26,58,46,0.06);
+        }
+        .cb-edge-list li:last-child { border-bottom: none; }
+        .cb-edge-list li::before { content: '✓'; position: absolute; left: 0; color: var(--orange); font-weight: 800; font-size: 0.85rem; }
+
+        /* CTA section */
+        .cb-cta-section { padding: var(--space-xl) 0; background: var(--forest-dark); position: relative; }
+        .cb-cta-section::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(90deg, rgba(255,105,0,0.05) 0%, transparent 50%, rgba(255,105,0,0.05) 100%);
+            pointer-events: none;
+        }
+        .cb-cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); align-items: start; position: relative; z-index: 1; }
+        .cb-cta-text h2 { color: #fff; text-align: left; margin-bottom: var(--space-sm); }
+        .cb-cta-text > p { color: rgba(255,255,255,0.8); font-size: 1.05rem; line-height: 1.7; margin-bottom: var(--space-md); }
+        .cb-cta-bullets { list-style: none; padding: 0; margin: 0; }
+        .cb-cta-bullets li { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.5rem 0; color: rgba(255,255,255,0.85); font-size: 0.95rem; }
+        .cb-cta-bullets li::before { content: '✓'; color: var(--orange); font-weight: 800; flex-shrink: 0; }
+        .cb-cta-supporting { color: rgba(255,255,255,0.6); font-size: 0.9rem; line-height: 1.6; margin-top: var(--space-md); }
+
+        /* Form */
+        .cb-form { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: var(--space-md); }
+        .cb-form .field-group { margin-bottom: var(--space-sm); }
+        .cb-form label { display: block; color: rgba(255,255,255,0.85); font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; }
+        .cb-form .required { color: var(--orange); }
+        .cb-form input, .cb-form textarea {
+            width: 100%; padding: 0.85rem 1rem;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius-sm);
+            color: #fff; font-size: 0.95rem; font-family: inherit;
+            transition: var(--transition);
+        }
+        .cb-form input::placeholder, .cb-form textarea::placeholder { color: rgba(255,255,255,0.35); }
+        .cb-form input:focus, .cb-form textarea:focus { outline: none; border-color: var(--orange); box-shadow: 0 0 0 3px rgba(255,105,0,0.15); }
+        .cb-form textarea { resize: vertical; min-height: 100px; }
+        .cb-form .btn-primary { width: 100%; margin-top: var(--space-xs); }
+        .cb-form-note { color: rgba(255,255,255,0.45); font-size: 0.8rem; text-align: center; margin-top: var(--space-sm); margin-bottom: 0; }
+        .cb-form-error { color: #ff6b6b; font-size: 0.85rem; margin-top: 0.25rem; display: none; }
+        .cb-form-success { text-align: center; padding: var(--space-lg) var(--space-md); }
+        .cb-form-success h3 { color: #fff; margin-bottom: var(--space-sm); }
+        .cb-form-success p { color: rgba(255,255,255,0.75); font-size: 1rem; }
+
+        /* Accent bar */
+        .cb-accent-bar { height: 4px; background: linear-gradient(90deg, var(--orange), var(--forest-light), var(--orange)); opacity: 0.3; }
+
+        /* Trust badges */
+        .cb-trust-row { display: flex; justify-content: flex-start; gap: var(--space-md); flex-wrap: wrap; margin-top: var(--space-md); }
+        .cb-trust-badge { display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: var(--text-muted); font-weight: 500; }
+        .cb-trust-badge .check { color: var(--orange); font-weight: 800; font-size: 0.85rem; }
+
+        /* Insider grid */
+        .cb-insider-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-sm); margin-top: var(--space-md); }
+        .cb-insider-card {
+            padding: var(--space-sm);
+            border-radius: var(--radius-md);
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: var(--transition);
+        }
+        .cb-insider-card:hover { background: rgba(255,255,255,0.12); transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
+        .cb-insider-icon { font-size: 1.5rem; margin-bottom: 0.5rem; display: block; }
+        .cb-insider-card h3 { color: var(--orange-light); font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem; }
+        .cb-insider-card p { color: rgba(255,255,255,0.7); font-size: 0.85rem; line-height: 1.5; margin-bottom: 0; }
+
+        @media (max-width: 1024px) { .cb-insider-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 768px) {
+            .cb-insider-grid { grid-template-columns: 1fr; }
+            .cb-challenge-grid { grid-template-columns: 1fr; }
+            .cb-impact-grid { grid-template-columns: 1fr; }
+            .cb-edge-columns { grid-template-columns: 1fr; }
+            .cb-cta-grid { grid-template-columns: 1fr; }
+            .cb-cta-text h2 { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><a href="index">
+                <img src="images/logo.png" alt="Upstate AI Logo" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="free-training">Complimentary Training</a></li>
+                <li><a href="index#services">Services</a></li>
+                <li><a href="index#about">About</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-nav">Book a Call</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" style="margin-top: 64px;">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content fade-up">
+                    <span class="hero-badge"><span class="accent">&#x2B25;</span>&nbsp;&nbsp; Professional Services &nbsp;&nbsp;<span class="accent">&#x2B25;</span></span>
+                    <h1>AI That Works the Way <span class="accent">Your Firm Works</span></h1>
+                    <p class="hero-lead">Professional service firms run on expertise and time. AI should amplify both — automating the document-heavy, repetitive work that shouldn't require your best people, and surfacing the intelligence buried in years of your firm's own data.</p>
+                    <div class="hero-ctas" style="margin-top: var(--space-md);">
+                        <a href="#contact" class="btn-primary">Schedule a Firm Assessment</a>
+                        <a href="#impact" class="btn-ghost">See Where AI Helps &rarr;</a>
+                    </div>
+                    <div class="cb-trust-row">
+                        <span class="cb-trust-badge"><span class="check">&#x2713;</span> Active consulting at IMS, a professional services firm</span>
+                        <span class="cb-trust-badge"><span class="check">&#x2713;</span> AI Professor, Syracuse University</span>
+                        <span class="cb-trust-badge"><span class="check">&#x2713;</span> No vendor commissions. Ever.</span>
+                    </div>
+                </div>
+                <div class="hero-visual fade-up">
+                    <img src="images/undraw/undraw_co-working_becw.svg" alt="Professional services team" width="480" height="317">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT WE SEE ==================== -->
+    <section class="cb-section cb-section-dark" id="insider">
+        <div class="container">
+            <h2 class="section-title fade-up">What We See <span class="text-orange">At Most Firms</span></h2>
+            <p class="section-subtitle fade-up">The same patterns show up across law firms, accounting practices, consulting firms, and engineering shops. The tools are different. The structural problems are not.</p>
+
+            <div class="cb-insider-grid fade-up">
+                <div class="cb-insider-card">
+                    <span class="cb-insider-icon">&#x1F4C4;</span>
+                    <h3>Documents Running Everything</h3>
+                    <p>Your work product is documents. Contracts, reports, memos, filings, proposals. Most of the time your best people spend is creating, reviewing, and searching through them. AI changes this math significantly.</p>
+                </div>
+                <div class="cb-insider-card">
+                    <span class="cb-insider-icon">&#x1F9E0;</span>
+                    <h3>Knowledge Locked in People</h3>
+                    <p>Your firm's institutional knowledge — the precedents, the client history, the "how we do things here" — lives in people's heads and buried in old files. When someone leaves, it walks out the door. AI can change that.</p>
+                </div>
+                <div class="cb-insider-card">
+                    <span class="cb-insider-icon">&#x23F1;&#xFE0F;</span>
+                    <h3>Billable Hours Leaking</h3>
+                    <p>Research, formatting, summarizing, chasing information between systems. None of it is billable at the rate your team's actual expertise warrants. Most firms don't measure how much they're losing. We will show you.</p>
+                </div>
+                <div class="cb-insider-card">
+                    <span class="cb-insider-icon">&#x1F6A7;</span>
+                    <h3>AI Pilots That Went Nowhere</h3>
+                    <p>ChatGPT accounts scattered across the firm. A tool someone evaluated last year that nobody uses. Vendors promising productivity gains that require six months of workflow restructuring to realize. We see this everywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== THE CHALLENGE ==================== -->
+    <section class="cb-section cb-section-cream" id="challenge">
+        <div class="container">
+            <h2 class="section-title fade-up">The Pressure Is <span class="text-orange">Real. And Getting Worse.</span></h2>
+            <p class="section-subtitle fade-up">Professional service firms are being squeezed from multiple directions simultaneously.</p>
+
+            <div class="cb-challenge-grid">
+                <div class="cb-challenge-card fade-up">
+                    <h3>Document Overload</h3>
+                    <p>Volume keeps growing. Contracts, correspondence, filings, reports. Your team can process only so much before quality slips or timelines slip.</p>
+                </div>
+                <div class="cb-challenge-card fade-up">
+                    <h3>Margin Compression</h3>
+                    <p>Clients push for flat fees and value billing. That only works if you can do the work faster without proportionally more staff.</p>
+                </div>
+                <div class="cb-challenge-card fade-up">
+                    <h3>Talent Constraints</h3>
+                    <p>You can't hire your way out of capacity problems at the rates the market demands. You need existing staff to do more with the same hours.</p>
+                </div>
+                <div class="cb-challenge-card fade-up">
+                    <h3>Client Expectations</h3>
+                    <p>Faster turnaround. More proactive communication. Deeper insight on their portfolio or matter. Clients expect more and have options if they don't get it.</p>
+                </div>
+                <div class="cb-challenge-card fade-up">
+                    <h3>Knowledge Management</h3>
+                    <p>Years of work product sitting in document management systems nobody can efficiently search. Every new matter partially reinvents what you've already done.</p>
+                </div>
+                <div class="cb-challenge-card fade-up">
+                    <h3>New Business Cost</h3>
+                    <p>Proposals, RFP responses, and pitch preparation consume partner time that could be billable. The pipeline cost is real but rarely measured.</p>
+                </div>
+            </div>
+
+            <p class="fade-up" style="text-align: center; color: var(--text-muted); margin-top: var(--space-lg); font-size: 1.05rem; max-width: 680px; margin-left: auto; margin-right: auto;">These aren't fixable by adding headcount or buying another SaaS subscription. They require rethinking how the work gets done — which is exactly where AI creates leverage.</p>
+        </div>
+    </section>
+
+    <div class="cb-accent-bar"></div>
+
+    <!-- ==================== AI IMPACT AREAS ==================== -->
+    <section class="cb-section cb-section-dark" id="impact">
+        <div class="container">
+            <h2 class="section-title fade-up">Where AI Creates <span class="text-orange">Real Leverage</span></h2>
+            <p class="section-subtitle fade-up">We don't deploy technology for its own sake. We identify where AI creates the most leverage for your firm's specific workflow and start there.</p>
+
+            <div class="cb-impact-grid">
+
+                <div class="cb-impact-card fade-up">
+                    <img src="images/undraw/undraw_database-tables_yft5.svg" alt="Document intelligence" class="cb-impact-illustration">
+                    <h3>Document Intelligence</h3>
+                    <p>Review, extract, summarize, and compare documents at a speed no human team can match.</p>
+                    <ul class="cb-impact-features">
+                        <li>Contract review and clause extraction</li>
+                        <li>Due diligence acceleration</li>
+                        <li>Regulatory filing analysis</li>
+                        <li>Cross-document inconsistency detection</li>
+                    </ul>
+                </div>
+
+                <div class="cb-impact-card fade-up">
+                    <img src="images/undraw/undraw_online-connection_c56e.svg" alt="Knowledge management" class="cb-impact-illustration">
+                    <h3>Firm Knowledge Management</h3>
+                    <p>Surface your firm's institutional knowledge when it's needed, not after hours of searching.</p>
+                    <ul class="cb-impact-features">
+                        <li>Semantic search across all work product</li>
+                        <li>Precedent and matter retrieval</li>
+                        <li>Expert locator across practice areas</li>
+                        <li>Client history synthesis</li>
+                    </ul>
+                </div>
+
+                <div class="cb-impact-card fade-up">
+                    <img src="images/undraw/undraw_online-payments_d5ef.svg" alt="Client insights" class="cb-impact-illustration">
+                    <h3>Client Intelligence</h3>
+                    <p>Know more about your clients' situation before they walk in the door.</p>
+                    <ul class="cb-impact-features">
+                        <li>Account and matter trend analysis</li>
+                        <li>Proactive risk flagging</li>
+                        <li>Cross-sell opportunity identification</li>
+                        <li>Relationship health monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="cb-impact-card fade-up">
+                    <img src="images/undraw/undraw_co-working_becw.svg" alt="Workflow automation" class="cb-impact-illustration">
+                    <h3>Workflow Automation</h3>
+                    <p>Eliminate the coordination and formatting work that consumes professional staff time.</p>
+                    <ul class="cb-impact-features">
+                        <li>Document generation and templating</li>
+                        <li>Status tracking and deadline management</li>
+                        <li>Meeting prep and follow-up automation</li>
+                        <li>Intake and matter setup workflows</li>
+                    </ul>
+                </div>
+
+                <div class="cb-impact-card fade-up">
+                    <img src="images/undraw/undraw_personal-finance_xpqg.svg" alt="Proposal automation" class="cb-impact-illustration">
+                    <h3>Proposal and RFP Automation</h3>
+                    <p>Respond to more opportunities without burning partner time on first drafts.</p>
+                    <ul class="cb-impact-features">
+                        <li>RFP response generation from firm history</li>
+                        <li>Capability statement drafting</li>
+                        <li>Pricing model assistance</li>
+                        <li>Competitive positioning support</li>
+                    </ul>
+                </div>
+
+                <div class="cb-impact-card fade-up">
+                    <img src="images/undraw/undraw_business-decisions_7vkl.svg" alt="Operations" class="cb-impact-illustration">
+                    <h3>Operations and Reporting</h3>
+                    <p>Internal reporting and firm management without the manual data assembly.</p>
+                    <ul class="cb-impact-features">
+                        <li>Utilization and billing analysis</li>
+                        <li>Pipeline and backlog reporting</li>
+                        <li>Performance dashboard automation</li>
+                        <li>Regulatory and compliance monitoring</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="cb-accent-bar"></div>
+
+    <!-- ==================== ADVANTAGE ==================== -->
+    <section class="cb-section cb-section-cream" id="advantage">
+        <div class="container">
+            <h2 class="section-title fade-up">Your Expertise Doesn't Scale. <span class="text-orange">Until Now.</span></h2>
+            <p class="section-subtitle fade-up">The work your clients pay premium rates for is your judgment. AI handles the rest so that judgment can go further.</p>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: var(--space-md); max-width: 900px; margin-left: auto; margin-right: auto;">
+                <div class="cb-challenge-card fade-up" style="padding: 1.25rem 1.75rem;">
+                    <h3 style="margin-bottom: 0.25rem;">Institutional Knowledge Becomes Searchable</h3>
+                    <p style="margin-bottom: 0;">Years of work product, case history, and client context become accessible in seconds — not buried in shared drives nobody searches.</p>
+                </div>
+                <div class="cb-challenge-card fade-up" style="padding: 1.25rem 1.75rem;">
+                    <h3 style="margin-bottom: 0.25rem;">Capacity Without Headcount</h3>
+                    <p style="margin-bottom: 0;">Your senior people can take on more client-facing work when AI handles the research, drafting, and summarization underneath it.</p>
+                </div>
+                <div class="cb-challenge-card fade-up" style="padding: 1.25rem 1.75rem;">
+                    <h3 style="margin-bottom: 0.25rem;">Faster Turnaround, Same Quality</h3>
+                    <p style="margin-bottom: 0;">AI accelerates the first pass on documents, research, and reporting. Your professionals review, refine, and deliver. The clock moves faster without the quality trade-off.</p>
+                </div>
+                <div class="cb-challenge-card fade-up" style="padding: 1.25rem 1.75rem;">
+                    <h3 style="margin-bottom: 0.25rem;">New Business at Lower Cost</h3>
+                    <p style="margin-bottom: 0;">Proposals and RFP responses that used to take a partner two days take two hours. More shots on goal without more overhead.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== COMPETITIVE EDGE ==================== -->
+    <section class="cb-section cb-section-white" id="edge">
+        <div class="container">
+            <h2 class="section-title fade-up">Compete on What <span class="text-orange">Actually Matters.</span></h2>
+            <p class="section-subtitle fade-up">AI gives smaller, independent firms the operational leverage of firms three times their size — without three times the overhead.</p>
+
+            <div class="cb-edge-columns fade-up">
+                <div class="cb-edge-col">
+                    <h3>AI Lets You Match Larger Firms On</h3>
+                    <ul class="cb-edge-list">
+                        <li>Document processing speed and throughput</li>
+                        <li>Research depth and coverage</li>
+                        <li>Proposal volume and response time</li>
+                        <li>Reporting consistency and frequency</li>
+                        <li>Client communication proactiveness</li>
+                        <li>Knowledge management and retrieval</li>
+                    </ul>
+                </div>
+                <div class="cb-edge-col">
+                    <h3>While Keeping Your Advantage On</h3>
+                    <ul class="cb-edge-list">
+                        <li>Partner-level attention on every engagement</li>
+                        <li>Domain expertise and contextual judgment</li>
+                        <li>Flexibility and response speed</li>
+                        <li>Long-term client relationships</li>
+                        <li>Accountability and trust</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA / CONTACT FORM ==================== -->
+    <section class="cb-cta-section" id="contact">
+        <div class="container">
+            <div class="cb-cta-grid">
+                <div class="cb-cta-text fade-up">
+                    <h2>No Demo. No Deck. <span class="text-orange">Just an Honest Conversation.</span></h2>
+                    <p>The assessment is a working session. We look at how your firm actually operates — where time goes, what your current tools can and can't do, and where AI creates real leverage for your practice type. If the answer is "not yet," we will tell you that too.</p>
+
+                    <ul class="cb-cta-bullets">
+                        <li>60-minute assessment focused on your specific workflow, document types, and capacity constraints</li>
+                        <li>Honest evaluation of where AI creates leverage and where it doesn't, in your situation</li>
+                        <li>Practical roadmap with cost ranges and implementation sequencing</li>
+                        <li><strong style="color: #fff;">Workshop: $5,000 flat.</strong> Full-day on-site with AI Opportunity Scorecard and prioritized roadmap.</li>
+                        <li><strong style="color: #fff;">Fractional AI Advisor: $5,000/month.</strong> 10 hours per month. Ongoing vendor evaluation and implementation support.</li>
+                        <li>No obligation. No pitch deck. No vendor commissions.</li>
+                    </ul>
+
+                    <p class="cb-cta-supporting">Clients typically identify $50,000 or more in annual savings opportunities in a single workshop session. We'll show you where yours are, or tell you if we can't find them.</p>
+                </div>
+
+                <div class="fade-up">
+                    <form class="cb-form" id="psForm">
+                        <div class="field-group">
+                            <label for="psName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="psName" name="psName" required placeholder="Sarah Chen">
+                        </div>
+                        <div class="field-group">
+                            <label for="psEmail">Email Address <span class="required">*</span></label>
+                            <input type="email" id="psEmail" name="psEmail" required placeholder="schen@chenlawgroup.com">
+                        </div>
+                        <div class="field-group">
+                            <label for="psFirm">Firm / Company Name <span class="required">*</span></label>
+                            <input type="text" id="psFirm" name="psFirm" required placeholder="Chen Law Group">
+                        </div>
+                        <div class="field-group">
+                            <label for="psRole">Title / Role</label>
+                            <input type="text" id="psRole" name="psRole" placeholder="Managing Partner, COO, Director, etc.">
+                        </div>
+                        <div class="field-group">
+                            <label for="psMessage">What are you most interested in?</label>
+                            <textarea id="psMessage" name="psMessage" rows="4" placeholder="Tell us about your firm's current challenges, what tools you're using, or specific areas where you're exploring AI..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" id="psSubmitBtn">Schedule Assessment</button>
+                        <p class="cb-form-error" id="psFormError">Please fill in all required fields.</p>
+                    </form>
+                    <div class="cb-form cb-form-success" id="psFormSuccess" style="display: none;">
+                        <h3>Thank you. We'll be in touch.</h3>
+                        <p>We've received your information and will reach out within one business day to schedule your firm's AI assessment.</p>
+                        <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary" style="margin-top: var(--space-sm);">Or Book a Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
+                    <p>Put AI to Work</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index#services">Services</a>
+                    <a href="index#about">About</a>
+                    <a href="blog">Blog</a>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
+                    <a href="privacy">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-consent.js"></script>
+
+    <script>
+        var PS_SCRIPT_URL = '';
+
+        (function() {
+            var form = document.getElementById('psForm');
+            var successEl = document.getElementById('psFormSuccess');
+            var errorEl = document.getElementById('psFormError');
+            var submitBtn = document.getElementById('psSubmitBtn');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                errorEl.style.display = 'none';
+
+                var name = document.getElementById('psName').value.trim();
+                var email = document.getElementById('psEmail').value.trim();
+                var firm = document.getElementById('psFirm').value.trim();
+                var role = document.getElementById('psRole').value.trim();
+                var message = document.getElementById('psMessage').value.trim();
+
+                if (!name || !email || !firm) { errorEl.style.display = 'block'; return; }
+                if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+                    errorEl.textContent = 'Please enter a valid email address.';
+                    errorEl.style.display = 'block'; return;
+                }
+
+                submitBtn.textContent = 'Submitting...';
+                submitBtn.disabled = true;
+
+                var payload = { name: name, email: email, firm: firm, role: role, message: message, source: 'professional-services-landing-page', timestamp: new Date().toISOString() };
+
+                if (PS_SCRIPT_URL && PS_SCRIPT_URL.trim().length > 0) {
+                    fetch(PS_SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }).catch(function(err) { console.warn('Sheets submission error:', err); });
+                } else {
+                    console.info('Professional services form submitted (no Sheets URL configured yet):', payload);
+                }
+
+                if (typeof gtag === 'function') {
+                    gtag('event', 'form_submit', { event_category: 'professional_services', event_label: 'assessment_request', firm: firm });
+                }
+
+                form.style.display = 'none';
+                successEl.style.display = 'block';
+            });
+        })();
+
+        var navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function() { navbar.classList.toggle('scrolled', window.scrollY > 50); });
+
+        var mobileToggle = document.querySelector('.mobile-toggle');
+        var navMenu = document.querySelector('.nav-menu');
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', function() { navMenu.classList.toggle('open'); mobileToggle.classList.toggle('active'); });
+            navMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() { navMenu.classList.remove('open'); mobileToggle.classList.remove('active'); });
+            });
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) { window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' }); }
+            });
+        });
+
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
+    </script>
+</body>
+</html>
