@@ -80,6 +80,18 @@ layout: none
         </div>
     </nav>
 
+    <!-- ============ PATH CHOOSER ============ -->
+    <div class="path-chooser" id="path-chooser">
+        <div class="container">
+            <span class="path-prompt">I work with a</span>
+            <div class="path-tiles">
+                <a href="banking" class="path-tile" data-choice="bank">Community Bank <span class="path-arr">&rarr;</span></a>
+                <a href="credit-unions" class="path-tile" data-choice="cu">Credit Union <span class="path-arr">&rarr;</span></a>
+                <button class="path-tile path-tile-skip" data-choice="other">Other Business <span class="path-arr">&darr;</span></button>
+            </div>
+        </div>
+    </div>
+
     <!-- ============ HERO ============ -->
     <section class="hero">
         <div class="container">
@@ -427,6 +439,29 @@ layout: none
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // ---- Path chooser ----
+        (function() {
+            var section = document.getElementById('path-chooser');
+            if (!section) return;
+            function dismiss() {
+                section.style.display = 'none';
+                document.body.classList.add('path-dismissed');
+            }
+            // Return visitor who chose "other": hide immediately
+            try {
+                if (localStorage.getItem('upstateai-visitor') === 'other') { dismiss(); return; }
+            } catch(e) {}
+            // Wire clicks
+            section.querySelectorAll('[data-choice]').forEach(function(el) {
+                el.addEventListener('click', function(e) {
+                    var choice = this.dataset.choice;
+                    try { localStorage.setItem('upstateai-visitor', choice); } catch(e) {}
+                    if (choice === 'other') { e.preventDefault(); dismiss(); }
+                    // bank / cu: href handles navigation
+                });
+            });
+        })();
     </script>
 </body>
 </html>
