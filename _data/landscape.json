@@ -3260,7 +3260,7 @@
             {
               "vendor_id": 527,
               "name": "PROVIDR",
-              "homepage_url": null,
+              "homepage_url": "https://www.providrcredit.com/",
               "logo_url": null,
               "status": "active",
               "acquirer_name": null,
@@ -6608,7 +6608,7 @@
             {
               "vendor_id": 523,
               "name": "ContexQ",
-              "homepage_url": null,
+              "homepage_url": "https://contexq.com",
               "logo_url": null,
               "status": "active",
               "acquirer_name": null,
@@ -12813,7 +12813,7 @@
             {
               "vendor_id": 502,
               "name": "PentEdge",
-              "homepage_url": null,
+              "homepage_url": "https://thepentedge.com/",
               "logo_url": null,
               "status": "active",
               "acquirer_name": null,
@@ -24789,7 +24789,7 @@
             {
               "vendor_id": 526,
               "name": "Holdyn",
-              "homepage_url": null,
+              "homepage_url": "https://holdyn.io/",
               "logo_url": null,
               "status": "active",
               "acquirer_name": null,
@@ -25852,7 +25852,7 @@
             {
               "vendor_id": 521,
               "name": "Cobalt",
-              "homepage_url": "https://www.getcobalt.ai",
+              "homepage_url": "https://joincobalt.com/",
               "logo_url": null,
               "status": "active",
               "acquirer_name": null,
