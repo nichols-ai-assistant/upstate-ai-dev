@@ -1,6 +1,14 @@
 # Blog post registry — sorted by date descending.
 # Add new posts to the top. Homepage auto-displays the first 3.
 
+- title: "What FinovateSpring 2026 Revealed About AI for Community Financial Institutions"
+  url: "blog/finovatespring-2026-ai-themes"
+  category: "Industry Analysis"
+  date: "May 21, 2026"
+  sort_date: 2026-05-21
+  excerpt: "Fifty-four companies demoed at FinovateSpring 2026. Five AI themes emerged. Here is what community banks and credit unions should take from each one."
+  read_time: "11 min read"
+
 - title: "Banking from Both Sides: Two-Sided AI Pressure"
   url: "blog/banking-from-both-sides"
   category: "Community Banking"
