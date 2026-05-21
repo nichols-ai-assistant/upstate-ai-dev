@@ -629,6 +629,60 @@
                   ]
                 }
               ]
+            },
+            {
+              "vendor_id": 507,
+              "name": "Consilience AI",
+              "homepage_url": "https://consilience.ai",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "San Francisco",
+              "hq_state": "CA",
+              "founded_year": 2025,
+              "products": [
+                {
+                  "product_id": 627,
+                  "product_name": "Consilience Credit & Fraud Model Builder",
+                  "description": "Automated credit underwriting and fraud model construction platform that deploys inside the institution's own AWS environment; builds and refreshes models from the FI's own transaction and performance data; targets the 5-10% model performance improvement that translates to material portfolio loss reduction at scale",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    1,
+                    513
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 513,
+              "name": "CRIF",
+              "homepage_url": "https://www.crif.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Bologna",
+              "hq_state": "Italy",
+              "founded_year": 1988,
+              "products": [
+                {
+                  "product_id": 633,
+                  "product_name": "CRIF AI Decision Engine",
+                  "description": "AI-augmented credit decision and strategy platform; no-code strategy builder enables underwriters to define and test credit policies in natural language without SAS or Python; combines bureau data, alternative data, and behavioral analytics; global vendor with US market presence targeting community and regional bank modernization of credit decisioning infrastructure",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    1,
+                    507
+                  ],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -1682,6 +1736,30 @@
                   ]
                 }
               ]
+            },
+            {
+              "vendor_id": 528,
+              "name": "Yubi",
+              "homepage_url": "https://go-yubi.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Chennai",
+              "hq_state": "India",
+              "founded_year": 2020,
+              "products": [
+                {
+                  "product_id": 648,
+                  "product_name": "Yubi Loan Operating System",
+                  "description": "India's largest debt platform entering the US market; end-to-end loan operating system with an embedded borrower marketplace connecting lenders, co-lenders, and institutional capital; supports full loan lifecycle from origination through servicing; US market entry announced at FinovateSpring 2026",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -2224,6 +2302,30 @@
                     289,
                     60
                   ]
+                }
+              ]
+            },
+            {
+              "vendor_id": 515,
+              "name": "KeySavvy",
+              "homepage_url": "https://www.keysavvy.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Saint Paul",
+              "hq_state": "MN",
+              "founded_year": 2022,
+              "products": [
+                {
+                  "product_id": 635,
+                  "product_name": "KeySavvy Private Party Auto Loan Platform",
+                  "description": "End-to-end platform enabling financial institutions to originate auto loans for private party vehicle sales (buyer-to-buyer transactions); addresses the 47% of the used car market that is private party and currently inaccessible to most credit unions and community banks; acts as a de facto dealer intermediary to facilitate title transfer, lien recording, and funding",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "community",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
                 }
               ]
             }
@@ -3127,6 +3229,60 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 506,
+              "name": "Vine Financial",
+              "homepage_url": "https://www.vinefin.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Austin",
+              "hq_state": "TX",
+              "founded_year": 2019,
+              "products": [
+                {
+                  "product_id": 626,
+                  "product_name": "Vine Commercial Lending Platform",
+                  "description": "End-to-end commercial lending platform for community banks, credit unions, and agricultural lenders; covers underwriting, financial statement spreading, portfolio monitoring, and credit memo generation; configurable to the institution's own underwriting logic and policies; one Oklahoma community bank increased throughput from 2 loans/week to 8-10/week after deployment",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "community",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    204,
+                    527
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 527,
+              "name": "PROVIDR",
+              "homepage_url": null,
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Boston",
+              "hq_state": "MA",
+              "founded_year": 2025,
+              "products": [
+                {
+                  "product_id": 647,
+                  "product_name": "PROVIDR Agentic SMB Underwriting",
+                  "description": "Nine-stage agentic pipeline for small business credit underwriting; ingests 24 months of bank statements, categorizes transactions, runs fraud detection, and generates a credit memo in under five minutes versus four days manually; designed for community banks and credit unions seeking to reduce commercial lending cycle time without replacing existing LOS infrastructure",
+                  "pervasiveness_tier": 1,
+                  "fi_segment": "community",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    204,
+                    506
+                  ],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -3851,6 +4007,30 @@
                     246,
                     603
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 514,
+              "name": "Kato",
+              "homepage_url": "https://katohq.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "San Francisco",
+              "hq_state": "CA",
+              "founded_year": 2024,
+              "products": [
+                {
+                  "product_id": 634,
+                  "product_name": "Kato Voice AI Collections",
+                  "description": "Voice AI agent for loan collections and servicing; fully scripted to eliminate hallucination risk in regulated debt collection interactions; demonstrated 30% improvement in recovery rates; in production with BlueVine and Paraffin; handles outbound and inbound servicing calls at scale without human agents",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -6424,6 +6604,30 @@
                   ]
                 }
               ]
+            },
+            {
+              "vendor_id": 523,
+              "name": "ContexQ",
+              "homepage_url": null,
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Singapore",
+              "hq_state": "Singapore",
+              "founded_year": 2024,
+              "products": [
+                {
+                  "product_id": 643,
+                  "product_name": "ContexQ Financial Crime Platform",
+                  "description": "Enterprise financial crime detection platform using consortium data modeling; aggregates cross-institution signals to improve detection accuracy beyond what any single FI's data can support; primarily targets large institutions and regional banks; consortium data contributions over time will improve models for smaller FI participants",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -7472,6 +7676,30 @@
                     247,
                     416
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 516,
+              "name": "Kiro Money",
+              "homepage_url": "https://www.joinkiro.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "San Francisco",
+              "hq_state": "CA",
+              "founded_year": 2023,
+              "products": [
+                {
+                  "product_id": 636,
+                  "product_name": "Kiro Embedded Financial AI",
+                  "description": "Embedded agentic financial intelligence for bank and fintech digital channels; converts personal finance questions into in-platform account opening and product engagement rather than losing customers to ChatGPT and Claude; the average consumer spends 6 hours per month asking financial questions on AI platforms; Kiro captures that intent inside the FI's own experience",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -8780,6 +9008,54 @@
                     565,
                     568
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 517,
+              "name": "Orca Advisor",
+              "homepage_url": "https://www.orcaadvisor.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Bellefontaine",
+              "hq_state": "OH",
+              "founded_year": 2025,
+              "products": [
+                {
+                  "product_id": 637,
+                  "product_name": "Orca AI Business Advisor",
+                  "description": "AI-powered business health assessment tool for banks and credit unions; conducts a conversational business health evaluation and generates a scored report across four dimensions; surfaces cross-selling opportunities to the relationship manager; deepens SMB engagement beyond transactional banking into advisory services",
+                  "pervasiveness_tier": 1,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 522,
+              "name": "Nextvestment",
+              "homepage_url": "https://nextvestment.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Singapore",
+              "hq_state": "Singapore",
+              "founded_year": 2024,
+              "products": [
+                {
+                  "product_id": 642,
+                  "product_name": "Nextvestment AI Advisor Platform",
+                  "description": "Client-facing financial advisor AI for wealth management and banking; monitors AI answer quality in production to catch hallucinations before client complaints; advisor dashboard surfaces client anxiety signals and engagement gaps proactively; explicit guardrails prevent the AI from giving directive financial advice while escalating to human advisors for complex situations; designed for advisors managing 200-1,000 client relationships",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -10474,6 +10750,58 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 500,
+              "name": "Clockout",
+              "homepage_url": "https://www.joinclockout.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Chattanooga",
+              "hq_state": "TN",
+              "founded_year": 2022,
+              "products": [
+                {
+                  "product_id": 620,
+                  "product_name": "Clockout EWA",
+                  "description": "Earned wage access embedded inside a financial institution's existing digital banking app; no separate card or app required; funds deposit directly to the member account; integrates with Q2, Jack Henry, Alkami, and Candescent; won Best in Show at FinovateSpring 2026",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    503
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 503,
+              "name": "Veep Software",
+              "homepage_url": "https://veepsoftware.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Boynton Beach",
+              "hq_state": "FL",
+              "founded_year": 2023,
+              "products": [
+                {
+                  "product_id": 623,
+                  "product_name": "Anytime Pay",
+                  "description": "Earned wage access embedded in digital banking; supports gig workers and furlough programs; no separate app required; competes with Clockout in the bank-native EWA category for community FIs",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    500
+                  ],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -11053,6 +11381,30 @@
                     86,
                     90
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 519,
+              "name": "Winnow",
+              "homepage_url": "https://www.winnow.law",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Anaheim",
+              "hq_state": "CA",
+              "founded_year": 2018,
+              "products": [
+                {
+                  "product_id": 639,
+                  "product_name": "Winnow Compliance Research Platform",
+                  "description": "Regulatory compliance research database with 100,000 attorney-reviewed requirements across adverse action, origination, foreclosure, and consumer lending regulations; AI question layer enables natural language compliance queries against the curated requirement library; reduces hours of attorney research to minutes for FI compliance and legal teams",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -11774,6 +12126,30 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 508,
+              "name": "Baselayer",
+              "homepage_url": "https://baselayer.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Middletown",
+              "hq_state": "DE",
+              "founded_year": 2023,
+              "products": [
+                {
+                  "product_id": 628,
+                  "product_name": "Baselayer Business Identity Network",
+                  "description": "Real-time business identity and KYB data network for financial institutions; surfaces registered LLCs and business entities owned by existing consumer customers, enabling conversion from personal to business relationships; integrated with 2,200+ FIs; API-first; data shows 8 of 10 consumer banking customers sampled had an LLC their FI did not know about",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -12429,6 +12805,32 @@
                     150,
                     238,
                     240
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 502,
+              "name": "PentEdge",
+              "homepage_url": null,
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "North Creek",
+              "hq_state": "NY",
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 622,
+                  "product_name": "AIMS AI Governance Platform",
+                  "description": "AI inventory and governance platform for financial institutions; produces a one-click AI model inventory mapped to federal examination frameworks; designed for the regulatory moment when examiners include AI governance on day-one exam checklists; women-owned, CFI-focused",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    518
                   ],
                   "integration_ids": []
                 }
@@ -14198,6 +14600,30 @@
                     467,
                     553
                   ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 520,
+              "name": "Whatfix",
+              "homepage_url": "https://whatfix.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "San Jose",
+              "hq_state": "CA",
+              "founded_year": 2013,
+              "products": [
+                {
+                  "product_id": 640,
+                  "product_name": "Whatfix Digital Adoption Platform",
+                  "description": "Digital adoption and in-application guidance platform for financial institution staff; reduces onboarding friction, compliance errors, and training time inside loan origination systems and core banking platforms; overlays contextual guidance on existing software without code changes",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
                   "integration_ids": []
                 }
               ]
@@ -20559,6 +20985,54 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 512,
+              "name": "Go Abacus",
+              "homepage_url": "https://goabacus.co",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Chicago",
+              "hq_state": "IL",
+              "founded_year": 2022,
+              "products": [
+                {
+                  "product_id": 632,
+                  "product_name": "Go One On-Premise AI Appliance",
+                  "description": "On-premise AI appliance for regulated industries requiring data sovereignty; supports 2,000 concurrent users; ships pre-configured with 75 AI agents; no usage-based pricing; designed for institutions that cannot send data to third-party cloud AI vendors due to regulatory or board-level data governance requirements",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 525,
+              "name": "Lyzr AI",
+              "homepage_url": "https://www.lyzr.ai",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Jersey City",
+              "hq_state": "NJ",
+              "founded_year": 2023,
+              "products": [
+                {
+                  "product_id": 645,
+                  "product_name": "Lyzr Agent Compliance Infrastructure",
+                  "description": "Enterprise agentic AI infrastructure platform with real-time compliance enforcement built directly into agent execution; continuously checks SOX, IFRS 9, LCR, and PII handling as agents operate; routes threshold breaches to human escalation; designed for FIs deploying AI agents in regulated workflows where compliance cannot be a post-hoc audit",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -21320,6 +21794,32 @@
                     134,
                     192,
                     589
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 518,
+              "name": "KDOA",
+              "homepage_url": "https://kdoden.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "San Francisco",
+              "hq_state": "CA",
+              "founded_year": 2018,
+              "products": [
+                {
+                  "product_id": 638,
+                  "product_name": "Model IQ",
+                  "description": "AI and ML model governance platform for financial institutions; automates the 3-4 week process of classifying, risk-scoring, validating, and scheduling review for every AI model deployed at an FI; maps existing model inventory to regulatory examination requirements; addresses the emerging examiner expectation for formal AI model governance programs",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    502
                   ],
                   "integration_ids": []
                 }
@@ -24233,6 +24733,85 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 504,
+              "name": "Crebit Pay",
+              "homepage_url": "https://www.crebitpay.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "San Francisco",
+              "hq_state": "CA",
+              "founded_year": 2025,
+              "products": [
+                {
+                  "product_id": 624,
+                  "product_name": "Crebit Stablecoin FX",
+                  "description": "Stablecoin-powered international payment and FX platform for credit unions; uses a stablecoin sandwich architecture (local currency in, USDC intermediary, USD out via domestic wire) achieving sub-10-minute settlement at 4-10% lower cost than SWIFT; targeted at CUs serving international students and immigrant communities; backed by a16z; partnered with MSU Federal Credit Union and Lake Michigan Credit Union; $2M processed in first month of operation",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "community",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    505
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 505,
+              "name": "AlphaPoint",
+              "homepage_url": "https://alphapoint.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "New York",
+              "hq_state": "NY",
+              "founded_year": 2013,
+              "products": [
+                {
+                  "product_id": 625,
+                  "product_name": "AlphaPoint Stablecoin Treasury",
+                  "description": "Multi-tenant stablecoin treasury and digital asset infrastructure platform for financial institutions; configurable fee tiers, mass disbursement, invoice generation, and white-label deployment; enables FIs to issue, manage, and settle stablecoins without building proprietary infrastructure; positions against $46T in global stablecoin volume (3x Visa) and monthly volume now exceeding ACH in the US",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    504
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 526,
+              "name": "Holdyn",
+              "homepage_url": null,
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Tel Aviv",
+              "hq_state": "Israel",
+              "founded_year": 2025,
+              "products": [
+                {
+                  "product_id": 646,
+                  "product_name": "Holdyn Conditional Payments",
+                  "description": "Conditional payment infrastructure using stablecoins to solve counterparty trust problems in peer-to-peer and commercial transactions; funds are released only when defined conditions are met; designed for agentic commerce scenarios where programmable payment logic replaces manual escrow or trust arrangements",
+                  "pervasiveness_tier": 1,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    504,
+                    505
+                  ],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         }
@@ -24732,6 +25311,30 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 511,
+              "name": "Bloomfire",
+              "homepage_url": "https://bloomfire.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Austin",
+              "hq_state": "TX",
+              "founded_year": 2010,
+              "products": [
+                {
+                  "product_id": 631,
+                  "product_name": "Bloomfire Self-Healing Knowledge Base",
+                  "description": "AI-powered knowledge management platform with certified search for regulated industries; automatically detects and resolves conflicting, duplicative, or outdated policies in a knowledge base; prevents authoritative-sounding but incorrect AI outputs that result from organizational knowledge disorder; designed for compliance training verification and policy management at FIs",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -25215,6 +25818,58 @@
                     138,
                     139,
                     508
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 501,
+              "name": "Zengines",
+              "homepage_url": "https://www.zengines.ai",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Bedford",
+              "hq_state": "MA",
+              "founded_year": 2020,
+              "products": [
+                {
+                  "product_id": 621,
+                  "product_name": "Zengines Legacy Code Intelligence",
+                  "description": "Automated lineage mapping and modernization platform for COBOL, RPG, and PL/1 banking cores; produces a continuously updated dependency map of legacy systems to support safe AI deployment, regulatory data lineage requirements, and core migration planning; won Best in Show at FinovateSpring 2026",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    521
+                  ],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 521,
+              "name": "Cobalt",
+              "homepage_url": "https://www.getcobalt.ai",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Tel Aviv",
+              "hq_state": "Israel",
+              "founded_year": null,
+              "products": [
+                {
+                  "product_id": 641,
+                  "product_name": "Cobalt Banking System Map",
+                  "description": "Automated architecture discovery and dependency mapping platform for financial institution IT environments; produces a continuously updated map of all existing systems, integrations, and dependencies that has never previously existed; designed for FIs planning to deploy AI agents, modernize legacy cores, or respond to regulatory data lineage requirements; solves the blast radius problem where nobody knows what depends on a 30-year-old system before changing it",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [
+                    501
                   ],
                   "integration_ids": []
                 }
@@ -25982,6 +26637,30 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 510,
+              "name": "GenAspire",
+              "homepage_url": "https://genaspire.com",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Seattle",
+              "hq_state": "WA",
+              "founded_year": 2019,
+              "products": [
+                {
+                  "product_id": 630,
+                  "product_name": "GenAspire Youth Banking Platform",
+                  "description": "White-label teen and youth banking platform for financial institutions; distributed through a network of 2,200 schools; 300,000 active accounts; guaranteed volume model for FI partners; generates 37 transactions per month per account; captures the next generation of primary banking relationships before competitors",
+                  "pervasiveness_tier": 3,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         },
@@ -26362,6 +27041,54 @@
                   "integration_ids": []
                 }
               ]
+            },
+            {
+              "vendor_id": 509,
+              "name": "BankUniverse",
+              "homepage_url": null,
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "Athens",
+              "hq_state": "Greece",
+              "founded_year": 2024,
+              "products": [
+                {
+                  "product_id": 629,
+                  "product_name": "BankUniverse Digital Acquisition Engine",
+                  "description": "Digital acquisition platform combining paid media, UX optimization, and conversion analytics for community banks and credit unions; identified that 39% of potential loan applications are lost from broken mobile application flows; targets measurable improvement in digital channel conversion rates",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
+            },
+            {
+              "vendor_id": 524,
+              "name": "InstaSwitch",
+              "homepage_url": "https://instaswitch.co",
+              "logo_url": null,
+              "status": "active",
+              "acquirer_name": null,
+              "hq_city": "New York",
+              "hq_state": "NY",
+              "founded_year": 2024,
+              "products": [
+                {
+                  "product_id": 644,
+                  "product_name": "InstaSwitch Business Account Activation",
+                  "description": "Business banking account activation infrastructure; automates the migration of payroll direct deposits, vendor payments, income sources, and recurring expenses from a prior bank to the new business account; converts an opened-but-unfunded account into a primary funded relationship; addresses the 60% of new business bank accounts that are opened and never funded, and the 5.4M businesses that attempt annual banking relationship switches with $72B in revenue at stake",
+                  "pervasiveness_tier": 2,
+                  "fi_segment": "both",
+                  "status": "active",
+                  "is_primary": true,
+                  "competitor_ids": [],
+                  "integration_ids": []
+                }
+              ]
             }
           ]
         }
@@ -26369,8 +27096,8 @@
     }
   ],
   "meta": {
-    "vendor_count": 470,
-    "product_count": 547,
-    "generated_at": "2026-05-17T17:26:49.034Z"
+    "vendor_count": 499,
+    "product_count": 576,
+    "generated_at": "2026-05-21T21:02:24Z"
   }
 }
