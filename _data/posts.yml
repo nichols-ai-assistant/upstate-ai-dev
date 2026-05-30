@@ -1,6 +1,14 @@
 # Blog post registry — sorted by date descending.
 # Add new posts to the top. Homepage auto-displays the first 3.
 
+- title: "Fiserv Is Now Using AI to Build Banking Software. Here Is What That Means for Your Institution."
+  url: "blog/fiserv-devin-ai-may-2026"
+  category: "Community Banking"
+  date: "May 29, 2026"
+  sort_date: 2026-05-29
+  excerpt: "Fiserv partnered with Cognition AI to deploy Devin, an autonomous AI software engineer, across its core banking modernization. Here is what that means for how fast your vendor can deliver."
+  read_time: "8 min read"
+
 - title: "What FinovateSpring 2026 Revealed About AI for Community Financial Institutions"
   url: "blog/finovatespring-2026-ai-themes"
   category: "Industry Analysis"
