@@ -1,6 +1,14 @@
 # Blog post registry — sorted by date descending.
 # Add new posts to the top. Homepage auto-displays the first 3.
 
+- title: "The FSB's New AI Framework: A Plain-English Summary for Community Bankers"
+  url: "blog/fsb-ai-sound-practices-june-2026"
+  category: "Regulatory"
+  date: "June 15, 2026"
+  sort_date: 2026-06-15
+  excerpt: "The Financial Stability Board published 12 sound practices for responsible AI adoption in financial services. Here is what it covers, why it matters for community banks, and what to watch before the October final report."
+  read_time: "5 min read"
+
 - title: "Fiserv Is Now Using AI to Build Banking Software. Here Is What That Means for Your Institution."
   url: "blog/fiserv-devin-ai-may-2026"
   category: "Community Banking"
