@@ -42,28 +42,14 @@ layout: none
             padding-right: 1.5rem;
         }
         .webinar-hero {
-            background: linear-gradient(145deg, #0A1F1A 0%, #1A453A 100%);
-            color: #f0f8f5;
-            padding: 6.5rem 0 5.5rem;
-            position: relative;
-            overflow: hidden;
-            min-height: 90dvh;
+            background: #f9f5ee;
+            color: var(--forest-dark, #0A1F1A);
+            padding: 5rem 0 4rem;
             display: flex;
             align-items: center;
         }
-        .webinar-hero::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background-image: radial-gradient(circle at 20% 20%, rgba(0,255,191,0.18), transparent 45%),
-                              radial-gradient(circle at 80% 30%, rgba(0,191,255,0.22), transparent 35%),
-                              repeating-linear-gradient(130deg, rgba(255,255,255,0.05) 0 2px, transparent 2px 12px);
-            opacity: 0.6;
-        }
         .webinar-hero .hero-inner {
-            position: relative;
-            z-index: 2;
-            max-width: 760px;
+            max-width: 900px;
             text-align: center;
             margin: 0 auto;
         }
@@ -71,72 +57,38 @@ layout: none
             display: inline-flex;
             align-items: center;
             gap: 0.55rem;
-            background: rgba(255,140,0,0.15);
+            background: rgba(255,140,0,0.12);
             border: 1px solid rgba(255,140,0,0.45);
-            color: #FF8C00;
+            color: #c95e00;
             text-transform: uppercase;
             letter-spacing: 0.18em;
             font-size: 0.8rem;
             font-weight: 700;
             padding: 0.55rem 1.1rem;
             border-radius: 999px;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.75rem;
         }
         .webinar-hero .status-pill .dot {
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: #FF8C00;
-            box-shadow: 0 0 0 0 rgba(255,140,0,0.6);
+            background: #c95e00;
+            box-shadow: 0 0 0 0 rgba(201,94,0,0.6);
             animation: pulse 2s infinite;
         }
         @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(255,140,0,0.6); }
-            70% { box-shadow: 0 0 0 10px rgba(255,140,0,0); }
-            100% { box-shadow: 0 0 0 0 rgba(255,140,0,0); }
+            0% { box-shadow: 0 0 0 0 rgba(201,94,0,0.6); }
+            70% { box-shadow: 0 0 0 10px rgba(201,94,0,0); }
+            100% { box-shadow: 0 0 0 0 rgba(201,94,0,0); }
         }
-        .webinar-hero h1 {
-            font-size: clamp(2.2rem, 4vw, 3.6rem);
-            line-height: 1.12;
-            margin-bottom: 1rem;
-        }
-        .webinar-hero h1 span.accent {
-            color: #FF8C00;
-        }
-        .webinar-hero .hero-subtitle {
-            font-size: 1.25rem;
-            color: rgba(255,255,255,0.85);
-            margin-bottom: 2rem;
-            max-width: 620px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .webinar-hero .detail-strip {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 2.25rem;
-        }
-        .webinar-hero .detail-chip {
-            background: rgba(8,33,28,0.55);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 14px;
-            padding: 0.9rem 1.3rem;
-            min-width: 130px;
-        }
-        .webinar-hero .detail-chip .label {
+        .webinar-hero-img {
+            width: 100%;
+            max-width: 860px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 6px 40px rgba(10,31,26,0.14);
             display: block;
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            color: rgba(255,255,255,0.6);
-            margin-bottom: 0.3rem;
-        }
-        .webinar-hero .detail-chip .value {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #f0f8f5;
+            margin: 0 auto 2.25rem;
         }
         .webinar-hero .hero-cta {
             display: flex;
@@ -144,14 +96,27 @@ layout: none
             flex-wrap: wrap;
             justify-content: center;
         }
+        .webinar-hero .btn-ghost-dark {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--forest-dark, #0A1F1A);
+            color: var(--forest-dark, #0A1F1A);
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .webinar-hero .btn-ghost-dark:hover {
+            background: var(--forest-dark, #0A1F1A);
+            color: #fff;
+        }
         .webinar-hero .signup-note {
             margin-top: 1.5rem;
             font-size: 0.95rem;
-            color: rgba(255,255,255,0.7);
+            color: #555;
         }
         @media (max-width: 600px) {
             .webinar-hero .hero-cta { flex-direction: column; align-items: center; }
-            .webinar-hero .detail-chip { min-width: 45%; }
         }
     </style>
 </head>
@@ -179,19 +144,16 @@ layout: none
         <div class="container">
             <div class="hero-inner">
                 <div class="status-pill"><span class="dot"></span> Registration Opens Soon</div>
-                <h1>A Practical Path to <span class="accent">Responsible AI</span> for Your Institution</h1>
-                <p class="hero-subtitle">Join our upcoming live webinar: a plain-English walkthrough of the FSB Sound Practices, built for the realities of community banks and credit unions.</p>
-                <div class="detail-strip">
-                    <div class="detail-chip"><span class="label">Date</span><span class="value">Tue, Sep 16, 2026</span></div>
-                    <div class="detail-chip"><span class="label">Time</span><span class="value">2:00 PM ET</span></div>
-                    <div class="detail-chip"><span class="label">Length</span><span class="value">60 Minutes</span></div>
-                    <div class="detail-chip"><span class="label">Format</span><span class="value">Online</span></div>
-                </div>
+                <img src="images/webinar-hero.png"
+                     alt="12 Sound Practices for Responsible AI Adoption in Banking — Live Webinar, Wednesday September 16 at 2:00 PM ET hosted by Ben Nichols of Upstate AI"
+                     class="webinar-hero-img"
+                     width="1456" height="816"
+                     fetchpriority="high">
                 <div class="hero-cta">
                     <a href="blog" class="btn-primary">Read the Sound Practices Series</a>
-                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-ghost">Book a Call &#8594;</a>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-ghost-dark">Book a Call &#8594;</a>
                 </div>
-                <p class="signup-note">Signup isn't open yet. Stay tuned, we'll share the registration link here as soon as it's live.</p>
+                <p class="signup-note">Signup isn't open yet. Stay tuned — we'll post the registration link here as soon as it's live.</p>
             </div>
         </div>
     </section>
