@@ -42,9 +42,15 @@ layout: none
             padding-right: 1.5rem;
         }
         .webinar-hero {
-            background: #f9f5ee;
-            color: var(--forest-dark, #0A1F1A);
-            padding: 5rem 0 4rem;
+            background:
+                repeating-linear-gradient(
+                    130deg,
+                    rgba(255,255,255,0.035) 0 2px,
+                    transparent 2px 14px
+                ),
+                linear-gradient(145deg, #0A1F1A 0%, #1A453A 55%, #0f3028 100%);
+            color: #f0f8f5;
+            padding: 5rem 0 4.5rem;
             display: flex;
             align-items: center;
         }
@@ -57,9 +63,9 @@ layout: none
             display: inline-flex;
             align-items: center;
             gap: 0.55rem;
-            background: rgba(255,140,0,0.12);
-            border: 1px solid rgba(255,140,0,0.45);
-            color: #c95e00;
+            background: rgba(255,140,0,0.15);
+            border: 1px solid rgba(255,140,0,0.5);
+            color: #FF8C00;
             text-transform: uppercase;
             letter-spacing: 0.18em;
             font-size: 0.8rem;
@@ -72,21 +78,21 @@ layout: none
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: #c95e00;
-            box-shadow: 0 0 0 0 rgba(201,94,0,0.6);
+            background: #FF8C00;
+            box-shadow: 0 0 0 0 rgba(255,140,0,0.6);
             animation: pulse 2s infinite;
         }
         @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(201,94,0,0.6); }
-            70% { box-shadow: 0 0 0 10px rgba(201,94,0,0); }
-            100% { box-shadow: 0 0 0 0 rgba(201,94,0,0); }
+            0% { box-shadow: 0 0 0 0 rgba(255,140,0,0.6); }
+            70% { box-shadow: 0 0 0 10px rgba(255,140,0,0); }
+            100% { box-shadow: 0 0 0 0 rgba(255,140,0,0); }
         }
         .webinar-hero-img {
             width: 100%;
             max-width: 860px;
             height: auto;
             border-radius: 16px;
-            box-shadow: 0 6px 40px rgba(10,31,26,0.14);
+            box-shadow: 0 8px 60px rgba(0,0,0,0.45);
             display: block;
             margin: 0 auto 2.25rem;
         }
@@ -96,24 +102,24 @@ layout: none
             flex-wrap: wrap;
             justify-content: center;
         }
-        .webinar-hero .btn-ghost-dark {
+        .webinar-hero .btn-ghost-light {
             display: inline-block;
             padding: 0.75rem 1.5rem;
-            border: 2px solid var(--forest-dark, #0A1F1A);
-            color: var(--forest-dark, #0A1F1A);
+            border: 2px solid rgba(255,255,255,0.6);
+            color: #fff;
             border-radius: 6px;
             font-weight: 600;
             text-decoration: none;
-            transition: background 0.2s, color 0.2s;
+            transition: background 0.2s, border-color 0.2s;
         }
-        .webinar-hero .btn-ghost-dark:hover {
-            background: var(--forest-dark, #0A1F1A);
-            color: #fff;
+        .webinar-hero .btn-ghost-light:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: #fff;
         }
         .webinar-hero .signup-note {
             margin-top: 1.5rem;
             font-size: 0.95rem;
-            color: #555;
+            color: rgba(255,255,255,0.65);
         }
         @media (max-width: 600px) {
             .webinar-hero .hero-cta { flex-direction: column; align-items: center; }
@@ -151,7 +157,7 @@ layout: none
                      fetchpriority="high">
                 <div class="hero-cta">
                     <a href="blog" class="btn-primary">Read the Sound Practices Series</a>
-                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-ghost-dark">Book a Call &#8594;</a>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-ghost-light">Book a Call &#8594;</a>
                 </div>
                 <p class="signup-note">Signup isn't open yet. Stay tuned — we'll post the registration link here as soon as it's live.</p>
             </div>
