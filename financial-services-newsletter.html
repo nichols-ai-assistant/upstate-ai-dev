@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Subscribe to the Upstate AI Financial Services Newsletter — practical AI insights for community banks and credit unions, straight from the regulators and the field.">
+    <meta name="author" content="Ben Nichols">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KKZRVLYRV0');
+    </script>
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://js.hsforms.net; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://forms.hsforms.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://forms.hsforms.com;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://up-state-ai.com/financial-services-newsletter">
+    <meta property="og:title" content="AI in Financial Services Newsletter | Upstate AI">
+    <meta property="og:description" content="Practical AI insights for community banks and credit unions. What regulators are actually saying. What's working in the field. No vendor spin.">
+    <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
+
+    <title>AI in Financial Services Newsletter | Upstate AI</title>
+
+    <link rel="stylesheet" href="css/landing.css">
+    <style>
+        /* ==========================================
+           Newsletter Landing Page
+           ========================================== */
+        .nl-hero {
+            background: var(--forest-dark);
+            padding: calc(var(--space-xl) + 64px) 0 var(--space-xl);
+            color: var(--warm-white);
+        }
+
+        .nl-hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+
+        .nl-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--orange);
+            border: 1px solid rgba(255, 105, 0, 0.4);
+            border-radius: 2px;
+            padding: 0.35rem 0.85rem;
+            margin-bottom: var(--space-sm);
+        }
+
+        .nl-hero h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.1;
+            color: var(--warm-white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .nl-hero h1 .accent {
+            color: var(--orange);
+        }
+
+        .nl-hero-lead {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: rgba(253, 252, 248, 0.82);
+            margin-bottom: var(--space-md);
+        }
+
+        .nl-social-proof {
+            display: flex;
+            gap: var(--space-md);
+            margin-top: var(--space-sm);
+        }
+
+        .nl-proof-stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nl-proof-stat strong {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--orange);
+            line-height: 1;
+        }
+
+        .nl-proof-stat span {
+            font-size: 0.8rem;
+            color: rgba(253, 252, 248, 0.6);
+            margin-top: 0.2rem;
+        }
+
+        /* HubSpot form card */
+        .nl-form-card {
+            background: var(--warm-white);
+            border-radius: 4px;
+            padding: var(--space-lg);
+            box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+        }
+
+        .nl-form-card h2 {
+            font-family: var(--font-serif);
+            font-size: 1.35rem;
+            color: var(--forest-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .nl-form-card p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: var(--space-sm);
+            line-height: 1.5;
+        }
+
+        /* HubSpot injects its own form; minimal override */
+        #hs-newsletter-form .hs-form-field label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--forest-dark);
+        }
+
+        #hs-newsletter-form .hs-input {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 0.65rem 0.75rem;
+            font-size: 0.95rem;
+            margin-top: 0.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        #hs-newsletter-form .hs-button {
+            background: var(--orange);
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        #hs-newsletter-form .hs-button:hover {
+            background: #e05a00;
+        }
+
+        .nl-form-disclaimer {
+            font-size: 0.75rem;
+            color: #888;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+        }
+
+        /* ---- Value props ---- */
+        .nl-props {
+            background: var(--cream);
+            padding: var(--space-xl) 0;
+        }
+
+        .nl-props-header {
+            text-align: center;
+            margin-bottom: var(--space-lg);
+        }
+
+        .nl-props-header h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.6rem, 3vw, 2.25rem);
+            color: var(--forest-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .nl-props-header p {
+            color: #555;
+            max-width: 540px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .nl-props-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-md);
+        }
+
+        .nl-prop-card {
+            background: var(--warm-white);
+            border-radius: 4px;
+            padding: var(--space-md);
+            border-top: 3px solid var(--orange);
+        }
+
+        .nl-prop-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            color: var(--forest-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .nl-prop-card p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ---- Sample topics ---- */
+        .nl-topics {
+            background: var(--warm-white);
+            padding: var(--space-xl) 0;
+        }
+
+        .nl-topics-header {
+            text-align: center;
+            margin-bottom: var(--space-lg);
+        }
+
+        .nl-topics-header h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.6rem, 3vw, 2.25rem);
+            color: var(--forest-dark);
+        }
+
+        .nl-topics-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .nl-topic-item {
+            display: flex;
+            gap: 0.75rem;
+            align-items: flex-start;
+            padding: 0.85rem 1rem;
+            background: var(--cream);
+            border-radius: 4px;
+        }
+
+        .nl-topic-icon {
+            color: var(--orange);
+            font-size: 1rem;
+            flex-shrink: 0;
+            margin-top: 0.1rem;
+        }
+
+        .nl-topic-item p {
+            font-size: 0.9rem;
+            color: var(--forest-dark);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nl-hero-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+
+            .nl-props-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nl-topics-list {
+                grid-template-columns: 1fr;
+            }
+
+            .nl-social-proof {
+                gap: var(--space-sm);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><a href="index">
+                <img src="images/logo.png" alt="Upstate AI Logo" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-nav">Book a Call</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="nl-hero">
+        <div class="container">
+            <div class="nl-hero-grid">
+                <!-- Left: copy -->
+                <div class="fade-up">
+                    <span class="nl-badge">&#x2B25;&nbsp;&nbsp; Newsletter &nbsp;&nbsp;&#x2B25;</span>
+                    <h1>AI in Financial Services —<br><span class="accent">Straight from the Regulators</span></h1>
+                    <p class="nl-hero-lead">Every issue covers what the FDIC, OCC, NCUA, and CFPB are actually saying about AI — plus what community banks and credit unions are doing with it in the field. No vendor press releases. No hype cycles. Just what you need to walk into your next board meeting prepared.</p>
+
+                    <div class="nl-social-proof">
+                        <div class="nl-proof-stat">
+                            <strong>Monthly</strong>
+                            <span>One issue, when there's something worth saying</span>
+                        </div>
+                        <div class="nl-proof-stat">
+                            <strong>Free</strong>
+                            <span>No upsell, no paywall</span>
+                        </div>
+                        <div class="nl-proof-stat">
+                            <strong>Plain English</strong>
+                            <span>Written for bankers, not data scientists</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: HubSpot form -->
+                <div class="fade-up">
+                    <div class="nl-form-card">
+                        <h2>Get the Newsletter</h2>
+                        <p>Join community bank and credit union leaders who want to understand AI before their vendors explain it to them.</p>
+
+                        <!-- HubSpot form embed -->
+                        <!-- ponytail: formId placeholder — replace with real ID from HubSpot portal 245872432 -->
+                        <div id="hs-newsletter-form"></div>
+                        <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+                        <script>
+                          hbspt.forms.create({
+                            region: "na1",
+                            portalId: "245872432",
+                            formId: "REPLACE_WITH_HUBSPOT_FORM_ID",
+                            target: "#hs-newsletter-form"
+                          });
+                        </script>
+
+                        <p class="nl-form-disclaimer">Unsubscribe any time. We don't share your information with vendors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== VALUE PROPS ==================== -->
+    <section class="nl-props">
+        <div class="container">
+            <div class="nl-props-header fade-up">
+                <h2>What You'll Actually Get</h2>
+                <p>Written for executives who need to make decisions about AI, not engineers who build it.</p>
+            </div>
+            <div class="nl-props-grid">
+                <div class="nl-prop-card fade-up">
+                    <h3>Regulatory Guidance, Decoded</h3>
+                    <p>When the OCC releases AI model risk guidance or the CFPB publishes a fair lending bulletin, we translate it into what it means for your compliance posture — and what to do about it before your next exam.</p>
+                </div>
+                <div class="nl-prop-card fade-up">
+                    <h3>Field Reports from Community FIs</h3>
+                    <p>What's actually working at $500M–$5B institutions. Loan automation, BSA/AML screening, deposit analytics, and more — with honest assessments of where implementations stumbled and why.</p>
+                </div>
+                <div class="nl-prop-card fade-up">
+                    <h3>Vendor Landscape, Without the Spin</h3>
+                    <p>We track 400+ AI vendors in community banking. When a new product category emerges or a major vendor changes direction, you'll hear about it with context — not a press release.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SAMPLE TOPICS ==================== -->
+    <section class="nl-topics">
+        <div class="container">
+            <div class="nl-topics-header fade-up">
+                <h2>Recent and Upcoming Topics</h2>
+            </div>
+            <div class="nl-topics-list fade-up">
+                <div class="nl-topic-item">
+                    <span class="nl-topic-icon">&#x2B25;</span>
+                    <p>What the FDIC's AI guidance actually requires — and what's still discretionary</p>
+                </div>
+                <div class="nl-topic-item">
+                    <span class="nl-topic-icon">&#x2B25;</span>
+                    <p>AI-assisted loan underwriting: what works, what fails your fair lending exam</p>
+                </div>
+                <div class="nl-topic-item">
+                    <span class="nl-topic-icon">&#x2B25;</span>
+                    <p>BSA/AML automation at community scale — three case studies</p>
+                </div>
+                <div class="nl-topic-item">
+                    <span class="nl-topic-icon">&#x2B25;</span>
+                    <p>How credit unions are using AI differently than banks — and why that matters</p>
+                </div>
+                <div class="nl-topic-item">
+                    <span class="nl-topic-icon">&#x2B25;</span>
+                    <p>Explainability requirements: what your board actually needs to document</p>
+                </div>
+                <div class="nl-topic-item">
+                    <span class="nl-topic-icon">&#x2B25;</span>
+                    <p>Core vendor AI roadmaps: what Fiserv, Jack Henry, and FIS are shipping in 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
+                    <p>Put AI to Work</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/#services">Services</a>
+                    <a href="/#about">About</a>
+                    <a href="blog">Blog</a>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
+                    <a href="privacy">Privacy Policy</a>
+                    <a href="#" onclick="window.CookieConsent && window.CookieConsent.show(); return false;">Cookie Settings</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-consent.js"></script>
+
+    <!-- Mobile nav -->
+    <script>
+        var toggle = document.querySelector('.mobile-toggle');
+        var menu = document.querySelector('.nav-menu');
+        if (toggle && menu) {
+            toggle.addEventListener('click', function() {
+                menu.classList.toggle('open');
+            });
+        }
+
+        // Fade-up on scroll
+        var fadeEls = document.querySelectorAll('.fade-up');
+        if ('IntersectionObserver' in window) {
+            var obs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(e) {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('visible');
+                        obs.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            fadeEls.forEach(function(el) { obs.observe(el); });
+        } else {
+            fadeEls.forEach(function(el) { el.classList.add('visible'); });
+        }
+    </script>
+
+</body>
+</html>
