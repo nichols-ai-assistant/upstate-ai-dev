@@ -1,6 +1,14 @@
 # Blog post registry — sorted by date descending.
 # Add new posts to the top. Homepage auto-displays the first 3.
 
+- title: "Building a Synthetic Financial Crime Simulator: The Engineering Behind Santander's GenFraud Graph"
+  url: "blog/santander-genfraude-graph-aml-june-2026"
+  category: "AI Engineering"
+  date: "June 24, 2026"
+  sort_date: 2026-06-24
+  excerpt: "Santander AI open-sourced GenFraud Graph, a synthetic AML data generator that encodes money-laundering topology directly into graph structure. Here is how the engineering works."
+  read_time: "10 min read"
+
 - title: "The FSB's New AI Framework: A Plain-English Summary for Community Financial Institutions"
   url: "blog/fsb-ai-sound-practices-june-2026"
   category: "Regulatory"
