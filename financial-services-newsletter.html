@@ -34,36 +34,12 @@
         /* ==========================================
            Newsletter Landing Page
            ========================================== */
-        @keyframes hero-drift {
-            0%   { background-position: 15% 35%, 85% 75%; }
-            50%  { background-position: 72% 15%, 20% 85%; }
-            100% { background-position: 15% 35%, 85% 75%; }
-        }
         .nl-hero {
-            background-image:
-                radial-gradient(ellipse at center, #2d6648 0%, transparent 70%),
-                radial-gradient(ellipse at center, #0f2218 0%, transparent 65%);
             background-color: var(--forest-dark);
-            background-size: 65% 75%, 55% 65%;
-            background-position: 15% 35%, 85% 75%;
-            background-repeat: no-repeat;
-            animation: hero-drift 7s ease-in-out infinite;
             padding: calc(var(--space-xl) + 64px) 0 var(--space-xl);
             color: var(--warm-white);
             position: relative;
             overflow: hidden;
-        }
-
-        /* Diamond flourishes */
-        .nl-diamonds {
-            position: absolute;
-            inset: 0;
-            pointer-events: none;
-        }
-        .nl-diamond {
-            position: absolute;
-            transform: rotate(45deg);
-            border-radius: 2px;
         }
 
         .nl-hero-grid {
@@ -349,28 +325,6 @@
 
     <!-- ==================== HERO ==================== -->
     <section class="nl-hero">
-        <div class="nl-diamonds" aria-hidden="true">
-            <!-- Top scatter -->
-            <span class="nl-diamond" style="left:3%;top:9%;width:10px;height:10px;background:rgba(255,255,255,0.13)"></span>
-            <span class="nl-diamond" style="left:14%;top:6%;width:7px;height:7px;background:rgba(255,255,255,0.10)"></span>
-            <span class="nl-diamond" style="left:26%;top:11%;width:12px;height:12px;background:rgba(255,255,255,0.09)"></span>
-            <span class="nl-diamond" style="left:41%;top:5%;width:8px;height:8px;background:rgba(255,105,0,0.55)"></span>
-            <span class="nl-diamond" style="left:53%;top:13%;width:9px;height:9px;background:rgba(255,255,255,0.12)"></span>
-            <span class="nl-diamond" style="left:65%;top:7%;width:11px;height:11px;background:rgba(255,255,255,0.10)"></span>
-            <span class="nl-diamond" style="left:77%;top:10%;width:7px;height:7px;background:rgba(255,105,0,0.45)"></span>
-            <span class="nl-diamond" style="left:88%;top:5%;width:10px;height:10px;background:rgba(255,255,255,0.13)"></span>
-            <span class="nl-diamond" style="left:96%;top:13%;width:8px;height:8px;background:rgba(255,255,255,0.08)"></span>
-            <!-- Mid scatter -->
-            <span class="nl-diamond" style="left:7%;top:38%;width:18px;height:18px;background:rgba(255,255,255,0.06)"></span>
-            <span class="nl-diamond" style="left:34%;top:30%;width:9px;height:9px;background:rgba(255,255,255,0.08)"></span>
-            <span class="nl-diamond" style="left:91%;top:35%;width:15px;height:15px;background:rgba(255,255,255,0.07)"></span>
-            <span class="nl-diamond" style="left:97%;top:52%;width:8px;height:8px;background:rgba(255,105,0,0.40)"></span>
-            <!-- Bottom scatter -->
-            <span class="nl-diamond" style="left:2%;top:78%;width:9px;height:9px;background:rgba(255,255,255,0.10)"></span>
-            <span class="nl-diamond" style="left:20%;top:85%;width:7px;height:7px;background:rgba(255,255,255,0.08)"></span>
-            <span class="nl-diamond" style="left:60%;top:82%;width:11px;height:11px;background:rgba(255,255,255,0.07)"></span>
-            <span class="nl-diamond" style="left:80%;top:88%;width:8px;height:8px;background:rgba(255,105,0,0.35)"></span>
-        </div>
         <div class="container">
             <div class="nl-hero-grid">
                 <!-- Left: copy -->
