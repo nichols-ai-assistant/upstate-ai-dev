@@ -42,6 +42,46 @@
             overflow: hidden;
         }
 
+        /* blobs */
+        @keyframes blobDrift {
+            0%   { transform: translate(0, 0); }
+            50%  { transform: translate(60px, -40px); }
+            100% { transform: translate(0, 0); }
+        }
+        @keyframes blobDrift2 {
+            0%   { transform: translate(0, 0); }
+            50%  { transform: translate(-50px, 35px); }
+            100% { transform: translate(0, 0); }
+        }
+        .nl-blob {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .nl-blob-1 {
+            width: 55%; height: 120%;
+            top: -10%; left: -5%;
+            background: radial-gradient(ellipse, rgba(80,140,90,0.55) 0%, transparent 70%);
+            animation: blobDrift 9s ease-in-out infinite;
+        }
+        .nl-blob-2 {
+            width: 45%; height: 90%;
+            bottom: -20%; right: 5%;
+            background: radial-gradient(ellipse, rgba(20,55,35,0.7) 0%, transparent 70%);
+            animation: blobDrift2 11s ease-in-out infinite;
+        }
+
+        /* diamonds */
+        @keyframes diamondFloat {
+            0%, 100% { transform: rotate(45deg) translateY(0); }
+            50%       { transform: rotate(45deg) translateY(-8px); }
+        }
+        .nl-diamond {
+            position: absolute;
+            transform: rotate(45deg);
+            pointer-events: none;
+        }
+
         .nl-hero-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -325,6 +365,20 @@
 
     <!-- ==================== HERO ==================== -->
     <section class="nl-hero">
+        <!-- blobs -->
+        <div class="nl-blob nl-blob-1"></div>
+        <div class="nl-blob nl-blob-2"></div>
+        <!-- diamonds -->
+        <div class="nl-diamond" style="width:18px;height:18px;background:rgba(255,105,0,0.45);top:12%;left:8%;animation:diamondFloat 7s ease-in-out infinite;"></div>
+        <div class="nl-diamond" style="width:10px;height:10px;background:rgba(255,255,255,0.12);top:20%;left:18%;animation:diamondFloat 9s ease-in-out infinite 1s;"></div>
+        <div class="nl-diamond" style="width:14px;height:14px;background:rgba(255,255,255,0.09);top:8%;left:40%;animation:diamondFloat 8s ease-in-out infinite 2s;"></div>
+        <div class="nl-diamond" style="width:22px;height:22px;background:rgba(255,105,0,0.35);top:15%;right:20%;animation:diamondFloat 10s ease-in-out infinite 0.5s;"></div>
+        <div class="nl-diamond" style="width:12px;height:12px;background:rgba(255,255,255,0.08);top:30%;right:10%;animation:diamondFloat 7.5s ease-in-out infinite 3s;"></div>
+        <div class="nl-diamond" style="width:8px;height:8px;background:rgba(255,255,255,0.1);bottom:25%;left:12%;animation:diamondFloat 11s ease-in-out infinite 1.5s;"></div>
+        <div class="nl-diamond" style="width:16px;height:16px;background:rgba(255,105,0,0.3);bottom:15%;right:25%;animation:diamondFloat 8.5s ease-in-out infinite 2.5s;"></div>
+        <div class="nl-diamond" style="width:10px;height:10px;background:rgba(255,255,255,0.07);bottom:35%;left:45%;animation:diamondFloat 9.5s ease-in-out infinite 0.8s;"></div>
+        <div class="nl-diamond" style="width:20px;height:20px;background:rgba(255,255,255,0.06);top:45%;left:3%;animation:diamondFloat 12s ease-in-out infinite 4s;"></div>
+        <div class="nl-diamond" style="width:12px;height:12px;background:rgba(255,105,0,0.25);top:55%;right:5%;animation:diamondFloat 8s ease-in-out infinite 1s;"></div>
         <div class="container">
             <div class="nl-hero-grid">
                 <!-- Left: copy -->
