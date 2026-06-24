@@ -17,7 +17,7 @@
     </script>
 
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://js.hsforms.net; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://forms.hsforms.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://forms.hsforms.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://js.hsforms.net https://js-na2.hsforms.net; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://forms.hsforms.com https://api.hsforms.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://forms.hsforms.com;">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <!-- Open Graph -->
@@ -412,17 +412,8 @@
                         <p>Join community bank and credit union leaders who want to understand AI before their vendors explain it to them.</p>
 
                         <!-- HubSpot form embed -->
-                        <!-- ponytail: formId placeholder — replace with real ID from HubSpot portal 245872432 -->
-                        <div id="hs-newsletter-form"></div>
-                        <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                            region: "na1",
-                            portalId: "245872432",
-                            formId: "REPLACE_WITH_HUBSPOT_FORM_ID",
-                            target: "#hs-newsletter-form"
-                          });
-                        </script>
+                        <script src="https://js-na2.hsforms.net/forms/embed/245872432.js" defer></script>
+                        <div class="hs-form-frame" data-region="na2" data-form-id="8b5fceed-9208-4ad4-82c3-7ebd281745f8" data-portal-id="245872432"></div>
 
                         <p class="nl-form-disclaimer">Unsubscribe any time. We don't share your information with vendors.</p>
                     </div>
