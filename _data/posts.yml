@@ -1,6 +1,14 @@
 # Blog post registry — sorted by date descending.
 # Add new posts to the top. Homepage auto-displays the first 3.
 
+- title: "The AGI Paradox: Why the Biggest Technology Shift in History Hasn't Shown Up in Your Productivity Numbers Yet"
+  url: "blog/mse435-ai-supercycle-june-2026"
+  category: "AI Strategy"
+  date: "June 24, 2026"
+  sort_date: 2026-06-24
+  excerpt: "Stanford's economics of AI course brought together Altimeter Capital, Databricks, and Crusoe Energy to explain why AI hasn't moved your productivity numbers yet — and what rewiring (not augmenting) actually looks like."
+  read_time: "10 min read"
+
 - title: "Building a Synthetic Financial Crime Simulator: The Engineering Behind Santander's GenFraud Graph"
   url: "blog/santander-genfraude-graph-aml-june-2026"
   category: "AI Engineering"
