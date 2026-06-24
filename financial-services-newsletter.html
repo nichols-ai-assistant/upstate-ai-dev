@@ -34,8 +34,20 @@
         /* ==========================================
            Newsletter Landing Page
            ========================================== */
+        @keyframes hero-drift {
+            0%   { background-position: 30% 40%, 80% 80%; }
+            50%  { background-position: 38% 32%, 72% 88%; }
+            100% { background-position: 30% 40%, 80% 80%; }
+        }
         .nl-hero {
-            background: var(--forest-dark);
+            background-image:
+                radial-gradient(ellipse 80% 60%, #2a5a42 0%, transparent 70%),
+                radial-gradient(ellipse 60% 50%, #122a20 0%, transparent 65%);
+            background-color: var(--forest-dark);
+            background-size: 100% 100%, 100% 100%;
+            background-position: 30% 40%, 80% 80%;
+            background-repeat: no-repeat;
+            animation: hero-drift 10s ease-in-out infinite;
             padding: calc(var(--space-xl) + 64px) 0 var(--space-xl);
             color: var(--warm-white);
         }
