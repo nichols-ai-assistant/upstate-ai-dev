@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Onto by Upstate AI: trustworthy, cited answers from regulatory agencies, inside the AI tools you already use. Every answer carries citations to primary sources.">
+    <meta name="author" content="Ben Nichols">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KKZRVLYRV0');
+    </script>
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://up-state-ai.com/onto">
+    <meta property="og:title" content="Onto by Upstate AI | Cited Regulatory Answers in the AI Tools You Already Use">
+    <meta property="og:description" content="A knowledge layer for Microsoft Copilot, ChatGPT Enterprise, Claude Enterprise, and any MCP-compatible assistant. Sourced, always. No citation, no claim.">
+    <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
+
+    <title>Onto by Upstate AI | Trustworthy, Cited Regulatory Answers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/landing.css">
+    <style>
+        /* ==========================================
+           Onto Landing Page
+           Provenance is the interface.
+           ========================================== */
+        :root {
+            --onto-cream: #F7F4EA;
+            --onto-warm: #FDFCF8;
+            --onto-forest: #2D5745;
+            --onto-forest-dark: #1A3A2E;
+            --onto-forest-accent: #5A8F6E;
+            --onto-line: #E4E0D4;
+            --onto-muted: #556B5E;
+            --onto-grounded-tint: #E7EFEA;
+            --onto-scope: #556B5E;
+            --onto-scope-tint: #EDF0EE;
+            --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+        }
+
+        body { background: var(--onto-cream); }
+
+        /* ---------- Hero ---------- */
+        .onto-hero {
+            background: var(--onto-cream);
+            padding: calc(64px + 4.5rem) 0 4.5rem;
+            border-bottom: 1px solid var(--onto-line);
+        }
+        .onto-hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: var(--space-lg);
+            align-items: center;
+        }
+        .onto-wordmark {
+            width: 300px;
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin-bottom: var(--space-sm);
+        }
+        .onto-hero h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.9rem, 3.4vw, 2.8rem);
+            line-height: 1.15;
+            color: var(--onto-forest-dark);
+            margin-bottom: var(--space-sm);
+        }
+        .onto-hero h1 .accent { color: var(--orange); }
+        .onto-hero-lead {
+            font-size: 1.15rem;
+            line-height: 1.65;
+            color: var(--onto-muted);
+            max-width: 34rem;
+            margin-bottom: var(--space-md);
+        }
+        .onto-hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+        .onto-offer-chip {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--onto-forest);
+            background: var(--onto-grounded-tint);
+            border: 1px solid rgba(45,87,69,0.25);
+            border-radius: 6px;
+            padding: 0.45rem 0.85rem;
+        }
+        .onto-offer-chip .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--orange); }
+
+        /* Answer card — the product, rendered */
+        .onto-answer-card {
+            background: var(--onto-warm);
+            border: 1px solid var(--onto-line);
+            border-radius: 20px;
+            padding: 1.75rem;
+            box-shadow: 0 8px 30px rgba(26,58,46,0.10);
+        }
+        .onto-badge {
+            display: inline-flex; align-items: center; gap: 0.45rem;
+            padding: 0.25rem 0.7rem;
+            border-radius: 6px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+        .onto-badge .b-dot { width: 6px; height: 6px; border-radius: 50%; }
+        .onto-badge.grounded { background: var(--onto-grounded-tint); color: var(--onto-forest); }
+        .onto-badge.grounded .b-dot { background: var(--onto-forest); }
+        .onto-badge.scope { background: var(--onto-scope-tint); color: var(--onto-scope); }
+        .onto-badge.scope .b-dot { background: var(--onto-scope); }
+        .onto-answer-q {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--onto-muted);
+            margin: 0.9rem 0 0.5rem;
+        }
+        .onto-answer-prose {
+            font-family: var(--font-serif);
+            font-size: 1.08rem;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+        .onto-citation {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            background: var(--onto-cream);
+            border: 1px solid var(--onto-line);
+            border-radius: 6px;
+            padding: 0.55rem 0.8rem;
+            display: flex; justify-content: space-between; align-items: center; gap: 0.75rem;
+            margin-top: 0.45rem;
+            transition: border-color 0.2s ease;
+        }
+        .onto-citation:hover { border-color: var(--onto-forest-accent); }
+        .onto-citation .cite-ref { color: var(--onto-forest); font-weight: 500; }
+        .onto-citation .cite-meta { color: var(--onto-muted); white-space: nowrap; }
+        .onto-hash {
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            color: var(--onto-muted);
+            margin-top: 0.9rem;
+            padding-top: 0.75rem;
+            border-top: 1px dashed var(--onto-line);
+            word-break: break-all;
+        }
+
+        /* ---------- Section scaffolding ---------- */
+        .onto-section { padding: var(--space-lg) 0; }
+        .onto-section-cream { background: var(--onto-cream); }
+        .onto-section-warm { background: var(--onto-warm); border-top: 1px solid var(--onto-line); border-bottom: 1px solid var(--onto-line); }
+        .onto-section-dark { background: var(--onto-forest-dark); color: var(--warm-white); }
+        .onto-kicker {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--orange);
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+        .onto-section h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.7rem, 3vw, 2.4rem);
+            line-height: 1.2;
+            color: var(--onto-forest-dark);
+            margin-bottom: var(--space-sm);
+            max-width: 40rem;
+        }
+        .onto-section-dark h2 { color: var(--warm-white); }
+        .onto-sub { color: var(--onto-muted); font-size: 1.05rem; line-height: 1.7; max-width: 44rem; margin-bottom: var(--space-md); }
+        .onto-section-dark .onto-sub { color: rgba(247,244,234,0.75); }
+
+        /* Problem section */
+        .onto-problem-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-sm); margin-top: var(--space-md); }
+        .onto-problem-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+        .onto-problem-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-3px); }
+        .onto-problem-card h3 { color: var(--orange-light, #FF8C3A); font-size: 1.05rem; margin-bottom: 0.5rem; }
+        .onto-problem-card p { color: rgba(247,244,234,0.75); font-size: 0.92rem; line-height: 1.6; margin: 0; }
+
+        /* Delivers grid */
+        .onto-deliver-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); margin-top: var(--space-md); }
+        .onto-deliver-card {
+            background: var(--onto-warm);
+            border: 1px solid var(--onto-line);
+            border-radius: 12px;
+            padding: 1.75rem;
+            box-shadow: 0 2px 8px rgba(26,58,46,0.06);
+            border-top: 3px solid var(--onto-forest);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .onto-deliver-card:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(26,58,46,0.10); }
+        .onto-deliver-card h3 { color: var(--onto-forest-dark); font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .onto-deliver-card p { color: var(--onto-muted); font-size: 0.95rem; line-height: 1.65; margin: 0; }
+        .onto-deliver-card .mono-tag {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--onto-forest);
+            display: block;
+            margin-bottom: 0.6rem;
+        }
+
+        /* Trust rows */
+        .onto-trust-list { margin-top: var(--space-md); display: flex; flex-direction: column; gap: 1rem; max-width: 52rem; }
+        .onto-trust-row {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 1.5rem;
+            background: var(--onto-warm);
+            border: 1px solid var(--onto-line);
+            border-left: 3px solid var(--onto-forest);
+            border-radius: 12px;
+            padding: 1.5rem 1.75rem;
+            align-items: start;
+        }
+        .onto-trust-row h3 { color: var(--onto-forest-dark); font-size: 1.05rem; margin: 0; }
+        .onto-trust-row p { color: var(--onto-muted); font-size: 0.95rem; line-height: 1.65; margin: 0; }
+
+        /* Pricing */
+        .onto-pricing-card {
+            background: var(--onto-forest-dark);
+            border-radius: 20px;
+            padding: 2.5rem;
+            max-width: 52rem;
+            margin: var(--space-md) auto 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-md);
+            align-items: center;
+        }
+        .onto-pricing-card h3 { font-family: var(--font-serif); color: var(--warm-white); font-size: 1.7rem; margin-bottom: 0.75rem; }
+        .onto-pricing-card p { color: rgba(247,244,234,0.75); font-size: 0.97rem; line-height: 1.65; margin: 0; }
+        .onto-meter {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--onto-cream);
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 1.25rem;
+        }
+        .onto-meter .meter-row { display: flex; justify-content: space-between; padding: 0.4rem 0; border-bottom: 1px dashed rgba(255,255,255,0.15); }
+        .onto-meter .meter-row:last-child { border-bottom: none; }
+        .onto-meter .meter-val { color: var(--orange-light, #FF8C3A); }
+
+        /* Who it's for */
+        .onto-who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm); margin-top: var(--space-md); }
+        .onto-who-card {
+            background: var(--onto-warm);
+            border: 1px solid var(--onto-line);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+        .onto-who-card h3 { font-family: var(--font-serif); color: var(--onto-forest-dark); font-size: 1.35rem; margin-bottom: 0.6rem; }
+        .onto-who-card p { color: var(--onto-muted); font-size: 0.97rem; line-height: 1.65; margin: 0; }
+
+        /* CTA */
+        .onto-cta-section { background: var(--onto-forest-dark); padding: var(--space-lg) 0; }
+        .onto-cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); align-items: start; }
+        .onto-cta-text h2 { font-family: var(--font-serif); color: var(--warm-white); font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.2; margin-bottom: var(--space-sm); }
+        .onto-cta-text h2 .accent { color: var(--orange); }
+        .onto-cta-text p { color: rgba(247,244,234,0.78); font-size: 1rem; line-height: 1.7; }
+        .onto-cta-bullets { list-style: none; padding: 0; margin: var(--space-sm) 0; }
+        .onto-cta-bullets li {
+            color: rgba(247,244,234,0.85);
+            font-size: 0.95rem; line-height: 1.6;
+            padding: 0.4rem 0 0.4rem 1.6rem;
+            position: relative;
+        }
+        .onto-cta-bullets li::before { content: "\2713"; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
+        .onto-cta-offer {
+            font-family: var(--font-mono);
+            display: inline-block;
+            color: var(--onto-forest-dark);
+            background: var(--orange);
+            border-radius: 6px;
+            padding: 0.6rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 1024px) {
+            .onto-problem-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .onto-hero-grid, .onto-deliver-grid, .onto-who-grid, .onto-cta-grid, .onto-pricing-card { grid-template-columns: 1fr; }
+            .onto-trust-row { grid-template-columns: 1fr; gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><a href="index">
+                <img src="images/logo.png" alt="Upstate AI Logo" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#problem">The Problem</a></li>
+                <li><a href="#delivers">What Onto Delivers</a></li>
+                <li><a href="#trust">Why Trust It</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact" class="btn-nav">Get Started</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="onto-hero">
+        <div class="container">
+            <div class="onto-hero-grid">
+                <div class="fade-up">
+                    <img src="images/onto-logo.png" alt="Onto by Upstate AI" class="onto-wordmark">
+                    <h1>Trustworthy, cited answers from regulatory agencies, <span class="accent">inside the AI tools you already use.</span></h1>
+                    <p class="onto-hero-lead">Onto is a knowledge layer for Microsoft Copilot, ChatGPT Enterprise, Claude Enterprise, and any MCP-compatible assistant. When a regulatory question comes in, Onto answers it from primary sources and shows its work.</p>
+                    <div class="onto-hero-ctas">
+                        <a href="#contact" class="btn-primary">Get Started</a>
+                        <span class="onto-offer-chip"><span class="dot"></span>Buy 100 citations, get another 100 free</span>
+                    </div>
+                </div>
+                <div class="fade-up">
+                    <div class="onto-answer-card" aria-label="Example of a cited Onto answer">
+                        <span class="onto-badge grounded"><span class="b-dot"></span>Grounded</span>
+                        <p class="onto-answer-q">&gt; What charges are included in the finance charge under Reg Z?</p>
+                        <p class="onto-answer-prose">The finance charge is the cost of consumer credit as a dollar amount. It includes any charge payable directly or indirectly by the consumer and imposed directly or indirectly by the creditor as an incident to or a condition of the extension of credit.</p>
+                        <div class="onto-citation">
+                            <span class="cite-ref">12 CFR &sect; 1026.4(a)</span>
+                            <span class="cite-meta">eCFR Title 12</span>
+                        </div>
+                        <div class="onto-citation">
+                            <span class="cite-ref">12 CFR &sect; 1026.4(b)(1)</span>
+                            <span class="cite-meta">eCFR Title 12</span>
+                        </div>
+                        <p class="onto-hash">content hash sha256:7f3a91c2&hellip; &middot; verify the text you were shown is the text on record</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== THE PROBLEM ==================== -->
+    <section class="onto-section onto-section-dark" id="problem">
+        <div class="container">
+            <span class="onto-kicker fade-up">The Problem</span>
+            <h2 class="fade-up">Confident answers, whether right or wrong.</h2>
+            <p class="onto-sub fade-up">Teams already ask AI assistants regulatory compliance questions. The model answers confidently either way. In financial services, that is not an inconvenience; it is an exam finding.</p>
+
+            <div class="onto-problem-grid">
+                <div class="onto-problem-card fade-up">
+                    <h3>Hallucinated citations</h3>
+                    <p>The model invents references that look plausible and do not exist. Your compliance function inherits the cleanup, or your examiner finds it first.</p>
+                </div>
+                <div class="onto-problem-card fade-up">
+                    <h3>Outdated rules, wrong references</h3>
+                    <p>Model training data lags the regulation. An answer built on a superseded rule is worse than no answer, because it arrives with confidence.</p>
+                </div>
+                <div class="onto-problem-card fade-up">
+                    <h3>The build-it-yourself trap</h3>
+                    <p>The alternative, building and maintaining your own retrieval stack, means a data pipeline, an eval program, and an engineering team you did not budget for.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT ONTO DELIVERS ==================== -->
+    <section class="onto-section onto-section-cream" id="delivers">
+        <div class="container">
+            <span class="onto-kicker fade-up">What Onto Delivers</span>
+            <h2 class="fade-up">Your people keep working where they already work.</h2>
+            <p class="onto-sub fade-up">Onto plugs directly into the assistants your institution already rolled out. When a domain question comes in, Onto answers it from primary sources and shows its work.</p>
+
+            <div class="onto-deliver-grid">
+                <div class="onto-deliver-card fade-up">
+                    <span class="mono-tag">no citation, no claim</span>
+                    <h3>Sourced, always</h3>
+                    <p>Every answer carries citations to governing text: eCFR Title 12, SEC, CFPB source material. If a claim cannot be cited, it is not made.</p>
+                </div>
+                <div class="onto-deliver-card fade-up">
+                    <span class="mono-tag">grounded in governing text</span>
+                    <h3>Primary sources only</h3>
+                    <p>Answers grounded in the regulations and official glossaries themselves, not the model's recollection of them.</p>
+                </div>
+                <div class="onto-deliver-card fade-up">
+                    <span class="mono-tag">no portal, no login</span>
+                    <h3>Zero new UI</h3>
+                    <p>No new portal, no new login, no change management. Onto connects to the assistants your institution already rolled out.</p>
+                </div>
+                <div class="onto-deliver-card fade-up">
+                    <span class="mono-tag">managed service</span>
+                    <h3>Nothing to manage</h3>
+                    <p>Onto is delivered as a managed service. We maintain the corpus, retrieval quality, and evaluation gate so you do not have to.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY TRUST IT ==================== -->
+    <section class="onto-section onto-section-warm" id="trust">
+        <div class="container">
+            <span class="onto-kicker fade-up">Why You Can Trust It</span>
+            <h2 class="fade-up">We measure accuracy. We do not self-attest it.</h2>
+
+            <div class="onto-trust-list">
+                <div class="onto-trust-row fade-up">
+                    <h3>Verifiable provenance</h3>
+                    <p>Each source chunk carries a content hash for provenance, echoed on every citation, so you can verify the text you were shown is the text on record.</p>
+                </div>
+                <div class="onto-trust-row fade-up">
+                    <h3>Independently evaluated</h3>
+                    <p>Every release must pass an independent golden-question evaluation gate before it ships. We measure accuracy against a fixed question set; we do not self-attest it.</p>
+                </div>
+                <div class="onto-trust-row fade-up">
+                    <h3>Consistent by design</h3>
+                    <p>The same question returns the same cited answer. Consistency is an engineered property, not luck.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRICING ==================== -->
+    <section class="onto-section onto-section-cream" id="pricing">
+        <div class="container">
+            <span class="onto-kicker fade-up">Pricing</span>
+            <h2 class="fade-up">Pay per reference. Nothing else.</h2>
+            <p class="onto-sub fade-up">Simple, metered, pre-paid. You purchase reference credits up front and draw them down as teams ask questions.</p>
+
+            <div class="onto-pricing-card fade-up">
+                <div>
+                    <h3>Reference credits</h3>
+                    <p>Each cited answer consumes credits. No per-seat licenses, no annual platform fee. Buy what you use, top up when you need more.</p>
+                </div>
+                <div class="onto-meter" aria-label="Pricing model summary">
+                    <div class="meter-row"><span>billing model</span><span class="meter-val">pre-paid credits</span></div>
+                    <div class="meter-row"><span>unit</span><span class="meter-val">per cited answer</span></div>
+                    <div class="meter-row"><span>per-seat licenses</span><span class="meter-val">none</span></div>
+                    <div class="meter-row"><span>annual platform fee</span><span class="meter-val">none</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHO IT IS FOR ==================== -->
+    <section class="onto-section onto-section-warm" id="who">
+        <div class="container">
+            <span class="onto-kicker fade-up">Who It Is For</span>
+            <h2 class="fade-up">Built for institutions where wrong answers have consequences.</h2>
+
+            <div class="onto-who-grid">
+                <div class="onto-who-card fade-up">
+                    <h3>Banks and credit unions</h3>
+                    <p>Community and regional institutions that want AI answers the compliance function can stand behind. Onto gives your teams cited, primary-source answers inside the assistants they already use.</p>
+                </div>
+                <div class="onto-who-card fade-up">
+                    <h3>Fintechs and platforms</h3>
+                    <p>Embed Onto behind your own product and resell trustworthy, cited regulatory answers to your customers. The provenance layer becomes part of your value proposition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA / CONTACT FORM ==================== -->
+    <section class="onto-cta-section" id="contact">
+        <div class="container">
+            <div class="onto-cta-grid">
+                <div class="onto-cta-text fade-up">
+                    <h2>Onboarding takes <span class="accent">less than 30 minutes.</span></h2>
+                    <p>Register and authenticate your AI agent platform with our MCP server. That is the whole setup. No data pipeline, no new portal, no change management project.</p>
+                    <ul class="onto-cta-bullets">
+                        <li>Works with Microsoft Copilot, ChatGPT Enterprise, Claude Enterprise, and any MCP-compatible assistant</li>
+                        <li>Every answer cited to primary sources with content hashes for provenance</li>
+                        <li>Managed corpus, retrieval quality, and evaluation gate; nothing for your team to maintain</li>
+                        <li>Metered pricing with no per-seat licenses and no annual platform fee</li>
+                    </ul>
+                    <span class="onto-cta-offer">Buy 100 citations, get another 100 free</span>
+                </div>
+
+                <div class="fade-up">
+                    <form class="cb-form" id="ontoForm">
+                        <div class="field-group">
+                            <label for="ontoName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="ontoName" name="ontoName" required placeholder="Sarah Chen">
+                        </div>
+                        <div class="field-group">
+                            <label for="ontoEmail">Email Address <span class="required">*</span></label>
+                            <input type="email" id="ontoEmail" name="ontoEmail" required placeholder="schen@firstcommunity.bank">
+                        </div>
+                        <div class="field-group">
+                            <label for="ontoCompany">Institution / Company <span class="required">*</span></label>
+                            <input type="text" id="ontoCompany" name="ontoCompany" required placeholder="First Community Bank">
+                        </div>
+                        <div class="field-group">
+                            <label for="ontoRole">Title / Role</label>
+                            <input type="text" id="ontoRole" name="ontoRole" placeholder="Chief Compliance Officer, CTO, Head of Risk, etc.">
+                        </div>
+                        <div class="field-group">
+                            <label for="ontoMessage">Which AI assistant does your team use?</label>
+                            <textarea id="ontoMessage" name="ontoMessage" rows="4" placeholder="Tell us which assistant platform you use (Copilot, ChatGPT Enterprise, Claude Enterprise, other MCP-compatible) and what regulatory areas matter most to your team..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" id="ontoSubmitBtn">Get Started</button>
+                        <p class="cb-form-error" id="ontoFormError">Please fill in all required fields.</p>
+                    </form>
+                    <div class="cb-form cb-form-success" id="ontoFormSuccess" style="display: none;">
+                        <h3>Thank you. We'll be in touch.</h3>
+                        <p>We've received your information and will reach out within one business day to get your onboarding started.</p>
+                        <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-primary" style="margin-top: var(--space-sm);">Or Book a Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
+                    <p>Put AI to Work</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/#services">Services</a>
+                    <a href="/#about">About</a>
+                    <a href="blog">Blog</a>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
+                    <a href="privacy">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-consent.js"></script>
+
+    <script>
+        var ONTO_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxa7vY-_vK5kvntNZ7rLFrCBxOuwIhVRiGLpyZSO-vJF6fiqDH_QL6vcRRqi52UEEIY/exec';
+
+        (function() {
+            var form = document.getElementById('ontoForm');
+            var successEl = document.getElementById('ontoFormSuccess');
+            var errorEl = document.getElementById('ontoFormError');
+            var submitBtn = document.getElementById('ontoSubmitBtn');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                errorEl.style.display = 'none';
+
+                var name = document.getElementById('ontoName').value.trim();
+                var email = document.getElementById('ontoEmail').value.trim();
+                var company = document.getElementById('ontoCompany').value.trim();
+                var role = document.getElementById('ontoRole').value.trim();
+                var message = document.getElementById('ontoMessage').value.trim();
+
+                if (!name || !email || !company) { errorEl.style.display = 'block'; return; }
+                if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+                    errorEl.textContent = 'Please enter a valid email address.';
+                    errorEl.style.display = 'block'; return;
+                }
+
+                submitBtn.textContent = 'Submitting...';
+                submitBtn.disabled = true;
+
+                var payload = { name: name, email: email, company: company, role: role, message: message, source: 'onto-landing-page', timestamp: new Date().toISOString() };
+
+                if (ONTO_SCRIPT_URL && ONTO_SCRIPT_URL.trim().length > 0) {
+                    fetch(ONTO_SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }).catch(function(err) { console.warn('Sheets submission error:', err); });
+                } else {
+                    console.info('Onto form submitted (no Sheets URL configured yet):', payload);
+                }
+
+                if (typeof gtag === 'function') {
+                    gtag('event', 'form_submit', { event_category: 'onto', event_label: 'get_started', company: company });
+                }
+
+                form.style.display = 'none';
+                successEl.style.display = 'block';
+            });
+        })();
+
+        var navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function() { navbar.classList.toggle('scrolled', window.scrollY > 50); });
+
+        var mobileToggle = document.querySelector('.mobile-toggle');
+        var navMenu = document.querySelector('.nav-menu');
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', function() { navMenu.classList.toggle('open'); mobileToggle.classList.toggle('active'); });
+            navMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() { navMenu.classList.remove('open'); mobileToggle.classList.remove('active'); });
+            });
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) { window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' }); }
+            });
+        });
+
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
+    </script>
+</body>
+</html>
