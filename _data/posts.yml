@@ -1,6 +1,14 @@
 # Blog post registry — sorted by date descending.
 # Add new posts to the top. Homepage auto-displays the first 3.
 
+- title: "Europe Just Gave Its Banks a Deadline on AI Cyber Risk. Here's Why US Financial Institutions Should Care."
+  url: "blog/ecb-ai-cyber-threats-july-2026"
+  category: "Regulatory"
+  date: "July 7, 2026"
+  sort_date: 2026-07-07
+  excerpt: "The European Central Bank told the banks it supervises to submit action plans for AI-enabled cyber threats by the end of October. Here is why US community financial institutions should pay attention, and six practical steps to begin the assessment."
+  read_time: "6 min read"
+
 - title: "The AGI Paradox: Why the Biggest Technology Shift in History Hasn't Shown Up in Your Productivity Numbers Yet"
   url: "blog/mse435-ai-supercycle-june-2026"
   category: "AI Strategy"
