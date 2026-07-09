@@ -31,7 +31,7 @@
             icon: '\uD83E\uDDED', // compass
             cssClass: 'tier-explorer',
             service: 'AI Workshop',
-            servicePrice: '$5,000',
+            servicePrice: '$9,500',
             serviceSlug: 'index.html#services',
             serviceDesc: 'Cut through vendor hype. Pressure-test real use cases against your operations and walk away with an AI Opportunity Scorecard you can act on without us in the room.',
             summary: 'You\'re at the starting line, and that\'s exactly where most businesses are right now. AI isn\'t your next move; your next move is building the foundation that makes AI possible. The good news? Every step you take here pays off whether or not you ever touch AI, because better data and documented processes make everything run smoother.',
