@@ -1,6 +1,14 @@
 # Blog post registry — sorted by date descending.
 # Add new posts to the top. Homepage auto-displays the first 3.
 
+- title: "The Breach Already Happened. Apple Just Poured Gasoline on It."
+  url: "blog/siri-semantic-index-banks-credit-unions-2026-07-16"
+  category: "Governance"
+  date: "July 16, 2026"
+  sort_date: 2026-07-16
+  excerpt: "Apple's iOS 27 rebuilt Siri around a semantic vector index that makes every message, email, and screenshot on a personal phone searchable by meaning. For banks and credit unions with employees on personal iPhones, that turns years of tolerated data leakage into a live, un-auditable exposure. Here is why it matters and what to do this quarter."
+  read_time: "5 min read"
+
 - title: "Europe Just Gave Its Banks a Deadline on AI Cyber Risk. Here's Why US Financial Institutions Should Care."
   url: "blog/ecb-ai-cyber-threats-july-2026"
   category: "Regulatory"
