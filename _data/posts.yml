@@ -1,6 +1,14 @@
 # Blog post registry — sorted by date descending.
 # Add new posts to the top. Homepage auto-displays the first 3.
 
+- title: "Let Somebody Else Do It"
+  url: "blog/forward-deployed-engineers-community-banks-2026-08-07"
+  category: "AI Strategy"
+  date: "August 7, 2026"
+  sort_date: 2026-08-07
+  excerpt: "The hard part of AI in banking is no longer the model, it is integration. FIS and Fiserv have embedded their AI partners' forward-deployed engineers inside the platform layer, which changes what community banks can buy and who makes their design decisions. Here is what to watch before the feature turns on."
+  read_time: "5 min read"
+
 - title: "The Breach Already Happened. Apple Just Poured Gasoline on It."
   url: "blog/siri-semantic-index-banks-credit-unions-2026-07-16"
   category: "Governance"

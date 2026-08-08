@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
+    <meta name="description" content="The hard part of AI in banking is no longer the model, it is integration. FIS and Fiserv have embedded their AI partners&#x27; forward-deployed engineers inside the platform layer. Here is what that changes for community banks and what to watch before the feature turns on.">
+    <meta name="keywords" content="forward-deployed engineer, FDE fintech, FIS Anthropic, Fiserv OpenAI, community bank AI vendor, third-party AI risk, AI vendor selection, core provider AI, AML AI agent, financial crimes AI">
+    <meta name="author" content="Ben Nichols">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KKZRVLYRV0');
+    </script>
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://up-state-ai.com/blog/forward-deployed-engineers-community-banks-2026-08-07">
+    <meta property="og:title" content="Let Somebody Else Do It | Upstate AI">
+    <meta property="og:description" content="The hard part of AI in banking is no longer the model, it is integration. FIS and Fiserv have embedded their AI partners&#x27; forward-deployed engineers inside the platform layer. Here is what that changes for community banks and what to watch before the feature turns on.">
+    <meta property="og:image" content="https://up-state-ai.com/images/og/forward-deployed-engineers-community-banks-2026-08-07.png">
+    <meta property="og:site_name" content="Upstate AI">
+    <meta property="article:published_time" content="2026-08-07">
+    <meta property="article:author" content="Ben Nichols">
+    <meta property="article:section" content="AI Strategy">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Let Somebody Else Do It">
+    <meta name="twitter:description" content="The hard part of AI in banking is no longer the model, it is integration. FIS and Fiserv have embedded their AI partners&#x27; forward-deployed engineers inside the platform layer. Here is what that changes for community banks and what to watch before the feature turns on.">
+
+    <title>Let Somebody Else Do It - Upstate AI Blog</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index"><img src="../images/logo.png" alt="Upstate AI Logo" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+
+
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="../blog">Blog</a></li>
+                <li><a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-nav">Book a Call</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <article class="blog-post-page">
+        <div class="container">
+            <div class="blog-post-container">
+                <a href="../blog" class="blog-post-back">&larr; Back to Blog</a>
+
+                <header class="blog-post-header">
+                    <span class="blog-post-category">AI Strategy</span>
+                    <h1 class="blog-post-title">Let Somebody Else Do It</h1>
+                    <p class="blog-post-subtitle">What forward-deployed AI teams at FIS and Fiserv mean for community banks</p>
+                    <div class="blog-post-meta">
+                        <span>By Ben Nichols</span>
+                        <span>August 7, 2026</span>
+                        <span>5 min read</span>
+                    </div>
+                </header>
+
+                <img src="../images/undraw/undraw_software-engineer_xv60.svg" alt="Illustration of a software engineer working inside a client's systems" class="blog-illustration blog-illustration--hero">
+
+                <div class="blog-post-content">
+                    <p>The hard part of AI in banking stopped being the model a while ago. Any institution can buy access to a frontier model this afternoon. What almost none of them can do is integrate that model into a core system, wire it into an existing control framework, produce an audit trail an examiner will accept, and keep it running after the vendor’s slide deck is closed.</p>
+
+                    <p>That gap is where a job title from a different industry has quietly become the most important thing happening in fintech AI: the forward-deployed engineer.</p>
+
+                    <h2>What a forward-deployed engineer actually is</h2>
+
+
+                    <img src="../images/undraw/undraw_developer-activity_4zqd.svg" alt="Illustration of a developer writing production code inside client infrastructure" class="blog-illustration">
+
+                    <p>The model is not new. Palantir built its business on it more than a decade ago, sending engineers to sit inside client organizations and write production code against the client’s real data and real problems.</p>
+
+                    <p>A forward-deployed engineer, or FDE, is not a sales engineer. Sales engineers sell. It is not an implementation consultant, who configures a product that already exists. It is not customer success, who manages the relationship after the fact. An FDE writes code inside your infrastructure, against your systems, to solve a problem that did not have a product yet.</p>
+
+                    <p>In financial services, that job requires a second set of skills that generalist AI engineers do not have. Monetary precision and rounding behavior. Payment idempotency. Keeping a workload out of PCI DSS scope, or knowing when it cannot be. KYC as a state machine rather than a checkbox. Enough regulatory literacy to know which design choices create examination risk.</p>
+
+                    <p>An excellent engineer from a frontier AI lab is not the same thing as an engineer who has shipped inside a bank. The distinction matters more than the résumé suggests.</p>
+
+                    <h2>The shift: two platforms absorbed the cost</h2>
+
+
+                    <img src="../images/undraw/undraw_handshake-deal_nwk6.svg" alt="Illustration of two companies forming a technology partnership" class="blog-illustration">
+
+                    <p>Until recently, getting FDE-grade help meant hiring it directly, and the price reflected the scarcity. That is changing, and the mechanism is worth understanding.</p>
+
+                    <p>According to vendor announcements from May 2026, two of the largest core and payments platforms embedded AI partner teams inside their own organizations rather than inside their clients’:</p>
+
+                    <p><strong>FIS with Anthropic.</strong> Anthropic’s applied AI team working alongside FIS engineers on a Financial Crimes AI Agent for AML workflows, with BMO and Amalgamated Bank named as pilot institutions and general availability targeted for the second half of 2026. FIS has described the arrangement as a knowledge transfer, with the goal that FIS builds subsequent agents on its own.</p>
+
+                    <p><strong>Fiserv with OpenAI.</strong> Joint teams supporting an agent marketplace layered onto the Fiserv platform, with community institutions among the early participants.</p>
+
+                    <p>The structural consequence is what matters. Neither arrangement puts an engineer inside a $400 million community bank. It puts them inside the vendor that thousands of community banks already run on. The cost of the specialist gets amortized across the entire client base instead of billed to one institution.</p>
+
+                    <h2>What that changes for a community bank</h2>
+
+                    <p><strong>You can get capability you could not have built.</strong> A financial crimes agent arrives as a platform feature rather than a six-month project with a consulting line item attached. For an institution with a two-person IT department, that is the difference between having the capability and not.</p>
+
+                    <p><strong>Governance is being designed in, not bolted on.</strong> Both vendors describe audit trails, policy enforcement, and human-in-the-loop decision rights as part of the architecture. That is a meaningfully better starting position than the retrofit most institutions would have attempted on their own.</p>
+
+                    <p><strong>Somebody else is making your design decisions.</strong> This is the part that gets less attention. Amalgamated Bank sent its compliance team to help shape the FIS agent. BMO is in the pilot. Your institution almost certainly is not. The risk tolerance, the alert thresholds, the definition of what warrants a human review, all of it is being set by the pilot banks, and those banks are considerably larger than yours.</p>
+
+                    <p>That is not a scandal. It is how platform software has always worked. But it means the correct posture is not “wait and see what ships.” It is to understand the design decisions before they arrive, so that when the feature turns on you already know which defaults do not fit your institution.</p>
+
+                    <h2>Three things to watch</h2>
+
+
+                    <img src="../images/undraw/undraw_questions_52ic.svg" alt="Illustration of key questions to ask a technology vendor" class="blog-illustration">
+
+                    <p><strong>Lock-in is design lock-in, not just contract lock-in.</strong> Switching cores is a known cost. Discovering after general availability that your AML agent embeds a larger bank’s risk appetite is a different and less visible problem, and re-architecting it after the fact is expensive.</p>
+
+                    <p><strong>Ask what happens when the embedded team cycles off.</strong> The question worth putting to any vendor: after the forward-deployed team leaves, can your organization still operate, monitor, challenge, and safely modify this workflow? For a platform client, “leaves” means the AI partner’s engineers finish knowledge transfer and move on. Whether the vendor genuinely absorbed that capability, or simply became dependent one layer up, is not knowable from a press release. Ask anyway, and ask again in a year.</p>
+
+                    <p><strong>The cost was amortized, not eliminated.</strong> FIS and Fiserv are paying real money for these teams, and it appears somewhere: licensing, per-agent fees, or the pace of the next feature. Frontier AI inside a regulated institution carries an integration overhead that no announcement removes.</p>
+
+                    <h2>The tell for buyers</h2>
+
+                    <p>Here is the practical version, and it is the most useful sentence in this piece.</p>
+
+                    <p>If a fintech vendor approaches your institution in the next twelve months offering an “embedded engineer” or “forward deployment” as part of the package, price it against what that engineer actually costs. FDEs who are good enough to embed inside a bank are senior engineers, and senior engineers who understand both AI systems and banking regulation are among the scarcest labor in the industry right now.</p>
+
+                    <p>A cheap forward deployment is not a bargain. It is a short one. The engagement ends, and what is left behind is a system nobody in the building fully understands.</p>
+
+                    <p>That is the same failure mode we keep coming back to: a capability arrives without anyone deciding to adopt it, and the institution inherits an architecture it did not choose. The FSB’s Sound Practices framework has a word for the step that prevents this. It is called selection, and it assumes somebody in your institution actually made one.</p>
+
+                    <p><em>Upstate AI works with community banks and credit unions on AI strategy, vendor evaluation, and governance. If you are evaluating an AI feature from your core provider, we can help you ask the right questions before it turns on.</em></p>
+                </div>
+
+                <div class="blog-post-author">
+                    <strong>Ben Nichols</strong> is the founder of <a href="../index">Upstate AI</a>, an AI consulting firm that helps banks and credit unions understand and apply emerging AI technology. He can be reached at <a href="mailto:ben@up-state-ai.com">ben@up-state-ai.com</a>.
+                </div>
+
+                <div class="blog-post-cta">
+                    <h3>Is your core provider about to make an AI decision for you?</h3>
+                    <p>Book a free 30-minute session. We will map where forward-deployed AI is entering your stack, which design defaults will not fit your institution, and the questions to ask your vendor before the feature turns on.</p>
+                    <a href="https://calendar.app.google/TFDaMrzJHQ3catdo8" target="_blank" rel="noopener" class="btn-primary">Schedule Complimentary AI Training</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
+                    <p>Put AI to Work</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/#services">Services</a>
+                    <a href="/#about">About</a>
+                    <a href="../blog">Blog</a>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
+                    <a href="../privacy">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                mobileToggle.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
