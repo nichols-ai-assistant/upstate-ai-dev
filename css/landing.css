@@ -415,6 +415,12 @@ a:hover { color: var(--orange-light); }
 .service-card.featured .service-roi { color: var(--orange-light); border-color: rgba(255, 255, 255, 0.1); }
 .service-card.featured .service-features li { color: rgba(255, 255, 255, 0.75); }
 .service-card.featured .service-features li::before { color: var(--orange); }
+/* .light = featured layout (full width, 2-col) on a white surface */
+.service-card.featured.light { background: var(--white); color: var(--text-dark); }
+.service-card.featured.light h3 { color: var(--text-dark); }
+.service-card.featured.light .service-desc,
+.service-card.featured.light .service-features li { color: var(--text-muted); }
+.service-card.featured.light .service-features li::before { color: var(--forest-accent); }
 
 .service-number {
     font-family: var(--font-serif);
