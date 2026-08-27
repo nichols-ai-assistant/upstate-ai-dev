@@ -59,6 +59,85 @@ layout: none
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/landing.css">
+    <style>
+        /* FI Landscape promo banner */
+        @keyframes fi-banner-sheen {
+            0%   { transform: translateX(-100%) skewX(-15deg); }
+            100% { transform: translateX(400%) skewX(-15deg); }
+        }
+        .fi-promo-banner {
+            margin-top: 64px;
+            background: linear-gradient(100deg, #0f1f0f 0%, #1c321c 60%, #0f1f0f 100%);
+            border-top: 2px solid var(--orange);
+            border-bottom: 1px solid rgba(255, 105, 0, 0.2);
+            padding: 1rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .fi-promo-banner::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; bottom: 0;
+            width: 30%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.055), transparent);
+            animation: fi-banner-sheen 4s ease-in-out infinite;
+            pointer-events: none;
+        }
+        .fi-promo-banner .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.25rem;
+            position: relative;
+        }
+        .fi-promo-banner-body {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            min-width: 0;
+        }
+        .fi-promo-text {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.95rem;
+            line-height: 1.4;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .fi-promo-text strong { color: #fff; font-weight: 700; }
+        .fi-promo-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.13);
+            color: rgba(255,255,255,0.85);
+            font-weight: 600;
+            font-size: 0.82rem;
+            padding: 0.55rem 1.1rem;
+            border-radius: var(--radius-sm);
+            white-space: nowrap;
+            flex-shrink: 0;
+            transition: var(--transition);
+            text-decoration: none;
+            line-height: 1;
+        }
+        .fi-promo-cta:hover {
+            background: rgba(255,105,0,0.18);
+            border-color: var(--orange);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+        .fi-promo-cta .path-arr { color: var(--orange); }
+        @media (max-width: 640px) {
+            .fi-promo-banner { border-top-width: 3px; padding: 1.1rem 0; }
+            .fi-promo-banner .container { flex-direction: column; gap: 0.75rem; text-align: center; }
+            .fi-promo-banner-body { flex-direction: column; gap: 0.4rem; }
+            .fi-promo-text { white-space: normal; overflow: visible; font-size: 1rem; }
+            .fi-promo-text strong { font-size: 1.05rem; }
+            .fi-promo-cta { width: 100%; text-align: center; padding: 0.75rem 1.25rem; font-size: 0.95rem; }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -81,14 +160,13 @@ layout: none
         </div>
     </nav>
 
-    <!-- ============ PATH CHOOSER ============ -->
-    <div class="path-chooser" id="path-chooser">
+    <!-- FI Landscape Promo Banner -->
+    <div class="fi-promo-banner" role="complementary" aria-label="Featured resource">
         <div class="container">
-            <span class="path-chooser-label">Explore:</span>
-            <div class="path-tiles">
-                <a href="banking" class="path-tile">Community Banks</a>
-                <a href="credit-unions" class="path-tile">Credit Unions</a>
+            <div class="fi-promo-banner-body">
+                <span class="fi-promo-text"><strong>The FI AI Landscape.</strong> 400+ vendors. Every AI tool in community banking, mapped.</span>
             </div>
+            <a href="fi-landscape" class="fi-promo-cta">Explore the Map <span class="path-arr">&rarr;</span></a>
         </div>
     </div>
 
@@ -339,13 +417,11 @@ layout: none
                     <div class="industry-icon">&#x1F50D;</div>
                     <h3>Vendor Evaluation</h3>
                     <p>Your core processor has an AI roadmap. So does every fintech in your inbox. We know which solutions are real and which are demos looking for a contract.</p>
-                    <a href="banking" class="btn-industry">For Banks &rarr;</a>
                 </div>
                 <div class="industry-card">
                     <div class="industry-icon">&#x1F4CB;</div>
                     <h3>Regulatory Readiness</h3>
                     <p>SR 11-7. Model risk management. Third-party risk. We help you build AI governance that satisfies examiners without paralyzing your team.</p>
-                    <a href="credit-unions" class="btn-industry">For Credit Unions &rarr;</a>
                 </div>
                 <div class="industry-card">
                     <div class="industry-icon">&#x1F465;</div>
