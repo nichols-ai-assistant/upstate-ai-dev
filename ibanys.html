@@ -84,8 +84,9 @@ layout: none
             display: grid; grid-template-columns: repeat(4, minmax(0,1fr));
             gap: 0; border-top: 1px solid var(--rule-dk); margin-top: 3.4rem;
         }
-        .ib-fact { padding: 1.4rem 1.4rem 0 0; border-right: 1px solid var(--rule-dk); }
-        .ib-fact:last-child { border-right: 0; }
+        .ib-fact { padding: 1.4rem 1.4rem 0; border-right: 1px solid var(--rule-dk); }
+        .ib-fact:first-child { padding-left: 0; }
+        .ib-fact:last-child { border-right: 0; padding-right: 0; }
         .ib-fact dt {
             font-size: .68rem; letter-spacing: .16em; text-transform: uppercase;
             color: rgba(247,244,234,.55); margin-bottom: .45rem;
@@ -153,7 +154,8 @@ layout: none
 
         /* ---- Deliverables: asymmetric, hanging numerals ---- */
         .ib-deliver { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 0; margin-top: 3.4rem; border-top: 1px solid var(--rule); }
-        .ib-deliver > div { padding: 2rem 2rem 0 0; border-right: 1px solid var(--rule); }
+        .ib-deliver > div { padding: 2rem 2rem 0; border-right: 1px solid var(--rule); }
+        .ib-deliver > div:first-child { padding-left: 0; }
         .ib-deliver > div:last-child { border-right: 0; padding-right: 0; }
         .ib-deliver h3 { font-size: 1.32rem; margin-bottom: .6rem; }
         .ib-deliver p { font-size: .97rem; line-height: 1.62; color: var(--text-muted); margin: 0; }
@@ -184,12 +186,6 @@ layout: none
         .ib-instructor img { width: 200px; height: 200px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-md); }
         .ib-instructor p { font-size: 1.04rem; line-height: 1.72; color: #33453d; margin-bottom: 1rem; }
 
-        /* ---- Pricing ---- */
-        .ib-price { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1.5rem; margin: 2.6rem 0 2.4rem; max-width: 720px; }
-        .ib-price div { border: 1px solid var(--rule-dk); border-radius: var(--radius-md); padding: 1.7rem 1.8rem; }
-        .ib-price div.feature { border-color: rgba(255,140,58,.5); background: rgba(255,105,0,.07); }
-        .ib-price dt { font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: rgba(247,244,234,.6); margin-bottom: .6rem; }
-        .ib-price dd { font-family: 'DM Serif Display', Georgia, serif; font-size: 2.3rem; line-height: 1; margin: 0; }
         .ib-fine { font-size: .88rem; color: rgba(247,244,234,.6); line-height: 1.7; max-width: 62ch; margin-top: 1.8rem; }
         .ib-fine a { color: var(--orange-light); }
 
@@ -197,7 +193,9 @@ layout: none
             .ib-hero { padding: 6.5rem 0 9rem; }
             .ib-facts { grid-template-columns: repeat(2, minmax(0,1fr)); }
             .ib-fact { border-bottom: 1px solid var(--rule-dk); padding-bottom: 1.2rem; }
-            .ib-fact:nth-child(2n) { border-right: 0; }
+            .ib-fact:nth-child(2n) { border-right: 0; padding-right: 0; }
+            .ib-fact:nth-child(2n+1) { padding-left: 0; }
+            .ib-fact:nth-last-child(-n+2) { border-bottom: 0; }
             .ib-split, .ib-instructor { grid-template-columns: 1fr; }
             .ib-instructor img { width: 150px; height: 150px; }
             .ib-deliver { grid-template-columns: 1fr; }
@@ -205,7 +203,6 @@ layout: none
             .ib-deliver > div:last-child { border-bottom: 0; }
             .ib-row { grid-template-columns: 2.2rem minmax(0,1fr); }
             .ib-row-d { grid-column: 2; text-align: left; margin-top: .5rem; }
-            .ib-price { grid-template-columns: 1fr; }
             .ib-video { margin-top: -5.5rem; }
         }
         @media (prefers-reduced-motion: reduce) {
@@ -360,22 +357,6 @@ layout: none
         </div>
     </section>
 
-    <!-- Pricing + CTA -->
-    <section class="ib-dark">
-        <div class="container">
-            <p class="ib-kicker">Enrollment</p>
-            <h2 class="ib-h2" style="color:var(--warm-white)">Seats are per banker, for banks only</h2>
-            <dl class="ib-price">
-                <div class="feature"><dt>IBANYS member bank</dt><dd>$1,950</dd></div>
-                <div><dt>Non member banker</dt><dd>$2,250</dd></div>
-            </dl>
-            <div class="ib-ctas">
-                <a class="ib-btn" href="https://ibanys.jumbl.app/eventmanager/trainingevent/seriesdetails/1" target="_blank" rel="noopener">Register through IBANYS &rarr;</a>
-                <a class="ib-btn-ghost" href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Questions? Talk to Ben</a>
-            </div>
-            <p class="ib-fine">Registration, payment, and CPE credit are handled by the Independent Bankers Association of New York State. The program is designed and delivered by Upstate AI. Full details and enrollment at <a href="https://ibanys.jumbl.app/eventmanager/trainingevent/seriesdetails/1" target="_blank" rel="noopener">ibanys.jumbl.app</a>.</p>
-        </div>
-    </section>
     </main>
 
     <footer class="footer">
