@@ -253,7 +253,7 @@ layout: none
     <!-- Video -->
     <div class="ib-video-wrap" id="overview">
         <div class="ib-video">
-            <video controls preload="none" playsinline
+            <video controls muted preload="none" playsinline
                    width="1280" height="720"
                    poster="images/ibanys-video-poster.jpg"
                    src="https://245872432.fs1.hubspotusercontent-na2.net/hubfs/245872432/AI%20for%20Leadership%20for%20Bank%20Execs_IBANYS_UpstateAI.mp4">
@@ -345,7 +345,7 @@ layout: none
     <section class="ib-section">
         <div class="container">
             <p class="ib-kicker">Your instructor</p>
-            <h2 class="ib-h2" style="margin-bottom:2.4rem">Practitioner led, not lecture led</h2>
+            <h2 class="ib-h2" style="margin-bottom:2.4rem">Practitioner led</h2>
             <div class="ib-instructor">
                 <img src="images/headshot.jpeg" alt="Ben Nichols, Founder and Principal Consultant at Upstate AI" width="200" height="200" loading="lazy">
                 <div>
@@ -384,6 +384,17 @@ layout: none
         window.addEventListener('scroll', () => {
             document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
         });
+        const overviewVideo = document.querySelector('.ib-video video');
+        if (overviewVideo && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            new IntersectionObserver((entries, obs) => {
+                if (!entries[0].isIntersecting) return;
+                obs.disconnect();
+                // ponytail: a rejected play() (iOS Low Power Mode, strict settings)
+                // leaves the poster and controls in place, which is the fallback.
+                overviewVideo.play().catch(() => {});
+            }, { threshold: 0.5 }).observe(overviewVideo);
+        }
+
         const mobileToggle = document.querySelector('.mobile-toggle');
         const navMenu = document.querySelector('.nav-menu');
         if (mobileToggle) mobileToggle.addEventListener('click', () => {
