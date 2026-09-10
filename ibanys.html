@@ -1,0 +1,419 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IBANYS AI Leadership for Bank Executives, brought to you by Upstate AI. Six live virtual sessions, up to 12 CPE credits. You leave with an AI roadmap written for your own bank.">
+    <meta name="keywords" content="IBANYS, AI for banks, community bank AI training, bank executive education, CPE credits, AI governance banking, New York community banks">
+    <meta name="author" content="Ben Nichols">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KKZRVLYRV0');
+    </script>
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' https://245872432.fs1.hubspotusercontent-na2.net;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://up-state-ai.com/ibanys">
+    <meta property="og:title" content="AI Leadership for Bank Executives | IBANYS x Upstate AI">
+    <meta property="og:description" content="Six live sessions for New York community bank leaders. You do not leave with notes. You leave with a roadmap your board can read. Up to 12 CPE credits.">
+    <meta property="og:image" content="https://up-state-ai.com/images/ibanys-video-poster.jpg">
+
+    <title>AI Leadership for Bank Executives | IBANYS x Upstate AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ---- IBANYS page tokens ---- */
+        .ib { --ink: #0a1f1a; --rule: rgba(26,58,46,.16); --rule-dk: rgba(247,244,234,.22); }
+
+        /* ---- Hero ---- */
+        .ib-hero {
+            background:
+              radial-gradient(90rem 40rem at 78% -12%, rgba(255,105,0,.20), transparent 60%),
+              linear-gradient(152deg, #0a1f1a 0%, #1a453a 62%, #23574a 100%);
+            color: var(--warm-white);
+            padding: 8.5rem 0 11rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .ib-hero::after {
+            content: ""; position: absolute; inset: 0; pointer-events: none;
+            background-image: radial-gradient(rgba(247,244,234,.10) 1px, transparent 1px);
+            background-size: 4px 4px; opacity: .5; mix-blend-mode: overlay;
+        }
+        .ib-hero .container { position: relative; z-index: 2; }
+        .ib-eyebrow {
+            display: inline-flex; align-items: center; gap: .7rem; flex-wrap: wrap;
+            max-width: 100%;
+            font-size: clamp(.62rem, 2.6vw, .74rem); letter-spacing: .14em; text-transform: uppercase;
+            font-weight: 700; color: var(--orange-light);
+            border: 1px solid rgba(255,140,58,.42); border-radius: 999px;
+            padding: .45rem 1.05rem; margin-bottom: 1.9rem;
+        }
+        .ib-hero h1 {
+            font-size: clamp(2.9rem, 7.4vw, 5.6rem);
+            line-height: .98; letter-spacing: -.025em;
+            max-width: 15ch; margin-bottom: 1.6rem;
+        }
+        .ib-hero h1 em { font-style: normal; color: var(--orange-light); }
+        .ib-lede {
+            font-size: clamp(1.12rem, 1.9vw, 1.42rem);
+            line-height: 1.55; max-width: 44ch; color: rgba(247,244,234,.86);
+            margin-bottom: 2.6rem;
+        }
+        .ib-lede strong { color: var(--warm-white); font-weight: 600; }
+
+        /* facts strip: hanging rule, not a card grid */
+        .ib-facts {
+            display: grid; grid-template-columns: repeat(4, minmax(0,1fr));
+            gap: 0; border-top: 1px solid var(--rule-dk); margin-top: 3.4rem;
+        }
+        .ib-fact { padding: 1.4rem 1.4rem 0 0; border-right: 1px solid var(--rule-dk); }
+        .ib-fact:last-child { border-right: 0; }
+        .ib-fact dt {
+            font-size: .68rem; letter-spacing: .16em; text-transform: uppercase;
+            color: rgba(247,244,234,.55); margin-bottom: .45rem;
+        }
+        .ib-fact dd {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: clamp(1.15rem, 2.1vw, 1.6rem); line-height: 1.1; margin: 0;
+        }
+        .ib-fact dd small { display: block; font-family: inherit; font-size: .78em; opacity: .7; }
+
+        .ib-ctas { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+        .ib-btn {
+            display: inline-flex; align-items: center; gap: .6rem;
+            background: var(--orange); color: #fff; font-weight: 650;
+            padding: 1.05rem 2.1rem; border-radius: var(--radius-sm);
+            text-decoration: none; letter-spacing: .01em;
+            transition: transform .25s cubic-bezier(.4,0,.2,1), box-shadow .25s;
+            box-shadow: 0 10px 30px rgba(255,105,0,.28);
+        }
+        .ib-btn:hover, .ib-btn:focus-visible { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(255,105,0,.38); }
+        .ib-btn:active { transform: translateY(0); }
+        .ib-btn-ghost {
+            display: inline-flex; align-items: center; gap: .55rem;
+            color: var(--warm-white); text-decoration: none; font-weight: 600;
+            padding: 1.05rem .4rem; border-bottom: 1px solid rgba(247,244,234,.35);
+            transition: border-color .25s, color .25s;
+        }
+        .ib-btn-ghost:hover, .ib-btn-ghost:focus-visible { color: var(--orange-light); border-color: var(--orange-light); }
+        :where(.ib) a:focus-visible, :where(.ib) button:focus-visible, :where(.ib) video:focus-visible {
+            outline: 2px solid var(--orange-light); outline-offset: 3px;
+        }
+
+        /* ---- Video panel overlapping the hero seam (depth) ---- */
+        .ib-video-wrap { background: var(--cream); }
+        .ib-video {
+            max-width: min(940px, calc(100% - 2.5rem)); margin: -7.5rem auto 0; position: relative; z-index: 5;
+            border-radius: var(--radius-md); overflow: hidden;
+            box-shadow: 0 30px 80px rgba(10,31,26,.38); background: #0a1f1a;
+            line-height: 0;
+        }
+        .ib-video video { width: 100%; height: auto; display: block; }
+        .ib-video-note {
+            max-width: 940px; margin: 1.1rem auto 0; padding: 0 1rem;
+            font-size: .86rem; color: var(--text-muted); text-align: center;
+        }
+
+        /* ---- Generic section ---- */
+        .ib-section { background: var(--cream); padding: 6rem 0; }
+        .ib-section.alt { background: var(--warm-white); }
+        .ib-kicker {
+            font-size: .7rem; letter-spacing: .18em; text-transform: uppercase;
+            font-weight: 700; color: var(--orange); margin-bottom: 1rem;
+        }
+        .ib-h2 { font-size: clamp(2rem, 4.2vw, 3.1rem); line-height: 1.06; letter-spacing: -.02em; max-width: 20ch; }
+
+        /* ---- Split: the problem ---- */
+        .ib-split { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5.5rem); align-items: start; }
+        .ib-split p { font-size: 1.06rem; line-height: 1.72; color: #33453d; margin-bottom: 1.1rem; }
+        .ib-split p:last-child { margin-bottom: 0; }
+        .ib-pull {
+            border-left: 3px solid var(--orange); padding-left: 1.6rem;
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: clamp(1.35rem, 2.6vw, 1.9rem); line-height: 1.28; color: var(--forest-dark);
+        }
+
+        /* ---- Deliverables: asymmetric, hanging numerals ---- */
+        .ib-deliver { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 0; margin-top: 3.4rem; border-top: 1px solid var(--rule); }
+        .ib-deliver > div { padding: 2rem 2rem 0 0; border-right: 1px solid var(--rule); }
+        .ib-deliver > div:last-child { border-right: 0; padding-right: 0; }
+        .ib-deliver h3 { font-size: 1.32rem; margin-bottom: .6rem; }
+        .ib-deliver p { font-size: .97rem; line-height: 1.62; color: var(--text-muted); margin: 0; }
+        .ib-num {
+            font-family: 'DM Serif Display', Georgia, serif; font-size: 2.6rem;
+            color: var(--orange); line-height: 1; display: block; margin-bottom: .8rem; opacity: .85;
+        }
+
+        /* ---- Session ledger ---- */
+        .ib-ledger { margin-top: 3rem; border-top: 1px solid var(--rule-dk); }
+        .ib-row {
+            display: grid; grid-template-columns: 3.4rem minmax(0,1fr) 12rem;
+            gap: 1.5rem; align-items: baseline;
+            padding: 1.65rem 0; border-bottom: 1px solid var(--rule-dk);
+            transition: background .25s;
+        }
+        .ib-row:hover { background: rgba(247,244,234,.05); }
+        .ib-row-n { font-family: 'DM Serif Display', Georgia, serif; font-size: 1.5rem; color: var(--orange-light); }
+        .ib-row-t { font-family: 'DM Serif Display', Georgia, serif; font-size: clamp(1.3rem, 2.4vw, 1.75rem); line-height: 1.2; }
+        .ib-row-t span { display: block; font-family: inherit; font-size: .62em; color: rgba(247,244,234,.62); margin-top: .35rem; line-height: 1.45; }
+        .ib-row-d { text-align: right; font-size: .95rem; color: rgba(247,244,234,.82); font-variant-numeric: tabular-nums; }
+        .ib-row-d small { display: block; font-size: .82em; color: rgba(247,244,234,.5); margin-top: .2rem; }
+        .ib-dark { background: linear-gradient(168deg, #0a1f1a 0%, #16382e 100%); color: var(--warm-white); padding: 6rem 0; }
+        .ib-dark .ib-kicker { color: var(--orange-light); }
+
+        /* ---- Instructor ---- */
+        .ib-instructor { display: grid; grid-template-columns: 200px minmax(0,1fr); gap: clamp(1.6rem, 4vw, 3.2rem); align-items: start; }
+        .ib-instructor img { width: 200px; height: 200px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-md); }
+        .ib-instructor p { font-size: 1.04rem; line-height: 1.72; color: #33453d; margin-bottom: 1rem; }
+
+        /* ---- Pricing ---- */
+        .ib-price { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1.5rem; margin: 2.6rem 0 2.4rem; max-width: 720px; }
+        .ib-price div { border: 1px solid var(--rule-dk); border-radius: var(--radius-md); padding: 1.7rem 1.8rem; }
+        .ib-price div.feature { border-color: rgba(255,140,58,.5); background: rgba(255,105,0,.07); }
+        .ib-price dt { font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: rgba(247,244,234,.6); margin-bottom: .6rem; }
+        .ib-price dd { font-family: 'DM Serif Display', Georgia, serif; font-size: 2.3rem; line-height: 1; margin: 0; }
+        .ib-fine { font-size: .88rem; color: rgba(247,244,234,.6); line-height: 1.7; max-width: 62ch; margin-top: 1.8rem; }
+        .ib-fine a { color: var(--orange-light); }
+
+        @media (max-width: 900px) {
+            .ib-hero { padding: 6.5rem 0 9rem; }
+            .ib-facts { grid-template-columns: repeat(2, minmax(0,1fr)); }
+            .ib-fact { border-bottom: 1px solid var(--rule-dk); padding-bottom: 1.2rem; }
+            .ib-fact:nth-child(2n) { border-right: 0; }
+            .ib-split, .ib-instructor { grid-template-columns: 1fr; }
+            .ib-instructor img { width: 150px; height: 150px; }
+            .ib-deliver { grid-template-columns: 1fr; }
+            .ib-deliver > div { border-right: 0; border-bottom: 1px solid var(--rule); padding: 1.6rem 0; }
+            .ib-deliver > div:last-child { border-bottom: 0; }
+            .ib-row { grid-template-columns: 2.2rem minmax(0,1fr); }
+            .ib-row-d { grid-column: 2; text-align: left; margin-top: .5rem; }
+            .ib-price { grid-template-columns: 1fr; }
+            .ib-video { margin-top: -5.5rem; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .ib-btn, .ib-btn:hover { transition: none; transform: none; }
+        }
+    </style>
+</head>
+<body class="ib">
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><a href="index">
+                <img src="images/logo.png" alt="Upstate AI Logo" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="https://ibanys.jumbl.app/eventmanager/trainingevent/seriesdetails/1" target="_blank" rel="noopener" class="btn-nav">Register</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+    <!-- Hero -->
+    <section class="ib-hero" aria-labelledby="ib-title">
+        <div class="container">
+            <p class="ib-eyebrow">IBANYS &times; Upstate AI <span aria-hidden="true">&middot;</span> For banks only</p>
+            <h1 id="ib-title">AI Leadership for <em>Bank Executives</em></h1>
+            <p class="ib-lede">Six live sessions for New York community bank leaders. You will not leave with notes. <strong>You will leave with a roadmap your board can read.</strong></p>
+            <div class="ib-ctas">
+                <a class="ib-btn" href="https://ibanys.jumbl.app/eventmanager/trainingevent/seriesdetails/1" target="_blank" rel="noopener">Register through IBANYS &rarr;</a>
+                <a class="ib-btn-ghost" href="#overview">Watch the 2 minute overview</a>
+            </div>
+
+            <dl class="ib-facts">
+                <div class="ib-fact"><dt>Format</dt><dd>6 live sessions<small>2 hours each, virtual</small></dd></div>
+                <div class="ib-fact"><dt>Runs</dt><dd>Oct 14 to Nov 13<small>9:00 to 11:00 AM</small></dd></div>
+                <div class="ib-fact"><dt>Credits</dt><dd>Up to 12 CPE<small>IBANYS sponsor of record</small></dd></div>
+                <div class="ib-fact"><dt>Prerequisites</dt><dd>None<small>No programming, no tech background</small></dd></div>
+            </dl>
+        </div>
+    </section>
+
+    <!-- Video -->
+    <div class="ib-video-wrap" id="overview">
+        <div class="ib-video">
+            <video controls preload="none" playsinline
+                   width="1280" height="720"
+                   poster="images/ibanys-video-poster.jpg"
+                   src="https://245872432.fs1.hubspotusercontent-na2.net/hubfs/245872432/AI%20for%20Leadership%20for%20Bank%20Execs_IBANYS_UpstateAI.mp4">
+                Your browser does not support embedded video.
+                <a href="https://245872432.fs1.hubspotusercontent-na2.net/hubfs/245872432/AI%20for%20Leadership%20for%20Bank%20Execs_IBANYS_UpstateAI.mp4">Open the video directly.</a>
+            </video>
+        </div>
+        <p class="ib-video-note">Ben Nichols on why he built this program for community banks.</p>
+    </div>
+
+    <!-- The gap -->
+    <section class="ib-section">
+        <div class="container ib-split">
+            <div>
+                <p class="ib-kicker">The problem</p>
+                <h2 class="ib-h2">The distance between AI hype and AI execution</h2>
+                <p style="margin-top:1.6rem">Most AI education for bank executives ends the same way. A certificate, a full notebook, and nothing your board can act on. You go back to the bank with better vocabulary and the same open question: so what do we actually do.</p>
+                <p>This program is built the other direction. Every session pairs a framework with hands on work against your own institution, and what you build across the six weeks becomes a single document you own.</p>
+                <p>It is specific to your bank because you wrote it. Which is also why you can defend it when a director asks the question you did not prepare for.</p>
+            </div>
+            <div>
+                <p class="ib-pull">Not an academic survey. Not a vendor demo. Led by someone who deploys AI systems inside financial institutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deliverables -->
+    <section class="ib-section alt">
+        <div class="container">
+            <p class="ib-kicker">What you leave with</p>
+            <h2 class="ib-h2">Three things, all of them yours</h2>
+            <div class="ib-deliver">
+                <div>
+                    <span class="ib-num">01</span>
+                    <h3>An AI strategy and implementation roadmap</h3>
+                    <p>Built session by session against your own institution, not a template. The capstone is designed to secure internal buy in from your board, your executive team, and your budget committee.</p>
+                </div>
+                <div>
+                    <span class="ib-num">02</span>
+                    <h3>A recorded pitch</h3>
+                    <p>You present your roadmap and keep the recording. Use it to brief directors who were not in the room, or as the opening of your next budget conversation.</p>
+                </div>
+                <div>
+                    <span class="ib-num">03</span>
+                    <h3>Up to 12 CPE credits</h3>
+                    <p>Two credits per live session. IBANYS is authorized by the New York State Department of Education to grant CPE credit and is sponsor of record. Attendance at the live session is required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessions -->
+    <section class="ib-dark">
+        <div class="container">
+            <p class="ib-kicker">The curriculum</p>
+            <h2 class="ib-h2" style="color:var(--warm-white)">Six sessions over five weeks</h2>
+            <div class="ib-ledger">
+                <div class="ib-row">
+                    <div class="ib-row-n">01</div>
+                    <div class="ib-row-t">AI Foundations<span>What the technology actually does, where it breaks, and the vocabulary you need to run the rest of the program.</span></div>
+                    <div class="ib-row-d">Wed, Oct 14<small>9:00 to 11:00 AM</small></div>
+                </div>
+                <div class="ib-row">
+                    <div class="ib-row-n">02</div>
+                    <div class="ib-row-t">Operational Efficiency<span>Mapping the workflows inside your bank where AI earns its keep, and the ones where it does not.</span></div>
+                    <div class="ib-row-d">Wed, Oct 21<small>9:00 to 11:00 AM</small></div>
+                </div>
+                <div class="ib-row">
+                    <div class="ib-row-n">03</div>
+                    <div class="ib-row-t">Audit and Governance<span>The controls, documentation, and oversight your examiners and your board will expect to see.</span></div>
+                    <div class="ib-row-d">Wed, Oct 28<small>9:00 to 11:00 AM</small></div>
+                </div>
+                <div class="ib-row">
+                    <div class="ib-row-n">04</div>
+                    <div class="ib-row-t">Cybersecurity<span>How AI changes the threat surface on both sides of the wire, and what that means for your existing program.</span></div>
+                    <div class="ib-row-d">Wed, Nov 4<small>9:00 to 11:00 AM</small></div>
+                </div>
+                <div class="ib-row">
+                    <div class="ib-row-n">05</div>
+                    <div class="ib-row-t">Vendor Evaluation<span>Reading past the demo. What to ask, what to require in the contract, and what a real answer sounds like.</span></div>
+                    <div class="ib-row-d">Fri, Nov 6<small>9:00 to 11:00 AM</small></div>
+                </div>
+                <div class="ib-row">
+                    <div class="ib-row-n">06</div>
+                    <div class="ib-row-t">Community and Ethics<span>Serving your community well while the technology moves, and presenting your finished roadmap.</span></div>
+                    <div class="ib-row-d">Fri, Nov 13<small>9:00 to 11:00 AM</small></div>
+                </div>
+            </div>
+            <p class="ib-fine">Every session is recorded and made available to registered participants. CPE credit is awarded for live attendance, so plan to be in the room for the sessions you need credit for.</p>
+        </div>
+    </section>
+
+    <!-- Instructor -->
+    <section class="ib-section">
+        <div class="container">
+            <p class="ib-kicker">Your instructor</p>
+            <h2 class="ib-h2" style="margin-bottom:2.4rem">Practitioner led, not lecture led</h2>
+            <div class="ib-instructor">
+                <img src="images/headshot.jpeg" alt="Ben Nichols, Founder and Principal Consultant at Upstate AI" width="200" height="200" loading="lazy">
+                <div>
+                    <p><strong>Ben Nichols</strong> is Founder and Principal Consultant at Upstate AI and Adjunct Professor of Data Science at Syracuse University. He builds and runs AI systems commercially inside financial institutions, which is the other four days of his week.</p>
+                    <p>That is the difference this program is built on. The frameworks come from work that shipped, the failure modes come from ones that did not, and the answer to a question about your specific core provider is not a shrug.</p>
+                    <p>No technical prerequisites. No programming. This is strategic fluency for the people who have to make the decision and then defend it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing + CTA -->
+    <section class="ib-dark">
+        <div class="container">
+            <p class="ib-kicker">Enrollment</p>
+            <h2 class="ib-h2" style="color:var(--warm-white)">Seats are per banker, for banks only</h2>
+            <dl class="ib-price">
+                <div class="feature"><dt>IBANYS member bank</dt><dd>$1,950</dd></div>
+                <div><dt>Non member banker</dt><dd>$2,250</dd></div>
+            </dl>
+            <div class="ib-ctas">
+                <a class="ib-btn" href="https://ibanys.jumbl.app/eventmanager/trainingevent/seriesdetails/1" target="_blank" rel="noopener">Register through IBANYS &rarr;</a>
+                <a class="ib-btn-ghost" href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Questions? Talk to Ben</a>
+            </div>
+            <p class="ib-fine">Registration, payment, and CPE credit are handled by the Independent Bankers Association of New York State. The program is designed and delivered by Upstate AI. Full details and enrollment at <a href="https://ibanys.jumbl.app/eventmanager/trainingevent/seriesdetails/1" target="_blank" rel="noopener">ibanys.jumbl.app</a>.</p>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
+                    <p>Put AI to Work</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/#services">Services</a>
+                    <a href="/#about">About</a>
+                    <a href="blog">Blog</a>
+                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
+                    <a href="privacy">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if (mobileToggle) mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            mobileToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
