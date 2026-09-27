@@ -84,7 +84,7 @@ a:focus-visible{outline:3px solid var(--or);outline-offset:3px}
  .copy h2{font-size:clamp(26px,7vw,36px)}.plate .ud{max-height:30vh}.card{padding:20px;font-size:15.5px}.card h3{font-size:22px}
  .fig{max-width:220px}.ud-end{width:60vw}
  .card{position:sticky;top:max(72px,14vh);opacity:1;visibility:visible;transform:none;transition:none}.swap{display:block;height:70vh}
- .js .ch .copy,.js .ch .art,.js .hero-2{opacity:0;transform:translateY(28px);transition:opacity .5s var(--ease),transform .5s var(--ease)}.js .ch .copy.in,.js .ch .art.in,.js .hero-2.in{opacity:1;transform:none}}
+ .js .ch .copy,.js .ch .art,.js .hero-2{opacity:0;transform:translateX(-40vw) rotate(-3deg);transition:opacity .6s var(--ease),transform .7s var(--ease)}.js .dark .copy,.js .light .art,.js .hero-2{transform:translateX(40vw) rotate(3deg)}.js .ch .copy.in,.js .ch .art.in,.js .hero-2.in{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){
  .pin{height:auto}.pin+.pin,.finale{margin-top:0}.stage{position:relative;height:auto;min-height:var(--vh);clip-path:none!important;transform:none!important;padding:10vh 7vw;display:grid;gap:24px}
  .copy,.art,.card,.hero-copy,.hero-2,.num,.blob,.layer{position:relative;inset:auto;width:auto;transform:none!important;opacity:1!important;visibility:visible!important}
@@ -238,7 +238,7 @@ a:focus-visible{outline:3px solid var(--or);outline-offset:3px}
 (()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
 const root=document.documentElement,mobile=matchMedia('(max-width:860px)');
 // mobile: iOS momentum scroll + sticky + per-frame style writes is what reads as glitchy; reveal once, then leave the DOM alone
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -12% 0px'});
+const io=new IntersectionObserver(es=>es.forEach(e=>{e.target.classList.toggle('in',e.isIntersecting)}),{rootMargin:'-8% 0px -12% 0px'});
 document.querySelectorAll('.ch .copy,.ch .art,.hero-2').forEach(el=>{io.observe(el)});
 const pins=[...document.querySelectorAll('.pin')],links=[...document.querySelectorAll('.rail a')];
 function setFace(c,g){c.classList.toggle('g',g);c.querySelector('.guide').setAttribute('aria-hidden',!g);c.querySelector('.risk').setAttribute('aria-hidden',g)}
