@@ -97,7 +97,14 @@ a:focus-visible{outline:3px solid var(--or);outline-offset:3px}
 @keyframes par-art{from{transform:translateY(60px) scale(.94)}to{transform:translateY(-60px) scale(1.04)}}
 @keyframes par-in{from{opacity:.2;transform:translateY(48px)}to{opacity:1;transform:none}}}}
 @media(prefers-reduced-motion:reduce){.js .ch .art,.js .ch .copy,.card{animation:none!important}}
-@media(max-width:860px){.card{position:relative!important;top:auto!important}.swap{display:none!important}.card .face,.card .face.guide,.card.g .face.risk{grid-area:auto!important;opacity:1!important;visibility:visible!important;transform:none!important}.card .face.guide{margin-top:24px}}
+@media(max-width:860px){.card{position:relative!important;top:auto!important}.swap{display:none!important}.card{overflow:hidden}.card .face{grid-area:2/1!important;transition:opacity .35s,transform .35s!important}
+.card .face.risk{opacity:1!important;visibility:visible!important;transform:none!important}
+.card .face.guide{opacity:0!important;visibility:hidden!important;transform:translateX(40px)!important;margin-top:0!important;padding-top:0!important;border-top:0!important}
+.card.g .face.risk{opacity:0!important;visibility:hidden!important;transform:translateX(-40px)!important}
+.card.g .face.guide{opacity:1!important;visibility:visible!important;transform:none!important}
+.tog{grid-area:1/1;display:flex;gap:6px;margin-bottom:16px}.tog button{flex:1;font:inherit;font-size:14px;padding:10px;border-radius:999px;border:1px solid var(--fl);background:transparent;color:inherit;cursor:pointer}
+.tog button[aria-pressed=true]{background:var(--forest,#1a3a2e);color:#f7f4ea;border-color:transparent}}
+@media(min-width:861px){.tog{display:none}}
 </style>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
@@ -248,6 +255,10 @@ a:focus-visible{outline:3px solid var(--or);outline-offset:3px}
 <a class="dl-fab" href="#guide">Guide PDF &darr;</a>
 <footer role="contentinfo"><p>Upstate AI LLC. Scenarios and diagrams are illustrative. This guide is educational, not legal advice. Illustrations by <a href="https://undraw.co">unDraw</a>, adapted to our colors.</p></footer>
 <script>
+// mobile problem/solution toggle: buttons + horizontal swipe
+document.querySelectorAll('.card').forEach(c=>{const t=document.createElement('div');t.className='tog';t.innerHTML='<button type="button" aria-pressed="true">The problem</button><button type="button" aria-pressed="false">The solution</button>';const[b0,b1]=t.children;const set=g=>{c.classList.toggle('g',g);c.querySelector('.guide').setAttribute('aria-hidden',!g);c.querySelector('.risk').setAttribute('aria-hidden',g);b0.setAttribute('aria-pressed',!g);b1.setAttribute('aria-pressed',g)};b0.onclick=()=>set(false);b1.onclick=()=>set(true);c.prepend(t);if(innerWidth<=860)set(false);let x0=null,y0;c.addEventListener('touchstart',e=>{x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});c.addEventListener('touchend',e=>{if(x0===null||innerWidth>860)return;const dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;x0=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy))set(dx<0)},{passive:true})});
+</script>
+<script>
 (()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
 const root=document.documentElement,mobile=matchMedia('(max-width:860px)');
 // mobile: iOS momentum scroll + sticky + per-frame style writes is what reads as glitchy; reveal once, then leave the DOM alone
@@ -255,9 +266,8 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{e.target.classList.toggle('
 document.querySelectorAll('.ch .copy,.ch .art,.hero-2').forEach(el=>{io.observe(el)});
 const pins=[...document.querySelectorAll('.pin')],links=[...document.querySelectorAll('.rail a')];
 function setFace(c,g){c.classList.toggle('g',g);c.querySelector('.guide').setAttribute('aria-hidden',!g);c.querySelector('.risk').setAttribute('aria-hidden',g)}
+
 // mobile swap: marker crossing the viewport middle flips the card; one crossing, so no scrub and no flicker
-const sw=new IntersectionObserver(es=>es.forEach(e=>{if(mobile.matches)setFace(e.target.previousElementSibling,e.boundingClientRect.top<innerHeight/2)}),{rootMargin:'-50% 0px -50% 0px'});
-document.querySelectorAll('.swap').forEach(m=>sw.observe(m));
 const cl=v=>v<0?0:v>1?1:v,ramp=(p,a,b)=>cl((p-a)/(b-a));
 function frame(){const h=innerHeight;ticking=false;
  root.style.setProperty('--prog',(scrollY/(root.scrollHeight-h)).toFixed(4));
