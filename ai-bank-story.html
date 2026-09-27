@@ -44,8 +44,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0}
 .art{position:absolute;left:7vw;bottom:8vh;width:38vw;transform:translateY(calc((var(--p,0) - .3)*-14vh)) scale(calc(.94 + var(--p,0)*.12))}
 .plate{background:var(--card);border-radius:20px;padding:5% 7%;box-shadow:0 20px 60px rgba(10,30,22,.25)}.plate .ud{display:block;width:100%;height:auto;max-height:34vh}
 .card{position:absolute;right:8vw;top:50%;width:min(40vw,520px);background:var(--card);color:var(--txt);border:2px solid var(--or);border-radius:16px;padding:26px 28px;box-shadow:0 20px 60px rgba(10,30,22,.28);
- opacity:var(--o,0);transform:translate(0,calc(-50% + (1 - var(--o,0))*18vh)) rotate(calc((1 - var(--o,0))*3deg));visibility:hidden}
-.card.risk{--o:var(--b2)}.card.guide{--o:var(--b3)}
+ --o:0;opacity:var(--o);transform:translate(0,calc(-50% + (1 - var(--o))*5vh));visibility:hidden;transition:opacity .45s var(--ease),transform .6s var(--ease),visibility 0s .6s}
+.show-risk .card.risk,.show-guide .card.guide{--o:1;visibility:visible;transition:opacity .45s var(--ease),transform .6s var(--ease),visibility 0s}
 .card h3{font-size:26px;color:var(--fd);margin-bottom:8px}.card header{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
 .card ul{padding-left:20px;margin:8px 0 0}.card li{margin:6px 0}.card p{margin:0}
 .tag{font-size:12px;font-weight:700;letter-spacing:.06em;padding:4px 10px;border:1.5px solid var(--fm);color:var(--fm);border-radius:999px;white-space:nowrap}.tag.must{background:var(--fd);border-color:var(--fd);color:var(--cream)}
@@ -61,10 +61,10 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0}
 footer{position:relative;z-index:30;background:var(--fd);padding:4vh 8vw 6vh;font-size:13px;color:#b9d3c1}footer a{color:var(--cream)}
 a:focus-visible{outline:3px solid var(--or);outline-offset:3px}
 @media (max-width:860px){
- .rail{display:none}.copy{left:6vw;right:6vw;width:auto;top:9vh}
- .art,.num,.blob{opacity:calc(1 - var(--b2,0) - var(--b3,0))}.copy h2{font-size:clamp(26px,7vw,36px)}
+ .rail{display:none}.pin .stage,.rise .stage,.dome .stage{clip-path:none;transform:none;border-radius:0;will-change:auto}.copy{left:6vw;right:6vw;width:auto;top:9vh}
+ .art,.num,.blob{transition:opacity .45s var(--ease)}.show-risk :is(.art,.num,.blob),.show-guide :is(.art,.num,.blob){opacity:0}.copy h2{font-size:clamp(26px,7vw,36px)}
  .art{left:12vw;right:12vw;width:auto;bottom:10vh}.plate .ud{max-height:26vh}
- .card{left:5vw;right:5vw;width:auto;top:auto;bottom:4vh;padding:20px;transform:translateY(calc((1 - var(--o,0))*18vh))}.card h3{font-size:22px}.card{font-size:15.5px}
+ .card{left:5vw;right:5vw;width:auto;top:auto;bottom:4vh;padding:20px;transform:translateY(calc((1 - var(--o))*5vh))}.card h3{font-size:22px}.card{font-size:15.5px}
  .fig{max-width:220px}.num{font-size:60vw;top:auto;bottom:30vh}.ud-end{width:60vw}}
 @media (prefers-reduced-motion:reduce){
  .pin{height:auto}.pin+.pin,.finale{margin-top:0}.stage{position:relative;height:auto;min-height:var(--vh);clip-path:none!important;transform:none!important;padding:10vh 7vw;display:grid;gap:24px}
@@ -232,9 +232,7 @@ function frame(){const h=innerHeight;let cur=0;
   const span=r.height-h,p=cl(-r.top/span),cover=h/span; // last `cover` of p is when the next scene slides over
   const x=ramp(p,1-cover,1),e=cl(1-r.top/h),st=s.style;
   st.setProperty('--p',p.toFixed(4));st.setProperty('--x',x.toFixed(4));st.setProperty('--e',e.toFixed(4));
-  if(s.classList.contains('ch')){const b2=ramp(p,.1,.18)-ramp(p,.34,.4),b3=ramp(p,.4,.48);
-   st.setProperty('--b2',b2.toFixed(3));st.setProperty('--b3',b3.toFixed(3));
-   s.querySelector('.risk').style.visibility=b2>0?'visible':'hidden';s.querySelector('.guide').style.visibility=b3>0?'visible':'hidden';
+  if(s.classList.contains('ch')){s.classList.toggle('show-risk',p>=.14&&p<.38);s.classList.toggle('show-guide',p>=.42);
    if(r.top<h/2)cur=s.id}}
  links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));
  root.style.setProperty('--prog',(scrollY/(root.scrollHeight-h)).toFixed(4));ticking=false}
