@@ -105,10 +105,27 @@ a:focus-visible{outline:3px solid var(--or);outline-offset:3px}
 .tog{grid-area:1/1;display:flex;gap:6px;margin-bottom:16px}.tog button{flex:1;font:inherit;font-size:14px;padding:10px;border-radius:999px;border:1px solid var(--fl);background:transparent;color:inherit;cursor:pointer}
 .tog button[aria-pressed=true]{background:var(--forest,#1a3a2e);color:#f7f4ea;border-color:transparent}}
 @media(min-width:861px){.tog{display:none}}
+.brand{position:absolute;top:10px;left:max(2vw,8px);z-index:80;display:block;border-radius:10px}.brand img{display:block;height:clamp(64px,9vw,96px);width:auto}
+.brand:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+/* ponytail: mobile depth = CSS view timelines only (compositor thread, no scroll JS, no sticky), so iOS momentum scroll can't jitter it; unsupported browsers get the static layout */
+@media(max-width:860px){.ch .stage{overflow:clip}.ch .copy,.ch .art,.ch .card{z-index:1}
+@supports(animation-timeline:view()){@media(prefers-reduced-motion:no-preference){
+ .ch .num,.ch .blob{display:block;position:absolute;animation:linear both;animation-timeline:view()}
+ .ch .num{top:0;right:-4vw;font-size:58vw;opacity:.09;animation-name:par-num}
+ .ch .blob{width:95vw;height:95vw;right:-40vw;top:30%;bottom:auto;animation-name:par-blob}
+ .js .ch .art .plate{animation:par-tilt linear both;animation-timeline:view()}
+ .hero-art{animation:par-hero linear both;animation-timeline:view();animation-range:exit 0% exit 100%}
+ .hero-copy{animation:par-fade linear both;animation-timeline:view(block);animation-range:exit -20% exit 60%}
+ @keyframes par-num{from{transform:translateY(45vh)}to{transform:translateY(-35vh)}}
+ @keyframes par-blob{from{transform:translateY(30vh) rotate(0)}to{transform:translateY(-40vh) rotate(80deg)}}
+ @keyframes par-tilt{from{transform:rotate(-4deg) translateX(-6vw)}50%{transform:none}to{transform:rotate(3deg) translateX(4vw)}}
+ @keyframes par-hero{to{transform:translateY(-12vh) scale(1.08)}}
+ @keyframes par-fade{to{opacity:.3;transform:translateY(-6vh)}}}}}
 </style>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="progress" aria-hidden="true"></div>
+<a class="brand" href="index.html" aria-label="Upstate AI home"><img src="images/logo-white-small.png" width="400" height="252" alt="Upstate AI"></a>
 <button class="menu-btn" aria-expanded="false" aria-controls="jump" aria-label="Jump to a section"><span></span></button>
 <nav class="jump" id="jump" aria-label="Jump to a section" hidden><p>Part 1 &middot; Introducing AI</p><ol><li><a href="#c1">Staff AI tools</a></li><li><a href="#c2">AI in vendor software</a></li><li><a href="#c3">Pilot approval</a></li></ol><p>Part 2 &middot; Everyday use</p><ol><li><a href="#c4">Vendor testing</a></li><li><a href="#c5">Credit decisions</a></li><li><a href="#c6">Chatbot handoff</a></li><li><a href="#c7">Ongoing monitoring</a></li></ol><p>Part 3 &middot; Security &amp; comms</p><ol><li><a href="#c8">Security plan</a></li><li><a href="#c9">Customer disclosure</a></li></ol><p>In practice</p><ol><li><a href="#fh">Next risk review</a></li></ol></nav>
 <nav aria-label="Challenges"><ol class="rail"><li><a href="#c1" aria-label="Challenge 1">1</a></li><li><a href="#c2" aria-label="Challenge 2">2</a></li><li><a href="#c3" aria-label="Challenge 3">3</a></li><li><a href="#c4" aria-label="Challenge 4">4</a></li><li><a href="#c5" aria-label="Challenge 5">5</a></li><li><a href="#c6" aria-label="Challenge 6">6</a></li><li><a href="#c7" aria-label="Challenge 7">7</a></li><li><a href="#c8" aria-label="Challenge 8">8</a></li><li><a href="#c9" aria-label="Challenge 9">9</a></li></ol></nav>
@@ -253,7 +270,6 @@ a:focus-visible{outline:3px solid var(--or);outline-offset:3px}
 </section>
 </main>
 <a class="dl-fab" href="#guide">Guide PDF &darr;</a>
-<footer role="contentinfo"><p>Upstate AI LLC. Scenarios and diagrams are illustrative. This guide is educational, not legal advice. Illustrations by <a href="https://undraw.co">unDraw</a>, adapted to our colors.</p></footer>
 <script>
 // mobile problem/solution toggle: buttons + horizontal swipe
 document.querySelectorAll('.card').forEach(c=>{const t=document.createElement('div');t.className='tog';t.innerHTML='<button type="button" aria-pressed="true">The problem</button><button type="button" aria-pressed="false">The solution</button>';const[b0,b1]=t.children;const set=g=>{c.classList.toggle('g',g);c.querySelector('.guide').setAttribute('aria-hidden',!g);c.querySelector('.risk').setAttribute('aria-hidden',g);b0.setAttribute('aria-pressed',!g);b1.setAttribute('aria-pressed',g)};b0.onclick=()=>set(false);b1.onclick=()=>set(true);c.prepend(t);if(innerWidth<=860)set(false);let x0=null,y0;c.addEventListener('touchstart',e=>{x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});c.addEventListener('touchend',e=>{if(x0===null||innerWidth>860)return;const dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;x0=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy))set(dx<0)},{passive:true})});
