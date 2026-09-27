@@ -106,7 +106,7 @@ a:focus-visible{outline:3px solid var(--or);outline-offset:3px}
    <g transform="translate(560 90)"><path d="M0 70 160 0 320 70Z" fill="#1a3a2e"/><rect x="10" y="70" width="300" height="14" fill="#1a3a2e"/><rect x="30" y="90" width="20" height="120" fill="#1a3a2e"/><rect x="84" y="90" width="20" height="120" fill="#1a3a2e"/><rect x="138" y="90" width="20" height="120" fill="#1a3a2e"/><rect x="192" y="90" width="20" height="120" fill="#1a3a2e"/><rect x="246" y="90" width="20" height="120" fill="#1a3a2e"/><rect x="300" y="90" width="20" height="120" fill="#1a3a2e"/><rect x="0" y="210" width="320" height="18" fill="#1a3a2e"/><rect x="-14" y="228" width="348" height="12" fill="#ff6900"/>
    <text x="160" y="58" fill="#f7f4ea" font-family="Georgia,serif" font-size="16" text-anchor="middle" letter-spacing="3">YOUR INSTITUTION</text></g></svg></div>
   <div class="hero-copy"><p class="eyebrow">Upstate AI &middot; For Community Financial Institution leaders</p>
-   <h1>A practical guide to <em>AI at your Community Financial Institution</em></h1>
+   <h1>A practical guide to <em>AI</em> for banking leaders</h1>
    <p class="lede">Artificial intelligence (AI) is becoming part of the software your Community Financial Institution uses and the work your staff do. This guide walks through the decisions that come with it, from approving a new tool to explaining a lending decision. Start with the section closest to what you're working on.</p><img class="hero-art" src="images/undraw/undraw_ai-research-assistant_cxx0.svg" width="340" height="260" alt="" loading="eager"></div>
   <p class="cue">Read on</p>
   <div class="shade" aria-hidden="true"></div>
@@ -242,7 +242,7 @@ a:focus-visible{outline:3px solid var(--or);outline-offset:3px}
 (()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
 const root=document.documentElement,mobile=matchMedia('(max-width:860px)');
 // mobile: iOS momentum scroll + sticky + per-frame style writes is what reads as glitchy; reveal once, then leave the DOM alone
-const io=new IntersectionObserver(es=>es.forEach(e=>{e.target.classList.toggle('in',e.isIntersecting)}),{rootMargin:'-8% 0px -12% 0px'});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'-8% 0px -12% 0px'});
 document.querySelectorAll('.ch .copy,.ch .art,.hero-2').forEach(el=>{io.observe(el)});
 const pins=[...document.querySelectorAll('.pin')],links=[...document.querySelectorAll('.rail a')];
 function setFace(c,g){c.classList.toggle('g',g);c.querySelector('.guide').setAttribute('aria-hidden',!g);c.querySelector('.risk').setAttribute('aria-hidden',g)}
