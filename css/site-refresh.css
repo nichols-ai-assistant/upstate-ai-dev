@@ -73,3 +73,4 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 /* Toggle sits before the menu in DOM so Tab moves into the opened menu; keep it visually right */
 .navbar .mobile-toggle { order: 2; }
 .hero-cta-note { margin-top: var(--space-sm); max-width: 34rem; font-size: 0.95rem; line-height: 1.5; color: var(--forest-light); }
+.hero h1 { line-height: 1.05; }
