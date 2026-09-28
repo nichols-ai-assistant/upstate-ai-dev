@@ -1,3 +1,6 @@
+---
+layout: none
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,27 +44,10 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/site-refresh.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="../index"><img src="../images/logo.png" alt="Upstate AI Logo" class="logo"></a>
-            </div>
-            <ul class="nav-menu">
-
-
-                <li><a href="../financial-institutions">Services</a></li>
-                <li><a href="../#about">About</a></li>
-                <li><a href="../blog">Blog</a></li>
-                <li><a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-nav">Book a Call</a></li>
-            </ul>
-            <button class="mobile-toggle" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+{% include site-nav.html root="../" %}
 
     <article class="blog-post-page">
         <div class="container">
@@ -220,27 +206,7 @@
         </div>
     </article>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="../images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
-                    <p>Put AI to Work</p>
-                </div>
-                <div class="footer-links">
-                    <a href="../financial-institutions">Services</a>
-                    <a href="../#about">About</a>
-                    <a href="../blog">Blog</a>
-                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
-                    <a href="../privacy">Privacy Policy</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+{% include site-footer.html root="../" %}
 
     <script>
         const navbar = document.querySelector('.navbar');
