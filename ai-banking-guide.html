@@ -1,0 +1,312 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI at Your Bank or Credit Union: A Practical Guide | Upstate AI</title>
+<link rel="icon" href="images/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<script>matchMedia('(prefers-reduced-motion: reduce)').matches||document.documentElement.classList.add('js')</script>
+<style>.hero-art{display:none}
+:root{--fd:#1a3a2e;--fm:#2d5745;--fl:#3f7054;--fa:#5a8f6e;--cream:#f7f4ea;--card:rgba(255,248,238,.96);--or:#ff6900;--txt:#1a1a1a;--muted:#556b5e;
+--serif:'DM Serif Display',Georgia,serif;--sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;--ease:cubic-bezier(.2,.7,.2,1);--vh:100svh}
+*{box-sizing:border-box}html{overflow-x:clip}body{margin:0;background:var(--fd);color:var(--txt);font:17px/1.6 var(--sans)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:99;background:var(--cream);padding:8px 12px}
+.progress{position:fixed;top:0;left:0;height:4px;width:100%;background:var(--or);transform-origin:left;transform:scaleX(var(--prog,0));z-index:60}
+.rail{display:none;position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:50;list-style:none;margin:0;padding:0}
+.rail a{display:grid;place-items:center;width:28px;height:28px;margin:6px 0;border-radius:50%;font-size:11px;color:var(--fd);text-decoration:none;background:var(--card);border:1.5px solid var(--fd);transition:transform .25s var(--ease)}
+.rail a:hover,.rail a:focus-visible{transform:scale(1.2);outline:none}.rail a.on{background:var(--or);border-color:var(--or)}
+/* pinned scenes: each section is tall; its stage sticks; the next section overlaps the last 100vh and slides over it */
+.pin{position:relative;height:var(--h)}.pin+.pin{margin-top:calc(-1*var(--vh))}
+.stage{position:sticky;top:0;height:var(--vh);overflow:hidden;will-change:transform,clip-path}
+.shade{position:absolute;inset:0;background:#0c1d16;opacity:calc(var(--x,0)*.55);pointer-events:none}
+.rise .stage{clip-path:inset(0 0 0 0 round calc((1 - var(--e,1))*140px) calc((1 - var(--e,1))*140px) 0 0)}
+.dome .stage{clip-path:circle(calc(35% + var(--e,1)*110%) at 50% calc(100% + (1 - var(--e,1))*20%))}
+.L1,.L2,.L3,.L4{will-change:transform}
+/* hero */
+.hero{--h:200vh;z-index:1}.hero .stage{background:linear-gradient(180deg,#10261d 0%,var(--fd) 50%,var(--fm) 100%);color:var(--cream)}
+.layer{position:absolute;left:0;width:100%}.layer svg{display:block;width:100%;height:auto}
+.hero-copy{position:absolute;top:13vh;left:8vw;right:8vw;max-width:980px;z-index:5;transform:translateY(calc(var(--p,0)*-28vh));opacity:calc(1 - var(--p,0)*3.5)}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:13px;color:#b9d3c1}
+.hero h1{font-size:clamp(38px,4.6vw,68px);margin:.2em 0 .3em;max-width:20ch;text-wrap:balance}.hero h1 em{color:var(--cream)}
+.lede{font-size:clamp(18px,2vw,22px);max-width:560px;color:#e3ece5;text-wrap:pretty}
+.hero-2{position:absolute;left:8vw;right:8vw;top:22vh;max-width:760px;z-index:5;opacity:calc(var(--p,0)*4 - 1.2);transform:translateY(calc((.55 - var(--p,0))*30vh))}
+.hero-2 h2{font-size:clamp(32px,5vw,62px)}.hero-2 p{color:#e3ece5;max-width:560px}
+.stats{display:flex;gap:40px;border-top:2px solid var(--or);margin-top:24px;padding-top:14px}.stats b{display:block;font:clamp(40px,5vw,64px)/1 var(--serif)}.stats span{font-size:13px;color:#b9d3c1}
+.cue{margin-top:5vh;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#b9d3c1;opacity:calc(1 - var(--p,0)*6)}
+.cue::after{content:"";display:block;width:1px;height:44px;background:var(--or);margin-top:10px;animation:cue 1.8s var(--ease) infinite;transform-origin:top}
+@keyframes cue{0%{transform:scaleY(0)}60%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+/* chapters */
+.ch{--h:380vh}.ch.light .stage{background:var(--cream)}.ch.dark .stage{background:var(--fd);color:var(--cream)}
+.num{position:absolute;right:-1vw;top:2vh;font:clamp(220px,34vw,520px)/1 var(--serif);opacity:.07;pointer-events:none;transform:translateY(calc((var(--p,0) - .3)*-40vh))}
+.blob{position:absolute;width:52vw;height:52vw;right:-16vw;bottom:-22vw;border-radius:42% 58% 63% 37%/45% 38% 62% 55%;background:var(--or);opacity:.14;transform:translateY(calc((var(--p,0) - .3)*30vh)) rotate(calc(var(--p,0)*90deg))}
+.dark .blob{background:var(--fa);opacity:.22}
+.copy{position:absolute;left:7vw;top:13vh;width:44vw;transform:translateY(calc((var(--p,0) - .1)*-8vh))}
+.when{font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin:0 0 14px;color:var(--fm)}.dark .when{color:#9cc4a8}
+.copy h2{font-size:clamp(30px,3.6vw,54px)}.light .copy h2{color:var(--fd)}
+.art{position:absolute;left:7vw;bottom:8vh;width:38vw;transform:translateY(calc((var(--p,0) - .3)*-14vh)) scale(calc(.94 + var(--p,0)*.12))}
+.plate{background:var(--card);border-radius:20px;padding:5% 7%;box-shadow:0 20px 60px rgba(10,30,22,.25)}.plate .ud{display:block;width:100%;height:auto;max-height:34vh}
+.card{position:absolute;right:8vw;top:50%;width:min(40vw,520px);background:var(--card);color:var(--txt);border:2px solid var(--or);border-radius:16px;padding:26px 28px;box-shadow:0 20px 60px rgba(10,30,22,.28);
+ opacity:0;transform:translate(0,calc(-50% + 6vh));visibility:hidden;transition:opacity .45s var(--ease),transform .45s var(--ease),visibility 0s .45s}
+.card.on{opacity:1;transform:translate(0,-50%);visibility:visible;transition-delay:0s}
+.card{display:grid}.face{grid-area:1/1;transition:opacity .35s var(--ease),transform .35s var(--ease),visibility 0s}
+.face.guide,.card.g .face.risk{opacity:0;transform:translateY(10px);visibility:hidden;transition:opacity .35s var(--ease),transform .35s var(--ease),visibility 0s .35s}
+.card.g .face.guide{opacity:1;transform:none;visibility:visible;transition-delay:0s}.swap{display:none}
+html{scroll-behavior:smooth}
+.menu-btn{position:fixed;top:12px;right:12px;z-index:80;width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(247,244,234,.5);background:var(--fd);color:var(--cream);display:grid;place-items:center;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:18px;height:2px;background:var(--cream);position:relative;transition:transform .25s var(--ease),opacity .25s}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0}.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+.menu-btn[aria-expanded=true] span{background:transparent}.menu-btn[aria-expanded=true] span::before{transform:translateY(6px) rotate(45deg)}.menu-btn[aria-expanded=true] span::after{transform:translateY(-6px) rotate(-45deg)}
+.menu-btn:focus-visible,.jump a:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+.jump{position:fixed;top:68px;right:12px;z-index:80;width:min(340px,calc(100vw - 24px));max-height:calc(var(--vh) - 84px);overflow:auto;background:var(--fd);color:var(--cream);border:1.5px solid rgba(247,244,234,.3);border-top:3px solid var(--or);border-radius:14px;padding:10px 8px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.jump[hidden]{display:none}.jump p{margin:10px 12px 2px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b9d3c1}
+.jump ol{list-style:none;margin:0;padding:0}.jump a{display:flex;align-items:center;min-height:44px;padding:6px 12px;border-radius:8px;color:var(--cream);text-decoration:none;font-size:15px;line-height:1.3}
+.jump a:hover{background:var(--fm)}
+.card h3{font-size:26px;color:var(--fd);margin-bottom:8px}.card header{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.card ul{padding-left:20px;margin:8px 0 0}.card li{margin:6px 0}.card p{margin:0}
+.tag{font-size:12px;font-weight:700;letter-spacing:.06em;padding:4px 10px;border:1.5px solid var(--fm);color:var(--fm);border-radius:999px;white-space:nowrap}.tag.must{background:var(--fd);border-color:var(--fd);color:var(--cream)}
+.fig{width:100%;max-width:300px;margin-top:14px;display:block}.face{display:flex;flex-direction:column}.face>.fig{margin:auto;padding-top:14px}
+/* finale */
+.finale{position:relative;z-index:30;margin-top:calc(-1*var(--vh));background:var(--fd);color:var(--cream);padding:16vh 8vw 12vh;border-radius:28px 28px 0 0}
+.finale h2{font-size:clamp(36px,5.5vw,76px);max-width:900px}.finale .sub{max-width:620px;color:#e3ece5;margin:20px 0 7vh}
+
+
+
+.check{margin-top:8vh;max-width:680px;border-left:4px solid var(--or);padding-left:20px;font:italic 24px/1.4 var(--serif)}
+.offer{max-width:680px;margin:6vh 0 0;color:#e3ece5}.cta{margin:24px 0 0;color:#e3ece5;display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;max-width:680px}.book{display:inline-block;white-space:nowrap;background:var(--cream);color:var(--fd);font-weight:700;padding:12px 20px;border-radius:999px;text-decoration:none;font-size:.95rem;line-height:1.3;transition:transform .2s var(--ease)}.book:hover{transform:translateY(-2px)}.ud-end{width:min(30vw,340px);margin-top:6vh}.ud-end .ud{width:100%;height:auto}
+footer{position:relative;z-index:30;background:var(--fd);padding:4vh 8vw 6vh;font-size:13px;color:#b9d3c1}footer a{color:var(--cream)}
+a:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+@media (max-width:860px){
+ .rail,.num,.blob,.shade,.cue{display:none}
+ .pin{height:auto}.pin+.pin,.finale{margin-top:0;padding-bottom:4vh}.ud-end{width:40vw;margin-top:4vh}
+ .stage{position:relative;height:auto;overflow:visible;clip-path:none!important;transform:none!important;border-radius:0!important;will-change:auto;padding:12vh 6vw 10vh;display:grid;gap:22px}
+ .hero .stage{min-height:var(--vh);padding-bottom:34vh;overflow:hidden}
+ .hero .layer{transform:none!important}.hero .layer:not(:last-of-type),.hero .layer:last-of-type{display:none}.hero-art{display:block;width:100%;max-width:300px;height:auto;height:auto;margin:1.5rem auto 0;background:var(--cream);border-radius:14px;padding:1rem}
+ .copy,.art,.card,.hero-copy,.hero-2{position:relative;inset:auto;width:auto;transform:none;opacity:1;visibility:visible}
+ .hero-copy,.hero-2{top:auto;left:auto;right:auto}
+ .copy h2{font-size:clamp(26px,7vw,36px)}.plate .ud{max-height:30vh;object-fit:contain}.card{padding:20px;font-size:15.5px}.card h3{font-size:22px}
+ .fig{max-width:220px}
+ .card{position:sticky;top:max(72px,14vh);opacity:1;visibility:visible;transform:none;transition:none}.swap{display:block;height:70vh}
+ .js .ch .copy,.js .ch .art,.js .hero-2{opacity:0;transform:translateX(-40vw) rotate(-3deg);transition:opacity .6s var(--ease),transform .7s var(--ease)}.js .dark .copy,.js .light .art,.js .hero-2{transform:translateX(40vw) rotate(3deg)}.js .ch .copy.in,.js .ch .art.in,.js .hero-2.in{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+ .pin{height:auto}.pin+.pin,.finale{margin-top:0}.stage{position:relative;height:auto;min-height:var(--vh);clip-path:none!important;transform:none!important;padding:10vh 7vw;display:grid;gap:24px}
+ .copy,.art,.card,.hero-copy,.hero-2,.num,.blob,.layer{position:relative;inset:auto;width:auto;transform:none!important;opacity:1!important;visibility:visible!important}
+ .num,.blob,.shade,.cue,.layer{display:none}.ch .copy,.ch .art,.ch .card,.hero-2{opacity:1!important}.card{display:block;position:relative!important}.face{visibility:visible!important;opacity:1!important;transform:none!important}.face.guide{margin-top:18px;padding-top:18px;border-top:1px solid var(--fl)}.swap{display:none!important}html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+@media(max-width:860px){.pin{overflow-x:clip}}.dl{background:var(--fd);color:var(--cream);text-align:center;padding:1.5rem 1.5rem 4.5rem}.finale{padding-bottom:3vh}.ud-end{margin-top:3vh}.dl h2{font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 .75rem}.dl p{max-width:34rem;margin:0 auto 1.75rem;opacity:.9}.dl-btn{display:inline-block;background:var(--or);color:var(--fd);font-weight:700;padding:.95rem 1.8rem;border-radius:999px;text-decoration:none;transition:transform .2s}.dl-btn:hover,.dl-btn:focus-visible{transform:translateY(-2px)}.dl-btn:focus-visible,.dl-fab:focus-visible{outline:3px solid var(--cream);outline-offset:3px}.dl-fab{position:fixed;right:1rem;bottom:1rem;z-index:50;background:var(--or);color:var(--fd);font-weight:700;font-size:.9rem;padding:.7rem 1.1rem;border-radius:999px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25);transition:opacity .25s,transform .25s}.dl-fab.off{opacity:0;transform:translateY(12px);pointer-events:none}@media(prefers-reduced-motion:reduce){.dl-btn,.dl-fab{transition:none}}@media(max-width:860px){.js .ch .copy,.js .ch .art,.js .hero-2,.face{transition:none!important;transform:none;opacity:1}
+@supports(animation-timeline:view()){
+/* ponytail: compositor-driven scroll parallax, no JS, no sticky; browsers without support get the static layout */
+.js .ch .art{animation:par-art linear both;animation-timeline:view()}
+.js .ch .copy,.card{animation:par-in linear both;animation-timeline:view();animation-range:entry 0% cover 35%}
+@keyframes par-art{from{transform:translateY(60px) scale(.94)}to{transform:translateY(-60px) scale(1.04)}}
+@keyframes par-in{from{opacity:.2;transform:translateY(48px)}to{opacity:1;transform:none}}}}
+@media(prefers-reduced-motion:reduce){.js .ch .art,.js .ch .copy,.card{animation:none!important}}
+@media(max-width:860px){.card{position:relative;top:auto}.swap{display:none}.card{overflow:hidden}.card .face{grid-area:2/1;transition:opacity .35s,transform .35s!important}
+.card .face.risk{opacity:1!important;visibility:visible!important;transform:none!important}
+.card .face.guide{opacity:0!important;visibility:hidden!important;transform:translateX(40px)!important;margin-top:0;padding-top:0;border-top:0}
+.card.g .face.risk{opacity:0!important;visibility:hidden!important;transform:translateX(-40px)!important}
+.card.g .face.guide{opacity:1!important;visibility:visible!important;transform:none!important}
+.tog{grid-area:1/1;display:flex;gap:6px;margin-bottom:16px}.tog button{flex:1;font:inherit;font-size:14px;padding:10px;border-radius:999px;border:1px solid var(--fl);background:transparent;color:inherit;cursor:pointer}
+.tog button[aria-pressed=true]{background:var(--fd);color:var(--cream);border-color:transparent}}
+@media(min-width:861px){.tog{display:none}.card.g{background:#e3ece5;border-color:var(--fd)}}
+.brand{position:absolute;top:10px;left:max(2vw,8px);z-index:80;display:block;border-radius:10px}.brand img{display:block;height:clamp(64px,9vw,96px);width:auto}
+.brand:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+/* ponytail: mobile depth = CSS view timelines only (compositor thread, no scroll JS, no sticky), so iOS momentum scroll can't jitter it; unsupported browsers get the static layout */
+@media(max-width:860px){.ch .stage{overflow:clip}.ch .copy,.ch .art,.ch .card{z-index:1}
+@supports(animation-timeline:view()){@media(prefers-reduced-motion:no-preference){
+ .ch .num,.ch .blob{display:block;position:absolute;animation:linear both;animation-timeline:view()}
+ .ch .num{top:0;right:-4vw;font-size:58vw;opacity:.09;animation-name:par-num}
+ .ch .blob{width:95vw;height:95vw;right:-40vw;top:30%;bottom:auto;animation-name:par-blob}
+ .js .ch .art .plate{animation:par-tilt linear both;animation-timeline:view()}
+ .hero-art{animation:par-hero linear both;animation-timeline:view();animation-range:exit 0% exit 100%}
+ .hero-copy{animation:par-fade linear both;animation-timeline:view(block);animation-range:exit -20% exit 60%}
+ @keyframes par-num{from{transform:translateY(45vh)}to{transform:translateY(-35vh)}}
+ @keyframes par-blob{from{transform:translateY(30vh) rotate(0)}to{transform:translateY(-40vh) rotate(80deg)}}
+ @keyframes par-tilt{from{transform:rotate(-4deg) translateX(-6vw)}50%{transform:none}to{transform:rotate(3deg) translateX(4vw)}}
+ @keyframes par-hero{to{transform:translateY(-12vh) scale(1.08)}}
+ @keyframes par-fade{to{opacity:.3;transform:translateY(-6vh)}}}}}
+</style>
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<a class="brand" href="index.html" aria-label="Upstate AI home"><img src="images/logo-white-small.png" width="400" height="252" alt="Upstate AI"></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="jump" aria-label="Jump to a section"><span></span></button>
+<nav class="jump" id="jump" aria-label="Jump to a section" hidden><p>Part 1 &middot; Introducing AI</p><ol><li><a href="#c1">Staff AI tools</a></li><li><a href="#c2">AI in vendor software</a></li><li><a href="#c3">Pilot approval</a></li></ol><p>Part 2 &middot; Everyday use</p><ol><li><a href="#c4">Vendor testing</a></li><li><a href="#c5">Credit decisions</a></li><li><a href="#c6">Chatbot handoff</a></li><li><a href="#c7">Ongoing monitoring</a></li></ol><p>Part 3 &middot; Security &amp; comms</p><ol><li><a href="#c8">Security plan</a></li><li><a href="#c9">Customer disclosure</a></li></ol><p>In practice</p><ol><li><a href="#fh">Next risk review</a></li></ol></nav>
+<nav aria-label="Challenges"><ol class="rail"><li><a href="#c1" aria-label="Challenge 1">1</a></li><li><a href="#c2" aria-label="Challenge 2">2</a></li><li><a href="#c3" aria-label="Challenge 3">3</a></li><li><a href="#c4" aria-label="Challenge 4">4</a></li><li><a href="#c5" aria-label="Challenge 5">5</a></li><li><a href="#c6" aria-label="Challenge 6">6</a></li><li><a href="#c7" aria-label="Challenge 7">7</a></li><li><a href="#c8" aria-label="Challenge 8">8</a></li><li><a href="#c9" aria-label="Challenge 9">9</a></li></ol></nav>
+<main id="main">
+<header class="pin hero">
+ <div class="stage">
+  <div class="layer" style="top:6vh;transform:translateY(calc(var(--p,0)*-10vh))" aria-hidden="true"><svg viewBox="0 0 1440 220"><g fill="#f7f4ea" opacity=".6"><circle cx="0" cy="10" r="1.0"/><circle cx="137" cy="63" r="1.6"/><circle cx="274" cy="116" r="2.2"/><circle cx="411" cy="169" r="1.0"/><circle cx="548" cy="22" r="1.6"/><circle cx="685" cy="75" r="2.2"/><circle cx="822" cy="128" r="1.0"/><circle cx="959" cy="181" r="1.6"/><circle cx="1096" cy="34" r="2.2"/><circle cx="1233" cy="87" r="1.0"/><circle cx="1370" cy="140" r="1.6"/><circle cx="67" cy="193" r="2.2"/><circle cx="204" cy="46" r="1.0"/><circle cx="341" cy="99" r="1.6"/><circle cx="478" cy="152" r="2.2"/><circle cx="615" cy="205" r="1.0"/><circle cx="752" cy="58" r="1.6"/><circle cx="889" cy="111" r="2.2"/><circle cx="1026" cy="164" r="1.0"/><circle cx="1163" cy="17" r="1.6"/><circle cx="1300" cy="70" r="2.2"/><circle cx="1437" cy="123" r="1.0"/><circle cx="134" cy="176" r="1.6"/><circle cx="271" cy="29" r="2.2"/><circle cx="408" cy="82" r="1.0"/><circle cx="545" cy="135" r="1.6"/><circle cx="682" cy="188" r="2.2"/><circle cx="819" cy="41" r="1.0"/><circle cx="956" cy="94" r="1.6"/><circle cx="1093" cy="147" r="2.2"/><circle cx="1230" cy="200" r="1.0"/><circle cx="1367" cy="53" r="1.6"/><circle cx="64" cy="106" r="2.2"/><circle cx="201" cy="159" r="1.0"/><circle cx="338" cy="12" r="1.6"/><circle cx="475" cy="65" r="2.2"/><circle cx="612" cy="118" r="1.0"/><circle cx="749" cy="171" r="1.6"/><circle cx="886" cy="24" r="2.2"/><circle cx="1023" cy="77" r="1.0"/><circle cx="1160" cy="130" r="1.6"/><circle cx="1297" cy="183" r="2.2"/><circle cx="1434" cy="36" r="1.0"/><circle cx="131" cy="89" r="1.6"/><circle cx="268" cy="142" r="2.2"/><circle cx="405" cy="195" r="1.0"/><circle cx="542" cy="48" r="1.6"/><circle cx="679" cy="101" r="2.2"/><circle cx="816" cy="154" r="1.0"/><circle cx="953" cy="207" r="1.6"/><circle cx="1090" cy="60" r="2.2"/><circle cx="1227" cy="113" r="1.0"/><circle cx="1364" cy="166" r="1.6"/><circle cx="61" cy="19" r="2.2"/><circle cx="198" cy="72" r="1.0"/><circle cx="335" cy="125" r="1.6"/><circle cx="472" cy="178" r="2.2"/><circle cx="609" cy="31" r="1.0"/><circle cx="746" cy="84" r="1.6"/><circle cx="883" cy="137" r="2.2"/><circle cx="1020" cy="190" r="1.0"/><circle cx="1157" cy="43" r="1.6"/><circle cx="1294" cy="96" r="2.2"/><circle cx="1431" cy="149" r="1.0"/><circle cx="128" cy="202" r="1.6"/><circle cx="265" cy="55" r="2.2"/><circle cx="402" cy="108" r="1.0"/><circle cx="539" cy="161" r="1.6"/><circle cx="676" cy="14" r="2.2"/><circle cx="813" cy="67" r="1.0"/></g></svg></div>
+  <div class="layer" style="bottom:18vh;transform:translateY(calc(var(--p,0)*6vh))" aria-hidden="true"><svg viewBox="0 0 1440 320" preserveAspectRatio="none"><path d="M0 220 180 120 330 190 520 80 700 170 880 90 1060 180 1250 100 1440 170V320H0Z" fill="#3f7054" opacity=".55"/></svg></div>
+  <div class="layer" style="bottom:8vh;transform:translateY(calc(var(--p,0)*14vh))" aria-hidden="true"><svg viewBox="0 0 1440 320" preserveAspectRatio="none"><path d="M0 250 240 170 420 230 640 150 860 220 1080 160 1300 230 1440 200V320H0Z" fill="#2d5745"/></svg></div>
+  <div class="layer" style="bottom:-2vh;transform:translateY(calc(var(--p,0)*24vh)) scale(calc(1 + var(--p,0)*.25));transform-origin:50% 100%" aria-hidden="true"><svg viewBox="0 0 1440 360"><path d="M0 300 360 250 720 290 1080 240 1440 280V360H0Z" fill="#f7f4ea"/>
+</svg></div>
+  <div class="hero-copy"><p class="eyebrow">Upstate AI &middot; For community bank and credit union leaders</p>
+   <h1>A practical guide to <em>AI</em> for community banks and credit unions</h1>
+   <p class="lede">Artificial intelligence (AI) is becoming part of the software your institution uses and the work your staff do. This guide walks through the decisions that come with it, from approving a new tool to explaining a lending decision. Start with the section closest to what you're working on.</p><img class="hero-art" src="images/undraw/undraw_ai-research-assistant_cxx0.svg" width="340" height="260" alt="" loading="eager">
+   <p class="cue">Read on</p></div>
+  <div class="shade" aria-hidden="true"></div>
+ </div>
+</header>
+
+<section class="pin ch light dome" id="c1" aria-labelledby="h1" style="z-index:2">
+ <div class="stage">
+  <div class="num L1" aria-hidden="true">01</div>
+  <div class="blob L2" aria-hidden="true"></div>
+  <div class="copy L4"><p class="when">Part 1 &middot; Introducing AI</p><h2 id="h1">When staff bring their own AI tools</h2></div>
+  <div class="art L3"><div class="plate"><img class="ud" src="images/undraw/story/story-01.svg" width="960" height="531.938" alt="" loading="lazy" decoding="async"></div></div>
+  <article class="card"><div class="face risk"><h3>An employee wants to use a writing assistant</h3><p>A colleague finds an AI tool that helps draft customer emails. Before using it at work, they need to know whether your institution allows it and which information they can share. Without that guidance, they may use it on their own or give up on a useful idea.</p><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><rect x="80" y="8" width="60" height="26" rx="4" fill="#1a3a2e"/><text x="110" y="26" fill="#f7f4ea" font-size="11" text-anchor="middle">Board</text><path d="M110 34v8M40 52h30M150 52h30M40 52v14M180 52v14" fill="none" stroke="#8a948f" stroke-width="2" stroke-dasharray="4 3"/><g fill="none" stroke="#8a948f" stroke-width="2" stroke-dasharray="4 3"><rect x="10" y="66" width="60" height="24" rx="4"/><rect x="80" y="66" width="60" height="24" rx="4"/><rect x="150" y="66" width="60" height="24" rx="4"/></g><g font-size="10" fill="#8a948f" text-anchor="middle"><text x="40" y="82">Rules ?</text><text x="110" y="82">Owners ?</text><text x="180" y="82">Limits ?</text></g><rect x="50" y="104" width="120" height="26" rx="13" fill="#e6e1d6"/><text x="110" y="121" font-size="10" fill="#1a3a2e" text-anchor="middle">Who approves?</text></svg></div><div class="face guide" aria-hidden="true"><h3>Agree on tools and data first</h3><ul><li>Explain which tools staff may use and what information may go into them.</li><li>Assign an owner to each system and agree with the board on the risks your institution will accept.</li><li>Keep approvals and reviews in one place within the existing risk program.</li></ul><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><g fill="none" stroke="#1a3a2e" stroke-width="2">
+<rect x="80" y="8" width="60" height="26" rx="4" fill="#1a3a2e"/><text x="110" y="26" fill="#f7f4ea" font-size="11" text-anchor="middle" stroke="none">Board</text>
+<path d="M110 34v18M40 52h140M40 52v14M110 52v14M180 52v14"/>
+<rect x="10" y="66" width="60" height="24" rx="4"/><rect x="80" y="66" width="60" height="24" rx="4"/><rect x="150" y="66" width="60" height="24" rx="4"/></g>
+<g font-size="10" fill="#1a3a2e" text-anchor="middle"><text x="40" y="82">Rules</text><text x="110" y="82">Owners</text><text x="180" y="82">Limits</text></g>
+<rect x="50" y="104" width="120" height="26" rx="13" fill="#ff6900"/><text x="110" y="121" font-size="10" fill="#1a3a2e" text-anchor="middle">Reviews on file</text></svg></div></article><div class="swap" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+ </div>
+</section>
+<section class="pin ch dark rise" id="c2" aria-labelledby="h2" style="z-index:3">
+ <div class="stage">
+  <div class="num L1" aria-hidden="true">02</div>
+  <div class="blob L2" aria-hidden="true"></div>
+  <div class="copy L4"><p class="when">Part 1 &middot; Introducing AI</p><h2 id="h2">AI in the software you already use</h2></div>
+  <div class="art L3"><div class="plate"><img class="ud" src="images/undraw/story/story-02.svg" width="960" height="699.299" alt="" loading="lazy" decoding="async"></div></div>
+  <article class="card"><div class="face risk"><h3>A vendor adds a feature</h3><p>An update to your fraud platform or customer-management software includes AI. Your team may not have bought it separately, so it can be missing from the institution's AI inventory. The same goes for tools staff have started using themselves.</p><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><g font-size="10" fill="#1a3a2e"><text x="8" y="16">In-house</text><text x="8" y="56">Vendor features</text><text x="8" y="96">Staff-added</text></g><rect x="8" y="22" width="60" height="14" fill="#2d5745"/><g fill="none" stroke="#8a948f" stroke-width="2" stroke-dasharray="4 3"><rect x="8" y="62" width="150" height="14"/><rect x="8" y="102" width="110" height="14"/></g><g font-size="10" fill="#8a948f"><text x="166" y="73">?</text><text x="126" y="113">?</text></g><text x="8" y="134" font-size="9" fill="#1a3a2e" opacity=".7">Vendor and staff tools missing</text></svg></div><div class="face guide" aria-hidden="true"><h3>Include it in your vendor review</h3><ul><li>Ask what AI features are available, which are enabled, and what data they can access.</li><li>Include vendor features and staff-added tools alongside anything your institution has built.</li><li>Prioritize uses that affect credit, sensitive customer data, or fair treatment.</li></ul><svg viewBox="0 0 220 140" class="fig" aria-hidden="true">
+<g font-size="10" fill="#1a3a2e"><text x="8" y="16">In-house</text><text x="8" y="56">Vendor features</text><text x="8" y="96">Staff-added</text></g>
+<rect x="8" y="22" width="60" height="14" fill="#2d5745"/><rect x="8" y="62" width="150" height="14" fill="#2d5745"/><rect x="8" y="102" width="110" height="14" fill="#ff6900"/>
+<text x="8" y="134" font-size="9" fill="#1a3a2e" opacity=".7">Illustration, not measured data</text></svg></div></article><div class="swap" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+ </div>
+</section>
+<section class="pin ch light dome" id="c3" aria-labelledby="h3" style="z-index:4">
+ <div class="stage">
+  <div class="num L1" aria-hidden="true">03</div>
+  <div class="blob L2" aria-hidden="true"></div>
+  <div class="copy L4"><p class="when">Part 1 &middot; Introducing AI</p><h2 id="h3">Getting an AI pilot approved</h2></div>
+  <div class="art L3"><div class="plate"><img class="ud" src="images/undraw/story/story-03.svg" width="960" height="552.586" alt="" loading="lazy" decoding="async"></div></div>
+  <article class="card"><div class="face risk"><h3>Compliance joins late in the pilot</h3><p>A team is ready to launch, but compliance is only just hearing about the project. Questions about privacy or fair lending send the team back to work. An early review would have helped them plan for those requirements.</p><svg viewBox="0 0 262 140" class="fig" aria-hidden="true"><path d="M10 70h70M140 70h70" stroke="#1a3a2e" stroke-width="2" fill="none"/><rect x="80" y="40" width="60" height="60" rx="6" fill="none" stroke="#8a948f" stroke-width="2" stroke-dasharray="4 3"/><text x="110" y="74" fill="#8a948f" font-size="11" text-anchor="middle">No review</text><rect x="210" y="58" width="44" height="24" rx="12" fill="#e6e1d6"/><text x="232" y="74" font-size="9" fill="#1a3a2e" text-anchor="middle">Live</text><g font-size="9" fill="#8a948f"><text x="150" y="30">Fair lending ?</text><text x="150" y="118">Ad claims ?</text></g></svg></div><div class="face guide" aria-hidden="true"><h3>Set up the review before testing begins</h3><ul><li>Give staff a contact for proposed AI uses and identify who needs to review each one.</li><li>Match the legal, fairness, and privacy review to the proposed use.</li><li>Agree on launch criteria. Include fair lending specialists for credit uses and advertising review for customer claims.</li></ul><svg viewBox="0 0 262 140" class="fig" aria-hidden="true"><g stroke="#1a3a2e" stroke-width="2" fill="none">
+<path d="M10 70h70"/><rect x="80" y="40" width="60" height="60" rx="6" fill="#1a3a2e"/><path d="M140 70l30-40h40M140 70l30 0h40M140 70l30 40h40"/></g>
+<text x="110" y="74" fill="#f7f4ea" font-size="11" text-anchor="middle">Review</text>
+<g font-size="9" fill="#1a3a2e"><text x="176" y="24">Credit: fair lending</text><text x="176" y="64">Approved</text><text x="176" y="126">Ad claims: review</text></g></svg></div></article><div class="swap" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+ </div>
+</section>
+<section class="pin ch dark rise" id="c4" aria-labelledby="h4" style="z-index:5">
+ <div class="stage">
+  <div class="num L1" aria-hidden="true">04</div>
+  <div class="blob L2" aria-hidden="true"></div>
+  <div class="copy L4"><p class="when">Part 2 &middot; Everyday use</p><h2 id="h4">Checking a vendor's test results</h2></div>
+  <div class="art L3"><div class="plate"><img class="ud" src="images/undraw/story/story-04.svg" width="960" height="556.179" alt="" loading="lazy" decoding="async"></div></div>
+  <article class="card"><div class="face risk"><h3>The evidence comes from a different setting</h3><p>A vendor's results can help you assess a model, but its tests may use different data or customers from yours. Before relying on the tool, your team needs evidence that it suits the work you intend to give it.</p><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><rect x="10" y="50" width="70" height="40" rx="6" fill="#1a3a2e"/><text x="45" y="74" fill="#f7f4ea" font-size="10" text-anchor="middle">Vendor</text><path d="M80 70h50" fill="none" stroke="#8a948f" stroke-width="2" stroke-dasharray="4 3"/><rect x="130" y="50" width="80" height="40" rx="6" fill="none" stroke="#8a948f" stroke-width="2" stroke-dasharray="4 3"/><text x="170" y="74" fill="#8a948f" font-size="10" text-anchor="middle">Our cases?</text><rect x="20" y="104" width="180" height="26" rx="13" fill="#e6e1d6"/><text x="110" y="121" font-size="10" fill="#1a3a2e" text-anchor="middle">Vendor results only</text></svg></div><div class="face guide" aria-hidden="true"><h3>Test it on the work you plan to use it for</h3><ul><li>Validate models before use, with testing proportionate to their risk.</li><li>Review vendor evidence, test relevant cases, and record the limitations.</li><li>Include support, model changes, and ongoing review in vendor management.</li></ul><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><rect x="10" y="50" width="70" height="40" rx="6" fill="#1a3a2e"/><text x="45" y="74" fill="#f7f4ea" font-size="10" text-anchor="middle">Vendor</text><path d="M80 70h50" stroke="#1a3a2e" stroke-width="2"/><rect x="130" y="50" width="80" height="40" rx="6" fill="#fff" stroke="#1a3a2e" stroke-width="2"/><text x="170" y="74" fill="#1a3a2e" font-size="10" text-anchor="middle">Our cases</text><rect x="20" y="104" width="180" height="26" rx="13" fill="#ff6900"/><text x="110" y="121" font-size="10" fill="#1a3a2e" text-anchor="middle">Tested for this use</text></svg></div></article><div class="swap" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+ </div>
+</section>
+<section class="pin ch light dome" id="c5" aria-labelledby="h5" style="z-index:6">
+ <div class="stage">
+  <div class="num L1" aria-hidden="true">05</div>
+  <div class="blob L2" aria-hidden="true"></div>
+  <div class="copy L4"><p class="when">Part 2 &middot; Everyday use</p><h2 id="h5">Explaining an AI-assisted credit decision</h2></div>
+  <div class="art L3"><div class="plate"><img class="ud" src="images/undraw/story/story-05.svg" width="742.853" height="799.999" alt="" loading="lazy" decoding="async"></div></div>
+  <article class="card"><div class="face risk"><h3>The decline notice gives a vague reason</h3><p>A borrower receives a decline, but the notice doesn't explain what drove it. Your lending team needs to trace the decision and provide the required reasons. Using AI doesn't change the institution's fair lending or notice obligations.</p><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><rect x="20" y="8" width="180" height="124" rx="4" fill="#fff" stroke="#1a3a2e" stroke-width="2"/><g font-size="10" fill="#1a3a2e"><text x="32" y="30" font-weight="700">Principal reasons</text></g><g fill="#8a948f" font-size="10"><text x="32" y="54">1. Insufficient profile</text><text x="32" y="74">2. Other</text></g><path d="M32 90h120M32 100h90" fill="none" stroke="#8a948f" stroke-width="2" stroke-dasharray="4 3"/><text x="32" y="122" font-size="9" fill="#1a3a2e">The reason is still unclear</text></svg></div><div class="face guide" aria-hidden="true"><h3>Connect the notice to the decision</h3><ul><li>Test for unfair outcomes and inputs that may stand in for protected characteristics.</li><li>Check that the reasons in the notice reflect the actual decision.</li><li>Meet applicable Equal Credit Opportunity Act (ECOA) and Fair Credit Reporting Act (FCRA) notice requirements and retain supporting records.</li></ul><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><rect x="20" y="8" width="180" height="124" rx="4" fill="#fff" stroke="#1a3a2e" stroke-width="2"/>
+<g font-size="10" fill="#1a3a2e"><text x="32" y="30" font-weight="700">Principal reasons</text>
+<text x="32" y="54">1. Insufficient cash flow</text><text x="32" y="74">2. Limited operating history</text><text x="32" y="94">3. Recent credit delinquency</text></g>
+<path d="M32 112h24" stroke="#ff6900" stroke-width="4"/><text x="62" y="116" font-size="9" fill="#1a3a2e">Match the actual decision</text></svg></div></article><div class="swap" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+ </div>
+</section>
+<section class="pin ch dark rise" id="c6" aria-labelledby="h6" style="z-index:7">
+ <div class="stage">
+  <div class="num L1" aria-hidden="true">06</div>
+  <div class="blob L2" aria-hidden="true"></div>
+  <div class="copy L4"><p class="when">Part 2 &middot; Everyday use</p><h2 id="h6">Helping customers when the chatbot falls short</h2></div>
+  <div class="art L3"><div class="plate"><img class="ud" src="images/undraw/story/story-06.svg" width="802.808" height="800.001" alt="" loading="lazy" decoding="async"></div></div>
+  <article class="card"><div class="face risk"><h3>A customer gets the wrong fee information</h3><p>The chatbot gives an incorrect answer about a fee. The customer then has to find someone who can resolve it, often repeating the conversation. A handoff that carries the context through helps staff take over.</p><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><rect x="10" y="50" width="60" height="40" rx="6" fill="#1a3a2e"/><text x="40" y="74" fill="#f7f4ea" font-size="10" text-anchor="middle">Bot</text><path d="M70 70h80" stroke="#1a3a2e" stroke-width="2" fill="none"/><rect x="150" y="50" width="60" height="40" rx="6" fill="#fff" stroke="#1a3a2e" stroke-width="2"/><text x="180" y="74" fill="#1a3a2e" font-size="10" text-anchor="middle">Customer</text><rect x="80" y="14" width="60" height="24" rx="4" fill="none" stroke="#8a948f" stroke-width="2" stroke-dasharray="4 3"/><text x="110" y="30" fill="#8a948f" font-size="10" text-anchor="middle">Staff?</text><rect x="40" y="104" width="140" height="26" rx="13" fill="#e6e1d6"/><text x="110" y="121" font-size="10" fill="#1a3a2e" text-anchor="middle">Wrong answer, no handoff</text></svg></div><div class="face guide" aria-hidden="true"><h3>Plan the handoff to staff</h3><ul><li>Check answers against approved rates, fees, and terms, and define where human review is needed.</li><li>Require human approval before AI takes a consequential action.</li><li>Make it easy to reach staff and give them the conversation history they need.</li></ul><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><rect x="10" y="50" width="60" height="40" rx="6" fill="#1a3a2e"/><text x="40" y="74" fill="#f7f4ea" font-size="10" text-anchor="middle">Bot</text><path d="M70 70h80M40 50V26h40M140 26h40v24" stroke="#1a3a2e" stroke-width="2" fill="none"/><rect x="150" y="50" width="60" height="40" rx="6" fill="#fff" stroke="#1a3a2e" stroke-width="2"/><text x="180" y="74" fill="#1a3a2e" font-size="10" text-anchor="middle">Customer</text><rect x="80" y="14" width="60" height="24" rx="4" fill="#2d5745"/><text x="110" y="30" fill="#f7f4ea" font-size="10" text-anchor="middle">Staff</text><rect x="40" y="104" width="140" height="26" rx="13" fill="#ff6900"/><text x="110" y="121" font-size="10" fill="#1a3a2e" text-anchor="middle">Reviewed, path to a person</text></svg></div></article><div class="swap" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+ </div>
+</section>
+<section class="pin ch light dome" id="c7" aria-labelledby="h7" style="z-index:8">
+ <div class="stage">
+  <div class="num L1" aria-hidden="true">07</div>
+  <div class="blob L2" aria-hidden="true"></div>
+  <div class="copy L4"><p class="when">Part 2 &middot; Everyday use</p><h2 id="h7">Keeping track of AI after launch</h2></div>
+  <div class="art L3"><div class="plate"><img class="ud" src="images/undraw/story/story-07.svg" width="960" height="556.179" alt="" loading="lazy" decoding="async"></div></div>
+  <article class="card"><div class="face risk"><h3>Staff start working around errors</h3><p>A tool that passed testing begins making more mistakes. Staff correct them as they go, but nobody records the pattern. A change in the data or a vendor update may need attention beyond those individual fixes.</p><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><path d="M10 120h200M10 120V10" stroke="#1a3a2e" stroke-width="2"/><path d="M10 40L40 42 70 38 100 44 130 58 160 72 190 84 210 90" fill="none" stroke="#8a948f" stroke-width="2" stroke-dasharray="4 3"/><text x="130" y="30" font-size="10" fill="#8a948f">When to act?</text><text x="14" y="134" font-size="9" fill="#1a3a2e" opacity=".7">A change goes unnoticed</text></svg></div><div class="face guide" aria-hidden="true"><h3>Give someone responsibility for follow-up</h3><ul><li>Track performance and give staff a way to report errors and near misses.</li><li>Set review triggers and name someone with authority to pause the tool.</li><li>Test the fallback process before you need to pause or retire the system.</li></ul><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><path d="M10 120h200M10 120V10" stroke="#1a3a2e" stroke-width="2"/>
+<path d="M10 40L40 42 70 38 100 44 130 58 160 72 190 84 210 90" fill="none" stroke="#2d5745" stroke-width="3"/>
+<path d="M10 60h200" stroke="#ff6900" stroke-dasharray="5 4" stroke-width="2"/><text x="150" y="54" font-size="9" fill="#1a3a2e">Review trigger</text>
+<text x="14" y="134" font-size="9" fill="#1a3a2e" opacity=".7">Illustrative performance trend</text></svg></div></article><div class="swap" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+ </div>
+</section>
+<section class="pin ch dark rise" id="c8" aria-labelledby="h8" style="z-index:9">
+ <div class="stage">
+  <div class="num L1" aria-hidden="true">08</div>
+  <div class="blob L2" aria-hidden="true"></div>
+  <div class="copy L4"><p class="when">Part 3 &middot; Security and communications</p><h2 id="h8">Updating your security plan for AI</h2></div>
+  <div class="art L3"><div class="plate"><img class="ud" src="images/undraw/story/story-08.svg" width="799.031" height="618.112" alt="" loading="lazy" decoding="async"></div></div>
+  <article class="card"><div class="face risk"><h3>Impersonation and file access need attention</h3><p>A caller can use an AI-generated voice to impersonate an executive. Inside your institution, an AI assistant can make overshared files easier to find. These are different risks, but both belong in your existing security planning.</p><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><g font-size="10" fill="#1a3a2e"><text x="8" y="22">Banks</text><text x="8" y="50">Credit unions</text><text x="8" y="90">State</text></g><g fill="none" stroke="#8a948f" stroke-width="2" stroke-dasharray="4 3"><rect x="82" y="10" width="126" height="18"/><rect x="82" y="38" width="126" height="18"/><rect x="82" y="78" width="126" height="18"/></g><g font-size="10" fill="#8a948f"><text x="138" y="23">? h</text><text x="138" y="51">? h</text><text x="138" y="91">? h</text></g><text x="8" y="120" font-size="9" fill="#1a3a2e">Which rule applies, and when?</text></svg></div><div class="face guide" aria-hidden="true"><h3>Rehearse the response with your team</h3><ul><li>Practice verifying unusual requests through a known contact, even when the voice sounds familiar.</li><li>Review file permissions before enabling an AI assistant and use phishing-resistant sign-in protection.</li><li>Record each regulator's reporting requirements, including what starts the clock and when notice is due.</li></ul><svg viewBox="0 0 220 140" class="fig" aria-hidden="true">
+<g font-size="10" fill="#1a3a2e"><text x="8" y="22">Banks</text><text x="8" y="50">Credit unions</text><text x="8" y="90">State</text></g>
+<rect x="82" y="10" width="126" height="18" fill="#e6e1d6"/><rect x="82" y="10" width="37" height="18" fill="#ff6900"/><text x="124" y="23" font-size="10" fill="#1a3a2e">36 h</text><rect x="82" y="38" width="126" height="18" fill="#e6e1d6"/><rect x="82" y="38" width="76" height="18" fill="#ff6900"/><text x="163" y="51" font-size="10" fill="#1a3a2e">72 h</text>
+<rect x="82" y="78" width="126" height="18" fill="#2d5745"/><text x="150" y="91" font-size="10" fill="#f7f4ea">Check rule</text>
+<text x="8" y="120" font-size="9" fill="#1a3a2e">Clock starts after a qualifying determination</text></svg></div></article><div class="swap" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+ </div>
+</section>
+<section class="pin ch light dome" id="c9" aria-labelledby="h9" style="z-index:10">
+ <div class="stage">
+  <div class="num L1" aria-hidden="true">09</div>
+  <div class="blob L2" aria-hidden="true"></div>
+  <div class="copy L4"><p class="when">Part 3 &middot; Security and communications</p><h2 id="h9">Talking to customers about AI</h2></div>
+  <div class="art L3"><div class="plate"><img class="ud" src="images/undraw/story/story-09.svg" width="891.191" height="800" alt="" loading="lazy" decoding="async"></div></div>
+  <article class="card"><div class="face risk"><h3>A draft promises more than the evidence shows</h3><p>An announcement describes AI-assisted decisions as faster or fairer. Those claims need support before publication, whether a person or an AI tool wrote the draft. Customers will reasonably expect the service to match the description.</p><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><rect x="10" y="50" width="70" height="40" rx="6" fill="#1a3a2e"/><text x="45" y="74" fill="#f7f4ea" font-size="10" text-anchor="middle">AI claim</text><path d="M80 70h60" stroke="#1a3a2e" stroke-width="2" fill="none"/><rect x="140" y="50" width="70" height="40" rx="6" fill="#fff" stroke="#1a3a2e" stroke-width="2"/><text x="175" y="74" fill="#1a3a2e" font-size="10" text-anchor="middle">Published</text><rect x="80" y="14" width="60" height="24" rx="4" fill="none" stroke="#8a948f" stroke-width="2" stroke-dasharray="4 3"/><text x="110" y="30" fill="#8a948f" font-size="10" text-anchor="middle">Review ?</text><rect x="50" y="104" width="120" height="26" rx="13" fill="#e6e1d6"/><text x="110" y="121" font-size="10" fill="#1a3a2e" text-anchor="middle">Evidence missing</text></svg></div><div class="face guide" aria-hidden="true"><h3>Use your advertising review process</h3><ul><li>Keep evidence for each external claim about what the AI does.</li><li>Review AI-drafted customer messages for accuracy before staff send them.</li><li>Explain limitations that affect what customers can expect.</li></ul><svg viewBox="0 0 220 140" class="fig" aria-hidden="true"><rect x="10" y="50" width="70" height="40" rx="6" fill="#1a3a2e"/><text x="45" y="74" fill="#f7f4ea" font-size="10" text-anchor="middle">AI claim</text><path d="M45 50V26h35M140 26h35v24" stroke="#1a3a2e" stroke-width="2" fill="none"/><rect x="140" y="50" width="70" height="40" rx="6" fill="#fff" stroke="#1a3a2e" stroke-width="2"/><text x="175" y="74" fill="#1a3a2e" font-size="10" text-anchor="middle">Published</text><rect x="80" y="14" width="60" height="24" rx="4" fill="#2d5745"/><text x="110" y="30" fill="#f7f4ea" font-size="10" text-anchor="middle">Ad review</text><rect x="50" y="104" width="120" height="26" rx="13" fill="#ff6900"/><text x="110" y="121" font-size="10" fill="#1a3a2e" text-anchor="middle">Evidence checked</text></svg></div></article><div class="swap" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+ </div>
+</section>
+<section class="finale" aria-labelledby="fh">
+ <h2 id="fh">Working this into your next risk review</h2>
+ <p class="sub">You can use these examples in the vendor, lending, and security reviews your institution already runs. Choose a tool you're using or considering, and work through the relevant sections with the people responsible for it.</p>
+ <p class="check">Ask the person responsible for the tool to bring its approval record and latest review. Note any gaps and agree who will follow up.</p>
+ <p class="offer">The guide gives you the questions. We help with the answers: an inventory of the AI you already have, a design for what happens when it fails, and a check that what gets built matches that design.</p>
+ <p class="cta">Pick one tool you're about to approve and work through it with us in 30 minutes. <a class="book" href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Book a session</a></p>
+ <div class="ud-end"><img class="ud" src="images/undraw/undraw_business-decisions_7vkl.svg" width="340" height="260" alt="" loading="lazy"></div>
+</section>
+<section class="dl" id="guide" aria-labelledby="dlh">
+ <h2 id="dlh">Keep a copy for your team</h2>
+ <p>Share it with the colleagues involved in your institution's AI decisions.</p>
+ <a class="dl-btn" href="guides/ai-bank-guide.pdf" download>Download the PDF</a>
+</section>
+</main>
+<a class="dl-fab" href="guides/ai-bank-guide.pdf" download>Guide PDF &darr;</a>
+<script>
+function setFace(c,g){c.classList.toggle('g',g);c.querySelector('.guide').setAttribute('aria-hidden',!g);c.querySelector('.risk').setAttribute('aria-hidden',g);const[b0,b1]=c.querySelector('.tog').children;b0.setAttribute('aria-pressed',!g);b1.setAttribute('aria-pressed',g)}
+// mobile challenge/solution toggle: buttons + horizontal swipe
+document.querySelectorAll('.card').forEach(c=>{const t=document.createElement('div');t.className='tog';t.innerHTML='<button type="button" aria-pressed="true">The challenge</button><button type="button" aria-pressed="false">The solution</button>';const[b0,b1]=t.children;const set=g=>setFace(c,g);b0.onclick=()=>set(false);b1.onclick=()=>set(true);c.prepend(t);if(innerWidth<=860)set(false);let x0=null,y0;c.addEventListener('touchstart',e=>{x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});c.addEventListener('touchend',e=>{if(x0===null||innerWidth>860)return;const dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;x0=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy))set(dx<0)},{passive:true})});
+</script>
+<script>
+(()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+const root=document.documentElement,mobile=matchMedia('(max-width:860px)');
+// mobile: iOS momentum scroll + sticky + per-frame style writes is what reads as glitchy; reveal once, then leave the DOM alone
+const io=new IntersectionObserver(es=>es.forEach(e=>{e.target.classList.toggle('in',e.isIntersecting)}),{rootMargin:'-8% 0px -12% 0px'});
+document.querySelectorAll('.ch .copy,.ch .art,.hero-2').forEach(el=>{io.observe(el)});
+const pins=[...document.querySelectorAll('.pin')],links=[...document.querySelectorAll('.rail a')];
+
+// mobile swap: marker crossing the viewport middle flips the card; one crossing, so no scrub and no flicker
+const cl=v=>v<0?0:v>1?1:v,ramp=(p,a,b)=>cl((p-a)/(b-a));
+function frame(){const h=innerHeight;ticking=false;
+ const pr=(scrollY/(root.scrollHeight-h)).toFixed(4);if(pr!==lastProg){lastProg=pr;root.style.setProperty('--prog',pr)}
+ if(mobile.matches)return;let cur=0;
+ for(const s of pins){const r=s.getBoundingClientRect();if(r.bottom<-h||r.top>h*1.5)continue;
+  const span=r.height-h,p=cl(-r.top/span),cover=h/span; // last `cover` of p is when the next scene slides over
+  const x=ramp(p,1-cover,1),e=cl(1-r.top/h),st=s.style;
+  st.setProperty('--p',p.toFixed(4));st.setProperty('--x',x.toFixed(4));st.setProperty('--e',e.toFixed(4));
+  if(s.classList.contains('ch')){ // cards are binary: shown or hidden, the CSS transition does the motion
+   const c=s.querySelector('.card');c.classList.toggle('on',p>=.1);
+   if(p>.44!==c.classList.contains('g')&&(p>.44||p<.38))setFace(c,p>.44); // .38/.44 slack: no flicker at the threshold
+   if(r.top<h/2)cur=s.id}}
+ links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur))}
+let ticking=false,lastProg;addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}},{passive:true});addEventListener('resize',frame);frame();})();
+</script>
+<script>
+(()=>{const b=document.querySelector('.menu-btn'),n=document.getElementById('jump');
+const set=o=>{b.setAttribute('aria-expanded',o);n.hidden=!o;if(o)n.querySelector('a').focus()};
+const close=()=>{if(!n.hidden){set(false);b.focus()}};
+b.addEventListener('click',()=>n.hidden?set(true):close());
+n.addEventListener('click',e=>{if(e.target.closest('a'))set(false)});
+addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+addEventListener('click',e=>{if(!n.hidden&&!n.contains(e.target)&&!b.contains(e.target))set(false)});})();
+</script><script>(()=>{const f=document.querySelector('.dl-fab');new IntersectionObserver(([e])=>{f.classList.toggle('off',e.isIntersecting);f.tabIndex=e.isIntersecting?-1:0}).observe(document.getElementById('guide'))})();</script>
+</body></html>
