@@ -74,4 +74,4 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .navbar .mobile-toggle { order: 2; }
 .hero-cta-note { margin-top: var(--space-sm); max-width: 34rem; font-size: 0.95rem; line-height: 1.5; color: var(--forest-light); }
 .hero h1 { line-height: 1.05; }
-@media (min-width: 769px) { .footer-links { flex-wrap: nowrap; gap: var(--space-sm) 1.1rem; } .footer-links a { font-size: 0.8rem; white-space: nowrap; } }
+@media (min-width: 769px) { .footer-links { gap: var(--space-sm) 1.1rem; } .footer-links a { font-size: 0.8rem; white-space: nowrap; } }
