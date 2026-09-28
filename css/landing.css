@@ -721,5 +721,6 @@ a:hover { color: var(--orange-light); }
 .section-title { font-family: var(--font-serif); font-weight: 400; font-size: clamp(2rem, 1.2rem + 3.5vw, 3.5rem); color: var(--text-dark); margin-bottom: var(--space-xs); }
 .section-subtitle { color: var(--text-muted); font-size: 1.1rem; margin-bottom: var(--space-md); }
 .text-orange { color: var(--orange); }
-.hero-sub { position: relative; z-index: 1; margin-top: var(--space-md); }
+.hero-sub { position: relative; z-index: 1; margin-top: calc(var(--space-md) * 1.5); } /* 75% of old h1 margin + sub margin */
 .hero-sub .hero-lead, .hero-sub .hero-body { max-width: none; }
+.hero-grid .hero-content h1 { margin-bottom: 0; }
