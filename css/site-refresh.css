@@ -102,5 +102,5 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .detail-meta { font-size: 0.95rem; color: var(--text-muted); }
 .detail-body { max-width: 62ch; margin-bottom: var(--space-sm); }
 .detail-note { max-width: 62ch; font-size: 0.95rem; color: var(--text-muted); border-left: 3px solid var(--orange); padding-left: var(--space-sm); }
-.detail-back { margin-top: var(--space-md); }
+.final-cta > .container > p.detail-back { margin-top: var(--space-md); }
 .detail-back a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
