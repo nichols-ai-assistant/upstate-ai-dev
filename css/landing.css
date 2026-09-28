@@ -493,7 +493,7 @@ a:hover { color: var(--orange-light); }
     margin-bottom: var(--space-lg); max-width: 540px;
 }
 .about-lead.about-name {
-    font-weight: 600; color: var(--text); margin-bottom: var(--space-xs);
+    font-weight: 600; color: var(--text-dark); margin-bottom: var(--space-xs);
 }
 
 .credentials-list { display: flex; flex-direction: column; gap: var(--space-md); }
