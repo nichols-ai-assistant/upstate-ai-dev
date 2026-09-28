@@ -75,11 +75,3 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .hero-cta-note { margin-top: var(--space-sm); max-width: 34rem; font-size: 0.95rem; line-height: 1.5; color: var(--forest-light); }
 .hero h1 { line-height: 1.05; }
 @media (min-width: 769px) { .footer-links { gap: var(--space-sm) 1.1rem; } .footer-links a { font-size: 0.8rem; white-space: nowrap; } }
-
-/* Reassure section: cards, icons, art */
-.reassure .container { position: relative; }
-.reassure-art { position: absolute; top: 0; right: var(--space-md); width: 220px; height: auto; opacity: 0.9; }
-.reassure-card { background: var(--white); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-top: 3px solid var(--orange); padding: var(--space-md); transition: transform var(--transition), box-shadow var(--transition); }
-.reassure-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
-.reassure-icon { width: 40px; height: 40px; padding: 8px; margin-bottom: var(--space-sm); border-radius: 50%; background: var(--orange-glow); fill: none; stroke: var(--orange); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-@media (max-width: 900px) { .reassure-art { display: none; } }
