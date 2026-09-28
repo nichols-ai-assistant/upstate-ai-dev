@@ -142,3 +142,4 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
     .bk-timeline li:not(:last-child)::after { top: 2.75rem; left: 1.375rem; right: auto; width: 2px; height: calc(100% - 0.75rem); }
     .bk-outcome-art { width: 200px; }
 }
+.bk-outcome-panel .detail-note { margin-top: var(--space-md); }
