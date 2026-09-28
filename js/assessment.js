@@ -78,7 +78,7 @@
             min: 49, max: 60,
             icon: '\u2B50', // star
             cssClass: 'tier-leader',
-            service: 'Part-Time AI Consultant',
+            service: 'Fractional Chief AI Officer',
             servicePrice: '$5,000/mo',
             serviceSlug: 'part-time-ai-consultant',
             serviceDesc: '10 hours per month of fractional AI leadership from someone who\'s been behind the vendor curtain. Strategic guidance, vendor evaluation, and on-demand answers. Building your judgment, not your dependency.',
