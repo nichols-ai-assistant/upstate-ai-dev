@@ -104,3 +104,41 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .detail-note { max-width: 62ch; font-size: 0.95rem; color: var(--text-muted); border-left: 3px solid var(--orange); padding-left: var(--space-sm); }
 .final-cta > .container > p.detail-back { margin-top: var(--space-md); }
 .detail-back a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+/* Banking detail pages: shared components (bk-) */
+.bk-hero { padding: clamp(2.5rem, 2rem + 3vw, 4.5rem) 0; }
+.bk-hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: var(--space-lg); align-items: center; }
+.bk-hero-aside { position: relative; display: flex; flex-direction: column; align-items: center; }
+.bk-hero-art { width: 100%; max-width: 440px; height: auto; }
+.bk-price-panel { position: relative; margin-top: -2.5rem; align-self: flex-end; background: var(--forest-dark); color: var(--white); border-radius: var(--radius-lg); padding: 1.5rem 1.75rem; box-shadow: var(--shadow-lg); border-top: 4px solid var(--orange); max-width: 300px; }
+.page-intro .bk-price-panel p { color: rgba(255,255,255,0.8); font-size: 0.95rem; margin: 0; }
+.page-intro .bk-price-panel .offer-price { font-size: clamp(2.4rem, 2rem + 1.5vw, 3.2rem); color: var(--white); line-height: 1; margin-bottom: 0.6rem; }
+.bk-split, .bk-agenda, .bk-outcome { padding: clamp(3.5rem, 3rem + 3vw, 6rem) 0; }
+.bk-split { background: var(--warm-white); }
+.bk-split-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: var(--space-lg); align-items: center; }
+.bk-split-art img { width: 100%; height: auto; }
+.bk-split .section-sub { margin-bottom: var(--space-md); }
+.bk-situations { list-style: none; padding: 0; display: grid; gap: var(--space-sm); }
+.bk-situations li { background: var(--white); border-radius: var(--radius-md); padding: 1rem 1.25rem 1rem 3rem; position: relative; box-shadow: var(--shadow-sm); }
+.bk-situations li::before { content: ""; position: absolute; left: 1.25rem; top: 1.45rem; width: 10px; height: 10px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 0 4px var(--orange-glow); }
+.bk-agenda { background: var(--forest-dark); }
+.bk-agenda h2 { color: var(--white); margin-bottom: var(--space-md); }
+.bk-timeline { list-style: none; padding: 0; counter-reset: bkstep; display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-sm); position: relative; }
+.bk-timeline li { counter-increment: bkstep; position: relative; padding-top: 3.75rem; }
+.bk-timeline li::before { content: counter(bkstep, decimal-leading-zero); position: absolute; top: 0; left: 0; width: 2.75rem; height: 2.75rem; border-radius: 50%; display: grid; place-items: center; font-family: var(--font-serif); font-size: 1.1rem; background: var(--orange); color: var(--white); z-index: 1; }
+.bk-timeline li:not(:last-child)::after { content: ""; position: absolute; top: 1.375rem; left: 2.75rem; right: calc(-1 * var(--space-sm)); height: 2px; background: rgba(255,255,255,0.2); }
+.bk-timeline p { color: rgba(255,255,255,0.85); font-size: 0.98rem; }
+.bk-outcome { background: var(--cream); }
+.bk-outcome-panel { display: grid; grid-template-columns: 1fr auto; gap: var(--space-lg); align-items: center; background: var(--white); border-radius: var(--radius-lg); padding: clamp(1.75rem, 1rem + 3vw, 3.5rem); box-shadow: var(--shadow-md); border-left: 6px solid var(--orange); }
+.bk-outcome-panel h2 { margin-bottom: var(--space-sm); }
+.bk-outcome-panel .detail-body { margin-bottom: 0; font-size: 1.1rem; color: var(--text-body); }
+.bk-outcome-art { width: 280px; max-width: 100%; height: auto; }
+@media (max-width: 900px) {
+    .bk-hero-grid, .bk-split-grid, .bk-outcome-panel { grid-template-columns: 1fr; gap: var(--space-md); }
+    .bk-hero-art { max-width: 320px; }
+    .bk-price-panel { align-self: stretch; max-width: none; }
+    .bk-split-art { max-width: 300px; }
+    .bk-timeline { grid-template-columns: 1fr; gap: var(--space-md); }
+    .bk-timeline li { padding: 0.4rem 0 0 4rem; min-height: 2.75rem; }
+    .bk-timeline li:not(:last-child)::after { top: 2.75rem; left: 1.375rem; right: auto; width: 2px; height: calc(100% - 0.75rem); }
+    .bk-outcome-art { width: 200px; }
+}
