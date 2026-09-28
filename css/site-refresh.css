@@ -83,3 +83,4 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .reassure-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 .reassure-icon { width: 40px; height: 40px; padding: 8px; margin-bottom: var(--space-sm); border-radius: 50%; background: var(--orange-glow); fill: none; stroke: var(--orange); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 @media (max-width: 900px) { .reassure-art { display: none; } }
+@media (min-width: 901px) { .reassure h2, .reassure .section-sub { max-width: calc(100% - 260px); } }
