@@ -76,4 +76,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .hero h1 { line-height: 1.05; }
 @media (min-width: 769px) { .footer-links { gap: var(--space-sm) 1.1rem; } .footer-links a { font-size: 0.8rem; white-space: nowrap; } }
 
-.reassure-art { display:block; width:auto; height:110px; max-width:100%; margin-bottom:var(--space-sm); }
+.reassure-card { position:relative; background:var(--white); border-radius:var(--radius-md); box-shadow:var(--shadow-sm); padding:var(--space-md); margin-top:50px; }
+.reassure-card h3 { max-width:calc(100% - 130px); }
+.reassure-art { position:absolute; top:-50px; right:-12px; height:110px; width:auto; }
