@@ -112,6 +112,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .bk-price-panel { position: relative; margin-top: -2.5rem; align-self: flex-end; background: var(--forest-dark); color: var(--white); border-radius: var(--radius-lg); padding: 1.5rem 1.75rem; box-shadow: var(--shadow-lg); border-top: 4px solid var(--orange); max-width: 300px; }
 .page-intro .bk-price-panel p { color: rgba(255,255,255,0.8); font-size: 0.95rem; margin: 0; }
 .page-intro .bk-price-panel .offer-price { font-size: clamp(2.4rem, 2rem + 1.5vw, 3.2rem); color: var(--white); line-height: 1; margin-bottom: 0.6rem; }
+.bk-price-panel .price-unit { font-size: 0.45em; opacity: 0.85; }
 .bk-split, .bk-agenda, .bk-outcome { padding: clamp(3.5rem, 3rem + 3vw, 6rem) 0; }
 .bk-split { background: var(--warm-white); }
 .bk-split-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: var(--space-lg); align-items: center; }
