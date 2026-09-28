@@ -1,5 +1,5 @@
 /* ==========================================
-   Upstate AI — Landing Page v2
+   Upstate AI: Landing Page v2
    Editorial design. Reformed vendor positioning.
    Built from the Kapferer Brand Prism (Apr 2026)
    ========================================== */
@@ -271,7 +271,7 @@ a:hover { color: var(--orange-light); }
 .hero-visual img { width: 100%; max-width: 480px; height: auto; }
 
 /* ==========================================
-   Problem — "You don't need another vendor"
+   Problem: "You don't need another vendor"
    ========================================== */
 .problem {
     padding: var(--space-section) 0;
@@ -324,7 +324,7 @@ a:hover { color: var(--orange-light); }
 .stat-source { font-size: 0.85rem; opacity: 0.5; }
 
 /* ==========================================
-   Process — How We Work
+   Process: How We Work
    ========================================== */
 .process {
     padding: var(--space-section) 0;
@@ -360,7 +360,7 @@ a:hover { color: var(--orange-light); }
 .step p { color: var(--text-muted); margin-bottom: 0; font-size: 0.95rem; }
 
 /* ==========================================
-   Training — Complimentary Session
+   Training: Complimentary Session
    ========================================== */
 .training {
     padding: var(--space-section) 0;
@@ -379,7 +379,7 @@ a:hover { color: var(--orange-light); }
 .training-visual img { width: 100%; max-width: 400px; height: auto; }
 
 /* ==========================================
-   Services — Bento Grid
+   Services: Bento Grid
    ========================================== */
 .services {
     padding: var(--space-section) 0;

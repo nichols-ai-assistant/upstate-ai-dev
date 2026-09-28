@@ -76,7 +76,7 @@ a:hover { color: var(--orange-light); }
     transform: translateY(0);
 }
 
-/* Respect reduced motion — show content immediately */
+/* Respect reduced motion: show content immediately */
 @media (prefers-reduced-motion: reduce) {
     .fade-up {
         opacity: 1;
@@ -86,7 +86,7 @@ a:hover { color: var(--orange-light); }
 }
 
 /* ==========================================
-   Navigation — Glass effect, high contrast
+   Navigation: Glass effect, high contrast
    ========================================== */
 .navbar {
     position: fixed;
@@ -208,7 +208,7 @@ a:hover { color: var(--orange-light); }
 }
 
 /* ==========================================
-   Hero — Dynamic, energetic, diagonal divider
+   Hero: Dynamic, energetic, diagonal divider
    ========================================== */
 .hero {
     position: relative;
@@ -406,7 +406,7 @@ a:hover { color: var(--orange-light); }
 }
 
 /* ==========================================
-   Prototype-First Section — Dark, bold
+   Prototype-First Section: Dark, bold
    ========================================== */
 .prototype {
     padding: var(--spacing-xl) 0;
@@ -540,7 +540,7 @@ a:hover { color: var(--orange-light); }
 }
 
 /* ==========================================
-   Services — Bold featured card
+   Services: Bold featured card
    ========================================== */
 .services {
     padding: var(--spacing-xl) 0;
@@ -977,7 +977,7 @@ a:hover { color: var(--orange-light); }
     height: 112px;
     width: auto;
     margin-bottom: var(--spacing-xs);
-    /* no filter — using white logo with original orange accent */
+    /* no filter: using white logo with original orange accent */
 }
 .footer-brand p { color: rgba(255,255,255,0.5); margin: 0; font-size: 0.9rem; }
 .footer-links { display: flex; gap: var(--spacing-md); flex-wrap: wrap; }
