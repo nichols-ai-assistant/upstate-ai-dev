@@ -80,7 +80,7 @@
             cssClass: 'tier-leader',
             service: 'Fractional Chief AI Officer',
             servicePrice: '$5,000/mo',
-            serviceSlug: 'part-time-ai-consultant',
+            serviceSlug: 'fractional-chief-ai-officer',
             serviceDesc: '10 hours per month of fractional AI leadership from someone who\'s been behind the vendor curtain. Strategic guidance, vendor evaluation, and on-demand answers. Building your judgment, not your dependency.',
             summary: 'You\'re in the top tier of SMB AI readiness nationally, not just regionally. You have the data infrastructure, documented processes, technology stack, leadership commitment, and governance awareness that most businesses are still working toward. Your play now is strategic: building an AI roadmap that turns this foundation into measurable competitive advantage.',
             actions: [
