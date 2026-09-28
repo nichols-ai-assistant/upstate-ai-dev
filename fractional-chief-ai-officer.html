@@ -240,25 +240,7 @@ layout: none
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand"><a href="index">
-                <img src="images/logo.png" alt="Upstate AI Logo" class="logo"></a>
-            </div>
-            <ul class="nav-menu">
-
-
-                <li><a href="/#services">Services</a></li>
-                <li><a href="/#about">About</a></li>
-                <li><a href="blog">Blog</a></li>
-                <li><a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-nav">Book a Call</a></li>
-            </ul>
-            <button class="mobile-toggle" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+{% include site-nav.html active="biz" home="business" %}
 
     <!-- Hero -->
     <section class="retainer-hero" style="position: relative; z-index: 1;">
@@ -494,43 +476,10 @@ layout: none
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
-                    <p>Put AI to Work</p>
-                </div>
-                <div class="footer-links">
-                    <a href="/#services">Services</a>
-                    <a href="/#about">About</a>
-                    <a href="blog">Blog</a>
-                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
-                    <a href="privacy">Privacy Policy</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+{% include site-footer.html %}
 
     <!-- Interactions -->
     <script>
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
-        });
-
-        const mobileToggle = document.querySelector('.mobile-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-        if (mobileToggle) {
-            mobileToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('open');
-                mobileToggle.classList.toggle('active');
-            });
-        }
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
