@@ -89,3 +89,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .service-card.featured.offer-split { grid-column: auto; display: block; }
 .service-art { display: flex; align-items: center; justify-content: center; }
 .service-art img { width: 100%; max-width: 450px; height: auto; }
+
+/* FI home hero on phones: match business page spacing */
+@media (max-width: 768px) {
+    .hero-sub { margin-top: 1.5em; }
+    .hero-sub .hero-lead, .hero-sub .hero-cta-note { max-width: none !important; }
+}
