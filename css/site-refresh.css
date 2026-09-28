@@ -79,3 +79,5 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .reassure-card { position:relative; background:var(--white); border-radius:var(--radius-md); box-shadow:var(--shadow-sm); padding:var(--space-md); margin-top:50px; }
 .reassure-card h3 { max-width:calc(100% - 130px); }
 .reassure-art { position:absolute; top:-50px; right:-12px; height:110px; width:auto; }
+.reassure-card { border-left:4px solid var(--orange); }
+.reassure-card h3::after { content:""; display:block; width:32px; height:3px; background:var(--orange); margin-top:8px; border-radius:2px; }
