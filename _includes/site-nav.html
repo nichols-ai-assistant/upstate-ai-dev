@@ -1,0 +1,19 @@
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar" aria-label="Main">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="{{ include.home | default: './' }}"><img src="images/logo.png" alt="Upstate AI home" class="logo" width="112" height="32"></a>
+            </div>
+            <button class="mobile-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="./"{% if include.active == 'fi-home' %} aria-current="page"{% endif %}>Banks &amp; Credit Unions</a></li>
+                <li><a href="financial-institutions"{% if include.active == 'fi' %} aria-current="page"{% endif %}>How We Help Institutions</a></li>
+                <li><a href="business"{% if include.active == 'biz-home' %} aria-current="page"{% endif %}>Business</a></li>
+                <li><a href="services"{% if include.active == 'biz' %} aria-current="page"{% endif %}>Business Services</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-nav">Book a Call</a></li>
+            </ul>
+        </div>
+    </nav>

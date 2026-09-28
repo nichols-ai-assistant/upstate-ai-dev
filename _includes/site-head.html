@@ -1,0 +1,34 @@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ include.description }}">
+    <meta name="author" content="Ben Nichols">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Analytics (GA4): unchanged from previous index.html -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KKZRVLYRV0');
+    </script>
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://up-state-ai.com/{{ include.path }}">
+    <meta property="og:title" content="{{ include.title }}">
+    <meta property="og:description" content="{{ include.description }}">
+    <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>{{ include.title }}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/site-refresh.css">
+    <!-- Content must stay readable without JS: fade-up starts hidden in landing.css -->
+    <noscript><style>.fade-up{opacity:1;transform:none}</style></noscript>

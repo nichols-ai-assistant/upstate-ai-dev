@@ -5,400 +5,133 @@ layout: none
 <html lang="en">
 <head>
     <script>if(location.pathname==='/index'||location.pathname==='/index.html')location.replace('/');</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI strategy consulting for community banks and credit unions. A reformed AI vendor turned advisor helping financial institutions cut through the hype, evaluate what's real, and implement what actually works.">
-    <meta name="keywords" content="AI consulting, community banking AI, credit union AI, financial services AI, bank AI strategy, AI for community banks, AI for credit unions, community financial institutions, fintech consulting, bank vendor evaluation, AI governance banking">
-    <meta name="author" content="Ben Nichols">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-
-    <!-- Google Analytics (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKZRVLYRV0"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-KKZRVLYRV0');
-    </script>
-
-    <!-- Security Headers -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://up-state-ai.com/">
-    <meta property="og:title" content="Upstate AI | AI Strategy for Community Financial Institutions">
-    <meta property="og:description" content="Reformed AI vendor turned advisor. AI strategy consulting for community banks and credit unions.">
-    <meta property="og:image" content="https://up-state-ai.com/images/og-image.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Upstate AI | AI Strategy for Community Financial Institutions">
-    <meta name="twitter:description" content="Reformed AI vendor turned advisor. AI strategy consulting for community banks and credit unions.">
-
-    <title>Upstate AI | AI Strategy for Community Banks &amp; Credit Unions</title>
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Upstate AI",
-      "description": "AI strategy consulting for community banks and credit unions. Reformed vendor turned advisor.",
-      "url": "https://up-state-ai.com",
-      "founder": { "@type": "Person", "name": "Ben Nichols", "jobTitle": "Founder & AI Strategist" },
-      "areaServed": { "@type": "Country", "name": "United States" },
-      "serviceType": ["AI Consulting for Financial Institutions", "Bank AI Strategy", "AI Workshops for Banking", "AI Audits", "Credit Union AI Consulting"],
-      "priceRange": "$$"
-    }
-    </script>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/landing.css">
-    <style>
-        /* FI Landscape promo banner */
-        @keyframes fi-banner-sheen {
-            0%   { transform: translateX(-100%) skewX(-15deg); }
-            100% { transform: translateX(400%) skewX(-15deg); }
-        }
-        .fi-promo-banner {
-            margin-top: 64px;
-            background: linear-gradient(100deg, #0f1f0f 0%, #1c321c 60%, #0f1f0f 100%);
-            border-top: 2px solid var(--orange);
-            border-bottom: 1px solid rgba(255, 105, 0, 0.2);
-            padding: 1rem 0;
-            position: relative;
-            overflow: hidden;
-        }
-        .fi-promo-banner::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; bottom: 0;
-            width: 30%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.055), transparent);
-            animation: fi-banner-sheen 4s ease-in-out infinite;
-            pointer-events: none;
-        }
-        .fi-promo-banner .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1.25rem;
-            position: relative;
-        }
-        .fi-promo-banner-body {
-            display: flex;
-            align-items: center;
-            flex: 1;
-            min-width: 0;
-        }
-        .fi-promo-text {
-            color: rgba(255, 255, 255, 0.85);
-            font-size: 0.95rem;
-            line-height: 1.4;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .fi-promo-text strong { color: #fff; font-weight: 700; }
-        .fi-promo-cta {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(255,255,255,0.07);
-            border: 1px solid rgba(255,255,255,0.13);
-            color: rgba(255,255,255,0.85);
-            font-weight: 600;
-            font-size: 0.82rem;
-            padding: 0.55rem 1.1rem;
-            border-radius: var(--radius-sm);
-            white-space: nowrap;
-            flex-shrink: 0;
-            transition: var(--transition);
-            text-decoration: none;
-            line-height: 1;
-        }
-        .fi-promo-cta:hover {
-            background: rgba(255,105,0,0.18);
-            border-color: var(--orange);
-            color: #fff;
-            transform: translateY(-1px);
-        }
-        .fi-promo-cta .path-arr { color: var(--orange); }
-        @media (max-width: 640px) {
-            .fi-promo-banner { border-top-width: 3px; padding: 1.1rem 0; }
-            .fi-promo-banner .container { flex-direction: column; gap: 0.75rem; text-align: center; }
-            .fi-promo-banner-body { flex-direction: column; gap: 0.4rem; }
-            .fi-promo-text { white-space: normal; overflow: visible; font-size: 1rem; }
-            .fi-promo-text strong { font-size: 1.05rem; }
-            .fi-promo-cta { width: 100%; text-align: center; padding: 0.75rem 1.25rem; font-size: 0.95rem; }
-        }
-    </style>
+{% include site-head.html title="Upstate AI | Stand Behind Your AI | Community Banks &amp; Credit Unions" description="Independent AI advice for community banks and credit unions. Decide what fits your institution, then put it to work with a team that can run it." path="" %}
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="index"><img src="images/logo.png" alt="Upstate AI Logo" class="logo"></a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="blog">Blog</a></li>
-                <li><a href="manufacturing">Manufacturing</a></li>
-                <li><a href="professional-services">Professional Services</a></li>
-                <li><a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-nav">Book a Call</a></li>
-            </ul>
-            <button class="mobile-toggle" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+{% include site-nav.html active="fi-home" %}
 
-    <!-- FI Landscape Promo Banner -->
-    <div class="fi-promo-banner" role="complementary" aria-label="Featured resource">
+    <aside class="audience-banner" aria-label="Choose your audience">
         <div class="container">
-            <div class="fi-promo-banner-body">
-                <span class="fi-promo-text"><strong>The FI AI Landscape.</strong> 400+ vendors. Every AI tool in community banking, mapped.</span>
-            </div>
-            <a href="fi-landscape" class="fi-promo-cta">Explore the Map <span class="path-arr">&rarr;</span></a>
+            <p><strong>Not a bank or credit union?</strong></p>
+            <a href="business">Explore AI for your business <span class="arr" aria-hidden="true">&rarr;</span></a>
         </div>
-    </div>
+    </aside>
 
-    <!-- ============ HERO ============ -->
-    <section class="hero">
+    <main id="main">
+    <section class="hero" style="padding-top:4rem;">
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-content fade-up">
-                    <span class="hero-badge"><span class="badge-line"><span class="accent">&#x2B25;</span>&nbsp;&nbsp; Strategy Consulting &nbsp;&nbsp;<span class="accent">&#x2B25;</span></span><span class="badge-sep">&nbsp;&nbsp;</span><span class="badge-line"><span class="accent">&#x2B25;</span>&nbsp;&nbsp; Corporate Training &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="accent">&#x2B25;</span></span></span>
-                    <h1>Put <span class="accent">AI</span><br>to Work</h1>
-                    <p class="hero-lead">AI strategy for community banks and credit unions that starts with a challenge, not a platform.</p>
-                    <p class="hero-body">Led by a reformed AI vendor who built the products banks buy. For community financial institutions that are tired of the hype and ready to see what's real.</p>
+                    <span class="hero-context">Independent AI advice for community banks and credit unions</span>
+                    <h1>Stand Behind Your <span class="accent">AI.</span></h1>
+                    <p class="hero-lead">Your board wants an AI plan. Your vendors have platforms to sell. You need to decide what fits your institution.</p>
+                    <p class="hero-body">Make the next decision with a clear view of the work, the data, and the people accountable for the result.</p>
                     <div class="hero-ctas">
-                        <a href="https://calendar.app.google/TFDaMrzJHQ3catdo8" target="_blank" rel="noopener" class="btn-primary">Schedule a Consult</a>
-                        <a href="#how" class="btn-ghost">See How We Work &rarr;</a>
+                        <a href="ai-banking-guide" class="btn-primary">Read the AI guide</a>
+                        <a href="financial-institutions" class="btn-ghost">How we help &rarr;</a>
                     </div>
                 </div>
                 <div class="hero-visual fade-up">
-                    <img src="images/undraw/undraw_business-decisions_7vkl.svg" alt="Evaluating AI decisions with clarity" width="480" height="317" style="transform:scaleX(-1);">
+                    <img src="images/undraw/undraw_business-decisions_7vkl.svg" alt="" width="480" height="317" style="transform:scaleX(-1);">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ THE PROBLEM ============ -->
-    <section class="problem">
+    <section class="moments" aria-labelledby="moments-h">
         <div class="container">
-            <h2 class="fade-up">You don't need<br>another AI vendor</h2>
-            <div class="problem-grid fade-up">
-                <div class="problem-card problem-them">
-                    <h3>The pitch</h3>
-                    <p>Every core processor has an AI roadmap. Every fintech demo looks magical. Every digital banking platform promises transformation. And you're expected to evaluate technology you've never worked with, sold by vendors who don't understand your regulatory reality.</p>
+            <h2 id="moments-h" class="fade-up">Where most AI decisions start</h2>
+            <p class="section-sub fade-up">Rarely with a strategy session. Usually with one of these.</p>
+            <div class="moments-grid fade-up">
+                <div class="moment">
+                    <h3>The vendor pitch</h3>
+                    <p>Your core or digital banking provider just demoed its new AI features. The demo looked good. Now someone has to decide whether it fits how your institution actually works, and what it will ask of your team.</p>
                 </div>
-                <div class="problem-card problem-us">
-                    <h3>The reality</h3>
-                    <p>We've built AI products for community banks. We've written the pitch decks, sat across from CEOs and board members, and watched what happens after the contract is signed. Now we bring that inside knowledge to your side of the table.</p>
+                <div class="moment">
+                    <h3>The quiet adoption</h3>
+                    <p>Staff are already using AI tools to draft emails and summarize documents. Nobody has agreed what is fine to paste in, which tools are approved, or who answers questions when they come up.</p>
                 </div>
-            </div>
-            <div class="problem-stat fade-up">
-                <span class="stat-number">95%</span>
-                <span class="stat-label">of AI pilots never reach production<br><span class="stat-source">MIT Sloan</span></span>
+                <div class="moment">
+                    <h3>The stalled pilot</h3>
+                    <p>A pilot showed promise. Now it needs an owner, a way to judge whether it worked, and a plan for what happens next. Without those, it sits.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ HOW WE WORK ============ -->
-    <section id="how" class="process">
+    <section class="progress-band" aria-labelledby="progress-h">
+        <div class="container">
+            <h2 id="progress-h" class="fade-up">What progress looks like</h2>
+            <ul class="progress-list fade-up">
+                <li><strong>A choice you can explain.</strong>Leadership can walk the board and colleagues through why a use case was chosen, what it depends on, and how it will be judged.</li>
+                <li><strong>A team that can run it.</strong>The people who use the tool know how it works, where it can go wrong, and who to call.</li>
+                <li><strong>Confidence without the hype.</strong>You evaluate the next vendor pitch on your terms, with questions ready, instead of reacting to a demo.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="how" class="process" aria-labelledby="how-h">
         <div class="container">
             <div class="process-header fade-up">
-                <h2>Start with curiosity.<br><span class="accent">End with confidence.</span></h2>
-                <p>Each step delivers complete value. No strings, no lock-in. You decide when to go deeper.</p>
+                <h2 id="how-h">How we help</h2>
+                <p>Pick the part you need. Each engagement stands on its own.</p>
             </div>
             <div class="process-steps fade-up">
                 <div class="step">
                     <div class="step-number">01</div>
-                    <h3>Learn</h3>
-                    <p>A complimentary 30-minute session on AI in community financial services. No commitment, just knowledge you can use immediately.</p>
+                    <h3>Executive education</h3>
+                    <p>A working session for your leadership team: what current AI can and cannot do in an institution like yours, and how to question what vendors are offering.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">02</div>
-                    <h3>Discover</h3>
-                    <p>Hands-on workshops and audits that map AI opportunities specific to your institution, from lending and compliance to member and customer experience.</p>
+                    <h3>Assess the real work</h3>
+                    <p>We look at your actual workflows, systems, and customer and member data to find where AI fits, what it would take, and what should wait.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">03</div>
-                    <h3>Build</h3>
-                    <p>We architect and oversee your AI implementation, from vendor evaluation through regulatory review to launch, on scope and on budget.</p>
+                    <h3>Implement and advise</h3>
+                    <p>We help put the chosen use case to work on established platforms, then stay on as an advisor while your team takes ownership.</p>
                 </div>
+            </div>
+            <p style="text-align:center;margin-top:var(--space-md);" class="fade-up"><a href="financial-institutions" class="btn-outline">See the four ways we work</a></p>
+        </div>
+    </section>
+
+    <section class="reassure" aria-labelledby="reassure-h">
+        <div class="container">
+            <h2 id="reassure-h" class="fade-up">Keep what works. Start with one decision.</h2>
+            <p class="section-sub fade-up">You do not need to rethink your technology to get value from AI.</p>
+            <div class="reassure-grid fade-up">
+                <div><h3>Defined scope</h3><p>Every engagement has a clear deliverable and end point before it starts.</p></div>
+                <div><h3>Standalone engagements</h3><p>No required sequence. Go further only if the first piece of work earned it.</p></div>
+                <div><h3>Your vendors can stay</h3><p>Where your existing core, digital banking, or other providers already fit, we work with them rather than around them.</p></div>
+                <div><h3>Knowledge stays with you</h3><p>We hand over the reasoning, documents, and skills so your team can carry the work forward.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- ============ COMPLIMENTARY TRAINING ============ -->
-    <section class="training">
-        <div class="container">
-            <div class="training-grid">
-                <div class="training-content fade-up">
-                    <h2>Complimentary<br>AI Training</h2>
-                    <p>Curious what AI could do for your institution? 30 minutes, no sales pitch. Practical insights your team and board can use right away.</p>
-                    <div class="training-ctas">
-                        <a href="https://calendar.app.google/TFDaMrzJHQ3catdo8" target="_blank" rel="noopener" class="btn-primary">Schedule Your Training</a>
-                        <a href="free-training" class="btn-outline">Learn More</a>
-                    </div>
-                </div>
-                <div class="training-visual fade-up">
-                    <img src="images/undraw/undraw_teaching_58yg.svg" alt="AI training session" width="400" height="300">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ SERVICES ============ -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="fade-up">How We Help</h2>
-            <p class="section-sub fade-up">Every engagement stands on its own. You go deeper when the value is obvious, not because we engineered a hook.</p>
-
-            <div class="services-bento">
-                <!-- Featured: Workshop -->
-                <div class="service-card featured fade-up">
-                    <div>
-                        <div class="service-number">01</div>
-                        <h3>AI Workshop</h3>
-                        <p class="service-desc">A full-day intensive for your leadership team. We cut through vendor hype, pressure-test real use cases against your operations and compliance requirements, and hand you an AI Opportunity Scorecard you can act on without us in the room.</p>
-                        <ul class="service-features">
-                            <li>Full-day session (in-person or virtual)</li>
-                            <li>Use cases specific to community financial institutions</li>
-                            <li>Executive Q&A and strategic discussion</li>
-                            <li>Take home your personalized AI Opportunity Scorecard</li>
-                        </ul>
-                        <a href="workshop" class="btn-outline" style="margin-top: var(--space-sm); color: #fff; border-color: #fff;">See What's Included</a>
-                    </div>
-                    <div style="display:flex;align-items:center;justify-content:center;">
-                        <img src="images/undraw/undraw_business-plan_wv9q.svg" alt="AI workshop planning" style="width:100%;max-width:360px;height:auto;">
-                    </div>
-                </div>
-
-                <!-- AI Audit -->
-                <div class="service-card fade-up">
-                    <div class="service-number">02</div>
-                    <h3>AI Audit</h3>
-                    <p class="service-desc">We analyze your operations, interview your team, and deliver a prioritized roadmap with honest answers, regulatory considerations, and ROI estimates you can act on without us.</p>
-                    <ul class="service-features">
-                        <li>Full operational analysis</li>
-                        <li>Data maturity evaluation</li>
-                        <li>Prioritized AI roadmap with ROI</li>
-                        <li>Jargon-free executive report</li>
-                    </ul>
-                    <a href="ai-audit" class="btn-outline" style="margin-top: var(--space-sm);">See the Audit Process</a>
-                </div>
-
-                <!-- AI Execution -->
-                <div class="service-card fade-up">
-                    <div class="service-number">03</div>
-                    <h3>AI Execution</h3>
-                    <p class="service-desc">We manage your AI build from spec to launch. Clear technical plan, honest vendor evaluation, and a project manager who understands both the technology and your regulatory environment.</p>
-                    <ul class="service-features">
-                        <li>Technical spec & requirements</li>
-                        <li>Vendor selection & evaluation</li>
-                        <li>Project plan & milestone tracking</li>
-                        <li>Ongoing oversight check-ins</li>
-                    </ul>
-                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" class="btn-outline" style="margin-top: var(--space-sm);">Book a Call</a>
-                </div>
-
-                <!-- Part-Time Consultant (spans full width) -->
-                <div class="service-card featured fade-up" style="background:var(--forest-medium);">
-                    <div>
-                        <div class="service-number">04</div>
-                        <h3>Part-Time AI Consultant</h3>
-                        <p class="service-desc">Fractional AI leadership for your institution: strategic guidance, vendor evaluation, implementation support, and on-demand answers. Someone who's been behind the vendor curtain, now on your side of the table.</p>
-                        <ul class="service-features">
-                            <li>Monthly strategic check-in</li>
-                            <li>On-demand support for AI decisions</li>
-                            <li>Quarterly industry landscape report</li>
-                            <li>Priority access for project scoping</li>
-                        </ul>
-                        <a href="part-time-ai-consultant" class="btn-primary" style="margin-top: var(--space-sm);">See the Retainer</a>
-                    </div>
-                    <div style="display:flex;align-items:center;justify-content:center;">
-                        <img src="images/undraw/undraw_completed-steps_ngu7.svg" alt="Ongoing AI partnership" style="width:100%;max-width:320px;height:auto;">
-                    </div>
-                </div>
-
-                <!-- AI Operator Program (spans full width) -->
-                <div class="service-card featured light fade-up">
-                    <div>
-                        <div class="service-number">05</div>
-                        <p style="display:inline-block;margin:0 0 var(--space-xs);padding:0.35rem 0.85rem;border-radius:999px;background:var(--orange);color:#fff;font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">First cohorts open in 2027</p>
-                        <h3>AI Operator Program</h3>
-                        <p class="service-desc">A 12-week program that turns up to five of your people into the team that runs AI in-house. You stop renting the capability and start owning it.</p>
-                        <ul class="service-features">
-                            <li>12 weeks, up to 5 people</li>
-                            <li>Built on your real workflows, not case studies</li>
-                            <li>Your team ships working automations by week 12</li>
-                            <li>Optional Agent Operations support from week 13</li>
-                        </ul>
-                        <a href="ai-operator-program" class="btn-outline" style="margin-top: var(--space-sm);">See the 2027 Program</a>
-                    </div>
-                    <div style="display:flex;align-items:center;justify-content:center;">
-                        <img src="images/undraw/undraw_continuous-learning_a1ld.svg" alt="Team learning to operate AI" style="width:100%;max-width:320px;height:auto;">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ MISSION STRIP ============ -->
-    <section class="mission-strip">
-        <div class="container">
-            <p><strong>Our goal is for you to leverage <span class="accent">AI</span> all on your own.</strong></p>
-        </div>
-    </section>
-
-    <!-- ============ ABOUT ============ -->
-    <section id="about" class="about">
+    <section id="about" class="about" aria-labelledby="about-h">
         <div class="container">
             <div class="about-grid fade-up">
                 <div class="about-photo">
-                    <img src="images/headshot.jpeg" alt="Ben Nichols, Founder of Upstate AI" width="300" height="400">
+                    <img src="images/headshot.jpeg" alt="Ben Nichols, Founder of Upstate AI" width="300" height="400" loading="lazy">
                 </div>
                 <div class="about-content">
-                    <h2>Clarity before commitment.</h2>
-                    <p class="about-lead">We've built it, sold it, and taught the science behind it. We know what's real and what's packaging.</p>
-
+                    <h2 id="about-h">Who you would work with</h2>
+                    <p class="about-lead">Ben Nichols, Founder. Ben has built AI for financial institutions and teaches how it works.</p>
                     <div class="credentials-list">
                         <div class="credential">
-                            <div class="credential-icon">&#x1F3E6;</div>
+                            <div class="credential-icon" aria-hidden="true">&#x1F3E6;</div>
                             <div>
-                                <h3>Built AI for Banks</h3>
-                                <p>Co-founded a conversational AI company serving community banks. I've written the pitch decks, built the demos, sat across from bank CEOs, and watched what happens after the contract is signed. Now I bring that inside knowledge to your side of the table.</p>
+                                <h3>Co-founder and COO, Directlink</h3>
+                                <p>Conversational AI for credit unions. Ben has seen AI projects from the vendor side, from the first demo through life after launch.</p>
                             </div>
                         </div>
                         <div class="credential">
-                            <div class="credential-icon">&#x1F393;</div>
+                            <div class="credential-icon" aria-hidden="true">&#x1F393;</div>
                             <div>
-                                <h3>Professor of Data Science</h3>
-                                <p>Adjunct Professor at Syracuse University teaching AI and Data Science. If I can make it clear to a graduate classroom, I can make it clear to your boardroom.</p>
-                            </div>
-                        </div>
-                        <div class="credential">
-                            <div class="credential-icon">&#x1F50D;</div>
-                            <div>
-                                <h3>Regulatory Awareness</h3>
-                                <p>Understands the compliance landscape community financial institutions operate in. SR 11-7, model risk management, third-party risk, and AI governance frameworks that satisfy examiners without paralyzing your team.</p>
-                            </div>
-                        </div>
-                        <div class="credential">
-                            <div class="credential-icon">&#x1F4BC;</div>
-                            <div>
-                                <h3>Executive Leader</h3>
-                                <p>15 years leading teams across Fortune 100 enterprises, financial services startups, and community institutions. Understands how organizations actually adopt change.</p>
+                                <h3>AI Professor, Syracuse University</h3>
+                                <p>Teaching AI and data science means explaining it clearly. The same clarity goes into your board materials.</p>
                             </div>
                         </div>
                     </div>
@@ -407,134 +140,16 @@ layout: none
         </div>
     </section>
 
-    <!-- ============ DOMAIN EXPERTISE ============ -->
-    <section class="industries">
+    <section id="booking" class="final-cta" aria-labelledby="cta-h">
         <div class="container">
-            <h2 class="fade-up">What We Know About Your World</h2>
-            <p class="section-sub fade-up">Domain expertise that generic AI consultants don't have.</p>
-            <div class="industries-grid fade-up">
-                <div class="industry-card">
-                    <div class="industry-icon">&#x1F50D;</div>
-                    <h3>Vendor Evaluation</h3>
-                    <p>Your core processor has an AI roadmap. So does every fintech in your inbox. We know which solutions are real and which are demos looking for a contract.</p>
-                </div>
-                <div class="industry-card">
-                    <div class="industry-icon">&#x1F4CB;</div>
-                    <h3>Regulatory Readiness</h3>
-                    <p>SR 11-7. Model risk management. Third-party risk. We help you build AI governance that satisfies examiners without paralyzing your team.</p>
-                </div>
-                <div class="industry-card">
-                    <div class="industry-icon">&#x1F465;</div>
-                    <h3>Member &amp; Customer Experience</h3>
-                    <p>Chatbots that don't hallucinate policy. Document automation that doesn't miss compliance. AI that serves people without creating risk.</p>
-                </div>
-                <div class="industry-card">
-                    <div class="industry-icon">&#x26A1;</div>
-                    <h3>Operational Efficiency</h3>
-                    <p>Loan processing, compliance reporting, fraud detection. We identify where AI delivers real ROI in your specific operations.</p>
-                </div>
-            </div>
+            <h2 id="cta-h" class="fade-up">Start with the guide.</h2>
+            <p class="fade-up">Nine common AI decisions community banks and credit unions face, with the questions to ask at each one.</p>
+            <a href="ai-banking-guide" class="btn-primary-large fade-up">Read the AI guide</a>
+            <p class="fade-up" style="margin-top:var(--space-sm);">Ready to talk it through? <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">Book a call</a></p>
         </div>
     </section>
+    </main>
 
-    <!-- ============ BLOG ============ -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <h2 class="fade-up">Insights &amp; Resources</h2>
-            <p class="section-sub fade-up">Practical guidance on AI strategy for community financial institutions.</p>
-
-            <div class="blog-grid">
-                {% assign sorted_posts = site.data.posts | sort: "sort_date" | reverse %}
-                {% for post in sorted_posts limit:3 %}
-                {% include blog-card.html post=post %}
-                {% endfor %}
-            </div>
-
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="blog" class="btn-outline">View All Posts</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ FINAL CTA ============ -->
-    <section id="booking" class="final-cta">
-        <div class="container">
-            <h2 class="fade-up">We already know the right questions.<br>Let us help you find the right <span class="accent">answers</span>.</h2>
-            <p class="fade-up">No sales pitch. Just an honest conversation about where your institution is, where AI fits, and what it would take.</p>
-            <a href="https://calendar.app.google/TFDaMrzJHQ3catdo8" target="_blank" rel="noopener" class="btn-primary-large fade-up">Schedule a Consult</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="images/logo-white.png" alt="Upstate AI Logo" class="footer-logo">
-                    <p>Put AI to Work</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#services">Services</a>
-                    <a href="#about">About</a>
-                    <a href="blog">Blog</a>
-                    <a href="https://calendar.app.google/oNGjY8ioWCqiTkfe7" target="_blank" rel="noopener">Contact</a>
-                    <a href="privacy">Privacy Policy</a>
-                    <a href="#" onclick="window.CookieConsent && window.CookieConsent.show(); return false;">Cookie Settings</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Upstate AI. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Cookie Consent -->
-    <link rel="stylesheet" href="css/cookie-consent.css">
-    <script src="js/cookie-consent.js"></script>
-
-    <!-- Interactions -->
-    <script>
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
-
-        // Navbar scroll
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
-        });
-
-        // Mobile menu
-        const mobileToggle = document.querySelector('.mobile-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-        if (mobileToggle) {
-            mobileToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('open');
-                mobileToggle.classList.toggle('active');
-            });
-            navMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navMenu.classList.remove('open');
-                    mobileToggle.classList.remove('active');
-                });
-            });
-        }
-
-        // Scroll-triggered fade-in
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-    </script>
+{% include site-footer.html %}
 </body>
 </html>
