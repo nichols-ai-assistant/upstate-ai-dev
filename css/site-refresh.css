@@ -84,3 +84,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .reassure-card h3 { max-width:calc(100% - 130px); }
 .reassure-art { position:absolute; top:-50px; right:-12px; height:110px; width:auto; }
 .reassure-card h3::after { content:""; display:block; width:32px; height:3px; background:var(--orange); margin-top:8px; border-radius:2px; }
+
+/* Split featured cards: green card one column wide, art on the canvas beside it */
+.service-card.featured.offer-split { grid-column: auto; display: block; }
+.service-art { display: flex; align-items: center; justify-content: center; }
+.service-art img { width: 100%; max-width: 450px; height: auto; }
