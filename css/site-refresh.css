@@ -61,7 +61,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .offer-section { padding: var(--space-lg) 0 var(--space-section); }
 
 @media (max-width: 1024px) {
-    .moments-grid, .progress-list { grid-template-columns: 1fr; }
+    .moments-grid, .progress-list, .progress-list.has-art { grid-template-columns: 1fr; }
     .progress-art { display: none !important; }
 }
 @media (max-width: 768px) {
